@@ -1,0 +1,245 @@
+mission "EA CalltoGeminusAgain"	
+	name "Travel to Geminus"
+	description "Travel to Geminus in the Castor system to receive movement orders."
+	landing
+	source
+		government "Republic" "Hai" "Syndicate" "Free Worlds" "Independent"
+	destination "Geminus"
+	deadline 30
+	to offer
+		has "event: EA campaign restart timer"
+		random < 50
+	on offer
+		conversation
+			`	You receive a message on your communication system from the Navy Logistics Command Center at Geminus.`
+			choice
+				`	(Open the message.)`
+			`	"You, Commander <last>, are hereby required and directed to report to the Geminus spaceport to receive movement orders. You have thirty (30) days to report. You will answer the contrary at your peril."`
+				accept
+	on complete
+		dialog `You have landed at Geminus. Your orders state that you must report to the spaceport.`
+		
+
+mission "EA alpha outbreak"
+	priority
+	name "Data retrieval from Pherkad"
+	description "Retrieve a classified data chip from Solace in the Pherkad system."
+	source "Geminus" "spaceport"
+	waypoint "Pherkad"
+	to offer
+		has "event: EA campaign restart timer"
+		has "EA CalltoGeminusAgain: done"
+	on offer
+		conversation
+			`	When you enter the spaceport, you decide you might as well travel to the Navy office. You receive orders from a non-descript officer to retrieve a data chip of secret information on Solace in the Pherkad system. You are also requested to make your flagship a ship used by the navy if possible.`
+				accept
+	on waypoint
+		event "EA alpha breakout one"
+		dialog `The number of Alphas in this system is somewhat frightening. You decide your best option is to return to Geminus back the way you came.`
+	npc
+		government "Alpha"
+		personality staying nemesis heroic hostile
+		names "Pirate"
+		system Pherkad
+		fleet "Marauder fleet VIII" 4
+		fleet "Marauder fleet II" 4
+		fleet "Marauder fleet VII" 4
+
+mission "EA report to New Iceland"
+	landing
+	priority
+	name "Report to New Iceland"
+	description "Report to New Iceland in the Kaus Borealis system to receive orders regarding the Alpha war."
+	destination "New Iceland"
+	deadline 12
+	source "Geminus"
+	to offer
+		has "EA alpha outbreak: done"
+	on offer
+		conversation
+			`The activity in the Navy yards, spaceport, logistics centers, and offices is far more intense than you've ever seen it before. You try to find someone in control, but the only thing you can determine is that most of the forces in the republic are headed south to stem the tide of Alpha advance. News boards show that the pirate systems in the far south and bordering Free World systems have been taken over. On the Navy status board in the food court, you see your name listed as "En route to New Iceland". You wonder if you missed something.`
+				accept
+	on complete	
+		conversation
+			`Almost all the civilian equipment and non-fixed base operators have been removed or repurposed. The spaceport and its surrounding facilities are now firmly in control of the navy, and it is amazing how much they have already completed. You receive a message on your communicator ordering you to report to the command information center now at the spaceport.`
+
+mission "EA Save Yed Prior"
+	priority
+	name "Relief to Winter"
+	description "Penetrate Alpha blockade around the Yed Prior system and escort group of refugees back."
+	source "New Iceland" "spaceport"
+	stopover "Winter"
+	to offer
+		has "EA report to New Iceland: done"
+	on offer 
+		conversation
+			`When you enter the command information center, you are directed to a prefab shelter set up in the middle of the food court with a hand-made sign on the zipper door that says "High Command" in permanent marker. When you enter the makeshift office, you see that Admiral Alzaga is in charge.`
+			choice
+				`	(Salute and say "Commander <last>, reporting as ordered, sir.")`
+					goto easypsalute
+				`	(Sit down)`
+					goto easypsit
+			label easypsalute
+			`	You snap to attention and salute, but as you bring your arm up you hit a rope running past your right ear that you did not see in the dimness. The entire selter collapses in on you.`
+			`Upon extracating yourself and the Admiral (blaspheming the lack of stakes in polished concrete) from the wreckage, he tells you that Winter in the Yed Prior system is under siege by the Alphas, and orders you to get through the blockade and rescue as many people as possible, as well as several dignitiaries, scientists, intelligence operators, and data analysts who would be priceless to the Alphas.`
+				accept
+			label easypsit
+			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. I was told you already have a jump drive to bypass the blockade."`
+				accept
+	on stopover
+		event "EA alpha breakout two" 2
+		conversation
+			`	You land at the now mostly wrecked spaceport on Winter, and collect the people who were somehow told of your arrival even without using the hyperspace relays connected to Pherkad.`
+			`	Everybody scrambles on board your ship as the few remaining Navy ships begin to give ground. The alphas penetrate the crumbling defensive line and begin firing at will onto the surface of the planet, blowing up anything that moves and forcing you to take off or be destroyed.`
+				launch
+	on complete
+		payment 3000000
+		event "EA navy commission captain"
+		event "EA parlribbon award"
+		event "EA alphacontact award"
+		event "EA pugservice award"
+		conversation
+			`When you land, Alzaga comes to you instead of you going to Alzaga.`
+			choice
+				`	(Salute him and say, Good afternoon, sir.)`
+			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain. I would recommend going to Earth and buying the appropriate acoutrements."`
+	npc
+		system "Yed Prior"
+		government "Republic"
+		personality staying heroic
+		fleet "Large Republic" 2
+		fleet "Small Republic" 2
+	npc
+		system "Yed Prior"
+		government "Alpha"
+		personality hostile staying vindictive ramming daring
+		fleet "Large Independent Alpha" 7
+		fleet "Large CCOR Alpha" 7
+		
+mission "EA alpha FW takeover"
+	destination "New Iceland"
+	name "Urgently Report to New Iceland"
+	description "Travel to New Iceland in the Kaus Borealis system to receive orders."
+	landing
+	deadline 6
+	source "Earth"
+	to offer
+		has "event: EA navy commission captain"	
+	on offer
+		event "EA alpha breakout three"
+		conversation
+			`You receive a message on your communication system.`
+			choice
+				`	(Open the message.)`
+			`	"You are hereby required and directed to travel to New Iceland and report to the commanding officer of that base with the utmost dispatch. You will answer the contrary at your peril."`
+				accept
+
+
+mission "EA Refugees to Kursa"
+	landing
+	name "Escort Refugess to Farseer"
+	description "Convoy a group of refugees to Farseer in the Kursa system."
+	destination "Farseer"
+	to offer
+		has "EA alpha FW takeover: done"
+	on offer
+		conversation
+			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have captured a significant portion of the Free Worlds and we haven't been able to do much to help out the Militia. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, Zugenelgenubi, Vindemiatrix, Arcturus, Menkent, and Deneb.`
+			choice
+				`	"That sounds stupid, sir."`
+				`	"Why are we pulling back that far?"`
+					goto eartkwhy
+			`"I know it does but pulling that far back seems reasonable considering the forces at play here. We can't hold them off until we get reinforcements from up north and the Deep, but the Alphas will likely push the advantage they have now and drive us back to the systems I mentioned. We are evacuating as fast as we possibly can and your next orders are to escort a fleet of refugees to Farseer in the Kursa system. Can you leave immediately?"`
+			goto eartkcanyouleave
+			label eartkwhy
+			`	Admiral Alzaga looks at you quizzically. "I don't think I've brought you to a good enough understanding of the magnitude of the Alpha fleets, they are as powerful as the largest of the Republic and they easily outgun the Free Worlds We can't hold them off until we get reinforcements from up north and the Deep, but the Alphas will likely push the advantage they have now and drive us back to the systems I mentioned. We are evacuating as fast as we possibly can and your next orders are to escort a fleet of refugees to Farseer in the Kursa system. Can you leave immediately?"`
+			label eartkcanyouleave
+			choice
+				`	"What about the Free Worlds?"`
+				`	"Yes sir."`
+					accept
+			`	"The Free Worlds say they are capable of managing their own evacuation efforts, but I will be letting you go serve as a Militia officer for a while after you return"`
+				accept
+	on complete
+		payment 1000000
+		conversation
+			`	You receive a message from your communication system.`
+			choice
+				`	(Open the message)`
+			`	It is 1.00M credits with a message attached; "Get back here as soon as possible." -Alzaga`
+
+	npc accompany save
+		personality timid escort
+		government "Republic"
+		fleet "Large Republic Refugee"
+
+mission "EA Report to New Iceland 2"
+	landing
+	name "Report to New Iceland"
+	description "Proceed with the utmost dispatch to New Iceland in the Kaus Borealis system."
+	destination "New Iceland"
+	source "Farseer"
+	to offer
+		has "EA Refugees to Kursa: done"
+	to accept
+		has "EA Refugees to Kursa: done"
+	on complete
+		conversation
+			`The hubbub in the city is truly extraordinary, with even the high ranking Naval officers looking tuckered out, but the exhaustion of the last few days doesn't stop the landing areas looking like an ant hill that has been recently abused. You have no idea where to find Admiral Alzaga.`
+			choice
+				`	(Snag the nearest person)`
+					goto eartnitwosnag
+				`	(Wander Around)`
+					goto eartnitwowander
+			label eartnitwosnag
+			`	The first person you come within arms reach of is a brand new recruit who stumbles over his words as he is talking to you, he seems petrified that a high-ranking officer would want to speak to him. "W-What do you want, Sir?"`
+			choice 
+				`	"Do you know where I can find Admiral Alzaga?"
+			"I have no clue s-sir, but I can take you to my unit leader if you would like sir."
+			choice
+				`	"Do that, then."
+				`	"Forget it."`
+					goto eartnitwowander
+			`	He starts off through the crowds, turning every few steps to make sure you are following. After a short walk the recruit points at a you lieutenant. "That's him sir, I have to get back to work soon or I'll catch it." You thank him for your time and tap the lieutenant on the shoulder. He spins around saying loudly, "What now-- Oh... How can I help you sir?" Snapping to attention and saluting in the process.`
+			`	"Do you know where I can find Admiral Alzaga?" you ask.`
+			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
+				goto eartnitwoend
+			label eartnitwowander
+			`	You start to walk away from your ship into the busy crowds, and a young lieutenant catches your eye and comes over quickly. "How can I help you sir?" he asks cheerfully.`
+			choice
+				`	"Do you know where I can find Admiral Alzaga?"` 
+			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
+			label eartnitwoend
+
+mission "EA Report to New Argentina"
+	priority 
+	name "Report to Admiral Alzaga"
+	description "Report to Admiral Alzaga on New Argentina in the Vindemiatrix system to receive orders regarding defense preparation."
+	destination "New Argentina"
+	source "New Iceland" "spaceport"
+	to offer
+		has "EA Report to New Iceland 2: done"
+	on offer
+		conversation
+			`	It is easy enough to find your way to the DCO's office, given that everything indoors is copiously labelled. After waiting for a few minutes in the queue of officers and NCOs in need of clarification or new orders, you finally gain your audience with the commander, an wizened admiral that looks like he can barely stand.`
+			`	"Ah, the renowned Captain <last>," He says in a surprisingly clear voice (by his looks you expected little more than a dull creak) "What can I do for you today?"`
+			choice
+				`	"Where can I find Admiral Alzaga?"`
+			`	"Oh, yes," he replies, "Admiral Alzaga told me to tell you when you came that he had travelled to New Argentina to organize the formation of a strong blockade in the system. Incidentally he has been placed in command of all the Navy operations against the Alphas and there is talk of his commanding a combined fleet including the Free Worlds. You should head to Vindemiatrix immediately."`
+				accept
+	
+	on complete
+		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
+
+mission "EA Temp End"
+	source "New Argentina" "spaceport"
+	to offer
+		has "EA Report to New Argentina: done"
+	on offer
+		conversation
+			`The aide yells for the familiar queue to get out of the way and you are shown past the waiting officers into Alzaga's office.`
+			`	[This is currently the end of the Endgame Alpha storyline.You should now have access to the Navy and Navy Cruiser Licenses, as well as the appropriate insignia. Navy patrols are currently supported, so try those out.]`
+			`	[Thank you for playing this far, and be sure to check the download page for new updates!]`
+				decline
+
+

@@ -1,0 +1,72 @@
+outfit "Navy Uniform"
+	plural "Navy Uniforms"
+	category "Special"
+	cost 10000
+	thumbnail "outfit/uniform"
+	licenses
+		"Navy"
+	"mass" 0
+	"outfit space" 0
+	"insignia capacity" 1
+	description "Only Republic Navy officers are allowed to purchase this uniform."
+
+outfit "Commander Insignia"
+	plural "Commander Insignia"
+	category "Special"
+	cost 10000
+	thumbnail "outfit/commander"
+	licenses
+		"Navy"
+	"mass" 0
+	"outfit space" 0
+	"insignia capacity" -1
+	"ribbon capacity" 5
+	description "This insignia marks you as a commander in the Republic Navy."
+
+outfit "Captain Insignia"
+	plural "Captain Insignia"
+	category "Special"
+	cost 10000
+	thumbnail "outfit/captain"
+	licenses
+		"Navy Cruiser"
+	"mass" 0
+	"outfit space" 0
+	"insignia capacity" -1
+	"ribbon capacity" 10
+	description "This insignia marks you as a captain in the Republic Navy."
+
+outfit "Rear Admiral Insignia"
+	plural "Captain Insignia"
+	category "Special"
+	cost 10000
+	thumbnail "outfit/rearadmiral"
+	licenses
+		"Navy Carrier"
+	"mass" 0
+	"outfit space" 0
+	"insignia capacity" -1
+	"ribbon capacity" 15
+	description "This insignia marks you as a rear admiral in the Republic Navy."
+
+outfit "Pug Service Ribbon"
+	category "Unique"
+	thumbnail "outfit/pugribbon"
+	"ribbon capacity" -1
+	"unique" 1
+	description "This award was granted for your service against the Pug in the Free Worlds conflict"
+
+outfit "Alpha Contact Ribbon"
+	category "Unique"
+	thumbnail "outfit/alpharibbon"
+	"ribbon capacity" -1
+	"unique" 1
+	description "This award is granted (sometimes posthumously) to anyone who fights the Alphas."
+
+outfit "Parliamentary Commendation Ribbon"
+	category "Unique"
+	thumbnail "outfit/parlribbon"
+	"ribbon capacity" -1
+	"unique" 1
+	description "This award was given to you for your outstanding service (somewhat incongruously) for the combined forces against the Syndicate in the Free Worlds conflict."
+

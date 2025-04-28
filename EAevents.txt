@@ -1,0 +1,306 @@
+event "EA navy commission commander"
+	log `Became a member of the Republic Navy at the rank of Commander.`
+	government "Escort"
+		swizzle 0
+	set "license: Navy"
+	"salary: Republic" = 5000
+	planet Earth
+		outfitter "Navy Clothing"
+	planet Geminus
+		outfitter "Navy Clothing"
+	planet Farpoint
+		outfitter "Navy Clothing"
+	planet Valhalla
+		outfitter "Navy Clothing"
+	planet Bourne
+		outfitter "Navy Clothing"
+	planet Luna
+		outfitter "Navy Clothing"
+	planet Hephaestus
+		outfitter "Navy Clothing"
+
+event "EA navy commission captain"
+	log `Received captain's commission in the Republic Navy for outstanding service.`
+	government "Escort"
+		swizzle 0
+	set "license: Navy Cruiser"
+	"salary: Republic" = 10000
+
+event "EA navy commission admiral"
+	log `Received admiral's commission in the Republic Navy for command of a squadron.`
+	government "Escort"
+		swizzle 0
+	set "license: Navy Carrier"
+	"salary: Republic" = 15000
+
+event "EA repaint navy"
+	government "Escort"
+		swizzle 0
+
+event "EA parlribbon award"
+	outfit "Parliamentary Commendation Ribbon"
+
+event "EA pugservice award"
+	outfit "Pug Service Ribbon"
+
+event "EA alphacontact award"
+	outfit "Alpha Contact Ribbon"
+
+event "EA danforth chip processed"
+
+event "EA endgame alpha begins"
+	government "Alpha"
+		"attitude toward"
+			"Republic" -1
+			"Syndicate" 1
+			"Free Worlds" -1
+			Wanderer" -1
+	government "Free Worlds"
+		"attitude toward"
+			"Alpha" -1
+			"Republic" 1
+	government "Republic"
+		"attitude toward"
+			"Alpha" -1
+			"Free Worlds" 1
+event "EA bomb timer"
+
+event "EA Raven contact timer"
+
+event "EA campaign restart timer"
+
+event "EA alpha breakout one"
+	planet Bailey
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 1000			
+	planet Alvorada
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 1000
+		
+	planet Jakobsen
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Gagarin
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Thule
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Cornucopia
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Solace
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+	planet Gagarin
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	system Citadelle
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Belenos
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Men
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Alpherg
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Pherkad
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system "Kappa Centauri"
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+event "EA alpha breakout two"
+	planet Winter
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+			
+	planet Poisonwood
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Twinstar
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Bloodsea
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Darkstone
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Sundrinker
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	system "Yed Prior"
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Graffias
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Alniyat
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Antares
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Han
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Dschubba
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+
+event "EA alpha breakout three"
+	planet Lichen
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+			
+	planet Trinket
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Dancer
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Glaze
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Greenrock
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet Harmony
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	planet "New India"
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+	planet "New Portland"
+		government "Alpha"
+		tribute 100
+			fleet "Large CCOR Alpha" 5
+			fleet "Large Independent Alpha" 10
+		
+	system Atria
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Sargas
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Rastaban
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system "Delta Sagitarii"
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Shaula
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Girtab
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Aldhibain
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+	system Albaldah
+		government "Alpha"
+		fleet "Large CCOR Alpha" 500
+		fleet "Large Independent Alpha" 1000
+		
+
+event "EA alphas defeated"
