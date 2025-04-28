@@ -1,0 +1,17 @@
+name "Endgame Alpha"
+about `This plugin adds a storyline after the main storyline. The entire human race must fight a massive Alpha invasion. designed by chemtrailoperator (coding) and Living_Adblocker (story)`
+
+version 1.0
+authors
+	chemtrailoperator
+	Living_Adblocker
+tags
+	none
+dependencies
+	"game version" 0.10.10
+	requires
+		none
+	optional
+		none
+	conflicts
+		none
