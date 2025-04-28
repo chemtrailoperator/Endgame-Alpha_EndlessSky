@@ -1,0 +1,5 @@
+outfitter "Navy Clothing"
+	"Navy Uniform"
+	"Commander Insignia"
+	"Captain Insignia"
+	"Rear Admiral Insignia"
