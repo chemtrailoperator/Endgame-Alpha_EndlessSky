@@ -26,4 +26,6 @@ Planned changes:
       Shipyard on Quaru (RIng of Power) where you can buy heliarch ships when you get the Heliarch License
       
       Shipyards where you can buy just the hulls of ships, no outfits. 
+
+      Change to the Alpha fighting dynamic.
       
