@@ -28,4 +28,6 @@ Planned changes:
       Shipyards where you can buy just the hulls of ships, no outfits. 
 
       Change to the Alpha fighting dynamic.
+
+Make sure you create a game save at the start of the storyline, many features that isolate systems and add pirates are not removed by the storyline since it is incomplete. 
       
