@@ -1,0 +1,77 @@
+outfitter "Navy Clothing"
+	"Navy Uniform"
+	"Commander Insignia"
+	"Captain Insignia"
+	"Rear Admiral Insignia"
+
+outfitter "Heliarch"
+	"Ion Rain Gun"
+	"Ion Hail Turret"
+	"Bombardment Cannon"
+	"Bombardment Turret"
+	"Heliarch Attractor"
+	"Heliarch Repulsor"
+	"Finisher Pod"
+	"Finisher Maegrolain"
+	"Finisher Torpedo"
+	"Finisher Storage Tube"
+	"Cooling Module"
+	"Fuel Module"
+	"Scanning Module"
+	"Large Shield Module"
+	"Small Shield Module"
+	"Overcharged Shield Module"
+	"Small Repair Module"
+	"Large Repair Module"
+	"Overclocked Repair Module"
+	"Large Reactor Module"
+	"Small Reactor Module"
+	"Large Battery Module"
+	"Small Battery Module"
+	"Large Thrust Module"
+	"Small Thrust Module"
+	"Large Steering Module"
+	"Small Steering Module"
+	"Enforcer Confrontation Gear"
+	"Enforcer Riot Staff"
+
+shipyard "Heliarch"
+	"Heliarch Neutralizer"
+	"Heliarch Breacher"
+	"Heliarch Interdictor"
+	"Heliarch Hunter"
+	"Heliarch Judicator"
+	"Heliarch Punisher"
+	"Heliarch Pursuer"
+	"Heliarch Rover"
+	"Heliarch Stalker"
+
+planet "Ring of Power"
+	outfitter "Heliarch"
+	shipyard "Heliarch"
+
+shipyard "Navy Elite"
+	"Harbinger Supercarrier"
+	"Navy Supercruiser"
+	"Modified Gunboat"
+	"Hailstorm"
+	"Heavy Auxiliary"
+	"Hawkeye"
+outfitter "Navy ECM"
+	"ECM Suite Gen 2"
+
+event "EA Geminus Upgrade"
+	planet Geminus
+		shipyard "Navy Elite"
+
+mission "EA Geminus Upgrade"
+	landing
+	invisible
+	source Geminus
+	to offer
+		has "free worlds main plot completed"
+	on offer
+		event "EA geminus shipyard upgraded"
+		planet Geminus
+			shipyard "Navy Elite"
+		fail	

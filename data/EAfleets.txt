@@ -1,0 +1,576 @@
+fleet "Alpha Supercarrier"
+	government "Alpha"
+	names "pirate"
+	personality 
+		daring ramming unconstrained vindictive
+	variant 1
+		"Modified Supercarrier"
+		"Far Osk 27" 8
+		"Combat Drone" 8
+		"Tern" 8
+		"Lance" 2
+		"Dagger" 2
+		"Dropship" 2
+		"Far Lek 14" 8
+	variant 1
+		"Elite Marauder Supercarrier"
+		"Far Osk 27" 8
+		"Combat Drone" 8
+		"Tern" 8
+		"Lance" 2
+		"Dagger" 2
+		"Dropship" 2
+		"Far Lek 14" 8
+
+
+fleet "Large Syndicate Alpha"
+	government "Alpha"
+	names "pirate"
+	fighters
+		names "pirate"
+	cargo 2
+	personality
+		daring ramming unconstrained vindictive
+	variant 3
+		"Splinter"
+		"Quicksilver" 3
+	variant 2
+		"Splinter (Laser)"
+		"Quicksilver (Proton)" 3
+	variant 2
+		"Splinter (Proton)"
+		"Quicksilver" 3
+	variant 1
+		"Splinter" 2
+	variant 1
+		"Splinter"
+		"Splinter (Laser)"
+	variant 1
+		"Splinter"
+		"Splinter (Proton)"
+	variant 1
+		"Splinter" 3
+	variant 1
+		"Splinter"
+		"Splinter (Laser)" 2
+	variant 1
+		"Splinter"
+		"Splinter (Proton)" 2
+	variant 2
+		"Manta" 2
+	variant 1
+		"Manta (Nuclear)" 2
+	variant 3
+		"Manta (Nuclear)"
+		"Quicksilver" 2
+	variant 1
+		"Manta (Proton)"
+		"Quicksilver" 2
+	variant 2
+		"Quicksilver" 5
+	variant 1
+		"Quicksilver (Proton)" 5
+	variant 1
+		"Protector"
+	variant 1
+		"Vanguard"
+	variant 1
+		"Vanguard (Missile)"
+	variant 1
+		"Protector (Laser)"
+	variant 1
+		"Protector (Proton)"
+	variant 1
+		"Protector"
+		"Quicksilver" 2
+	variant 1
+		"Protector (Laser)"
+		"Quicksilver (Proton)" 2
+	variant 1
+		"Protector (Proton)"
+		"Quicksilver (Proton)" 2
+	variant 1
+		"Vanguard (Particle)"
+		"Quicksilver" 2
+	variant 1
+		"Vanguard"
+		"Quicksilver (Proton)" 2
+	variant 1
+		"Vanguard (Missile)"
+		"Quicksilver (Proton)" 2
+	variant 1
+		"Protector"
+		"Vanguard (Particle)"
+	variant 1
+		"Protector (Proton)"
+		"Vanguard"
+
+fleet "Large Southern Pirates Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming unconstrained vindictive
+	variant 2
+		"Sparrow" 4
+	variant 1
+		"Sparrow (Gatling)" 3
+	variant 5
+		"Argosy"
+	variant 3
+		"Argosy (Blaster)"
+	variant 2
+		"Argosy (Laser)"
+	variant 2
+		"Argosy (Missile)"
+	variant 2
+		"Argosy (Turret)"
+	variant 1
+		"Modified Argosy"
+	variant 1
+		"Modified Argosy (Heavy)"
+	variant 1
+		"Modified Argosy (Blaster)"
+	variant 1
+		"Modified Argosy (Missile)"
+	variant 1
+		"Modified Argosy (Javelin)"
+	variant 1
+		"Modified Argosy (Gatling)"
+	variant 4
+		"Clipper"
+	variant 2
+		"Clipper (Heavy)"
+	variant 2
+		"Clipper (Speedy)"
+	variant 1
+		"Osprey"
+		"Fury"
+	variant 1
+		"Osprey"
+		"Sparrow"
+	variant 1
+		"Osprey (Missile)"
+	variant 1
+		"Osprey (Laser)"
+	variant 2
+		"Clipper"
+		"Hawk"
+	variant 1
+		"Clipper (Heavy)"
+		"Hawk (Rocket)"
+	variant 2
+		"Hawk (Bomber)"
+		"Sparrow" 3
+	variant 2
+		"Fury (Bomber)"
+		"Sparrow" 3
+	variant 1
+		"Clipper (Speedy)"
+		"Hawk (Speedy)"
+	variant 1
+		"Hawk (Bomber)"
+		"Fury (Gatling)" 2
+	variant 1
+		"Fury (Bomber)"
+		"Fury (Gatling)" 2
+	variant 3
+		"Argosy"
+		"Hawk"
+	variant 1
+		"Argosy (Blaster)"
+		"Hawk (Rocket)"
+	variant 1
+		"Argosy (Laser)"
+		"Hawk (Speedy)"
+	variant 1
+		"Argosy (Turret)"
+		"Hawk (Speedy)"
+	variant 1
+		"Argosy (Missile)"
+		"Hawk (Rocket)"
+	variant 1
+		"Modified Argosy"
+		"Sparrow" 2
+	variant 1
+		"Modified Argosy (Heavy)"
+		"Sparrow" 2
+	variant 1
+		"Modified Argosy (Blaster)"
+		"Sparrow" 2
+	variant 1
+		"Modified Argosy (Missile)" 2
+	variant 1
+		"Fury (Heavy)" 2
+		"Modified Argosy (Missile)"
+	variant 1
+		"Modified Argosy (Javelin)"
+		"Sparrow"
+	variant 1
+		"Modified Argosy (Gatling)"
+		"Hawk"
+		"Sparrow"
+	variant 4
+		"Bastion"
+	variant 2
+		"Bastion (Heavy)"
+	variant 2
+		"Bastion (Laser)"
+	variant 2
+		"Bastion (Gatling)"
+	variant 2
+		"Falcon"
+	variant 1
+		"Falcon"
+		"Sparrow" 3
+	variant 1
+		"Falcon (Heavy)"
+	variant 1
+		"Falcon (Laser)"
+	variant 1
+		"Falcon (Javelin)"
+
+fleet "Large CCOR Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming unconstrained vindictive staying hostile
+	variant 2
+		"Berserker (CCOR)" 2
+	variant 3
+		"Firebird (CCOR)"
+	variant 1
+		"Firebird (CCOR)"
+		"Berserker (CCOR)"
+	variant 1
+		"Firebird (CCOR)"
+		"Enforcer"
+	variant 1
+		"Saber (CCOR Gatling)"
+		"Enforcer (CCOR)"
+	variant 1
+		"Saber (CCOR Javelin)"
+		"Berserker (CCOR)"
+	variant 1
+		"Leviathan (CCOR)"
+	variant 1
+		"Leviathan (CCOR)"
+		"Saber (CCOR Gatling)"
+		"Enforcer (CCOR)"
+		"Berserker (CCOR)"
+	variant 2
+		"Berserker (CCOR)" 2
+	variant 3
+		"Firebird (CCOR)"
+	variant 1
+		"Firebird (CCOR)"
+		"Berserker (CCOR)"
+	variant 1
+		"Firebird (CCOR)"
+		"Enforcer"
+	variant 1
+		"Saber (CCOR Gatling)"
+		"Enforcer (CCOR)"
+	variant 1
+		"Saber (CCOR Javelin)"
+		"Berserker (CCOR)"
+	variant 1
+		"Leviathan (CCOR)"
+	variant 1
+		"Leviathan (CCOR)"
+		"Saber (CCOR Gatling)"
+		"Enforcer (CCOR)"
+		"Berserker (CCOR)"
+
+fleet "Large Independent Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming uncosntrained vindictive staying hostile
+	variant 3
+		"Sparrow" 4
+	variant 5
+		"Argosy"
+	variant 3
+		"Argosy (Blaster)"
+	variant 2
+		"Argosy (Laser)"
+	variant 2
+		"Argosy (Missile)"
+	variant 2
+		"Argosy (Turret)"
+	variant 4
+		"Clipper"
+	variant 2
+		"Clipper (Heavy)"
+	variant 2
+		"Clipper (Speedy)"
+	variant 2
+		"Clipper"
+		"Hawk"
+	variant 1
+		"Clipper (Heavy)"
+		"Hawk (Rocket)"
+	variant 1
+		"Clipper (Speedy)"
+		"Hawk (Speedy)"
+	variant 3
+		"Argosy"
+		"Hawk"
+	variant 1
+		"Argosy (Blaster)"
+		"Hawk (Rocket)"
+	variant 1
+		"Argosy (Laser)"
+		"Hawk (Speedy)"
+	variant 1
+		"Argosy (Turret)"
+		"Hawk (Speedy)"
+	variant 1
+		"Argosy (Missile)"
+		"Hawk (Rocket)"
+	variant 4
+		"Bastion"
+	variant 2
+		"Bastion (Heavy)"
+	variant 2
+		"Bastion (Laser)"
+	variant 2
+		"Falcon"
+	variant 1
+		"Falcon (Heavy)"
+	variant 1
+		"Falcon (Laser)"
+fleet "Large Republic Refugee"
+	government "Republic"
+	names "republic capital"
+	variant
+		"Auxiliary (Cargo Mark II)"
+		"Auxiliary (Cargo Mark II)"
+		"Auxiliary (Cargo Mark II)"
+		"Auxiliary (Cargo Mark II)"
+		"Auxiliary (Cargo Mark II)"
+	personality
+		timid
+
+fleet "EA Small Republic"
+	government "Republic"
+	names "republic small"
+	cargo 0
+	personality
+		heroic opportunistic
+	variant 6
+		"Rainmaker"
+		"Hailstorm"
+		"Modified Gunboat"
+	variant 5
+		"Modified Gunboat"
+		"Rainmaker"
+	variant 4
+		"Frigate"
+		"Rainmaker"
+	variant 4 
+		"Modified Gunboat"
+		"Gunboat"
+	variant 5
+		"Frigate"
+		"Hailstorm"
+		"Hawkeye"
+	variant 3
+		"Gunboat"
+		"Hailstorm"
+	variant 1
+		"Rainmaker" 3
+	variant 6
+		"Gunboat"
+	variant 4
+		"Modified Gunboat"
+	variant 4
+		"Hailstorm"
+	
+fleet "EA Large Republic"
+	government "Republic"
+	names "republic capital"
+	fighters
+		names "republic fighter"
+	cargo 0
+	personality
+		heroic opportunistic
+	variant 5
+		"Frigate" 2
+		"Hailstorm"
+		"Gunboat"
+	variant 3
+		"Cruiser"
+		"Combat Drone" 4
+	variant 4
+		"Navy Supercruiser"
+		"Combat Drone" 6
+		"Modified Gunboat"
+	variant 3
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate"
+		"Rainmaker"
+	variant 2
+		"Carrier"
+		"Lance" 8
+		"Combat Drone" 6
+		"Hawkeye"
+		"Modified Gunboat"
+	variant 1
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate" 2
+		"Hawkeye"
+	variant 1
+		"Frigate"
+		"Rainmaker" 2
+		"Gunboat"
+		"Modified Gunboat" 2
+
+fleet "EA Capital Republic"
+	government "Republic"
+	names "republic capital"
+	fighters
+		names "republic fighter"
+	cargo 0
+	personality
+		heroic opportunistic
+	variant 3
+		"Cruiser"
+		"Combat Drone" 4
+		"Navy Supercruiser"
+		"Combat Drone" 6
+		"Hawkeye"
+		"Hailstorm"
+	variant 4
+		"Navy Supercruiser" 2
+		"Combat Drone" 12
+		"Modified Gunboat" 2
+		"Hawkeye"
+		"Hailstorm"
+	variant 3
+		"Cruiser" 2
+		"Combat Drone" 8
+		"Frigate" 2
+		"Hawkeye"
+		"Hailstorm" 2
+	variant 2
+		"Carrier"
+		"Lance" 8
+		"Combat Drone" 6
+		"Hawkeye"
+		"Modified Gunboat"
+	variant 1
+		"Carrier"
+		"Lance" 8
+		"Combat Drone" 6
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate" 2
+		"Hawkeye" 2
+		"Rainmaker"
+		"Hailstorm"
+		"Gunboat"
+		"Modified Gunboat"
+	variant 1
+		"Harbinger Supercarrier"
+		"Lance" 10
+		"Combat Drone" 10
+		"Navy Supercruiser"
+		"Combat Drone" 4
+		"Surveillance Drone" 2
+		"Frigate" 2
+		"Hawkeye" 2
+		"Rainmaker"
+		"Hailstorm"
+		"Gunboat"
+		"Modified Gunboat"
+	variant 1
+		"Cruiser"
+		"Combat Drone" 4
+		"Navy Supercruiser"
+		"Combat Drone" 6
+		"Frigate" 2
+		"Hawkeye"
+		"Modified Gunboat" 2
+		"Hailstorm" 2
+
+fleet " EA Republic Logistics"
+	government "Republic"
+	names "republic capital"
+	fighters
+		names "republic fighter"
+	cargo 3
+	personality
+		heroic opportunistic
+	variant 19
+		"Auxiliary"
+		"Dropship" 2
+		"Lance" 2
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate"
+		"Gunboat" 2
+	variant 19
+		"Auxiliary"
+		"Dropship" 2
+		"Lance" 2
+		"Heavy Auxiliary"
+		"Lance" 4
+		"Hailstorm"
+		"Hawkeye"
+		"Modified Gunboat"
+	variant 19
+		"Auxiliary (Cargo)"
+		"Dropship" 2
+		"Lance" 2
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate"
+		"Gunboat" 2
+	variant 19
+		"Auxiliary (Transport)"
+		"Dropship" 2
+		"Lance" 2
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate"
+		"Gunboat" 2
+	variant 1
+		"Auxiliary (Cargo)" 3
+		"Dropship" 3
+		"Lance" 9
+		"Cruiser" 2
+		"Combat Drone" 8
+	variant 1
+		"Auxiliary (Transport)"
+		"Auxiliary (Cargo)"
+		"Auxiliary"
+		"Dropship" 6
+		"Lance" 6
+		"Cruiser" 2
+		"Combat Drone" 8
+	variant 1
+		"Auxiliary (Transport)" 3
+		"Dropship" 9
+		"Lance" 3
+		"Cruiser" 2
+		"Combat Drone" 8
+
+fleet "Navy Surveillance"
+	government "Republic"
+	names "republic capital"
+	fighters
+		names "republic fighter"
+	cargo 0
+	personality
+		surveillance opportunistic
+	variant 10
+		"Cruiser"
+		"Surveillance Drone" 4
+	variant 10
+		"Gunboat" 2

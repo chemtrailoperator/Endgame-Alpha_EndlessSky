@@ -1,0 +1,159 @@
+mission "Light Navy Patrol (Commander)"
+	name "Light Navy Patrol"
+	job
+	repeat
+	description "Patrol the systems to and from <waypoints>."
+	source
+		government "Republic"
+	waypoint
+		distance 2 3
+		not government "Syndicate"
+	to offer
+		random < 50
+		has "event: EA navy commission commander"
+	on waypoint
+		dialog "You have reached the system you were supposed to patrol. After taking full scans, you prepare for the return journey to <planet>."
+	on visit
+		dialog "You have returned to <planet>, but you have not visited the required system."
+	on complete
+		dialog "You complete the necessary paperwork, and accept your payment of <payment>."
+		payment
+		payment 50000
+
+mission "Medium Navy Patrol (Commander)"
+	name "Medium Navy Patrol"
+	job
+	repeat
+	description "Patrol the systems to and from <waypoints>."
+	source
+		government "Republic"
+	waypoint
+		distance 2 5
+		not government "Syndicate"
+	waypoint
+		distance 2 5
+		not government "Syndicate"
+	
+	to offer
+		random < 40
+		has "event: EA navy commission commander"
+		"Light Navy Patrol (Commander): done" >= 3
+	on waypoint
+		dialog "You have reached the system you were supposed to patrol. After taking full scans, you prepare for the return journey to <planet>."
+	on visit
+		dialog "You have returned to <planet>, but you have not visited the required systems."
+	on complete
+		dialog "You complete the necessary paperwork, and accept your payment of <payment>."
+		payment
+		payment 150000
+
+mission "Heavy Navy Patrol (Commander)"
+	name "Heavy Navy Patrol"
+	job
+	repeat
+	description "Patrol the systems to and from <waypoints>."
+	source
+		government "Republic"
+	waypoint
+		distance 2 7
+		not government "Syndicate"
+	waypoint
+		distance 2 7
+		not government "Syndicate"
+	waypoint
+		distance 2 7
+		not government "Syndicate"
+	to offer
+		random < 30
+		has "event: EA navy commission commander"
+		has "Medium Navy Patrol (Commander): done"
+	on waypoint
+		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
+	on visit
+		dialog "You have returned to <planet>, but you have not visited the required systems."
+	on complete
+		dialog "You complete the necessary paperwork, and accept your payment of <payment>."
+		payment
+		payment 250000
+
+mission "Light Navy Fleet Patrol (Captain)"
+	name "Light Fleet Patrol"
+	job
+	repeat
+	description "Command a republic patrol fleet as a commodore to and from <waypoints>."
+	source
+		government "Republic"
+	waypoint
+		distance 2 4
+		not government "Syndicate"
+	to offer
+		random < 40
+		has "event: EA navy commission captain"
+		has "Heavy Navy Patrol (Commander): done"
+		has not "event: EA navy commission admiral"
+	on waypoint
+		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
+	on visit
+		dialog "You have returned to <planet>, but you have not patrolled the required systems."
+	on complete
+		dialog "You complete the necessary paperwork, and accept your payment of <payment>."
+		payment
+		payment 100000
+	npc accompany
+		personality escort
+		fleet "EA Small Republic" 1
+
+mission "Medium Navy Fleet Patrol (Captain)"
+	name "Medium Fleet Patrol"
+	job
+	repeat
+	description "Command a republic patrol fleet as a commodore to and from <waypoints>."
+	source
+		government "Republic"
+	waypoint
+		distance 2 8
+		not government "Syndicate"
+	to offer
+		random < 30
+		has "event: EA navy commission captain"
+		has "Light Navy Fleet Patrol (Captain): done" 2
+		has not "event: EA navy commission admiral"
+	on waypoint
+		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
+	on visit
+		dialog "You have returned to <planet>, but you have not patrolled the required systems."
+	on complete
+		dialog "You complete the necessary paperwork, and accept your payment of <payment>."
+		payment
+		payment 200000
+	npc accompany
+		personality escort
+		fleet "EA Small Republic" 2
+
+mission "Heavy Navy Fleet Patrol (Captain)"
+	name "Heavy Fleet Patrol"
+	job
+	repeat
+	description "Command a republic patrol fleet as a commodore to and from <waypoints>."
+	source
+		government "Republic"
+	waypoint
+		distance 2 10
+		not government "Syndicate"
+	to offer
+		random < 25
+		has "event: EA navy commission captain"
+		has "Medium Navy Fleet Patrol (Captain): done" 2
+		has not "event: EA navy commission admiral"
+	on waypoint
+		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
+	on visit
+		dialog "You have returned to <planet>, but you have not patrolled the required systems."
+	on complete
+		dialog "You complete the necessary paperwork, and accept your payment of <payment>."
+		payment
+		payment 300000
+	npc accompany
+		personality escort
+		fleet "EA Small Republic"
+		fleet "EA Large Republic"
