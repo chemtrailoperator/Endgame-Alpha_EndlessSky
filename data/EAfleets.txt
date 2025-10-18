@@ -1,9 +1,9 @@
-fleet "Alpha Supercarrier"
-	government "Alpha"
+fleet "Omega Guardian"
+	government "Omega"
 	names "pirate"
 	personality 
-		daring ramming unconstrained vindictive
-	variant 1
+		daring ramming unconstrained vindictive 
+	variant 10
 		"Modified Supercarrier"
 		"Far Osk 27" 8
 		"Combat Drone" 8
@@ -12,8 +12,17 @@ fleet "Alpha Supercarrier"
 		"Dagger" 2
 		"Dropship" 2
 		"Far Lek 14" 8
-	variant 1
+	variant 10
 		"Elite Marauder Supercarrier"
+		"Far Osk 27" 8
+		"Combat Drone" 8
+		"Tern" 8
+		"Lance" 2
+		"Dagger" 2
+		"Dropship" 2
+		"Far Lek 14" 8
+	variant 5
+		"Sestor Supercarrier"
 		"Far Osk 27" 8
 		"Combat Drone" 8
 		"Tern" 8
@@ -235,7 +244,7 @@ fleet "Large CCOR Alpha"
 	names "pirate"
 	cargo 1
 	personality
-		daring ramming unconstrained vindictive staying hostile
+		daring ramming unconstrained vindictive staying 
 	variant 2
 		"Berserker (CCOR)" 2
 	variant 3
@@ -288,7 +297,7 @@ fleet "Large Independent Alpha"
 	names "pirate"
 	cargo 1
 	personality
-		daring ramming uncosntrained vindictive staying hostile
+		daring ramming  vindictive staying 
 	variant 3
 		"Sparrow" 4
 	variant 5
@@ -343,15 +352,739 @@ fleet "Large Independent Alpha"
 		"Falcon (Heavy)"
 	variant 1
 		"Falcon (Laser)"
+
+fleet "Large FW Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming unconstrained vindictive
+	variant 10
+		"Bastion"
+	variant 5
+		"Bastion (Heavy)"
+	variant 5
+		"Bastion (Laser)"
+	variant 8
+		"Osprey"
+		"Fury"
+	variant 4
+		"Osprey (Missile)"
+		"Fury (Missile)"
+	variant 4
+		"Osprey (Laser)"
+		"Fury (Laser)"
+	variant 4
+		"Argosy"
+	variant 3
+		"Argosy (Blaster)"
+	variant 2
+		"Argosy (Laser)"
+	variant 2
+		"Argosy (Missile)"
+	variant 2
+		"Argosy (Turret)"
+	variant 6
+		"Bastion"
+		"Osprey"
+	variant 3
+		"Bastion (Heavy)"
+		"Osprey (Missile)"
+	variant 3
+		"Bastion (Laser)"
+		"Osprey (Laser)"
+	variant 4
+		"Bastion"
+		"Sparrow" 2
+	variant 2
+		"Bastion (Heavy)"
+		"Sparrow" 2
+	variant 2
+		"Bastion (Laser)"
+		"Sparrow" 2
+	variant 2
+		"Falcon"
+	variant 1
+		"Falcon (Heavy)"
+	variant 1
+		"Falcon (Laser)"
+	variant 2
+		"Falcon"
+		"Hawk" 2
+		"Sparrow" 3
+	variant 1
+		"Falcon (Heavy)"
+		"Hawk" 2
+		"Sparrow" 3
+	variant 1
+		"Falcon (Laser)"
+		"Hawk"
+		"Hawk (Plasma)"
+		"Sparrow" 3
+	variant 4
+		"Falcon"
+		"Bastion"
+		"Hawk"
+	variant 2
+		"Falcon (Heavy)"
+		"Bastion (Heavy)"
+		"Hawk (Rocket)"
+	variant 2
+		"Hawk (Rocket)" 2
+		"Sparrow" 4
+	variant 2
+		"Falcon (Heavy)"
+		"Bastion (Heavy)"
+		"Hawk (Bomber)"
+	variant 2
+		"Falcon (Laser)"
+		"Bastion (Laser)"
+		"Hawk (Speedy)"
+	variant 2
+		"Falcon (Laser)"
+		"Bastion (Laser)"
+		"Hawk (Bomber)"
+	variant 2
+		"Bastion (Heavy)"
+		"Fury (Bomber)" 2
+		"Sparrow" 2
+	variant 2
+		"Falcon (Heavy)"
+		"Fury (Bomber)" 2
+		"Sparrow" 4
+	variant 1
+		"Hawk" 4
+	variant 1
+		"Hawk (Plasma)" 4
+	variant 1
+		"Hawk (Plasma)" 2
+		"Hawk (Bomber)" 2
+
+fleet "Small Republic Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive 
+	variant 6
+		"Rainmaker" 2
+	variant 5
+		"Gunboat"
+		"Rainmaker"
+	variant 4
+		"Frigate"
+	variant 3
+		"Gunboat" 2
+	variant 1
+		"Rainmaker" 3
+	variant 6
+		"Gunboat"
+
+fleet "Large Republic Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 5
+		"Frigate" 2
+		"Rainmaker"
+		"Gunboat"
+	variant 3
+		"Cruiser"
+		"Combat Drone" 4
+	variant 3
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate"
+		"Rainmaker"
+	variant 2
+		"Carrier"
+		"Lance" 8
+		"Combat Drone" 6
+	variant 1
+		"Carrier"
+		"Lance" 8
+		"Combat Drone" 6
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate" 2
+		"Rainmaker" 2
+		"Gunboat" 2
+	variant 1
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate" 2
+	variant 1
+		"Frigate"
+		"Rainmaker" 2
+		"Gunboat"
+
+fleet "Pirate Raid Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 3
+		"Argosy (Blaster)"
+	variant 2
+		"Argosy (Laser)"
+	variant 2
+		"Argosy (Turret)"
+	variant 1
+		"Modified Argosy"
+	variant 1
+		"Modified Argosy (Heavy)"
+	variant 1
+		"Modified Argosy (Blaster)"
+	variant 2
+		"Clipper (Speedy)"
+	variant 1
+		"Clipper"
+		"Hawk"
+	variant 1
+		"Clipper (Speedy)"
+		"Hawk (Speedy)"
+	variant 6
+		"Hawk (Speedy)" 3
+	variant 4
+		"Hawk" 2
+	variant 4
+		"Fury" 2
+	variant 1
+		"Argosy (Blaster)"
+		"Hawk"
+	variant 1
+		"Argosy (Laser)"
+		"Hawk (Speedy)"
+	variant 1
+		"Argosy (Turret)"
+		"Hawk (Speedy)"
+	variant 1
+		"Argosy"
+		"Hawk"
+	variant 1
+		"Modified Argosy (Heavy)"
+		"Hawk (Speedy)" 2
+	variant 1
+		"Modified Argosy (Blaster)"
+		"Raven (Afterburner)" 2
+	variant 2
+		"Falcon"
+	variant 1
+		"Falcon (Heavy)"
+	variant 1
+		"Falcon (Laser)"
+	variant 5
+		"Quicksilver (Proton)" 3
+	variant 2
+		"Quicksilver" 3
+	variant 3
+		"Splinter"
+		"Quicksilver (Proton)"
+	variant 3
+		"Splinter (Laser)"
+		"Quicksilver"
+	variant 3
+		"Splinter (Proton)"
+		"Quicksilver"
+	variant 4
+		"Manta (Proton)"
+	variant 2
+		"Manta"
+	variant 2
+		"Splinter" 2
+	variant 1
+		"Splinter (Laser)" 2
+	variant 1
+		"Splinter (Proton)" 2
+	variant 2
+		"Firebird"
+	variant 1
+		"Firebird (Laser)"
+	variant 1
+		"Firebird (Plasma)"
+	variant 4
+		"Firebird"
+	variant 2
+		"Firebird (Laser)"
+	variant 2
+		"Firebird (Plasma)"
+	variant 3
+		"Firebird"
+		"Corvette"
+	variant 1
+		"Firebird (Plasma)"
+		"Corvette (Speedy)"
+	variant 2
+		"Firebird"
+		"Berserker" 2
+	variant 1
+		"Firebird (Plasma)"
+		"Fury (Missile)"
+	variant 1
+		"Firebird (Missile)"
+		"Fury"
+	variant 8
+		"Raven (Afterburner)" 2
+	variant 2
+		"Raven (Heavy)" 2
+	variant 1
+		"Headhunter (Particle)" 3
+	variant 1
+		"Fury (Heavy)" 2
+		"Firebird (Missile)"
+	variant 2
+		"Leviathan"
+		"Firebird"
+	variant 2
+		"Leviathan (Laser)"
+		"Firebird"
+	variant 2
+		"Leviathan (Heavy)"
+		"Firebird (Plasma)"
+	variant 1
+		"Berserker" 3
+	variant 8
+		"Berserker (Afterburner)" 3
+	variant 2
+		"Berserker (Afterburner)" 2
+	variant 3
+		"Scout (Speedy)" 3
+
+fleet "Marauder fleet I Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 9
+		"Marauder Quicksilver"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 9
+		"Marauder Quicksilver"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 1
+		"Marauder Quicksilver (Engines)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 1
+		"Marauder Quicksilver (Weapons)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 9
+		"Marauder Raven"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 9
+		"Marauder Raven"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 1
+		"Marauder Raven (Engines)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 1
+		"Marauder Raven (Weapons)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+
+fleet "Marauder fleet II Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 4
+		"Marauder Quicksilver"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 4
+		"Marauder Quicksilver"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 1
+		"Marauder Quicksilver (Engines)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 1
+		"Marauder Quicksilver (Weapons)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 4
+		"Marauder Raven"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 4
+		"Marauder Raven"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 1
+		"Marauder Raven (Engines)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 1
+		"Marauder Raven (Weapons)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+
+fleet "Marauder fleet III Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 3
+		"Marauder Quicksilver"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 3
+		"Marauder Quicksilver"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 1
+		"Marauder Quicksilver (Engines)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 1
+		"Marauder Quicksilver (Weapons)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 3
+		"Marauder Raven"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 3
+		"Marauder Raven"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 1
+		"Marauder Raven (Engines)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+	variant 1
+		"Marauder Raven (Weapons)"
+		"Marauder Arrow" 2
+		"Marauder Bounder" 2
+
+fleet "Marauder fleet IV Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 8
+		"Marauder Firebird"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 1
+		"Marauder Firebird (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 1
+		"Marauder Firebird (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 16
+		"Marauder Manta"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Manta (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Manta (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 16
+		"Marauder Splinter"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Splinter (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Splinter (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+
+fleet "Marauder fleet V Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 4
+		"Marauder Firebird"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 1
+		"Marauder Firebird (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 1
+		"Marauder Firebird (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 8
+		"Marauder Manta"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Manta (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Manta (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 8
+		"Marauder Splinter"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Splinter (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Splinter (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+
+fleet "Marauder fleet VI Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 2
+		"Marauder Firebird"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 1
+		"Marauder Firebird (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 1
+		"Marauder Firebird (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 4
+		"Marauder Manta"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Manta (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Manta (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 4
+		"Marauder Splinter"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Splinter (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+	variant 2
+		"Marauder Splinter (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+
+fleet "Marauder fleet VII Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 18
+		"Marauder Falcon"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 1
+		"Marauder Falcon (Weapons)"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 1
+		"Marauder Falcon (Engines)"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 18
+		"Marauder Leviathan"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Engines)"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Weapons)"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Weapons)"
+		"Firebird (Laser)" 3
+
+fleet "Marauder fleet VIII Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 8
+		"Marauder Falcon"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 1
+		"Marauder Falcon (Weapons)"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 1
+		"Marauder Falcon (Engines)"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 8
+		"Marauder Leviathan"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Engines)"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Weapons)"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+
+fleet "Marauder fleet IX Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 3
+		"Marauder Falcon"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 1
+		"Marauder Falcon (Weapons)"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 1
+		"Marauder Falcon (Engines)"
+		"Osprey"
+		"Osprey (Missile)"
+		"Osprey (Laser)"
+	variant 3
+		"Marauder Leviathan"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Engines)"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Weapons)"
+		"Firebird"
+		"Firebird (Plasma)"
+		"Firebird (Missile)"
+	variant 1
+		"Marauder Leviathan (Weapons)"
+		"Firebird (Laser)" 3
+		"Firebird (Missile)"
+
+fleet "Marauder fleet X Alpha"
+	government "Alpha"
+	names "pirate"
+	cargo 1
+	personality
+		daring ramming  vindictive staying 
+	variant 3
+		"Marauder Falcon"
+		"Marauder Firebird"
+		"Marauder Raven (Weapons)"
+		"Marauder Quicksilver (Engines)"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 3
+		"Marauder Falcon"
+		"Marauder Firebird"
+		"Marauder Raven (Engines)"
+		"Marauder Quicksilver (Weapons)"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 2
+		"Marauder Falcon (Weapons)"
+		"Marauder Firebird (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+	variant 2
+		"Marauder Falcon (Engines)"
+		"Marauder Firebird (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+	variant 3
+		"Marauder Leviathan"
+		"Marauder Firebird"
+		"Marauder Raven (Engines)"
+		"Marauder Quicksilver (Weapons)"
+		"Marauder Arrow (Engines)"
+		"Marauder Bounder (Weapons)"
+	variant 3
+		"Marauder Leviathan"
+		"Marauder Firebird"
+		"Marauder Raven (Weapons)"
+		"Marauder Quicksilver (Engines)"
+		"Marauder Arrow (Weapons)"
+		"Marauder Bounder (Engines)"
+	variant 2
+		"Marauder Leviathan (Engines)"
+		"Marauder Firebird (Weapons)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+	variant 2
+		"Marauder Leviathan (Weapons)"
+		"Marauder Firebird (Engines)"
+		"Marauder Raven"
+		"Marauder Quicksilver"
+		"Marauder Arrow"
+		"Marauder Bounder"
+
 fleet "Large Republic Refugee"
 	government "Republic"
 	names "republic capital"
 	variant
-		"Auxiliary (Cargo Mark II)"
-		"Auxiliary (Cargo Mark II)"
-		"Auxiliary (Cargo Mark II)"
-		"Auxiliary (Cargo Mark II)"
-		"Auxiliary (Cargo Mark II)"
+		"Auxiliary (Cargo Mark II)" 5
 	personality
 		timid
 
@@ -498,6 +1231,82 @@ fleet "EA Capital Republic"
 		"Hawkeye"
 		"Modified Gunboat" 2
 		"Hailstorm" 2
+
+fleet "Small Republic"
+	government "Republic"
+	names "republic small"
+	cargo 0
+	personality
+		heroic opportunistic
+	add variant 6
+		"Rainmaker"
+		"Hailstorm"
+		"Modified Gunboat"
+	add variant 5
+		"Modified Gunboat"
+		"Rainmaker"
+	add variant 4
+		"Frigate"
+		"Rainmaker"
+	add variant 4
+		"Modified Gunboat"
+		"Gunboat"
+	add variant 5
+		"Frigate"
+		"Hailstorm"
+		"Hawkeye"
+	add variant 3
+		"Gunboat"
+		"Hailstorm"
+	add variant 2
+		"Rainmaker" 3
+	add variant 6
+		"Gunboat"
+	add variant 4
+		"Modified Gunboat"
+	add variant 4
+		"Hailstorm" 2
+
+fleet "Large Republic"
+	government "Republic"
+	names "republic capital"
+	fighters
+		names "republic fighter"
+	cargo 0
+	personality
+		heroic opportunistic
+	add variant 2
+		"Frigate" 2
+		"Hailstorm"
+		"Gunboat"
+	add variant 1
+		"Cruiser"
+		"Combat Drone" 4
+	add variant 1
+		"Navy Supercruiser"
+		"Combat Drone" 6
+		"Modified Gunboat"
+	add variant 1
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate"
+		"Rainmaker"
+	add variant 1
+		"Carrier"
+		"Lance" 8
+		"Combat Drone" 6
+		"Hawkeye"
+		"Modified Gunboat"
+	add variant 1
+		"Cruiser"
+		"Combat Drone" 4
+		"Frigate" 2
+		"Hawkeye"
+	add variant 1
+		"Frigate"
+		"Rainmaker" 2
+		"Gunboat"
+		"Modified Gunboat" 2
 
 fleet " EA Republic Logistics"
 	government "Republic"

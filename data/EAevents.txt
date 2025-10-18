@@ -1,9 +1,7 @@
 event "EA navy commission commander"
-	log `Became a member of the Republic Navy at the rank of Commander.`
+	
 	government "Escort"
 		swizzle 0
-	set "license: Navy"
-	"salary: Republic" = 5000
 	planet Earth
 		outfitter "Navy Clothing"
 	planet Geminus
@@ -20,35 +18,104 @@ event "EA navy commission commander"
 		outfitter "Navy Clothing"
 	planet Hephaestus
 		outfitter "Navy Clothing"
+	planet "Laki Nemparu"
+		outfitter "Korath Minelayer"
+	set "license: Navy"
+	"salary: Republic" = 5000
+	log `Became an officer of the Republic Navy at the rank of Commander.`
 
 event "EA navy commission captain"
-	log `Received captain's commission in the Republic Navy for outstanding service.`
 	government "Escort"
 		swizzle 0
+	log `Received captain's commission in the Republic Navy for outstanding service.`
 	set "license: Navy Cruiser"
 	"salary: Republic" = 10000
 
 event "EA navy commission admiral"
-	log `Received admiral's commission in the Republic Navy for command of a squadron.`
 	government "Escort"
 		swizzle 0
+	log `Received admiral's commission in the Republic Navy for command of a squadron.`
 	set "license: Navy Carrier"
 	"salary: Republic" = 15000
+
+event "EA navy certified logistics"
+	government "Escort"
+		swizzle 0		
+	log `Received certification to fly and purchase the Navy Auxiliary.`
+	set "license: Navy Auxiliary"
+	"salary: Republic" = 16000
 
 event "EA repaint navy"
 	government "Escort"
 		swizzle 0
 
 event "EA parlribbon award"
-	outfit "Parliamentary Commendation Ribbon"
+
+mission "EA parlribbon award"
+	invisible
+	source
+		attributes planet
+	to offer
+		has "event: EA parlribbon award"
+		or
+			has "outfit: Commander Insignia"
+			has "outfit: Captain Insignia"
+			has "outfit: Rear Admiral Insignia"
+	to accept
+		1
+	on accept
+		action
+			outfit "Parliamentary Commendation Ribbon"
+		``
+			fail
 
 event "EA pugservice award"
-	outfit "Pug Service Ribbon"
+
+mission "EA pugservice award"
+	invisible
+	source
+		attributes planet
+	to offer
+		has "event: EA pugservice award"
+		or
+			has "outfit: Commander Insignia"
+			has "outfit: Captain Insignia"
+			has "outfit: Rear Admiral Insignia"
+	to accept
+		1
+	on accept
+		action
+			outfit "Pug Service Ribbon"
+		``
+			fail
 
 event "EA alphacontact award"
-	outfit "Alpha Contact Ribbon"
+
+mission "EA alphacontact award"
+	invisible
+	source
+		attributes planet
+	to offer
+		has "event: EA alphacontact award"
+		or
+			has "outfit: Commander Insignia"
+			has "outfit: Captain Insignia"
+			has "outfit: Rear Admiral Insignia"
+	to accept
+		1
+	on accept
+		action
+			outfit "Alpha Contact Award"
+		``
+			fail
 
 event "EA danforth chip processed"
+
+event "EA accepted the endgame"
+
+event "EA mysterious green goo"
+
+event "EA emergence timer"
 
 event "EA endgame alpha begins"
 	government "Alpha"
@@ -57,6 +124,7 @@ event "EA endgame alpha begins"
 			"Syndicate" 1
 			"Free Worlds" -1
 			Wanderer" -1
+			Quarg -1
 	government "Free Worlds"
 		"attitude toward"
 			"Alpha" -1
@@ -65,13 +133,6 @@ event "EA endgame alpha begins"
 		"attitude toward"
 			"Alpha" -1
 			"Free Worlds" 1
-	government "Omega"
-		swizzle 1
-		"attitude toward"
-			"Republic" -1
-			"Syndicate" 1
-			"Free Worlds" -1
-			Wanderer" -1
 	
 event "EA bomb timer"
 
@@ -79,281 +140,2039 @@ event "EA Raven contact timer"
 
 event "EA campaign restart timer"
 
-event "EA alpha breakout one"
-	planet Bailey
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 1000			
-	planet Alvorada
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 1000
-		
-	planet Jakobsen
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Gagarin
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Thule
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Cornucopia
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Solace
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-	planet Gagarin
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
+event "EA republic mobilized"
+	system "Cor Caroli"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Cor Caroli"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Muhlifain"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Muhlifain"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Vindemiatrix"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Vindemiatrix"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Arcturus"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Arcturus"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Holeb"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Holeb"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Rutilicus"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Rutilicus"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Menkent"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Menkent"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Cebalrai"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Cebalrai"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Kaus Borealis"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Kaus Borealis"
+		add fleet "Large Republic" 500
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Vega"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Vega"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Altair"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Altair"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Deneb"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Deneb"
+		add fleet "Large Republic" 800
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+
+	system "Rasalhague"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Rasalhague"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Zeta Aquilae"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Zeta Aquilae"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Ascella"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+	system "Ascella"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Alphecca"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+		remove fleet "Small Militia"
+		remove fleet "Large Militia"
+	system "Alphecca"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Seginus"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+		remove fleet "Small Militia"
+		remove fleet "Large Militia"
+	system "Seginus"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Alioth"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+		remove fleet "Small Militia"
+		remove fleet "Large Militia"
+	system "Alioth"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+
+	system "Kornephoros"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+		remove fleet "Small Militia"
+		remove fleet "Large Militia"
+	system "Kornephoros"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Sabik"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+		remove fleet "Small Militia"
+		remove fleet "Large Militia"
+	system "Sabik"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+	system "Delta Sagittarii"
+		remove fleet "Large Republic"
+		remove fleet "Small Republic"
+		remove fleet "Republic Logistics"
+		remove fleet "Small Militia"
+		remove fleet "Large Militia"
+	system "Delta Sagitarii"
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 500
+		add fleet "Republic Logistics" 1500
+		add fleet "Small Militia" 500
+		add fleet "Large Militia" 500
+
+event "EA Alpherg Frontline"
+	system Alpherg
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Fumalsamakah Frontline"
+	system Fumalsamakah
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Belenos Frontline"
+	system Belenos
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Thuban Frontline"
+	system Thuban
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Men Frontline"
+	system Men
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Beta Lupi Frontline"
+	system "Beta Lupi"
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Yed Prior Frontline"
+	system "Yed Prior"
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Pherkad Frontline"
+	system Pherkad
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Kappa Centauri Frontline"
+	system "Kappa Centauri"
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Alniyat Frontline"
+	system Alniyat
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Antares Frontline"
+	system Antares
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Graffias Frontline"
+	system Graffias
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Han Frontline"
+	system Han
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Atria Frontline"
+	system Atria
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Dschubba Frontline"
+	system Dschubba
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Aldhibain Frontline"
+	system Aldhibain
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Lesath Frontline"
+	system Lesath
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Sargas Frontline"
+	system Sargas
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Shaula Frontline"
+	system Shaula
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Girtab Frontline"
+	system Girtab
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Rastaban Frontline"
+	system Rastaban
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Kornephoros Frontline"
+	system Kornephoros
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Sabik Frontline"
+	system Sabik
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Delta Sagittarii Frontline"
+	system "Delta Sagittarii"
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Albaldah Frontline"
+	system Albaldah
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Nunki Frontline"
+	system Nunki
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Zubeneschamali Frontline"
+	system Zubeneschamali
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Zubenelgenubi Frontline"
+	system Zubenelgenubi
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Wei Frontline"
+	system Wei
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Alpha Arae Frontline"
+	system "Alpha Arae"
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Tais Frontline"
+	system Tais
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Dabih Frontline"
+	system Dabih
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Eltanin Frontline"
+	system Eltanin
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Albireo Frontline"
+	system Albireo
+		fleet "Large CCOR Alpha" 2000
+		fleet "Large Independent Alpha" 2000
+		fleet "Large Syndicate Alpha" 2000
+		fleet "Large Southern Pirates Alpha" 2000
+		fleet "Small Republic Alpha" 8000
+		fleet "Large Republic Alpha" 9000
+		fleet "Pirate Raid Alpha" 4000
+		fleet "Marauder fleet I Alpha" 7200
+		fleet "Marauder fleet II Alpha" 7200
+		fleet "Marauder fleet III Alpha" 7200
+		fleet "Marauder fleet IV Alpha" 7200
+		fleet "Marauder fleet V Alpha" 7200
+		fleet "Marauder fleet VI Alpha" 7200
+		fleet "Marauder fleet VII Alpha" 7200
+		fleet "Marauder fleet VIII Alpha" 7200
+		fleet "Marauder fleet IX Alpha" 7200
+		fleet "Marauder fleet X Alpha" 7200
+		fleet "Large Militia" 500
+		fleet "Small Militia" 500
+		fleet "Large Republic" 600
+		fleet "Small Republic" 600
+
+event "EA Citadelle Takeover"
 	system Citadelle
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Belenos
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Bailey" *= 0
+	"tribute: Alvorada" *= 0
+	planet Bailey
 		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Men
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	planet Alvorada
 		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	
+event "EA Alpherg Takeover"
 	system Alpherg
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Pherkad
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Mendez Station" *= 0
+	"tribute: Jakobsen" *= 0
+	planet "Mendez Station"
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	planet Jakobsen
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Fumalsamakah Takeover"
+	system Fumalsamakah
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	
+event "EA Belenos Takeover"
+	system Belenos
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system "Kappa Centauri"
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Gagarin" *= 0
+	"tribute: Mordente-Bridi" *= 0
+	planet Gagarin
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	planet "Mordente-Bridi"
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Thuban Takeover"
+	system Thuban
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	
+event "EA Men Takeover"
+	system Men
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-event "EA alpha breakout two"
-	planet Winter
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Thule" *= 0
+	"tribute: Smuggler's Den" *= 0
+	planet Thule
 		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-			
-	planet Poisonwood
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	planet "Smuggler's Den"
 		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Twinstar
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Bloodsea
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Darkstone
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Sundrinker
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Beta Lupi Takeover"
+	system "Beta Lupi"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+
+event "EA Yed Prior Takeover"
 	system "Yed Prior"
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Graffias
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Winter" *= 0
+	planet Winter
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Pherkad Takeover"
+	system Pherkad
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Solace" *= 0
+	planet Solace
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Kappa Centauri Takeover"
+	system "Kappa Centauri"
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Cornucopia" *= 0
+	planet Cornucopia
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Alniyat Takeover"
 	system Alniyat
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Twinstar" *= 0
+	planet Twinstar
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Antares Takeover"
 	system Antares
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Bloodsea" *= 0
+	planet Bloodsea
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Graffias Takeover"
+	system Graffias
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Poisonwood" *= 0
+	planet Poisonwood
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Han Takeover"
 	system Han
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Dschubba
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Darkstone" *= 0
+	planet Darkstone
 		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
-event "EA alpha breakout three"
-	planet Lichen
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-			
-	planet Trinket
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Dancer
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Glaze
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Greenrock
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet Harmony
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
-	planet "New India"
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-	planet "New Portland"
-		government "Alpha"
-		tribute 100
-			fleet "Large CCOR Alpha" 5
-			fleet "Large Independent Alpha" 10
-		
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Atria Takeover"
 	system Atria
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Sargas
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Lichen" *= 0
+	planet Lichen
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Dschubba Takeover"
+	system Dschubba
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Rastaban
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Sundrinker" *= 0
+	planet Sundrinker
 		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
-	system "Delta Sagitarii"
-		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Shaula
-		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
-	system Girtab
-		government "Alpha"
-		fleet "Large CCOR Alpha" 1000
-		fleet "Large Independent Alpha" 1000
-		fleet "Large Syndicate Alpha" 1000
-		fleet "Large Southern Pirates Alpha" 1000
-		
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Aldhibain Takeover"
 	system Aldhibain
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-		
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Glaze" *= 0
+	"tribute: Charon Station" *= 0
+	planet Glaze
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	planet "Charon Station"
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Lesath Takeover"
+	system Lesath
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+
+event "EA Sargas Takeover"
+	system Sargas
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Trinket" *= 0
+	planet Trinket
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Shaula Takeover"
+	system Shaula
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Greenrock" *= 0
+	planet Greenrock
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Girtab Takeover"
+	system Girtab
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Harmony" *= 0
+	planet Harmony
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Rastaban Takeover"
+	system Rastaban
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Dancer" *= 0
+	planet Dancer
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Kornephoros Takeover"
+	system Kornephoros
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Clink" *= 0
+	planet Clink
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+	"tribute: Deep" *= 0
+	planet Deep
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Sabik Takeover"
+	system Sabik
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Longjump" *= 0
+	planet Longjump
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Delta Sagittarii Takeover"
+	system "Delta Sagittarii"
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: New Portland" *= 0
+	planet "New Portland"
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA Albaldah Takeover"
 	system Albaldah
 		government "Alpha"
 		fleet "Large CCOR Alpha" 1000
 		fleet "Large Independent Alpha" 1000
 		fleet "Large Syndicate Alpha" 1000
 		fleet "Large Southern Pirates Alpha" 1000
-	system Wei
-		fleet "Alpha Supercarrier" 2000
-event "EA alphas defeated"
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: New India" *= 0
+	planet "New India"
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
 
-event "EA geminus shipyard upgraded"
-	planet Geminus
-		shipyard "Navy Elite"
+event "EA Nunki Takeover"
+	system Nunki
+		government "Alpha"
+		fleet "Large CCOR Alpha" 1000
+		fleet "Large Independent Alpha" 1000
+		fleet "Large Syndicate Alpha" 1000
+		fleet "Large Southern Pirates Alpha" 1000
+		fleet "Small Republic Alpha" 4000
+		fleet "Large Republic Alpha" 4500
+		fleet "Pirate Raid Alpha" 2000
+		fleet "Marauder fleet I Alpha" 3800
+		fleet "Marauder fleet II Alpha" 3800
+		fleet "Marauder fleet III Alpha" 3800
+		fleet "Marauder fleet IV Alpha" 3800
+		fleet "Marauder fleet V Alpha" 3800
+		fleet "Marauder fleet VI Alpha" 3800
+		fleet "Marauder fleet VII Alpha" 3800
+		fleet "Marauder fleet VIII Alpha" 3800
+		fleet "Marauder fleet IX Alpha" 3800
+		fleet "Marauder fleet X Alpha" 3800
+	"tribute: Albatross" *= 0
+	planet Albatross
+		government "Alpha"
+		tribute 300
+			threshold 1000
+			fleet "Marauder fleet I Alpha" 5
+			fleet "Marauder fleet II Alpha" 5
+			fleet "Marauder fleet III Alpha" 5
+			fleet "Marauder fleet IV Alpha" 5
+			fleet "Marauder fleet V Alpha" 5
+			fleet "Marauder fleet VI Alpha" 5
+			fleet "Marauder fleet VII Alpha" 5
+			fleet "Marauder fleet VIII Alpha" 5
+			fleet "Marauder fleet IX Alpha" 5
+			fleet "Marauder fleet X Alpha" 5
+
+event "EA alphas defeated"

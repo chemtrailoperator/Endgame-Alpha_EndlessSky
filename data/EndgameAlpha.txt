@@ -1,0 +1,47 @@
+government "Alpha (Hidden)"
+	"display name" "Independent"
+	swizzle 6
+	"crew attack" 1.5
+	"crew defense" 2.5
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+
+
+phrase "EA package delivered"
+	word
+		"As instructed, "
+		"IAW your instructions, "
+	word
+		"You fly over the surface, circle once at the given coordinates, and drop the package out your airlock."
+		"You deliver the package to the NavInt office."
+	word
+		"When you return to your ship, you are notified of "
+		"A little while later, you are informed of "
+	word
+		"the payment being paid to your account."
+		"the spaceport paying you for services rendered."
+
+phrase "EA package picked up"
+	word
+		"When you land at the spaceport, "
+		"Soon after landing, "
+	word
+		"an unobtrusive figure "
+		"one of the maintenance crews "
+		"one of the dock workers "
+		"a safety inspector "
+		"an environmental activist "
+		"a reporter "
+	word
+		"slips something into your cargo bay, "
+		"bumps into you, "
+		"drops something ahead of you that turns out to have your name on it, "
+	word
+		"winks, and walks away. "
+		"and continues about their work. "
+		"and leaves immediately. "
+		"and begins speaking too one of the fueling technicians. "
+	word
+		"Huh."
+		"Weird."

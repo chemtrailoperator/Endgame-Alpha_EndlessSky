@@ -1,3 +1,42 @@
+mission "Navy Package Delivery"
+	name "Package Delivery"
+	job
+	repeat
+	deadline 16
+	description "Deliver a package to <destination> by <date> for NavInt. Payment is <payment> credits."
+	source
+		government "Republic" "Free Worlds"
+	destination
+		distance 3 6
+		government "Republic" "Independent" "Pirate" "Free Worlds"
+	to offer
+		random < 20
+		has "event: EA accepted the endgame"
+	on accept
+		dialog "The instructions included with the job instruct you to report to the NavInt office. There is a featureless box waiting for you..."
+	on complete
+		payment 25000
+		dialog phrase "EA package delivered"
+
+mission "Navy Package Retrieval"
+	name "Package Retrieval"
+	job	
+	repeat
+	deadline 16
+	description "Retrieve a package from <stopover> by <date> for NavInt. Payment is <payment> credits."
+	to offer
+		has "event: EA accepted the endgame"
+		"Navy Package Delivery: done" >= 3
+	source
+		government "Republic"
+	stopover
+		distance 3 6
+	on stopover
+		dialog phrase "EA package picked up"
+	on complete
+		payment 40000
+		dialog phrase "EA package delivered"
+
 mission "Light Navy Patrol (Commander)"
 	name "Light Navy Patrol"
 	job
@@ -90,7 +129,7 @@ mission "Light Navy Fleet Patrol (Captain)"
 		random < 40
 		has "event: EA navy commission captain"
 		has "Heavy Navy Patrol (Commander): done"
-		has not "event: EA navy commission admiral"
+		not "event: EA navy commission admiral"
 	on waypoint
 		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
 	on visit
@@ -101,7 +140,7 @@ mission "Light Navy Fleet Patrol (Captain)"
 		payment 100000
 	npc accompany
 		personality escort
-		fleet "EA Small Republic" 1
+		fleet "Small Republic" 1
 
 mission "Medium Navy Fleet Patrol (Captain)"
 	name "Medium Fleet Patrol"
@@ -116,8 +155,8 @@ mission "Medium Navy Fleet Patrol (Captain)"
 	to offer
 		random < 30
 		has "event: EA navy commission captain"
-		has "Light Navy Fleet Patrol (Captain): done" 2
-		has not "event: EA navy commission admiral"
+		"Light Navy Fleet Patrol (Captain): done" > 2
+		not "event: EA navy commission admiral"
 	on waypoint
 		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
 	on visit
@@ -128,7 +167,7 @@ mission "Medium Navy Fleet Patrol (Captain)"
 		payment 200000
 	npc accompany
 		personality escort
-		fleet "EA Small Republic" 2
+		fleet "Small Republic" 2
 
 mission "Heavy Navy Fleet Patrol (Captain)"
 	name "Heavy Fleet Patrol"
@@ -143,8 +182,8 @@ mission "Heavy Navy Fleet Patrol (Captain)"
 	to offer
 		random < 25
 		has "event: EA navy commission captain"
-		has "Medium Navy Fleet Patrol (Captain): done" 2
-		has not "event: EA navy commission admiral"
+		"Medium Navy Fleet Patrol (Captain): done" > 2
+		not "event: EA navy commission admiral"
 	on waypoint
 		dialog "You have reached the system you were supposed to patrol. After taking full scans, you are ready to proceed to your next target."
 	on visit
@@ -155,5 +194,5 @@ mission "Heavy Navy Fleet Patrol (Captain)"
 		payment 300000
 	npc accompany
 		personality escort
-		fleet "EA Small Republic"
-		fleet "EA Large Republic"
+		fleet "Small Republic"
+		fleet "Large Republic"

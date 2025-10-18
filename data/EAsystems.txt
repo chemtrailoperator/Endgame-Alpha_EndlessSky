@@ -1,0 +1,64 @@
+government "Omega"
+	swizzle 1
+	"crew attack" 1.6
+	"crew defense" 2.8
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+
+system Fumalzenarah
+	hidden
+	shrouded
+	pos -1050.667 155.917
+	government Omega
+	attributes "ccor" "south"
+	habitable 490
+	belt 1669
+	asteroids "large metal" 1 0.732
+	trade Clothing 268
+	trade Electronics 639
+	trade Equipment 532
+	trade Food 166
+	trade "Heavy Metals" 929
+	trade Industrial 902
+	trade "Luxury Goods" 1059
+	trade Medical 772
+	trade Metal 589
+	trade Plastic 526
+	fleet "Omega Guardian" 1500
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/cloud8
+		distance 157.84
+		period 35.8333
+	object Sagarra
+		sprite planet/forest0
+		distance 478.33
+		period 189.039
+		object
+			sprite planet/dust0
+			distance 147
+			period 15.2326
+	object
+		sprite planet/rock16
+		distance 1139.14
+		period 694.748
+	object
+		sprite planet/gas2-b
+		distance 1885.15
+		period 1479.04
+		object
+			sprite planet/ice7-b
+			distance 213
+			period 18.8358
+		object
+			sprite planet/rock3
+			distance 360
+			period 41.3874
+planet Sagarra
+	landscape land/sea22
+	description `This is a pristine and perfectly habitable world, with warm oceans and a temperate climate. The land is dominated by large reptiles similar to the dinosaurs that roamed the continents of ancient Earth. Some of the land reptiles are over twenty meters in length, and the sea holds monsters more than twice that size.`
+	description `	Deep in the jungles near the equator, small mammals are working hard to avoid being eaten by the great lizards, and to survive for long enough that they will be able to evolve into the dominant life form.`
+	security 0

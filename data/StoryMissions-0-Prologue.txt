@@ -1,6 +1,3 @@
-
-
-
 mission "EA FW Raven Contact"
 	landing
 	priority
@@ -19,12 +16,10 @@ mission "EA FW Raven Contact"
 					goto eafwrcignore
 			label eafwrcapproach
 			`	As you follow her you become increasingly certain that she is Raven, you wonder what she's doing outside of her jurisdiction. You walk into a small gift shop that you could swear she walked into seconds before to find it empty but for a few people that are definitely not Raven. Weird.`
-					set "free worlds raven contacted"
-					decline
-			goto eafwrcend
+				decline
 			label eafwrcignore
 			`	You decide that it couldn't be her outside of Republic space, there are probably dozens of heavily tattooed people that match her physical description.`
-					defer
+				defer
 			label eafwrcend
 
 mission "EA Deep Raven Contact"
@@ -42,7 +37,7 @@ mission "EA Deep Raven Contact"
 				`	(Approach Her.)`
 					goto eadrcapproach
 				`	(Ignore Her.)`
-					goto eadrcignore
+					goto EADRCignore
 			label eadrcapproach
 			`	Following someone as conspicuously inconspicuous as that is surprisingly easy, and you manage to keep track of her out to the pads where you lose her in the myriad of small craft waiting to be refuelled.`
 			choice
@@ -88,7 +83,7 @@ mission "EA Synd Raven Contact"
 			`	You follow her through the spaceport, visiting every gift shop along the way, and find yourself winding through the city. You notice with slight trepidation that the neighborhood is getting steadily worse before your quarry takes a sharp turn down an alley. As you walk around the corner you expect to find Raven gone without a trace but instead you find her standing immediately in front of you. “Why are you here?” She asks menacingly`
 			choice
 				`	"I was just taking a walk through town"`
-				`	"I’m looking for a drug dealer, I’m doing some undercover work for the Syndicate."`
+				`	"I'm looking for a drug dealer, I'm doing some undercover work for the Syndicate."`
 				`	"I was following you"`
 					goto easrctruth
 			`	"That's a lie." She says flatly.`
@@ -128,12 +123,12 @@ mission "EA Raven Last Contact"
 				`	(Accept the message.)`
 					goto earlcaccept
 				`	(Ignore it.)`
-			`	A voice comes up from your communication system: "Thanks for checking, I'll be in touch, but next time, answer the phone." Your bank account notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'.`
+			`	A voice comes up from your communication system: "Thanks for committing, I'll be in touch, but next time, answer the phone." Your bank account notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'.`
 			`	You wonder how they could have bypassed your firewall like that.`
 				goto earlcend
 			label earlcaccept
 			`	You accept the message.`
-			`	"Thanks for checking. I'll be in touch." in what you think is Raven's voice. Your bank notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'`
+			`	"Thanks for committing. I'll be in touch." in what you think is Raven's voice. Your bank notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'`
 			label earlcend
 				fail
 
@@ -160,7 +155,9 @@ mission "EA Celebration Bombing"
 			`	It seems there has been a terrorist attack at a large Remembrance Day celebration on Earth. After the slideshow is finished, the reporter starts talking again. “In the wake of these awful terrorist attacks there has been no clue as to who the perpetrators were, what they wanted, or what points they were trying to make. We hope that in the next weeks and months these horrible individuals will be brought to justice for their crimes." The special broadcast ends and the normal Space Weather report begins. You move on to other things.`
 				
 			label eacbignore
-			log "An Earth Remembrance Day celebration is bombed by terrorists"
+			action
+				log `An Earth Remembrance Day celebration is bombed by terrorists.`
+			``
 				decline
 
 mission "EA CalltoGeminus"

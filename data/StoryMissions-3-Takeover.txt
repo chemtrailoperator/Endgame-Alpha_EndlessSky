@@ -1,0 +1,212 @@
+mission "Endgame Alpha 3.0"
+	landing
+	source
+		government Republic Syndicate "Free Worlds" Hai
+		not attributes ccor rim
+	to offer
+		has "event: EA campaign restart timer"
+	on offer
+		conversation
+			action
+				event "EA Citadelle Takeover"
+				event "EA Alpherg Takeover" 2
+				event "EA Fumalsamakah Takeover" 1
+			`As you land on <origin>, you notice a stir over the entire city. All the screens in the spaceport and all the raido stations are saying the same thing: War on the Rim.`
+			`	The reports vary widely in specifics, but you put together that the pirate planets far out on the Rim are under attack by an unknown foe. Starting yesterday, refugees flooded out of Citadelle and fled to neighboring systems or to Free Worlds space. No communications have been received out of Citadelle, and the surrounding systems are now under attack.`
+			`	While the media and individuals speculate wildly about who attacked the system, you suspect you already know what's behind it.`
+				decline
+		
+mission "Endgame Alpha 3.1"
+	landing
+	source
+		government Republic Syndicate "Free Worlds" Hai
+		not attributes ccor
+	to offer
+		has "event: EA Citadelle Takeover"
+
+	on offer
+		conversation
+			action
+				event "EA Belenos Takeover"
+				event "EA Thuban Takeover"
+				event "EA Men Frontline"
+			`The <origin> spaceport is packed almost to maximum capacity with people buying ammunition and stockpiling equipment. The holovid screens display news networks that announce that the Belenos and Thuban systems have fallen and that Men is under heavy attack. They also mention that the takeover has happened with extreme rapidity due to the Free Worlds' reluctance and the Republic's outright refusal to offer aid to the pirate systems.`
+				decline
+
+mission "Endgame Alpha 3.2"
+	landing
+	clearance
+	name "Defend Men"
+	destination "Thule"
+	description "Travel to <destination> in <system> to defend against the Alpha attack."
+	source
+		government Republic Syndicate "Free Worlds" Hai
+		not attributes "south pirate"
+	to offer
+		has "event: EA Men Frontline"
+	on offer
+		conversation
+			`As you update your commlink to the <origin> cache, a maximum priority message pops up, from Republic Navy central command. It reads:`
+			`	Effective immediately. All units on non-essential deployments must report to Thule in the Men system for combat operations. All squadrons currently refitting must deploy immediately with any combat ready ships.`
+				accept
+	on enter "Men"
+		dialog `The system is one massive battleground. Probably best to get on Men immediately so you can be deployed.`
+	npc
+		personality staying
+		government "Republic"
+		fleet "Large Republic" 5
+		fleet "Small Republic" 10
+		system Men
+	npc
+		personality staying
+		government "Free Worlds"
+		fleet "Large Militia" 5
+		fleet "Small Militia" 5
+		system Men
+	npc
+		personality staying
+		government "Alpha"
+		fleet "Large CCOR Alpha" 2
+		fleet "Large Independent Alpha" 2
+		fleet "Large Syndicate Alpha" 2
+		fleet "Large Southern Pirates Alpha" 2
+		fleet "Small Republic Alpha" 2
+		fleet "Large Republic Alpha" 2
+		fleet "Pirate Raid Alpha" 
+		fleet "Marauder fleet I Alpha" 
+		fleet "Marauder fleet II Alpha" 
+		fleet "Marauder fleet III Alpha" 
+		fleet "Marauder fleet IV Alpha"
+		fleet "Marauder fleet V Alpha"
+		fleet "Marauder fleet VI Alpha"
+		fleet "Marauder fleet VII Alpha"
+		fleet "Marauder fleet VIII Alpha"
+		fleet "Marauder fleet IX Alpha"
+		fleet "Marauder fleet X Alpha"
+		system Men
+
+mission "Endgame Alpha 3.3"
+	landing
+	source Thule
+	name "Defend Thule"
+	description "Defend Thule in the Men system from an incoming Alpha armada."
+	destination Solace
+	to offer
+		has "Endgame Alpha 3.2: done"
+	on offer
+		conversation
+			`Anything civilian in the Thule spaceport has been removed or modified for military use. You notice that besides the organized Republic units, there is are many militia fleets and pirate bands operating under the direction of the Navy. Apparently an Alpha attack is enough to make normal humans put aside their differences.`
+			`	Suddenly, a siren starts to blare and ships begin taking off, raising their shields as soon as they are clear of the ground. The siren is followed by a voice stating that a massive armada has been seen en route to the system and formation orders will be sent out by spaceport departure control.`
+				launch
+	npc
+		personality entering staying target
+		government "Alpha"
+		system Men
+		fleet "Large CCOR Alpha" 2
+		fleet "Large Independent Alpha" 2
+		fleet "Large Syndicate Alpha" 2
+		fleet "Large Southern Pirates Alpha" 2
+		fleet "Small Republic Alpha" 2
+		fleet "Large Republic Alpha" 2
+		fleet "Pirate Raid Alpha" 2
+		fleet "Marauder fleet I Alpha" 2
+		fleet "Marauder fleet II Alpha" 2
+		fleet "Marauder fleet III Alpha" 2
+		fleet "Marauder fleet IV Alpha" 2
+		fleet "Marauder fleet V Alpha" 2
+		fleet "Marauder fleet VI Alpha" 2
+		fleet "Marauder fleet VII Alpha" 2
+		fleet "Marauder fleet VIII Alpha" 2
+		fleet "Marauder fleet IX Alpha" 2
+		fleet "Marauder fleet X Alpha" 2
+		fleet "Omega Guardian" 4
+		on destroy
+			dialog `As the last of the Alpha ships is destroyed, the Republic flagship hails you: "We've defeated this wave, but if anything I've heard about the Alphas is true there will be more. Retreat to Solace to regroup."
+	npc
+		system Men
+		personality launching heroic
+		government "Republic"
+		fleet "Large Republic" 2
+		fleet "Small Republic" 4
+	npc
+		system Men
+		personality launching heroic
+		government "Free Worlds"
+		fleet "Large Militia" 3
+		fleet "Small Militia" 3
+	npc
+		system Men
+		personality launching
+		government "Independent"
+		fleet "Large Independent" 2
+	npc
+		personality launching
+		government Republic
+		system Men
+		ship "Cruiser" "R.N.S. Everest"
+		on destroy	
+			dialog `The flagship of the Republic fleet hails you: "We can't possibly resist this! Get to Solace and regroup-" The transmission abruptly cuts off as the ship explodes.`
+	on complete
+		event "EA Men Takeover"
+		event "EA Beta Lupi Takeover"
+		event "EA Pherkad Frontline"
+		event "EA Kappa Centauri Frontline"
+		conversation
+			`The number casualties is saddening. Barely any of the original group of ships land with you on Solace.`
+			`	The spaceport controllers tell you that you are requested at the joint headquarters in the spaceport.`
+
+mission "Endgame Alpha 3.4"
+	source Solace
+	name "Investigate Alpha Incursion"
+	description "Search the Citadelle system, as well as Alvorada, for signs of where the Alpha incursion began."
+	destination Alvorada
+	clearance
+	to offer
+		has "Endgame Alpha 3.3: done"
+	on offer
+		conversation
+			`The "Joint Headquarters" appears to be staffed mostly by the Republic, probably becaues the Free Worlds does not yet have the capability to deploy on such a scale. You are ushered past a line of waiting staff officers into the main office, where Raven, several Republic admirals, Free Worlds officers, and officials are seated.`
+			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here now so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives that seem to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"
+			choice
+				`	"What does this have to do with me?"`
+			`	"That's what I'm getting to, commander. You have a wide range of experience in things beyond the reaches of human space. Raven has recommended that you be selected to attempt penetrating captured territory to investigate Citadelle. Since it is beyond the purview of Navy regulations, I will not force you, but you are the most likely candidate."`
+			choice
+				`	"You must be crazy to think I'd try to break into that!"`
+					goto crazy
+				`	"I'll try, but no guarantees."`
+					goto okay
+			label crazy
+			`	The speaker looks disappointed, some of the civilian officials mutter to each other, and somehow Raven's stoic attitude seems let down.`
+			`	"Understood, sir. We will find somebody else to complete the job. Your duties for now will be to hold the defensive lines here and in Kappa Centauri. I can order you to do that."`
+				decline
+			label okay
+			`	The whole group takes a metaphorical sigh of relief. The admiral says, "Well then, good luck! Oh, one last thing, commander, make sure to carry enough fuel for the round trip."`
+				accept
+mission "Endgame Alpha 3.5"
+	name "Investigate Alpha Incursion"
+	description "Investigate the Citadelle system for signs of where the Alphas came from, and then return to Solace."
+	destination Solace
+	to offer
+		has "Endgame Alpha 3.4: done"
+	on offer
+		conversation
+			`Although the system is full of traffic, the planet is messily guarded, and slipping underneath the completely uncoordinated patrols is easy. Activity goes down as you get closer to the surface, indicating that the Alphas aren't very interested in this planet. After a few orbits it becomes clear that the Alphas never had a significant force here.`
+			`	Eventually, you are detected by an Alpha ship, but it flies straight towards you without signallng to any other ships.`
+				launch
+	npc
+		government "Alpha"
+		personality vindictive target unconstrained
+		ship "Marauder Raven" "Saber of Filth"
+
+	on enter "Citadelle"
+		dialog "As your sensor systems complete their scan of the system, you notice that the usually empty space beyond Citadelle is registering some disturbances."
+	on complete
+		conversation
+			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven.`
+			`	"Well, <last>, I am intrigued by your sensor logs. The disturbances you registered on the edge of the Citadelle system are similar to those we have detected in the systems surrounding Deneb prior to the Pug attack, as if a new hyperlink is being established."`
+			choice
+				`	"Does that mean the Alphas 
+	
+	
+	
+	

@@ -1,0 +1,424 @@
+mission "Endgame Alpha 2.0"
+	name "Retrieve Access Codes"
+	landing
+	source Farpoint
+	destination Bourne
+	description "Travel to Bourne in the Gamma Corvi system to request access codes for Free Worlds surveillance systems."
+	to offer
+		has "EA Contact Oathkeepers: done"
+	on offer
+		conversation
+			`Your original plan was to land at the normal pads and find your way to the Navy board on the planet, but during your orbital entry burn Raven tells you to leave the cockpit, as what she is about to do is classified. When you eventually exit the ship, the normal spaceport is just visible on the horizon. Apparently, you have landed in the center of an Oathkeeper base. After about ten minutes of riding in a utility vehicle through large tunnels, you are ushered into a conference room where Admiral Danforth is already standing. You notice he is dressed entirely in black rather than his uniform.`
+			choice
+				`	(Let Raven start things off.)`
+					goto EA2
+				`	"I'm sorry for your loss, Admiral."`
+					goto EA1
+				`	"How is it that the Alphas can acquire a fleet of warships without anybody's knowledge?"`
+			`	Danforth replies quickly, "As a good faith gesture, we have been steadily pulling sensor packages and agents out of Free Worlds territory, in the hopes of getting to a complete shared intelligence agreement. The Free Worlds intelligence command must have either not noticed them or has not informed us yet."`
+				goto EA2
+			label EA1
+			`	Danforth looks at you sadly. "Thank you for your concern Ant, but I'm afraid personal matters must wait." He turns to Raven.`
+			label EA2
+			`	"The Alpha activity that we are currently investigating flared up in Shaula, as you know." Says Raven, "those ships were neutralized by the Free Worlds Militia, but I don't have the tracking information on them. Do you?" Danforth thinks for a moment and then replies, "No. But ever since the Free Worlds Information treaty, we can get the access codes for the data recorders in inhabited systems, but the only place I know of to get them is Bourne." Raven turns to you. "I seem to remember you are a member of the council there. Think you could get that data for me?"`
+			choice
+				`	"I'd rather not get involved, thank you."`
+					decline
+				`	"I can leave immediately."`
+					accept
+
+mission "Endgame Alpha 2.1"
+	landing
+	name "Collect Surveillance Data"
+	description "Land on the planets in the selected systems to retrieve traffic data from Free Worlds surveillance systems. Then take the data to the Navy FOB on New Iceland in the Kaus Borealis system."
+	destination "New Iceland"
+	stopover Trinket
+	stopover Dancer
+	stopover Harmony
+	stopover Lichen
+	stopover Sundrinker
+	source Bourne
+	to offer
+		has "Endgame Alpha 2.0: done"
+	on offer
+		conversation
+			`Everything here is oddly familiar. You make your way through the crammed city to the Free Worlds capitol.`
+			choice
+				`	(Try to steal the codes.)`
+				`	(Talk to whoever is in charge.)`
+					goto EAahtalk
+			`	Once you are perched on the roof of the building, you realize you don't even know where the codes are, let alone if they are even on this planet. Better talk to somebody.`
+			label EAahtalk
+			`	Once you show your militia license at the front desk, the receptionist treats you a little better. And there is an appointment slot available for the Free Worlds Security Advisor in a few hours.`
+			choice
+				`	(Wait.)`
+			`	The building is surprisingly quiet at this time of day.`
+			choice
+				`	(Wait.)`
+			`	After what seem an interminable amount of time, an aide calls your name, and you are ushered into the security advisor's office.`
+			`	"Well, the renowned Captain <last>," He says. "war hero, member of council, and one of the most active and far ranging starship captains in the galaxy. What can I do for you?"`
+			choice
+				`	"I'm working for Navy Intelligence now, and I need the access codes for your data recorders around Shaula."`
+					goto EAahnavint
+				`	"There's been suspicious activity in the South. I want the access codes for the data recorders around Shaula."`
+				`	"There were Alphas on Greenrock. I want the data from your recorders to track them."`
+				`	"Nothing, there must be some mistake. I'll be on my way."`
+					decline
+			`	"Yes I'm aware. We picked up traces of Alphas in Shaula and Lesath a few weeks ago. I can get you those codes, but why do you need them?"`
+			choice
+				`	"I'm doing a job for a few people in Navy Intelligence. Nothing official, of course."`
+					goto EAahnavint
+				`	"I just happened to be in the right place at the right time."`
+			`	The advisor looks at you under hooded eyelids. "A few facts tell me otherwise. First, you arrived in Shaula just before the incident accompanied by the Spear of Anhur, a vessel that is under Navy Intelligence control through a chain of shell corporations. Second, you left Greenrock in quite a hurry and headed directly into Republic space. We do have a fairly efficient body of operatives, and one of them reported that your ship was seen on Geminus shortly after the incident. So how about you tell me what's really going on?"`
+			choice
+				`	"I'm currently investigating something for some personal friends in Navy Intelligence. To my knowledge it is not sanctioned."`
+					goto EAahnavint
+				`	"That's my story and I'm sticking to it."`
+			`	"With your knowledge of the Free Worlds command structure, I am surprised you think that would fly. I can't give the codes to just anybody, even if they are a member of the council."`
+			choice
+				`	"Fine. I'm doing some work for some friends in Navy Intelligence."`
+					goto EAahnavint
+				`	"Then I guess I'll be leaving."`
+					decline
+			label EAahnavint
+			`	The advisor doesn't seem surprised or annoyed by that. In fact, he says,  "The current security policy says that I am not supposed to disclose those access codes, but on something of this magnitude I think I could reasonably make an exception." He presses a button on the edge of his desk. "I'll have the codes for the planets Trinket, Dancer, Harmony, Lichen, and Sundrinker loaded into your ships comms unit. All you have to do is land on the planets and it will automatically upload the required data." He smirks slightly. "Don't worry about coming back here. The Navy base on New Iceland is more than capable of decrypting it. Good day."`
+			`	As you leave, a different aide comes in and receives instructions for loading the access codes.`
+				accept
+	on stopover
+		dialog `At all the planets you have stopped at your comms system has been in the 'busy' state. Good thing you have a backup, or you wouldn't have been able to land. Next stop: Kaus Borealis`
+	on complete
+		payment 150000
+		dialog `When you land, a message pops up with 150,000 credits and an unsigned note saying that there is a message for you in the Spaceport Navy office.`
+
+mission "Endgame Alpha 2.2"
+	priority
+	deadline 20
+	name "Retrieve Raven"
+	description "Travel to Farpoint in the Alnitak system by <date> to escort Admiral Danforth and Raven back to the Kaus Borealis FOB"
+	source "New Iceland"
+	destination Farpoint
+	to offer
+		has "Endgame Alpha 2.1: done"
+	on offer
+		conversation
+			`At the Navy office, there is some difficulty getting authorization for the message, something about external users not being supported. After an unreasonably long wait, you are told that the message has been sent to your ships data system. It's almost like they could have just sent you the message.`
+			choice
+				`	(Return to your ship.)`
+			`	Like they said, there is a message cached.`
+			choice
+				`	(Open it.)`
+				`	(Leave it. It's probably not important.)`
+					decline
+			`	It is from Raven. "Could you give Admiral Danforth and I an escort back to New Iceland? It is rather urgent.`
+			choice
+				`	(Confirm the message and travel to Farpoint.)`
+					accept
+				`	(Ignore it. You're done with this Alpha stuff.)`
+					decline
+	on complete
+		dialog `"We're all ready to go, meet us in the officer's club when you are." -Raven`
+
+mission "Endgame Alpha 2.3"
+	priority
+	source "Farpoint"
+	destination "New Iceland"
+	deadline 20
+	description "Escort the Destroying Angel and Eye of Horus to <destination> in <system> by <date>"
+	to offer
+		has "Endgame Alpha 2.2: done"
+	on offer
+		conversation
+			`The officer's club is a tall, imposing building near the landing pads. Walking in the front door, you see that everything is maintained with the exactitude typical in the Navy. The receptionist greets you as soon as you walk up, "Good Evening, Mr. <last>, One of the few civilians on the guest list tonight. Your party is in room seven. Please follow me."`
+			`	Upon entering room seven, the first thing you notice is the large bay window that overlooks the landing pads dedicated to the Oathkeepers. About halfway down the line of ships, one stands out. "I'm sure you're wondering about the newest addition to my fleet, <last>."`
+			choice
+				`	"It looks bigger than normal."`
+				`	"It looks like a Cruiser with too many drone bays."`
+			`	"That really is a good way to describe it. There are two more drone bays, heavier armor, and heavier weaponry. It suffers a little in performance, but the engineers said it wouldn't be too much of a problem, I at least hope that's true... Anyway, it is already being deployed in fleets, so you might see them around."`
+			`	When Danforth pauses, Raven cuts in, "The sooner we get going the better, so as soon as you gentlemen are done with the pleasantries, we should get going." "Very true!" Says Danforth, and both of them leave for the landing pads.`
+				accept
+	npc accompany save
+		government "Republic"
+		personality escort timid
+		ship "Gunboat" "Eye of Horus"
+	npc accompany save
+		government "Navy (Oathkeeper)"
+		personality escort heroic
+		ship "Supercruiser" "Destroying Angel"
+
+	on complete
+		payment 150000
+		conversation
+			`Unlike some ships you've escorted, the two navy ships have been a pleasure to fly with, always quick in maneuvers, easy to communicate with, and well maintained. During you landing sequence, you receive a message from Danforth telling you to meet him at the spaceport bar to if you're willing to do more jobs for him. He also leaves a payment of 150,000 credits.`
+
+mission "Endgame Alpha 2.4"
+	name ""
+	priority
+	source "New Iceland"
+	to offer
+		has "Endgame Alpha 2.3: done"
+	on offer 
+		conversation
+			`This time, just Danforth is waiting for you. "Good Evening, <last>, I'm afraid Raven won't be joining us. She's already left, but she did tell me to tell you that you'll be able to perform jobs for NavInt now, so keep an eye on the job boards. I don't have anything for you right now but I'll make sure you know if any suspicious activity is noticed anywhere.`
+			choice
+				`	"Thank you, I'll be in touch if I notice anything too."`
+					accept
+				`	"No thanks, I've had enough of this Navy work."`
+					decline
+	on accept
+		event "EA accepted the endgame"
+		event "EA emergence timer" 32			
+		fail
+
+# There is a wait of thirty days here until the storyline restarts again.
+
+mission "Endgame Alpha 2.5"
+	name "Rescue Mission"
+	description "A research vessel has gone missing. Find it and rescue the crew and passengers."
+	destination Twinstar
+	landing
+	source
+		government "Free Worlds" "Independent" "Republic"
+	to offer
+		has "event: EA emergence timer"
+	on offer
+		conversation
+			`When you reconnect to the planetary messaging system, there is a high priority message flashing on your screen.`
+			choice
+				`	(Open the message.)`
+					goto EAahopen
+				`	(Leave it.)`
+			`	Your comms system says, "This really is getting tiring. Please always answer the phone." in Raven's voice.`
+			choice
+				`	(Open the message.)`
+			label EAahopen
+			`	It is from the Free Worlds Militia intelligence service. You notice that it was also sent to NavInt. It reads, "Good Evening, Captain Ant. Yesterday, the research vessel Starstreak 3 disappeared from the Beta Lupi system, little data is available due to a surveillance system blackout of unknown origins. There were no other transponders in the system, however this does not mean that no ships were, but even pirates usually have them. The Emergency Locator Transmitter installed on the ship was not activated, indicating that it is not destroyed or disabled. This ship is of high importance due to the equipment on board. Your mission (should you accept it) is to locate and, if possible, recover the Starstreak 3 with the utmost dispatch and deliver it to the research facility on Twinstar.`
+			`	The only available information is that it was seen in the Men system, heading deeper into the pirate systems in the area. Discretion is advised as the vessel is privately owned, and our intelligence is unaware of the type fo research going on.`
+			choice
+				`	(Attempt to locate the missing ship.)`
+					accept
+				`	(Don't try to.)`
+					decline
+	on fail
+		dialog `You have failed an essential Endgame Alpha mission. If life was a game you could go back and fix what you did wrong, but for now your services won't be required.`
+	npc capture
+		system Fumalsamakah
+		government "Alpha (Hidden)"
+		personality mute target waiting derelict nemesis
+		ship "Mule" "Starstreak 3"
+		on capture
+			conversation
+				`	Once the battle is over, you go about the standard duties of securing a ship, plus sending over temporary crew to clean up the mess... Besides some wrecked components in the cockpit which are easily replaced, everything is in good condition to operate. Upon further examination, it looks like the Alphas strapped into the stretchers and in the brig broke out and killed (and partially ate) the human crew on board. Time to get back to Twinstar.`
+		on board
+			conversation
+				`As you step onto the ship, the first thing you notice is the stench of decomposition. It smells as if at least some of the crew must have been dead for some days. This could mean it is an easy capture if it was attacked by pirates, but if something is still alive on board, it could turn nasty.`
+				choice
+					`	(Leave the ship and abort the rescue attempt.)`
+						goto EAahabort
+					`	(Try to reach the crew quarters and cargo bay.)`
+						goto EAahquarters
+					`	(Try to capture the flight deck.)`
+				`	The door to the flight deck looks locked, but it didn't do the pilots any good. There is a sizable hole through the door.`
+				choice
+					`	(Enter the cockpit.)`
+					`	(Retreat back to safety.)`
+						goto EAahabort
+				`	The inside of the cockpit is a mess. Blood splattered everywhere, the stench unbearable, and what is left of the two pilots still hung over the controls. The Emergency Locator Transmitter is pinned to a wall with a crowbar, completely useless. That must have taken a lot of force. After about a minute of looking around for anything useful, the smell becomes too much and you return to the central gangway.`
+				label EAahquarters
+				`	There are trails of blood leading in multiple directions, but the only route that doesn't involve going through another door is the one to the cargo bay.`
+				choice
+					`	(Enter the cargo bay.)`
+					`	(Get out of here.)`
+						goto EAahabort
+				`	In the cargo bay, there is the usual boxes of provisions and gear, but also a number of stun rifles locked onto a rack. Several of the boxes are shattered, and there is another corpse. The bay has been subdivided into fore and aft compartments by a flimsy bulkhead. One with a door standing partially open.`
+				choice
+					`	(Go through the door.)`
+				`	Out of all the decomposition on this ship, it is by far the worst in here. Both sides are lined with combat stretchers, with a cell at the back. Some of the stretchers are empty, some appear to have had their restraints ripped out. Some still have their occupants in them. You notice that the skin of all the remaining bodies in this section have green and yellow blotches all over them, to varying degrees.`
+				`	At the end of the section, on one side there is a cabinet containing various surgical tools, and on the other side is a cryogenic storage unit, also lying open.`
+				choice
+					`	(Examine the equipment cabinet.)`
+					`	(Examine the freezer.)`
+						goto EAahfreezer
+				label EAahequipment
+				`	The cabinet contains what appears to be surgical instruments and a wide variety of needles, but all of a significantly more durable quality than most you've seen before. Whatever these were used on must have been particularly nasty.`
+				choice
+					`	(Examine the cold storage.)`
+				label EAahfreezer
+				`	The freezer looks like it contained blood samples at one point, but almost every vial is shattered and moldy. There is one that does not contain blood however. It contains a dark-green substance that is completely opaque even as a thin film.`
+				choice
+					`	(Take the vial.)`
+					`	(Leave it. It's probably none of your business.)`
+						goto EAahnovial
+				action
+					log `Found a vial of mysterious green goo on board a ship that was doing testing on Alphas.`
+					outfit "Mysterious Goo"
+				label EAahnovial
+				action
+					event "EA mysterious green goo"
+				`	The only thing left to search is the crew quarters. The door is locked.`
+				choice
+					`	(Demand that whatever is on the other side open the door.)`
+					`	(Pick the lock.)`
+						goto EAahpick
+					`	(Blow the door open with a breaching charge.)`
+						goto EAahblow
+				`	You yell at the door several times to open up and surrender. Nothing happens.`
+				choice
+					`	(Pick the lock.)`
+						goto EAahpick
+					`	(Breach the door.)`
+						goto EAahblow
+					`	(Leave.)`
+						goto EAahabort
+				label EAahpick
+				`	Turns out this Mule has more advanced locks than the average and your skill is not up to the task of getting through this door. They probably weren't up to the task of normal locks either. Fortunately, your skills do run to forcing your way through things with even highly advanced locks the slightly more old-fashioned way.`
+					goto EAahblow
+				label EAahdeath
+				`	A mottled green arm reaches around your neck and lifts you off your feet with superhuman strength. Before you can react, something appears in front of you holding an ancient projectile rifle, and fires a burst on full automatic into your abdomen. Your last thought is the realization that the half-Alpha must have also shot whoever was holding you too.`
+					die
+				label EAahblow
+				`	You set the charges, step around a corner, and detonate them. the door blows inward and hits somehting organic.`
+				choice
+					`	(Walk in.)`
+						goto EAahdeath
+					`	(Throw in a few grenades.)`
+				`	As you throw in two grenades, there is an almost human sounding yell, a scuffle, and then two explosions. A blast of blood and green tissue flies out of the door, only missing you because of your vantage point.`
+				`	The inside of the crew quarters is a complete disaster. Not only the four bodies of what appear to be Alpha-Human hybrids, but also several decaying corpses. Gross. Time to get back to your ship.`
+				label EAahabort
+				`	As you leave, your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There is probaby more, but this is the kind of battle you are used to.`
+	on enter "Fumalsamakah"
+		dialog "The missing ship is present in this system. But appears to be completely unresponsive."
+	
+	on visit
+		dialog "You have reached <destination>, but you have either not captured the ship or must take off and wait for it to enter the system."
+	on complete
+		conversation
+			`You expect to join the long approach to the military base with many heavy warships in front of you and behind in various kinds of holding patterns. Instead of joining them you are given immediate landing clearance on the only open pad. Once you land you are directed to report to NavInt headquaters in the spaceport.`
+
+mission "Endgame Alpha 2.6"
+	priority
+	name "Vial Delivery"
+	description "Deliver the vial of green goo to <destination> in <system> for NavInt."
+	source Twinstar
+	destination Valhalla
+	to offer
+		has "Endgame Alpha 2.5: done"
+	on offer
+		conversation
+			`You grab the your report on the action with the Mule as well as the vial of green slime and make your way to the portion of the spaceport set aside for the Navy. You are surprised to find that NavInt is filled entirely with officers of the Free Worlds. You are hurried into a small room where you find a general who stands when you enter.`
+			choice
+				`	(Salute.)`
+			`	Good Afternoon <last>, you don't know me, I am the commander of a new department that is creating a liaison between the Republic and the Free Worlds intelligence services.  Your reputation precedes you so your introduction won't be necessary. We can get to business.`
+			`	We have evidence that there were Alphas on the ship you were sent after. Was that the case?`
+			choice
+				`	"Yes, it looks like they were experimenting with them."`
+					goto EAgtdexperiment
+			label EAgtdexperiment
+			`	"Really now?" He says, "What kind of experiments?"`
+			choice
+				`	"There were lots of dead people that looked half-alpha, but there were also some that looked yellow as well as green. There was a bunch of beds with broken straps, and I also ran into some pure Alphas."`
+			`	"Now that's very bad indeed." the general says, leaning back in his chair, "That means that someone is researching the Deltas again." He pauses and looks at you for a few seconds before continuing; "It seems you don't know what I am talking about. The Deltas were an offshoot of the Alpha research projects back in the early decades of the Republic. In the midst of all the cloning and genetic modification we found a different combination of genes that worked, well sort of, lived temporarily at least. We couldn't ever repeat it after the first batch, it seems there was some unnoticed errors in the genes that hadn't been documented. The Deltas were weaker than the Alphas, still much stronger than a normal human though, and they grew slower, but the point is that they were extremely intelligent. Out of the original 25 embryos, 14 survived to be born and by the time they were two they were talking in complicated sentences and we estimated that none of them had an IQ below 200. Sadly, or maybe fortunately, they all eventually died without reaching adulthood and we weren't able to replicate it again though we tried very hard. Most importantly they seemed to have at least some of the empathy and ability to love that wasn't present in the Alphas. Years later we were able to make a few Betas but they weren't nearly as intelligent, I believe you've met one, Elias Hanover, he lives with the Quarg now and last I heard he was doing very well and he-- but I digress, it could be very bad indeed if the Alphas or humans in league with them are able to breed more Deltas to use in the war or cross with Alphas to remove what shreds of humanity they have left. Did you find anything else noteworthy on the ship?"`
+			branch retrievedvial
+				has "event: mysterious green goo"
+			choice
+				`	"No. It smelled really bad."`
+					goto EAgtdnovial
+			label retrievedvial
+			choice
+				`	"No. It smelled really bad."`
+					goto EAgtdnovial
+				`	"I found a vial of opaque green slime the same color as the Alphas."`
+			`	The general brightens visibly. "Now that's more encouraging, please tell me you brought it off the ship."`
+			choice
+				`	"I did, in fact I have it in my pocket right now."`
+					goto EAgtdsurrender
+				`	(Keep it for yourself.)`
+			`	"No, I didn't," you say, "there were still live Alphas on board and they were getting rather close."`	
+				goto EAgtdnovial
+			label EAgtdsurrender
+			`	"Outstanding, would you mind carrying it to Valhalla for the Deep scientists to play with?"`
+			choice
+				`	"I'll get on my way immediately."`
+					accept
+				`	"No, I'd rather not."`
+			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
+			action
+				outfit "Mysterious Goo" -1
+			``	
+				goto EAgtddecline
+			label EAgtdnovial
+			`	The general looks downtrodden. "Oh well, no use crying over spilled milk."`
+			label EAgtddecline
+			`	The general stands up again. "You are dismissed, your next duties will be on New Iceland."`
+				decline
+
+mission "Endgame Alpha 2.7"
+	landing
+	name "Report to New Iceland"
+	destination "New Iceland"
+	description "Report to <destination> in <system> for Navy duty."
+	source Twinstar
+	to offer
+		has "Endgame Alpha 2.5: done"
+	to accept
+		1
+	on complete
+		conversation
+			`You land at New Iceland amid the very organized bustle of the reactivated Navy base, and are instructed to meet command at a set of pre-fabricated shelters near the spaceport.`
+
+	
+mission "Endgame Alpha 2.8"
+	name "Report to Earth"
+	description "Report to Earth in the Sol system with several Navy admirals (and Raven) to receive a commision into the Navy"
+	destination "Earth"
+	source "New Iceland"
+	to offer
+		has "Endgame Alpha 2.7: done"
+	on offer
+		payment 2000000
+		conversation
+			`	You report to the office of the Navy commander, one Admiral Alzaga.`
+			`	The first thing he does after greeting you is hand you credit chips for 2.00M credits. "That is the official thanks from the Republic." he says. "From the Navy, Admiral Danforth and I have agreed to give you an acting commission into the Navy as a Commander. The salary is decent and you'll keep your free worlds pay, but you'll have to travel to Earth with us to get it permanently confirmed."`
+			choice
+				`	"No thanks, I prefer being a Free Worlds Officer only."`
+					decline
+				`	(Say "Take your stupid Navy and shove it.", and run out the door.)`
+					flee
+				`	"I accept, sir."`
+			
+			`	"Very well," says Alzaga, "then I would recommend we get moving as soon as possible, Commander."`
+				accept
+	on accept
+		event "EA repaint navy"
+	npc accompany
+		
+		ship "Supercruiser" "Destroying Angel"
+			government "Navy (Oathkeepers)"
+			personality heroic
+		ship "Gunboat" "Eye of Horus"
+			government "Navy Intelligence"
+			personality timid
+		ship "Carrier" "R.N.S. Endureable"
+			government "Republic"
+			personality heroic
+
+	on complete
+		dialog `When you land you receive a message from Admiral Alzaga telling you to meet them in the officer’s club in the spaceport in a few hours once they have talked to parliament.`
+
+
+mission "Endgame Alpha 2.9"
+	source "Earth"
+	to offer
+		has "Endgame Alpha 2.8: done"
+	on offer
+		conversation
+			`Since you are not in any kind of uniform it feels a little odd to be walking into an area so dominated by the blue and gold of the Navy. You see Admiral Alzaga beckoning you to a table where he and Danforth are sitting.`
+			`	"Good news, commander," says Alzaga,  "the parliament navy recruitment committee gave us remarkably little trouble about getting you into the Navy permanently, meaning that you are now a Navy officer. We don’t have any work for you right now in regards to the Alpha affair, we hope Greenrock was just a small enclave and will investigate the Starstreak. In the meantime you will be able to serve as an officer by commanding small patrols. We do ask that in these patrols you use a Frigate as a flagship so as not to raise questions. Incidentally you already qualify for some awards due to your service against the Pug, so you might see some notifications in the future."`
+			`	"I would also recommend buying a uniform and your insignia at the outfitter here on Earth. It will authorize you to wear any awards you receive and will make things look a little more official for us and a little less awkward for you. You'll see the uniform available to you in the outfitter within a few days, so be sure to stop by and check."`
+				decline
+	on decline
+		event "EA navy commission commander"
+		event "EA campaign restart timer" 15
+
+
+
+

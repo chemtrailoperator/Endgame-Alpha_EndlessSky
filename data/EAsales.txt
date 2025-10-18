@@ -46,6 +46,13 @@ shipyard "Heliarch"
 	"Heliarch Rover"
 	"Heliarch Stalker"
 
+outfitter "Korath Minelayer"
+	"Cluster Mine Layer"
+	"Cluster Mine"
+
+planet "Laki Nemparu"
+	outfitter "Korath Minelayer"
+
 planet "Ring of Power"
 	outfitter "Heliarch"
 	shipyard "Heliarch"
@@ -57,8 +64,13 @@ shipyard "Navy Elite"
 	"Hailstorm"
 	"Heavy Auxiliary"
 	"Hawkeye"
+	"Modified Supercarrier"
+	"Elite Marauder Supercarrier"
+	"Sestor Supercarrier"
+
 outfitter "Navy ECM"
 	"ECM Suite Gen 2"
+	"Inductive Jamming Array"
 
 event "EA Geminus Upgrade"
 	planet Geminus
@@ -74,4 +86,5 @@ mission "EA Geminus Upgrade"
 		event "EA geminus shipyard upgraded"
 		planet Geminus
 			shipyard "Navy Elite"
-		fail	
+		``
+			fail	

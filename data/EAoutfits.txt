@@ -1,3 +1,22 @@
+outfit "Alpha Genome"
+	plural "Genome Vials"
+	category "Special"
+	cost 10000000
+	thumbnail "outfit/genome"
+	"mass" 0
+	"outfit space" 0
+	description "This vial contains DNA from a fully functioning Alpha. It could be very useful..."
+
+outfit "Mysterious Goo"
+	plural "Goo Vials"
+	category "Special"
+	cost 10000000
+	thumbnail "outfit/genome"
+	"mass" 0
+	"outfit space" 0
+	description "This vial contains a mysterious green goo that may be connected to the Alphas."
+
+
 outfit "Navy Uniform"
 	plural "Navy Uniforms"
 	category "Special"
@@ -72,12 +91,12 @@ outfit "Parliamentary Commendation Ribbon"
 
 outfit "ECM Suite Gen 2"
 	category "Systems"
-	cost 376500
+	cost 576500
 	licenses
 		Navy
 	thumbnail "outfit/surveillance pod"
 	"mass" 50
-	"outfit space" -73
+	"outfit space" -82
 	"outfit scan power" 40
 	"outfit scan efficiency" 60
 	"cargo scan power" 12
@@ -85,7 +104,26 @@ outfit "ECM Suite Gen 2"
 	"atmosphere scan" 150
 	"tactical scan power" 45
 	"asteroid scan power" 40
-	"radar jamming" 74
-	"optical jamming" 26
+	"radar jamming" 127
+	"optical jamming" 40
 	"cooling" 2
 	description "This is Navy technology, a collection of scanners designed around the Hawkeye ECM ship. It carries a fantastic array of sensors, and has the most powerful jamming equipment available to the Republic. A recent addition is optical jamming technology that isn't entirely human in origin."
+
+outfit "Inductive Jamming Array"
+	category "Systems"
+	cost 576500
+	licenses
+		Navy
+	thumbnail "outfit/reasoning node"
+	"mass" 20
+	"outfit space" -20
+	"external antenna mounts" -1
+	"radar jamming" 40
+	"optical jamming" 15
+	"cloaking energy" 15
+	"cloak" .01
+	"cloaking fuel" .09
+	"cloaking shields" 5
+	"cooling" 2
+	description "After examining the Syndicate's Cloaking Device, the Navy created this system. Rather than creating its own field, it replaces the shield matrix with a magnetic and gravitational field that guides particles around the ship. It is slower and less efficient than the original design, but it uses less fuel, trading fuel for enrgy and shield strength.  The newness of the system necessitates it to be built into ships that are already designed for it."
+

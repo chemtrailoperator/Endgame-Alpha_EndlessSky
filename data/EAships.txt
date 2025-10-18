@@ -1,6 +1,3 @@
-
-
-
 ship "Modified Supercarrier"
 	sprite "ship/msupercarrier"
 	thumbnail "thumbnail/enforcer"
@@ -11,14 +8,14 @@ ship "Modified Supercarrier"
 		"hull" 8300
 		"required crew" 210
 		"bunks" 407
-		"mass" 3640
+		"mass" 6840
 		"drag" 40.4
 		"heat dissipation" .1
 		"fuel capacity" 800
 		"cargo space" 300
-		"outfit space" 2020
-		"weapon capacity" 2240
-		"engine capacity" 2210
+		"outfit space" 1820
+		"weapon capacity" 1040
+		"engine capacity" 510
 		weapon
 			"blast radius" 300
 			"shield damage" 3000
@@ -47,6 +44,9 @@ ship "Modified Supercarrier"
 		
 		"X5700 Ion Thruster"
 		"X4200 Ion Steering"
+		"Afterburner (Asteroid Class)"
+		"Bow Drive (Meteor Class)"
+		"Thruster (Planetary Class)"
 		"Jump Drive"
 	
 	turret -18.5 -212.5
@@ -170,14 +170,14 @@ ship "Elite Marauder Supercarrier"
 		"hull" 8300
 		"required crew" 231
 		"bunks" 407
-		"mass" 3640
+		"mass" 7240
 		"drag" 35.4
 		"heat dissipation" .1
 		"fuel capacity" 800
 		"cargo space" 120
-		"outfit space" 2374
-		"weapon capacity" 981
-		"engine capacity" 654
+		"outfit space" 1974
+		"weapon capacity" 881
+		"engine capacity" 354
 		weapon
 			"blast radius" 300
 			"shield damage" 3000
@@ -195,7 +195,8 @@ ship "Elite Marauder Supercarrier"
 		
 		"Blue Sun Reactor" 2
 		"Hai Valley Batteries" 2
-		"Dark Storm Shielding" 2
+		"Dark Storm Shielding"
+		"Systems Core (Medium)"
 		"Large Radar Jammer" 2
 		"Water Coolant System"
 		"Brig" 4
@@ -205,6 +206,11 @@ ship "Elite Marauder Supercarrier"
 		"Security Station" 2
 		"Tactical Scanner"
 		"Liquid Sodium Cooler" 2
+		"Fuel Processor"
+		
+		"Bow Drive (Meteor Class)"
+		"Afterburner (Asteroid Class)"
+		"Thruster (Planetary Class)"
 		`"Bufaer" Atomic Steering`
 		`"Bufaer" Atomic Thruster`
 		"Jump Drive"
@@ -316,13 +322,162 @@ ship "Elite Marauder Supercarrier"
 	"final explode" "final explosion large"
 	description "The engineering and workmanship of this vessel accurately reflects the Alphas' teamwork and communication skills. Built on the same principles as the Scrapper, it is dangerous to fly and very unreliable. However, it can carry an astonishing complement of fighters and drones..."
 
+ship "Sestor Supercarrier"
+	sprite "ship/msupercarrier4"
+	thumbnail "thumbnail/sunder"
+	attributes
+		category "Heavy Warship"
+		"cost" 25200000
+		"shields" 45000
+		"hull" 10300
+		"required crew" 621
+		"bunks" 807
+		"mass" 8840
+		"drag" 35.4
+		"heat dissipation" .1
+		"fuel capacity" 800
+		"cargo space" 120
+		"outfit space" 2374
+		"weapon capacity" 981
+		"engine capacity" 654
+		weapon
+			"blast radius" 300
+			"shield damage" 3000
+			"hull damage" 1500
+			"hit force" 4500
+	outfits
+		"Korath Detainer" 3
+		"Tractor Beam"
+		"ECM Suite Gen 2"
+		"Plasma Turret" 6
+		"Wanderer Anti-Missile" 2
+		
+		"Blue Sun Reactor" 2
+		"Hai Valley Batteries" 1
+		"Dark Storm Shielding" 
+		"Systems Core (Medium)" 2
+		"Water Coolant System"
+		"Brig" 4
+		"Laser Rifle" 400
+		"Nerve Gas" 100
+		"Fragmentation Grenades" 400
+		"Security Station" 5
+		"Tactical Scanner"
+		"Catalytic Ramscoop"
+		"Liquid Sodium Cooler" 2
+
+		"Thruster (Planetary Class)"
+		"Steering (Lunar Class)"
+		"Bow Drive (Meteor Class)"
+		"Afterburner (Asteroid Class)"
+		"Jump Drive"
+	gun -1.5 -415.5
+	gun 7.5 -383
+	gun -9.5 -383
+	turret -1.5 -234
+	turret 101.5 -76.5
+	turret -103.5 -76.5
+	turret -1 -190 "Tractor Beam"
+	turret -1 -107.5
+	turret -122 122.5
+	turret 113.5 117
+	turret -110 371.5
+	turret 113 117
+	engine -1 457
+	engine 35 457
+	engine -38 457
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Fighter" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	bay "Drone" 1 8
+		"launch effect" "human internal"
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 30 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The engineering and workmanship of this vessel accurately reflects the Alphas' teamwork and communication skills. Built on the same principles as the Scrapper, it is dangerous to fly and very unreliable. However, it can carry an astonishing complement of fighters and drones..."
+
 ship "Harbinger Supercarrier"
 	sprite "ship/supercarrier"
 	thumbnail "thumbnail/supercarrier"
 	attributes
 		category "Heavy Warship"
-		licenses
-			"Navy Carrier"
 		"cost" 15200000
 		"shields" 21400
 		"hull" 8300
@@ -439,7 +594,7 @@ ship "Harbinger Supercarrier"
 	"final explode" "final explosion large"
 	description "Building off of the venerable Carrier design, this fighter and drone carrier can probably take over a small planet if necessary. These are a relatively rare sight except when the Navy needs to deliver their maximum firepower."
 
-ship "Navy Supercruiser"
+ship "Supercruiser"
 	sprite "ship/supercruiser"
 	thumbnail "thumbnail/supercruiser"
 	attributes
@@ -638,7 +793,7 @@ ship "Modified Gunboat"
 		"Hyperdrive"
 		
 	gun -28 -25 "Heavy Laser"
-	gun -36 -16 "Electron Beam
+	gun -36 -16 "Electron Beam"
 	gun 28 -25 "Heavy Laser"
 	gun 36 -16 "Electron Beam"
 	turret 1 -1 "Electron Turret"
@@ -744,10 +899,11 @@ ship "Hawkeye"
 		"bunks" 36
 		"mass" 650
 		"drag" 5.5
+		"external antenna mounts" 2
 		"heat dissipation" .6
 		"fuel capacity" 900
 		"cargo space" 35
-		"outfit space" 400
+		"outfit space" 420
 		"weapon capacity" 50
 		"engine capacity" 120
 		weapon
@@ -763,6 +919,7 @@ ship "Hawkeye"
 		"LP144a Battery Pack"
 		"D23-QP Shield Generator"
 		"ECM Suite Gen 2"
+		"Inductive Jamming Array"
 		"Laser Rifle" 5
 		"Ramscoop"
 		
