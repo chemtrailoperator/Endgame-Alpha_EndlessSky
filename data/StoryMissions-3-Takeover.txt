@@ -184,6 +184,7 @@ mission "Endgame Alpha 3.4"
 				accept
 
 mission "Endgame Alpha 3.5"
+	landing
 	name "Investigate Alpha Incursion"
 	description "Investigate the Citadelle system for signs of where the Alphas came from, and then return to Solace."
 	destination Solace
@@ -243,4 +244,5 @@ mission "Endgame Alpha 3.6"
 	
 
 	
+
 
