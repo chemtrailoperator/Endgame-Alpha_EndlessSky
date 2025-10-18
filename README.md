@@ -4,9 +4,3 @@ This plugin allows you to serve in the Navy and earn the Navy licenses that are 
 
 Make sure you create a game save at the start of the story, the storyline is currently incomplete and many worlds will become inaccesible permanently.
       
-      Shipyards where you can buy just the hulls of ships, no outfits. 
-
-      Change to the Alpha fighting dynamic.
-
-Make sure you create a game save at the start of the storyline, many features that isolate systems and add pirates are not removed by the storyline since it is incomplete. 
-      
