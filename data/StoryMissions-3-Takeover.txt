@@ -202,9 +202,21 @@ mission "Endgame Alpha 3.5"
 
 	on enter "Citadelle"
 		dialog "As your sensor systems complete their scan of the system, you notice that the usually empty space beyond Citadelle is registering some disturbances."
-	on complete
+
+mission "Endgame Alpha 3.6"
+	landing
+	source Solace
+	name "Navy Patrol"
+	description "Patrol the Beta Lupi, Kappa Centauri, and Pherkad systems, and return to Solace for payment"
+	destination Solace
+	waypoint "Beta Lupu"
+	waypoint "Kappa Centauri"
+	to offer
+		has "Endgame Alpha 3.5: done"
+	on offer
 		conversation
-			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven.`
+			payment 500000
+			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven, who opens by handing you a credit chip for 500,000 credits.`
 			`	"Well, <last>, I am intrigued by your sensor logs. The disturbances you registered on the edge of the Citadelle system are similar to those we have detected in the systems surrounding Deneb prior to the Pug attack, as if a new hyperlink is being established."`
 			choice
 				`	"Does that mean that there is a system beyond Citadelle?"`
@@ -212,6 +224,8 @@ mission "Endgame Alpha 3.5"
 				`	"So the Alphas came from there and pretty soon they are going to have unlimited access."`
 					goto access
 				`	"If the hyperlink is being established now, how did they get here?"`
+					goto hyperlink
+				`	"Interesting..."`
 					goto hyperlink
 			label system
 			`	"There is a small star nearby, but it didn't have a hyperlane to it and nobody has done much work looking into it. Kind of like Zubenelhakrabi, actually."`
@@ -221,7 +235,12 @@ mission "Endgame Alpha 3.5"
 			`	"The ships that attacked men were unique, but they were not entirely new. After examining th elogs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
 				goto patrol
 			label interesting
-	
+			`	Raven looks at you oddly, "Yes... very."`
+			label patrol
+			`	"We'll continue looking into the phenomenon and the Alpha ships. Meanwhile, I have been told to give you your orders," She hands you another data pad and walks away.`
+			`	The orders state that you are supposed to patrol the Kappa Centauri, Beta Lupi, and Pherkad systems, and return to Pherkad when completed.`
+				accept
 	
 
 	
+
