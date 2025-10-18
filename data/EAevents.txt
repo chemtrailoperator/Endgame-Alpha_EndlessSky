@@ -1,5 +1,4 @@
 event "EA navy commission commander"
-	
 	government "Escort"
 		swizzle 0
 	planet Earth
@@ -64,9 +63,7 @@ mission "EA parlribbon award"
 	to accept
 		1
 	on accept
-		action
 			outfit "Parliamentary Commendation Ribbon"
-		``
 			fail
 
 event "EA pugservice award"
@@ -139,6 +136,10 @@ event "EA bomb timer"
 event "EA Raven contact timer"
 
 event "EA campaign restart timer"
+
+event "EA Fumalzenarah discovered"
+	system "Fumalzenarah"
+		remove hidden
 
 event "EA republic mobilized"
 	system "Cor Caroli"
@@ -2174,5 +2175,6 @@ event "EA Nunki Takeover"
 			fleet "Marauder fleet VIII Alpha" 5
 			fleet "Marauder fleet IX Alpha" 5
 			fleet "Marauder fleet X Alpha" 5
+
 
 event "EA alphas defeated"
