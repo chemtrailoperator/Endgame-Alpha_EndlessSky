@@ -182,10 +182,12 @@ mission "Endgame Alpha 3.4"
 			label okay
 			`	The whole group takes a metaphorical sigh of relief. The admiral says, "Well then, good luck! Oh, one last thing, commander, make sure to carry enough fuel for the round trip."`
 				accept
+
 mission "Endgame Alpha 3.5"
 	name "Investigate Alpha Incursion"
 	description "Investigate the Citadelle system for signs of where the Alphas came from, and then return to Solace."
 	destination Solace
+	source Alvorada
 	to offer
 		has "Endgame Alpha 3.4: done"
 	on offer
@@ -205,8 +207,21 @@ mission "Endgame Alpha 3.5"
 			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven.`
 			`	"Well, <last>, I am intrigued by your sensor logs. The disturbances you registered on the edge of the Citadelle system are similar to those we have detected in the systems surrounding Deneb prior to the Pug attack, as if a new hyperlink is being established."`
 			choice
-				`	"Does that mean the Alphas 
+				`	"Does that mean that there is a system beyond Citadelle?"`
+					goto system
+				`	"So the Alphas came from there and pretty soon they are going to have unlimited access."`
+					goto access
+				`	"If the hyperlink is being established now, how did they get here?"`
+					goto hyperlink
+			label system
+			`	"There is a small star nearby, but it didn't have a hyperlane to it and nobody has done much work looking into it. Kind of like Zubenelhakrabi, actually."`
+			label access
+			`	"If they really did come from there, it could become a worse problem than it already is. Oh, that reminds me." She pulls out a data pad.`
+			label hyperlink
+			`	"The ships that attacked men were unique, but they were not entirely new. After examining th elogs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
+				goto patrol
+			label interesting
 	
 	
-	
+
 	
