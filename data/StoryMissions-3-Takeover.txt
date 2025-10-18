@@ -227,7 +227,7 @@ mission "Endgame Alpha 3.6"
 				`	"If the hyperlink is being established now, how did they get here?"`
 					goto hyperlink
 				`	"Interesting..."`
-					goto hyperlink
+					goto interesting
 			label system
 			`	"There is a small star nearby, but it didn't have a hyperlane to it and nobody has done much work looking into it. Kind of like Zubenelhakrabi, actually."`
 			label access
@@ -241,9 +241,15 @@ mission "Endgame Alpha 3.6"
 			`	"We'll continue looking into the phenomenon and the Alpha ships. Meanwhile, I have been told to give you your orders," She hands you another data pad and walks away.`
 			`	The orders state that you are supposed to patrol the Kappa Centauri, Beta Lupi, and Pherkad systems, and return to Pherkad when completed.`
 				accept
+mission "Endgame Alpha 3.7"
+	landing
+	source Solace
+	destination "New Iceland"
+	name "Package Courier"
+	description "Deliver a package to the Navy forward operating base on New Iceland."
+	
 	
 
-	
 
 
 
