@@ -210,7 +210,7 @@ mission "Endgame Alpha 3.6"
 	name "Navy Patrol"
 	description "Patrol the Beta Lupi, Kappa Centauri, and Pherkad systems, and return to Solace for payment"
 	destination Solace
-	waypoint "Beta Lupu"
+	waypoint "Beta Lupi"
 	waypoint "Kappa Centauri"
 	to offer
 		has "Endgame Alpha 3.5: done"
@@ -244,5 +244,6 @@ mission "Endgame Alpha 3.6"
 	
 
 	
+
 
 
