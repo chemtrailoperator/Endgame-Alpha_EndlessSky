@@ -241,14 +241,25 @@ mission "Endgame Alpha 3.6"
 			`	"We'll continue looking into the phenomenon and the Alpha ships. Meanwhile, I have been told to give you your orders," She hands you another data pad and walks away.`
 			`	The orders state that you are supposed to patrol the Kappa Centauri, Beta Lupi, and Pherkad systems, and return to Pherkad when completed.`
 				accept
+
 mission "Endgame Alpha 3.7"
 	landing
 	source Solace
 	destination "New Iceland"
 	name "Package Courier"
 	description "Deliver a package to the Navy forward operating base on New Iceland."
-	
-	
+	to offer
+		has "Endgame Alpha 3.6: done"
+	on offer
+		payment 30000
+		dialog `Upon checking back into the headquarters, you are paid 30,000 credits and given a package to deliver to the New Iceland Navy FOB.`
+		event "EA Kappa Centauri Takeover"
+		event "EA Pherkad Takeover" 1
+		event "EA Yed Prior Frontline" 1
+		event "EA Alniyat Frontline" 2
+	on enter "Aldhibain"
+		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, the militia
+
 
 
 
