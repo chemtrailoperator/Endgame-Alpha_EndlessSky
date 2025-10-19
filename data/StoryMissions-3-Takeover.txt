@@ -258,7 +258,8 @@ mission "Endgame Alpha 3.7"
 		event "EA Yed Prior Frontline" 1
 		event "EA Alniyat Frontline" 2
 	on enter "Aldhibain"
-		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, the militia
+		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. All traffic
+
 
 
 
