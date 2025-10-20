@@ -290,7 +290,15 @@ mission "Endgame Alpha 3.8"
 			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. I was told you already have a jump drive to bypass the blockade."`
 				accept
 	on stopover
-		event "EA alpha breakout two" 2
+		event "EA Yed Prior Takeover"
+		event "EA Alniyat Takeover"
+		event "EA Graffias Takeover" 1
+		event "EA Antares Takeover" 1
+		event "EA Han Takeover" 2
+		event "EA Dschubba Frontline" 1
+		event "EA Aldhibain Frontline" 2
+		event "EA Atria Frontline" 2
+		event "EA Lesath Frontline" 2
 		conversation
 			`	You land at the now mostly wrecked spaceport on Winter, and collect the people who were somehow told of your arrival even without using the hyperspace relays connected to Pherkad.`
 			`	Everybody scrambles on board your ship as the few remaining Navy ships begin to give ground. The alphas penetrate the crumbling defensive line and begin firing at will onto the surface of the planet, blowing up anything that moves and forcing you to take off or be destroyed.`
@@ -319,6 +327,61 @@ mission "Endgame Alpha 3.8"
 		fleet "Large Independent Alpha" 7
 		fleet "Large CCOR Alpha" 7
 
+mission "Endgame Alpha 3.9"
+	destination "New Iceland"
+	name "Urgently Report to New Iceland"
+	description "Travel to New Iceland in the Kaus Borealis system to receive orders."
+	landing
+	deadline 6
+	source "Earth"
+	to offer
+		has "event: EA navy commission captain"	
+	on offer
+		event "EA alpha breakout three"
+		conversation
+			`You receive a message on your communication system.`
+			choice
+				`	(Open the message.)`
+			`	"You are hereby required and directed to travel to New Iceland and report to the commanding officer of that base with the utmost dispatch. You will answer the contrary at your peril."`
+				accept
+
+mission "Endgame Alpha 3.10"
+	landing
+	name "Escort Refugess to Farseer"
+	description "Convoy a group of refugees to Farseer in the Kursa system."
+	destination "Farseer"
+	to offer
+		has "EA alpha FW takeover: done"
+	on offer
+		event "EA republic mobilized"
+		conversation
+			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have captured a significant portion of the Free Worlds and we haven't been able to do enough to help out the Militia. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, Zugenelgenubi, Vindemiatrix, Arcturus, Menkent, and Deneb.`
+			choice
+				`	"That sounds stupid, sir."`
+				`	"Why are we pulling back that far?"`
+					goto eartkwhy
+			`"I know it does but pulling that far back seems reasonable considering the forces at play here. We can't hold them off until we get reinforcements from up north and the Deep, but the Alphas will likely push the advantage they have now and drive us back to the systems I mentioned. We are evacuating as fast as we possibly can and your next orders are to escort a fleet of refugees to Farseer in the Kursa system. Can you leave immediately?"`
+				goto eartkcanyouleave
+			label eartkwhy
+			`	Admiral Alzaga looks at you quizzically. "I don't think I've brought you to a good enough understanding of the magnitude of the Alpha fleets, they are as powerful as the largest of the Republic and they easily outgun the Free Worlds. We can't hold them off until we get reinforcements from up north and the Deep, but the Alphas will likely push the advantage they have now and drive us back to the systems I mentioned. We are evacuating as fast as we possibly can and your next orders are to escort a fleet of refugees to Farseer in the Kursa system. Can you leave immediately?"`
+			label eartkcanyouleave
+			choice
+				`	"What about the Free Worlds?"`
+				`	"Yes sir."`
+					accept
+			`	"The Free Worlds say they are capable of managing their own evacuation efforts, but I will be letting you go serve as a Militia officer for a while after you return"`
+				accept
+	on complete
+		payment 1000000
+		conversation
+			`	You receive a message from your communication system.`
+			choice
+				`	(Open the message)`
+			`	It is 1.00M credits with a message attached; "Get back here as soon as possible." -Alzaga`
+	npc accompany save
+		personality timid escort
+		government "Republic"
+		fleet "Large Republic Refugee"
 
 
 
