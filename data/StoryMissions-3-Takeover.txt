@@ -323,7 +323,7 @@ mission "Endgame Alpha 3.8"
 	npc
 		system "Yed Prior"
 		government "Alpha"
-		personality hostile staying vindictive ramming daring
+		personality staying vindictive ramming daring
 		fleet "Large Independent Alpha" 7
 		fleet "Large CCOR Alpha" 7
 
@@ -382,6 +382,67 @@ mission "Endgame Alpha 3.10"
 		personality timid escort
 		government "Republic"
 		fleet "Large Republic Refugee"
+
+mission "Endgame Alpha 3.11"
+	landing
+	name "Report to New Iceland"
+	description "Proceed with the utmost dispatch to New Iceland in the Kaus Borealis system."
+	destination "New Iceland"
+	source "Farseer"
+	to offer
+		has "Endgame Alpha 3.10: done"
+	on offer
+			accept
+	to accept
+		has "Endgame Alpha 3.10: done"
+	on complete
+		conversation
+			`The hubbub in the city is truly extraordinary, with even the high ranking Naval officers looking tuckered out, but the exhaustion of the last few days doesn't stop the landing areas looking like an ant hill that has been recently abused. You have no idea where to find Admiral Alzaga.`
+			choice
+				`	(Snag the Nearest Person)`
+					goto eartnitwosnag
+				`	(Wander Around)`
+					goto eartnitwowander
+			label eartnitwosnag
+			`	The first person you come within arms reach of is a brand new recruit who stumbles over his words as he is talking to you, he seems petrified that an officer would want to speak to him. "W-What do you want, Sir?"`
+			choice 
+				`	"Do you know where I can find Admiral Alzaga?"
+			"I have no clue s-sir, but I can take you to my unit leader if you would like sir."
+			choice
+				`	"Do that, then."
+				`	"Forget it."`
+					goto eartnitwowander
+			`	He starts off through the crowds, turning every few steps to make sure you are following. After a short walk the recruit points at a you lieutenant. "That's him sir, I have to get back to work soon or I'll catch it." You thank him for your time and tap the lieutenant on the shoulder. He spins around saying loudly, "What now-- Oh... How can I help you sir?" Snapping to attention and saluting in the process.`
+			`	"Do you know where I can find Admiral Alzaga?" you ask.`
+			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
+				goto eartnitwoend
+			label eartnitwowander
+			`	You start to walk away from your ship into the busy crowds, and a young lieutenant catches your eye and comes over quickly. "How can I help you sir?" he asks cheerfully.`
+			choice
+				`	"Do you know where I can find Admiral Alzaga?"` 
+			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
+			label eartnitwoend
+
+mission "Endgame Alpha 3.12"
+	priority 
+	name "Report to Admiral Alzaga"
+	description "Report to Admiral Alzaga on New Argentina in the Vindemiatrix system to receive orders regarding defense preparation."
+	destination "New Argentina"
+	source "New Iceland"
+	to offer
+		has "Endgame Alpha 3.11: done"
+	on offer
+		event "EA alpha breakout timer four" 7
+		conversation
+			`	It is easy enough to find your way to the DCO's office, given that everything indoors is copiously labelled. After waiting for a few minutes in the queue of officers and NCOs in need of clarification or new orders, you finally gain your audience with the commander, an wizened admiral that looks like he can barely stand.`
+			`	"Ah, the renowned Captain <last>," He says in a surprisingly clear voice (by his looks you expected little more than a dull creak) "What can I do for you today?"`
+			choice
+				`	"Where can I find Admiral Alzaga?"`
+			`	"Oh, yes," he replies, "Admiral Alzaga told me to tell you when you came that he had travelled to New Argentina to organize the formation of a strong blockade in the system. Incidentally he has been placed in command of all the Navy operations against the Alphas and there is talk of his commanding a combined fleet including the Free Worlds. You should head to Vindemiatrix immediately."`
+				accept
+	on complete
+		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
+
 
 
 
