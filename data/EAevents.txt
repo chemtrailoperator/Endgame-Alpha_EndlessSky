@@ -58,16 +58,12 @@ mission "EA parlribbon award"
 	to offer
 		has "event: EA parlribbon award"
 		or
-			has "outfit: Commander Insignia"
-			has "outfit: Captain Insignia"
-			has "outfit: Rear Admiral Insignia"
-	to accept
-		1
-	on accept
-		action
+			has "outfit (flagship installed): Commander Insignia"
+			has "outfit (flagship installed): Captain Insignia"
+			has "outfit (flagship installed): Rear Admiral Insignia"
+	on offer
 			outfit "Parliamentary Commendation Ribbon"
-		``
-			fail
+			decline
 
 event "EA pugservice award"
 
@@ -78,16 +74,12 @@ mission "EA pugservice award"
 	to offer
 		has "event: EA pugservice award"
 		or
-			has "outfit: Commander Insignia"
-			has "outfit: Captain Insignia"
-			has "outfit: Rear Admiral Insignia"
-	to accept
-		1
-	on accept
-		action
+			has "outfit (flagship installed): Commander Insignia"
+			has "outfit (flagship installed): Captain Insignia"
+			has "outfit (flagship installed): Rear Admiral Insignia"
+	on offer
 			outfit "Pug Service Ribbon"
-		``
-			fail
+			decline
 
 event "EA alphacontact award"
 
@@ -98,16 +90,12 @@ mission "EA alphacontact award"
 	to offer
 		has "event: EA alphacontact award"
 		or
-			has "outfit: Commander Insignia"
-			has "outfit: Captain Insignia"
-			has "outfit: Rear Admiral Insignia"
-	to accept
-		1
-	on accept
-		action
+			has "outfit (flagship installed): Commander Insignia"
+			has "outfit (flagship installed): Captain Insignia"
+			has "outfit (flagship installed): Rear Admiral Insignia"
+	on offer
 			outfit "Alpha Contact Award"
-		``
-			fail
+			decline
 
 event "EA danforth chip processed"
 
@@ -2174,5 +2162,6 @@ event "EA Nunki Takeover"
 			fleet "Marauder fleet VIII Alpha" 5
 			fleet "Marauder fleet IX Alpha" 5
 			fleet "Marauder fleet X Alpha" 5
+
 
 event "EA alphas defeated"
