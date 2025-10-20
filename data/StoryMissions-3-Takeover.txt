@@ -267,7 +267,7 @@ mission "Endgame Alpha 3.7"
 mission "Endgame Alpha 3.8"
 	priority
 	name "Relief to Winter"
-	description "Penetrate Alpha blockade around the Yed Prior system and escort group of refugees back."
+	description "Penetrate Alpha blockade around the Yed Prior system and carry a group of refugees back."
 	source "New Iceland"
 	stopover "Winter"
 	to offer
@@ -318,6 +318,7 @@ mission "Endgame Alpha 3.8"
 		personality hostile staying vindictive ramming daring
 		fleet "Large Independent Alpha" 7
 		fleet "Large CCOR Alpha" 7
+
 
 
 
