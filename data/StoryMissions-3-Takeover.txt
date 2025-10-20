@@ -156,6 +156,7 @@ mission "Endgame Alpha 3.3"
 			`	The spaceport controllers tell you that you are requested at the joint headquarters in the spaceport.`
 
 mission "Endgame Alpha 3.4"
+	priority
 	source Solace
 	name "Investigate Alpha Incursion"
 	description "Search the Citadelle system, as well as Alvorada, for signs of where the Alpha incursion began."
@@ -258,7 +259,67 @@ mission "Endgame Alpha 3.7"
 		event "EA Yed Prior Frontline" 1
 		event "EA Alniyat Frontline" 2
 	on enter "Aldhibain"
-		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. All traffic
+		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. Communications and non-military traffic has ceased."`
+	on complete
+		conversation
+			`After you deliver the package to Navy Intelligence, you are instructed to report to the command information center in the spaceport.`
+
+mission "Endgame Alpha 3.8"
+	priority
+	name "Relief to Winter"
+	description "Penetrate Alpha blockade around the Yed Prior system and escort group of refugees back."
+	source "New Iceland"
+	stopover "Winter"
+	to offer
+		has "Endgame Alpha 3.7"
+	to accept
+		has "outfit (flagship installed): Jump Drive"
+	on offer 
+		conversation
+			`When you enter the command information center, you are directed to a prefab shelter set up in the middle of the food court with a hand-made sign on the zipper door that says "High Command" in permanent marker. When you enter the makeshift office, you see that Admiral Alzaga is in charge.`
+			choice
+				`	(Salute and say "Commander <last>, reporting as ordered, sir.")`
+					goto easypsalute
+				`	(Sit down)`
+					goto easypsit
+			label easypsalute
+			`	You snap to attention and salute, but as you bring your arm up you hit a rope running past your right ear that you did not see in the dimness. The entire selter collapses in on you.`
+			`Upon extracating yourself and the Admiral (blaspheming the lack of stakes in polished concrete) from the wreckage, he tells you that Winter in the Yed Prior system is under siege by the Alphas, and orders you to get through the blockade and rescue as many people as possible, as well as several dignitiaries, scientists, intelligence operators, and data analysts who would be priceless to the Alphas.`
+				accept
+			label easypsit
+			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. I was told you already have a jump drive to bypass the blockade."`
+				accept
+	on stopover
+		event "EA alpha breakout two" 2
+		conversation
+			`	You land at the now mostly wrecked spaceport on Winter, and collect the people who were somehow told of your arrival even without using the hyperspace relays connected to Pherkad.`
+			`	Everybody scrambles on board your ship as the few remaining Navy ships begin to give ground. The alphas penetrate the crumbling defensive line and begin firing at will onto the surface of the planet, blowing up anything that moves and forcing you to take off or be destroyed.`
+				launch
+	on complete
+		payment 3000000
+		event "EA navy commission captain"
+		event "EA parlribbon award"
+		event "EA alphacontact award"
+		event "EA pugservice award"
+		conversation
+			`When you land, Alzaga comes to you instead of you going to Alzaga.`
+			choice
+				`	(Salute him and say, Good afternoon, sir.)`
+			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain and a bonus of three million credits. I would recommend going to Earth and buying the appropriate acoutrements."`
+	npc
+		system "Yed Prior"
+		government "Republic"
+		personality staying heroic
+		fleet "Large Republic" 2
+		fleet "Small Republic" 2
+	npc
+		system "Yed Prior"
+		government "Alpha"
+		personality hostile staying vindictive ramming daring
+		fleet "Large Independent Alpha" 7
+		fleet "Large CCOR Alpha" 7
+
+
 
 
 
