@@ -355,7 +355,7 @@ mission "Endgame Alpha 3.10"
 	on offer
 		event "EA republic mobilized"
 		conversation
-			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have captured a significant portion of the Free Worlds and we haven't been able to do enough to help out the Militia. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, Zugenelgenubi, Vindemiatrix, Arcturus, Menkent, and Deneb.`
+			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have captured a significant portion of the Free Worlds and we haven't been able to do enough to help out the Militia. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Zubenelgenubi, Kaus Australis, Albireo, and Vindemiatrix.`
 			choice
 				`	"That sounds stupid, sir."`
 				`	"Why are we pulling back that far?"`
@@ -442,6 +442,18 @@ mission "Endgame Alpha 3.12"
 				accept
 	on complete
 		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
+
+mission "Endgame Alpha 3.13"
+	priority
+	name "Fortify Defensive Line"
+	description
+	source "New Argentina"
+	to offer
+		has "Endgame Alpha 3.12: done"
+	on offer
+		
+	
+
 
 
 
