@@ -248,9 +248,8 @@ mission "Endgame Alpha 2.5"
 					`	(Take the vial.)`
 					`	(Leave it. It's probably none of your business.)`
 						goto EAahnovial
-				``
-					log `Found a vial of mysterious green goo on board a ship that was doing testing on Alphas.`
-					outfit "Mysterious Goo"
+				log `Found a vial of mysterious green goo on board a ship that was doing testing on Alphas.`
+				outfit "Mysterious Goo"
 				label EAahnovial
 					event "EA mysterious green goo"
 				`	The only thing left to search is the crew quarters. The door is locked.`
@@ -303,7 +302,7 @@ mission "Endgame Alpha 2.6"
 		has "Endgame Alpha 2.5: done"
 	on offer
 		conversation
-			`You grab the your report on the action with the Mule as well as the vial of green slime and make your way to the portion of the spaceport set aside for the Navy. You are surprised to find that NavInt is filled entirely with officers of the Free Worlds. You are hurried into a small room where you find a general who stands when you enter.`
+			`You grab the your report on the action with the Mule and make your way to the portion of the spaceport set aside for the Navy. You are surprised to find that NavInt is filled entirely with officers of the Free Worlds. You are hurried into a small room where you find a general who stands when you enter.`
 			choice
 				`	(Salute.)`
 			`	Good Afternoon <last>, you don't know me, I am the commander of a new department that is creating a liaison between the Republic and the Free Worlds intelligence services.  Your reputation precedes you so your introduction won't be necessary. We can get to business.`
@@ -316,16 +315,12 @@ mission "Endgame Alpha 2.6"
 			choice
 				`	"There were lots of dead people that looked half-alpha, but there were also some that looked yellow as well as green. There was a bunch of beds with broken straps, and I also ran into some pure Alphas."`
 			`	"Now that's very bad indeed." the general says, leaning back in his chair, "That means that someone is researching the Deltas again." He pauses and looks at you for a few seconds before continuing; "It seems you don't know what I am talking about. The Deltas were an offshoot of the Alpha research projects back in the early decades of the Republic. In the midst of all the cloning and genetic modification we found a different combination of genes that worked, well sort of, lived temporarily at least. We couldn't ever repeat it after the first batch, it seems there was some unnoticed errors in the genes that hadn't been documented. The Deltas were weaker than the Alphas, still much stronger than a normal human though, and they grew slower, but the point is that they were extremely intelligent. Out of the original 25 embryos, 14 survived to be born and by the time they were two they were talking in complicated sentences and we estimated that none of them had an IQ below 200. Sadly, or maybe fortunately, they all eventually died without reaching adulthood and we weren't able to replicate it again though we tried very hard. Most importantly they seemed to have at least some of the empathy and ability to love that wasn't present in the Alphas. Years later we were able to make a few Betas but they weren't nearly as intelligent, I believe you've met one, Elias Hanover, he lives with the Quarg now and last I heard he was doing very well and he-- but I digress, it could be very bad indeed if the Alphas or humans in league with them are able to breed more Deltas to use in the war or cross with Alphas to remove what shreds of humanity they have left. Did you find anything else noteworthy on the ship?"`
-			branch retrievedvial
-				has "outfit (flagship installed): Mysterious Green Goo"
-			choice
-				`	"No. It smelled really bad."`
-					goto EAgtdnovial
-			label retrievedvial
 			choice
 				`	"No. It smelled really bad."`
 					goto EAgtdnovial
 				`	"I found a vial of opaque green slime the same color as the Alphas."`
+					to display
+						has "outfit (flagship installed): Mysterious Green Goo"
 			`	The general brightens visibly. "Now that's more encouraging, please tell me you brought it off the ship."`
 			choice
 				`	"I did, in fact I have it in my pocket right now."`
@@ -340,8 +335,8 @@ mission "Endgame Alpha 2.6"
 					accept
 				`	"No, I'd rather not."`
 			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
-				require "Mysterious Goo"
-			``	
+			require "Mysterious Goo"
+			``
 				goto EAgtddecline
 			label EAgtdnovial
 			`	The general looks downtrodden. "Oh well, no use crying over spilled milk."`
@@ -416,6 +411,7 @@ mission "Endgame Alpha 2.9"
 	on decline
 		event "EA navy commission commander"
 		event "EA campaign restart timer" 15
+
 
 
 
