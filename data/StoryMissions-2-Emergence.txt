@@ -248,11 +248,10 @@ mission "Endgame Alpha 2.5"
 					`	(Take the vial.)`
 					`	(Leave it. It's probably none of your business.)`
 						goto EAahnovial
-				action
+				``
 					log `Found a vial of mysterious green goo on board a ship that was doing testing on Alphas.`
 					outfit "Mysterious Goo"
 				label EAahnovial
-				action
 					event "EA mysterious green goo"
 				`	The only thing left to search is the crew quarters. The door is locked.`
 				choice
@@ -318,7 +317,7 @@ mission "Endgame Alpha 2.6"
 				`	"There were lots of dead people that looked half-alpha, but there were also some that looked yellow as well as green. There was a bunch of beds with broken straps, and I also ran into some pure Alphas."`
 			`	"Now that's very bad indeed." the general says, leaning back in his chair, "That means that someone is researching the Deltas again." He pauses and looks at you for a few seconds before continuing; "It seems you don't know what I am talking about. The Deltas were an offshoot of the Alpha research projects back in the early decades of the Republic. In the midst of all the cloning and genetic modification we found a different combination of genes that worked, well sort of, lived temporarily at least. We couldn't ever repeat it after the first batch, it seems there was some unnoticed errors in the genes that hadn't been documented. The Deltas were weaker than the Alphas, still much stronger than a normal human though, and they grew slower, but the point is that they were extremely intelligent. Out of the original 25 embryos, 14 survived to be born and by the time they were two they were talking in complicated sentences and we estimated that none of them had an IQ below 200. Sadly, or maybe fortunately, they all eventually died without reaching adulthood and we weren't able to replicate it again though we tried very hard. Most importantly they seemed to have at least some of the empathy and ability to love that wasn't present in the Alphas. Years later we were able to make a few Betas but they weren't nearly as intelligent, I believe you've met one, Elias Hanover, he lives with the Quarg now and last I heard he was doing very well and he-- but I digress, it could be very bad indeed if the Alphas or humans in league with them are able to breed more Deltas to use in the war or cross with Alphas to remove what shreds of humanity they have left. Did you find anything else noteworthy on the ship?"`
 			branch retrievedvial
-				has "event: mysterious green goo"
+				has "outfit (flagship installed): Mysterious Green Goo"
 			choice
 				`	"No. It smelled really bad."`
 					goto EAgtdnovial
@@ -341,8 +340,7 @@ mission "Endgame Alpha 2.6"
 					accept
 				`	"No, I'd rather not."`
 			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
-			action
-				outfit "Mysterious Goo" -1
+				require "Mysterious Goo"
 			``	
 				goto EAgtddecline
 			label EAgtdnovial
@@ -359,8 +357,8 @@ mission "Endgame Alpha 2.7"
 	source Twinstar
 	to offer
 		has "Endgame Alpha 2.5: done"
-	to accept
-		1
+	on offer
+		accept
 	on complete
 		conversation
 			`You land at New Iceland amid the very organized bustle of the reactivated Navy base, and are instructed to meet command at a set of pre-fabricated shelters near the spaceport.`
@@ -418,6 +416,7 @@ mission "Endgame Alpha 2.9"
 	on decline
 		event "EA navy commission commander"
 		event "EA campaign restart timer" 15
+
 
 
 
