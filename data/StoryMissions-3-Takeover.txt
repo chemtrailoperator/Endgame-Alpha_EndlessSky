@@ -121,7 +121,7 @@ mission "Endgame Alpha 3.3"
 		fleet "Marauder fleet X Alpha" 2
 		fleet "Omega Guardian" 4
 		on destroy
-			dialog `As the last of the Alpha ships is destroyed, the Republic flagship hails you: "We've defeated this wave, but if anything I've heard about the Alphas is true there will be more. Retreat to Solace to regroup."
+			dialog `As the last of the Alpha ships is destroyed, the Republic flagship hails you: "We've defeated this wave, but if anything I've heard about the Alphas is true there will be more. Retreat to Solace to regroup."`
 	npc
 		system Men
 		personality launching heroic
@@ -167,7 +167,7 @@ mission "Endgame Alpha 3.4"
 	on offer
 		conversation
 			`The "Joint Headquarters" appears to be staffed mostly by the Republic, probably becaues the Free Worlds does not yet have the capability to deploy on such a scale. You are ushered past a line of waiting staff officers into the main office, where Raven, several Republic admirals, Free Worlds officers, and officials are seated.`
-			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here now so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives that seem to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"
+			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here now so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives that seem to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"`
 			choice
 				`	"What does this have to do with me?"`
 			`	"That's what I'm getting to, commander. You have a wide range of experience in things beyond the reaches of human space. Raven has recommended that you be selected to attempt penetrating captured territory to investigate Citadelle. Since it is beyond the purview of Navy regulations, I will not force you, but you are the most likely candidate."`
@@ -216,8 +216,8 @@ mission "Endgame Alpha 3.6"
 	to offer
 		has "Endgame Alpha 3.5: done"
 	on offer
+		payment 500000
 		conversation
-			payment 500000
 			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven, who opens by handing you a credit chip for 500,000 credits.`
 			`	"Well, <last>, I am intrigued by your sensor logs. The disturbances you registered on the edge of the Citadelle system are similar to those we have detected in the systems surrounding Deneb prior to the Pug attack, as if a new hyperlink is being established."`
 			choice
@@ -406,10 +406,10 @@ mission "Endgame Alpha 3.11"
 			label eartnitwosnag
 			`	The first person you come within arms reach of is a brand new recruit who stumbles over his words as he is talking to you, he seems petrified that an officer would want to speak to him. "W-What do you want, Sir?"`
 			choice 
-				`	"Do you know where I can find Admiral Alzaga?"
+				`	"Do you know where I can find Admiral Alzaga?"`
 			"I have no clue s-sir, but I can take you to my unit leader if you would like sir."
 			choice
-				`	"Do that, then."
+				`	"Do that, then."`
 				`	"Forget it."`
 					goto eartnitwowander
 			`	He starts off through the crowds, turning every few steps to make sure you are following. After a short walk the recruit points at a you lieutenant. "That's him sir, I have to get back to work soon or I'll catch it." You thank him for your time and tap the lieutenant on the shoulder. He spins around saying loudly, "What now-- Oh... How can I help you sir?" Snapping to attention and saluting in the process.`
@@ -453,6 +453,7 @@ mission "Endgame Alpha 3.12"
 #	on offer
 		
 	
+
 
 
 
