@@ -243,15 +243,7 @@ mission "Endgame Alpha 2.5"
 				choice
 					`	(Examine the cold storage.)`
 				label EAahfreezer
-				`	The freezer looks like it contained blood samples at one point, but almost every vial is shattered and moldy. There is one that does not contain blood however. It contains a dark-green substance that is completely opaque even as a thin film.`
-				choice
-					`	(Take the vial.)`
-					`	(Leave it. It's probably none of your business.)`
-						goto EAahnovial
-				log `Found a vial of mysterious green goo on board a ship that was doing testing on Alphas.`
-				outfit "Mysterious Goo"
-				label EAahnovial
-					event "EA mysterious green goo"
+				`	The freezer looks like it contained blood samples at one point, but almost every vial is shattered and moldy.`
 				`	The only thing left to search is the crew quarters. The door is locked.`
 				choice
 					`	(Demand that whatever is on the other side open the door.)`
@@ -282,7 +274,7 @@ mission "Endgame Alpha 2.5"
 				`	As you throw in two grenades, there is an almost human sounding yell, a scuffle, and then two explosions. A blast of blood and green tissue flies out of the door, only missing you because of your vantage point.`
 				`	The inside of the crew quarters is a complete disaster. Not only the four bodies of what appear to be Alpha-Human hybrids, but also several decaying corpses. Gross. Time to get back to your ship.`
 				label EAahabort
-				`	As you leave, your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There is probaby more, but this is the kind of battle you are used to.`
+				`	As you leave, you pick up a vial of opaque greenyour bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There is probaby more, but this is the kind of battle you are used to.`
 	on enter "Fumalsamakah"
 		dialog "The missing ship is present in this system. But appears to be completely unresponsive."
 	
@@ -411,6 +403,7 @@ mission "Endgame Alpha 2.9"
 	on decline
 		event "EA navy commission commander"
 		event "EA campaign restart timer" 15
+
 
 
 
