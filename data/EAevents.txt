@@ -1,5 +1,4 @@
 event "EA navy commission commander"
-	
 	government "Escort"
 		swizzle 0
 	planet Earth
@@ -2165,3 +2164,4 @@ event "EA Nunki Takeover"
 
 
 event "EA alphas defeated"
+
