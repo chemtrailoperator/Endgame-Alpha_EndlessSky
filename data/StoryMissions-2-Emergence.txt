@@ -206,7 +206,7 @@ mission "Endgame Alpha 2.5"
 		personality mute target waiting derelict nemesis
 		ship "Mule" "Starstreak 3"
 		on capture
-			outfit "Mysterious Green Goo"
+			outfit "Mysterious Goo"
 			conversation
 				`	Once the battle is over, you go about the standard duties of securing a ship, plus sending over temporary crew to clean up the mess... Besides some wrecked components in the cockpit which are easily replaced, everything is in good condition to operate. Upon further examination, it looks like the Alphas strapped into the stretchers and in the brig broke out and killed (and partially ate) the human crew on board. Time to get back to Twinstar.`
 		on board
@@ -312,7 +312,7 @@ mission "Endgame Alpha 2.6"
 					goto EAgtdnovial
 				`	"I found a vial of opaque green slime the same color as the Alphas."`
 					to display
-						has "outfit (flagship installed): Mysterious Green Goo"
+						has "outfit (flagship installed): Mysterious Goo"
 			`	The general brightens visibly. "Now that's more encouraging, please tell me you brought it off the ship."`
 			choice
 				`	"I did, in fact I have it in my pocket right now."`
@@ -403,6 +403,7 @@ mission "Endgame Alpha 2.9"
 	on decline
 		event "EA navy commission commander"
 		event "EA campaign restart timer" 15
+
 
 
 
