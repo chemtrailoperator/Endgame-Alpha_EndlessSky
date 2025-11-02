@@ -337,7 +337,6 @@ mission "Endgame Alpha 3.9"
 	to offer
 		has "event: EA navy commission captain"	
 	on offer
-		event "EA alpha breakout three"
 		conversation
 			`You receive a message on your communication system.`
 			choice
@@ -453,6 +452,7 @@ mission "Endgame Alpha 3.12"
 #	on offer
 		
 	
+
 
 
 
