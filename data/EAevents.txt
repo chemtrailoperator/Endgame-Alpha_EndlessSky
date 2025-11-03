@@ -21,26 +21,23 @@ event "EA navy commission commander"
 		outfitter "Korath Minelayer"
 	set "license: Navy"
 	"salary: Republic" = 5000
-	log `Became an officer of the Republic Navy at the rank of Commander.`
+	
 
 event "EA navy commission captain"
 	government "Escort"
 		swizzle 0
-	log `Received captain's commission in the Republic Navy for outstanding service.`
 	set "license: Navy Cruiser"
 	"salary: Republic" = 10000
 
 event "EA navy commission admiral"
 	government "Escort"
 		swizzle 0
-	log `Received admiral's commission in the Republic Navy for command of a squadron.`
 	set "license: Navy Carrier"
 	"salary: Republic" = 15000
 
 event "EA navy certified logistics"
 	government "Escort"
-		swizzle 0		
-	log `Received certification to fly and purchase the Navy Auxiliary.`
+		swizzle 0
 	set "license: Navy Auxiliary"
 	"salary: Republic" = 16000
 
@@ -2164,4 +2161,5 @@ event "EA Nunki Takeover"
 
 
 event "EA alphas defeated"
+
 
