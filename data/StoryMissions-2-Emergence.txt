@@ -348,6 +348,22 @@ mission "Endgame Alpha 2.6.1"
 		require "Mysterious Goo"
 		fail
 
+#Temporary patch until storyline is written
+mission "Endgame Alpha 2.6.2"
+	landing
+	name "Report to New Iceland"
+	destination "New Iceland"
+	description "Report to <destination> in <system> for Navy duty."
+	source Valhalla
+	to offer
+		has "Endgame Alpha 2.6: done"
+	on offer
+		require "Mysterious Goo"
+		dialog "You deliver the vial to the Deep Security main lab and are instructed to report back to New Iceland."
+	on complete
+		conversation
+			`You land at New Iceland amid the very organized bustle of the reactivated Navy base, and are instructed to meet command at a set of pre-fabricated shelters near the spaceport.`
+
 mission "Endgame Alpha 2.7"
 	landing
 	name "Report to New Iceland"
@@ -355,9 +371,9 @@ mission "Endgame Alpha 2.7"
 	description "Report to <destination> in <system> for Navy duty."
 	source Twinstar
 	to offer
-		has "Endgame Alpha 2.5: done"
-	on offer
-		accept
+		has "Endgame Alpha 2.6: offered"
+	to accept
+		has "Endgame Alpha 2.6: declined"
 	on complete
 		conversation
 			`You land at New Iceland amid the very organized bustle of the reactivated Navy base, and are instructed to meet command at a set of pre-fabricated shelters near the spaceport.`
@@ -369,7 +385,9 @@ mission "Endgame Alpha 2.8"
 	destination "Earth"
 	source "New Iceland"
 	to offer
-		has "Endgame Alpha 2.7: done"
+		or
+			has "Endgame Alpha 2.7: done"
+			has "Endgame Alpha 2.6.2: done"
 	on offer
 		payment 2000000
 		conversation
@@ -397,9 +415,8 @@ mission "Endgame Alpha 2.8"
 		ship "Carrier" "R.N.S. Endureable"
 			government "Republic"
 			personality heroic
-
 	on complete
-		dialog `When you land you receive a message from Admiral Alzaga telling you to meet them in the officer’s club in the spaceport in a few hours once they have talked to parliament.`
+		dialog `When you land you receive a message from Admiral Alzaga telling you to meet them in the officer’s club in the spaceport in a few hours once they have talked to a parliament committee.`
 
 
 mission "Endgame Alpha 2.9"
@@ -415,6 +432,7 @@ mission "Endgame Alpha 2.9"
 	on decline
 		event "EA navy commission commander"
 		event "EA campaign restart timer" 15
+
 
 
 
