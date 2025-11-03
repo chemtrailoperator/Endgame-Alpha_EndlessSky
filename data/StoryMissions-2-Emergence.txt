@@ -327,7 +327,7 @@ mission "Endgame Alpha 2.6"
 					accept
 				`	"No, I'd rather not."`
 			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
-			require "Mysterious Goo"
+			set "EA gave up mysterious goo"
 			``
 				goto EAgtddecline
 			label EAgtdnovial
@@ -335,6 +335,18 @@ mission "Endgame Alpha 2.6"
 			label EAgtddecline
 			`	The general stands up again. "You are dismissed, your next duties will be on New Iceland."`
 				decline
+
+#Removes mysterious goo if needed
+mission "Endgame Alpha 2.6.1"
+	invisible
+	source
+		attributes planet
+	to offer
+		has "EA gave up mysterious goo"
+		has "outfit (flagship installed): Mysterious Goo"
+	on offer
+		require "Mysterious Goo"
+		fail
 
 mission "Endgame Alpha 2.7"
 	landing
@@ -403,6 +415,7 @@ mission "Endgame Alpha 2.9"
 	on decline
 		event "EA navy commission commander"
 		event "EA campaign restart timer" 15
+
 
 
 
