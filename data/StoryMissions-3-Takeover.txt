@@ -50,7 +50,7 @@ mission "Endgame Alpha 3.2"
 			`	Effective immediately. All units on non-essential deployments must report to Thule in the Men system for combat operations. All squadrons currently refitting must deploy immediately with any combat ready ships.`
 				accept
 	on enter "Men"
-		dialog `The system is one massive battleground. Probably best to get on Men immediately so you can be deployed.`
+		dialog `The system is one massive battleground. Probably best to get on Men immediately to report to command.`
 	npc
 		personality staying
 		government "Republic"
@@ -96,7 +96,7 @@ mission "Endgame Alpha 3.3"
 	on offer
 		conversation
 			`Anything civilian in the Thule spaceport has been removed or modified for military use. You notice that besides the organized Republic units, there is are many militia fleets and pirate bands operating under the direction of the Navy. Apparently an Alpha attack is enough to make normal humans put aside their differences.`
-			`	Suddenly, a siren starts to blare and ships begin taking off, raising their shields as soon as they are clear of the ground. The siren is followed by a voice stating that a massive armada has been seen en route to the system and formation orders will be sent out by spaceport departure control.`
+			`	Suddenly, a siren starts to blare and ships begin taking off, charging their shields as soon as they are clear of the ground. The siren is followed by a voice stating that a massive armada has been detected en route to the system and formation orders will be sent out by spaceport departure control.`
 				launch
 	npc
 		personality entering staying target
@@ -181,7 +181,7 @@ mission "Endgame Alpha 3.4"
 			`	"Understood, sir. We will find somebody else to complete the job. Your duties for now will be to hold the defensive lines here and in Kappa Centauri. I can order you to do that."`
 				decline
 			label okay
-			`	The whole group takes a metaphorical sigh of relief. The admiral says, "Well then, good luck! Oh, one last thing, commander, make sure to carry enough fuel for the round trip."`
+			`	The whole group takes a metaphorical sigh of relief. The admiral says, "Well then, good luck! Oh, one last thing, commander, make sure to carry enough fuel for the round trip. Given the activity we've seen hanging around with a ramscoop might not be feasible."`
 				accept
 
 mission "Endgame Alpha 3.5"
@@ -216,9 +216,9 @@ mission "Endgame Alpha 3.6"
 	to offer
 		has "Endgame Alpha 3.5: done"
 	on offer
-		payment 500000
+		payment 2000000
 		conversation
-			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven, who opens by handing you a credit chip for 500,000 credits.`
+			`Back on Solace, you report back to Joint Headquarters at the spaceport. No one appears to be available except Raven, who opens by handing you a credit chip for two million credits.`
 			`	"Well, <last>, I am intrigued by your sensor logs. The disturbances you registered on the edge of the Citadelle system are similar to those we have detected in the systems surrounding Deneb prior to the Pug attack, as if a new hyperlink is being established."`
 			choice
 				`	"Does that mean that there is a system beyond Citadelle?"`
@@ -234,7 +234,7 @@ mission "Endgame Alpha 3.6"
 			label access
 			`	"If they really did come from there, it could become a worse problem than it already is. Oh, that reminds me." She pulls out a data pad.`
 			label hyperlink
-			`	"The ships that attacked men were unique, but they were not entirely new. After examining th elogs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
+			`	"The ships that attacked men were unique, but they were not entirely new. After examining the logs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
 				goto patrol
 			label interesting
 			`	Raven looks at you oddly, "Yes... very."`
@@ -452,6 +452,7 @@ mission "Endgame Alpha 3.12"
 #	on offer
 		
 	
+
 
 
 
