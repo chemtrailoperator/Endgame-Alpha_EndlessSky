@@ -262,7 +262,7 @@ mission "Endgame Alpha 3.7"
 		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. Communications and non-military traffic has ceased."`
 	on complete
 		conversation
-			`After you deliver the package to Navy Intelligence, you are instructed to report to the command information center in the spaceport.`
+			`After you deliver the package to Navy Intelligence, you are instructed to report to the command information center in the spaceport. Multiple news broadcasts are also stating that the Alpha presence has captured Kappa Centauri and Pherkad, and the surrounding systems are now being pushed hard.`
 
 mission "Endgame Alpha 3.8"
 	priority
@@ -270,10 +270,9 @@ mission "Endgame Alpha 3.8"
 	description "Penetrate Alpha blockade around the Yed Prior system and carry a group of refugees back."
 	source "New Iceland"
 	stopover "Winter"
+	passengers 4
 	to offer
-		has "Endgame Alpha 3.7"
-	to accept
-		has "outfit (flagship installed): Jump Drive"
+		has "Endgame Alpha 3.7: done"
 	on offer 
 		conversation
 			`When you enter the command information center, you are directed to a prefab shelter set up in the middle of the food court with a hand-made sign on the zipper door that says "High Command" in permanent marker. When you enter the makeshift office, you see that Admiral Alzaga is in charge.`
@@ -287,7 +286,7 @@ mission "Endgame Alpha 3.8"
 			`Upon extracating yourself and the Admiral (blaspheming the lack of stakes in polished concrete) from the wreckage, he tells you that Winter in the Yed Prior system is under siege by the Alphas, and orders you to get through the blockade and rescue as many people as possible, as well as several dignitiaries, scientists, intelligence operators, and data analysts who would be priceless to the Alphas.`
 				accept
 			label easypsit
-			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. I was told you already have a jump drive to bypass the blockade."`
+			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. If you have  ajump drive to bypass the blockade, that would be excellent."`
 				accept
 	on stopover
 		event "EA Yed Prior Takeover"
@@ -303,17 +302,6 @@ mission "Endgame Alpha 3.8"
 			`	You land at the now mostly wrecked spaceport on Winter, and collect the people who were somehow told of your arrival even without using the hyperspace relays connected to Pherkad.`
 			`	Everybody scrambles on board your ship as the few remaining Navy ships begin to give ground. The alphas penetrate the crumbling defensive line and begin firing at will onto the surface of the planet, blowing up anything that moves and forcing you to take off or be destroyed.`
 				launch
-	on complete
-		payment 3000000
-		event "EA navy commission captain"
-		event "EA parlribbon award"
-		event "EA alphacontact award"
-		event "EA pugservice award"
-		conversation
-			`When you land, Alzaga comes to you instead of you going to Alzaga.`
-			choice
-				`	(Salute him and say, Good afternoon, sir.)`
-			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain and a bonus of three million credits. I would recommend going to Earth and buying the appropriate acoutrements."`
 	npc
 		system "Yed Prior"
 		government "Republic"
@@ -327,6 +315,27 @@ mission "Endgame Alpha 3.8"
 		fleet "Large Independent Alpha" 7
 		fleet "Large CCOR Alpha" 7
 
+mission "Endgame Alpha 3.8.1"
+	name "Purcahse Insignia"
+	source "New Iceland"
+	destination "Earth"
+	description "Travel to Earth in the Sol system to purchase captain insignia and receive your license."
+	to offer
+		has "Endgame Alpha 3.8: done"
+	on offer
+		conversation
+			`When you land, Alzaga comes to you instead of you going to Alzaga.`
+			choice
+				`	(Salute him and say, Good afternoon, sir.)`
+			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain and a bonus of three million credits. I would recommend going to Earth and buying the appropriate acoutrements. Don't worry about the Alphas for now. There was a massive push of Alpha ships, but they seem to have lost steam after conquering the last few systems and they seem to be holding. The captured planets aren't doing too well, but both the Free Worlds and teh Repblic have agreed that it would be impossible to try to stop them right now."`
+				accept
+	on complete
+		payment 3000000
+		event "EA navy commission captain"
+		event "EA parlribbon award"
+		event "EA alphacontact award"
+		event "EA pugservice award"
+
 mission "Endgame Alpha 3.9"
 	destination "New Iceland"
 	name "Urgently Report to New Iceland"
@@ -335,7 +344,7 @@ mission "Endgame Alpha 3.9"
 	deadline 6
 	source "Earth"
 	to offer
-		has "event: EA navy commission captain"	
+		has "Endgame Alpha 3.8.1: done"	
 	on offer
 		conversation
 			`You receive a message on your communication system.`
@@ -354,7 +363,7 @@ mission "Endgame Alpha 3.10"
 	on offer
 		event "EA republic mobilized"
 		conversation
-			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have captured a significant portion of the Free Worlds and we haven't been able to do enough to help out the Militia. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Zubenelgenubi, Kaus Australis, Albireo, and Vindemiatrix.`
+			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citaddelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Zubenelgenubi, Kaus Australis, Albireo, and Vindemiatrix.`
 			choice
 				`	"That sounds stupid, sir."`
 				`	"Why are we pulling back that far?"`
@@ -441,12 +450,3 @@ mission "Endgame Alpha 3.12"
 				accept
 	on complete
 		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
-
-#mission "Endgame Alpha 3.13"
-#	priority
-#	name "Fortify Defensive Line"
-#	description
-#	source "New Argentina"
-#	to offer
-#		has "Endgame Alpha 3.12: done"
-#	on offer
