@@ -329,7 +329,8 @@ mission "Endgame Alpha 3.8"
 		fleet "Large CCOR Alpha" 7
 
 mission "Endgame Alpha 3.8.1"
-	name "Purcahse Insignia"
+	landing
+	name "Purchase Insignia"
 	source "New Iceland"
 	destination "Earth"
 	description "Travel to Earth in the Sol system to purchase captain insignia and receive your license."
@@ -340,11 +341,12 @@ mission "Endgame Alpha 3.8.1"
 			`When you land, Alzaga comes to you instead of you going to Alzaga.`
 			choice
 				`	(Salute him and say, Good afternoon, sir.)`
-			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain and a bonus of three million credits. I would recommend going to Earth and buying the appropriate acoutrements. Don't worry about the Alphas for now. There was a massive push of Alpha ships, but they seem to have lost steam after conquering the last few systems and they seem to be holding. The captured planets aren't doing too well, but both the Free Worlds and teh Repblic have agreed that it would be impossible to try to stop them right now."`
+			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain and a bonus of three million credits. I would recommend going to Earth and buying the appropriate acoutrements. Don't worry about the Alphas for now. There was a massive push of Alpha ships, but they seem to have lost steam after conquering the last few systems and they seem to be holding. The captured planets aren't doing too well, but both the Free Worlds and the Republic have agreed that it would be impossible to try to stop them right now."`
 				accept
+	on enter "Sol"
+		event "EA navy commission captain"
 	on complete
 		payment 3000000
-		event "EA navy commission captain"
 		event "EA parlribbon award"
 		event "EA alphacontact award"
 		event "EA pugservice award"
@@ -372,7 +374,7 @@ mission "Endgame Alpha 3.10"
 	description "Convoy a group of refugees to Farseer in the Kursa system."
 	destination "Farseer"
 	to offer
-		has "EA alpha FW takeover: done"
+		has "Endgame Alpha 3.9: done"
 	on offer
 		event "EA republic mobilized"
 		conversation
