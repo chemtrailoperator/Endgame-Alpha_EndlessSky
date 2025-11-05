@@ -377,8 +377,11 @@ mission "Endgame Alpha 3.10"
 		has "Endgame Alpha 3.9: done"
 	on offer
 		event "EA republic mobilized"
+		system "Fumalzenarah"
+			remove hidden
+			link Citadelle
 		conversation
-			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citaddelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Zubenelgenubi, Kaus Australis, Albireo, and Vindemiatrix.`
+			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citaddelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Albireo, Kaus Australis, Zubenelgenubi, and the Dirt Tunnel.`
 			choice
 				`	"That sounds stupid, sir."`
 				`	"Why are we pulling back that far?"`
@@ -446,6 +449,65 @@ mission "Endgame Alpha 3.11"
 			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
 			label eartnitwoend
 
+#This mission puts strong npc defense fleets in the appropriate systems.
+mission "Endgame Alpha X3.12"
+	invisible
+	source "New Iceland"
+	to offer
+		has "Endgame Alpha 3.11: done"
+	on offer
+		accept
+	to complete
+		never
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Wei"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Alnasl"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Eber"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Alpha Arae"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Tais"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Eltanin"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Albireo"
+	npc
+		government Republic
+		personality staying heroic
+		fleet "Large Republic" 4
+		fleet "Small Republic" 6
+		system "Zubenelgenubi"
+
 mission "Endgame Alpha 3.12"
 	priority 
 	name "Report to Admiral Alzaga"
@@ -464,3 +526,14 @@ mission "Endgame Alpha 3.12"
 				accept
 	on complete
 		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
+
+#mission "Endgame Alpha 3.13"
+#	priority
+#	source "New Argentina"
+#	destination "Sagarra"
+#	unmark Sagarra
+#	to offer
+#		has "Endgame Alpha 3.12: done"
+#	on offer
+#		conversation
+#			`
