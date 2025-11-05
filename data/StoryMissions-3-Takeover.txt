@@ -453,7 +453,6 @@ mission "Endgame Alpha 3.12"
 	to offer
 		has "Endgame Alpha 3.11: done"
 	on offer
-		event "EA alpha breakout timer four" 7
 		conversation
 			`	It is easy enough to find your way to the DCO's office, given that everything indoors is copiously labelled. After waiting for a few minutes in the queue of officers and NCOs in need of clarification or new orders, you finally gain your audience with the commander, an wizened admiral that looks like he can barely stand.`
 			`	"Ah, the renowned Captain <last>," He says in a surprisingly clear voice (by his looks you expected little more than a dull creak) "What can I do for you today?"`
