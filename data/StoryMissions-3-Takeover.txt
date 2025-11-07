@@ -562,7 +562,16 @@ mission "Endgame Alpha 3.13"
 			label powerful
 			`	The man smiles sarcastically, "That's what I keep hearing, and it isn't the Navy that I'm worried about, you'll never find a more valiant body of soldiers. The problem is that we cannot unify. Parliament is hesitant to help the Free Worlds, even though could have been the first line of defense. The only reason we got the help that we did is because of people like Alzaga and Danforth loose interpretation of their operation orders. If the Free Worlds and the Republic won't unify, let alone the Syndicate, we don't have much of a chance. Anyway, you have a meeting to get to and there is nothing more precious than time, especially now." He pats you on the shoulder and leaves.`
 			label alzaga
-			`	Admiral Alzaga actually seems to be less haggard than he was before, but his office is much worse for wear. You salute and offer the appropriate greeting. "Nice to see you again, <last>," He says, saluting back, "I have some special work for you. Just like before, I'd like you to penetrate the Alpha territory, but htis time I want you to get to`
-				accept
+			`	Admiral Alzaga actually seems to be less haggard than he was before, but his office is much worse for wear. You salute and offer the appropriate greeting. "Nice to see you again, <last>," He says, saluting back, "I have some special work for you. Just like before, I'd like you to penetrate the Alpha territory, but this time I want you to get all the way into their home system. Once again, you'll need lots of fuel.`
+			choice
+				`	"Sounds good, I'll see if I can make that happen."`
+					accept
+				`	"Why should we bother?"
+			`	"The Alpha fleets so far have had an interesting characteristic: They are completely organized. While that wouldn't normally be such an object of note, it is different from what we saw last time, where individual ships and small fleets attacked wherever and whenever they pleased. We think that thehre may be a larger command center on that planet, and destroying it could level the playing field significantly. Alphas lack many of the traits and emotions that humans have, including the concept of following orders. There must be something there that is keeping them in line, and we want to know what it is."`
+			choice
+				`	"Okay."`
+					accept
+				`	"No Thanks, I'm out."`
+					decline
 		on complete
 			dialog `test complete`
