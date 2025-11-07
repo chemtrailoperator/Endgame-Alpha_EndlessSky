@@ -377,9 +377,7 @@ mission "Endgame Alpha 3.10"
 		has "Endgame Alpha 3.9: done"
 	on offer
 		event "EA republic mobilized"
-		system "Fumalzenarah"
-			remove hidden
-			link Citadelle
+		event "EA fumalzenarah revealed"
 		conversation
 			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citaddelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Albireo, Kaus Australis, Zubenelgenubi, and the Dirt Tunnel.`
 			choice

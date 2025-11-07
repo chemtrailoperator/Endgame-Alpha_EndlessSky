@@ -137,6 +137,11 @@ event "EA Raven contact timer"
 
 event "EA campaign restart timer"
 
+event "EA fumalzenarah revealed"
+	system Fumalzenarah
+		remove hidden
+		link citadelle
+
 event "EA republic mobilized"
 	system "Cor Caroli"
 		remove fleet "Large Republic"
