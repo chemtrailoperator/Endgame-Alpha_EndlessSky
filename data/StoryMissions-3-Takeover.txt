@@ -527,9 +527,9 @@ mission "Endgame Alpha 3.12"
 
 mission "Endgame Alpha 3.13"
 	priority
+	invisible
 	source "New Argentina"
 	destination "Sagarra"
-	unmark Sagarra
 	to offer
 		has "Endgame Alpha 3.12: done"
 	on offer
@@ -571,5 +571,3 @@ mission "Endgame Alpha 3.13"
 					accept
 				`	"No Thanks, I'm out."`
 					decline
-		on complete
-			dialog `test complete`
