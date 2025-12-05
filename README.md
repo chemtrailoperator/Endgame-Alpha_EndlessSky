@@ -6,9 +6,8 @@ Make sure you create a game save at the start of the story, the storyline is cur
       
 The storyline is activated by a low frequency spaceport mission on any Free Worlds planet, and requires completion of the FW storyline.
 
-If you want to download the code, download directly from the repo for now until version 1 is published.
+The code is available in release 0.5, however, it is not updated, so download a ZIP directly from the code to get the most recent version. Everything should be stable.
 
 Coming Soon:
-Full synopsis in the wiki
-More storyline
-Possible linking with some other of my plugin repos
+More storyline and general additions
+Possible linking the wiki with some of my other plugin repos

@@ -2,4 +2,3 @@ name "Endgame Alpha"
 about "Endgame Alpha is a content plugin that adds an Alpha war storyline as a Navy officer."
 authors
 	chemtrailoperator
-	living_adblocker
