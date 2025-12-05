@@ -18,6 +18,7 @@ mission "EA FW Raven Contact"
 		government "Free Worlds"
 	to offer
 		has "free worlds plot completed"
+		has "Wanderers: Alpha Surveillance D: done"
 		random < 10
 	on offer
 		conversation

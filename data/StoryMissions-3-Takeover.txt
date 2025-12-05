@@ -571,3 +571,11 @@ mission "Endgame Alpha 3.13"
 					accept
 				`	"No Thanks, I'm out."`
 					decline
+			label lower
+			`	After wandering around interminably, looking for someone who knows what you are supposed to do, you find the right person and are given a data pad containing your orders.`
+			`	Your orders state that you are now on special service, and that you are requested to penetrate the Alpha blockade and reach their home planet to investigate.`
+			choice
+				`	(Take the mission, even though you aren't being ordered to.)`
+					accept
+				`	(Decline it.)`
+					decline

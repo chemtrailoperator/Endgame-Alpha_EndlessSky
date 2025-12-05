@@ -28,16 +28,6 @@ system Fumalzenarah
 	habitable 490
 	belt 1669
 	asteroids "large metal" 1 0.732
-	trade Clothing 268
-	trade Electronics 639
-	trade Equipment 532
-	trade Food 166
-	trade "Heavy Metals" 929
-	trade Industrial 902
-	trade "Luxury Goods" 1059
-	trade Medical 772
-	trade Metal 589
-	trade Plastic 526
 	fleet "Omega Guardian" 1500
 	object
 		sprite star/k0
@@ -72,6 +62,6 @@ system Fumalzenarah
 			period 41.3874
 planet Sagarra
 	landscape land/sea22
-	description `This is a pristine and perfectly habitable world, with warm oceans and a temperate climate. The land is dominated by large reptiles similar to the dinosaurs that roamed the continents of ancient Earth. Some of the land reptiles are over twenty meters in length, and the sea holds monsters more than twice that size.`
+	description `This world is eerily similar to the Alpha's previous refuge, Host. Most of the ground is scarred by the marks of Alpha activity, who have used the planet with little regard for the environment. The entire landscape is covered in weapons and ship plants of varying size and operability that have labored for hundreds of years to produce a massive force of warships.`
 	description `	Deep in the jungles near the equator, small mammals are working hard to avoid being eaten by the great lizards, and to survive for long enough that they will be able to evolve into the dominant life form.`
 	security 0
