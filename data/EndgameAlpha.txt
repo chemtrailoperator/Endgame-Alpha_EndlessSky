@@ -54,7 +54,7 @@ phrase "EA package picked up"
 		"winks, and walks away. "
 		"and continues about their work. "
 		"and leaves immediately. "
-		"and begins speaking too one of the fueling technicians. "
+		"and begins speaking to one of the fueling technicians. "
 	word
 		"Huh."
 		"Weird."
