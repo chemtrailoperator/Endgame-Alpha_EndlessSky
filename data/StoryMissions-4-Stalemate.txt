@@ -22,4 +22,4 @@ mission "Endgame Alpha 4.0"
 		has "Endgame Alpha 3.13: done"
 	on offer
 		conversation
-			``
+			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`

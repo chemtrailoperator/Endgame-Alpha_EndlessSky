@@ -57,6 +57,14 @@ event "EA navy certified logistics"
 event "EA repaint navy"
 	government "Escort"
 		swizzle 0
+		
+event "EA reveal Fumalzenarah"
+	system Fumalzenarah
+		remove hidden
+		
+event "EA connect Fumalzenarah"
+	system Fumalzenarah
+		link Citadelle
 
 event "EA parlribbon award"
 
