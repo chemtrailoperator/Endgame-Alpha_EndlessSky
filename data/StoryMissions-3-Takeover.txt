@@ -19,6 +19,7 @@ mission "Endgame Alpha 3.0"
 	to offer
 		has "event: EA campaign restart timer"
 	on offer
+		event "EA reveal Fumalzenarah"
 		conversation
 			action
 				event "EA Citadelle Takeover"
@@ -533,6 +534,7 @@ mission "Endgame Alpha 3.13"
 	to offer
 		has "Endgame Alpha 3.12: done"
 	on offer
+		event "EA connect Fumalzenarah"
 		conversation
 			`The New Argentina spaceport looks much like the other places where the Republic has established their operations, incredibly busy, organized, and quiet. Rather than using prefab shelters for their command, however, the offices and buildings in the area have been repurposed for official use. They also have a makeshift status board in the spaceport, reading that Admiral Alzaga can be found in the local outfitter's office complex.`
 			choice
