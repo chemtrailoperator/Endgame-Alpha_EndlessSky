@@ -581,3 +581,23 @@ mission "Endgame Alpha 3.13"
 					accept
 				`	(Decline it.)`
 					decline
+					
+#Patch mission for revealing the Alpha home system for users who passed 3.0 prior to v0.5.2
+mission "Endgame Alpha P3.0"
+	invisible
+	to offer
+		not "event: EA reveal Fumalzenarah"
+		has "Endgame Alpha 3.0: done"
+	on offer
+		event "EA reveal Fumalzenarah"
+		fail
+		
+#Patch mission for linking the Alpha system for users who completed 3.13 prior to v0.5.2
+mission "Endgame Alpha P3.13"
+	invisible
+	to offer
+		not "event: EA connect Fumalzenarah"
+		has "Endgame Alpha 3.13: done"
+	on offer
+		event "EA connect Fumalzenarah"
+		fail
