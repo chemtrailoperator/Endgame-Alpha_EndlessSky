@@ -333,7 +333,7 @@ mission "Endgame Alpha 2.6"
 					goto EAgtdnovial
 				`	"I found a vial of opaque green slime the same color as the Alphas."`
 					to display
-						has "outfit (flagship installed): Mysterious Goo"
+						has "EA took goo vial"
 			`	The general brightens visibly. "Now that's more encouraging, please tell me you brought it off the ship."`
 			choice
 				`	"I did, in fact I have it in my pocket right now."`
@@ -349,6 +349,7 @@ mission "Endgame Alpha 2.6"
 				`	"No, I'd rather not."`
 			action
 				require "Mysterious Goo"
+			label placeholderidk
 			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
 				goto EAgtddecline
 			label EAgtdnovial
