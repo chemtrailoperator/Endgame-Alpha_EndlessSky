@@ -219,7 +219,6 @@ mission "Endgame Alpha 2.5"
 		personality mute target waiting derelict nemesis
 		ship "Mule" "Starstreak 3"
 		on capture
-			outfit "Mysterious Goo"
 			conversation
 				`	Once the battle is over, you go about the standard duties of securing a ship, plus sending over temporary crew to clean up the mess... Besides some wrecked components in the cockpit which are easily replaced, everything is in good condition to operate. Upon further examination, it looks like the Alphas strapped into the stretchers and in the brig broke out and killed (and partially ate) the human crew on board. Time to get back to Twinstar.`
 		on board
@@ -257,7 +256,15 @@ mission "Endgame Alpha 2.5"
 				choice
 					`	(Examine the cold storage.)`
 				label EAahfreezer
-				`	The freezer looks like it contained blood samples at one point, but every vial is shattered and moldy.`
+				`	The freezer looks like it contained blood samples at one point, but all but one vial is shattered and moldy. The one remaining vial contains a green goo that is opaque even as a thin film.`
+				choice
+					`	(Take the Vial.)`
+					`	(Leave it. Probably none of your business.)`
+						goto takenovial
+				action
+					outfit "Mysterious Goo"
+					set "EA took goo vial"
+				label takenovial
 				`	The only thing left to search is the crew quarters. The door is locked.`
 				choice
 					`	(Demand that whatever is on the other side open the door.)`
@@ -272,7 +279,7 @@ mission "Endgame Alpha 2.5"
 					`	(Breach the door.)`
 						goto EAahblow
 					`	(Leave.)`
-						goto EAahabort
+						goto EAahabort				
 				label EAahpick
 				`	Turns out this Mule has more advanced locks than the average and your skill is not up to the task of getting through this door. They probably weren't up to the task of normal locks either. Fortunately, your skills do run to forcing your way through things with even highly advanced locks the slightly more old-fashioned way.`
 					goto EAahblow
@@ -288,7 +295,7 @@ mission "Endgame Alpha 2.5"
 				`	As you throw in two grenades, there is an almost human sounding yell, a scuffle, and then two explosions. A blast of blood and green tissue flies out of the door, only missing you because of your vantage point.`
 				`	The inside of the crew quarters is a complete disaster. Not only the four bodies of what appear to be Alpha-Human hybrids, but also several decaying corpses. Gross. Time to get back to your ship.`
 				label EAahabort
-				`	As you leave, you notice a box holding vials of a green slime that is completely opaque even as a thin film. All but one of the vials is broken. You pick up the unbroken container and continue to investigate as you leave, but your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There is probaby more, but this is the kind of battle you are used to.`
+				`	As you leave, your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There is probaby more, but this is the kind of battle you are used to.`
 	on enter "Fumalsamakah"
 		dialog "The missing ship is present in this system. But appears to be completely unresponsive."
 	on visit
@@ -339,9 +346,9 @@ mission "Endgame Alpha 2.6"
 				`	"I'll get on my way immediately."`
 					accept
 				`	"No, I'd rather not."`
+			action
+				require "Mysterious Goo"
 			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
-			set "EA gave up mysterious goo"
-			``
 				goto EAgtddecline
 			label EAgtdnovial
 			`	The general looks downtrodden. "Oh well, no use crying over spilled milk."`
