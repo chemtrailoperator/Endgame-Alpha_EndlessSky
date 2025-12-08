@@ -133,6 +133,7 @@ mission "Endgame Alpha 2.2"
 
 mission "Endgame Alpha 2.3"
 	priority
+	name "Escort to Kaus Borealis"
 	source "Farpoint"
 	destination "New Iceland"
 	deadline 20
