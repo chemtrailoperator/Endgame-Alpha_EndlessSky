@@ -345,7 +345,7 @@ mission "Endgame Alpha 3.8.1"
 				`	(Salute him and say, Good afternoon, sir.)`
 			`	"Still technically morning according to UTC." he says, "You've been approved for a commission to captain and a bonus of three million credits. I would recommend going to Earth and buying the appropriate acoutrements. Don't worry about the Alphas for now. There was a massive push of Alpha ships, but they seem to have lost steam after conquering the last few systems and they seem to be holding. The captured planets aren't doing too well, but both the Free Worlds and the Republic have agreed that it would be impossible to try to stop them right now."`
 				accept
-	on enter "Sol"
+	on enter Sol
 		event "EA navy commission captain"
 	on complete
 		payment 3000000
