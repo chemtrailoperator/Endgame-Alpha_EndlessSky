@@ -1,3 +1,4 @@
+
 # Copyright (c) 2025 by ChemtrailOperator
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
@@ -25,7 +26,7 @@ mission "Endgame Alpha 3.0"
 				event "EA Citadelle Takeover"
 				event "EA Alpherg Takeover" 2
 				event "EA Fumalsamakah Takeover" 1
-			`As you land on <origin>, you notice a stir over the entire city. All the screens in the spaceport and all the raido stations are saying the same thing: War on the Rim.`
+			`As you land on <origin>, you notice a stir over the entire city. All the screens in the spaceport and all the radio stations are saying the same thing: War on the Rim.`
 			`	The reports vary widely in specifics, but you put together that the pirate planets far out on the Rim are under attack by an unknown foe. Starting yesterday, refugees flooded out of Citadelle and fled to neighboring systems or to Free Worlds space. No communications have been received out of Citadelle, and the surrounding systems are now under attack.`
 			`	While the media and individuals speculate wildly about who attacked the system, you suspect you already know what's behind it.`
 				decline
