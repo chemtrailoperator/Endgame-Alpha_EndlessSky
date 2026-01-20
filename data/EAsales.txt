@@ -79,7 +79,7 @@ outfitter "Navy ECM"
 
 event "EA Geminus Upgrade"
 	planet Geminus
-		shipyard "Navy Elite"
+		outfitter "Navy ECM"
 
 mission "EA Geminus Upgrade"
 	landing
@@ -90,6 +90,6 @@ mission "EA Geminus Upgrade"
 	on offer
 		event "EA geminus shipyard upgraded"
 		planet Geminus
-			shipyard "Navy Elite"
+			outfitter "Navy ECM"
 		``
 			fail	

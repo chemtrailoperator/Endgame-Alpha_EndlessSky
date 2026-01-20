@@ -11,7 +11,7 @@
 #
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
-
+#\open
 outfit "Alpha Genome"
 	plural "Genome Vials"
 	category "Special"
@@ -140,5 +140,5 @@ outfit "Inductive Jamming Array"
 	"cloaked regen multiplier" -1
 	"cooling" 2
 	description "After examining the Syndicate's Cloaking Device, the Navy created this system. Rather than creating its own field, it replaces the shield matrix with a magnetic and gravitational field that guides particles around the ship. It is slower and less efficient than the original design, but it uses less fuel, trading IT for enrgy and shield strength.  The newness of the system necessitates it to be built into ships that are already designed for it."
-
+#\close
 

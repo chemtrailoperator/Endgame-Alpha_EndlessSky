@@ -11,7 +11,7 @@
 #
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
-
+# 3.0 \open
 mission "Endgame Alpha 3.0"
 	landing
 	source
@@ -31,6 +31,7 @@ mission "Endgame Alpha 3.0"
 			`	While the media and individuals speculate wildly about who attacked the system, you suspect you already know what's behind it.`
 				decline
 		
+# 3.1 \fold
 mission "Endgame Alpha 3.1"
 	landing
 	source
@@ -48,6 +49,7 @@ mission "Endgame Alpha 3.1"
 			`The <origin> spaceport is packed almost to maximum capacity with people buying ammunition and stockpiling equipment. The holovid screens display news networks that announce that the Belenos and Thuban systems have fallen and that Men is under heavy attack. They also mention that the takeover has happened with extreme rapidity due to the Free Worlds' reluctance and the Republic's outright refusal to offer aid to the pirate systems.`
 				decline
 
+# 3.2 \fold
 mission "Endgame Alpha 3.2"
 	landing
 	clearance
@@ -100,6 +102,7 @@ mission "Endgame Alpha 3.2"
 		fleet "Marauder fleet X Alpha"
 		system Men
 
+# 3.3 \fold
 mission "Endgame Alpha 3.3"
 	landing
 	source Thule
@@ -170,6 +173,7 @@ mission "Endgame Alpha 3.3"
 			`The number casualties is saddening. Barely any of the original group of ships land with you on Solace.`
 			`	The spaceport controllers tell you that you are requested at the joint headquarters in the spaceport.`
 
+# 3.4 \fold
 mission "Endgame Alpha 3.4"
 	priority
 	source Solace
@@ -199,6 +203,7 @@ mission "Endgame Alpha 3.4"
 			`	The whole group takes a metaphorical sigh of relief. The admiral says, "Well then, good luck! Oh, one last thing, commander, make sure to carry enough fuel for the round trip. Given the activity we've seen hanging around with a ramscoop might not be feasible."`
 				accept
 
+# 3.5 \fold
 mission "Endgame Alpha 3.5"
 	landing
 	name "Investigate Alpha Incursion"
@@ -220,6 +225,7 @@ mission "Endgame Alpha 3.5"
 	on enter "Citadelle"
 		dialog "As your sensor systems complete their scan of the system, you notice that the usually empty space beyond Citadelle is registering some disturbances."
 
+# 3.6 \fold
 mission "Endgame Alpha 3.6"
 	landing
 	source Solace
@@ -258,6 +264,7 @@ mission "Endgame Alpha 3.6"
 			`	The orders state that you are supposed to patrol the Kappa Centauri, Beta Lupi, and Pherkad systems, and return to Pherkad when completed.`
 				accept
 
+# 3.7 \fold
 mission "Endgame Alpha 3.7"
 	landing
 	source Solace
@@ -279,6 +286,7 @@ mission "Endgame Alpha 3.7"
 		conversation
 			`After you deliver the package to Navy Intelligence, you are instructed to report to the command information center in the spaceport. Multiple news broadcasts are also stating that the Alpha presence has captured Kappa Centauri and Pherkad, and the surrounding systems are now being pushed hard.`
 
+# 3.8 \fold
 mission "Endgame Alpha 3.8"
 	priority
 	name "Relief to Winter"
@@ -330,6 +338,7 @@ mission "Endgame Alpha 3.8"
 		fleet "Large Independent Alpha" 7
 		fleet "Large CCOR Alpha" 7
 
+# 3.8.1 \fold
 mission "Endgame Alpha 3.8.1"
 	landing
 	name "Purchase Insignia"
@@ -353,6 +362,7 @@ mission "Endgame Alpha 3.8.1"
 		event "EA alphacontact award"
 		event "EA pugservice award"
 
+# 3.9 \fold
 mission "Endgame Alpha 3.9"
 	destination "New Iceland"
 	name "Urgently Report to New Iceland"
@@ -370,6 +380,7 @@ mission "Endgame Alpha 3.9"
 			`	"You are hereby required and directed to travel to New Iceland and report to the commanding officer of that base with the utmost dispatch. You will answer the contrary at your peril."`
 				accept
 
+# 3.10 \fold
 mission "Endgame Alpha 3.10"
 	landing
 	name "Escort Refugess to Farseer"
@@ -409,6 +420,7 @@ mission "Endgame Alpha 3.10"
 		government "Republic"
 		fleet "Large Republic Refugee"
 
+# 3.11 \fold
 mission "Endgame Alpha 3.11"
 	landing
 	name "Report to New Iceland"
@@ -449,6 +461,7 @@ mission "Endgame Alpha 3.11"
 			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
 			label eartnitwoend
 
+# X3.12 \fold
 #This mission puts strong npc defense fleets in the appropriate systems.
 mission "Endgame Alpha X3.12"
 	invisible
@@ -508,6 +521,7 @@ mission "Endgame Alpha X3.12"
 		fleet "Small Republic" 6
 		system "Zubenelgenubi"
 
+# 3.12 \fold
 mission "Endgame Alpha 3.12"
 	priority 
 	name "Report to Admiral Alzaga"
@@ -527,6 +541,7 @@ mission "Endgame Alpha 3.12"
 	on complete
 		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
 
+# 3.13 \fold
 mission "Endgame Alpha 3.13"
 	priority
 	invisible
@@ -558,7 +573,7 @@ mission "Endgame Alpha 3.13"
 					goto powerful
 				`	"I've got to go, nice talking with you."`
 					goto alzaga 
-			`	He looks away, and his eyes glisten. "I know, but I won't stop looking. We have all already lost so much... Anyway, you have a meeting to get to and time is precious."
+			`	He looks away, and his eyes glisten. "I know, but I won't stop looking. We have all already lost so much... Anyway, you have a meeting to get to and time is precious."`
 				goto alzaga
 			label powerful
 			`	The man smiles sarcastically, "That's what I keep hearing, and it isn't the Navy that I'm worried about, you'll never find a more valiant body of soldiers. The problem is that we cannot unify. Parliament is hesitant to help the Free Worlds, even though could have been the first line of defense. The only reason we got the help that we did is because of people like Alzaga and Danforth loose interpretation of their operation orders. If the Free Worlds and the Republic won't unify, let alone the Syndicate, we don't have much of a chance. Anyway, you have a meeting to get to and there is nothing more precious than time, especially now." He pats you on the shoulder and leaves.`
@@ -567,7 +582,7 @@ mission "Endgame Alpha 3.13"
 			choice
 				`	"Sounds good, I'll see if I can make that happen."`
 					accept
-				`	"Why should we bother?"
+				`	"Why should we bother?"`
 			`	"The Alpha fleets so far have had an interesting characteristic: They are completely organized. While that wouldn't normally be such an object of note, it is different from what we saw last time, where individual ships and small fleets attacked wherever and whenever they pleased. We think that thehre may be a larger command center on that planet, and destroying it could level the playing field significantly. Alphas lack many of the traits and emotions that humans have, including the concept of following orders. There must be something there that is keeping them in line, and we want to know what it is."`
 			choice
 				`	"Okay."`
@@ -582,7 +597,9 @@ mission "Endgame Alpha 3.13"
 					accept
 				`	(Decline it.)`
 					decline
-					
+				
+# P3.0 \fold
+				
 #Patch mission for revealing the Alpha home system for users who passed 3.0 prior to v0.5.2
 mission "Endgame Alpha P3.0"
 	invisible
@@ -593,6 +610,8 @@ mission "Endgame Alpha P3.0"
 		event "EA reveal Fumalzenarah"
 		fail
 		
+# P3.13 \fold
+		
 #Patch mission for linking the Alpha system for users who completed 3.13 prior to v0.5.2
 mission "Endgame Alpha P3.13"
 	invisible
@@ -602,3 +621,5 @@ mission "Endgame Alpha P3.13"
 	on offer
 		event "EA connect Fumalzenarah"
 		fail
+# \close		
+		
