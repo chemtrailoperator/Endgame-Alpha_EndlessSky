@@ -80,8 +80,8 @@ mission "EA parlribbon award"
 			has "outfit (flagship installed): Captain Insignia"
 			has "outfit (flagship installed): Rear Admiral Insignia"
 	on offer
-			outfit "Parliamentary Commendation Ribbon"
-			decline
+		outfit "Parliamentary Commendation Ribbon"
+		fail
 
 event "EA pugservice award"
 
@@ -96,8 +96,8 @@ mission "EA pugservice award"
 			has "outfit (flagship installed): Captain Insignia"
 			has "outfit (flagship installed): Rear Admiral Insignia"
 	on offer
-			outfit "Pug Service Ribbon"
-			decline
+		outfit "Pug Service Ribbon"
+		fail
 
 event "EA alphacontact award"
 
@@ -112,8 +112,8 @@ mission "EA alphacontact award"
 			has "outfit (flagship installed): Captain Insignia"
 			has "outfit (flagship installed): Rear Admiral Insignia"
 	on offer
-			outfit "Alpha Contact Award"
-			decline
+		outfit "Alpha Contact Award"
+		fail
 
 event "EA danforth chip processed"
 

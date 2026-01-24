@@ -88,8 +88,5 @@ mission "EA Geminus Upgrade"
 	to offer
 		has "free worlds main plot completed"
 	on offer
-		event "EA geminus shipyard upgraded"
-		planet Geminus
-			outfitter "Navy ECM"
-		``
-			fail	
+		event "EA Geminus Upgrade"
+		fail	

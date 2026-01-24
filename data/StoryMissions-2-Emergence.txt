@@ -348,8 +348,7 @@ mission "Endgame Alpha 2.6"
 				`	"I'll get on my way immediately."`
 					accept
 				`	"No, I'd rather not."`
-			action
-				require "Mysterious Goo"
+			require "Mysterious Goo"
 			label placeholderidk
 			`	"Well then, I will take the vial and get it to our research facilities." He hands it to an aide, who carries it away.`
 				goto EAgtddecline

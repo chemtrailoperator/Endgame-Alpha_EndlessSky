@@ -429,8 +429,6 @@ mission "Endgame Alpha 3.11"
 	source "Farseer"
 	to offer
 		has "Endgame Alpha 3.10: done"
-	on offer
-			accept
 	to accept
 		has "Endgame Alpha 3.10: done"
 	on complete
@@ -462,14 +460,15 @@ mission "Endgame Alpha 3.11"
 			label eartnitwoend
 
 # X3.12 \fold
+
 #This mission puts strong npc defense fleets in the appropriate systems.
 mission "Endgame Alpha X3.12"
 	invisible
 	source "New Iceland"
 	to offer
 		has "Endgame Alpha 3.11: done"
-	on offer
-		accept
+	to accept
+		has "Endgame Alpha 3.11: done"
 	to complete
 		never
 	npc
