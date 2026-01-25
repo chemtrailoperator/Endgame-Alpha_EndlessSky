@@ -538,7 +538,7 @@ mission "Endgame Alpha 3.12"
 			`	"Oh, yes," he replies, "Admiral Alzaga told me to tell you when you came that he had travelled to New Argentina to organize the formation of a strong blockade in the system. Incidentally he has been placed in command of all the Navy operations against the Alphas and there is talk of his commanding a combined fleet including the Free Worlds. You should head to Vindemiatrix immediately."`
 				accept
 	on complete
-		dialog `An aide is waiting for you outside your ship and tells you Alzaga is waiting in the spaceport.`
+		dialog `An aide is waiting for you outside your ship and tells you that you can find whoever you need in the spaceport.`
 
 # 3.13 \fold
 mission "Endgame Alpha 3.13"
@@ -552,6 +552,20 @@ mission "Endgame Alpha 3.13"
 		event "EA connect Fumalzenarah"
 		conversation
 			`The New Argentina spaceport looks much like the other places where the Republic has established their operations, incredibly busy, organized, and quiet. Rather than using prefab shelters for their command, however, the offices and buildings in the area have been repurposed for official use. They also have a makeshift status board in the spaceport, reading that Admiral Alzaga can be found in the local outfitter's office complex.`
+				decline
+			
+# 3.14 \fold
+mission "Endgame Alpha 3.14"
+	priority
+	outfitter
+	invisible
+	source "New Argentina"
+	destination "Sagarra"
+	to offer
+		has "Endgame Alpha 3.13: declined"
+	on offer
+		conversation
+			`You make your way through the packed outfitter to the office complex behind it.`
 			choice
 				`	(Report to Admiral Alzaga.)`
 				`	(Find someone lower in the chain of command to get your orders.)`
@@ -582,7 +596,7 @@ mission "Endgame Alpha 3.13"
 				`	"Sounds good, I'll see if I can make that happen."`
 					accept
 				`	"Why should we bother?"`
-			`	"The Alpha fleets so far have had an interesting characteristic: They are completely organized. While that wouldn't normally be such an object of note, it is different from what we saw last time, where individual ships and small fleets attacked wherever and whenever they pleased. We think that thehre may be a larger command center on that planet, and destroying it could level the playing field significantly. Alphas lack many of the traits and emotions that humans have, including the concept of following orders. There must be something there that is keeping them in line, and we want to know what it is."`
+			`	"The Alpha fleets so far have had an interesting characteristic: They are completely organized. While that wouldn't normally be such an object of note, it is different from what we saw last time, where individual ships and small fleets attacked wherever and whenever they pleased. We think that thehre may be a larger command center on that planet, and destroying it could level the playing field significantly. Alphas lack many of the traits and emotions that humans have, including the concept of following orders, so there must be something there that is keeping them in line, and we want to know what it is."`
 			choice
 				`	"Okay."`
 					accept
@@ -616,7 +630,7 @@ mission "Endgame Alpha P3.13"
 	invisible
 	to offer
 		not "event: EA connect Fumalzenarah"
-		has "Endgame Alpha 3.13: done"
+		has "Endgame Alpha 3.13: declined"
 	on offer
 		event "EA connect Fumalzenarah"
 		fail
