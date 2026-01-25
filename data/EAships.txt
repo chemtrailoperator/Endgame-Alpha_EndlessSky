@@ -11,7 +11,9 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+# Supercarriers \open
 ship "Modified Supercarrier"
+	"display name" "Alpha Supercarrier"
 	sprite "ship/msupercarrier"
 	thumbnail "thumbnail/enforcer"
 	attributes
@@ -21,7 +23,7 @@ ship "Modified Supercarrier"
 		"hull" 8300
 		"required crew" 210
 		"bunks" 407
-		"mass" 6840
+		"mass" 10840
 		"drag" 40.4
 		"heat dissipation" .1
 		"fuel capacity" 800
@@ -174,6 +176,7 @@ ship "Modified Supercarrier"
 	description "The engineering and workmanship of this vessel accurately reflects the Alphas' teamwork and communication skills. Built on the same principles as the Scrapper, it is dangerous to fly and very unreliable. However, it can carry an astonishing complement of fighters and drones..."
 
 ship "Elite Marauder Supercarrier"
+	"display name" "Alpha Supercarrier"
 	sprite "ship/msupercarrier2"
 	thumbnail "thumbnail/sunder"
 	attributes
@@ -183,7 +186,7 @@ ship "Elite Marauder Supercarrier"
 		"hull" 8300
 		"required crew" 231
 		"bunks" 407
-		"mass" 7240
+		"mass" 12240
 		"drag" 35.4
 		"heat dissipation" .1
 		"fuel capacity" 800
@@ -336,6 +339,7 @@ ship "Elite Marauder Supercarrier"
 	description "The engineering and workmanship of this vessel accurately reflects the Alphas' teamwork and communication skills. Built on the same principles as the Scrapper, it is dangerous to fly and very unreliable. However, it can carry an astonishing complement of fighters and drones..."
 
 ship "Sestor Supercarrier"
+	"display name" "Alpha Supercarrier"
 	sprite "ship/msupercarrier4"
 	thumbnail "thumbnail/sunder"
 	attributes
@@ -345,7 +349,7 @@ ship "Sestor Supercarrier"
 		"hull" 10300
 		"required crew" 621
 		"bunks" 807
-		"mass" 8840
+		"mass" 10840
 		"drag" 35.4
 		"heat dissipation" .1
 		"fuel capacity" 800
@@ -486,6 +490,7 @@ ship "Sestor Supercarrier"
 	"final explode" "final explosion large"
 	description "The engineering and workmanship of this vessel accurately reflects the Alphas' teamwork and communication skills. Built on the same principles as the Scrapper, it is dangerous to fly and very unreliable. However, it can carry an astonishing complement of fighters and drones..."
 
+#Republic Supercarrier \open
 ship "Harbinger Supercarrier"
 	sprite "ship/supercarrier"
 	thumbnail "thumbnail/supercarrier"
@@ -606,6 +611,10 @@ ship "Harbinger Supercarrier"
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
 	description "Building off of the venerable Carrier design, this fighter and drone carrier can probably take over a small planet if necessary. These are a relatively rare sight except when the Navy needs to deliver their maximum firepower."
+#\close
+
+# Navy Ships \fold
+
 
 ship "Supercruiser"
 	sprite "ship/supercruiser"
@@ -954,3 +963,5 @@ ship "Hawkeye"
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
 	description "On its own, this ship is relatively useless. The light armament and hull construction are not anywhere near sufficient for the duties that a Frigate would usually take. As part of a larger fleet, however, it is incredibly useful. It carries the most advanced sensor suite and computing system used by the Navy, and its speed and maneuverability allow it to provide ECM for larger ships."
+	
+# \close

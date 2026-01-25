@@ -12,6 +12,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+# Supercarriers \open
 fleet "Omega Guardian"
 	government "Omega"
 	names "pirate"
@@ -45,7 +46,7 @@ fleet "Omega Guardian"
 		"Dropship" 2
 		"Far Lek 14" 8
 
-
+# Alpha Copy Fleets \fold
 fleet "Large Syndicate Alpha"
 	government "Alpha"
 	names "pirate"
@@ -1094,6 +1095,7 @@ fleet "Marauder fleet X Alpha"
 		"Marauder Arrow"
 		"Marauder Bounder"
 
+# Upgraded Fleets \fold
 fleet "Large Republic Refugee"
 	government "Republic"
 	names "republic capital"
@@ -1246,6 +1248,7 @@ fleet "EA Capital Republic"
 		"Modified Gunboat" 2
 		"Hailstorm" 2
 
+# Ship Additions to Existing Fleets \fold
 fleet "Small Republic"
 	government "Republic"
 	names "republic small"
@@ -1322,7 +1325,7 @@ fleet "Large Republic"
 		"Gunboat"
 		"Modified Gunboat" 2
 
-fleet " EA Republic Logistics"
+fleet "EA Republic Logistics"
 	government "Republic"
 	names "republic capital"
 	fighters
@@ -1383,6 +1386,8 @@ fleet " EA Republic Logistics"
 		"Lance" 3
 		"Cruiser" 2
 		"Combat Drone" 8
+
+# \close
 
 fleet "Navy Surveillance"
 	government "Republic"
