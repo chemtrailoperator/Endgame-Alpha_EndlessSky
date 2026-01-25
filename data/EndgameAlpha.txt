@@ -59,3 +59,138 @@ phrase "EA package picked up"
 	word
 		"Huh."
 		"Weird."
+
+outfitter "Navy Clothing"
+	"Navy Uniform"
+	"Commander Insignia"
+	"Captain Insignia"
+	"Rear Admiral Insignia"
+
+outfitter "Heliarch"
+	"Ion Rain Gun"
+	"Ion Hail Turret"
+	"Bombardment Cannon"
+	"Bombardment Turret"
+	"Heliarch Attractor"
+	"Heliarch Repulsor"
+	"Finisher Pod"
+	"Finisher Maegrolain"
+	"Finisher Torpedo"
+	"Finisher Storage Tube"
+	"Cooling Module"
+	"Fuel Module"
+	"Scanning Module"
+	"Large Shield Module"
+	"Small Shield Module"
+	"Overcharged Shield Module"
+	"Small Repair Module"
+	"Large Repair Module"
+	"Overclocked Repair Module"
+	"Large Reactor Module"
+	"Small Reactor Module"
+	"Large Battery Module"
+	"Small Battery Module"
+	"Large Thrust Module"
+	"Small Thrust Module"
+	"Large Steering Module"
+	"Small Steering Module"
+	"Enforcer Confrontation Gear"
+	"Enforcer Riot Staff"
+
+shipyard "Heliarch"
+	"Heliarch Neutralizer"
+	"Heliarch Breacher"
+	"Heliarch Interdictor"
+	"Heliarch Hunter"
+	"Heliarch Judicator"
+	"Heliarch Punisher"
+	"Heliarch Pursuer"
+	"Heliarch Rover"
+	"Heliarch Stalker"
+
+outfitter "Korath Minelayer"
+	"Cluster Mine Layer"
+	"Cluster Mine"
+
+planet "Laki Nemparu"
+	outfitter "Korath Minelayer"
+
+planet "Ring of Power"
+	outfitter "Heliarch"
+	shipyard "Heliarch"
+
+shipyard "Navy Elite"
+
+outfitter "Navy ECM"
+	"ECM Suite Gen 2"
+	"Inductive Jamming Array"
+
+event "EA Geminus Upgrade"
+	planet Geminus
+		outfitter "Navy ECM"
+
+mission "EA Geminus Upgrade"
+	landing
+	invisible
+	source Geminus
+	to offer
+		has "free worlds main plot completed"
+	on offer
+		event "EA Geminus Upgrade"
+		fail
+
+government "Omega"
+	swizzle 1
+	"crew attack" 1.6
+	"crew defense" 2.8
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+
+system Fumalzenarah
+	hidden
+	shrouded
+	pos -1050.667 155.917
+	government Omega
+	attributes "ccor" "south" "alpha"
+	habitable 490
+	belt 1669
+	asteroids "large metal" 1 0.732
+	fleet "Omega Guardian" 1500
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/cloud8
+		distance 157.84
+		period 35.8333
+	object Sagarra
+		sprite planet/forest0
+		distance 478.33
+		period 189.039
+		object
+			sprite planet/dust0
+			distance 147
+			period 15.2326
+	object
+		sprite planet/rock16
+		distance 1139.14
+		period 694.748
+	object
+		sprite planet/gas2-b
+		distance 1885.15
+		period 1479.04
+		object
+			sprite planet/ice7-b
+			distance 213
+			period 18.8358
+		object
+			sprite planet/rock3
+			distance 360
+			period 41.3874
+			
+planet Sagarra
+	landscape land/sea22
+	description `This world is eerily similar to the Alpha's previous refuge, Host. Most of the ground is scarred by the marks of Alpha activity, who have used the planet with little regard for the environment. The entire landscape is covered in weapons and ship plants of varying size and operability that have labored for hundreds of years to produce a massive force of warships.`
+	description `	Deep in the jungles near the equator, small mammals are working hard to avoid being eaten by the great lizards, and to survive for long enough that they will be able to evolve into the dominant life form.`
+	security 0
