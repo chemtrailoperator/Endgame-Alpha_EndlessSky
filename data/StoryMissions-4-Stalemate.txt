@@ -28,13 +28,34 @@ mission "Endgame Alpha 4.0"
 		conversation
 			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
 			`	The landscape is eerily similar to the last hideout of the Alphas, even down to the large reptiles roaming the earth.`
-			`	Unlike the last hideout, this planet is covered in a sprawl of factories, docks, and other industrializations to produce ships. Very oddly, the city is obviously planned, with major thoroughfares running radially to a large tower in the distance.`
+			`	Unlike the last hideout, this planet is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city is obviously planned, with major thoroughfares running radially out from a large tower in the distance.`
+			`	A surface-to-air missle battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
 			choice
 				`	(Investigate the Factories)`
 					goto factories
 				`	(Fly to the tower.)`
 					goto tower
 				`	(Leave. You've collected enough information.)`
+					goto leave
+			label factories
+			`	You fly low over the buildings, looking for something more out of the ordinary than everything else. Eventually, you reach a section of shipyards that has enourmous hangars, and massive supply lines running into them.`
+			choice
+				`	(Continue collecting information.)`
+				`	(Abort and leave.)`
+					goto leave
+			`	You hover your ship at a moderate distance from the shipyard and inspect it with a pair of binoculars you keep on hand. They are obviously building ships, but it is difficult to determine what kind it is. You remember the massive supercarriers you fought in Men, and shiver at the sight of at least 10 more being built, with what looks like the frames of at least a dozen waiting for entry into the construction area. They appear to be a large ship that has been stripped of much of its skin, with the larger portions of many other small ships attached to them. In a parallel production line, fighters of all kinds are being assembled to supply the carriers when they are completed.`
+			action
+				set "EA saw the supercarriers"
+			choice
+				`	(Leave the planet and report back to the Navy)`
+					goto leave
+				`	(Investigate the tower)`
+					to display
+						not "EA explored the tower"
+			label tower
+			
 				
+			
+			
 			
 # \close

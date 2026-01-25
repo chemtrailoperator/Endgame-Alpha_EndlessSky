@@ -114,7 +114,7 @@ mission "Endgame Alpha 3.3"
 	on offer
 		conversation
 			`Anything civilian in the Thule spaceport has been removed or modified for military use. You notice that besides the organized Republic units, there is are many militia fleets and pirate bands operating under the direction of the Navy. Apparently an Alpha attack is enough to make normal humans put aside their differences.`
-			`	Suddenly, a siren starts to blare and ships begin taking off, charging their shields as soon as they are clear of the ground. The siren is followed by a voice stating that a massive armada has been detected en route to the system and formation orders will be sent out by spaceport departure control.`
+			`	Suddenly, a siren starts to blare and ships begin taking off, energizing their shields as soon as they are clear of the ground. The siren is followed by a voice stating that a massive armada has been detected en route to the system and formation orders will be sent out by spaceport departure control.`
 				launch
 	npc
 		personality entering staying target
@@ -171,7 +171,7 @@ mission "Endgame Alpha 3.3"
 		event "EA Kappa Centauri Frontline"
 		conversation
 			`The number casualties is saddening. Barely any of the original group of ships land with you on Solace.`
-			`	The spaceport controllers tell you that you are requested at the joint headquarters in the spaceport.`
+			`	The air controllers tell you that you are requested at the joint headquarters in the spaceport.`
 
 # 3.4 \fold
 mission "Endgame Alpha 3.4"
@@ -185,8 +185,8 @@ mission "Endgame Alpha 3.4"
 		has "Endgame Alpha 3.3: done"
 	on offer
 		conversation
-			`The "Joint Headquarters" appears to be staffed mostly by the Republic, probably becaues the Free Worlds does not yet have the capability to deploy on such a scale. You are ushered past a line of waiting staff officers into the main office, where Raven, several Republic admirals, Free Worlds officers, and officials are seated.`
-			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here now so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives that seem to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"`
+			`The "Joint Headquarters" appears to be staffed mostly by the Republic, probably becaues the Free Worlds didn't have the capability to deploy on such a scale. You are ushered past a line of waiting staff officers into the main office, where Raven, several Republic admirals, Free Worlds officers, and officials are seated.`
+			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here, so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives that seem to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"`
 			choice
 				`	"What does this have to do with me?"`
 			`	"That's what I'm getting to, commander. You have a wide range of experience in things beyond the reaches of human space. Raven has recommended that you be selected to attempt penetrating captured territory to investigate Citadelle. Since it is beyond the purview of Navy regulations, I will not force you, but you are the most likely candidate."`
