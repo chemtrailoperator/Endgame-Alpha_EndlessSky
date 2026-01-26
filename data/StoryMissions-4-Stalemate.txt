@@ -56,7 +56,8 @@ mission "Endgame Alpha 4.0"
 				launch
 	npc evade
 		personality launching daring ramming unconstrained vindictive
-		fleet "Omega Guardians" 2
+		fleet "Omega Guardian" 2
 	on complete
-		dialog `complete`
+		conversation
+			
 # \close
