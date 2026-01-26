@@ -543,7 +543,6 @@ mission "Endgame Alpha 3.12"
 # 3.13 \fold
 mission "Endgame Alpha 3.13"
 	priority
-	invisible
 	source "New Argentina"
 	destination "Sagarra"
 	to offer
@@ -558,11 +557,11 @@ mission "Endgame Alpha 3.13"
 mission "Endgame Alpha 3.14"
 	priority
 	outfitter
-	invisible
+	clearance
 	source "New Argentina"
 	destination "Sagarra"
 	to offer
-		has "Endgame Alpha 3.13: declined"
+		has "Endgame Alpha 3.12: done"
 	on offer
 		conversation
 			`You make your way through the packed outfitter to the office complex behind it.`

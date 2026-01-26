@@ -31,10 +31,8 @@ mission "Endgame Alpha 4.0"
 			`	Unlike the last hideout, this planet is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city is obviously planned, with major thoroughfares running radially out from a large tower in the distance.`
 			`	A surface-to-air missle battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
 			choice
-				`	(Investigate the Factories)`
+				`	(Investigate Further)`
 					goto factories
-				`	(Fly to the tower.)`
-					goto tower
 				`	(Leave. You've collected enough information.)`
 					goto leave
 			label factories
@@ -50,12 +48,15 @@ mission "Endgame Alpha 4.0"
 				`	(Leave the planet and report back to the Navy)`
 					goto leave
 				`	(Investigate the tower)`
-					to display
-						not "EA explored the tower"
 			label tower
-			
-				
-			
-			
-			
+			`	You cruise over the landscape, looking for anything interesting as you approach the tower, which on closer inspection shows it is part of a larger complex, set in a depression in the ground. Not just the roads lead here. It looks like every major system and process lies in spokes around the tower, on the side opposite you, you see a massive farming operation stretching away in a wedge till it is lost behind clouds.`
+			`	The <ship> rocks from a shock of turbulence as you get close to the tower. Your radar altimeter also suddenly jumps, making the autopilot disconnect. As you take over manual control of your ship, you look down to see that the ground falls away, making a superhumanly deep shaft in which the tower resides. The tower appears to be supported underground by supports built into the black rock at the far end of the crust.`
+			label leave
+			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. The small ships cannot keep up with yours as you flee the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
+				launch
+	npc evade
+		personality launching daring ramming unconstrained vindictive
+		fleet "Omega Guardians" 2
+	on complete
+		dialog `complete`
 # \close
