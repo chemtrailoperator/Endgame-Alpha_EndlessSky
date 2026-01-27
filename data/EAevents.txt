@@ -12,6 +12,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+# Promotion Events \open
 event "EA navy commission commander"
 	government "Escort"
 		swizzle 0
@@ -59,6 +60,7 @@ event "EA repaint navy"
 	government "Escort"
 		swizzle 0
 		
+# Mission Mechanics \fold		
 event "EA reveal Fumalzenarah"
 	system Fumalzenarah
 		remove hidden
@@ -67,6 +69,17 @@ event "EA connect Fumalzenarah"
 	system Fumalzenarah
 		link Citadelle
 
+event "EA danforth chip processed"
+
+event "EA accepted the endgame"
+
+event "EA mysterious green goo"
+
+event "EA emergence timer"
+
+event "EA timer I"
+
+# Awards \fold
 event "EA parlribbon award"
 
 mission "EA parlribbon award"
@@ -115,13 +128,6 @@ mission "EA alphacontact award"
 		outfit "Alpha Contact Award"
 		fail
 
-event "EA danforth chip processed"
-
-event "EA accepted the endgame"
-
-event "EA mysterious green goo"
-
-event "EA emergence timer"
 
 event "EA endgame alpha begins"
 	government "Alpha"
@@ -129,7 +135,7 @@ event "EA endgame alpha begins"
 			"Republic" -1
 			"Syndicate" 1
 			"Free Worlds" -1
-			Wanderer" -1
+			Wanderer -1
 			Quarg -1
 	government "Free Worlds"
 		"attitude toward"
@@ -139,17 +145,6 @@ event "EA endgame alpha begins"
 		"attitude toward"
 			"Alpha" -1
 			"Free Worlds" 1
-	
-event "EA bomb timer"
-
-event "EA Raven contact timer"
-
-event "EA campaign restart timer"
-
-event "EA fumalzenarah revealed"
-	system Fumalzenarah
-		remove hidden
-		link citadelle
 
 event "EA republic mobilized"
 	system "Cor Caroli"

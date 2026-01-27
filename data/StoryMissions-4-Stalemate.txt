@@ -41,7 +41,7 @@ mission "Endgame Alpha 4.0"
 				`	(Continue collecting information.)`
 				`	(Abort and leave.)`
 					goto leave
-			`	You hover your ship at a moderate distance from the shipyard and inspect it with a pair of binoculars you keep on hand. They are obviously building ships, but it is difficult to determine what kind it is. You remember the massive supercarriers you fought in Men, and shiver at the sight of at least 10 more being built, with what looks like the frames of at least a dozen waiting for entry into the construction area. They appear to be a large ship that has been stripped of much of its skin, with the larger portions of many other small ships attached to them. In a parallel production line, fighters of all kinds are being assembled to supply the carriers when they are completed.`
+			`	You hover your ship at a moderate distance from the shipyard and inspect it with a pair of binoculars you keep on hand. They are obviously building ships, but it is difficult to determine what kind they. You remember the massive supercarriers you fought in Men, and shiver at the sight of at least 10 more being built, with what looks like the frames of at least a dozen waiting for entry into the construction area. They appear to be a large ship that has been stripped of much of its skin, with the larger portions of many other small ships attached to them. In a parallel production line, fighters of all kinds are being assembled to supply the carriers when they are completed.`
 			action
 				set "EA saw the supercarriers"
 			choice
@@ -51,13 +51,40 @@ mission "Endgame Alpha 4.0"
 			label tower
 			`	You cruise over the landscape, looking for anything interesting as you approach the tower, which on closer inspection shows it is part of a larger complex, set in a depression in the ground. Not just the roads lead here. It looks like every major system and process lies in spokes around the tower, on the side opposite you, you see a massive farming operation stretching away in a wedge till it is lost behind clouds.`
 			`	The <ship> rocks from a shock of turbulence as you get close to the tower. Your radar altimeter also suddenly jumps, making the autopilot disconnect. As you take over manual control of your ship, you look down to see that the ground falls away, making a superhumanly deep shaft in which the tower resides. The tower appears to be supported underground by supports built into the black rock at the far end of the crust.`
+			action
+				set "EA saw the big tower"
 			label leave
-			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. The small ships cannot keep up with yours as you flee the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
+			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. The small ships cannot keep up with yours as you flee in the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
 				launch
 	npc evade
 		personality launching daring ramming unconstrained vindictive
 		fleet "Omega Guardian" 2
+		on "scan outfits"
+			set "EA scanned the supercarriers"
 	on complete
+		payment 1000000
+		event "EA timer I"
 		conversation
-			
+			`The planet seems to be in much the same condition it was when you were last here, except that the general activity level has increased. There are also more Free Worlds units working alongside the Republic. An aide appears from the ranks of maintenance crew descending on the <ship> and requests to enter the bridge.`
+			`	He salutes and hands you a data pad that reads:`
+			`If you're reading this, that means you made it back from your mission. Congratulations on not getting dead. It also means that I am tied up with something important enough to keep me from hearing your report, which is no doubt intriguing. I will make space tomorrow, along with a few other people who may want to hear what you have to say. Besides making sure you are in the spaceport tomorrow, that's all you have to do for now, we'll find you.`
+			`		Fleet Admiral Alzaga, Combined Task Force Commander`
+			`You hand the data pad back to the aide, who is still standing at attention.`
+			choice
+				`	"Dismissed."`
+					goto end
+				`	"Why were you still at atttention?`
+			`	The aide responds in a practiced bark that is barely lowered in volume for the fact you are indoors. "Standard customs and courtesies, sir! All personnel directed to report to a person or area will remain at attention until verbally directed otherwise, sir!"`
+			choice
+				`	"Very Well, Dismissed"`
+			label end
+			`	The aide rigidly salutes, performs and about face, and trips over the bulkhead as he leaves the bridge. He gets up quickly and leaves the ship.`
+	on visit
+		dialog `You must destroy or evade the supercarriers before you can complete the mission!`
+		
+# 4.1 \fold
+mission "Endgame Alpha 4.1"
+	priority
+
+
 # \close

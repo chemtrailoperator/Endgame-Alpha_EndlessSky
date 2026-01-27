@@ -390,7 +390,7 @@ mission "Endgame Alpha 3.10"
 		has "Endgame Alpha 3.9: done"
 	on offer
 		event "EA republic mobilized"
-		event "EA fumalzenarah revealed"
+		event "EA connect Fumalzenarah"
 		conversation
 			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citaddelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Albireo, Kaus Australis, Zubenelgenubi, and the Dirt Tunnel.`
 			choice
@@ -548,14 +548,12 @@ mission "Endgame Alpha 3.13"
 	to offer
 		has "Endgame Alpha 3.12: done"
 	on offer
-		event "EA connect Fumalzenarah"
 		conversation
 			`The New Argentina spaceport looks much like the other places where the Republic has established their operations, incredibly busy, organized, and quiet. Rather than using prefab shelters for their command, however, the offices and buildings in the area have been repurposed for official use. They also have a makeshift status board in the spaceport, reading that Admiral Alzaga can be found in the local outfitter's office complex.`
 				decline
 			
 # 3.14 \fold
 mission "Endgame Alpha 3.14"
-	priority
 	outfitter
 	clearance
 	source "New Argentina"
