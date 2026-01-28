@@ -69,6 +69,7 @@ mission "Endgame Alpha 4.0"
 			`	He salutes and hands you a data pad that reads:`
 			`If you're reading this, that means you made it back from your mission. Congratulations on not getting dead. It also means that I am tied up with something important enough to keep me from hearing your report, which is no doubt intriguing. I will make space tomorrow, along with a few other people who may want to hear what you have to say. Besides making sure you are in the spaceport tomorrow, that's all you have to do for now, we'll find you.`
 			`		Fleet Admiral Alzaga, Combined Task Force Commander`
+			``
 			`You hand the data pad back to the aide, who is still standing at attention.`
 			choice
 				`	"Dismissed."`
@@ -85,6 +86,20 @@ mission "Endgame Alpha 4.0"
 # 4.1 \fold
 mission "Endgame Alpha 4.1"
 	priority
-
+	clearance
+	name "Galactic Inquiries"
+	description "Make inquiries about the strange object you saw on Sagarra."
+	to offer
+		has "event: EA timer I"
+	to complete
+		never
+	on offer
+		conversation
+			`You walk into the spaceport, and make your way to the food court. You didn't receive any more instructions besides this so you sit down and wait.`
+			choice
+				`	(Wait.)`
+				`	(Get some food.)`
+					goto food
+			`	You have been waiting for an hour in the spaceport when `
 
 # \close
