@@ -17,7 +17,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout endless-sky-wiki repository
+      - name: Checkout chemtrailoperator-wiki repository
         run: |
           git clone "https://github.com/chemtrailoperator/chemtrailoperator-wiki.git"
       - name: Checkout wiki
@@ -36,7 +36,7 @@ jobs:
         if: ${{ steps.check-diff.outputs.changes == 'yes' }}
         id: latest-commit
         run: |
-          cd endless-sky-wiki
+          cd chemtrailoperator-wiki
           echo "hash=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Commit changes
         if: ${{ steps.check-diff.outputs.changes == 'yes' }}
@@ -44,7 +44,7 @@ jobs:
           cd Endgame-Alpha_EndlessSky.wiki
           git config --local user.name "GitHub Actions"
           git config --local user.email "actions@github.com"
-          git commit -m "Synchronize with Chemtrailoperator-Wiki" -m "Latest commit: chemtrailoperator/chemtrailoperator-wiki@${{ steps.latest-commit.outputs.hash }}" -m "Triggered by ${{ github.actor }}"
+          git commit -m "Synchronize with chemtrailoperator-wiki" -m "Latest commit: chemtrailoperator/chemtrailoperator-wiki@${{ steps.latest-commit.outputs.hash }}" -m "Triggered by ${{ github.actor }}"
       - name: Push changes
         if: ${{ steps.check-diff.outputs.changes == 'yes' }}
         env:
