@@ -1,4 +1,4 @@
-This plugin requires Endless Sky v0.10.16.
+This plugin requires at least Endless Sky v0.10.16.
 
 This plugin allows you to serve in the Navy and earn the Navy licenses that are currently in-game and unobtainable, and it will also add general content and other things we thought would be nice in the game.
 
