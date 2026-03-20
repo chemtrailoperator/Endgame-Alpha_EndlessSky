@@ -27,8 +27,8 @@ mission "Endgame Alpha 4.0"
 	on offer
 		conversation
 			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
-			`	The landscape is eerily similar to the last hideout of the Alphas, even down to the large reptiles roaming the earth.`
-			`	Unlike the last hideout, this planet is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city is obviously planned, with major thoroughfares running radially out from a large tower in the distance.`
+			`	The landscape is eerily similar to their last hideout, even down to the large reptiles roaming the earth.`
+			`	Unlike that planet, this one is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city was obviously planned meticulously, with major thoroughfares running radially out from a large tower in the distance.`
 			`	A surface-to-air missle battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
 			choice
 				`	(Investigate Further)`
@@ -54,7 +54,7 @@ mission "Endgame Alpha 4.0"
 			action
 				set "EA saw the big tower"
 			label leave
-			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. The small ships cannot keep up with yours as you flee in the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
+			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. They cannot keep up with your ship as you flee in the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
 				launch
 	npc evade
 		personality launching daring ramming unconstrained vindictive
@@ -89,6 +89,7 @@ mission "Endgame Alpha 4.1"
 	clearance
 	name "Galactic Inquiries"
 	description "Make inquiries about the strange object you saw on Sagarra."
+	source "New Argentina"
 	to offer
 		has "event: EA timer I"
 	to complete
@@ -98,8 +99,44 @@ mission "Endgame Alpha 4.1"
 			`You walk into the spaceport, and make your way to the food court. You didn't receive any more instructions besides this so you sit down and wait.`
 			choice
 				`	(Wait.)`
+					goto skipfood
 				`	(Get some food.)`
-					goto food
+			`	You peruse the various food vendors operating on the edges of the court, with tables in the center. In the middle, there is a temporary installation handing out military rations as well.`
+			choice
+				`	(Get a ration kit.)`
+					goto rations
+				`	(Get some real food.)`
+			`	Because the planet was not heavily populated before the Alpha war, the food court (and spaceport facilities in general) are not sufficient to comfortably support the Navy operations. Hence, every food vendor has a long line of officers and enlisted personnel waiting for nourishment. The only one promising a reasonably short wait time is the store advertising "Authentic Local Cuisine".`
+			`	As you approach the stall, you realize that the industry standard payment terminal attached to the ordering screen that you usually see in such areas has been removed and replaced with a simple optical scanner. A more braod inspection shows that all the terminals have been replaced.`
+			choice
+				`	(Make your order.)`
+					goto order
+				`	"Where did the payment terminals go?"`
+			`	The employee replies haltingly after a pause. "No Capitan...no more tehrminals. Just scan your card and we give...food, contract will take from income later."`
+			`	The employee turns to something else, further communication appears to be impossible.`
+			label order
+			`	You scan your Navy license and order the first thing on the menu. After a wait made much longer by the awareness of your hunger, you receive and archaic disposable food box that is so hot you nearly drop it.`
+			`	Your "Ranch Special" is a large piece of meat lying on a bed of vegetables. Everything in the container is burnt so extensively that further identification is possible.`
+			choice
+				`	(Eat it.)`
+					goto eat
+				`	(Throw it away.)`
+					goto trash
+				`	(Chuck it back at the cooks.)`
+			label throw
+			`	You pick up the meal, burning your hands again, and lob it into the food stall. The workers do not seem at all surprised by this, and only mutter about manners as they clean up the mess. A rear admiral nearby laughs uproariously. He turns to you. "Do you know, you're the fifth person I've seen do that in the past two hours. You're the highest ranking one so far though. All these d-" He snaps to attention and salutes. You turn around, see Admiral Alzaga (with Raven behind) and mirror the rear admiral's behavior. The commander saultes back, and says "Do you mind?"`
+			`	Left alone, you sit down at your original table again.`
+				goto briefing
+			label eat
+			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Taking out your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that any such further action will be impossible, the internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
+			choice
+				`	(Chuck it at the cooks.)`
+					goto throw
+				`	(Throw it away.)`
+			label trash
+			
+			
+			label skipfood
 			`	You have been waiting for an hour in the spaceport when `
 
 # \close
