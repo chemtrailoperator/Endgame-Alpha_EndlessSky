@@ -124,18 +124,36 @@ mission "Endgame Alpha 4.1"
 					goto trash
 				`	(Chuck it back at the cooks.)`
 			label throw
-			`	You pick up the meal, burning your hands again, and lob it into the food stall. The workers do not seem at all surprised by this, and only mutter about manners as they clean up the mess. A rear admiral nearby laughs uproariously. He turns to you. "Do you know, you're the fifth person I've seen do that in the past two hours. You're the highest ranking one so far though. All these d-" He snaps to attention and salutes. You turn around, see Admiral Alzaga (with Raven behind) and mirror the rear admiral's behavior. The commander saultes back, and says "Do you mind?"`
+			`	You pick up the meal, burning your hands again, and lob it into the food stall. The workers do not seem at all surprised by this, and only mutter about manners as they clean up the mess. A rear admiral nearby laughs uproariously. He turns to you. "Do you know, you're the fifth person I've seen do that in the past two hours. You're the highest ranking one so far though. All these d-" He snaps to attention and salutes. You turn around, see Admiral Alzaga (with Raven behind) and mirror the rear admiral's behavior. The commander saultes back, and says to the lower admiral, "Do you mind?"`
 			`	Left alone, you sit down at your original table again.`
 				goto briefing
 			label eat
-			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Taking out your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that any such further action will be impossible, the internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
+			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that any such further action will be impossible, the internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
 			choice
 				`	(Chuck it at the cooks.)`
 					goto throw
 				`	(Throw it away.)`
 			label trash
-			
-			
+			`	You cram the horror into an available trash receptacle (packed to bursting like the rest of the spaceport), and turn back around. Both Raven and Admiral Alzaga are seated at your table waiting for you to come back. You return to the table and sit down.`
+			label rations
+			`	Like everywhere else in the food court, the line is long, but thankfully it is moving much faster. After a reasonable wait, you are at the front of the line. You scan your Navy license, and receive your kit accordingly. It is tube, about the length of your forearm, marked "PERSONAL MEAL KIT, TYPE A, VARI 04" You are unsure of what this means.`
+			`	At a table, you find that the tube is filled with an unmarked can, a spoon, a can opener, and a variety of small snacks. The substance in the can looks anything but appetizing, and the texture almost makes you gag, but the taste is not terrible. You finish it, idly look around the spaceport, and begin fiddling with your spoon. It is probably the strongest and most durable "disposable" utensil you've ever come across. You bend it with difficulty, and it springs out of your hand and lands underneath a nearby table.`
+			choice
+				`	(Leave It.)`
+					goto litter
+				`	(Go pick it up.)`
+			`	After an embrassingly extended period of scrabbling underneath the large table, you retrieve the spoon. You look up to see Raven and Admiral Alzaga seated at your table. "You might want to keep that, <last>, it's a Navy tradition to keep your first PMK spoon, I've still got mine from basic."`
+				goto ravenchoice
+			label litter
+			`	You go back to eating your snacks, butmoment later the errant spoon plunks back on the table, rapidly followed by Raven plunking into a seat across from you. "You know that really is quite messy to go around dropping things like that <last>. Besides, it's a tradition to keep your first PMK spoon, I've still got mine from basic." Admital Alzaga sits down next to her.`
+			label ravenchoice
+			`	You put the spoon and put it into your pocket.`
+			choice
+				`	"Really? I didn't know you exhibited normal human sentimentality behaviors."`
+					goto sentimental
+				`	"Interesting, but business first."`
+					goto briefing
+					
 			label skipfood
 			`	You have been waiting for an hour in the spaceport when `
 
