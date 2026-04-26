@@ -101,6 +101,7 @@ mission "Endgame Alpha 4.1"
 				`	(Wait.)`
 					goto skipfood
 				`	(Get some food.)`
+			label getfood
 			`	You peruse the various food vendors operating on the edges of the court, with tables in the center. In the middle, there is a temporary installation handing out military rations as well.`
 			choice
 				`	(Get a ration kit.)`
@@ -156,6 +157,23 @@ mission "Endgame Alpha 4.1"
 			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, I believe there is some business to conduct."`
 				goto briefing
 			label skipfood
-			`	You have been waiting for an hour in the spaceport when `
+			`	You have been waiting for an hour in the spaceport when ou realize that you are in fact very, very hungry.`
+			choice
+				`	(Get Food.)`
+					goto getfood
+				`	(Wait.)`
+			`	Still no sign of Admiral Alzaga.`
+			choice
+				`	(Wait.)`
+			`	Still no sign of Admiral Alzaga..`
+			choice
+				`	(Wait.)`
+			`	Still no sign of Admiral Alzaga...`
+			choice
+				`	(Wait.)`
+			`	You are startled awake by a hand vigorously slapping your back. You jump up, dimly registering Admiral Alzaga in front of you and Raven behind you, and snap to attention and offer the usual customs and courtesies. After your wits return, you see that Alzaga does not seem in the least perturbed by you being asleep.`
+			
+		
+				
 
 # \close
