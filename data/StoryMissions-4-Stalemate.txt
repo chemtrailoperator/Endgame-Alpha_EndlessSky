@@ -145,15 +145,16 @@ mission "Endgame Alpha 4.1"
 			`	After an embrassingly extended period of scrabbling underneath the large table, you retrieve the spoon. You look up to see Raven and Admiral Alzaga seated at your table. "You might want to keep that, <last>, it's a Navy tradition to keep your first PMK spoon, I've still got mine from basic."`
 				goto ravenchoice
 			label litter
-			`	You go back to eating your snacks, butmoment later the errant spoon plunks back on the table, rapidly followed by Raven plunking into a seat across from you. "You know that really is quite messy to go around dropping things like that <last>. Besides, it's a tradition to keep your first PMK spoon, I've still got mine from basic." Admital Alzaga sits down next to her.`
+			`	You go back to eating your snacks, but a moment later the errant spoon plunks back on the table, rapidly followed by Raven plunking into a seat across from you. "You know that really is quite messy to go around dropping things like that <last>. Besides, it's a tradition to keep your first PMK spoon, I've still got mine from basic." Admiral Alzaga sits down next to her.`
 			label ravenchoice
-			`	You put the spoon and put it into your pocket.`
+			`	You take the spoon and put it into your pocket.`
 			choice
 				`	"Really? I didn't know you exhibited normal human sentimentality behaviors."`
 					goto sentimental
 				`	"Interesting, but business first."`
 					goto briefing
-					
+			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, I believe there is some business to conduct."`
+				goto briefing
 			label skipfood
 			`	You have been waiting for an hour in the spaceport when `
 
