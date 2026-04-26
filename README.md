@@ -1,3 +1,6 @@
+Note: This plugin is still very much a work in progress, so I wouldn't necessarily recommend it if you are looking for just gameplay. If you are familiar with game saves (and how to revert changes), that will probably be needed once you reach the end so far.
+Feel free to contribute or point out errors and bugs in the issues setion of this repo.
+
 This plugin requires at least Endless Sky v0.10.16.
 
 This plugin allows you to serve in the Navy and earn the Navy licenses that are currently in-game and unobtainable, and it will also add general content and other things we thought would be nice in the game.
