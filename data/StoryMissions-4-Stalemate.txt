@@ -114,10 +114,10 @@ mission "Endgame Alpha 4.1"
 					goto order
 				`	"Where did the payment terminals go?"`
 			`	The employee replies haltingly after a pause. "No Capitan...no more tehrminals. Just scan your card and we give...food, contract will take from income later."`
-			`	The employee turns to something else, further communication appears to be impossible.`
+			`	The employee turns to something else, stopping further communication.`
 			label order
-			`	You scan your Navy license and order the first thing on the menu. After a wait made much longer by the awareness of your hunger, you receive and archaic disposable food box that is so hot you nearly drop it.`
-			`	Your "Ranch Special" is a large piece of meat lying on a bed of vegetables. Everything in the container is burnt so extensively that further identification is possible.`
+			`	You scan your Navy license and order the first thing on the menu. After a wait made much longer by the awareness of your hunger, you receive an archaic disposable food box that is so hot you nearly drop it.`
+			`	Your "Ranch Special" is a large piece of meat lying on a bed of vegetables. Everything in the container is burnt so extensively that further identification is impossible.`
 			choice
 				`	(Eat it.)`
 					goto eat
@@ -125,11 +125,11 @@ mission "Endgame Alpha 4.1"
 					goto trash
 				`	(Chuck it back at the cooks.)`
 			label throw
-			`	You pick up the meal, burning your hands again, and lob it into the food stall. The workers do not seem at all surprised by this, and only mutter about manners as they clean up the mess. A rear admiral nearby laughs uproariously. He turns to you. "Do you know, you're the fifth person I've seen do that in the past two hours. You're the highest ranking one so far though. All these d-" He snaps to attention and salutes. You turn around, see Admiral Alzaga (with Raven behind) and mirror the rear admiral's behavior. The commander saultes back, and says to the lower admiral, "Do you mind?"`
+			`	You pick up the meal, burning your hands again, and lob it into the food stall. The workers do not seem at all surprised by this, and only mutter about manners as they clean up the mess. A rear admiral nearby laughs uproariously. He turns to you. "Do you know, you're the fifth person I've seen do that in the past two hours. You're the highest ranking one so far though. All these d-" He snaps to attention and salutes. You turn around, see Admiral Alzaga (with Raven behind), and mirror the rear admiral's behavior. The task force commander salutes back, and says to the lower admiral, "Do you mind?"`
 			`	Left alone, you sit down at your original table again.`
 				goto briefing
 			label eat
-			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that any such further action will be impossible, the internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
+			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that repetition of that action will likely result in grave personal injury. The internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
 			choice
 				`	(Chuck it at the cooks.)`
 					goto throw
@@ -154,7 +154,7 @@ mission "Endgame Alpha 4.1"
 					goto sentimental
 				`	"Interesting, but business first."`
 					goto briefing
-			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, I believe there is some business to conduct."`
+			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
 				goto briefing
 			label skipfood
 			`	You have been waiting for an hour in the spaceport when ou realize that you are in fact very, very hungry.`
@@ -172,6 +172,9 @@ mission "Endgame Alpha 4.1"
 			choice
 				`	(Wait.)`
 			`	You are startled awake by a hand vigorously slapping your back. You jump up, dimly registering Admiral Alzaga in front of you and Raven behind you, and snap to attention and offer the usual customs and courtesies. After your wits return, you see that Alzaga does not seem in the least perturbed by you being asleep.`
+			`	Both of them sit down at your table and Raven begins, "You look well rested Commander. I'm glad, we have a lot to discuss.`
+				goto briefing
+				
 			
 		
 				
