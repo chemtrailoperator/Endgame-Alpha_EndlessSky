@@ -1,5 +1,7 @@
+Effective 8/26/26, I have paused development on all of my plugins. Check back in a few years.
+
 Note: This plugin is still very much a work in progress, so I wouldn't necessarily recommend it if you are looking for just gameplay. If you are familiar with game saves (and how to revert changes), that will probably be needed once you reach the end so far.
-Feel free to contribute or point out errors and bugs in the issues setion of this repo.
+Feel free to contribute or point out errors and bugs in the issues section of this repo.
 
 This plugin requires at least Endless Sky v0.10.16.
 
