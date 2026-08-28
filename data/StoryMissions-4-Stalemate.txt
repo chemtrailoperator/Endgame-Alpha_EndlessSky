@@ -172,7 +172,7 @@ mission "Endgame Alpha 4.1"
 			choice
 				`	(Wait.)`
 			`	You are startled awake by a hand vigorously slapping your back. You jump up, dimly registering Admiral Alzaga in front of you and Raven behind you, and snap to attention and offer the usual customs and courtesies. After your wits return, you see that Alzaga does not seem in the least perturbed by you being asleep.`
-			`	Both of them sit down at your table and Raven begins, "You look well rested Commander. I'm glad, we have a lot to discuss.`
+			`	Both of them sit down at your table and Raven begins, "You look well rested Commander. I'm glad, we have a lot to discuss."`
 				goto briefing
 				
 			
