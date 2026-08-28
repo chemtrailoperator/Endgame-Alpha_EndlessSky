@@ -1,6 +1,4 @@
-Effective 8/26/26, I have significantly slowed paused development on all of my plugins. Commits will be rare with small bits of story added. Check back in a few years if you want an actually playable portion added.
-
-Note: This plugin is still very much a work in progress, so I wouldn't necessarily recommend it if you are looking for just gameplay. If you are familiar with game saves (and how to revert changes), that will probably be needed once you reach the end so far.
+Note: This plugin is still very much a work in progress, so I wouldn't necessarily recommend it if you are looking for just gameplay. If you are familiar with game saves (and how to revert changes), go ahead.
 Feel free to contribute or point out errors and bugs in the issues section of this repo.
 
 This plugin requires at least Endless Sky v0.10.16.
