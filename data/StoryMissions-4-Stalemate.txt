@@ -11,7 +11,7 @@
 #
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
-# This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on the wiki for this plugin.
+# This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
 
 # 4.0 \open
 
@@ -201,5 +201,7 @@ mission "Endgame Alpha 4.1"
 			`	Admiral Alzaga smiles back at you. "I keep on forgetting that you are new to this whole Navy thing. You don't really get a choice. It's an order, and I even put it in writing for you. On real paper. He slides the document across to you.`
 			`	"Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations.`
 				accept
+
+# 4.2 \fold
 
 # \close
