@@ -132,6 +132,13 @@ mission 4.2
 You are sent to the Hai first. The Hai can tell you nothing, but offer their assistance, understanding your position considering their own relationship with the unfettered. They dispatch a heavy battle fleet to Human space. 
 
 mission 4.3
-Next, you are sent to the Remnant, who are already prepared to send a huge fleet if necessary. They are reluctant to give away their position, but send some anyway. The Remnant know nothing of the tower.
+Next, you are sent to the Remnant, who are already prepared to send a huge fleet if necessary. They will not give away their position yet, but they offer to outfit Human hulls with their technology.
 
 mission 4.4
+Wanderers do not know specifics, but are inclined to think it is Korath technology based on things they have seen since the Eye opened.
+
+mission 4.5
+You got to the Bunrodea next, but they don't know anything or refuse to give you any information.
+
+mission 4.6
+You return to Alzaga with little to report. He asks if there are any other aliens out there. You have the option to tell him of the Gegno, the Avgi, or the Successors
