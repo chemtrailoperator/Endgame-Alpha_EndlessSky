@@ -141,4 +141,4 @@ mission 4.5
 You got to the Bunrodea next, but they don't know anything or refuse to give you any information.
 
 mission 4.6
-You return to Alzaga with little to report. He asks if there are any other aliens out there. You have the option to tell him of the Gegno, the Avgi, or the Successors
+You return to Alzaga with little to report. He asks if there are any other aliens out there. You have the option to tell him of the Gegno, the Avgi, or the Successors, or all three. He discounts the Gegno being of value because of their limited technology and distance from the Alphas, and thinks the isolation of the Successors probably means they know nothing. He sends you to gain information from the Avgi. 
