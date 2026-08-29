@@ -135,7 +135,7 @@ mission 4.3
 Next, you are sent to the Remnant, who are already prepared to send a huge fleet if necessary. They will not give away their position yet, but they offer to outfit Human hulls with their technology.
 
 mission 4.4
-Wanderers do not know specifics, but are inclined to think it is Korath technology based on things they have seen since the Eye opened.
+Wanderers do not know specifics, but are inclined to think it is Korath technology based on things they have seen since the Eye opened. When you return, you are introduced to the Stealth Cruiser and the Stealth Gunboat Drone.
 
 mission 4.5
 You got to the Bunrodea next, but they don't know anything or refuse to give you any information.
