@@ -90,10 +90,9 @@ mission "Endgame Alpha 4.1"
 	name "Galactic Inquiries"
 	description "Make inquiries about the strange object you saw on Sagarra."
 	source "New Argentina"
+	destination "Hai-home"
 	to offer
 		has "event: EA timer I"
-	to complete
-		never
 	on offer
 		conversation
 			`You walk into the spaceport, and make your way to the food court. You didn't receive any more instructions besides this so you sit down and wait.`
@@ -162,21 +161,45 @@ mission "Endgame Alpha 4.1"
 				`	(Get Food.)`
 					goto getfood
 				`	(Wait.)`
-			`	Still no sign of Admiral Alzaga.`
-			choice
-				`	(Wait.)`
-			`	Still no sign of Admiral Alzaga..`
-			choice
-				`	(Wait.)`
 			`	Still no sign of Admiral Alzaga...`
+			choice
+				`	(Wait.)`
+			`	Still no sign of Admiral Alzaga......`
+			choice
+				`	(Wait.)`
+			`	Still no sign of Admiral Alzaga.........`
 			choice
 				`	(Wait.)`
 			`	You are startled awake by a hand vigorously slapping your back. You jump up, dimly registering Admiral Alzaga in front of you and Raven behind you, and snap to attention and offer the usual customs and courtesies. After your wits return, you see that Alzaga does not seem in the least perturbed by you being asleep.`
 			`	Both of them sit down at your table and Raven begins, "You look well rested Commander. I'm glad, we have a lot to discuss."`
 				goto briefing
-				
-			
-		
-				
+			label briefing
+			`	"The next job for you to do is a little bit different from what we've had you doing. The data you've submitted of the Alpha base is unlike any kind of organization we've come across, as you probably already figured, so we would like you to travel around and make some inquiries about it, specifically about the structure at the center of this...thing." Admiral Alzaga says.`
+			choice
+				"Really? That's all?"
+				"Sounds simple enough."
+			`	"But of course, it isn't. The kind of technology being used is almost certainly not human in origin, so your inquiries will be beyond the normal areas. You are very...well travelled, possibly the most travelled person readily available in the galaxy. Additionally, these inquiries must be made with tact, discretion, and diplomacy, as the first official contact some of these species will have will be an empire in distress. It will be important to set the right tone and ensure that even more trouble does not well up from beyond the hyperspace lanes."`
+			`	Raven adds, "Please begin your inquiries with the Hai, and move through each faction from there. We'll tell you where to go for each one." She shrugs. "Should be pretty easy, honestly."`
+			choice
+				`	(Accept the job.)`
+				`	"How do you even know where I've been?"`
+					goto intel
+				`	"What if something goes wrong?"`
+					goto wrong
+				`	"Thanks, but no thanks."`
+					goto cantleave
+			`	"Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations.`
+				accept
+			label intel
+			`	Raven hoods her eyelids. "Really Commander, I am capable of finding a great many more things than I am necessarily allowed to, and besides, you signed into the government information service earlier through your ship's mainframe, so I can do whatever I want. It was in the terms you apparently didn't read."`
+			`	You shrug. "Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations, looking suspiciously at your ship's computer screen.`
+				accept
+			label wrong
+			`	Alzaga replies. "Honestly Commander, I'm not too worried about it. We'll keep sending you updates and instructions as needed to make sure the right message gets conveyed, although you might want to take a heavy ship with plenty of fuel to get out of somewhere if you need to. Besides, just one measly commander isn't much compared to what we've lost already." He winks, and stands to leave. You salute him back, and return to your ship to begin preparations.`
+				accept
+			label cantleave
+			`	Admiral Alzaga smiles back at you. "I keep on forgetting that you are new to this whole Navy thing. You don't really get a choice. It's an order, and I even put it in writing for you. On real paper. He slides the document across to you.`
+			`	"Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations.`
+				accept
 
 # \close
