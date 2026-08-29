@@ -107,12 +107,12 @@ mission "Endgame Alpha 4.1"
 					goto rations
 				`	(Get some real food.)`
 			`	Because the planet was not heavily populated before the Alpha war, the food court (and spaceport facilities in general) are not sufficient to comfortably support the Navy operations. Hence, every food vendor has a long line of officers and enlisted personnel waiting for nourishment. The only one promising a reasonably short wait time is the store advertising "Authentic Local Cuisine".`
-			`	As you approach the stall, you realize that the industry standard payment terminal attached to the ordering screen that you usually see in such areas has been removed and replaced with a simple optical scanner. A more braod inspection shows that all the terminals have been replaced.`
+			`	As you approach the stall, you realize that the industry standard payment terminal attached to the ordering screen that you usually see in such areas has been removed and replaced with a simple optical scanner. A more broad inspection shows that all the terminals have been replaced.`
 			choice
 				`	(Make your order.)`
 					goto order
 				`	"Where did the payment terminals go?"`
-			`	The employee replies haltingly after a pause. "No Capitan...no more tehrminals. Just scan your card and we give...food, contract will take from income later."`
+			`	The employee replies haltingly after a pause. "No Capitan...no more tehrminals. Just scan card and we give...meal, contract will take from income later."`
 			`	The employee turns to something else, stopping further communication.`
 			label order
 			`	You scan your Navy license and order the first thing on the menu. After a wait made much longer by the awareness of your hunger, you receive an archaic disposable food box that is so hot you nearly drop it.`
@@ -156,7 +156,7 @@ mission "Endgame Alpha 4.1"
 			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
 				goto briefing
 			label skipfood
-			`	You have been waiting for an hour in the spaceport when ou realize that you are in fact very, very hungry.`
+			`	You have been waiting for an hour in the spaceport when you realize that you are in fact very, very hungry.`
 			choice
 				`	(Get Food.)`
 					goto getfood

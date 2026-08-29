@@ -206,8 +206,8 @@ mission "Endgame Alpha 2.5"
 			choice
 				`	(Open the message.)`
 			label EAahopen
-			`	It is from the Free Worlds Militia intelligence service. You notice that it was also sent to NavInt. It reads, "Good Evening, Captain Ant. Yesterday, the research vessel Starstreak 3 disappeared from the Beta Lupi system, little data is available due to a surveillance system blackout of unknown origins. There were no other transponders in the system, however this does not mean that no ships were, but even pirates usually have them. The Emergency Locator Transmitter installed on the ship was not activated, indicating that it is not destroyed or disabled. This ship is of high importance due to the equipment on board. Your mission (should you accept it) is to locate and, if possible, recover the Starstreak 3 with the utmost dispatch and deliver it to the research facility on Twinstar.`
-			`	The only available information is that it was seen in the Men system, heading deeper into the pirate systems in the area. Discretion is advised as the vessel is privately owned, and our intelligence is unaware of the type fo research going on.`
+			`	It is from the Free Worlds Militia intelligence service. You notice that it was also sent to NavInt. It reads, "Good Evening, Captain <last>. Yesterday, the research vessel Starstreak 3 disappeared from the Beta Lupi system, little data is available due to a surveillance system blackout of unknown origins. There were no other transponders in the system, however this does not mean that no ships were, but even pirates usually have them. The Emergency Locator Transmitter installed on the ship was not activated, indicating that it is not destroyed or disabled. This ship is of high importance due to the equipment on board. Your mission (should you accept it) is to locate and, if possible, recover the Starstreak 3 with the utmost dispatch and deliver it to the research facility on Twinstar.`
+			`	The only available information is that it was seen in the Men system, heading deeper into the pirate systems in the area. Discretion is advised as the vessel is privately owned, and our intelligence is unaware of the type of research going on.`
 			choice
 				`	(Attempt to locate the missing ship.)`
 					accept
@@ -316,7 +316,7 @@ mission "Endgame Alpha 2.6"
 		has "Endgame Alpha 2.5: done"
 	on offer
 		conversation
-			`You grab the your report on the action with the Mule and make your way to the portion of the spaceport set aside for the Navy. You are surprised to find that NavInt is filled entirely with officers of the Free Worlds. You are hurried into a small room where you find a general who stands when you enter.`
+			`You grab your report on the action with the Mule and make your way to the portion of the spaceport set aside for the Navy. You are surprised to find that NavInt is filled entirely with officers of the Free Worlds. You are hurried into a small room where you find a general who stands when you enter.`
 			choice
 				`	(Salute.)`
 			`	Good Afternoon <last>, you don't know me, I am the commander of a new department that is creating a liaison between the Republic and the Free Worlds intelligence services.  Your reputation precedes you so your introduction won't be necessary. We can get to business.`

@@ -255,7 +255,7 @@ mission "Endgame Alpha 3.6"
 			label access
 			`	"If they really did come from there, it could become a worse problem than it already is. Oh, that reminds me." She pulls out a data pad.`
 			label hyperlink
-			`	"The ships that attacked men were unique, but they were not entirely new. After examining the logs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
+			`	"The ships that attacked Men were unique, but they were not entirely new. After examining the logs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
 				goto patrol
 			label interesting
 			`	Raven looks at you oddly, "Yes... very."`
@@ -309,7 +309,7 @@ mission "Endgame Alpha 3.8"
 			`Upon extracating yourself and the Admiral (blaspheming the lack of stakes in polished concrete) from the wreckage, he tells you that Winter in the Yed Prior system is under siege by the Alphas, and orders you to get through the blockade and rescue as many people as possible, as well as several dignitiaries, scientists, intelligence operators, and data analysts who would be priceless to the Alphas.`
 				accept
 			label easypsit
-			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. If you have  ajump drive to bypass the blockade, that would be excellent."`
+			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. If you have  a jump drive to bypass the blockade, that would be excellent."`
 				accept
 	on stopover
 		event "EA Yed Prior Takeover"
@@ -588,14 +588,14 @@ mission "Endgame Alpha 3.14"
 			`	He looks away, and his eyes glisten. "I know, but I won't stop looking. We have all already lost so much... Anyway, you have a meeting to get to and time is precious."`
 				goto alzaga
 			label powerful
-			`	The man smiles sarcastically, "That's what I keep hearing, and it isn't the Navy that I'm worried about, you'll never find a more valiant body of soldiers. The problem is that we cannot unify. Parliament is hesitant to help the Free Worlds, even though could have been the first line of defense. The only reason we got the help that we did is because of people like Alzaga and Danforth loose interpretation of their operation orders. If the Free Worlds and the Republic won't unify, let alone the Syndicate, we don't have much of a chance. Anyway, you have a meeting to get to and there is nothing more precious than time, especially now." He pats you on the shoulder and leaves.`
+			`	The man smiles sarcastically, "That's what I keep hearing, and it isn't the Navy that I'm worried about, you'll never find a more valiant body of soldiers. The problem is that we cannot unify. Parliament is hesitant to help the Free Worlds, even though we could have been the first line of defense. The only reason we got the help that we did is because of people like Alzaga and Danforth's loose interpretation of their operation orders. If the Free Worlds and the Republic won't unify, let alone the Syndicate, we don't have much of a chance. Anyway, you have a meeting to get to and there is nothing more precious than time, especially now." He pats you on the shoulder and leaves.`
 			label alzaga
 			`	Admiral Alzaga actually seems to be less haggard than he was before, but his office is much worse for wear. You salute and offer the appropriate greeting. "Nice to see you again, <last>," He says, saluting back, "I have some special work for you. Just like before, I'd like you to penetrate the Alpha territory, but this time I want you to get all the way into their home system. Once again, you'll need lots of fuel.`
 			choice
 				`	"Sounds good, I'll see if I can make that happen."`
 					accept
 				`	"Why should we bother?"`
-			`	"The Alpha fleets so far have had an interesting characteristic: They are completely organized. While that wouldn't normally be such an object of note, it is different from what we saw last time, where individual ships and small fleets attacked wherever and whenever they pleased. We think that thehre may be a larger command center on that planet, and destroying it could level the playing field significantly. Alphas lack many of the traits and emotions that humans have, including the concept of following orders, so there must be something there that is keeping them in line, and we want to know what it is."`
+			`	"The Alpha fleets so far have had an interesting characteristic: They are completely organized. While that wouldn't normally be such an object of note, it is different from what we saw last time, where individual ships and small fleets attacked wherever and whenever they pleased. We think that thehre may be a larger command center on that planet, and destroying it could level the playing field significantly. Alphas lack many of the traits and emotions that humans have, including the concept of dutifully following orders, so there must be something there that is keeping them in line, and we want to know what it is."`
 			choice
 				`	"Okay."`
 					accept

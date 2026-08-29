@@ -34,7 +34,7 @@ mission "EA FW Raven Contact"
 				decline
 			label eafwrcignore
 			`	You decide that it couldn't be her outside of Republic space, there are probably dozens of heavily tattooed people that match her physical description.`
-				defer
+				decline
 			label eafwrcend
 
 mission "EA Deep Raven Contact"
