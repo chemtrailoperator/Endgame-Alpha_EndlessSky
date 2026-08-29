@@ -1,6 +1,6 @@
 This is a roadmap for the Endgame Alpha storyline. 
 
-delete or move before publishing
+delete or move before release
 
 
 People:
