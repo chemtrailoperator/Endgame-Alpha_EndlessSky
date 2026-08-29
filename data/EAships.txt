@@ -950,7 +950,7 @@ ship "Hawkeye"
 		"Scram Drive"
 		
 	turret 22 53 "Anti-Missile Turret"
-	turret -22 53.5 "Anti-Missile Turret"
+	turret -22 53 "Anti-Missile Turret"
 	turret 0 -41 "Blaster Turret"
 	engine -27 95
 	engine 28.5 95.5
