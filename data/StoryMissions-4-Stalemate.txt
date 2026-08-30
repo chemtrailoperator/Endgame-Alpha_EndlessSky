@@ -214,5 +214,6 @@ mission "Endgame Alpha 4.2"
 	priority
 	source "Hai-home"
 	destination Viminal
-	
+	name "Contact the Remnant"
+	description "Travel to Viminal in the Arculus system to request information and assistance regarding the Alphas."
 # \close

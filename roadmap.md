@@ -129,10 +129,10 @@ Alzaga tells you that the tower must be alien in origin, and gives you a proposa
 ------------------------All previous are completed.-------------------------------------
 
 mission 4.2
-You are sent to the Hai first. The Hai can tell you nothing, but offer their assistance, understanding your position considering their own relationship with the unfettered. They dispatch a heavy battle fleet to Human space. 
+You are sent to the Hai first. The Hai can tell you nothing, but offer their assistance, understanding your position considering their own relationship with the unfettered. They dispatch a heavy battle fleet to Human space. You escort them back to New Argentina 
 
 mission 4.3
-Next, you are sent to the Remnant, who are already prepared to send a huge fleet if necessary. They will not give away their position yet, but they offer to outfit Human hulls with their technology.
+Next, you are sent to the Remnant, who already have a huge defensive fleet. They will not give away their position yet, but they offer to outfit Human hulls with their technology.
 
 mission 4.4
 Wanderers do not know specifics, but are inclined to think it is Korath technology based on things they have seen since the Eye opened. When you return, you are introduced to the Stealth Cruiser and the Stealth Gunboat Drone.
@@ -142,3 +142,7 @@ You got to the Bunrodea next, but they don't know anything or refuse to give you
 
 mission 4.6
 You return to Alzaga with little to report. He asks if there are any other aliens out there. You have the option to tell him of the Gegno, the Avgi, or the Successors, or all three. He discounts the Gegno being of value because of their limited technology and distance from the Alphas, and thinks the isolation of the Successors probably means they know nothing. He sends you to gain information from the Avgi. 
+
+mission 4.7
+In talking to the Avgi, you discover that they had been contacted by the Alphas long before the research team reached them. They did not tell you this immediately because the Alphas were originally allowed to settle in the tangled shroud, but became unruly and violent, and were exterminated with thermonuclear weapons. You are given access to the world they used to be on, and see the same structure, but partially destroyed and less large and complex. You glean some information from it and decide that it is old Sestor tech.
+The Avgi decline to send a battle fleet, saying that they have nothing to add but Thermonuclear weapons, but you convince them to allow a group of Republic engineers to come and be trained how to build the laser systems. (Also create gunport mounted blue laser and large lasing mediums.)
