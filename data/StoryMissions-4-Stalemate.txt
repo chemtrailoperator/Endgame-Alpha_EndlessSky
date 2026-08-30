@@ -87,8 +87,8 @@ mission "Endgame Alpha 4.0"
 mission "Endgame Alpha 4.1"
 	priority
 	clearance
-	name "Galactic Inquiries"
-	description "Make inquiries about the strange object you saw on Sagarra."
+	name "Contact the Hai"
+	description "Travel to Hai-home in the Ya Hai system to make inquiries about the strange structure on Sagarra."
 	source "New Argentina"
 	destination "Hai-home"
 	to offer
@@ -201,7 +201,18 @@ mission "Endgame Alpha 4.1"
 			`	Admiral Alzaga smiles back at you. "I keep on forgetting that you are new to this whole Navy thing. You don't really get a choice. It's an order, and I even put it in writing for you. On real paper. He slides the document across to you.`
 			`	"Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations.`
 				accept
-
+	on complete
+		payment 50000
+		conversation
+			`As soon as you have stopped, a hologram message appears on your dashboard. It is Raven. "Now that you have arrived at your destination, I can now add to the orders you have already received.`
+			`	"Not only shall you inquire about the structures located on Sagarra, but you must also ask if each government is willing to provide any resources to aid in the fight. Military fleets are preferred, but we will also accept humanitarian resources or assistance with housing refugees. The more the better, but please do not overstep or push in any way. The Alphas are still vevry much a human problem, and races who have been effected by them will be hostile, since it was us that created them anyway.`
+			`	"Additionally, make sure that the government you are in idscussion with understands that we have the capability to maintain a security around assisting fleets, and that they need not fear being discovered.`
+			`	"I wish you well with the Hai. They are probably our most potent allies since they are already known by many humans. Contacting higher-ups is fairly formal on Hai-home, you can file for a meeting at the spaceport embassy." The message closes out. Along with the message, there is payment of 50,000 credits.`
+			
 # 4.2 \fold
-
+mission "Endgame Alpha 4.2"
+	priority
+	source "Hai-home"
+	destination Viminal
+	
 # \close
