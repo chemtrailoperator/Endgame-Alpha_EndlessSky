@@ -964,4 +964,78 @@ ship "Hawkeye"
 	"final explode" "final explosion medium"
 	description "On its own, this ship is relatively useless. The light armament and hull construction are not anywhere near sufficient for the duties that a Frigate would usually take. As part of a larger fleet, however, it is incredibly useful. It carries the most advanced sensor suite and computing system used by the Navy, and its speed and maneuverability allow it to provide ECM for larger ships."
 	
+	
+ship "Stealth Cruiser"
+	sprite "ship/stealthcruiser"
+	thumbnail "thumbnail/stealthcruiser"
+	attributes
+		category "Heavy Warship"
+		licenses
+			"Navy Cruiser"
+		"cost" 32000000
+		"shields" 22400
+		"hull" 5800
+		"required crew" 69
+		"bunks" 104
+		"mass" 1840
+		"drag" 7.8
+		"radar jamming" 20
+		"heat dissipation" .68
+		"fuel capacity" 800
+		"cargo space" 40
+		"outfit space" 760
+		"weapon capacity" 270
+		"engine capacity" 170
+		weapon
+			"blast radius" 260
+			"shield damage" 2600
+			"hull damage" 1300
+			"hit force" 3900
+	outfits
+		"Particle Cannon" 4
+		"Heavy Anti-Missile Turret" 2
+		
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"D67-TM Shield Generator"
+		"Liquid Nitrogen Cooler"
+		"Laser Rifle" 20
+		"Fragmentation Grenades" 20
+		"Security Station"
+		"Tactical Scanner"
+		
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -28 154 0.95
+	engine 28 154 0.95
+	engine -52 151 0.75
+	engine 52 151 0.75
+	gun -40.5 -46 "Particle Cannon"
+	gun 40.5 -46 "Particle Cannon"
+	gun -30 -49 "Particle Cannon"
+	gun 30 -49 "Particle Cannon"
+	turret -32 -23 "Heavy Laser Turret"
+	turret 32 -23 "Heavy Laser Turret"
+	bay "Drone" -25 19.5
+		"launch effect" "human internal"
+	bay "Drone" 25 19.5
+		"launch effect" "human internal"
+	bay "Drone" -25 49.5
+		"launch effect" "human internal"
+	bay "Drone" 25 49.5
+		"launch effect" "human internal"
+	leak "leak" 30 50
+	leak "flame" 50 80
+	leak "big leak" 40 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "This version of the reputable Cruiser is adapted to avoiding the missiles of its opponents. It has an extremely small radar cross section and it has less of a thermal signature, this is managed by removing all unnecessary objects on the outside of the ship and by redesigning the ship to operate much, much cooler. This comes at the cost of weapon capacity and cargo space. Reflections off this ship also confuses the radar when targeting other ships, providing cover for the fleet."
+
+
 # \close
