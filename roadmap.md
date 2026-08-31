@@ -172,3 +172,22 @@ After the last mopping up is completed, you are called before a joint council an
 
 mission 7.1
 As you leave, Raven tells you that there are still quite a few things left to do, and that her teams will keep you in mind
+
+
+
+
+
+
+
+
+
+
+
+#SIDE MISSIONS
+
+
+#Green Goo
+You have the opportunity to keep a vial of green goo you found in a lab making Alphas. If you reveal its existence to authorities, but dont hand it over, you have the opportunity to create a unique hand-to-hand outfit, the Delta genome. It increases your H2H capability by 40%. If you decide to keep the vial a secret, you get a better H2H outfit, but it is illegal. If you hand it over, a few months later a "Delta Steroids" H2H becomes available for purchase, increasing fighting capacity by 20%.
+
+#PMK Spoon
+If you chose to get a field ration and kept the spoon, you have the option to use it in a self-defense scenario a while later.
