@@ -205,7 +205,7 @@ mission "Endgame Alpha 4.1"
 		payment 50000
 		conversation
 			`As soon as you have stopped, a hologram message appears on your dashboard. It is Raven. "Now that you have arrived at your destination, I can now add to the orders you have already received.`
-			`	"Not only shall you inquire about the structures located on Sagarra, but you must also ask if each government is willing to provide any resources to aid in the fight. Military fleets are preferred, but we will also accept humanitarian resources or assistance with housing refugees. The more the better, but please do not overstep or push in any way. The Alphas are still vevry much a human problem, and races who have been effected by them will be hostile, since it was us that created them anyway.`
+			`	"Not only shall you inquire about the structures located on Sagarra, but you must also ask if each government is willing to provide any resources to aid in the fight. Military fleets are preferred, but we will also accept humanitarian resources or assistance with housing refugees. The more the better, but please do not overstep or push in any way. The Alphas are still very much a human problem, and races who have been effected by them will be hostile, since it was us that created them anyway.`
 			`	"Additionally, make sure that the government you are in discussion with understands that we have the capability to maintain security around assisting fleets, and that they need not fear being discovered.`
 			`	"I wish you well with the Hai. They are probably our most potent allies since they are already known by many humans. Contacting higher-ups is fairly formal on Hai-home, you can file for a meeting at the spaceport embassy." The message closes out. Along with the message, there is payment of 50,000 credits.`
 			
@@ -213,7 +213,15 @@ mission "Endgame Alpha 4.1"
 mission "Endgame Alpha 4.2"
 	priority
 	source "Hai-home"
-	destination Viminal
-	name "Contact the Remnant"
-	description "Travel to Viminal in the Arculus system to request information and assistance regarding the Alphas."
+	destination "New Argentina"
+	name "Support Escort"
+	description "Escort the Hai battle fleet to <destination> in the <system> system."
+	to offer
+		has "Endgame Alpha 4.1: done"
+	on offer
+		conversation
+	on complete
+		payment 100000
+	npc accompany save
+		
 # \close
