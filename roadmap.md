@@ -149,7 +149,7 @@ The Avgi decline to send a battle fleet, saying that they have nothing to add bu
 
 # Start of Crucible
 mission 5.0
-After assembling the new alien battle fleets (Remnant-equipped and Hai) at New Argentina, you fight a few battles with them, and the Alphas continue to gain the upper hand. You also get more evidence that the megalith on Sagarra is controlling everything.
+After assembling the new alien battle fleets (Remnant-equipped and Hai) at New Argentina, you fight a few battles with them, and the Alphas continue to gain the upper hand. You also get more evidence that the megalith on Sagarra is controlling everything. Most of the work you do is usingn your jump drive to carry supplies or assist with battles in Free Worlds Space. Trapped worlds are running low on components needed to manufacture new ships that are made in the Syndicate, Tarazed, and the Deep. Kraz now sells just about everything.
 
 mission 5.1
 You are pulled from the frontlines and sent on a special, unexplained mission to the Syndicate. In the syndicate you find out that there is a system in jump drive reach within the syndicate that has been carefully concealed with jamming technology. It is unstable and can only be reached by accredited persons. It is also very heavily fortified. There, they have been developing a weapon that is like the device used on Zenith, but with world destroying potential. They had not disclosed its development because they only had the capability to produce one, since it contains a unique peace of alien salvage that they have never found trace of since, and there was no one target to focus on that would make it worth it.
@@ -158,7 +158,7 @@ mission 5.2
 You deliver a gunboat drone to the system, which must then be safely escorted to sagarra. It is outfitted with a variety of alien tech to assist as a last ditch effort to get it to its target.
 
 mission 5.3
-you escort the weapon system to sagarra, where it detonates. Sensors notice an extremely large electromagnetic pulse in all Alpha occupied systems, and the chain of command appears to collapse and become disorganized. You return to New Argentina and promoted to Vice Admiral. You begin a campaign to punch through the occupied systems cutting off the Free Worlds and reestablish contact with them by hyperlinks.
+you escort the weapon system to sagarra, where it detonates. Sensors notice an extremely large electromagnetic pulse in all Alpha occupied systems, and the chain of command appears to collapse and become disorganized. You return to New Argentina and promoted to Rear Admiral. You begin a campaign to punch through the occupied systems cutting off the Free Worlds and reestablish contact with them by hyperlinks.
 
 #Start of Conquest
 mission 6.0
