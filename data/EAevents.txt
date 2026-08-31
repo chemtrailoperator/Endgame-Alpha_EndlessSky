@@ -138,6 +138,7 @@ event "EA timer I"
 
 # Storyline Events \fold
 
+# Republic Mobilized \open
 event "EA endgame alpha begins"
 	government "Alpha"
 		"attitude toward"
@@ -376,6 +377,7 @@ event "EA republic mobilized"
 		add fleet "Small Militia" 800
 		add fleet "Large Militia" 800
 
+# System Frontlines \fold
 event "EA Alpherg Frontline"
 	system Alpherg
 		fleet "Large CCOR Alpha" 4400
@@ -1192,6 +1194,7 @@ event "EA Albireo Frontline"
 		fleet "Large Republic" 1000
 		fleet "Small Republic" 1000
 
+# System Takeovers \fold
 event "EA Citadelle Takeover"
 	system Citadelle
 		government "Alpha"
@@ -2190,7 +2193,11 @@ event "EA Nunki Takeover"
 			fleet "Marauder fleet IX Alpha" 5
 			fleet "Marauder fleet X Alpha" 5
 
+# Planet Wreckings \fold
 
+# Planet Restorations \fold
 event "EA alphas defeated"
 
+# \close
 
+# \close
