@@ -124,7 +124,7 @@ mission 4.0
 You cruise around the surface of the Alpha homeworld, collecting info. You see a large alien-like tower, supercarriers being built, and are driven off by defenses. 
 
 mission 4.1
-Alzaga tells you that the tower must be alien in origin, and gives you a proposal to search throughout the galaxy with other factions to find an origin.
+Alzaga tells you that the tower must be alien in origin, and gives you a proposal to search throughout the galaxy with other factions to find an origin. First, you are sent by your Jump Drive to Free Worlds space to deliver news and plans.
 
 ------------------------All previous are completed.-------------------------------------
 
@@ -144,12 +144,12 @@ mission 4.6
 You return to Alzaga with little to report. He asks if there are any other aliens out there. You have the option to tell him of the Gegno, the Avgi, or the Successors, or all three. He discounts the Gegno being of value because of their limited technology and distance from the Alphas, and thinks the isolation of the Successors probably means they know nothing. He sends you to gain information from the Avgi. 
 
 mission 4.7
-In talking to the Avgi, you discover that they had been contacted by the Alphas long before the research team reached them. They did not tell you this immediately because the Alphas were originally allowed to settle in the tangled shroud, but became unruly and violent, and were exterminated with thermonuclear weapons. You are given access to the world they used to be on, and see the same structure, but partially destroyed and less large and complex. You glean some information from it and decide that it is old Sestor tech. Throughout all of the previous missions, you have been receiving updates about the war, how the coalition is gradually being beaten back.
+In talking to the Avgi, you discover that they had been contacted by the Alphas long before the research team reached them. They did not tell you this immediately because the Alphas were originally allowed to settle in the tangled shroud, but became unruly and violent, and were exterminated with thermonuclear weapons. You are given access to the world they used to be on, and see the same structure, but partially destroyed and less large and complex. You glean some information from it and decide that it is old Sestor tech. Throughout all of the previous missions, you have been receiving updates about the war, how the combined forces of the FW and Republic are gradually being beaten back.
 The Avgi decline to send a battle fleet, saying that they have nothing to add but Thermonuclear weapons, but you convince them to allow a group of Republic engineers to come and be trained how to build the laser systems. (Also create gunport mounted blue laser and large lasing mediums.)
 
 # Start of Crucible
 mission 5.0
-After assembling battle fleets at New Argentina, you fight a few battles with them, and the Alphas continue to gain the upper hand. You also get more evidence that the megalith on Sagarra is controlling everything.
+After assembling the new alien battle fleets (Remnant-equipped and Hai) at New Argentina, you fight a few battles with them, and the Alphas continue to gain the upper hand. You also get more evidence that the megalith on Sagarra is controlling everything.
 
 mission 5.1
 You are pulled from the frontlines and sent on a special, unexplained mission to the Syndicate. In the syndicate you find out that there is a system in jump drive reach within the syndicate that has been carefully concealed with jamming technology. It is unstable and can only be reached by accredited persons. It is also very heavily fortified. There, they have been developing a weapon that is like the device used on Zenith, but with world destroying potential. They had not disclosed its development because they only had the capability to produce one, since it contains a unique peace of alien salvage that they have never found trace of since, and there was no one target to focus on that would make it worth it.
@@ -158,7 +158,7 @@ mission 5.2
 You deliver a gunboat drone to the system, which must then be safely escorted to sagarra. It is outfitted with a variety of alien tech to assist as a last ditch effort to get it to its target.
 
 mission 5.3
-you escort the weapon system to sagarra, where it detonates. Sensors notice an extremely large electromagnetic pulse in all Alpha occupied systems, and the chain of command appears to collapse and become disorganized.
+you escort the weapon system to sagarra, where it detonates. Sensors notice an extremely large electromagnetic pulse in all Alpha occupied systems, and the chain of command appears to collapse and become disorganized. You return to New Argentina and promoted to Vice Admiral. You begin a campaign to punch through the occupied systems cutting off the Free Worlds and reestablish contact with them by hyperlinks.
 
 #Start of Conquest
 mission 6.0
