@@ -192,3 +192,16 @@ planet Sagarra
 	description `This world is eerily similar to the Alpha's previous refuge, Host. Most of the ground is scarred by the marks of Alpha activity, who have used the planet with little regard for the environment. The entire landscape is covered in weapons and ship plants of varying size and operability that have labored for hundreds of years to produce a massive force of warships.`
 	description `	Deep in the jungles near the equator, small mammals are working hard to avoid being eaten by the great lizards, and to survive for long enough that they will be able to evolve into the dominant life form.`
 	security 0
+event "restor geminus"
+	planet Geminus
+		shipyard "Navy Basics"
+		shipyard "Navy Advanced"
+		shipyard "Navy Elite"
+	
+mission "upgrade geminus"
+	landing
+	invisible
+	on offer
+		event "restor geminus"
+		decline
+		
