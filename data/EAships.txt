@@ -872,7 +872,7 @@ ship "Barque"
 		"heat dissipation" .46
 		"fuel capacity" 600
 		"cargo space" 270
-		"outfit space" 250
+		"outfit space" 240
 		"weapon capacity" 80
 		"engine capacity" 100
 		weapon
@@ -884,7 +884,7 @@ ship "Barque"
 		"Blaster Turret" 2
 		"Anti-Missile Turret"
 		
-		"NT-200 Nucleovoltaic"
+		"nGVF-BB Fuel Cell"
 		"LP072a Battery Pack"
 		"D41-HY Shield Generator"
 		"Laser Rifle" 2
@@ -945,8 +945,8 @@ ship "Civil Gunboat"
 		"Heavy Laser" 2
 		"Heavy Laser Turret"
 		
-		"RT-I Radiothermal"
-		"LP144a Battery Pack"
+		"nGVF-BB Fuel Cell"
+		"LP072a Battery Pack"
 		"D14-RN Shield Generator"
 		"Asteroid Scanner"
 		"Tactical Scanner"
@@ -985,8 +985,8 @@ ship "Civil Rainmaker"
 		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 30
-		"outfit space" 200
-		"weapon capacity" 60
+		"outfit space" 160
+		"weapon capacity" 30
 		"engine capacity" 50
 		weapon
 			"blast radius" 40
@@ -994,11 +994,10 @@ ship "Civil Rainmaker"
 			"hull damage" 200
 			"hit force" 600
 	outfits
-		"Meteor Missile Launcher" 4
-		"Meteor Missile" 120
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 60
 		
 		"nGVF-CC Fuel Cell"
-		"LP036a Battery Pack"
 		"D14-RN Shield Generator"
 		"Tactical Scanner"
 		
@@ -1020,7 +1019,7 @@ ship "Civil Rainmaker"
 	description "By increasing cargo space and livable quarters, the Rainmaker warship was easily converted into a light transport. It doesn't have quite the fighting power of its Navy counterpart, but this little ship isn't defenseless."
 
 ship "Escape Ship"
-	sprite "ship/escape ship"
+	sprite "ship/escapeship"
 	thumbnail "thumbnail/auxiliaryt"
 	attributes
 		category "Space Liner"
@@ -1029,7 +1028,7 @@ ship "Escape Ship"
 		"cost" 13720000
 		"shields" 17100
 		"hull" 5900
-		"required crew" 87
+		"required crew" 65
 		"bunks" 674
 		"mass" 3140
 		"drag" 32.4
@@ -1099,7 +1098,7 @@ ship "Hailstorm"
 		"heat dissipation" .62
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 270
+		"outfit space" 295
 		"weapon capacity" 156
 		"engine capacity" 90
 		weapon
@@ -1110,10 +1109,9 @@ ship "Hailstorm"
 	outfits
 		"Meteor Missile Launcher" 10
 		"Meteor Missile" 300
-		"Anti-Missile Turret"
 		
-		"RT-I Radiothermal"
-		"LP144a Battery Pack"
+		"nGVF-BB Fuel Cell"
+		"LP072a Battery Pack"
 		"D14-RN Shield Generator"
 		
 		"X3700 Ion Thruster"
@@ -1132,7 +1130,7 @@ ship "Hailstorm"
 	gun 32 1 "Meteor Missile Launcher"
 	gun 18 -14 "Meteor Missile Launcher"
 	gun 32 1 "Meteor Missile Launcher"
-	turret 0 -1 "Anti-Missile Turret"
+	turret 0 -1
 	leak "leak" 50 50
 	leak "flame" 80 80
 	explode "tiny explosion" 10
@@ -1179,12 +1177,12 @@ ship "Modified Gunboat"
 		"X2200 Ion Steering"
 		"Hyperdrive"
 		
-	gun -36.5 -18.5 "Heavy Laser"
-	gun 36.5 -18.5 "Heavy Laser"
+	gun -36.5 -18 "Heavy Laser"
+	gun 36.5 -18 "Heavy Laser"
 	engine -12 67.5 0.8
 	engine 13 67.5 0.8
-	gun -28.5 -27.5 "Heavy Laser"
-	gun 28.5 -27.5 "Heavy Laser"
+	gun -28.5 -27 "Heavy Laser"
+	gun 28.5 -27 "Heavy Laser"
 	turret 0 -1 "Heavy Laser Turret"
 	leak "leak" 50 50
 	leak "flame" 80 80
