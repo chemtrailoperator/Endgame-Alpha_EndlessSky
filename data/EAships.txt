@@ -969,7 +969,7 @@ ship "Civil Gunboat"
 	description "The versatility and popularity of the Gunboat prompted much demand for a version that could be bought by common citizens. With lowered combat capability, this version is adapted for the civilian market, with lower operating costs, a more efficient airframe, and more comfortable quarters. Otherwise, this ship is identical to its parent."
 
 ship "Civil Rainmaker"
-	sprite "ship/rainmaker"
+	sprite "ship/civilrainmaker"
 	thumbnail "thumbnail/rainmaker"
 	attributes
 		category "Transport"
@@ -1020,8 +1020,8 @@ ship "Civil Rainmaker"
 	description "By increasing cargo space and livable quarters, the Rainmaker warship was easily converted into a light transport. It doesn't have quite the fighting power of its Navy counterpart, but this little ship isn't defenseless."
 
 ship "Escape Ship"
-	sprite "ship/escapeship"
-	thumbnail "thumbnail/auxiliaryh"
+	sprite "ship/escape ship"
+	thumbnail "thumbnail/auxiliaryt"
 	attributes
 		category "Space Liner"
 		licenses
@@ -1155,11 +1155,11 @@ ship "Modified Gunboat"
 		"bunks" 14
 		"mass" 280
 		"drag" 4.0
-		"heat dissipation" .62
+		"heat dissipation" .85
 		"fuel capacity" 600
 		"cargo space" 30
-		"outfit space" 270
-		"weapon capacity" 180
+		"outfit space" 280
+		"weapon capacity" 140
 		"engine capacity" 140
 		weapon
 			"blast radius" 72
@@ -1171,9 +1171,8 @@ ship "Modified Gunboat"
 		"Heavy Laser Turret"
 		
 		"RT-I Radiothermal"
-		"LP144a Battery Pack"
+		"LP072a Battery Pack"
 		"D14-RN Shield Generator"
-		"Small Radar Jammer"
 		"Tactical Scanner"
 		
 		"X3700 Ion Thruster"
@@ -1182,8 +1181,8 @@ ship "Modified Gunboat"
 		
 	gun -36.5 -18.5 "Heavy Laser"
 	gun 36.5 -18.5 "Heavy Laser"
-	engine -12 63.5 0.8
-	engine 12 63.5 0.8
+	engine -12 67.5 0.8
+	engine 13 67.5 0.8
 	gun -28.5 -27.5 "Heavy Laser"
 	gun 28.5 -27.5 "Heavy Laser"
 	turret 0 -1 "Heavy Laser Turret"
