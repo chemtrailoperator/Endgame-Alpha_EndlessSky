@@ -712,122 +712,6 @@ ship "Supercruiser"
 	"final explode" "final explosion large"
 	description "This ship is simply a larger version of the Navy Cruiser. It has six drone bays instead of four, more gunports, a larger electronics suite, larger engines, and more outfit space."
 
-ship "Hailstorm"
-	sprite "ship/hailstorm"
-	thumbnail "thumbnail/hailstorm"
-	attributes
-		category "Light Warship"
-		licenses
-			Navy
-		"cost" 3200000
-		"shields" 6000
-		"hull" 1350
-		"required crew" 9
-		"bunks" 12
-		"mass" 280
-		"drag" 5
-		"heat dissipation" .58
-		"fuel capacity" 500
-		"cargo space" 30
-		"outfit space" 430
-		"weapon capacity" 240
-		"engine capacity" 50
-		weapon
-			"blast radius" 72
-			"shield damage" 720
-			"hull damage" 360
-			"hit force" 1080
-	outfits
-		"Meteor Missile Launcher" 4
-		"Meteor Missile" 150
-		"Meteor Missile Box" 2
-		"Typhoon Launcher" 4
-		"Typhoon Torpedo" 120
-		"Anti-Missile Turret"
-		
-		"RT-I Radiothermal"
-		"LP072a Battery Pack"
-		"D14-RN Shield Generator"
-		"Small Radar Jammer"
-		"Tactical Scanner"
-		
-		"X1700 Ion Thruster"
-		"X2200 Ion Steering"
-		"Hyperdrive"
-		
-	gun -15.5 -12 "Typhoon Launcher"
-	gun 15.5 -12 "Typhoon Launcher"
-	gun -33 7.5 "Typhoon Launcher"
-	gun 33 7.5 "Typhoon Launcher"
-	gun -15 4.5 "Meteor Missile Launcher"
-	gun 15 4.5 "Meteor Missile Launcher"
-	gun -16 4.5 "Meteor Missile Launcher"
-	gun 16 4.5 "Meteor Missile Launcher"
-	turret -0.5 6 "Anti-Missile Turret"
-	engine -13.5 60.5
-	engine 13.5 60.5
-	leak "leak" 50 50
-	leak "flame" 80 80
-	explode "tiny explosion" 10
-	explode "small explosion" 20
-	explode "medium explosion" 15
-	"final explode" "final explosion small"
-	description "Though the Navy often uses drones, fighters, and capital ships at a distance, the withering fire of a flight of Hailstorms can be very destructive. It should be noted that in order to fit the massive launchers needed, the designers at the Geminus Navy Yard sacrificed the powerplant and ECM suite."
-
-ship "Modified Gunboat"
-	sprite "ship/modified gunboat"
-	thumbnail "thumbnail/modified gunboat"
-	attributes
-		category "Light Warship"
-		licenses
-			Navy
-		"cost" 3600000
-		"shields" 6800
-		"hull" 2000
-		"required crew" 8
-		"bunks" 12
-		"mass" 310
-		"drag" 4.2
-		"heat dissipation" .7
-		"fuel capacity" 600
-		"cargo space" 30
-		"outfit space" 350
-		"weapon capacity" 190
-		"engine capacity" 90
-		weapon
-			"blast radius" 72
-			"shield damage" 720
-			"hull damage" 360
-			"hit force" 1080
-	outfits
-		"Heavy Laser" 2
-		"Electron Beam" 2
-		"Electron Turret"
-		
-		"Dwarf Core"
-		"LP288a Battery Pack"
-		"D14-RN Shield Generator"
-		"Small Radar Jammer"
-		"Tactical Scanner"
-		
-		"A250 Atomic Thruster"
-		"A255 Atomic Steering"
-		"Hyperdrive"
-		
-	gun -28 -25 "Heavy Laser"
-	gun -36 -16 "Electron Beam"
-	gun 28 -25 "Heavy Laser"
-	gun 36 -16 "Electron Beam"
-	turret 1 -1 "Electron Turret"
-	engine 13 58
-	engine -11.5 58
-	leak "leak" 50 50
-	leak "flame" 80 80
-	explode "tiny explosion" 10
-	explode "small explosion" 20
-	explode "medium explosion" 15
-	"final explode" "final explosion small"
-	description "This is a slightly more powerful version of the prolific and versatile Gunboat, designed to attack at short range. It has larger engines and more guns than its predecessor, though fewer avionics."
 
 ship "Heavy Auxiliary"
 	plural "Heavy Auxiliaries"
@@ -907,53 +791,54 @@ ship "Heavy Auxiliary"
 	description "Although some military leaders consider it prohibitively expensive, a fleet of Heavy Auxiliaries can not only carry enough personnel and materials to fill a small planet, but it can protect them effectively on the way there."
 	description "The modular design of the Auxiliary allowed the spine to be extended to accomodate more container units. This makes the hull proportionally more expensive, plus the cost of the high quality containers and fighter bays."
 
+
 ship "Hawkeye"
-	sprite "ship/efrigate"
-	thumbnail "thumbnail/efrigate"
+
+
+
+ship "Barque"
+	sprite "ship/barque"
+	thumbnail "thumbnail/frigate"
 	attributes
-		category "Utility"
+		category "Heavy Freighter"
 		licenses
 			Navy
-		"cost" 4400000
-		"shields" 9000
-		"hull" 2000
-		"required crew" 18
-		"bunks" 36
-		"mass" 650
-		"drag" 5.5
-		"external antenna mounts" 2
-		"heat dissipation" .6
-		"fuel capacity" 900
-		"cargo space" 35
-		"outfit space" 420
-		"weapon capacity" 50
-		"engine capacity" 120
+		"cost" 2400000
+		"shields" 5000
+		"hull" 2200
+		"required crew" 5
+		"bunks" 15
+		"mass" 760
+		"drag" 8.6
+		"heat dissipation" .46
+		"fuel capacity" 600
+		"cargo space" 270
+		"outfit space" 250
+		"weapon capacity" 80
+		"engine capacity" 100
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
 			"hull damage" 500
 			"hit force" 1500
 	outfits
-		"Blaster Turret" 1
-		"Anti-Missile Turret" 2
+		"Blaster Turret" 2
+		"Anti-Missile Turret"
 		
 		"NT-200 Nucleovoltaic"
-		"LP144a Battery Pack"
-		"D23-QP Shield Generator"
-		"ECM Suite Gen 2"
-		"Inductive Jamming Array"
-		"Laser Rifle" 5
-		"Ramscoop"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Laser Rifle" 2
 		
-		"A370 Atomic Thruster"
-		"A375 Atomic Steering"
-		"Scram Drive"
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
 		
-	turret 22 53 "Anti-Missile Turret"
-	turret -22 53 "Anti-Missile Turret"
-	turret 0 -41 "Blaster Turret"
-	engine -27 95
-	engine 28.5 95.5
+	engine -26 96.5
+	engine 26 96.5
+	turret 0 -37.5 "Anti-Missile Turret"
+	turret -15.5 -12.5 "Blaster Turret"
+	turret 15.5 -12.5 "Blaster Turret"
 	leak "leak" 40 50
 	leak "flame" 50 80
 	leak "big leak" 90 30
@@ -962,80 +847,261 @@ ship "Hawkeye"
 	explode "medium explosion" 24
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
-	description "On its own, this ship is relatively useless. The light armament and hull construction are not anywhere near sufficient for the duties that a Frigate would usually take. As part of a larger fleet, however, it is incredibly useful. It carries the most advanced sensor suite and computing system used by the Navy, and its speed and maneuverability allow it to provide ECM for larger ships."
-	
-	
-ship "Stealth Cruiser"
-	sprite "ship/stealthcruiser"
-	thumbnail "thumbnail/stealthcruiser"
+	description "The old, slightly outdated hulls of Frigates sold out of the Navy are regularly snapped up by shipbuilders to convert into freighters. By removing gunports, adding hull sections, and making other structural changes, cargo space has been increased greatly without proportional loss of other systems. Even though much of its naval appearance remains, taking this ship into combat would be foolish."
+
+ship "Heavy Frigate"
+
+ship "Civil Auxiliary"
+
+ship "Civil Carrier"
+
+ship "Civil Cruiser"
+
+ship "Civil Gunboat"
+	sprite "ship/civilgunboat"
+	thumbnail "thumbnail/gunboat"
 	attributes
-		category "Heavy Warship"
+		category "Light Warship"
 		licenses
-			"Navy Cruiser"
-		"cost" 32000000
-		"shields" 22400
-		"hull" 5800
-		"required crew" 69
-		"bunks" 104
-		"mass" 1840
-		"drag" 7.8
-		"radar jamming" 20
-		"heat dissipation" .68
-		"fuel capacity" 800
-		"cargo space" 40
-		"outfit space" 760
-		"weapon capacity" 270
-		"engine capacity" 170
+			Navy
+		"cost" 3100000
+		"shields" 4800
+		"hull" 1200
+		"required crew" 5
+		"bunks" 14
+		"mass" 290
+		"drag" 3.8
+		"heat dissipation" .62
+		"fuel capacity" 600
+		"cargo space" 55
+		"outfit space" 240
+		"weapon capacity" 100
+		"engine capacity" 90
 		weapon
-			"blast radius" 260
-			"shield damage" 2600
-			"hull damage" 1300
-			"hit force" 3900
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
 	outfits
-		"Particle Cannon" 4
-		"Heavy Anti-Missile Turret" 2
+		"Heavy Laser" 2
+		"Heavy Laser Turret"
+		
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		"Asteroid Scanner"
+		"Tactical Scanner"
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -12 57.5 0.7
+	engine 12 57.5 0.7
+	gun -28.5 -27.5 "Heavy Laser"
+	gun 28.5 -27.5 "Heavy Laser"
+	turret 0 -1 "Heavy Laser Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "The versatility and popularity of the Gunboat prompted much demand for a version that could be bought by common citizens. With lowered combat capability, this version is adapted for the civilian market, with lower operating costs, a more efficient airframe, and more comfortable quarters. Otherwise, this ship is identical to its parent."
+
+ship "Civil Rainmaker"
+	sprite "ship/rainmaker"
+	thumbnail "thumbnail/rainmaker"
+	attributes
+		category "Transport"
+		licenses
+			Navy
+		"cost" 2160000
+		"shields" 3500
+		"hull" 1200
+		"required crew" 1
+		"bunks" 12
+		"mass" 240
+		"drag" 3.6
+		"heat dissipation" .5
+		"fuel capacity" 600
+		"cargo space" 30
+		"outfit space" 200
+		"weapon capacity" 60
+		"engine capacity" 50
+		weapon
+			"blast radius" 40
+			"shield damage" 400
+			"hull damage" 200
+			"hit force" 600
+	outfits
+		"Meteor Missile Launcher" 4
+		"Meteor Missile" 120
+		
+		"nGVF-CC Fuel Cell"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Tactical Scanner"
+		
+		"X2700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -11.5 44.5 0.4
+	engine 11.5 44.5 0.4
+	gun -27 8 "Meteor Missile Launcher"
+	gun 27 8 "Meteor Missile Launcher"
+	gun -22 8 "Meteor Missile Launcher"
+	gun 22 8 "Meteor Missile Launcher"
+	leak "leak" 50 50
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "By increasing cargo space and livable quarters, the Rainmaker warship was easily converted into a light transport. It doesn't have quite the fighting power of its Navy counterpart, but this little ship isn't defenseless."
+
+ship "Escape Ship"
+	sprite "ship/escapeship"
+	thumbnail "thumbnail/auxiliaryh"
+	attributes
+		category "Space Liner"
+		licenses
+			"Navy Auxiliary"
+		"cost" 13720000
+		"shields" 17100
+		"hull" 5900
+		"required crew" 87
+		"bunks" 574
+		"mass" 3140
+		"drag" 32.4
+		"heat dissipation" .27
+		"fuel capacity" 600
+		"cargo space" 20
+		"outfit space" 660
+		"weapon capacity" 240
+		"engine capacity" 200
+		weapon
+			"blast radius" 280
+			"shield damage" 2800
+			"hull damage" 1400
+			"hit force" 4200
+	outfits
+		"Heavy Anti-Missile Turret" 4
 		
 		"Fusion Reactor"
 		"LP288a Battery Pack"
+		"D94-YV Shield Generator"
 		"D67-TM Shield Generator"
-		"Liquid Nitrogen Cooler"
-		"Laser Rifle" 20
-		"Fragmentation Grenades" 20
-		"Security Station"
-		"Tactical Scanner"
+		"Water Coolant System"
 		
 		"X4700 Ion Thruster"
-		"X4200 Ion Steering"
-		"Hyperdrive"
-		
-	engine -28 154 0.95
-	engine 28 154 0.95
-	engine -52 151 0.75
-	engine 52 151 0.75
-	gun -40.5 -46 "Particle Cannon"
-	gun 40.5 -46 "Particle Cannon"
-	gun -30 -49 "Particle Cannon"
-	gun 30 -49 "Particle Cannon"
-	turret -32 -23 "Heavy Laser Turret"
-	turret 32 -23 "Heavy Laser Turret"
-	bay "Drone" -25 19.5
+		"X1700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Scram Drive"
+	engine -41. 180.5 0.45
+	engine 41. 180.5 0.45
+	gun -12.5 -182
+	gun 12.5 -182
+	turret 0 -74 "Heavy Anti-Missile Turret"
+	turret 0 -17 "Heavy Anti-Missile Turret"
+	turret 0 0 "heavy Anti-Missile Turret"
+	turret 0 0
+	turret 0 32
+	turret 0 83 "Heavy Anti-Missile Turret"
+	bay "Fighter" 0 32
 		"launch effect" "human internal"
-	bay "Drone" 25 19.5
-		"launch effect" "human internal"
-	bay "Drone" -25 49.5
-		"launch effect" "human internal"
-	bay "Drone" 25 49.5
+	bay "Fighter" 0 83
 		"launch effect" "human internal"
 	leak "leak" 30 50
-	leak "flame" 50 80
-	leak "big leak" 40 30
+	leak "flame" 30 80
+	leak "big leak" 30 30
 	explode "tiny explosion" 20
 	explode "small explosion" 45
 	explode "medium explosion" 50
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "This version of the reputable Cruiser is adapted to avoiding the missiles of its opponents. It has an extremely small radar cross section and it has less of a thermal signature, this is managed by removing all unnecessary objects on the outside of the ship and by redesigning the ship to operate much, much cooler. This comes at the cost of weapon capacity and cargo space. Reflections off this ship also confuses the radar when targeting other ships, providing cover for the fleet."
+	description "In the second Alpha War, whole planets needed to be evacuated with very little warning. Any Navy ships available were used, and due to their modularity, some changes were made to the Auxiliary to carry more passengers. By adding an extra section, fillig in bays, and squeezing in wherever possible, the Escape Ship holds an unprecedented number of passengers, at the cost of being rather sluggish. It gets the job done, however, that being make hyperjumps with hundreds of people on board."
+
+ship "Hailstorm"
+	sprite "ship/hailstorm"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Light Warship"
+		licenses
+			Navy
+		"cost" 3100000
+		"shields" 3200
+		"hull" 1100
+		"required crew" 9
+		"bunks" 12
+		"mass" 280
+		"drag" 4.0
+		"heat dissipation" .62
+		"fuel capacity" 400
+		"cargo space" 50
+		"outfit space" 270
+		"weapon capacity" 128
+		"engine capacity" 90
+		weapon
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
+	outfits
+		"Meteor Missile Launcher" 8
+		"Meteor Missile" 240
+		"Anti-Missile Turret"
+		
+		"RT-I Radiothermal"
+		"LP144a Battery Pack"
+		"D14-RN Shield Generator"
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -12 57.5 0.7
+	engine 12 57.5 0.7
+	gun 0 0 "Meteor Missile Launcher"
+	gun 0 0
+	gun 0 0
+	gun 0 0
+	gun 0 0
+	gun 0 0
+	gun 0 0
+	gun 0 0
+	turret 0 -1 "Anti-Missile Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "Desperate to win the second Alpha War, the Navy produced this ship with one purpose, fire as many missiles as possible at the target before being destroyed."
+
+ship "Modified Gunboat"
+
+ship "Stealth Gunboat"
 
 
+#Items for testing, remove before publishing
+shipyard "EAshiptester"
+	"Supercruiser"
+	"Heavy Auxiliary"
+	"Hawkeye"
+	"Barque"
+	"Heavy Frigate"
+	"Civil Auxiliary"
+	"Civil Carrier"
+	"Civil Crusier"
+	"Civil Gunboat"
+	"Civil Rainmaker"
+	"Escape Ship"
+	"Hailstorm"
+	"Modified Gunboat"
+	"Stealth Gunboat"
+	
+planet "New Boston"
+	add shipyard "EAshiptester"
 # \close
