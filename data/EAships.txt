@@ -610,7 +610,7 @@ ship "Harbinger Supercarrier"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "Building off of the venerable Carrier design, this fighter and drone carrier can probably take over a small planet if necessary. These are a relatively rare sight except when the Navy needs to deliver their maximum firepower."
+	description "Building off of the venerable Carrier design, this fighter and drone carrier can probably take over a small planet if necessary. These are a rare sight, both because few are in existence, and they are only deployed when the Navy needs to bring maximum firepower to bear upon the enemy."
 #\close
 
 # Navy Ships \fold
@@ -907,7 +907,7 @@ ship "Civil Gunboat"
 	explode "small explosion" 20
 	explode "medium explosion" 15
 	"final explode" "final explosion small"
-	description "The versatility and popularity of the Gunboat prompted much demand for a version that could be bought by common citizens. With lowered combat capability, this version is adapted for the civilian market, with lower operating costs, a more efficient airframe, and more comfortable quarters. Otherwise, this ship is identical to its parent."
+	description "The versatility and popularity of the Gunboat prompted much demand for a version that could be bought by civilians and companies. With lowered combat capability, this version is adapted for that market, with lower operating costs, a more efficient airframe, and more comfortable quarters. Otherwise, this ship is identical to its parent."
 
 ship "Civil Rainmaker"
 	sprite "ship/rainmaker"
@@ -1021,7 +1021,7 @@ ship "Escape Ship"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "In the second Alpha War, whole planets needed to be evacuated with very little warning. Any Navy ships available were used, and due to their modularity, some changes were made to the Auxiliary to carry more passengers. By adding an extra section, fillig in bays, and squeezing in wherever possible, the Escape Ship holds an unprecedented number of passengers, at the cost of being rather sluggish. It gets the job done, however, that being make hyperjumps with hundreds of people on board."
+	description "In the second Alpha War, whole planets needed to be evacuated with very little warning. Any Navy ships available were used, and due to their modularity, some changes were made to the Auxiliary to carry more passengers. By adding an extra section, filling in bays, and squeezing in wherever possible, the Escape Ship holds an unprecedented number of passengers, at the cost of being rather sluggish. It gets the job done, however, able to make hyperjumps away from collapsing systems with hundreds of people on board."
 
 ship "Hailstorm"
 	sprite "ship/hailstorm"

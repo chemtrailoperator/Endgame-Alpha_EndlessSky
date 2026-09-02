@@ -221,7 +221,6 @@ mission "Endgame Alpha 4.2"
 	on offer
 		conversation
 	on complete
-		payment 100000
-	npc accompany save
+		payment 150000
 		
 # \close
