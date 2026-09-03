@@ -618,89 +618,86 @@ ship "Harbinger Supercarrier"
 
 ship "Supercruiser"
 	sprite "ship/supercruiser"
-	thumbnail "thumbnail/supercruiser"
+	thumbnail "thumbnail/cruiser"
 	attributes
 		category "Heavy Warship"
 		licenses
 			"Navy Cruiser"
-		"cost" 14200000
-		"shields" 24200
-		"hull" 8100
-		"required crew" 94
-		"bunks" 136
-		"mass" 2110
-		"drag" 19
+		"cost" 14900000
+		"shields" 24700
+		"hull" 7200
+		"required crew" 127
+		"bunks" 163
+		"mass" 2310
+		"drag" 18.9
 		"heat dissipation" .25
 		"fuel capacity" 600
-		"cargo space" 60
-		"outfit space" 1220
-		"weapon capacity" 690
-		"engine capacity" 190
+		"cargo space" 80
+		"outfit space" 760
+		"weapon capacity" 410
+		"engine capacity" 170
 		weapon
 			"blast radius" 260
 			"shield damage" 2600
 			"hull damage" 1300
 			"hit force" 3900
 	outfits
-		"Particle Cannon" 6
-		"Sidewinder Missile Launcher" 2
-		"Sidewinder Missile" 90
-		"Electron Turret" 6
-		"Heavy Anti-Missile Turret" 2
+		"Particle Cannon" 4
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Electron Beam" 4
+		"Heavy Anti-Missile Turret" 3
+		"Anti-Missile Turret" 2
 		
 		"Fusion Reactor"
-		"Dwarf Core"
-		"LP576a Battery Pack"
+		"LP072a Battery Pack"
 		"D67-TM Shield Generator"
-		"Large Radar Jammer" 2
+		"Large Radar Jammer" 1
 		"Liquid Nitrogen Cooler"
 		"Laser Rifle" 20
 		"Fragmentation Grenades" 20
 		"Security Station"
 		"Tactical Scanner"
 		
-		"A520 Atomic Thruster"
-		"A525 Atomic Steering"
+		"X4700 Ion Thruster"
+		"X4200 Ion Steering"
 		"Hyperdrive"
 		
-	gun -13 -172
-	gun 13 -172
-	gun -21 -147
-	gun 21 -147
-	gun 30 -64
-	gun -30 -64
-	gun -44 -44 "Sidewinder Missile Launcher"
-	gun 44 -44 "Sidewinder Missile Launcher"
-	turret 3 -116.5
-	turret -3 -116.5
-	turret 46 -16
-	turret -46 -16
-	engine 28 169.5
-	engine -28 169.5
-	engine -54 168
-	engine 54 168
-	turret 21 -30
-	turret -21 -30
-	turret 18.5 75
-	turret -18.5 75
-	bay "Drone" -18 64
+	turret -32.5 -29.5 "Anti-Missile Turret"
+	turret 0 -48.5 "Heavy Anti-Missile Turret"
+	turret 0 -137 "Heavy Anti-Missile Turret"
+	turret 0 -5.5 "Heavy Anti-Missile Turret"
+	turret -11 -117.5
+	turret 32.5 -29.5 "Anti-Missile Turret"
+	turret 11 -117.5
+	engine -28 182.5 0.95
+	engine 28 182.5 0.95
+	engine -52 173.5 0.75
+	engine 52 173.5 0.75
+	gun -12.5 -185 "Torpedo Launcher"
+		angle -90
+	gun -20.5 -169.5 "Electron Beam"
+	gun -30 -71 "Particle Cannon"
+	gun -40 -67 "Particle Cannon"
+	gun -14.5 -183.5 "Electron Beam"
+	gun 12.5 -185 "Torpedo Launcher"
+		angle 90
+	gun 20.5 -169.5 "Electron Beam"
+	gun 30 -71 "Particle Cannon"
+	gun 40 -67 "Particle Cannon"
+	gun 14.5 -183.5 "Electron Beam"
+	bay "Drone" -25 14.5
 		"launch effect" "human internal"
-		"left"
-	bay "Drone" -18 32
+	bay "Drone" 25 14.5
 		"launch effect" "human internal"
-		"left"
-	bay "Drone" -18 4
+	bay "Drone" -25 44
 		"launch effect" "human internal"
-		"left"
-	bay "Drone" 18 64
+	bay "Drone" 25 44
 		"launch effect" "human internal"
-		"right"
-	bay "Drone" 18 32
+	bay "Drone" -25 44.5
 		"launch effect" "human internal"
-		"right"
-	bay "Drone" 18 4
+	bay "Drone" 25 44.5
 		"launch effect" "human internal"
-		"right"
 	leak "leak" 30 50
 	leak "flame" 50 80
 	leak "big leak" 40 30
@@ -710,7 +707,8 @@ ship "Supercruiser"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "This ship is simply a larger version of the Navy Cruiser. It has six drone bays instead of four, more gunports, a larger electronics suite, larger engines, and more outfit space."
+	description "The Supercruiser can be viewed as the child of the venerable Cruiser, if it took enough steroids to kill a horse while it was pregnant."
+
 
 
 ship "Heavy Auxiliary"
@@ -793,10 +791,6 @@ ship "Heavy Auxiliary"
 
 
 ship "Hawkeye"
-<<<<<<< HEAD
-
-ship "Modified Gunboat"
-=======
 	sprite "ship/hawkeye"
 	thumbnail "thumbnail/frigate"
 	attributes
@@ -858,7 +852,6 @@ ship "Modified Gunboat"
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
 	description "For centuries, the Frigate was the largest warship produced by the Republic Navy Yard, but now they seem quite small compared to a Cruiser or a Carrier. Armed with a variety of weapons, the Frigate is equally capable at fending off small fighters or bombarding larger ships. In its time it possessed relatively good maneuverability for a ship of its size, but now it sees continued use mostly due to the sheer number of them already built for service."
->>>>>>> b10e22633c3d801060175dc2051492d30ad2785c
 
 ship "Barque"
 	sprite "ship/barque"
@@ -916,6 +909,104 @@ ship "Barque"
 ship "Heavy Frigate"
 
 ship "Civil Auxiliary"
+	plural "CivilAuxiliaries"
+	sprite "ship/civilauxiliaryh"
+	thumbnail "thumbnail/auxiliaryh"
+	attributes
+		category "Utility"
+		"cost" 8440000
+		"shields" 7100
+		"hull" 4200
+		"required crew" 48
+		"bunks" 279
+		"mass" 1100
+		"drag" 18.4
+		"heat dissipation" .27
+		"fuel capacity" 1100
+		"cargo space" 300
+		"outfit space" 420
+		"weapon capacity" 70
+		"engine capacity" 200
+		weapon
+			"blast radius" 280
+			"shield damage" 2800
+			"hull damage" 1400
+			"hit force" 4200
+	outfits
+		"Heavy Anti-Missile Turret" 2
+		
+		"NT-200 Nucleovoltaic"
+		"LP072a Battery Pack"
+		"D41-HY Shield Generator"
+		"Ramscoop"
+		
+		"X4700 Ion Thruster"
+		"X1700 Ion Thruster"
+		"X5200 Ion Steering"
+		"Scram Drive"
+		
+	engine -41. 180.5 0.45
+	engine 41. 180.5 0.45
+	gun -12.5 -182
+	gun 12.5 -182
+	turret 0 -74 "Heavy Anti-Missile Turret"
+	turret 0 -17
+	turret 0 32
+	turret 0 83 "Heavy Anti-Missile Turret"
+	bay "Fighter" 0 -74
+		"launch effect" "human internal"
+	bay "Fighter" 0 -17
+		"launch effect" "human internal"
+	bay "Fighter" 0 32
+		"launch effect" "human internal"
+	bay "Fighter" 0 83
+		"launch effect" "human internal"
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 30 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "Even with the relatively recent debut of the Auxiliary, plans were released to the civilian market. As with all civilian conversions of Navy ships, combat capability is reduced, with improvements in efficiency. Both the freight and transport variants of the Civil Auxiliary are the best of their class on the market, offering an element of protection with their turret mounts and fighter bays."
+	description "The Auxiliary's modularity has been maintained through conversion, allowing the ship to be fitted for more cargo or bunk space depending on the client's desire. While using simpler connections than the military version, the ship is still expensive to produce."
+
+ship "Civil Auxiliary" "Civil Auxiliary (Freighter)"
+	plural "Civil Auxiliaries"
+	sprite "ship/civilauxiliaryc"
+	thumbnail "thumbnail/auxiliaryc"
+	remove attributes
+		category "Utility"
+	add attributes
+		category "Heavy Freighter"
+		"bunks" -150
+		"cargo space" 220
+	turret 0 -20 "Heavy Anti-Missile Turret"
+	turret 0 83 "Heavy Anti-Missile Turret"
+	bay "Fighter" 0 -20
+		"launch effect" "human internal"
+	bay "Fighter" 0 83
+		"launch effect" "human internal"
+
+ship "Civil Auxiliary" "Civil Auxiliary (Liner)"
+	plural "Civil Auxiliaries"
+	sprite "ship/civilauxiliaryt"
+	thumbnail "thumbnail/auxiliaryt"
+	remove attributes
+		category "Utility"
+	add attributes
+		category "Space Liner"
+		"bunks" 150
+		"cargo space" -220
+
+	turret 0 -17 "Heavy Anti-Missile Turret"
+	turret 0 78 "Heavy Anti-Missile Turret"
+	bay "Fighter" 0 -17
+		"launch effect" "human internal"
+	bay "Fighter" 0 78
+		"launch effect" "human internal"
 
 ship "Civil Carrier"
 
@@ -1198,7 +1289,57 @@ ship "Modified Gunboat"
 	description "The Navy Gunboat was a powerful weapon in the Navy's arsenal, but when the adventurous southern shipyards got a hold of it, the result was a new level of excellence. Double the gunports, increased manuverability, and unparalleled durability make this one of the most worthwhile purchases for any captain. Any captain with the funds for the purchase, that is."
 
 ship "Stealth Gunboat"
-
+	sprite "ship/stealth gunboat"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Light Warship"
+		licenses
+			Navy
+		"cost" 6900000
+		"shields" 6200
+		"hull" 900
+		"required crew" 4
+		"bunks" 7
+		"mass" 240
+		"drag" 2.8
+		"heat dissipation" .99
+		"fuel capacity" 600
+		"cargo space" 50
+		"outfit space" 270
+		"weapon capacity" 100
+		"engine capacity" 90
+		"radar jamming" 20
+		weapon
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
+	outfits
+		"Sidewinder Missile Launcher" 2
+		"Sidewinder Missile" 90
+		
+		"RT-I Radiothermal"
+		"LP036a Battery Pack"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		"Tactical Scanner" 3
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -12 57.5 0.7
+	engine 12 57.5 0.7
+	gun -10 0 "Sidewinder Missile Launcher"
+	gun 10 0 "Sidewinder Missile Launcher"
+	gun 0 0
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "The latest in low-observable technology, the Stealth Gunboat is difficult to spot optically, and a full ship-borne radar system is needed to find it electromagnetically. This means that missiles have great difficulty even getting a lock, much less a hit. The ship's design also contains any thermal signatures, making infrared tracking difficult as well. All weapons are stored internally, and this little craft is nuclear-capable."
 
 #Items for testing, remove before publishing
 shipyard "EAshiptester"
@@ -1208,6 +1349,8 @@ shipyard "EAshiptester"
 	"Barque"
 	"Heavy Frigate"
 	"Civil Auxiliary"
+	"Civil Auxiliary (Liner)"
+	"Civil Auxiliary (Freighter)"
 	"Civil Carrier"
 	"Civil Crusier"
 	"Civil Gunboat"
