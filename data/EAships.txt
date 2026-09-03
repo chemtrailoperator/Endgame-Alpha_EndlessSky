@@ -793,8 +793,72 @@ ship "Heavy Auxiliary"
 
 
 ship "Hawkeye"
+<<<<<<< HEAD
 
 ship "Modified Gunboat"
+=======
+	sprite "ship/hawkeye"
+	thumbnail "thumbnail/frigate"
+	attributes
+		category "Medium Warship"
+		licenses
+			Navy
+		"cost" 11479000
+		"shields" 8000
+		"hull" 1600
+		"required crew" 32
+		"bunks" 48
+		"mass" 720
+		"drag" 10.3
+		"heat dissipation" .46
+		"fuel capacity" 600
+		"outfit space" 465
+		"weapon capacity" 140
+		"engine capacity" 100
+		weapon
+			"blast radius" 100
+			"shield damage" 1000
+			"hull damage" 500
+			"hit force" 1500
+	outfits
+		"Torpedo Launcher" 2
+		"Torpedo" 60
+		"Heavy Anti-Missile Turret" 2
+		"Anti-Missile Turret"
+		
+		"NT-200 Nucleovoltaic"
+		"LP036a Battery Pack"
+		"D41-HY Shield Generator"
+		"Large Radar Jammer" 3
+		"Outfit Scanner"
+		"Cargo Scanner"
+		"Tactical Scanner" 4
+		"Hai Cuttlefish Jammer" 2
+		"Laser Rifle" 5
+		"Fragmentation Grenades" 5
+		"Security Station"
+		
+		"X3700 Ion Thruster"
+		"X3200 Ion Steering"
+		"Hyperdrive"
+		
+	engine -26 96.5
+	engine 26 96.5
+	gun -11 -84.5 "Torpedo Launcher"
+	gun 11 -84.5 "Torpedo Launcher"
+	turret 0 -37.5 "Anti-Missile Turret"
+	turret -15.5 -12.5 "Heavy Anti-Missile Turret"
+	turret 15.5 -12.5 "Heavy Anti-Missile Turret"
+	leak "leak" 40 50
+	leak "flame" 50 80
+	leak "big leak" 90 30
+	explode "tiny explosion" 18
+	explode "small explosion" 36
+	explode "medium explosion" 24
+	explode "large explosion" 8
+	"final explode" "final explosion medium"
+	description "For centuries, the Frigate was the largest warship produced by the Republic Navy Yard, but now they seem quite small compared to a Cruiser or a Carrier. Armed with a variety of weapons, the Frigate is equally capable at fending off small fighters or bombarding larger ships. In its time it possessed relatively good maneuverability for a ship of its size, but now it sees continued use mostly due to the sheer number of them already built for service."
+>>>>>>> b10e22633c3d801060175dc2051492d30ad2785c
 
 ship "Barque"
 	sprite "ship/barque"
@@ -813,7 +877,7 @@ ship "Barque"
 		"heat dissipation" .46
 		"fuel capacity" 600
 		"cargo space" 270
-		"outfit space" 250
+		"outfit space" 240
 		"weapon capacity" 80
 		"engine capacity" 100
 		weapon
@@ -825,7 +889,7 @@ ship "Barque"
 		"Blaster Turret" 2
 		"Anti-Missile Turret"
 		
-		"NT-200 Nucleovoltaic"
+		"nGVF-BB Fuel Cell"
 		"LP072a Battery Pack"
 		"D41-HY Shield Generator"
 		"Laser Rifle" 2
@@ -886,8 +950,8 @@ ship "Civil Gunboat"
 		"Heavy Laser" 2
 		"Heavy Laser Turret"
 		
-		"RT-I Radiothermal"
-		"LP144a Battery Pack"
+		"nGVF-BB Fuel Cell"
+		"LP072a Battery Pack"
 		"D14-RN Shield Generator"
 		"Asteroid Scanner"
 		"Tactical Scanner"
@@ -910,7 +974,7 @@ ship "Civil Gunboat"
 	description "The versatility and popularity of the Gunboat prompted much demand for a version that could be bought by civilians and companies. With lowered combat capability, this version is adapted for that market, with lower operating costs, a more efficient airframe, and more comfortable quarters. Otherwise, this ship is identical to its parent."
 
 ship "Civil Rainmaker"
-	sprite "ship/rainmaker"
+	sprite "ship/civilrainmaker"
 	thumbnail "thumbnail/rainmaker"
 	attributes
 		category "Transport"
@@ -926,8 +990,8 @@ ship "Civil Rainmaker"
 		"heat dissipation" .5
 		"fuel capacity" 600
 		"cargo space" 30
-		"outfit space" 200
-		"weapon capacity" 60
+		"outfit space" 160
+		"weapon capacity" 30
 		"engine capacity" 50
 		weapon
 			"blast radius" 40
@@ -935,11 +999,10 @@ ship "Civil Rainmaker"
 			"hull damage" 200
 			"hit force" 600
 	outfits
-		"Meteor Missile Launcher" 4
-		"Meteor Missile" 120
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 60
 		
 		"nGVF-CC Fuel Cell"
-		"LP036a Battery Pack"
 		"D14-RN Shield Generator"
 		"Tactical Scanner"
 		
@@ -962,7 +1025,7 @@ ship "Civil Rainmaker"
 
 ship "Escape Ship"
 	sprite "ship/escapeship"
-	thumbnail "thumbnail/auxiliaryh"
+	thumbnail "thumbnail/auxiliaryt"
 	attributes
 		category "Space Liner"
 		licenses
@@ -970,9 +1033,9 @@ ship "Escape Ship"
 		"cost" 13720000
 		"shields" 17100
 		"hull" 5900
-		"required crew" 87
-		"bunks" 574
-		"mass" 3140
+		"required crew" 65
+		"bunks" 674
+		"mass" 4440
 		"drag" 32.4
 		"heat dissipation" .27
 		"fuel capacity" 600
@@ -998,19 +1061,19 @@ ship "Escape Ship"
 		"X1700 Ion Thruster"
 		"X5200 Ion Steering"
 		"Scram Drive"
-	engine -41. 180.5 0.45
-	engine 41. 180.5 0.45
-	gun -12.5 -182
-	gun 12.5 -182
-	turret 0 -74 "Heavy Anti-Missile Turret"
-	turret 0 -17 "Heavy Anti-Missile Turret"
-	turret 0 0 "heavy Anti-Missile Turret"
-	turret 0 0
+	engine -41 	228.5 0.45
+	engine 41 228.5 0.45
+	turret 0 -119
+	turret 0 -63
+	turret 0 -24
 	turret 0 32
-	turret 0 83 "Heavy Anti-Missile Turret"
-	bay "Fighter" 0 32
+	turret 0 69
+	turret 0 127
+	gun -12.5 -228.5
+	gun 12.5 -228.5
+	bay "Fighter" 0 69
 		"launch effect" "human internal"
-	bay "Fighter" 0 83
+	bay "Fighter" 0 127
 		"launch effect" "human internal"
 	leak "leak" 30 50
 	leak "flame" 30 80
@@ -1040,8 +1103,8 @@ ship "Hailstorm"
 		"heat dissipation" .62
 		"fuel capacity" 400
 		"cargo space" 50
-		"outfit space" 270
-		"weapon capacity" 128
+		"outfit space" 295
+		"weapon capacity" 156
 		"engine capacity" 90
 		weapon
 			"blast radius" 72
@@ -1049,12 +1112,11 @@ ship "Hailstorm"
 			"hull damage" 360
 			"hit force" 1080
 	outfits
-		"Meteor Missile Launcher" 8
-		"Meteor Missile" 240
-		"Anti-Missile Turret"
+		"Meteor Missile Launcher" 10
+		"Meteor Missile" 300
 		
-		"RT-I Radiothermal"
-		"LP144a Battery Pack"
+		"nGVF-BB Fuel Cell"
+		"LP072a Battery Pack"
 		"D14-RN Shield Generator"
 		
 		"X3700 Ion Thruster"
@@ -1063,15 +1125,17 @@ ship "Hailstorm"
 		
 	engine -12 57.5 0.7
 	engine 12 57.5 0.7
-	gun 0 0 "Meteor Missile Launcher"
-	gun 0 0
-	gun 0 0
-	gun 0 0
-	gun 0 0
-	gun 0 0
-	gun 0 0
-	gun 0 0
-	turret 0 -1 "Anti-Missile Turret"
+	gun -13 -4 "Meteor Missile Launcher"
+	gun -18 -14 "Meteor Missile Launcher"
+	gun -32 1 "Meteor Missile Launcher"
+	gun -18 -14 "Meteor Missile Launcher"
+	gun -32 1 "Meteor Missile Launcher"
+	gun 13 -4 "Meteor Missile Launcher"
+	gun 18 -14 "Meteor Missile Launcher"
+	gun 32 1 "Meteor Missile Launcher"
+	gun 18 -14 "Meteor Missile Launcher"
+	gun 32 1 "Meteor Missile Launcher"
+	turret 0 -1
 	leak "leak" 50 50
 	leak "flame" 80 80
 	explode "tiny explosion" 10
@@ -1081,6 +1145,57 @@ ship "Hailstorm"
 	description "Desperate to win the second Alpha War, the Navy produced this ship with one purpose, fire as many missiles as possible at the target before being destroyed."
 
 ship "Modified Gunboat"
+	sprite "ship/modified gunboat"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Light Warship"
+		licenses
+			Navy
+		"cost" 5480000
+		"shields" 7100
+		"hull" 1900
+		"required crew" 9
+		"bunks" 14
+		"mass" 280
+		"drag" 4.0
+		"heat dissipation" .85
+		"fuel capacity" 600
+		"cargo space" 30
+		"outfit space" 280
+		"weapon capacity" 140
+		"engine capacity" 140
+		weapon
+			"blast radius" 72
+			"shield damage" 720
+			"hull damage" 360
+			"hit force" 1080
+	outfits
+		"Heavy Laser" 4
+		"Heavy Laser Turret"
+		
+		"RT-I Radiothermal"
+		"LP072a Battery Pack"
+		"D14-RN Shield Generator"
+		"Tactical Scanner"
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Hyperdrive"
+		
+	gun -36.5 -18 "Heavy Laser"
+	gun 36.5 -18 "Heavy Laser"
+	engine -12 67.5 0.8
+	engine 13 67.5 0.8
+	gun -28.5 -27 "Heavy Laser"
+	gun 28.5 -27 "Heavy Laser"
+	turret 0 -1 "Heavy Laser Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "The Navy Gunboat was a powerful weapon in the Navy's arsenal, but when the adventurous southern shipyards got a hold of it, the result was a new level of excellence. Double the gunports, increased manuverability, and unparalleled durability make this one of the most worthwhile purchases for any captain. Any captain with the funds for the purchase, that is."
 
 ship "Stealth Gunboat"
 
