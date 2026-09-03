@@ -63,7 +63,58 @@ phrase "EA package picked up"
 outfitter "Navy Clothing"
 	"Navy Uniform"
 	"Commander Insignia"
-
+	
+shipyard "Navy Endgame Modified"
+	"Harbinger Supercarrier"
+	"Supercruiser"
+	"Modified Gunboat"
+	"Heavy Auxiliary"
+	"Hawkeye"
+	"Escape Ship"
+	"Hailstorm"
+	"Rumskib Destroyer"
+	"Stealth Gunboat"
+	
+shipyard "Navy Endgame Basics"
+	"Rainmaker"
+	"Gunboat"
+	"Lance"
+	"Combat Drone"
+	"Surveillance Drone"
+	"Dropship"
+	"Modified Gunboat"
+	"Hailstorm"
+	
+shipyard "Navy Endgame Advanced"
+	"Frigate"
+	"Cruiser"
+	"Carrier"
+	"Auxiliary"
+	"Rumskib Destroyer"
+	"Escape Ship"
+	"Hawkeye"
+	"Stealth Gunboat"
+	"Heavy Auxiliary"
+	
+shipyard "Navy Endgame Elite"
+	"Harbinger Supercarrier"
+	"Supercruiser"
+	
+	
+shipyard "Minuteman Basis"
+	"Civil Gunboat"
+	"Civil Rainmaker"
+	"Lance"
+	"Dropship"
+	"Combat Drone"
+	"Surveillance Drone"
+	
+shipyard "Minuteman Advanced"
+	"Barque"
+	"Civil Auxiliary"
+	"Civil Carrier"
+	"Civil Cruiser"
+	
 outfitter "Heliarch"
 	"Ion Rain Gun"
 	"Ion Hail Turret"
@@ -117,7 +168,7 @@ planet "Ring of Power"
 	outfitter "Heliarch"
 	shipyard "Heliarch"
 
-shipyard "Navy Elite"
+
 
 outfitter "Navy ECM"
 	"ECM Suite Gen 2"
@@ -125,7 +176,9 @@ outfitter "Navy ECM"
 
 event "EA Geminus Upgrade"
 	planet Geminus
-		outfitter "Navy ECM"
+		add outfitter "Navy ECM"
+		add shipyard "Navy Basics"
+		add shipyard "Navy Advanced"
 
 mission "EA Geminus Upgrade"
 	landing
@@ -192,16 +245,19 @@ planet Sagarra
 	description `This world is eerily similar to the Alpha's previous refuge, Host. Most of the ground is scarred by the marks of Alpha activity, who have used the planet with little regard for the environment. The entire landscape is covered in weapons and ship plants of varying size and operability that have labored for hundreds of years to produce a massive force of warships.`
 	description `	Deep in the jungles near the equator, small mammals are working hard to avoid being eaten by the great lizards, and to survive for long enough that they will be able to evolve into the dominant life form.`
 	security 0
-event "restor geminus"
-	planet Geminus
-		shipyard "Navy Basics"
-		shipyard "Navy Advanced"
-		shipyard "Navy Elite"
-	
-mission "upgrade geminus"
+
+mission "Development Patch Endgame Alpha"
 	landing
 	invisible
 	on offer
-		event "restor geminus"
+		event "Development Path Geminus Shipyard Endgame Alpha"
 		decline
 		
+event "Devlopment Patch Geminus Shipyard Endgame Alpha"
+	planet Geminus
+		shipyard "Navy Endgame Basics"
+		shipyard "Navy Endgame Advanced"
+		shipyard "Navy Endgame Elite"
+		shipyard "Minuteman Basics"
+		shipyard "Minuteman Advanced"
+
