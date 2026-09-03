@@ -1024,20 +1024,21 @@ ship "Escape Ship"
 	attributes
 		category "Space Liner"
 		licenses
-			"Navy Auxiliary"
+			"Navy"
+			City-Ship
 		"cost" 13720000
-		"shields" 17100
-		"hull" 5900
+		"shields" 13600
+		"hull" 4300
 		"required crew" 65
-		"bunks" 674
+		"bunks" 724
 		"mass" 4440
 		"drag" 32.4
 		"heat dissipation" .27
 		"fuel capacity" 600
 		"cargo space" 20
-		"outfit space" 660
-		"weapon capacity" 240
-		"engine capacity" 200
+		"outfit space" 435
+		"weapon capacity" 120
+		"engine capacity" 130
 		weapon
 			"blast radius" 280
 			"shield damage" 2800
@@ -1047,14 +1048,12 @@ ship "Escape Ship"
 		"Heavy Anti-Missile Turret" 4
 		
 		"Fusion Reactor"
-		"LP288a Battery Pack"
-		"D94-YV Shield Generator"
 		"D67-TM Shield Generator"
 		"Water Coolant System"
 		
 		"X4700 Ion Thruster"
 		"X1700 Ion Thruster"
-		"X5200 Ion Steering"
+		"X3200 Ion Steering"
 		"Scram Drive"
 	engine -41 	228.5 0.45
 	engine 41 228.5 0.45
@@ -1079,7 +1078,7 @@ ship "Escape Ship"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "In the second Alpha War, whole planets needed to be evacuated with very little warning. Any Navy ships available were used, and due to their modularity, some changes were made to the Auxiliary to carry more passengers. By adding an extra section, fillig in bays, and squeezing in wherever possible, the Escape Ship holds an unprecedented number of passengers, at the cost of being rather sluggish. It gets the job done, however, that being make hyperjumps with hundreds of people on board."
+	description "In the second Alpha War, whole planets needed to be evacuated with very little warning. Any Navy ships available were used, and due to their modularity, some changes were made to the Auxiliary to carry more passengers. By adding an extra section, fillig in bays, and squeezing in wherever possible, the Escape Ship holds an unprecedented number of passengers, at the cost of being more than a little sluggish. It gets the job done though, that being make hyperjumps quickly with hundreds of people on board."
 
 ship "Hailstorm"
 	sprite "ship/hailstorm"
