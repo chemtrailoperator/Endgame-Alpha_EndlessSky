@@ -12,7 +12,35 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
-# Supercarriers \open
+# Storyline Fleets \open
+fleet "Large Republic Refugee"
+	government "Republic"
+	names "republic capital"
+	variant
+		"Auxiliary (Cargo Mark II)" 5
+	personality
+		timid coward appeasing
+		
+fleet "Hai Battle Detachment"
+	government "Hai"
+	names "hai"
+	personality
+		heroic
+	variant
+		"Geocoris"
+		"Shield Beetle" 3
+		"Shield Beetle (Pulse)" 2
+		"Shield Beetle (Unfettered)"
+		"Solifuge"
+		"Pond Strider" 2
+		"Pond Strider (Pulse)"
+		"Flea" 16
+		"Flea (Pulse)" 8
+		"Violin Spider" 3
+		"Violin Spider (Pulse)" 3		
+		
+		
+# Supercarriers \fold
 fleet "Omega Guardian"
 	government "Omega"
 	names "pirate"
@@ -1096,14 +1124,6 @@ fleet "Marauder fleet X Alpha"
 		"Marauder Bounder"
 
 # Upgraded Fleets \fold
-fleet "Large Republic Refugee"
-	government "Republic"
-	names "republic capital"
-	variant
-		"Auxiliary (Cargo Mark II)" 5
-	personality
-		timid
-
 fleet "EA Small Republic"
 	government "Republic"
 	names "republic small"
