@@ -809,6 +809,8 @@ ship "Hawkeye"
 		"outfit space" 465
 		"weapon capacity" 140
 		"engine capacity" 100
+		"radar jamming" 10
+		"optical jamming" 5
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -1307,8 +1309,10 @@ ship "Stealth Gunboat"
 		"cargo space" 50
 		"outfit space" 270
 		"weapon capacity" 100
+		"cooling" 1000
 		"engine capacity" 90
 		"radar jamming" 20
+		"optical jamming" 3
 		weapon
 			"blast radius" 72
 			"shield damage" 720
