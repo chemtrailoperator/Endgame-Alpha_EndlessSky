@@ -1,4 +1,5 @@
-# Copyright (c) 2025 by ChemtrailOperator
+# Copyright (c) 2026 by ChemtrailOperator
+# COpyright (c) 2026 by Living_Adblocker
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -707,7 +708,7 @@ ship "Supercruiser"
 	explode "large explosion" 40
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
-	description "The Supercruiser can be viewed as the child of the venerable Cruiser, if it took enough steroids to kill a horse while it was pregnant."
+	description "The Supercruiser can be viewed as the child of the venerable Cruiser, if the Cruiser took enough steroids to kill a horse while pregnant."
 
 
 
@@ -908,7 +909,7 @@ ship "Barque"
 	"final explode" "final explosion medium"
 	description "The old, slightly outdated hulls of Frigates sold out of the Navy are regularly snapped up by shipbuilders to convert into freighters. By removing gunports, adding hull sections, and making other structural changes, cargo space has been increased greatly without proportional loss of other systems. Even though much of its naval appearance remains, taking this ship into combat would be foolish."
 
-ship "Heavy Frigate"
+# ship "Heavy Frigate"
 
 ship "Civil Auxiliary"
 	plural "CivilAuxiliaries"
@@ -973,7 +974,7 @@ ship "Civil Auxiliary"
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
 	description "Even with the relatively recent debut of the Auxiliary, plans were released to the civilian market. As with all civilian conversions of Navy ships, combat capability is reduced, with improvements in efficiency. Both the freight and transport variants of the Civil Auxiliary are the best of their class on the market, offering an element of protection with their turret mounts and fighter bays."
-	description "The Auxiliary's modularity has been maintained through conversion, allowing the ship to be fitted for more cargo or bunk space depending on the client's desire. While using simpler connections than the military version, the ship is still expensive to produce."
+	description "The Auxiliary's modularity has been maintained through conversion, allowing the ship to be fitted for more cargo or bunk space depending on the client's desire. While using simpler component connections than the military version, the ship is still expensive to produce."
 
 ship "Civil Auxiliary" "Civil Auxiliary (Freighter)"
 	plural "Civil Auxiliaries"
@@ -1010,7 +1011,7 @@ ship "Civil Auxiliary" "Civil Auxiliary (Liner)"
 	bay "Fighter" 0 78
 		"launch effect" "human internal"
 
-ship "Civil Carrier"
+# ship "Civil Carrier"
 
 ship "Civil Cruiser"
 
