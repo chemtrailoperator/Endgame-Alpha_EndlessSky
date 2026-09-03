@@ -1030,7 +1030,7 @@ ship "Escape Ship"
 		"hull" 5900
 		"required crew" 65
 		"bunks" 674
-		"mass" 3140
+		"mass" 4440
 		"drag" 32.4
 		"heat dissipation" .27
 		"fuel capacity" 600
