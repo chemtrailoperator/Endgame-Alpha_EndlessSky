@@ -220,14 +220,19 @@ mission "Endgame Alpha 4.2"
 		has "Endgame Alpha 4.1: done"
 	on offer
 		conversation
-			`The embassy on Hai-home is not a large section of the psaceport, as it is on other planets, mainly because of the heavily restricted access to the planet. Unlike human organization, the embassy is simply a liaison to the Hai government, it does not report to an external one.`
+			`The embassy on Hai-home is not a large section of the spaceport, as it is on other planets, mainly because of the heavily restricted access to the planet. Unlike human organization, the embassy is simply a liaison to the Hai government, it does not report to an external one.`
 			`	You decide to wear your uniform, something you haven't done outside of human space before.`
 				to display
 					has "outfit (installed): Navy Uniform"
 			`	After passing through a bank of scanners, you reach a desk with a business-like Hai sitting at it. The Hai glances at a screen quickly and addresses you. "<last>, Navy Commander, High priority official business." She looks at your raised eyebrows, "Yes, your associates made prior arrangements, that's why you were allowed to land at all. Please follow me."`
-			`	You follow the Hai around a corner, down a hallway, and out a door and reach a ground vehicle parked behind the embassy. Its driver does not even turn his head to look at you, although you can't see his eyes beneath a pair of Head-up display goggles he is wearing.`
+			`	You follow the Hai around a corner, down a hallway, and out a door and reach a ground vehicle parked behind the embassy. Its driver does not even turn his head to look at you, although you can't see his eyes beneath a pair of Head-up display goggles he is wearing. The aide requests you step in the vehicle.`
 			choice
-				`	(Get in the car.)`
+				`	(Get in.)`
+					goto car
+				`	(Don't get in.)`
+			`	"I'm sorry, but I'm not going to get in the car." You say to the aide. The driver finally turns his head towards you as well. `
+			label car
+			`	The inside of the vehicle is quite comfortable, but it does not offer the smoothness of ride that an aircraft or even a hovercraft could produce. You are about to ask why you aren't going by airborne shuttle when the vehicle road ahead of you stoops steeply downward into a hardened bunker facility. You enter a dimly lit tunnel that continues down for several minutes, until you stop at a large bay carved into the side. `
 				
 	on complete
 		payment 150000
