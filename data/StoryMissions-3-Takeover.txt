@@ -419,7 +419,7 @@ mission "Endgame Alpha 3.10"
 				`	(Open the message)`
 			`	It is 1.00M credits with a message attached; "Plans changed. Get back here as soon as possible." -Alzaga`
 	npc accompany save
-		personality timid escort
+		personality timid escort coward appeasing
 		government "Republic"
 		fleet "Large Republic Refugee"
 

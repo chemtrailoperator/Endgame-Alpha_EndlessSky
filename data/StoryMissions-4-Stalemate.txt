@@ -66,7 +66,7 @@ mission "Endgame Alpha 4.0"
 		event "EA timer I"
 		conversation
 			`The planet seems to be in much the same condition it was when you were last here, except that the general activity level has increased. There are also more Free Worlds units working alongside the Republic. An aide appears from the ranks of maintenance crew descending on the <ship> and requests to enter the bridge.`
-			`	He salutes and hands you a data pad that reads:`
+			`	On board, He salutes and hands you a data pad that reads:`
 			`If you're reading this, that means you made it back from your mission. Congratulations on not getting dead. It also means that I am tied up with something important enough to keep me from hearing your report, which is no doubt intriguing. I will make space tomorrow, along with a few other people who may want to hear what you have to say. Besides making sure you are in the spaceport tomorrow, that's all you have to do for now, we'll find you.`
 			`		Fleet Admiral Alzaga, Combined Task Force Commander`
 			``
@@ -220,7 +220,18 @@ mission "Endgame Alpha 4.2"
 		has "Endgame Alpha 4.1: done"
 	on offer
 		conversation
+			`The embassy on Hai-home is not a large section of the psaceport, as it is on other planets, mainly because of the heavily restricted access to the planet. Unlike human organization, the embassy is simply a liaison to the Hai government, it does not report to an external one.`
+			`	You decide to wear your uniform, something you haven't done outside of human space before.`
+				to display
+					has "outfit (installed): Navy Uniform"
+			`	After passing through a bank of scanners, you reach a desk with a business-like Hai sitting at it. The Hai glances at a screen quickly and addresses you. "<last>, Navy Commander, High priority official business." She looks at your raised eyebrows, "Yes, your associates made prior arrangements, that's why you were allowed to land at all. Please follow me."`
+			`	You follow the Hai around a corner, down a hallway, and out a door and reach a ground vehicle parked behind the embassy. Its driver does not even turn his head to look at you, although you can't see his eyes beneath a pair of Head-up display goggles he is wearing.`
+			choice
+				`	(Get in the car.)`
+				
 	on complete
 		payment 150000
+	npc accompany save
+		fleet "Hai Battle Detachment"
 		
 # \close
