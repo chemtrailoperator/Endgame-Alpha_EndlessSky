@@ -794,7 +794,7 @@ ship "Heavy Auxiliary"
 
 ship "Hawkeye"
 
-
+ship "Modified Gunboat"
 
 ship "Barque"
 	sprite "ship/barque"

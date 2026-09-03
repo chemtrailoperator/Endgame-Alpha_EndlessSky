@@ -1,0 +1,88 @@
+
+# Copyright (c) 2026 by Kitteh
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+ship "Rumskib Destroyer"
+	sprite "ship/rumskibdestroyer"
+	thumbnail "thumbnail/rumskibdestroyer"
+	"display name" "Destroyer"
+	attributes
+		category "Medium Warship"
+		licenses
+			"Navy Cruiser"
+		cost 9000000
+		"shields" 17200
+		"hull" 5900
+		"required crew" 64
+		"bunks" 97
+		"mass" 2060
+		"drag" 15.6
+		"heat dissipation" .29
+		"fuel capacity" 700
+		"outfit space" 692
+		"cargo space" 30
+		"weapon capacity" 280
+		"engine capacity" 230
+		weapon
+			"blast radius" 200
+			"shield damage" 2000
+			"hull damage" 1000
+			"hit force" 3000
+	outfits
+		"Particle Cannon" 2
+		"Quad Beam Laser" 2
+		"Heavy Laser Turret" 2
+		"Heavy Anti-Missile Turret" 2
+
+		"Brig"
+		"Cargo Scanner"
+		"D67-TM Shield Generator"
+		"Outfit Scanner"
+		"Outfits Expansion"
+		"Tactical Scanner"
+		"Water Coolant System"
+
+		"Fragmentation Grenades" 10
+		"Security Station"
+		"Laser Rifle" 35
+
+		"LP288a Battery Pack"
+		"NT-200 Nucleovoltaic"
+
+		"A865 Atomic Steering"
+		"A860 Atomic Thruster"
+		"Volcano Afterburner"
+		"Hyperdrive"
+
+	engine -41.5 111.5
+	engine 41.5 111.5
+	gun -12 -105.5 "Quad Beam Laser"
+	gun 12 -105.5 "Quad Beam Laser"
+	gun -40 -22.5 "Particle Cannon"
+	gun -29.5 -26
+	gun 29.5 -26
+	gun 40 -22.5 "Particle Cannon"
+	turret -48 24 "Heavy Anti-Missile Turret"
+	turret -38 7.5 "Heavy Laser Turret"
+	turret 38 7.5 "Heavy Laser Turret"
+	turret 48 24 "Heavy Anti-Missile Turret"
+	leak "leak" 30 40
+	leak "flame" 40 90
+	leak "big leak" 50 20
+	explode "tiny explosion" 30
+	explode "small explosion" 50
+	explode "medium explosion" 45
+	explode "large explosion" 35
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The Republic Destroyer is the newest Navy design, a smaller version of the Cruiser designed to fight toe-to-toe with even the largest enemies, but buildable at smaller Dirt Belt stations. Although it can reach higher top speeds than any of the other large Navy ships, it takes longer to get there - unless it uses its afterburner."
