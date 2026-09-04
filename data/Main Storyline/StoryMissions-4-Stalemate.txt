@@ -60,10 +60,12 @@ mission "Endgame Alpha 4.0"
 			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. They cannot keep up with your ship as you flee in the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
 				launch
 	npc evade
+		government "Omega"
 		personality launching daring ramming unconstrained vindictive nemesis marked 
 		fleet "Omega Guardian" 2
 		on "scan outfits"
 			set "EA scanned the supercarriers"
+
 	on complete
 		payment 1000000
 		event "EA timer I"

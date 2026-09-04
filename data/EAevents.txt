@@ -73,6 +73,7 @@ event "EA reveal Fumalzenarah"
 		
 event "EA connect Fumalzenarah"
 	system Fumalzenarah
+		remove shrouded
 		link Citadelle
 
 event "EA danforth chip processed"
