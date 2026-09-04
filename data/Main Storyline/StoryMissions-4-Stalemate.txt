@@ -13,9 +13,8 @@
 # this program. If not, see <https://www.gnu.org/licenses/>.
 # This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
 
-# 4.0 \open
+# 4.0 Investigating Sagarra Alpha Base \open
 
-#Investigating Alpha Base on Sagarra
 mission "Endgame Alpha 4.0"
 	landing
 	source Sagarra
@@ -25,6 +24,10 @@ mission "Endgame Alpha 4.0"
 	to offer
 		has "Endgame Alpha 3.14: done"
 	on offer
+		government "Alpha"
+			"player reputation" -1000
+		government "Omega"
+			"player reputation" -1000
 		conversation
 			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
 			`	The landscape is eerily similar to their last hideout, even down to the large reptiles roaming the earth.`
@@ -57,7 +60,7 @@ mission "Endgame Alpha 4.0"
 			`	Suddenly, a warning horn blares in your cockpit, as several of the missile batteries you experienced earlier lock on and fire. Apparently you weren't just being ignored. The missiles have apparently very crude guidance systems, since none come close this time, but you see that the top of the mysterious tower is bristling with weapons. Doors open in its sides, and a swarm of small ships pours out and attacks you. They cannot keep up with your ship as you flee in the direction you came, but the supercarriers performing a well-managed scramble takeoff in the distance will be a problem. Now would be a good time to get out and make your report.`
 				launch
 	npc evade
-		personality launching daring ramming unconstrained vindictive
+		personality launching daring ramming unconstrained vindictive nemesis marked 
 		fleet "Omega Guardian" 2
 		on "scan outfits"
 			set "EA scanned the supercarriers"
@@ -83,7 +86,7 @@ mission "Endgame Alpha 4.0"
 	on visit
 		dialog `You must destroy or evade the supercarriers before you can complete the mission!`
 		
-# 4.1 \fold
+# 4.1 Reporting to New Argentina, sent to Hai-home \fold
 mission "Endgame Alpha 4.1"
 	priority
 	clearance
@@ -209,7 +212,7 @@ mission "Endgame Alpha 4.1"
 			`	"Additionally, make sure that the government you are in discussion with understands that we have the capability to maintain security around assisting fleets, and that they need not fear being discovered.`
 			`	"I wish you well with the Hai. They are probably our most potent allies since they are already known by many humans. Contacting higher-ups is fairly formal on Hai-home, you can file for a meeting at the spaceport embassy." The message closes out. Along with the message, there is payment of 50,000 credits.`
 			
-# 4.2 \fold
+# 4.2 Deliver Hai Battle Fleet to New Argentina \fold
 mission "Endgame Alpha 4.2"
 	priority
 	source "Hai-home"
@@ -224,16 +227,50 @@ mission "Endgame Alpha 4.2"
 			`	You decide to wear your uniform, something you haven't done outside of human space before.`
 				to display
 					has "outfit (installed): Navy Uniform"
-			`	After passing through a bank of scanners, you reach a desk with a business-like Hai sitting at it. The Hai glances at a screen quickly and addresses you. "<last>, Navy Commander, High priority official business." She looks at your raised eyebrows, "Yes, your associates made prior arrangements, that's why you were allowed to land at all. Please follow me."`
+			`	After passing through a bank of scanners, you reach a desk with a business-like Hai sitting at it. The Hai glances at a screen quickly and addresses you. "<last>, Navy Commander, Flash priority official military business." She looks at your raised eyebrows, "Yes, your associates made prior arrangements, that's why you were allowed to land at all. Please follow me."`
 			`	You follow the Hai around a corner, down a hallway, and out a door and reach a ground vehicle parked behind the embassy. Its driver does not even turn his head to look at you, although you can't see his eyes beneath a pair of Head-up display goggles he is wearing. The aide requests you step in the vehicle.`
 			choice
 				`	(Get in.)`
 					goto car
 				`	(Don't get in.)`
-			`	"I'm sorry, but I'm not going to get in the car." You say to the aide. The driver finally turns his head towards you as well. `
+			`	"I'm sorry, but I'm not going to get in the car." You say to the aide. She looks taken aback, and the driver finally turns his head towards you as well. "Maybe you do not understand, <last>, you have an appointment with a group of the most senior military commanders of our race. You must either take your opportunity now, or not at all.`
+			choice
+				`	"Alright, I'll go."`
+					goto car
+				`	"Then I'm not interested."`
+			`	The aide nods mechanically. "Very well then. You must understnad that your clearance on this planet is at an end."`
+				flee
 			label car
-			`	The inside of the vehicle is quite comfortable, but it does not offer the smoothness of ride that an aircraft or even a hovercraft could produce. You are about to ask why you aren't going by airborne shuttle when the vehicle road ahead of you stoops steeply downward into a hardened bunker facility. You enter a dimly lit tunnel that continues down for several minutes, until you stop at a large bay carved into the side. `
-				
+			`	The inside of the vehicle is quite comfortable, but it does not offer the smoothness of ride that an aircraft or even a hovercraft could produce. You are about to ask why you aren't going by airborne shuttle when the vehicle road ahead of you stoops steeply downward into a hardened bunker facility. You enter a dimly lit tunnel that continues down for several minutes, until you stop at a large bay carved into the side. It has the appearance of a shipping dock.`
+			`	Your driver presses a button on his instrument panel, and the passenger door opens. You step out, and immediately your transport closes up and leaves. As soon as it disappears from sight, the main door of the dock opens, and you see two more agents standing on the either side of the tunnel it reveals. An aide almost identical to the one you saw previously beckons you to follow her down the corridor.`
+			`	After a short distance, you take a side hallway, that rapidly transforms from looking like a warehouse to wood-panelled opulence. The aide stops you at a door (guarded by two more mysterious Hai), knocks, and walks away without comment. Just like with your driver, the door does not open until your escort is not visible. "Commander <last>, please enter." A voice says.`
+			choice
+				`	(Enter and salute.)`
+					goto salute
+				`	(Enter and sit down, if possible.)`
+					goto sitdown
+				`	(Make a break for it.)`
+			`	You dart away from the entrance, running down the hall. As you run through the corridors with alarms blaring, you realize that there are mirrors and cameras placed everywhere so that you can never get away from the two guards pursuing you. In straight section, they come in line of sight again. One of them levels some kind of weapon and fires.`
+			`	Your last thought is that there must be something very important contained within this complex.`
+				die
+			label salute
+			`	You take a few steps into the room, snap ramrod straight, and salute. The Hai in the middle of the five there salutes you back. "Good evening, <last>. Thank you for your courtesy. Please take a seat."`
+			label sitdown
+			`	You walk forward and take the one chair on your side of the table. Four of the Hai appear to be normal, except for the fact that they are all in highly decorated, high ranking uniforms, another is taller, with a more mottled coloration. His uniform is also significantly simpler, with only one insignia on it, and obviously designed to be as utilitarian as possible.`
+			`	As soon as you are seated, the Hai in the center addresses you. "Commander, it has been made known to us that you are here regarding the Alpha war in what is called Free Worlds space. More than this we have not been told. Be so good as to enlighten us."`
+			label firstquestion
+			choice
+				`	"I'm here to beg for assistance on behalf the human race."`
+					goto beg
+				`	"The Republic has requested military assistance and information."`
+					goto republic
+				`	"I come seeking information."`
+					goto information
+			label information
+			`	"Very well then, what information can we give?"`
+			choice
+				`	(Tell them about the tower you saw.)`
+			`	"The Alphas somehow made a home base just beyond the limit of human space, and launched there war from there. On that planet there is a massive tower that appears to control everything on that planet.`
 	on complete
 		payment 150000
 	npc accompany save
