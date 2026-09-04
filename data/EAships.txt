@@ -619,7 +619,7 @@ ship "Harbinger Supercarrier"
 
 ship "Supercruiser"
 	sprite "ship/supercruiser"
-	thumbnail "thumbnail/cruiser"
+	thumbnail "thumbnail/supercruiser"
 	attributes
 		category "Heavy Warship"
 		licenses
@@ -714,8 +714,8 @@ ship "Supercruiser"
 
 ship "Heavy Auxiliary"
 	plural "Heavy Auxiliaries"
-	sprite "ship/heavy auxiliary"
-	thumbnail "thumbnail/heavy auxiliary"
+	sprite "ship/heavyauxiliary"
+	thumbnail "thumbnail/heavyauxiliary"
 	attributes
 		category "Utility"
 		licenses
@@ -723,8 +723,8 @@ ship "Heavy Auxiliary"
 		"cost" 18640000
 		"shields" 18100
 		"hull" 6400
-		"required crew" 88
-		"bunks" 320
+		"required crew" 102
+		"bunks" 375
 		"mass" 2300
 		"drag" 22.6
 		"heat dissipation" .4
@@ -755,29 +755,29 @@ ship "Heavy Auxiliary"
 		"A860 Atomic Thruster"
 		"A865 Atomic Steering"
 		"Scram Drive"
-	gun 15 -215.5
-	gun -13.5 -215.5
-	turret 1.5 -122.5
-	turret 1.5 -66.5
-	turret 1.5 -16
-	turret 1.5 35
-	turret 1.5 87.5
-	turret 1.5 139.5
-	engine 1.5 234
-	engine 42.5 232.5
-	engine -40.5 232.5
-	bay "Fighter" -28 -114.5
+	
+	turret 0 -124 "Quad Blaster Turret"
+	turret 0 -66 "Quad Blaster Turret"
+	turret 0 -18 "Heavy Anti-Missile Turret"
+	turret 0 32 "Heavy Anti-Missile Turret"
+	turret 0 85 "Quad Blaster Turret"
+	turret 0 137 "Quad Blaster Turret"
+	gun -12.5 -232 "Sidewinder Missile Launcher"
+	gun 12.5 -232 "Sidewinder Missile Launcher"
+	engine -41 233 0.45
+	engine 41 235 0.45
+	bay "Fighter" 0 -124
 		"launch effect" "human internal"
-		"left"
-	bay "Fighter" -28 -71
+	bay "Fighter" 0 -66
 		"launch effect" "human internal"
-		"left"
-	bay "Fighter" 31 -114.5
+	bay "Fighter" 0 -18
 		"launch effect" "human internal"
-		"right"
-	bay "Fighter" 31 -71
+	bay "Fighter" 0 -32
 		"launch effect" "human internal"
-		"right"
+	bay "Fighter" 0 -85
+		"launch effect" "human internal"
+	bay "Fighter" 0 -137
+		"launch effect" "human internal"
 	leak "leak" 30 50
 	leak "flame" 30 80
 	leak "big leak" 30 30
@@ -793,7 +793,7 @@ ship "Heavy Auxiliary"
 
 ship "Hawkeye"
 	sprite "ship/hawkeye"
-	thumbnail "thumbnail/frigate"
+	thumbnail "thumbnail/hawkeye"
 	attributes
 		category "Medium Warship"
 		licenses
@@ -810,6 +810,8 @@ ship "Hawkeye"
 		"outfit space" 465
 		"weapon capacity" 140
 		"engine capacity" 100
+		"radar jamming" 10
+		"optical jamming" 5
 		weapon
 			"blast radius" 100
 			"shield damage" 1000
@@ -856,7 +858,7 @@ ship "Hawkeye"
 
 ship "Barque"
 	sprite "ship/barque"
-	thumbnail "thumbnail/frigate"
+	thumbnail "thumbnail/barque"
 	attributes
 		category "Heavy Freighter"
 		licenses
@@ -912,7 +914,7 @@ ship "Barque"
 ship "Civil Auxiliary"
 	plural "CivilAuxiliaries"
 	sprite "ship/civilauxiliaryh"
-	thumbnail "thumbnail/auxiliaryh"
+	thumbnail "thumbnail/civilauxiliaryh"
 	attributes
 		category "Utility"
 		"cost" 8440000
@@ -977,7 +979,7 @@ ship "Civil Auxiliary"
 ship "Civil Auxiliary" "Civil Auxiliary (Freighter)"
 	plural "Civil Auxiliaries"
 	sprite "ship/civilauxiliaryc"
-	thumbnail "thumbnail/auxiliaryc"
+	thumbnail "thumbnail/civilauxiliaryc"
 	remove attributes
 		category "Utility"
 	add attributes
@@ -994,7 +996,7 @@ ship "Civil Auxiliary" "Civil Auxiliary (Freighter)"
 ship "Civil Auxiliary" "Civil Auxiliary (Liner)"
 	plural "Civil Auxiliaries"
 	sprite "ship/civilauxiliaryt"
-	thumbnail "thumbnail/auxiliaryt"
+	thumbnail "thumbnail/civilauxiliaryt"
 	remove attributes
 		category "Utility"
 	add attributes
@@ -1015,7 +1017,7 @@ ship "Civil Cruiser"
 
 ship "Civil Gunboat"
 	sprite "ship/civilgunboat"
-	thumbnail "thumbnail/gunboat"
+	thumbnail "thumbnail/civilgunboat"
 	attributes
 		category "Light Warship"
 		licenses
@@ -1067,7 +1069,7 @@ ship "Civil Gunboat"
 
 ship "Civil Rainmaker"
 	sprite "ship/civilrainmaker"
-	thumbnail "thumbnail/rainmaker"
+	thumbnail "thumbnail/civilrainmaker"
 	attributes
 		category "Transport"
 		licenses
@@ -1117,7 +1119,7 @@ ship "Civil Rainmaker"
 
 ship "Escape Ship"
 	sprite "ship/escapeship"
-	thumbnail "thumbnail/auxiliaryt"
+	thumbnail "thumbnail/escapeship"
 	attributes
 		category "Space Liner"
 		licenses
@@ -1180,7 +1182,7 @@ ship "Escape Ship"
 
 ship "Hailstorm"
 	sprite "ship/hailstorm"
-	thumbnail "thumbnail/gunboat"
+	thumbnail "thumbnail/hailstorm"
 	attributes
 		category "Light Warship"
 		licenses
@@ -1238,7 +1240,7 @@ ship "Hailstorm"
 
 ship "Modified Gunboat"
 	sprite "ship/modified gunboat"
-	thumbnail "thumbnail/gunboat"
+	thumbnail "thumbnail/modified gunboat"
 	attributes
 		category "Light Warship"
 		licenses
@@ -1291,7 +1293,7 @@ ship "Modified Gunboat"
 
 ship "Stealth Gunboat"
 	sprite "ship/stealth gunboat"
-	thumbnail "thumbnail/gunboat"
+	thumbnail "thumbnail/stealth gunboat"
 	attributes
 		category "Light Warship"
 		licenses
@@ -1308,8 +1310,10 @@ ship "Stealth Gunboat"
 		"cargo space" 50
 		"outfit space" 270
 		"weapon capacity" 100
+		"cooling" 1000
 		"engine capacity" 90
 		"radar jamming" 20
+		"optical jamming" 3
 		weapon
 			"blast radius" 72
 			"shield damage" 720
