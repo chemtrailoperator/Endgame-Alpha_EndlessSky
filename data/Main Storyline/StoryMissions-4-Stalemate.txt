@@ -24,10 +24,6 @@ mission "Endgame Alpha 4.0"
 	to offer
 		has "Endgame Alpha 3.14: done"
 	on offer
-		government "Alpha"
-			"player reputation" -1000
-		government "Omega"
-			"player reputation" -1000
 		conversation
 			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
 			`	The landscape is eerily similar to their last hideout, even down to the large reptiles roaming the earth.`
@@ -155,7 +151,6 @@ mission "Endgame Alpha 4.1"
 			`	You take the spoon and put it into your pocket.`
 			choice
 				`	"Really? I didn't know you exhibited normal human sentimentality behaviors."`
-					goto sentimental
 				`	"Interesting, but business first."`
 					goto briefing
 			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
@@ -271,11 +266,42 @@ mission "Endgame Alpha 4.2"
 			label information
 			`	"Very well then, what information can we give?"`
 			choice
-				`	(Tell them about the tower you saw.)`
-			`	"The Alphas somehow made a home base just beyond the limit of human space, and launched there war from there. On that planet there is a massive tower that appears to control everything on that planet.`
+				`	(Tell them about the Sagarra complex.)`
+					goto tellsagarra
+					set "EA tell about sagarra to hai"
+				`	(Ask them if they know of any structures the Alphas might build.)`
+					goto withholdsagarra
+					set "EA withhold information to hai"
+			label tellsagarra
+			`	"The Alphas somehow made a home base just beyond the limit of human space, and launched their war from there. On that planet there is a massive tower that looks like it is in control of everything. Do you have any knowledge of something similar?" You slide over a tablet containing the map built by your ship's terrain following radar.`
+			`	After examining the tablet in turn, the four normal looking Hais shake their heads, and say that they had never seen any behavior like that from the Alphas. The fifth says,`
+				goto explanation
+			label withholdsagarra
+			`	"The Republic wishes to know about the behaviors of the Alphas when they interacted with you. Did they ever build strange structures or have strange organization?"`
+			`	The Hai eachs ay that they have no such knowledge of any structures or odd behavior, except for the fifth, who says,`
+			label explanation
+			`	"We have no eviedence of such a structure, however, some of the Hai envoys reported that the Alpha sometimes spoke of their command like it was a centralized point, not the chain or web usually seen in large groups. They also seemed to fear and revere the command center, wherever and whatever it was, because I do not think they would obey such leadership from one of their own. After they left our space, analysts predicted that a very powerful, external force was controlling them. That is all we learned while we worked them."`
+			choice
+				`	"The Hai had dealings with the Alphas?"`
+				`	"Your 'envoys'?! Who are you?"`
+			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's behavior. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
+			choice
+				`	"Since when did the Unfettered cooperate with you?"`
+			`	"A common threat such as the Alphas is enough to reunite two estranged-" The Unfettered Hai interrupts the general, with a further deepened scowl. "This whitewashed group of Hai approached my government requesting assistance, we did not go to them! They have so little experience dealing with anything other than Pirates and ourselves that they asked us to teach them the ways of large fleet combat against an unknown enemy, including the use of the Solifuge. I will never let my people be dishonored by leading from behind, we will go into battle for revenge upon the Alphas, with or without you!" he slams his fist on the table with the last words, looking at the other four Hai.`
+			choice
+				`	(Ask for military assistance.)`
+			`	After more than a few seconds of silence, with the Unfettered fuming in his chair, you say, "That actually makes my next task easier. I am sent also to request any assistance you are willing to send to the Rim. As many warships as you wish to send." The Unfettered actually looks relieved at this, and brightens at the prospect of action. "We will send ships, <last>. Not many now, but more will come. We will go under Hai colors for now."`
+			`	The other Hai at the table look uncomfortable, but also agree to send a battle fleet, one that will depart with you on the condition you fly directly to New Argentina.`
+			`	After finalizing the details, the main Hai general walks you to the door of the conference room. "Lastly, please do not speak of this meeting to anyone except your superiors." He says, "If the knowledge that the Hai were fighting a war outside their borders, alongside the Unfettered no less..." He shudders, and hands you off to the guards, you take you through the same process to get out of the underground facility, and back to teh spaceport embassy.`
+				accept
 	on complete
+		dialog "test complete"
 		payment 150000
 	npc accompany save
+		government "Hai"
+		personality
+			heroic escort
+		outfitters "Hai Advanced" "Unfettered Basics"
 		fleet "Hai Battle Detachment"
 		
 # \close
