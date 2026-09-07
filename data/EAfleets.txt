@@ -22,7 +22,33 @@ fleet "Large Republic Refugee"
 		"Auxiliary (Cargo Mark II)" 5
 	personality
 		timid coward appeasing
-		
+
+fleet "Hai Humanitarian Detachment"
+	government "Hai"
+	names "Hai"
+	personality
+		timid
+	variant
+		"Geocoris" 3
+		"Cicada" 2
+		"Water Bug" 3
+		"Centipede" 2
+		"Lightning Bug" 2
+		"Pond Strider"
+		"Flea" 4
+		"Flea (Pulse)" 4
+
+fleet "Hai Unfettered Detachment"
+	government "Hai"
+	names "Hai"
+	personality
+		heroic vindictive
+	variant
+		"Shield Beetle (Unfettered)"
+		"Solifuge"
+		"Violin Spider" 3
+		"Violin Spider (Pulse)" 3
+
 fleet "Hai Battle Detachment"
 	government "Hai"
 	names "hai"
