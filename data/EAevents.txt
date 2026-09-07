@@ -66,7 +66,7 @@ event "EA repaint navy"
 	government "Escort"
 		swizzle 0
 		
-# Mission Mechanics \fold		
+# Mission and Storyline Mechanics \fold		
 event "EA reveal Fumalzenarah"
 	system Fumalzenarah
 		remove hidden
@@ -85,6 +85,14 @@ event "EA mysterious green goo"
 event "EA emergence timer"
 
 event "EA timer I"
+
+event "EA secure vindemiatrix"
+	system Vindemiatrix
+		remove fleet "Small Southern Merchants"
+		remove fleet "Large Southern Merchants"
+		remove fleet "Small Southern Pirates"
+		remove fleet "Large Southern Pirates"
+		fleet "Small Southern Pirates" 4000
 
 # Awards \fold
 
@@ -136,8 +144,6 @@ event "EA timer I"
 	# on offer
 		# outfit "Alpha Contact Award"
 		# fail
-
-# Storyline Events \fold
 
 # Republic Mobilized \open
 event "EA endgame alpha begins"

@@ -288,7 +288,7 @@ mission "Endgame Alpha 4.2"
 			choice
 				`	"The Hai had dealings with the Alphas?"`
 				`	"'Envoys'?! Who are you?"`
-			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's behavior. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
+			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's reticence. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
 			label askunfettered
 			choice
 				`	"Since when did the Unfettered cooperate with you?"`
@@ -300,7 +300,6 @@ mission "Endgame Alpha 4.2"
 					goto nomilitary
 			`	After more than a few seconds of silence, with the Unfettered fuming in his chair, you say, "That actually makes my next task easier. I am sent also to request any assistance you are willing to send to the Rim. As many warships as you wish to send." The Unfettered actually looks relieved at this, and brightens at the prospect of action. "We will send ships, <last>. Not many now, but more will come. We will go under Hai colors for now."`
 			`	The other Hai at the table look uncomfortable, but also agree to send a battle fleet, one that will depart with you on the condition you fly directly to New Argentina.`
-			
 				accept
 			label beg
 			action
@@ -316,7 +315,7 @@ mission "Endgame Alpha 4.2"
 			choice
 				`	"The Hai had dealings with the Alphas?"`
 				`	"'Envoys'?! Who are you?"`
-			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's behavior. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
+			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's reticence. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
 			choice
 				`	"Since when did the Unfettered cooperate with you?"`
 			`	"A common threat such as the Alphas is enough to reunite two estranged-" The Unfettered Hai interrupts the general, with a further deepened scowl. "This whitewashed group of Hai approached my government requesting assistance, we did not go to them! They have so little experience dealing with anything other than Pirates and ourselves that they asked us to teach them the ways of large fleet combat against an unknown enemy, including the use of the Solifuge. I will never let my people be dishonored by leading from behind, so I am here to assist your people alongside them." He looks at the other group of Hai, rising from his chair, "You have so little backbone that you even made us fly under your colors, so that you would get the credit." He sits back down suddenly, and is silent.`
@@ -326,12 +325,21 @@ mission "Endgame Alpha 4.2"
 			`	After finalizing the details, the main Hai general walks you to the door of the conference room. "Lastly, please do not speak of this meeting to anyone except your superiors." He says, "If the knowledge that the Hai were fighting a war outside their borders, alongside the Unfettered no less..." He shudders, and hands you off to the guards, you take you through the same process to get out of the underground facility, and back to the spaceport embassy.`
 				accept
 			label begmilitary
-			`	Addressing the center Hai, you say, "The Republic greatly appreciates a humanitarian fleet. Would you be willing to also contribute a military one?"`
-			
-			
-	on complete
-		dialog "test complete"
-		payment 150000
+			`	Addressing the center Hai, you say, "The Republic greatly appreciates a humanitarian fleet. Would you be willing to also contribute a military one?" One of the Hai on the side replies, "Unfortunately, Commander <last>, the extent we can commit to now limits us to only a relief fleet, however, you are more than welcome to ask it of our associate." At this he gestures to the mottled Hai.`
+			choice
+				`	"Your 'Associates'? Isn't he a Hai too?"`
+			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's reticence. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
+			choice
+				`	"Since when did the Unfettered cooperate with you?"`
+			`	"A common threat such as the Alphas is enough to reunite two estranged-" The Unfettered Hai interrupts the general, with a further deepened scowl. "This whitewashed group of Hai approached my government requesting assistance, we did not go to them! They have so little experience dealing with anything other than Pirates and ourselves that they asked us to teach them the ways of large fleet combat against an unknown enemy, including the use of the Solifuge. I will never let my people be dishonored by leading from behind, so I am here to assist your people alongside them." He looks at the other group of Hai, rising from his chair, "You have so little backbone that you even made us fly under your colors, so that you would get the credit." He sits back down suddenly, and speaks to you again, "A battle fleet you shall have, and you shall have more, if all goes well."`
+			``
+			`	After finalizing the details, the main Hai general walks you to the door of the conference room. "Lastly, please do not speak of this meeting to anyone except your superiors." He says, "If the knowledge that the Hai were fighting a war outside their borders, alongside the Unfettered no less..." He shudders, and hands you off to the guards, you take you through the same process to get out of the underground facility, and back to the spaceport embassy.`
+				accept
+	on accept
+		event "EA secure vindemiatrix"
+	on enter "Vindemiatrix"
+		conversation
+			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out.`
 	npc accompany save
 		government "Hai"
 		personality
