@@ -980,12 +980,26 @@ ship "Civil Auxiliary" "Civil Auxiliary (Freighter)"
 	plural "Civil Auxiliaries"
 	sprite "ship/civilauxiliaryc"
 	thumbnail "thumbnail/civilauxiliaryc"
-	remove attributes
-		category "Utility"
-	add attributes
+	attributes
 		category "Heavy Freighter"
-		"bunks" -150
-		"cargo space" 220
+		"cost" 8440000
+		"shields" 7100
+		"hull" 4200
+		"required crew" 48
+		"bunks" 129
+		"mass" 1100
+		"drag" 18.4
+		"heat dissipation" .27
+		"fuel capacity" 1100
+		"cargo space" 520
+		"outfit space" 420
+		"weapon capacity" 70
+		"engine capacity" 200
+		weapon
+			"blast radius" 280
+			"shield damage" 2800
+			"hull damage" 1400
+			"hit force" 4200
 	turret 0 -20 "Heavy Anti-Missile Turret"
 	turret 0 83 "Heavy Anti-Missile Turret"
 	bay "Fighter" 0 -20
@@ -997,12 +1011,26 @@ ship "Civil Auxiliary" "Civil Auxiliary (Liner)"
 	plural "Civil Auxiliaries"
 	sprite "ship/civilauxiliaryt"
 	thumbnail "thumbnail/civilauxiliaryt"
-	remove attributes
-		category "Utility"
-	add attributes
+	attributes
 		category "Space Liner"
-		"bunks" 150
-		"cargo space" -220
+		"cost" 8440000
+		"shields" 7100
+		"hull" 4200
+		"required crew" 48
+		"bunks" 429
+		"mass" 1100
+		"drag" 18.4
+		"heat dissipation" .27
+		"fuel capacity" 1100
+		"cargo space" 80
+		"outfit space" 420
+		"weapon capacity" 70
+		"engine capacity" 200
+		weapon
+			"blast radius" 280
+			"shield damage" 2800
+			"hull damage" 1400
+			"hit force" 4200
 
 	turret 0 -17 "Heavy Anti-Missile Turret"
 	turret 0 78 "Heavy Anti-Missile Turret"
