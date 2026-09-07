@@ -339,19 +339,19 @@ mission "Endgame Alpha 4.2"
 		event "EA secure vindemiatrix"
 	on enter "Vindemiatrix"
 		conversation
-			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out.`
+			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out. The New Argentina controllers hail you as soon as you enter the system, asking `
 	npc accompany save
 		government "Hai"
 		personality
 			heroic escort
-		outfitters "Hai Advanced" "Unfettered Basics"
+		outfitter "Hai Advanced"
 		fleet "Hai Battle Detachment"
 		to spawn
 			not "EA begged for assistance"
 	npc accompany save
 		government "Hai"
-		outfitters
-		cargo
+		outfitter
+		cargo 4
 		fleet "Hai Humanitarian Detachment"
 		fleet "Hai Unfettered Detachment"
 		to spawn
