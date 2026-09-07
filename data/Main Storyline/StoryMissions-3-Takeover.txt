@@ -615,7 +615,7 @@ mission "Endgame Alpha 3.14"
 				
 # P3.0 \fold
 				
-#Patch mission for revealing the Alpha home system for users who passed 3.0 prior to v0.5.2
+#Patch mission for revealing the Alpha home system for users who completed 3.0 prior to v0.5.2
 mission "Endgame Alpha P3.0"
 	invisible
 	to offer

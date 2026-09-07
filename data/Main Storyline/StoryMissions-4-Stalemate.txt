@@ -362,7 +362,7 @@ mission "Endgame Alpha 4.2"
 # 4.3 Remnant Story \fold		
 
 # 4.3.1 Travel to the Remnant \open
-mission "Endgame Alpha 4.3"
+mission "Endgame Alpha 4.3.1"
 	landing
 	name "Contact the Remnant"
 	description "Travel to <destination> in the <system> system to request assistance from the Remnant"
@@ -387,7 +387,8 @@ mission "Endgame Alpha 4.3"
 			`		You are hereby required and directed to contact the Remnant with all possible expedition. Any expenditure and cost is acceptable and authorized.`
 			`	By Order Of Admiral Alzaga, New Argentina, Vindemiatrix.`
 			``
-			`	Also attached is a note from Raven saying she'll send any more updates to you as soon as possible. She also says that the situation is much worse, with Alpha forces continuing to strengthen and expand. The Atria system also collapsed while you were working in hai space.`
+			`	Also attached is a note from Raven saying she'll send any more updates to you as soon as possible. She also says that the situation is much worse, with Alpha forces continuing to strengthen and expand. The Atria system also collapsed while you were working in Hai space.`
+				accept
 # \close			
 			
 # \close

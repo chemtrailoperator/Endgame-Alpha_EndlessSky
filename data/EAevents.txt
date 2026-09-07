@@ -94,6 +94,8 @@ event "EA secure vindemiatrix"
 		remove fleet "Large Southern Pirates"
 		fleet "Small Southern Pirates" 4000
 
+event "EA Remnant Defenses Activated"
+
 # Awards \fold
 
 #There is a TON of issues with this section.
@@ -144,7 +146,7 @@ event "EA secure vindemiatrix"
 	# on offer
 		# outfit "Alpha Contact Award"
 		# fail
-
+# \close
 # Republic Mobilized \open
 event "EA endgame alpha begins"
 	government "Alpha"
