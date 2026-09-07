@@ -713,7 +713,7 @@ ship "Supercruiser"
 
 
 ship "Heavy Auxiliary"
-	"variant map name" "4-1 Mixed Units"
+	"variant map name" "3 Mixed Units"
 	plural "Heavy Auxiliaries"
 	sprite "ship/heavyauxiliary"
 	thumbnail "thumbnail/heavyauxiliary"
