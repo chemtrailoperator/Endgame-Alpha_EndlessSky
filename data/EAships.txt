@@ -1401,4 +1401,6 @@ shipyard "EAshiptester"
 	
 planet "New Boston"
 	add shipyard "EAshiptester"
+	add shipyard "Navy Basics"
+	add shipyard "Navy Advanced"
 # \close
