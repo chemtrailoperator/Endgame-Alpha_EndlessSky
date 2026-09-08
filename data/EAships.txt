@@ -1380,6 +1380,120 @@ ship "Stealth Gunboat"
 	"final explode" "final explosion small"
 	description "The latest in low-observable technology, the Stealth Gunboat is difficult to spot optically, and a full ship-borne radar system is needed to find it electromagnetically. This means that missiles have great difficulty even getting a lock, much less a hit. The ship's design also contains any thermal signatures, making infrared tracking difficult as well. All weapons are stored internally, and this little craft is nuclear-capable."
 
+ship "Supercarrier"
+	sprite "ship/supercarrier"
+	thumbnail "thumbnail/carrier"
+	attributes
+		category "Heavy Warship"
+		licenses
+			"Navy Carrier"
+		"cost" 23650000
+		"shields" 27500
+		"hull" 9300
+		"required crew" 170
+		"bunks" 245
+		"mass" 3540
+		"drag" 45.6
+		"heat dissipation" .23
+		"fuel capacity" 800
+		"cargo space" 110
+		"outfit space" 820
+		"weapon capacity" 240
+		"engine capacity" 210
+		weapon
+			"blast radius" 300
+			"shield damage" 3000
+			"hull damage" 1500
+			"hit force" 4500
+	outfits
+		"Meteor Missile Launcher" 2
+		"Meteor Missile" 60
+		"Torpedo Launcher" 4
+		"Torpedo" 120
+		"Electron Turret" 2
+		"Heavy Anti-Missile Turret" 2
+		
+		"Fusion Reactor"
+		"LP288a Battery Pack"
+		"D94-YV Shield Generator" 2
+		"Large Radar Jammer" 2
+		"Water Coolant System"
+		"Laser Rifle" 40
+		"Fragmentation Grenades" 40
+		"Security Station" 2
+		"Tactical Scanner"
+		
+		"X5700 Ion Thruster"
+		"X4200 Ion Steering"
+		"Hyperdrive"
+
+	engine -36.5 231 0.65
+	engine 36.5 231 0.65
+	gun -36 -200
+	gun -26 -213
+	gun -17.5 -221.5
+	gun 17.5 -221.5
+	gun 26 -213
+	gun 36 -200
+	turret 0 -75
+	turret 0 -11
+	turret -22 60
+	turret 22 60
+	bay "Fighter" -38.5 -4
+		"launch effect" "human internal"
+	bay "Fighter" 38.5 -4
+		"launch effect" "human internal"
+	bay "Fighter" -38.5 -4
+		"launch effect" "human internal"
+	bay "Fighter" 38.5 -4
+		"launch effect" "human internal"
+	bay "Fighter" -38.5 -75
+		"launch effect" "human internal"
+	bay "Fighter" 38.5 -75
+		"launch effect" "human internal"
+	bay "Fighter" -38.5 -75
+		"launch effect" "human internal"
+	bay "Fighter" 38.5 -75
+		"launch effect" "human internal"
+	bay "Fighter" -50 105
+		"launch effect" "human internal"
+	bay "Fighter" 50 105
+		"launch effect" "human internal"
+	bay "Fighter" -50 105
+		"launch effect" "human internal"
+	bay "Fighter" 50 105
+		"launch effect" "human internal"
+	bay "Drone" -71.5 -12.5
+		"launch effect" "human internal"
+	bay "Drone" 71.5 -12.5
+		"launch effect" "human internal"
+	bay "Drone" -100 -12.5
+		"launch effect" "human internal"
+	bay "Drone" 100 -12.5
+		"launch effect" "human internal"
+	bay "Drone" -115 117
+		"launch effect" "human internal"
+	bay "Drone" 115 117
+		"launch effect" "human internal"
+	bay "Drone" -85 117
+		"launch effect" "human internal"
+	bay "Drone" 85 117
+		"launch effect" "human internal"
+		
+		
+	
+	
+	leak "leak" 30 50
+	leak "flame" 30 80
+	leak "big leak" 30 30
+	explode "tiny explosion" 20
+	explode "small explosion" 45
+	explode "medium explosion" 50
+	explode "large explosion" 40
+	explode "huge explosion" 10
+	"final explode" "final explosion large"
+	description "The Carrier is more than just a warship: it is practically a mobile space station, with docking bays for an entire squadron of drones and fighters and enough crew to fill a small village. Although designed primarily for engaging enemies from a distance, a Carrier can also do significant damage in close combat."
+
 #Items for testing, remove before publishing
 shipyard "EAshiptester"
 	"Supercruiser"
@@ -1398,7 +1512,7 @@ shipyard "EAshiptester"
 	"Hailstorm"
 	"Modified Gunboat"
 	"Stealth Gunboat"
-	
+	"Supercarrier"
 planet "New Boston"
 	add shipyard "EAshiptester"
 	add shipyard "Navy Basics"
