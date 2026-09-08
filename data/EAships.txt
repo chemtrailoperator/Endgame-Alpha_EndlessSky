@@ -1397,9 +1397,9 @@ ship "Supercarrier"
 		"heat dissipation" .23
 		"fuel capacity" 800
 		"cargo space" 110
-		"outfit space" 820
-		"weapon capacity" 240
-		"engine capacity" 210
+		"outfit space" 980
+		"weapon capacity" 340
+		"engine capacity" 240
 		weapon
 			"blast radius" 300
 			"shield damage" 3000
@@ -1413,8 +1413,8 @@ ship "Supercarrier"
 		"Electron Turret" 2
 		"Heavy Anti-Missile Turret" 2
 		
-		"Fusion Reactor"
-		"LP288a Battery Pack"
+		"Armageddon Core"
+		"Supercapacitor" 4
 		"D94-YV Shield Generator" 2
 		"Large Radar Jammer" 2
 		"Water Coolant System"
@@ -1423,18 +1423,18 @@ ship "Supercarrier"
 		"Security Station" 2
 		"Tactical Scanner"
 		
-		"X5700 Ion Thruster"
+		"A860 Atomic Thruster"
 		"X4200 Ion Steering"
 		"Hyperdrive"
 
 	engine -36.5 231 0.65
 	engine 36.5 231 0.65
-	gun -36 -200
-	gun -26 -213
-	gun -17.5 -221.5
-	gun 17.5 -221.5
-	gun 26 -213
-	gun 36 -200
+	gun -36 -200 "Meteor Missile Launcher"
+	gun -26 -213 "Torpedo Launcher"
+	gun -17.5 -221.5 "Torpedo Launcher"
+	gun 17.5 -221.5 "Torpedo Launcher"
+	gun 26 -213 "Torpedo Launcher"
+	gun 36 -200 "Meteor Missile Launcher"
 	turret 0 -75
 	turret 0 -11
 	turret -22 60
