@@ -339,7 +339,9 @@ mission "Endgame Alpha 4.2"
 		event "EA secure vindemiatrix"
 	on enter "Vindemiatrix"
 		conversation
-			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out. The New Argentina controllers hail you as soon as you enter the system, asking `
+			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out. The New Argentina controllers hail you as soon as you enter the system, asking that you land immediately.`
+	on visit
+		dialog `The Hai detachment has not yet arrived. The controllers ask you to remain in orbit until they get there.`
 	npc accompany save
 		government "Hai"
 		personality
@@ -356,4 +358,37 @@ mission "Endgame Alpha 4.2"
 		fleet "Hai Unfettered Detachment"
 		to spawn
 			has "EA begged for assistance"
+
+# 4.3 Remnant Story \fold		
+
+# 4.3.1 Travel to the Remnant \open
+mission "Endgame Alpha 4.3.1"
+	landing
+	name "Contact the Remnant"
+	description "Travel to <destination> in the <system> system to request assistance from the Remnant"
+	destination Viminal
+	source "New Argentina"
+	to offer
+		has "Endgame Alpha 4.2: done"
+	on offer
+		event "EA Atria Takeover"
+		conversation
+			`	You escort the Hai fleet to the surface of New Argentina, away from the main spaceport in a remote area, as directed during re-entry. As soon as the Hai fleet touches down, you see that the ships are approached by a multitude of trucks containing portable maintenance systems and supplies. The spaceport controllers then tell you to return and land normally at the Navy base.`
+			`	The pad you are directed to is along the edge of the landing area, with ready access to the building complex beyond the blast walls. As soon as your engines shut down, an air-breathing shuttle lands immediately next to you, disgorging the officer who gave you your orders last time. He approaches your ship from the side and stands next to your entry door, waiting for you to open it.`
+			choice
+				`	(Open the door.)`
+			`	The officer steps onto your ship, salutes, and enters your cockpit (this time pointedly stepping over the bulkhead,) and hands you another data pad. He remains at attention.`
+			`	This time, you dismiss the officer before opening the data pad. He returns to his transportation and leaves.`
+			`	Your orders are formatted in official style, reading:`
+			``
+			`	To The Attention of: <last>, <first>, Commander, Republic Navy`
+			`	Alpha Joint Task Force, New Argentina, Vindemiatrix`
+			`	PRIORITY HIGH-SECRET`
+			`		You are hereby required and directed to contact the Remnant with all possible expedition. Any expenditure and cost is acceptable and authorized.`
+			`	By Order Of Admiral Alzaga, New Argentina, Vindemiatrix.`
+			``
+			`	Also attached is a note from Raven saying she'll send any more updates to you as soon as possible. She also says that the situation is much worse, with Alpha forces continuing to strengthen and expand. The Atria system also collapsed while you were working in Hai space.`
+				accept
+# \close			
+			
 # \close
