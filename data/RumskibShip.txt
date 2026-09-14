@@ -1,5 +1,6 @@
 
 # Copyright (c) 2026 by Kitteh
+# Copyright (c) 2026 by ChemtrailOperator
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -12,6 +13,7 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+# Ship Definition, Kitteh. \open
 ship "Rumskib Destroyer"
 	sprite "ship/rumskibdestroyer"
 	thumbnail "thumbnail/rumskibdestroyer"
@@ -86,3 +88,10 @@ ship "Rumskib Destroyer"
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
 	description "The Republic Destroyer is the newest Navy design, a smaller version of the Cruiser designed to fight toe-to-toe with even the largest enemies, but buildable at smaller Dirt Belt stations. Although it can reach higher top speeds than any of the other large Navy ships, it takes longer to get there - unless it uses its afterburner."
+	
+# Patch Missions for Rumskib Plugin.
+mission "Endgame Alpha Rumskib Patch"
+	invisible
+	landing
+	to offer
+		has "installed plugin: rumskib"

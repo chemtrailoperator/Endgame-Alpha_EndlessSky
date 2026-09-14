@@ -103,6 +103,22 @@ outfit "Parliamentary Commendation Ribbon"
 	"unique" 1
 	description "This award was given to you for your outstanding service (somewhat incongruously) for the combined forces against the Syndicate in the Free Worlds conflict."
 
+outfit "Interference Turret"
+	category "Turrets"
+	licenses
+		Remnant
+	cost 1120000
+	thumbnail "outfit/Interference Turret"
+	"mass" 33
+	"outfit space" -20
+	"turret mounts" -1
+	"tactical scan power" 120
+	"asteroid scan power" 40
+	"radar jamming" 20
+	"optical jamming" 3
+	description "To combat large swarms "
+
+
 outfit "ECM Suite Gen 2"
 	category "Systems"
 	cost 576500

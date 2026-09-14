@@ -617,6 +617,7 @@ ship "Harbinger Supercarrier"
 # Navy Ships \fold
 
 
+
 ship "Supercruiser"
 	sprite "ship/supercruiser"
 	thumbnail "thumbnail/supercruiser"
@@ -1494,6 +1495,417 @@ ship "Supercarrier"
 	"final explode" "final explosion large"
 	description "The Carrier is more than just a warship: it is practically a mobile space station, with docking bays for an entire squadron of drones and fighters and enough crew to fill a small village. Although designed primarily for engaging enemies from a distance, a Carrier can also do significant damage in close combat."
 
+# Remnant Variants \fold
+ship "Surveillance Drone" "Surveillance Drone (Remnant)"
+	outfits
+		"Anvil-Class Engine"
+		"Surveillance Pod"
+		"nGVF-AA Fuel Cell"
+
+ship "Supercruiser" "Supercruiser (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 2
+		"EMP Torpedo" 40
+		Fire-Lance 4
+		"Fragmentation Grenades" 20
+		"Fuel Processor"
+		"Fusion Reactor"
+		Hyperdrive
+		"Inhibitor Cannon" 4
+		"Large Heat Shunt"
+		"Large Radar Jammer"
+		"Laser Rifle" 20
+		"Point Defense Turret" 2
+		"Quantum Key Stone"
+		"Salvage Scanner"
+		"Security Station"
+		"Smelter-Class Steering"
+		"Smelter-Class Thruster"
+		"Systems Core (Medium)"
+		"Teciimach Bay" 2
+		"Thermal Repeater Rifle" 7
+		"Thrasher Turret" 2
+		"Tuning Rifle" 26
+		
+ship "Kestrel" "Kestrel (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 4
+		"Forge-Class Thruster"
+		"Fuel Pod" 3
+		"Fuel Processor"
+		"Fusion Reactor"
+		Hyperdrive
+		"Inhibitor Cannon" 6
+		"Large Heat Shunt"
+		"Point Defense Turret"
+		"Quantum Key Stone"
+		"Salvage Scanner" 2
+		"Smelter-Class Steering"
+		"Smelter-Class Thruster"
+		"Systems Core (Medium)" 2
+		"Thermal Repeater Rifle" 66
+		"Thrasher Turret" 3
+		"Tuning Rifle" 61
+
+ship "Rumskib Destroyer" "Rumskib Destroyer (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crucible-Class Thruster"
+		"Crystal Capacitor" 2
+		"Emergency Ramscoop"
+		"Epoch Cell"
+		"Fragmentation Grenades" 10
+		"Fuel Pod"
+		"Fuel Processor"
+		"Inhibitor Cannon" 4
+		"Large Heat Shunt" 2
+		"Outfits Expansion"
+		"Point Defense Turret" 2
+		"Quantum Key Stone"
+		"Research Laboratory"
+		"Salvage Scanner"
+		"Scram Drive"
+		"Security Station"
+		"Smelter-Class Steering"
+		"Smelter-Class Thruster"
+		"Systems Core (Medium)"
+		"Thermal Repeater Rifle" 31
+		"Thrasher Cannon" 2
+		"Thrasher Turret" 2
+		"Tuning Rifle" 59
+		
+ship "Modified Gunboat" "Modified Gunboat (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crucible-Class Steering"
+		"Crystal Capacitor" 2
+		"Emergency Ramscoop"
+		"Forge-Class Thruster"
+		Hyperdrive
+		"Inhibitor Cannon" 4
+		"Millennium Cell"
+		"Outfits Expansion"
+		"Point Defense Turret"
+		"Quantum Key Stone"
+		"Small Heat Shunt"
+		"Systems Core (Small)"
+		"Tactical Scanner"
+		"Tuning Rifle" 5
+		
+ship "Rainmaker" "Rainmaker (Remnant)"
+	outfits
+		"Anvil-Class Engine"
+		"Crystal Capacitor"
+		"EMP Torpedo" 60
+		"EMP Torpedo Storage Bay" 4
+		"Emergency Ramscoop"
+		Hyperdrive
+		"Large Radar Jammer"
+		"Millennium Cell"
+		"Quantum Key Stone"
+		"Systems Core (Small)"
+		"Tactical Scanner"
+		"Teciimach Pod" 4
+		"Thrasher Cannon" 2
+		"Tuning Rifle" 5
+		
+ship "Hailstorm" "Hailstorm (Remnant)"
+	outfits
+		"Crucible-Class Steering"
+		"Crystal Capacitor"
+		"EMP Torpedo" 144
+		"EMP Torpedo Storage Bay"
+		"Emergency Ramscoop"
+		"Forge-Class Thruster"
+		Hyperdrive
+		"Millennium Cell"
+		"Quantum Key Stone"
+		"Systems Core (Small)"
+		"Teciimach Bay" 6
+		"Teciimach Pod" 4
+		
+ship "Gunboat" "Gunboat (Remnant)"
+	outfits
+		"Anvil-Class Engine"
+		"Bellows-Class Afterburner"
+		"Crucible-Class Thruster"
+		"Crystal Capacitor" 3
+		"Emergency Ramscoop"
+		Hyperdrive
+		"Inhibitor Cannon" 2
+		"Millennium Cell"
+		"Point Defense Turret"
+		"Quantum Keystone"
+		"Small Heat Shunt" 2
+		"Small Radar Jammer"
+		"Systems Core (Small)"
+		"Tactical Scanner"
+		
+ship "Stealth Gunboat" "Stealth Gunboat (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crucible-Class Thruster"
+		"Crystal Capacitor"
+		"Emergency Ramscoop"
+		"Forge-Class Steering"
+		Hyperdrive
+		"Inhibitor Cannon" 2
+		"Millennium Cell"
+		"Quantum Key Stone"
+		"Research Laboratory" 2
+		"Salvage Scanner" 2
+		"Small Radar Jammer"
+		"Systems Core (Small)"
+		"Thermal Repeater Rifle" 3
+		
+ship "Bastion" "Bastion (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 2
+		"Emergency Ramscoop"
+		"Epoch Cell"
+		Fire-Lance 4
+		"Forge-Class Thruster"
+		Hyperdrive
+		"Large Heat Shunt"
+		"Point Defense Turret"
+		"Quantum Key Stone"
+		"Salvage Scanner"
+		"Smelter-Class Steering"
+		"Systems Core (Medium)"
+		"Tuning Rifle" 32
+		
+ship "Heavy Auxiliary" "Heavy Auxiliary (Remnant)"
+	outfits
+		"Aeon Cell"
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 6
+		"EMP Torpedo" 52
+		"EMP Torpedo Storage Bay"
+		"Fuel Pod" 2
+		"Fuel Processor"
+		"Large Heat Shunt" 2
+		"Large Radar Jammer" 2
+		"Point Defense Turret" 2
+		"Quantum Keystone"
+		"Scram Drive"
+		"Smelter-Class Steering" 2
+		"Smelter-Class Thruster" 2
+		"Systems Core (Medium)"
+		"Teciimach Bay" 2
+		"Thrasher Turret" 2
+		"Tuning Rifle" 20
+		
+ship Firebird "Firebird (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 2
+		"Forge-Class Steering"
+		"Forge-Class Thruster"
+		"Fuel Processor"
+		Hyperdrive
+		"Inhibitor Cannon" 4
+		"Millennium Cell" 2
+		"Point Defense Turret" 2
+		"Quantum Key Stone"
+		"Systems Core (Small)"
+		"Tuning Rifle" 4
+		
+ship Frigate "Frigate (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor"
+		"EMP Torpedo" 80
+		"Forge-Class Steering"
+		"Forge-Class Thruster"
+		"Fragmentation Grenades" 5
+		"Fuel Processor"
+		Hyperdrive
+		"Large Radar Jammer"
+		"Laser Rifle" 5
+		"Millennium Cell" 2
+		"Quantum Key Stone"
+		"Security Station"
+		"Small Heat Shunt"
+		"Systems Core (Small)"
+		"Teciimach Bay" 4
+		"Thrasher Turret" 2
+		"Tuning Rifle" 17
+		
+ship Osprey "Osprey (Remnant)"
+	outfits
+		"Breeder Reactor"
+		"Crystal Capacitor"
+		"Forge-Class Thruster"
+		"Fuel Processor"
+		"Grab-Strike Turret"
+		Hyperdrive
+		"Inhibitor Cannon" 4
+		"Large Heat Shunt"
+		"Large Radar Jammer"
+		"Laser Rifle" 3
+		"Point Defense Turret"
+		"Quantum Key Stone"
+		"Smelter-Class Steering"
+		"Systems Core (Small)"
+		"Tuning Rifle" 16
+		
+ship Splinter "Splinter (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 2
+		"Forge-Class Steering"
+		"Forge-Class Thruster"
+		"Fuel Processor"
+		Hyperdrive
+		"Large Heat Shunt" 2
+		"Laser Rifle"
+		"Millennium Cell"
+		"Point Defense Turret" 2
+		"Proton Gun" 2
+		"Quantum Key Stone"
+		"Small Radar Jammer" 2
+		"Systems Core (Medium)"
+		"Thermal Repeater Rifle" 14
+		"Tuning Rifle" 9
+		
+ship Carrier "Carrier (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 3
+		"EMP Torpedo" 128
+		"EMP Torpedo Storage Bay" 4
+		"Fragmentation Grenades" 40
+		"Fuel Pod" 3
+		"Fuel Processor"
+		"Fusion Reactor"
+		Hyperdrive
+		"Large Heat Shunt" 2
+		"Large Radar Jammer" 2
+		"Laser Rifle" 40
+		"Point Defense Turret" 2
+		"Quantum Key Stone"
+		"Salvage Scanner"
+		"Security Station" 2
+		"Smelter-Class Steering"
+		"Systems Core (Medium)" 2
+		"Teciimach Bay" 4
+		"Thermal Repeater Rifle" 61
+		"Thrasher Turret"
+		"Thruster (Planetary Class)"
+		"Tuning Rifle" 43
+		
+ship Cruiser "Cruiser (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Crystal Capacitor" 3
+		"EMP Torpedo" 64
+		"EMP Torpedo Storage Bay" 2
+		"Fragmentation Grenades" 20
+		"Fuel Processor"
+		"Fusion Reactor"
+		Hyperdrive
+		"Inhibitor Cannon" 2
+		"Large Heat Shunt" 2
+		"Large Radar Jammer" 2
+		"Laser Rifle" 20
+		"Particle Cannon" 2
+		"Point Defense Turret" 2
+		"Quantum Key Stone"
+		"Research Laboratory"
+		"Salvage Scanner"
+		"Security Station"
+		"Smelter-Class Steering"
+		"Smelter-Class Thruster"
+		"Systems Core (Small)"
+		"Teciimach Bay" 2
+		"Thermal Repeater Rifle" 16
+		"Thrasher Turret" 2
+		"Tuning Rifle" 10
+		
+ship Dreadnought "Dreadnought (Remnant)"
+	outfits
+		"Breeder Reactor"
+		"Crystal Capacitor" 2
+		"EMP Torpedo" 64
+		"EMP Torpedo Storage Bay" 2
+		"Fuel Processor"
+		Hyperdrive
+		"Inhibitor Cannon" 2
+		"Large Heat Shunt" 2
+		"Laser Rifle" 25
+		"Millennium Cell"
+		"Point Defense Turret" 2
+		"Quantum Key Stone"
+		"Salvage Scanner"
+		"Small Radar Jammer"
+		"Steering (Planetary Class)" 2
+		"Systems Core (Small)"
+		"Teciimach Bay" 2
+		"Thermal Repeater Rifle" 15
+		"Thrasher Turret" 3
+		"Thruster (Planetary Class)"
+		"Tuning Rifle" 33
+		
+ship Falcon "Falcon (Remnant)"
+	outfits
+		"Bellows-Class Afterburner"
+		"Breeder Reactor"
+		"Crystal Capacitor" 2
+		"EMP Torpedo" 64
+		"EMP Torpedo Storage Bay" 2
+		"Emergency Ramscoop"
+		Fire-Lance 2
+		"Forge-Class Steering"
+		Hyperdrive
+		"KP-6 Photovoltaic Panel" 2
+		"Large Heat Shunt"
+		"Large Radar Jammer"
+		"Laser Rifle" 15
+		"Point Defense Turret"
+		"Quantum Key Stone"
+		"Salvage Scanner"
+		"Small Heat Shunt"
+		"Systems Core (Small)"
+		"Teciimach Bay" 2
+		"Thermal Repeater Rifle" 21
+		"Thrasher Turret" 2
+		"Thruster (Planetary Class)"
+		"Tuning Rifle" 13
+		
+ship "Combat Drone" "Combat Drone (Remnant)"
+	outfits
+		"Anvil-Class Engine"
+		"Beam Laser"
+		Supercapacitor
+		"nGVF-AA Fuel Cell"
+		
+ship Dropship "Dropship (Remnant)"
+	outfits
+		"Anvil-Class Engine"
+		"Beam Laser" 2
+		"D14-RN Shield Generator"
+		"Small Radar Jammer"
+		Supercapacitor
+		"Thermal Repeater Rifle" 3
+		"Tuning Rifle" 2
+		"nGVF-BB Fuel Cell"
+		
+ship Lance "Lance (Remnant)"
+	outfits
+		"Anvil-Class Engine"
+		"D14-RN Shield Generator"
+		"Small Radar Jammer" 2
+		Supercapacitor 4
+		"Thermal Repeater Rifle"
+		"Thrasher Cannon" 2
+		"nGVF-AA Fuel Cell"
+		
+
+# \close
+
 #Items for testing, remove before publishing
 shipyard "EAshiptester"
 	"Supercruiser"
@@ -1537,4 +1949,5 @@ planet "Viminal"
 	add shipyard "Navy Basics"
 	add shipyard "Navy Advanced"
 	add shipyard "FW tester"
+
 # \close

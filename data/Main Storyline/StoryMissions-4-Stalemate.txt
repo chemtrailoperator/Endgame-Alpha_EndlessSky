@@ -178,7 +178,7 @@ mission "Endgame Alpha 4.1"
 			choice
 				"Really? That's all?"
 				"Sounds simple enough."
-			`	"But of course, it isn't. The kind of technology being used is almost certainly not human in origin, so your inquiries will be beyond the normal areas. You are very...well travelled, possibly the most travelled person readily available in the galaxy. Additionally, these inquiries must be made with tact, discretion, and diplomacy, as the first official contact some of these species will have will be an empire in distress. It will be important to set the right tone and ensure that even more trouble does not well up from beyond the hyperspace lanes."`
+			`	"But of course, it isn't. The kind of technology being used is almost certainly not human in origin, so your inquiries will be beyond the normal areas. You are very...well-travelled, possibly the most travelled person readily available in the galaxy. Additionally, these inquiries must be made with tact, discretion, and diplomacy, as the first official contact some of these species will have will be an empire in distress. It will be important to set the right tone and ensure that even more trouble does not well up from beyond the hyperspace lanes."`
 			`	Raven adds, "Please begin your inquiries with the Hai, and move through each faction from there. We'll tell you where to go for each one." She shrugs. "Should be pretty easy, honestly."`
 			choice
 				`	(Accept the job.)`
@@ -384,11 +384,21 @@ mission "Endgame Alpha 4.3.1"
 			`	To The Attention of: <last>, <first>, Commander, Republic Navy`
 			`	Alpha Joint Task Force, New Argentina, Vindemiatrix`
 			`	PRIORITY HIGH-SECRET`
-			`		You are hereby required and directed to contact the Remnant with all possible expedition. Any expenditure and cost is acceptable and authorized.`
+			`		You are hereby required and directed to contact the Remnant with all possible expedition. Any reasonable expenditure and cost is acceptable and authorized.`
 			`	By Order Of Admiral Alzaga, New Argentina, Vindemiatrix.`
 			``
 			`	Also attached is a note from Raven saying she'll send any more updates to you as soon as possible. She also says that the situation is much worse, with Alpha forces continuing to strengthen and expand. The Atria system also collapsed while you were working in Hai space.`
 				accept
+	on enter "Terminus"
+		dialog `A ship disappears off your sensors the moment you enter the system. Shortly after there is a flash of grey and a ripple in the wormhole.`
+	on enter "Cardea"
+		conversation
+			`The bright colors of the wormhole fade away, replaced by the deeper reds of the Ember Waste. As the system smears its way into focus, a huge Remnant armada becomes visible. Your alarms begin to sound, for both homing systems and gun locks. A hail reaches your ship, a voice singing eerily through your speakers.`
+			`	"Captain <last>, we recognize your transponder code. Travel with great haste to Viminal."`
+	on enter "Insitor"
+		dialog `More Remnant ships are waiting in this system. You receive a similar hail with the same instructions.`
+	on enter "Arculus"
+		dialog `The system is teeming with warships`
 # \close			
 			
 # \close
