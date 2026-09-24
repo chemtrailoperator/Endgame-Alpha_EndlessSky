@@ -1379,7 +1379,7 @@ ship "Stealth Gunboat"
 	explode "small explosion" 20
 	explode "medium explosion" 15
 	"final explode" "final explosion small"
-	description "The latest in low-observable technology, the Stealth Gunboat is difficult to spot optically, and a full ship-borne radar system is needed to find it electromagnetically. This means that missiles have great difficulty even getting a lock, much less a hit. The ship's design also contains any thermal signatures, making infrared tracking difficult as well. All weapons are stored internally, and this little craft is nuclear-capable."
+	description "The latest in low-observable technology, the Stealth Gunboat is difficult to spot optically, and a full ship-borne radar system is needed to find it electromagnetically. This means that missiles have great difficulty even getting a lock, much less a hit. Other modifications include thermal signature reduction, making infrared tracking difficult as well. All weapons are stored internally, and this little craft is nuclear-capable."
 
 ship "Supercarrier"
 	sprite "ship/supercarrier"
