@@ -1,5 +1,5 @@
 
-# Copyright (c) 2026 by ChemtrailOperator
+# Copyright (c) 2026 by ChemtrailOperator and Living_Adblocker
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -389,6 +389,7 @@ mission "Endgame Alpha 4.3.1"
 			``
 			`	Also attached is a note from Raven saying she'll send any more updates to you as soon as possible. She also says that the situation is much worse, with Alpha forces continuing to strengthen and expand. The Atria system also collapsed while you were working in Hai space.`
 				accept
+#add terns in all the ember waste systems, add fleets in these ones obviously. Terns also in Polerius, Paeli, Gerenus, the Remnant systems, and Nona.
 	on enter "Terminus"
 		dialog `A ship disappears off your sensors the moment you enter the system. Shortly after there is a flash of grey and a ripple in the wormhole.`
 	on enter "Cardea"
@@ -398,7 +399,78 @@ mission "Endgame Alpha 4.3.1"
 	on enter "Insitor"
 		dialog `More Remnant ships are waiting in this system. You receive a similar hail with the same instructions.`
 	on enter "Arculus"
-		dialog `The system is teeming with warships`
+		dialog `The system is teeming with warships and transports. Much of the work seems to be removing things from Viminal and carrying them out of the system or onto nearby planets.`
+	on enter "Cinxia"
+		dialog `The system is teeming with warships and transports. Much of the work seems to be removing things from Caelian and carrying them out of the system or onto nearby planets.`
+	on enter "Pantica"
+		dialog `The system is teeming with warships and transports. Much of the work seems to be removing things from Aventine and carrying them out of the system or onto nearby planets.`
+	on enter "Nona"
+		dialog `A large number of Remnant ships are here, apparently travelling to and from Siteria.`
+	on complete
+		conversation
+			`On stepping out of your ship, you see something that might be a considerable pandemonium if it were not so quiet. The only noise comes from ships and tools, there are no shouts, no frustrated tirades, not even normal conversation. You had become used to the silence of Remnant society, but usually somewhere someone would be singing. Now there is only work being done, signing is done quickly and concisely, and no one opens their mouths. You'd best head to the spaceport to find a government official.`
+
+mission "Endgame Alpha 4.3.2"
+	priority
+	name "Carry a message to <destination> in the <system> system."
+	description "Carry an urgent message to Siteria in the Nona system where a secret bunker is being built."
+	destination "Siteria"
+	source "Viminal"
+	to offer
+		has "Endgame Alpha 4.3.1: done"
+	on offer
+		conversation
+			`The spaceport, clogged with activity, takes some time to navigate. You haven't become quite accustomed to reading the strange Remnant script, but what you can make out gets you to a secure area where you are stopped at a security checkpoint. `
+			`	The soldier at the gate looks strangely at you, and given your current abnormal, but clearly military uniform, that's not very surprising.`
+				to display
+					has "outfit (installed): Navy Uniform"
+			`	The soldier at the gate looks strangely at you, and given your current clearly not-Remnant clothes, that's not very surprising.`
+				to display
+					not "outfit (installed): Navy Uniform"
+			choice
+				`	"May I speak to the manager?"`
+				`	"Take me to your leader."`
+					goto manager
+				`	(Show him your Remnant Capital License)`
+					goto capital
+				`	(Do nothing.)`
+			`	The soldier stares at you for a moment before pressing a button on his desk. "Can- me help you?" he says slowly.`
+			choice
+				`	(Sign "I have come on very important business and I must speak to Remnant leadership.")`
+					goto leadersign
+				`	"I have come on very important business and I must speak to Remnant leadership."`
+			`	The soldier shakes his head slowly and purses his lips. He presses the button on his desk again. This time for slightly longer. he continues to stare at you looking very confused.`
+			choice
+				`	(Wait.)`
+			`	After another very awkward minute, a prefect comes walking up the secure hallway. He signs to you slowly. "Greetings, I heard a report that Captain <last> was on his way from the Ember Waste, and it proves true. Please come with me."`
+				goto leader
+			label leadersign
+			`	The poor guard looks inexpressibly relieved and signs back quickly. "I have summoned my superior. He should be here soon." He presses the button again, for slightly longer.`
+			label summoned
+			`	After an awkward minute, a prefect comes walking up the secure hallway. He signs to you slowly. "Greetings, I heard a report that Captain <last> was on his way from the Ember Waste, and thankfully it proves true. Please come with me."`
+				goto leader
+			label manager
+			`	He presses a button on his desk firmly. "He is summoned." The soldier says succinctly.`
+				goto summoned
+			label capital
+			`	His eyes go wide as he sees your license, and presses a button on his desk. He signs quickly, "Please be patient for a moment. My leadership is on the way."`
+				goto summoned
+			label leader
+			` He leads you deeper into the facility, past the normal spaceport decorations, until you take a turn downwards, when the walls become bare stone. The tunnel ends abruptly after a corner, leaving you facing a metal bulkhead with a small door built into the center. As the prefect enters in the required codes, you glance around the end of the corridor. Above your head, like an ominous disco ball, is a miniature point defense turret, presumably ready to fry any unwanted visitors. At every corner is a reinforced camera and sensor package. The prefect notices your interest and laughs to himself before signing to you. "You have noticed that we take the defense of our hardened facilities seriously. It would be most unfortunate if even a common citizen came into this compound, and this is considered our fourth most important facility if we are discovered by the Alphas. Yes, we know of your current situation. That is why you are here, all perspectives must be considered, since it is a matter of survival. You have been granted our highest level of security clearance. We have determined the risk is low compared with others.`
+			label questions
+			choice
+				`	"How do you know of the new war?"`
+					to display
+						not "EA 4.3.2 intel"
+					goto intel
+				`	"What are the other facilities?"`
+					to display
+						not "EA 4.3.2 bunkers"
+					goto bunkers
+				`	"What is in this compound?"`
+			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than we fled to our current home. `
+	on complete
+		
 # \close			
 			
 # \close
