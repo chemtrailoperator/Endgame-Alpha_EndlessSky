@@ -338,6 +338,7 @@ mission "Endgame Alpha 4.2"
 				accept
 	on accept
 		event "EA secure vindemiatrix"
+		event "EA Atria Takeover"
 	on enter "Vindemiatrix"
 		conversation
 			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out. The New Argentina controllers hail you as soon as you enter the system, asking that you land immediately.`
@@ -522,7 +523,7 @@ mission "Endgame Alpha 4.3.2"
 
 # 4.5.1 After returuning from Avgi, moved to frontline to help \open
 
-# 4.5.2 Loss of system after Alpha attack \fold
+# 4.5.2 Loss of Kornephoros after Alpha attack \fold
 
 # \close
 	

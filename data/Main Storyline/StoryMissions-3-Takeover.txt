@@ -451,12 +451,12 @@ mission "Endgame Alpha 3.11"
 				`	"Do that, then."`
 				`	"Forget it."`
 					goto eartnitwowander
-			`	He starts off through the crowds, turning every few steps to make sure you are following. After a short walk the recruit points at a you lieutenant. "That's him sir, I have to get back to work soon or I'll catch it." You thank him for your time and tap the lieutenant on the shoulder. He spins around saying loudly, "What now-- Oh... How can I help you sir?" Snapping to attention and saluting in the process.`
+			`	He starts off through the crowds, turning every few steps to make sure you are following. After a short walk the recruit points at a you lieutenant. "That's him sir, I have to get back to work soon or I'll catch it." You thank him for your time and tap the lieutenant on the shoulder. He spins around saying loudly, "What now-- Oh... How can I help you?" Snapping to attention and saluting in the process.`
 			`	"Do you know where I can find Admiral Alzaga?" you ask.`
 			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
 				goto eartnitwoend
 			label eartnitwowander
-			`	You start to walk away from your ship into the busy crowds, and a young lieutenant catches your eye and comes over quickly. "How can I help you sir?" he asks cheerfully.`
+			`	You start to walk away from your ship into the busy crowds, and a young lieutenant catches your eye and comes over quickly. "How can I help you?" he asks cheerfully.`
 			choice
 				`	"Do you know where I can find Admiral Alzaga?"` 
 			`	He quickly replies without any hesitation as if he's gotten the question before: "I don't know personally but the Deputy Commander of Operations would, you'll find him in the Spaceport."`
@@ -559,7 +559,7 @@ mission "Endgame Alpha 3.13"
 mission "Endgame Alpha 3.14"
 	outfitter
 	clearance
-	name "Investigate Alpha Acitivty"
+	name "Investigate Alpha Activty"
 	description "Travel to the Fumalzenarah system and investigate what is making the Alpha war machine tick."
 	source "New Argentina"
 	destination "Sagarra"

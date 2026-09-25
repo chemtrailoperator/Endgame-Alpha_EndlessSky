@@ -55,7 +55,7 @@
 
 # 5.3.1 Travel to Geminus to pick up modified Avgi tech \open
 
-# Informed that engineers stayed behind to continue working and because they like it there but sent a jump equipped one-way probe into human hyperspace relays that securely upload to Republic systems with outfit information
+# Informed that engineers stayed behind to continue working and because they like it there but sent a jump equipped one-way probe into human hyperspace relays that securely uploaded to Republic systems with outfit information
 # Introduce lasers at Geminus and lasing mediums
 
 # 5.3.2 Escort supply fleet to New Argentina to deliver weapon systems to outfitter \fold

@@ -174,21 +174,12 @@ outfitter "Navy ECM"
 	"ECM Suite Gen 2"
 	"Inductive Jamming Array"
 
-event "EA Geminus Upgrade"
+event "EA Restore Geminus"
 	planet Geminus
 		add outfitter "Navy ECM"
 		add shipyard "Navy Basics"
 		add shipyard "Navy Advanced"
 
-mission "EA Geminus Upgrade"
-	landing
-	invisible
-	source Geminus
-	to offer
-		has "free worlds main plot completed"
-	on offer
-		event "EA Geminus Upgrade"
-		fail
 
 government "Omega"
 	swizzle 1

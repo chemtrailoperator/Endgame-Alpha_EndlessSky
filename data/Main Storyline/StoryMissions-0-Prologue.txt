@@ -12,6 +12,16 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+#Restore Geminus Shipyard
+mission "Endgame Alpha X0.0"
+	landing
+	invisible
+	to offer
+		has "EA FW Raven Contact: offered"
+	on offer
+		event "EA Restore Geminus"
+		fail
+		
 mission "EA FW Raven Contact"
 	landing
 	priority
