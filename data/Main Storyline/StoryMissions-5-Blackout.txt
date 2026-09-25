@@ -1,0 +1,68 @@
+
+# Copyright (c) 2026 by ChemtrailOperator and Living_Adblocker
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+# This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
+
+# 5.1 Syndicate Weapon System \open
+
+# 5.1.1 Suddenly pulled from front line for more special Navy business \open
+
+# 5.1.2 Travel from NA to Syndicate headquarters \fold
+
+# 5.1.3 Travel from headquarters with access codes to secret system \fold
+
+# 5.1.4 Travel from syndicate to Geminus to pick up stealth gunboat \fold
+
+# 5.1.5 Deliver to Syndicate \fold
+
+# Weapon is essentially a super-bomb built from a jump drive
+
+# 5.1.6 Wait for 7 days before being recalled \fold
+
+# 5.1.7 Optional mission to spy on the Syndicate for the Republic during seven day wait \fold
+
+# 5.1.8 Take complete weapon system directly to Sagarra to detonate it (leave on surface an retreat to unoccupied space \fold
+
+# \close
+
+# 5.2 Blackout \fold
+
+# 5.2.1 Detonation, all hyperspace relays in Alpha-occupied systems go down \open
+
+# Unvisit all occupied systems
+
+# 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
+
+# Unknown status of all systems, 100% comms dark
+# Also wait for Syndicate to amass battle fleet to assist
+# No activity in frontline systems from Alphas
+
+# (Create Alpha governments that attack each other)
+
+# \close
+
+# 5.3 Avgi tech \fold
+
+# 5.3.1 Travel to Geminus to pick up modified Avgi tech \open
+
+# Informed that engineers stayed behind to continue working and because they like it there but sent a jump equipped one-way probe into human hyperspace relays that securely upload to Republic systems with outfit information
+# Introduce lasers at Geminus and lasing mediums
+
+# 5.3.2 Escort supply fleet to New Argentina to deliver weapon systems to outfitter \fold
+
+# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems \fold
+
+# \close
+
+
+# \close
