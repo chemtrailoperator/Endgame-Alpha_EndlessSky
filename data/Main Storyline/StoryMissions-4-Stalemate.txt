@@ -1,5 +1,6 @@
 
-# Copyright (c) 2026 by ChemtrailOperator and Living_Adblocker
+# Copyright (c) 2026 by ChemtrailOperator 
+# Copyright (c) 2026 by Living_Adblocker
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -410,6 +411,7 @@ mission "Endgame Alpha 4.3.1"
 		conversation
 			`On stepping out of your ship, you see something that might be a considerable pandemonium if it were not so quiet. The only noise comes from ships and tools, there are no shouts, no frustrated tirades, not even normal conversation. You had become used to the silence of Remnant society, but usually somewhere someone would be singing. Now there is only work being done, signing is done quickly and concisely, and no one opens their mouths. You'd best head to the spaceport to find a government official.`
 
+# 4.3.2 Remnant Messaging \fold
 mission "Endgame Alpha 4.3.2"
 	priority
 	name "Carry a message to <destination> in the <system> system."
@@ -472,5 +474,56 @@ mission "Endgame Alpha 4.3.2"
 	on complete
 		
 # \close			
-			
+
+# 4.4 Avgi Story \fold
+
+# 4.4.1 Travel to Avgi seat \open
+
+# 4.4.2 Move to military complex \fold
+
+# 4.4.3 Discuss Issues with Alphas \fold
+
+# Alphas are threatening Humanity etc.
+# Told that the Alphas made it to Avgi space at one point, but were eventually dishonorably exterminated because they were becoming a serious problem
+
+# 4.4.4 Travel through Tangled Shroud to Alpha planet \fold
+
+# Planet beyond Tangled Shroud originally uninhabited, but Alphas settled there,
+# You find structures similar in design, but nowhere near as big and none obviously geothermally powered.
+# Told that the Alphas beacme unruly and uncontrollable, and were exterminated in a surprise attack, some people resented it and strengthened the Dissonance
+# You were not told about it because you were obviously not an Alpha and the whole thingg was somewhat of an embarrassment to the government at the time.
+
+# 4.4.5 Escort return to military facility \fold
+
+# See a bunch of weapons factories, and ask if you can bring engineers in to copy the technology
+
+# 4.4.6 Travel to New Argentina to request teams \fold
+
+# 4.4.7 Pick up various research teams \fold
+# 4.4.7.1 Travel to Kraz to pick up research team \open
+
+# 4.4.7.2 Travel to Zubenelgenubi to pick up research team \fold
+
+# 4.4.7.3 Travel to Deep research planet to pick up research team \fold
+
+# 4.4.7.4 Travel to Syndicate planet for research team \fold
+
+# Told that the Syndicate requested to participate because they have experience attempting to clone alien tech, can also provide jump drives for the teams to return from the Avgi if needed
+
+# 4.4.7.5 Travel to Alpha Centauri to pick up Republic team \fold
+
+# \close
+
+# 4.4.8 Carry research teams to Avgi research facility \fold
+
+# \close
+
+# 4.5 Stalemate Wrap-Up \fold
+
+# 4.5.1 After returuning from Avgi, moved to frontline to help \open
+
+# 4.5.2 Loss of system after Alpha attack \fold
+
+# \close
+	
 # \close
