@@ -10,7 +10,7 @@ Make sure you create a game save at the start of the story, the storyline is cur
       
 This storyline is designed for very late-game players, who have completed the entire existing vanilla Alpha storyline and are well traveled in the galaxy.
 
-The code is available in the releases, however, it will not be updated until v1, so download a ZIP directly from the code to get the most recent version. No guarantees about stability.
+The code is available in the releases, however, it may not be updated regularly, so download a ZIP directly from the code to get the most recent version. No guarantees about stability.
 
 Coming Soon:
 Completion of central storyline (nov. 2026)
