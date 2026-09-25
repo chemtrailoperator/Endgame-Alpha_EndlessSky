@@ -1342,7 +1342,7 @@ ship "Stealth Gunboat"
 		"drag" 2.8
 		"heat dissipation" .99
 		"fuel capacity" 600
-		"cargo space" 50
+		"cargo space" 25
 		"outfit space" 270
 		"weapon capacity" 100
 		"cooling" 1000
