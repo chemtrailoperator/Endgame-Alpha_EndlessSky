@@ -1,7 +1,7 @@
 Production Notes
 Delete before publishing
 
-Effected Systems:
+Alpha Effected Systems:
 	Belenos
 	Thuban
 	Men
@@ -17,8 +17,15 @@ Effected Systems:
 	Aldhibain
 	Atria
 	Lesath
+	Wei
+	Kornephoros
+	Girtab
+	Rastaban
+	Sabik
+	Sargas
 	
-Occupied Systems:
+	
+Alpha Occupied Systems:
 	Belenos
 	Thuban
 	Men
@@ -30,6 +37,11 @@ Occupied Systems:
 	Graffias
 	Antares
 	Han
+	Atria
+	Dschubba
+	Aldhibain
+	Kornephoros
+	Sargas
 	
 Added Systems:
 	Fumalzenarah
@@ -49,6 +61,7 @@ New Outfits:
 	Mysterious Goo
 	Alpha Genome
 	(Delta Genome)
+	
 New Ships:
 	Hailstorm
 	Hawkeye
@@ -67,6 +80,8 @@ New Ships:
 Remove Before Testing Components
 	EAships shipyard definition
 	EndgameAlpha Development Patch missions
+	This Document
+	
 	
 	
 

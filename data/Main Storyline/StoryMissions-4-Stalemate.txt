@@ -473,12 +473,17 @@ mission "Endgame Alpha 4.3.2"
 				`	"What is in this compound?"`
 			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than we fled to our current home. `
 	on complete
-		
+		event "EA Dschubba Takeover"
+
 # \close			
 
 # 4.4 Avgi Story \fold
 
 # 4.4.1 Travel to Avgi seat \open
+
+# Lose Aldhibain system as you leave (use timer to display after three or so jumps)
+# Sabik Frontline
+# Kornephoros Frontline
 
 # 4.4.2 Move to military complex \fold
 
@@ -500,6 +505,8 @@ mission "Endgame Alpha 4.3.2"
 
 # 4.4.6 Travel to New Argentina to request teams \fold
 
+# On takeoff, lose Kornephoros, Wei and Sargas frontline, lose Sargas slightly afterwards because it gets cut off from reinforcement
+
 # 4.4.7 Pick up various research teams \fold
 # 4.4.7.1 Travel to Kraz to pick up research team \open
 
@@ -517,6 +524,7 @@ mission "Endgame Alpha 4.3.2"
 
 # 4.4.8 Carry research teams to Avgi research facility \fold
 
+# Rastaban, Girtab Frontline
 # \close
 
 # 4.5 Stalemate Wrap-Up \fold
