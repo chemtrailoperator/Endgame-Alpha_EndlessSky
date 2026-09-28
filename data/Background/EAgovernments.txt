@@ -1,0 +1,73 @@
+
+# Copyright (c) 2026 by ChemtrailOperator
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+government "Alpha (Hidden)"
+	"display name" "Independent"
+	swizzle 6
+	"crew attack" 1.5
+	"crew defense" 2.5
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+	
+government "EA Alpha Faction I"
+	"display name" "Alpha"
+	swizzle 2
+	"crew attack" 1.5
+	"crew defense" 2.5
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+	"default attitude" -.01
+	"attitude toward"
+		"Republic" -2
+		"Free Worlds" -2
+		"Syndicate" -2
+		"EA Alpha Faction II" -1
+		"EA Alpha Faction III" -1
+		
+government "EA Alpha Faction II"
+	"display name" "Alpha"
+	swizzle 2
+	"crew attack" 1.5
+	"crew defense" 2.5
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+	"default attitude" -.01
+	"attitude toward"
+		"Republic" -2
+		"Free Worlds" -2
+		"Syndicate" -2
+		"EA Alpha Faction I" -1
+		"EA Alpha Faction III" -1
+
+government "EA Alpha Faction III"
+	"display name" "Alpha"
+	swizzle 2
+	"crew attack" 1.5
+	"crew defense" 2.5
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+	"default attitude" -.01
+	"attitude toward"
+		"Republic" -2
+		"Free Worlds" -2
+		"Syndicate" -2
+		"EA Alpha Faction I" -1
+		"EA Alpha Faction II" -1
+		
+		
