@@ -2204,8 +2204,14 @@ event "EA Nunki Takeover"
 
 # Planet Wreckings \fold
 
-# Planet Restorations \fold
-event "EA alphas defeated"
+event "EA Clink Trashed"
+
+# System Conquest Frontlines \fold
+
+# System Conquest Retake \fold
+
+# System Back-To-Normal \fold
+
 
 # \close
 

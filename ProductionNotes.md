@@ -48,7 +48,7 @@ Added Systems:
 	<Unnamed Syndicate System>
 
 Trashed Systems and Planets:
-
+	Clink (Pock-mark with nuclear craters.)
 
 New Outfits:
 	(Interference Turret)

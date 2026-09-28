@@ -13,3 +13,24 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 # This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
+
+# Storyline point to put in somewhere: systems appear shrouded and cannot be listed as visited because an error correction system built into hyperspace relays removes unresponsive nodes from a ship's database even if they keep reappearing, this also enhances safety to limit the access to unstable systems
+
+# 6.1 Relieve Pressure on Rim \open
+
+# 6.1.1 Told on Rim systems to assist in organizing a huge push to relieve pressure on Rim systems that are blocked off. Stop at a bunch of planets along the way accumulating a massive Free Worlds and volunteer fleet. Land at Sabik, nothing visible beyond Sabik towards Aldhibain or Kornephoros. Decided to attack Kornephoros first to meet up with Republic forces. Containment forces holding the line at Lesath
+
+# 6.1.2 Take off and push into Kornephoros system, planning to focus all fleeing Alpha ships toward Clink to minimize casualties. Major factionas of Alpha ships are fighting each other but also attack you. (Have Republic ships jump into the system with you somehow) Land on Clink to mop things up since it appears the Alphas were fortifying there.
+
+# 6.1.3 Spend time in upper atmosphere to help clean things up, shooting stuff. Republic comes in and uses nuclear weapons to destroy a major group, detonates in several other locations to ensure no survivors. They got report that the survivors on Deep reported that the mining corporation was massacred anyway. (EA Conquest Kornephoros)
+
+# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.)
+
+# 6.2 Choose whether to go for Sargas or Aldhibain first
+
+
+
+
+
+# \close
+

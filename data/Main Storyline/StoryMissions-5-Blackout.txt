@@ -39,6 +39,7 @@
 
 # 5.2.1 Detonation, all hyperspace relays in Alpha-occupied systems go down \open
 
+# Mechanics change: frontline systems now have small, occasional Alpha fleets, All conquest systems and conquest frontline systems have regular, small incursions.
 # Unvisit all occupied systems
 
 # 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
@@ -60,7 +61,7 @@
 
 # 5.3.2 Escort supply fleet to New Argentina to deliver weapon systems to outfitter \fold
 
-# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems \fold
+# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Kraz \fold
 
 # \close
 
