@@ -78,6 +78,8 @@ New Ships:
 	Civil Gunboat
 	Civil Rainmaker
 	Escape Ship
+	Enforcement Drone
+	Chemtrail Boat (Person Ship Only)
 	
 Remove Before Testing Components
 	EAships shipyard definition
