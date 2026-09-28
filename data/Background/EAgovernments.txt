@@ -70,4 +70,28 @@ government "EA Alpha Faction III"
 		"EA Alpha Faction I" -1
 		"EA Alpha Faction II" -1
 		
-		
+government "17th Combat Group"
+	swizzle 0
+	color "governments: Republic"
+	"crew attack" 1.2
+	"crew defense" 2.2
+	
+	"player reputation" 2
+	"attitude toward"
+		"Alpha" -1
+		"EA Alpha Faction I" -2
+		"EA Alpha Faction II" -2
+		"EA Alpha Faction III" -2
+		"Bounty" -.3
+		"Bounty (Disguised)" -.3
+		"Merchant" .25
+		"Militia" .1
+		"Pirate" -.3
+		"Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Neutral" .1
+	"friendly hail" "friendly navy"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "hostile navy"
+	"hostile disabled hail" "hostile disabled"
+	"ship bribe rejection hail" "ship bribe rejection navy"
