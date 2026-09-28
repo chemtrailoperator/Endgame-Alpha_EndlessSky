@@ -12,15 +12,6 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
-government "Alpha (Hidden)"
-	"display name" "Independent"
-	swizzle 6
-	"crew attack" 1.5
-	"crew defense" 2.5
-	"player reputation" -1000
-	"bribe" 0
-	"fine" 0
-
 
 phrase "EA package delivered"
 	word
