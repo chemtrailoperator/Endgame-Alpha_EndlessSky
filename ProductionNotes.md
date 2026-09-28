@@ -48,7 +48,9 @@ Added Systems:
 	<Unnamed Syndicate System>
 
 Trashed Systems and Planets:
+	Deep (Remove 50% of lights)
 	Clink (Pock-mark with nuclear craters.)
+	Lichen (Brown blotches and lines across green surface)
 
 New Outfits:
 	(Interference Turret)

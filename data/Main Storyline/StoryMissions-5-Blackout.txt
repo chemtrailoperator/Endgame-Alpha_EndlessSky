@@ -61,7 +61,7 @@
 
 # 5.3.2 Escort supply fleet to New Argentina to deliver weapon systems to outfitter \fold
 
-# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Kraz \fold
+# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Kraz. Also bring plans to manufacture gunboats and introduce Hailstorm here. \fold
 
 # \close
 

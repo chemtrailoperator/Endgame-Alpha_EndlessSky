@@ -24,9 +24,36 @@
 
 # 6.1.3 Spend time in upper atmosphere to help clean things up, shooting stuff. Republic comes in and uses nuclear weapons to destroy a major group, detonates in several other locations to ensure no survivors. They got report that the survivors on Deep reported that the mining corporation was massacred anyway. (EA Conquest Kornephoros)
 
-# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.)
+# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB, told that Republic will not use Nuclear weapons except on assured Alpha-only targets, not on inhabited areas. (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.)
 
-# 6.2 Choose whether to go for Sargas or Aldhibain first
+# 6.2 Choose whether to go for Sargas or Aldhibain first, conquest Aldhibain, Sargas, Dschubba, and Atria \fold
+
+# 6.2A.1 On Deep, told that forces have regrouped and have been reinforced, intend to push forward to press as much advantage as possible, comment that Alpha forces are disorganized and fighting with each other, but just about every ship in the system will take off if an ivnasion fleet appears Choose between Aldhibain or Sargas as the next target
+
+# If you go for Aldhibain instead of Sargas, and then ingore it, you get a breakout and even more mess later on.
+# A storyline is Aldhibain, B storyline for Sargas
+
+# 6.2A.2 Take off and jump towards Aldhibain, support fleets jump from Sabik as well. (Add note about how they are coordinating through the blackout by using couriers) Big battle in Aldhibain, land on the planet.
+
+# 6.2A.3 Take off and jump towards Dschubba, informed that Rastaban and Girtab fleets are unable to assist because of having to keep Sargas secure. (not much fighting here, planet is mostly intact for some reason. During Genome missions, explain that the Sundrinker monks had discovered a neurotoxin that worked against Alphas, and had been sabotaging efforts to occupy the planet.)
+
+# 6.2A.4 Jump towards Atria to battle there, planet is scorched, a bunch of the villages are destroyed, but the planet is retaken. Rastaban line manages to push through to help. 
+
+# 6.2A.5 A semi-coordinated Alpha fleet cuts off Rastaban again and you have to fight it out in Lesath. Fleet of Independent ships from Shaula arrive to assist. In-flight in Lesath choose to go to Sargas or back to Atria
+
+# 6.2A.6A Retreat to Atria and ignore Sargas to continue pushing the Alphas back into the South (Set as condition that Sargas was ignored for later)
+
+# 6.2A.6B.1 Continue all the way to Sargas and fight to liberate it. Planet is mostly destroyed. Huge economic issues and instability likely because tourist tradde is probably lost there for a long time.
+
+# 6.2A.6B.2 Fly back to Atria to resume southern push.
+
+# 6.2B.2 Take off and jump towards Sargas, big battle, support fleets jump from Rastaban and Girtab (Add note about how they are coordinating through the blackout by using couriers) Land on Trinket.
+
+# 6.2B.3 Next Step is to go to Dschubba, take off and jump into Lesath (In Lesath, Independent fleet of heavy warships arrive to assist because Alphas are bad for business), wait for Rastaban and Girtab reinforcements to arrive, jump to Dschubba (not much fighting here, planet is mostly intact for some reason. During Genome missions, explain that the Sundrinker monks had discovered a neurotoxin that worked against Alphas, and had been sabotaging efforts to occupy the planet.)
+
+# 6.2B.4 Jump towards Atria to battle there, planet is scorched, a bunch of the villages are destroyed, but the planet is retaken. Rastaban line manages to push through to help. 
+
+# 6.3 Promotion to Rear Admiral, conquest of remaining federated systems Han, Alniyat, Antares, Graffias, Pherkad, Yed Prior, Kappa Centauri \fold
 
 
 
