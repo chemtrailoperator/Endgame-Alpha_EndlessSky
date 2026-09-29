@@ -92,7 +92,11 @@
 
 # 6.4.1.2 Decide whether 17th Combat Group will go for Yed Prior or Kappa Centauri. 33rd will go wherever you don't. 12th will secure and orbit in Beta Lupi for as long as needed. Use same mechanics as earlier.
 
-# 6.4.1.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group.
+# 6.4.1.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.)
+
+# 6.4.1.3B In Yed Prior, just fight and mess around for a little while. Land in Yed Prior but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. The 33rd did most of the clean-up because they were only a day away, you just help board damaged ships. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.)
+
+
 
 
 
