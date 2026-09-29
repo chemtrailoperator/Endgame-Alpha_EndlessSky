@@ -51,6 +51,8 @@ Trashed Systems and Planets:
 	Deep (Remove 50% of lights)
 	Clink (Pock-mark with nuclear craters.)
 	Lichen (Brown blotches and lines across green surface)
+	Solace (Remove 50% of lights)
+	
 
 New Outfits:
 	(Interference Turret)
@@ -83,6 +85,13 @@ Remove Before Testing Components
 	EAships shipyard definition
 	EndgameAlpha Development Patch missions
 	This Document
+	
+Battle Groups
+Battle groups are Free Worlds commanded
+	17th Battle Group: Republic majority pushing from Kornephoros
+	33rd Battle Group: Free Worlds majority pushing from Sabik
+	9th Battle Group: Republic and Free Worlds mixed pushing from Rastaban
+	12th Battle Group: Syndicate, Independent, and Republic elements used to stabilize, brought up from various locations
 	
 	
 	

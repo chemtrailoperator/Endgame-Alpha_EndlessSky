@@ -24,7 +24,7 @@
 
 # 6.1.3 Spend time in upper atmosphere to help clean things up, shooting stuff. Republic comes in and uses nuclear weapons to destroy a major group, detonates in several other locations to ensure no survivors. They got report that the survivors on Deep reported that the mining corporation was massacred anyway. (EA Conquest Kornephoros)
 
-# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB, told that Republic will not use Nuclear weapons except on assured Alpha-only targets, not on inhabited areas. (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.) You are assigned to a battle group consisting of a mix of Republic, Free Worlds, and a few independent ships.
+# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB, told that Republic will not use Nuclear weapons except on assured Alpha-only targets, not on inhabited areas. (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.) You are assigned to a 17th Battle Group consisting of a mix of Republic, Free Worlds, and a few independent ships.
 
 # 6.2 Choose whether to go for Sargas or Aldhibain first, conquest Aldhibain, Sargas, Dschubba, and Atria \fold
 
@@ -53,11 +53,46 @@
 
 # 6.2B.4 Jump towards Atria to battle there, planet is scorched, a bunch of the villages are destroyed, but the planet is retaken. Rastaban line manages to push through to help. 
 
-# 6.3 Promotion to Rear Admiral, conquest of remaining federated systems Han, Alniyat, Antares, Graffias, Pherkad, Yed Prior, Kappa Centauri \fold
+# 6.3 Promotion to Rear Admiral, conquest of remaining federated systems Han, Alniyat, Antares, Graffias, Pherkad \fold
 
 # 6.3.1 Jump into Han to begin combat. Commander of battle group gets killed, you are ordered to take command. You retreat to Atria, where you get a field commission as an admiral. 
 
+# 6.3.2 Republic advises you to wait on re-attempting Han until a new fleet of modified warships arrives. Introduce Modified gunboat and Supercarrier to the mix, also send supercruisers along. Take-off and wait for ships to arrive. (Time delay on entering attribute somehow)
 
+# 6.3.3 Invasion battle group jumps into Han reinforced with new navy systems including laser-equipped variants of all of the ships. At the same time, 33rd Battle Group attacks Alniyat at the same time, cutting off major interference.
+# Capture Han and Alniyat when you land successfully
+
+# 6.3.4 Move 17th Battle Group to Alniyat to meet up with 33rd
+
+# 6.3.5 Decide which battle group attacks Graffias and Antares. Record decision for wrap-up diplomacy missions (mark target system, fail 6.3.5 when battle is complete)
+
+# 6.3.6A.1 After landing on Graffias, you find that the Alphas did not have a very strong presence in the system itself, but were heavily dug-in on the surface. Some of the Battle group stays behind to maintain security, and you are requested to command part of a detachment returning to republic space to bring supplies to Graffias. Include escape ships and heavy auxiliaries. Destination Alioth because the supplies will meet you halfway. 
+
+# 6.3.6A.2 Return to Graffias with supplies
+
+# 6.3.6A.3 Regroup at Alniyat
+
+# 6.3.6B.1 After fighting and landing on Antares, planet is in confusion because a large pirate gang has tried to assert control. You are told to return to Free Worlds space to pick up enforcement gear and troops from a support group that has moved to Sabik to be closer to the front line. Include Escape ships and heavy auxiliaries. Destination Sabik.
+
+# 6.3.6B.2 Return to Antares with enforcement team and gear.
+
+# 6.3.6B.3 Regroup at Alniyat
+
+# 6.3.7 Travel to Sabik, then Kornephoros, and assist in moving FOB up to Dschubba since it is relatively unoccupied and there is a lot of space to work with. Independent fleets and Syndicate fleets enter Dschubba at the same time to assist.
+
+# 6.3.8 Travel with jump drive equipped Syndicate ships to Zubeneschamali to divert pressure. Once landed, instruct that the theory is to create a running fight rather than a hard hitting effect, focus on fast ships than heavy warships that will just get cut to pieces immediately
+
+# 6.3.9 Take off from Zubeneschamali and jump into Yed Prior, eventually a courier ship will jump from Pherkad and tell you to jump to Pherkad and run from the fight.
+
+# 6.4 Mopping up federated systems and stabilize area before pushing into the CCOR \fold
+
+# 6.4.1 Pherkad Area Battle
+
+# 6.4.1.1 Once landed in Pherkad, enter discussion with 33rd Combat Group, told that position in Pherkad is barely tenable because it appears that though the Alphas are far less coordinated than they used to be, it looks like a counterattack is brewing. You takeoff as fleets jump from Beta Lupi, Yed Prior, and Kappa Centauri, including supercarriers. Once the fleets are destroyed, land on Solace. 
+
+# 6.4.1.2 Decide whether 17th Combat Group will go for Yed Prior or Kappa Centauri. 33rd will go wherever you don't. 12th will secure and orbit in Beta Lupi for as long as needed. Use same mechanics as earlier.
+
+# 6.4.1.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group.
 
 
 
