@@ -1,6 +1,6 @@
 
-# Copyright (c) 2026 by ChemtrailOperator
-# Copyright (c) 2026 by Living_Adblocker
+# Storyline Copyright (c) 2026 by ChemtrailOperator
+# Missions and Content Copyright (c) 2026 by Living_Adblocker
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -92,11 +92,25 @@
 
 # 6.4.1.2 Decide whether 17th Combat Group will go for Yed Prior or Kappa Centauri. 33rd will go wherever you don't. 12th will secure and orbit in Beta Lupi for as long as needed. Use same mechanics as earlier.
 
-# 6.4.1.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.)
+# 6.4.1.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.) Land back on Pherkad
 
-# 6.4.1.3B In Yed Prior, just fight and mess around for a little while. Land in Yed Prior but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. The 33rd did most of the clean-up because they were only a day away, you just help board damaged ships. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.)
+# 6.4.1.3B In Yed Prior, just fight and mess around for a little while. Land in Yed Prior but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. The 33rd did most of the clean-up because they were only a day away, you just help board damaged ships. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.) After fighting is complete land in Pherkad
 
+# 6.4.1.4 Travel from Pherkad to Rastaban to pick up a humanitarian fleet attached to the 21st Support Group that will take over martial command of captured systems. Republic offering a lot of assistance as a diplomacy token, but allowing the Free Worlds to stay in control
 
+# 6.4.2 Moving Assets around
+
+# 6.4.2.1 Go from Rastaban to Atria escorting a support group of Republic and Free Worlds logistics.
+
+# 6.4.2.2 Move to Han with Logistics fleet. Once fleets are in place, change command of planets over to support group.
+
+# 6.4.2.3 From Han, move to Dschubba to move and escort unified command to Pherkad to push into the CCOR.
+
+# 6.4.2.4 Escort command fleet to Pherkad. As you enter Pherkad, several Supercarriers jump into Beta Lupi, (triggering a messenger to jump into Pherkad) and then reach Pherkad. Get the command fleet on the ground.
+
+# 6.4.2.5 Immediately take off again and defeat the two supercarriers. Land when finished.
+
+# 6.5 
 
 
 
