@@ -474,7 +474,7 @@ mission "Endgame Alpha 4.3.2"
 			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home.`
 				goto meeting
 			label intel
-			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is purely used for our own good.`
+			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is used only for our own good.`
 				goto questions
 			label bunkers
 	on complete
