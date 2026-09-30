@@ -1,5 +1,5 @@
 
-# Storyline Copyright (c) 2026 by ChemtrailOperator
+# Storyline, Missions, and Content Copyright (c) 2026 by ChemtrailOperator
 # Missions and Content Copyright (c) 2026 by Living_Adblocker
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
