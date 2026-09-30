@@ -86,31 +86,48 @@
 
 # 6.4 Mopping up federated systems and stabilize area before pushing into the CCOR \fold
 
-# 6.4.1 Pherkad Area Battle
+# 6.4.1 Once landed in Pherkad, enter discussion with 33rd Combat Group, told that position in Pherkad is barely tenable because it appears that though the Alphas are far less coordinated than they used to be, it looks like a counterattack is brewing. You takeoff as fleets jump from Beta Lupi, Yed Prior, and Kappa Centauri, including supercarriers. Once the fleets are destroyed, land on Solace. 
 
-# 6.4.1.1 Once landed in Pherkad, enter discussion with 33rd Combat Group, told that position in Pherkad is barely tenable because it appears that though the Alphas are far less coordinated than they used to be, it looks like a counterattack is brewing. You takeoff as fleets jump from Beta Lupi, Yed Prior, and Kappa Centauri, including supercarriers. Once the fleets are destroyed, land on Solace. 
+# 6.4.2 Decide whether 17th Combat Group will go for Yed Prior or Kappa Centauri. 33rd will go wherever you don't. 12th will secure and orbit in Beta Lupi for as long as needed. Use same mechanics as earlier.
 
-# 6.4.1.2 Decide whether 17th Combat Group will go for Yed Prior or Kappa Centauri. 33rd will go wherever you don't. 12th will secure and orbit in Beta Lupi for as long as needed. Use same mechanics as earlier.
+# 6.4.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.) Land back on Pherkad
 
-# 6.4.1.3A In Kappa Centauri, just fight and mess around for a little while. Land in Kappa Centauri but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.) Land back on Pherkad
+# 6.4.3B In Yed Prior, just fight and mess around for a little while. Land in Yed Prior but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. The 33rd did most of the clean-up because they were only a day away, you just help board damaged ships. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.) After fighting is complete land in Pherkad
 
-# 6.4.1.3B In Yed Prior, just fight and mess around for a little while. Land in Yed Prior but immediately get informed that a mediocre invasion fleet attacked the 12th Battle group. They should have been able to handle it but were running low on supplies and fuel and some of the ships jumped back. The 33rd did most of the clean-up because they were only a day away, you just help board damaged ships. (Have most of 12th be disabled at the time, as you try to revive them, one of the other 17th ships gets overpowered by some Alphas that covertly boarded and took over a 12th ship. Have hostile versions of 17th and 12th to make those ships fight the others.) After fighting is complete land in Pherkad
+# 6.4.4 Travel from Pherkad to Rastaban to pick up a humanitarian fleet attached to the 21st Support Group that will take over martial command of captured systems. Republic offering a lot of assistance as a diplomacy token, but allowing the Free Worlds to stay in control
 
-# 6.4.1.4 Travel from Pherkad to Rastaban to pick up a humanitarian fleet attached to the 21st Support Group that will take over martial command of captured systems. Republic offering a lot of assistance as a diplomacy token, but allowing the Free Worlds to stay in control
+# 6.4.5 Go from Rastaban to Atria escorting a support group of Republic and Free Worlds logistics.
 
-# 6.4.2 Moving Assets around
+# 6.4.6 Move to Han with Logistics fleet. Once fleets are in place, change command of planets over to support group.
 
-# 6.4.2.1 Go from Rastaban to Atria escorting a support group of Republic and Free Worlds logistics.
+# 6.4.7 From Han, move to Dschubba to move and escort unified command to Pherkad to push into the CCOR.
 
-# 6.4.2.2 Move to Han with Logistics fleet. Once fleets are in place, change command of planets over to support group.
+# 6.4.8 Escort command fleet to Pherkad. As you enter Pherkad, several Supercarriers jump into Beta Lupi, (triggering a messenger to jump into Pherkad) and then reach Pherkad. Get the command fleet on the ground.
 
-# 6.4.2.3 From Han, move to Dschubba to move and escort unified command to Pherkad to push into the CCOR.
+# 6.4.9 Immediately take off again and defeat the two supercarriers. Land when finished.
 
-# 6.4.2.4 Escort command fleet to Pherkad. As you enter Pherkad, several Supercarriers jump into Beta Lupi, (triggering a messenger to jump into Pherkad) and then reach Pherkad. Get the command fleet on the ground.
+# 6.5 Battle for Men system \fold
 
-# 6.4.2.5 Immediately take off again and defeat the two supercarriers. Land when finished.
+# 6.5.1 Introduce Stealth Gunboat to frontline units, inform player to get ready for upcoming push into Men and CCOR. Shipyard opens within ex-occupied space selling gear and ships from Zug, Kraz, Geminus, and Tarazed. Flavor mission only, no gameplay.
 
-# 6.5 Battle for Men
+# 6.5.2 After one week, return to Pherkad, invasion fleet is ready with Syndicate invasion fleet, 17th Battle Group, 33rd Battle Group, and 12th remaining behind to maintain security. Jump into Beta Lupi, but you hit a small group of Alphas, one of which jumps back to Men, meaning they know you are coming. As you jump into Men, several supercarriers are waiting for you and many smaller ships. (For mechanics, make this the largest defense fleet so far.)
+#If any flagships from the battle groups die, you have to return to Pherkad and retry through 6.5.2.1, if all Alpha ships are destroyed or disabled without losing the flagship, proceed to 6.5.3 on Thule.
+# 6.5.2 if completed on Thule: 33rd and Syndicate battle groups stay in orbit to battle ships that keep appearing from the planets, 17th descends to the surface of Thule but finds a bloody battle already taking place as the inhabitants of Men rise up and try to attack the Alphas, they are largely unsuccessful in the beginning but succeed with Navy airpower.
+
+# 6.5.2.1 Land at Pherkad and regroup after more reinforcements come into the system from stabilied ex-occupied systems. Attempt again. This time, the Navy is okay with losees and as long as you kill all the NPCs it doesn't matter how many ships survive. If ships don't survive, you must wait for reinforcements to arrive before leaving for Rastaban or Kornephoros
+
+# 6.5.3 You meet with Tribal authroities in the spaceport, and are informed that Men did not have many Alphas on it beccause almost all of them stayed on Smuggler's Den and used it as a forward operating base. After Men lost contact with the systems around it, the Alphas on Thule apparently refused to cooperate with the ones on Smuggler's Den and occasionally fired on them. However, Smuggler's Den will need a full scale ground operation on the station to clear it out as it will likely include a great deal of close quarters fighting. The Authorities do tell you that they are certain no humans remain alive on Smuggler's Den because scouts reported absolutely no signs of non-Alpha life. You are given the choice to destroy Smuggler's Den altogether with nuclear weapons, or land and force a CQB battle. If you choose to bomb it, the 17th battle group returns to Kornephoros for nuclear weapons while the 33rd and 12th secure the system. If you choose CQB, return to Rastaban to escort a frog battalion into the system to clear it out. Use marking tag to select system
+
+# 6.5.4A.1 Leave Kornephoros and return to Men with nuclear weapons on board your ship.
+
+# 6.5.4A.2 Take off from Thule and attack the now NPC station to destroy it. Refer to Lost in Midnight dynamics for how to do this. Land on Thule once completed.
+
+# 6.5.4B.1 Leave Rastaban with invasion battalion and land directly on Smuggler's Den with surprise attack. On complete have several options for you to die through being stupid but if you win the CQB battle, you keep Smuggler's Den. Trash one ring of the station and remove shipyard and outfitter. Add as part of the CCOR post-storyline getting it back.
+
+# 6.5.4B.2 Return to Thule
+
+# 6.6 CCOR Conquest \fold
+
 
 
 

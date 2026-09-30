@@ -52,6 +52,8 @@ Trashed Systems and Planets:
 	Clink (Pock-mark with nuclear craters.)
 	Lichen (Brown blotches and lines across green surface)
 	Solace (Remove 50% of lights)
+	Smuggler's Den (Remove lights and fracture one ring of the station)
+	Thule (Remove some lights)
 	
 
 New Outfits:
@@ -83,7 +85,7 @@ New Ships:
 	Enforcement Drone
 	Chemtrail Boat (Person Ship Only)
 	
-Remove Before Testing Components
+Remove Before Publishing Testing Components
 	EAships shipyard definition
 	EndgameAlpha Development Patch missions
 	This Document
