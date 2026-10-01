@@ -477,7 +477,10 @@ mission "Endgame Alpha 4.3.2"
 			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is used only for our own good.`
 				goto questions
 			label bunkers
-	on complete
+	on enter
+		system
+			government "Republic" "Free Worlds" "Syndicate"
+		dialog `There is an urgent alert waiting on the hyperspace relay system when you connect to it: "Dschubba system defenses have collapsed, no traffic will be permitted to enter the system."`
 		event "EA Dschubba Takeover"
 
 # \close			
@@ -485,13 +488,62 @@ mission "Endgame Alpha 4.3.2"
 # 4.4 Avgi Story \fold
 
 # 4.4.1 Travel to Avgi seat \open
-
-# Lose Aldhibain system as you leave (use timer to display after three or so jumps)
-# Sabik Frontline
-# Kornephoros Frontline
+mission "Endgame Alpha 4.4.1"
+	priority
+	source "New Argentina"
+	destination "Peripheria"
+	description "Travel to Peripheria in the Concerto system to speak with the Assembly of Consonant Polities"
+	to offer
+		has "Endgame Alpha 4.3.9: done"
+	to accept
+		"reputation: Avgi" > 0
+	on blocked
+		dialog `You cannot currently contact the Avgi as they are at war with you.`
+	on offer
+		conversation
+			`As usual, you report back to the Navy command center located in the spaceport. You are met there by Raven, who brings you to a small office located in the back of the complex.`
+			`	"Thank you for working with the Remnant." She begins, "I understand that it was not fruitful, however. You must now proceed to the Avgi. From what I have learned from your logs and computer, I doubt they will prvoide much assistance, but they may be able to give information. Do you have any questions before you leave?" She stands up to go, obviously in a hurry.`
+			choice
+				`	"I'm leaving already?"`
+					goto speed
+				`	"I don't appreciate you looking through my electronics."`
+					goto electronics
+				`	"I need extra time to get a jump drive."`
+					goto jumpdrive
+				`	"Nope, I'll leave as soon as possible."`
+					goto ready
+			label speed
+			`	Raven turns around as she leaves. "We lost another system while you were out traipsing the galaxy. And since we're likely to lose more systems and even more personnel, I'm not worried about taking away your leisure time."`
+				goto ready
+			label electronics
+			`	Raven turns back around as she leaves with a wicked smirk. "Then I'm glad I didn't ask permission."`
+				goto ready
+			label ready
+			`	You return to your ship and begin preparations for leaving human space, this time to the Avgi seat.`
+				accept
+	on accept
+		event "EA Aldhibain Takeover" 2
+		event "EA Sabik Frontline" 3
+		event "EA Kornephoros Frontline" 3
+	on enter
+		system
+			distance 2 99
+				"all wormholes"
+				"assumes jump drive"
+			government Republic "Free Worlds" "Syndicate"
+		dialog `There is an urgent alert waiting on the Hyperspace Relay System. It is a general evacuation order for Aldhibain, Sabik, and Kornephoros.`
+	on complete
+		conversation
+			`	When you land on Peripheria, everything appears to be normal. The most likely place to find an appropriate contact will be in the spaceport.`
 
 # 4.4.2 Move to military complex \fold
-
+mission "Endgame Alpha 4.4.2"
+	priority
+	clearance
+	source "Peripheria"
+	destination "Navigeo Yards"
+	to offer
+		has "Endgame Alpha 4.4.1: done"
 # 4.4.3 Discuss Issues with Alphas \fold
 
 # Alphas are threatening Humanity etc.
