@@ -39,7 +39,7 @@
 
 # 6.2A.4 Jump towards Atria to battle there, planet is scorched, a bunch of the villages are destroyed, but the planet is retaken. Rastaban line manages to push through to help. 
 
-# 6.2A.5 A semi-coordinated Alpha fleet cuts off Rastaban again and you have to fight it out in Lesath. Fleet of Independent ships from Shaula arrive to assist. In-flight in Lesath choose to go to Sargas or back to Atria
+# 6.2A.5A semi-coordinated Alpha fleet cuts off Rastaban again and you have to fight it out in Lesath. Fleet of Independent ships from Shaula arrive to assist. In-flight in Lesath choose to go to Sargas or back to Atria
 
 # 6.2A.6A Retreat to Atria and ignore Sargas to continue pushing the Alphas back into the South (Set as condition that Sargas was ignored for later)
 

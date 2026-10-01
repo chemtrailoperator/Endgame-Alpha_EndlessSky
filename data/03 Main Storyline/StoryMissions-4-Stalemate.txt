@@ -15,7 +15,6 @@
 # This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
 
 # 4.0 Investigating Sagarra Alpha Base \open
-
 mission "Endgame Alpha 4.0"
 	landing
 	source Sagarra
@@ -542,23 +541,62 @@ mission "Endgame Alpha 4.4.2"
 	clearance
 	source "Peripheria"
 	destination "Navigeo Yards"
+	description ""
 	to offer
 		has "Endgame Alpha 4.4.1: done"
+	on offer
+		conversation
+			`The Peripheria spaceport is somewhat difficult to navigate, since it is designed for a species that doesn't have to travel along the ground, but you eventually make your way to what appears to be a kind of embassy or administrative area. Your arrival at the spaceport could never be called discreet, but you are surprised that the Avgi at the counter spends some time rummaging around in storage lockers and panels, eventually producing the black bow-like device used to communicate in the human language. You suddenly realize that he was looking for it because you are not wearing your own translation device, and remember to use it in future interactions.`
+			`	"Surprise, you were not expected at this time. How may I be of assistance?"`
+			choice
+				`	"I need to speak with the Assembly of Polities."`
+			`	"Disappointment. The Assembly meets only sometimes, and the Speakers are not currently assembled. I can only offer an appointment with the Speaker of the Peripheria polity.`
+			`	"Hope. If they can be of assistance, my department may also grant access to speak with the Twilight Guard."`
+			choice
+				`	"Please do that then."`
+				`	"Nevermind, I will find my own way."`
+					decline
+			`	"Assurance. I will send clearance ahead of you to land at the Navigeo Yards." You thank the Avgi for the assistance and prepare to depart, travelling along the ever inclining main hallway until you return to your ship.`
+				accept
+			
 # 4.4.3 Discuss Issues with Alphas \fold
-
+mission "Endgame Alpha 4.4.3"
+	landing
+	source "Navigeo Yards"
+	destination "Dokimi Range"
+	description "Move to Dokimi Range to learn more about the fate of the Alphas."
+	to offer
+		has "Endgame Alpha 4.4.2: done"
+	on offer
+		conversation
+			`Navigeo is designed on a different plan from Peripheria. Although it does use centripetal gravity, to main wings of the station rotate about each other laterally, ensuring a flat, constant gravity surface for shipbuilding. At the beginning of each wing there is a large block of habitation and administration areas, holding thousands of Avgi, including the mechanics, shipwrights, and support staff needed to keep the massive shipyard, the primary source of defense against the Aberrant, producing at speed.`
+			`	Word was sent ahead for you to gain clearance to the station, and you are met with a detail of Avgi that lead you to a moderately sized conference room, where a group of Avgi sit on rings waiting for you.`
+			`	"Assurance, everything said or planned here will not travel farther than this room. It is our understanding that you have come on a military matter."`
+			choice
+				`	"My species is in a war, and is requesting assistance from any who can aid us."`
+			`	The Avgi appear to appreciate this response. "Excitement, the Consonance was in preparation to send a diplomatic probe towards where you originated from. Such a process would have taken tens or hundreds of years, and now we find we can meet now."`
+			choice
+				`	"Can you offer more than diplomacy?"`
+			`	"Regret. At this time we fight our own war against the Aberaant, one we may not win. Even if we could give many ships, they would take far too long to reach where they were needed. We can give only information and technology, if that will help you."`
+			choice
+				`	"May I have blueprints for your technology?"`
+					goto blueprints
+				`	"What knowledge do you have have of humanoids in your space? They may have called themselves Alphas."`
+			`	The Avgi all begin chattering at once, and you hold up your hand to slow down the flow enough for the translator to handle. One of the Avgi restarts, "Distress. We know of these people, but none now exist in our space. They were...destroyed in the incursion."`
+			choice
+				`	"Does any of their technology remain?"`
+					goto alphatech
+				`	"What happened to them?"`
+			`	Another Avgi begins chirpring before the previous one can begin. "Apprehension. The Alphas as you call them were destroyed by our own people." It waits for your response, evidently thinking the Alphas may have been friends of the existing government, but receiving no outburst of rage, it continues. "Relief. The Alphas were found on a planet by a exploration fleet a very short time before the incursion. We did not interact much, since the colony there was still small and had evidently sustained great damage on its way to that system. They fled with the first refugees through the Shroud and settled on the only planet while the Avgi built stations to house our refugees." It stops, and another Avgi continues,`
+			`	"Rage. The Twilight Guard left the refugees and returned to protect our home while still more fled from it, but when they returned to Symphony, the Alphas had slaughtered the refugees and attepted to gain control of the system. We crushed their settlement, and razed the planet so that no one could ever revive the species."`
+			choice
+				`	"Why wasn't I told this earlier?"`
+					goto diplomacy
+				`	"I'd like to see what is left."`
+					goto alphatech
+				`	"Very well, what of your technology?"`
 # Alphas are threatening Humanity etc.
 # Told that the Alphas made it to Avgi space at one point, but were eventually dishonorably exterminated because they were becoming a serious problem
-
-# 4.4.4 Travel through Tangled Shroud to Alpha planet \fold
-
-# Planet beyond Tangled Shroud originally uninhabited, but Alphas settled there,
-# You find structures similar in design, but nowhere near as big and none obviously geothermally powered.
-# Told that the Alphas beacme unruly and uncontrollable, and were exterminated in a surprise attack, some people resented it and strengthened the Dissonance
-# You were not told about it because you were obviously not an Alpha and the whole thingg was somewhat of an embarrassment to the government at the time.
-
-# 4.4.5 Escort return to military facility \fold
-
-# See a bunch of weapons factories, and ask if you can bring engineers in to copy the technology
 
 # 4.4.6 Travel to New Argentina to request teams \fold
 
