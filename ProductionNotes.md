@@ -54,6 +54,8 @@ Trashed Systems and Planets:
 	Solace (Remove 50% of lights)
 	Smuggler's Den (Remove lights and fracture one ring of the station)
 	Thule (Remove some lights)
+	Gagarin Remove some lights
+	Mordente-Bridi Remove lights and scorch
 	
 
 New Outfits:

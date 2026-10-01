@@ -1,5 +1,6 @@
 
-# Copyright (c) 2026 by ChemtrailOperator and Living_Adblocker
+# Storyline, missions, and content Copyright (c) 2026 by ChemtrailOperator 
+# Missions and content Copyright (c) 2026 by Living_Adblocker
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
 # terms of the GNU General Public License as published by the Free Software
@@ -12,3 +13,16 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 # This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
+
+# 7.1 Restoring Communications and re-mapping the systems.
+
+# 7.1.1 Leave Pherkad and head to Alpha Centauri to pick up Hyperspace relay engineers and their gear. Take them system by system, starting at Kornephoros. You are accompanied by a bunch of heavily defended Heavy Auxiliaries that contain portable Hyperspace Relay units that will give temporary comms coverage at a limited capacity. Once you take to all the systems, the engineers power them on. Unshroud all systems. Eventually return to Alpha Centauri to drop off gear again.
+
+# 7.1.XXXXX Put in as many missions as needed to ensure flavor and conversations on each planet describing damage, etc.
+
+# 7.2 Restore Free Worlds control to ex-occupied systems.
+
+# 7.2.1 As a highly-valued and experienced Navy Admiral, the only to also be a Free Worlds council member, you are part of the team moving control of Battle Group martial law systems back to Free Worlds control. It was decided to keep every system under control of the battle group that captured it to keep things politically stable. The Republic and Free Worlds are under very high tension on what to do with the systems, siunce the Republic originally wanted to give every planet a choice on whether to go Republic or Free Worlds. The eventual decision was to move all to FW control and then float the idea through normal political channels. Travel from Alpha Centauri to Bourne, have a lengthy expo mission on Bourne about this. The 33rd, 9th, and 12th commanders are also there, and are tasked to travel to the systems they captured respectively with a Free Worlds detail to take over command.
+
+# 7.2.2.XXXXX Travel to all 17th systems to add a FW command detail. Physical forces will stay in place until they are capable of changing over effectively.
+

@@ -128,7 +128,19 @@
 
 # 6.6 CCOR Conquest \fold
 
+# 6.6.1 After fighting on Thule, 17th battle group is ordered to return to Pherkad for refitting, while the 33rd moves to combat support and the 12th and 9th groups take frontline status.
 
+# 6.6.2 At pherkad, you are told that while your group refits you are going to jump into Belenos from Kraz and start a fight there while an invasion fleet jumps to Fumalsamakah, and then back to Belenos, making a three pronged attack coming from multiple locations. Bunch of fighting in Belenos, you land and the planet is liberated. Unlike Smuggler's Den, Mordente-Bridi held out against the Alphas and although it is damaged, it survived. The Belenos system was generally raided, but was not a focused part of an attack since it could be bypassed. 33rd takes control of Belenos
+
+# 6.6.3 Leave Gagarin and return to the 17th battle group on Pherkad. While you are returning, the 12th battle group takes Alpherg at very heavy loss, encountering a bunch of supercarriers. It is essentially destroyed with no capability to proceed farther, only to hold Alpherg as is.
+
+# 6.6.4 Leave Pherkad, move up to Men to stage final assault. Overall plan is that the 17th Battle Group will wait in Fumalsamakah until the 9th and 33rd Battle Groups punch a hole in the defenses of Citadelle, and then you jump through while the fighting is still in progress and attack Fumalzenarah.
+
+# 6.6.5 Leave men and jump to Fumalzenarah with the 9th and 33rd groups, wait in Fumalsamakah while they jump into Citadelle, eventually a ship returns and informs you that an opening is available. You jump with your fleet into Citadelle, and then directly into Fumalzenarah. You intended to land on Sagarra, but the planet is completely vaporized and there is just three supercarriers and one or two support ships left. Fight these, defeat them, and return to Citadelle.
+
+# 6.6.6 On Citadelle, the planet is completely destroyed with no known human survivors, and the Republic takes up an FOB there. Urgently leave to assist Alpherg, where some Alphas on the ground have started a ground war and are over-powering the weakened 12th battle group. Once you go there you get to fly around and merc Alphas.
+
+# 6.6.7 Leave Alpherg and return to Pherkad to demobilize 17th battle group and transition to police and skirmish mode maintaing governments on recaptured systems, because it is being replaced by fresh uniits to conduct all the bloody mopping up.
 
 
 # \close
