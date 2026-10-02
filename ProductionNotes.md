@@ -1,6 +1,12 @@
 Production Notes
 Delete before publishing
 
+Logs still needed for most of storyline.
+People:
+Admiral Alzaga
+Minor People:
+Joseph Byers
+
 Alpha Effected Systems:
 	Belenos
 	Thuban

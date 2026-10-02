@@ -672,7 +672,7 @@ mission "Endgame Alpha 4.4.4.1"
 			`	Admiral Alzaga looks at you sharply, but doesn't seem very surprised. "Very well, Admiral, I will find somebody else to do it. That will be all.`
 				decline
 			label consider
-			`	"Outstanding, Admiral, for the size of teams I am requesting, you will need at least fifty bunks and seventy tons of cargo. How you get into the Rim is up to you."`
+			`	"Outstanding, Admiral, for the size of teams I am requesting, you will need at least fifty bunks and seventy tons of cargo. How you get into the Rim is up to you, but teams will be waiting at the Kraz Cybernetics, Southbound, Lionheart, and Syndicated headquarters, and Alpha Centauri."`
 				accept
 	to complete
 		"cargo space free" > 70
@@ -680,7 +680,7 @@ mission "Endgame Alpha 4.4.4.1"
 	on visit
 		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
 
-# 4.4.4.2 Travel to Zubenelgenubi to pick up research team \fold
+# 4.4.4.2 Travel to Zubenelgenubi for team \fold
 mission "Endgame Alpha 4.4.4.2"
 	landing
 	name "Collect Research Teams"
@@ -718,12 +718,42 @@ mission "Endgame Alpha 4.4.4.3"
 	on offer
 		conversation
 			`	The atmosphere on Zug is similar to Rust, in that every factory is working at maximum production rate and few are using the leisure facilities around the spaceport, but dissimilar in the readiness of the planet. Many of the locals are going about their business armed, and there are atmospheric patrols regularly passing overhead, both combat and command units. Those who were interested in evacuating seem to have done so already, and everyone here seems ready for the fight.`
+			`	A Free Worlds officer flags you down in the spaceport, and sticks out his hand as he starts talking. "Good Evening, are you <first> <last>? Good, my name is Joseph Byers, the commander of the Free Worlds research team." He has Lieutenant insignia.`
+			choice
+				`	"Why does Southbound shipyards get a military officer?"`
+				`	"Hi."`
+					goto stowage
+			`	"Actually I'm serving as the Free Worlds commander for both Kraz and Southbound. I expect the other locations listed in the orders I got will send at least one aide for their governments."`
+			label stowage
+			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
+			`	He claps you on your back and his eyes land on your Admiral insignia. He stutters something unintelligble, and leaves for your ship.`
+				accept
 	to complete
 		"cargo space free" > 50
 		"passenger space free" > 30
 	on visit
 		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		
 # 4.4.4.4 Travel to Syndicate planet for research team \fold
+mission "Endgame Alpha 4.4.4.4"
+	landing
+	name "Collect Research Teams"
+	description "Travel to Hephaestus in the Markab system to pick up a research team."
+	source Valhalla
+	destination Markab
+	cargo 30
+	passengers 30
+	to offer
+		has "Endgame Alpha 4.4.4.3: done"
+	to complete
+		"cargo space free" > 40
+		"passenger space free" > 30
+	on visit
+		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+	on offer
+		conversation
+			`	The Deep team is very reticent about the gear they are loading and the origins of their team, but they load up quickly and are stowed before you even finish the post-flight checklist. The Deep Security agent that comes with the team stops his work long enough to tell you that the next destination is the Syndicate's manufacturing headquarters.`
+				accept
 
 # Told that the Syndicate requested to participate because they have experience attempting to clone alien tech, can also provide jump drives for the teams to return from the Avgi if needed
 
