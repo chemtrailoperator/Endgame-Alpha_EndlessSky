@@ -489,6 +489,7 @@ mission "Endgame Alpha 4.3.2"
 # 4.4.1 Travel to Avgi seat \open
 mission "Endgame Alpha 4.4.1"
 	priority
+	name "Avgi Diplomacy"
 	source "New Argentina"
 	destination "Peripheria"
 	description "Travel to Peripheria in the Concerto system to speak with the Assembly of Consonant Polities"
@@ -535,10 +536,11 @@ mission "Endgame Alpha 4.4.1"
 		conversation
 			`	When you land on Peripheria, everything appears to be normal. The most likely place to find an appropriate contact will be in the spaceport.`
 
-# 4.4.2 Move to military complex \fold
+# 4.4.2 Move to Military Complex \fold
 mission "Endgame Alpha 4.4.2"
 	priority
 	clearance
+	name "Contact the Twilight Guard"
 	source "Peripheria"
 	destination "Navigeo Yards"
 	description ""
@@ -559,12 +561,13 @@ mission "Endgame Alpha 4.4.2"
 			`	"Assurance. I will send clearance ahead of you to land at the Navigeo Yards." You thank the Avgi for the assistance and prepare to depart, travelling along the ever inclining main hallway until you return to your ship.`
 				accept
 			
-# 4.4.3 Discuss Issues with Alphas \fold
+# 4.4.3 Discuss Issues with Alphas and leave to pick up research teams \fold
 mission "Endgame Alpha 4.4.3"
 	landing
+	name "Return for Orders"
 	source "Navigeo Yards"
-	destination "Dokimi Range"
-	description "Move to Dokimi Range to learn more about the fate of the Alphas."
+	destination "New Argentina"
+	description "Travel to <destination> in <system> to receive orders on research teams."
 	to offer
 		has "Endgame Alpha 4.4.2: done"
 	on offer
@@ -579,7 +582,7 @@ mission "Endgame Alpha 4.4.3"
 				`	"Can you offer more than diplomacy?"`
 			`	"Regret. At this time we fight our own war against the Aberaant, one we may not win. Even if we could give many ships, they would take far too long to reach where they were needed. We can give only information and technology, if that will help you."`
 			choice
-				`	"May I have blueprints for your technology?"`
+				`	"May I have blueprints for your weapons?"`
 					goto blueprints
 				`	"What knowledge do you have have of humanoids in your space? They may have called themselves Alphas."`
 			`	The Avgi all begin chattering at once, and you hold up your hand to slow down the flow enough for the translator to handle. One of the Avgi restarts, "Distress. We know of these people, but none now exist in our space. They were...destroyed in the incursion."`
@@ -595,31 +598,143 @@ mission "Endgame Alpha 4.4.3"
 				`	"I'd like to see what is left."`
 					goto alphatech
 				`	"Very well, what of your technology?"`
-# Alphas are threatening Humanity etc.
-# Told that the Alphas made it to Avgi space at one point, but were eventually dishonorably exterminated because they were becoming a serious problem
+					goto technology
+				`	"I have heard enough."`
+					goto enough
+			label alphatech
+			`	"Disappointment. Nothing truly interesting can remain. Dokimi Range has been the site of nuclear tests for many years now. If you have any cause for haste I will not recommend picking through the radiation and rubble."`
+			choice
+				`	"I understand, thank you for your time."`
+					goto enough
+				`	"What about your technology?"`
+					goto technology
+			label diplomacy
+			`	The Avgi on the far right speaks, "Apprehension. The Consonance was worried that the humans would take offense at the destruction of a kind so similar to their own. The information was kept away from Caldwell too. We hope you will forgive us."`
+			choice
+				`	"The Alphas are our enemy. What about your technology?"`
+					goto technology
+				`	"I have heard enough."`
+					goto enough
+			label blueprints
+			`	"Elation. We can provide even better." The Avgi on the far right says, "I will allow the research advisor to speak on this." `
+			label technology
+			`	An Avgi about the middle of the line speaks. "Our research unit on Ergastirio has been outpacing weapons production. Should your government be willing, we can train a group of engineers here, who will send information back to you."`
+			choice
+				`	"That sounds great, I will make those arrangements."`
+				`	"I do not wish to bring any teams."`
+					goto enough
+			`	"Elation. We will see to it to be ready when you arrive again. Bring plenty of people. There is much to be learned."`
+			`	You discuss some more details about accessing the research station, and are escorted back out of the station.`
+				launch
+			label enough
+			`	The far right Avgi speaks as he gestures to the guards that the meeting is over. "Disappointment. Understand, Captain <last>, that although the destruction of the Alphas was controversial at the time, it was completely necessary." You are civilly escorted back to your ship, and instructed to leave the classified station as soon as practicable.`
+				flee
+	on accept
+		event "EA Kornephoros Takeover" 
+		event "EA Sabik Frontline" 2
+		event "EA Wei Frontline" 3
+		event "EA Sargas Frontline"
+		event "EA Sargas Takeover" 4
+		event "EA Rastaban Frontline" 3
+		event "EA Girtab Frontline" 3
+		event "EA Shaula Frontline" 2
+	on enter
+		system
+			government Republic "Free Worlds" Syndicate
+		dialog `The Hyperspace Relay System has an urgent alert on it. It states that all ships are to collect refugees if possible and leave the Albireo and Delta Sagittarii systems immediately.`
+	on complete
+		conversation
+			`The New Argentina spaceport, now wholly converted to a naval base, is packed with ships either waiting to rotate onto the frontline, or being repaired from coming off of it. You report to the administrative section, and are told to immediately report to Admiral Alzaga's office, where he is waiting for you.`
 
-# 4.4.6 Travel to New Argentina to request teams \fold
+# 4.4.4 Pick up various research teams \fold
 
-# On takeoff, lose Kornephoros, Wei and Sargas frontline, lose Sargas slightly afterwards because it gets cut off from reinforcement
+# 4.4.4.1 Travel to Kraz for team \open
+mission "Endgame Alpha 4.4.4.1"
+	landing
+	name "Collect Research Teams"
+	source "New Argentina"
+	destination "Rust"
+	description "Travel to Rust in the Kraz system to pick up a research team. Ensure you have 50 bunks and 70 tons of cargo space available."
+	to offer
+		has "Endgame Alpha 4.4.3: done"
+	on offer
+		conversation
+			`Admiral Alzaga looks even less healthy than the last time you saw him, but his energetic manner and fast reactions contradict his sunken and stressed appearance. That appearance brightens visibly upon seeing you.`
+			`	"Captain <last>! I saw the <ship> had landed but didn't expect you soon. I hope you have a good message in a day of very bad ones."`
+			choice
+				`	"The Avgi cannot provide military assistance, but will train engineers in their technology."`
+			`	Alzaga considers this for some time before replying. "It is a strange offer, but one I think we can manage. I was briefed on all the intelligence we have on the Avgi, and I normally wouldn't allow sending personnel deliberately into such a dangerous area, but at this point I will take every opportunity."`
+			`	He stands up from his desk and retrieves a piece of paper, writing on it as he speaks again; "This should give you authorization to get what you need, and I'll send word ahead so they are ready. I apologize for the speed, but we lost more systems and although were holding the buggers, I think they're planning some sort of big push that may break our defensive line altogether."`
+			choice
+				`	"Consider it done."`
+					goto consider
+				`	"Actually, I'm out."`
+			`	Admiral Alzaga looks at you sharply, but doesn't seem very surprised. "Very well, Admiral, I will find somebody else to do it. That will be all.`
+				decline
+			label consider
+			`	"Outstanding, Admiral, for the size of teams I am requesting, you will need at least fifty bunks and seventy tons of cargo. How you get into the Rim is up to you."`
+				accept
+	to complete
+		"cargo space free" > 70
+		"passenger space free" > 50
+	on visit
+		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
 
-# 4.4.7 Pick up various research teams \fold
-# 4.4.7.1 Travel to Kraz to pick up research team \open
+# 4.4.4.2 Travel to Zubenelgenubi to pick up research team \fold
+mission "Endgame Alpha 4.4.4.2"
+	landing
+	name "Collect Research Teams"
+	passengers 10
+	cargo 10
+	source "Rust"
+	destination "Zug"
+	description "Travel to Zug in the Zubenelgenubi system to pick up a Southbound Shipyards engineering team."
+	to offer
+		has "Endgame Alpha 4.4.4.1: done"
+	on offer
+		conversation
+			`	The research team is already assembled and waiting for you when you land, and boards the <ship> quickly. You notice it is entirely engineers from Kraz Cybernetics.`
+			`	The leader of the team speaks to you as they board. "Good Morning Admiral, the next team to pick up is from Southbound Shipyards on Zug. Everyone here is at least nominally familiar with jump drives and knows aliens exist, so I don't expect too much trouble." He leaves to get things settled on board, and you begin the normal bureaucratic paperwork required after landing.`
+				accept
+	to complete
+		"cargo space free" > 60
+		"passenger space free" > 40
+	on visit
+		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+	on complete
+		dialog "A message is waiting for you, saying the leader of the Southbound research team will be ofund waiting in the spaceport."
 
-# 4.4.7.2 Travel to Zubenelgenubi to pick up research team \fold
-
-# 4.4.7.3 Travel to Deep research planet to pick up research team \fold
-
-# 4.4.7.4 Travel to Syndicate planet for research team \fold
+# 4.4.4.3 Travel to Deep research planet to pick up research team \fold
+mission "Endgame Alpha 4.4.4.3"
+	priority
+	name "Collect Research Teams"
+	source Zug
+	destination Valhalla
+	description "Travel to Valhalla in the Epsilon Leonis system to pick up a group of Lionheart engineers."
+	passengers 20
+	cargo 20
+	to offer
+		has "Endgame Alpha 4.4.4.2: done"
+	on offer
+		conversation
+			`	The atmosphere on Zug is similar to Rust, in that every factory is working at maximum production rate and few are using the leisure facilities around the spaceport, but dissimilar in the readiness of the planet. Many of the locals are going about their business armed, and there are atmospheric patrols regularly passing overhead, both combat and command units. Those who were interested in evacuating seem to have done so already, and everyone here seems ready for the fight.`
+	to complete
+		"cargo space free" > 50
+		"passenger space free" > 30
+	on visit
+		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+# 4.4.4.4 Travel to Syndicate planet for research team \fold
 
 # Told that the Syndicate requested to participate because they have experience attempting to clone alien tech, can also provide jump drives for the teams to return from the Avgi if needed
 
-# 4.4.7.5 Travel to Alpha Centauri to pick up Republic team \fold
+# 4.4.4.5 Travel to Alpha Centauri to pick up Republic team \fold
 
 # \close
 
-# 4.4.8 Carry research teams to Avgi research facility \fold
+# 4.4.5 Carry research teams to Avgi research facility \fold
 
-# Rastaban, Girtab Frontline
+# 4.4.6 Return to Vindemiatrix \fold
+
 # \close
 
 # 4.5 Stalemate Wrap-Up \fold
