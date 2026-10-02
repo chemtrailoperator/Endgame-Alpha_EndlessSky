@@ -458,7 +458,7 @@ mission "Endgame Alpha 4.3.2"
 			`	His eyes go wide as he sees your license, and presses a button on his desk. He signs quickly, "Please be patient for a moment. My leadership is on the way."`
 				goto summoned
 			label leader
-			` He leads you deeper into the facility, past the normal spaceport decorations, until you take a turn downwards, when the walls become bare stone. The tunnel ends abruptly after a corner, leaving you facing a metal bulkhead with a small door built into the center. As the prefect enters in the required codes, you glance around the end of the corridor. Above your head, like an ominous disco ball, is a miniature point defense turret, presumably ready to fry any unwanted visitors. At every corner is a reinforced camera and sensor package. The prefect notices your interest and laughs to himself before signing to you. "You have noticed that we take the defense of our hardened facilities seriously. It would be most unfortunate if even a common citizen came into this compound, and this is considered our fourth most important facility if we are discovered by the Alphas. Yes, we know of your current situation. That is why you are here, all perspectives must be considered, since it is a matter of survival. You have been granted our highest level of security clearance. We have determined the risk is low compared with others.`
+			` He leads you deeper into the facility, past the normal spaceport decorations, until you take a turn downwards, when the walls become bare stone. The tunnel ends abruptly after a corner, leaving you facing a metal bulkhead with a small door built into the center. As the prefect enters in the required codes, you glance around the end of the corridor. Above your head, like an ominous disco ball, is a miniature point defense turret, presumably ready to fry any unwanted visitors. At every corner is a reinforced camera and sensor package. The prefect notices your interest and laughs to himself before signing to you. "You have noticed that we take the defense of our hardened facilities seriously. It would be most unfortunate if even a common citizen came into this compound, and this is considered our fourth most important facility if we are discovered by the Alphas. Befoe you ask, yes, we know of your current situation. That is why you are here, all perspectives must be considered, since it is a matter of survival. By the way, you have been granted our highest level of security clearance. We have determined the risk is low compared with others.`
 			label questions
 			choice
 				`	"How do you know of the new war?"`
@@ -470,17 +470,34 @@ mission "Endgame Alpha 4.3.2"
 						not "EA 4.3.2 bunkers"
 					goto bunkers
 				`	"What is in this compound?"`
-			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home.`
+			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home. `
 				goto meeting
 			label intel
 			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is used only for our own good.`
+				set "EA 4.3.2 intel"
 				goto questions
 			label bunkers
+			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redudancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
+				set "EA 4.3.2 bunkers"
+				goto questions
+			label meeting
+			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria.`
+			` All of our other long range transports are prohibitively busy."`
+				to display
+					not "outfit (flagship installed):Jump Drive"
+			` All of our other jump-capable transports are prohibitively busy."`
+				to display
+					has "outfit (flagship installed):Jump Drive"
+			`	He walks to the wall, places his finger on a seemingly random point on the wall, and waits patiently. After a full ten seconds, he removes his thumb, and gestures to the other side of the room. Down where the wall meets the floor a small hidden cupboard has slid open, utterly silently. He reaches in and pulls out a simple wooden case. He sets it on his desk, opens it, and spins it around. Inside rests a small oblong of what appears to be simple glass.	"This is your package, it may seem innocuous but treat it with respect, it is an object of immense power. It was discovered deep in the Queri system, where we believe the Quarg once were present. Its composition is mostly indistinguishable to us, but from what we can ascertain it contains advanced materials known to be used by the Builders, although it seems more like a piece that the Quarg would make. It would have been disregarded or put in a museum, except that an identical, but far smaller crystal vaporized the lab it was being tested in. This little piece of glass contains power exceeding that of many nuclear weapons, and we haven't figured out how to release it, given the lab's findings were vaporized along with the building, the scientists, and the surrounding 7 square miles. Such an item must be protected, and you will carry it to the base on Siteria."	The prefect closes the case once more, puts it in an innocuous briefcase, and hands it to you. "I will show you the way out. In the briefcase is also a data chip that will allow you to find the bunker in Nona. Do not rush your trip, take no unnecessary risks, and do not tell anyone of this. Currently many of our leaders are in Nona, so the diplomatic errand your government sent you on will be resolved there."	He leads you back out through the barren corridors until you are in the busy spaceport again, and you make your way back to your ship. It seems that you have no choice but to travel to Nona.`
+				launch
 	on enter
 		system
 			government "Republic" "Free Worlds" "Syndicate"
 		dialog `There is an urgent alert waiting on the hyperspace relay system when you connect to it: "Dschubba system defenses have collapsed, no traffic will be permitted to enter the system."`
 		event "EA Dschubba Takeover"
+	on complete
+		conversation
+			`	test.`
 
 # \close			
 
