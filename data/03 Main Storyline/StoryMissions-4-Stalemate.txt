@@ -742,7 +742,7 @@ mission "Endgame Alpha 4.4.4.3"
 					goto stowage
 			`	"Actually I'm serving as the Free Worlds commander for both Kraz and Southbound. I expect the other locations listed in the orders I got will send at least one aide for their governments."`
 			label stowage
-			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
+			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy sole decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
 			`	He claps you on your back and his eyes land on your Admiral insignia. He stutters something unintelligble, and leaves for your ship.`
 				accept
 	to complete
@@ -764,7 +764,7 @@ mission "Endgame Alpha 4.4.4.4"
 		has "Endgame Alpha 4.4.4.3: done"
 	to complete
 		"cargo space free" > 40
-		"passenger space free" > 30
+		"passenger space free" > 20
 	on visit
 		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
 	on offer
