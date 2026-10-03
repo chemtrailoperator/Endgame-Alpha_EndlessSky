@@ -19,7 +19,7 @@ outfit "Large Lasing Generator"
 	series "Special Systems"
 	index 07012
 	cost 2450000
-	thumbnail "outfit/small lasing generator"
+	thumbnail "outfit/large lasing generator"
 	"mass" 44
 	"outfit space" -44
 	"lasing power" 5
@@ -36,7 +36,7 @@ outfit "IR Optical Laser"
 	series "Turrets"
 	index 07011
 	cost 44000
-	thumbnail "outfit/blue optical laser"
+	thumbnail "outfit/ir optical laser"
 	"mass" 10
 	"outfit space" -10
 	"weapon capacity" -10
@@ -106,7 +106,7 @@ outfit "UV Optical Laser"
 	licenses
 		"Twilight Guard"
 	cost 120000
-	thumbnail "outfit/blue optical laser"
+	thumbnail "outfit/uv optical laser"
 	"mass" 20
 	"outfit space" -20
 	"weapon capacity" -20
