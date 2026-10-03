@@ -94,9 +94,10 @@ New Ships:
 	Chemtrail Boat (Person Ship Only)
 	
 Remove Before Publishing Testing Components
-	EAships shipyard definition
+	EAships test shipyard definition
 	EndgameAlpha Development Patch missions
 	This Document
+	Laser Data test outfitter
 	
 Battle Groups
 Battle groups are Free Worlds commanded

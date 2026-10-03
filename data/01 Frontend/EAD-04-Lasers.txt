@@ -1,0 +1,169 @@
+outfit "Small Lasing Generator"
+	category "Systems"
+	series "Special Systems"
+	index 07011
+	cost 870000
+	thumbnail "outfit/small lasing generator"
+	"mass" 22
+	"outfit space" -21
+	"lasing power" 2
+	linked "Green Optical Laser"
+	linked "Blue Optical Laser"
+	linked "Red Optical Laser"
+	linked "UV Optical Laser"
+	description "The same monolithic slab of semiconductor diode powers this spool of doped optical fiber. This coil, however, is significantly shorter, but still dozens of kilometers long. As in the other generators, the coiled fibers serve as a lasing medium that can produce an intense beam of light, and can be gain-switched to pulse at a variety of frequencies. The produced laser light, which can be converted to a number of wavelengths, can be easily tapped and routed via optical fibers or mirrors to a number of turrets on a ship, eliminating the need for the heavy lasing generator to be anywhere near the turret itself."
+	description "	The wavelength of light produced in the coil can altered by swapping the diodes and fiber dopants, allowing the Small Lasing Generator to support up to two Green or Red Optical Lasers or one of each."
+
+outfit "Large Lasing Generator"
+	category "Systems"
+	series "Special Systems"
+	index 07012
+	cost 2450000
+	thumbnail "outfit/small lasing generator"
+	"mass" 44
+	"outfit space" -44
+	"lasing power" 5
+	linked "Green Optical Laser"
+	linked "Blue Optical Laser"
+	linked "Red Optical Laser"
+	linked "UV Optical Laser"
+	description "By adding more otical fibers, the length of this spool is impressive. Light travels more than a thousand kilometers from the diode before reaching the systems that distribute it throughout the ship. As in the other generators, the coiled fibers serve as a lasing medium that can produce an intense beam of light, and can be gain-switched to pulse at a variety of frequencies. The produced laser light, which can be converted to a number of wavelengths, can be easily tapped and routed via optical fibers or mirrors to a number of turrets on a ship, eliminating the need for the heavy lasing generator to be anywhere near the turret itself."
+	description "	The wavelength of light produced in the coil can altered by swapping the diodes and fiber dopants, allowing the Large Lasing Generator to support many different combinations of lasers, and it handles the needs ofthe Ultraviolet Optical Laser with ease."
+
+outfit "Red Optical Laser"
+	category "Turrets"
+	series "Turrets"
+	index 07011
+	cost 44000
+	thumbnail "outfit/blue optical laser"
+	"mass" 10
+	"outfit space" -10
+	"weapon capacity" -10
+	"turret mounts" -1
+	"lasing power" -1
+	weapon
+		"hardpoint sprite" "hardpoint/blue optical laser"
+		"hardpoint offset" 3
+			"frame rate" 3
+		"sound" "optical laser"
+		"fire effect" "red laser glare"
+		"hit effect" "laser ejecta" 7
+		"hit effect" "red laser reflection" 40
+		"hit effect" "red laser scattering"
+		"velocity" 1200
+		"lifetime" 1
+		"reload" 1
+		"inaccuracy" 0.6
+		"turret turn" 6
+		"firing energy" 4
+		"firing heat" 14
+		"shield damage" 1.3
+		"hull damage" 2
+		"minable damage" 5.7
+		"heat damage" 6
+		"prospecting" 3
+		"damage dropoff" 0 1200
+		"dropoff modifier" 0
+	description "This lightweight turret can be fed a beam of light from a lasing generator, which is then combined and focused to produce an intense beam ideal for heating the surface it contacts. While a normal offensive laser is tuned to do the most damage to shields and hulls, this beam, dropped low in the visible spectrum, is optimized for destroying asteroids and heating ships. Like other lasers, this weapon is subject to the effects of diffraction, causing its damage to become less intense with distance while also rendering it invisible. However, precise optics allow the beam to be targeted from an exceptional range, despite the tenuous damage at the edge of the laser's reach."
+	description "	The turret itself only contains the optics needed to synthesize, focus, and target the beam, allowing the laser light to be produced elsewhere. Because of this, an Optical Lasing Generator is needed to run this turret, although one generator is strong enough to support multiple lasers."
+
+effect "red laser glare"
+	sprite "effect/red optical laser glare"
+		"frame rate" 3
+		"random start frame"
+		"rewind"
+	"lifetime" 1
+	"absolute angle" 0
+
+effect "red laser reflection"
+	sprite "effect/red laser reflection"
+		"random start frame"
+		"scale" 0.125
+	"lifetime" 1
+	"random lifetime" 3
+	"random velocity" -90
+	"velocity scale" -0.0003
+
+effect "red laser scattering"
+	sprite "effect/red laser reflection"
+		"frame rate" 3
+		"scale" 0.5
+	"lifetime" 3
+	"velocity scale" 0
+
+
+
+
+
+
+
+outfit "UV Optical Laser"
+	"display name" "Ultraviolet Optical Laser"
+	category "Turrets"
+	series "Turrets"
+	index 07012
+	licenses
+		"Twilight Guard"
+	cost 120000
+	thumbnail "outfit/blue optical laser"
+	"mass" 20
+	"outfit space" -20
+	"weapon capacity" -20
+	"turret mounts" -1
+	"lasing power" -3
+	weapon
+		"hardpoint sprite" "hardpoint/blue optical laser"
+		"hardpoint offset" 3
+			"frame rate" 3
+		"sound" "optical laser"
+		"fire effect" "uv laser glare"
+		"hit effect" "laser ejecta" 8
+		"hit effect" "uv laser reflection" 80
+		"hit effect" "uv laser scattering"
+		"velocity" 2000
+		"lifetime" 1
+		"reload" 1
+		"inaccuracy" 0.6
+		"turret turn" 6
+		"firing energy" 10
+		"firing heat" 16
+		"shield damage" 6.7
+		"hull damage" 9
+		"heat damage" 5
+		"damage dropoff" 0 2000
+		"dropoff modifier" 0
+	description "By modifying the output frequency of certain components, engineers made this laser function very near to the upper limit of the visible spectrum. Such and increase in frequency allows for greater power and greater damage, but it has less effect on the temperature of the defending ship. The shorter wavelength of the light being worked with allows for a large increase in range, although damage at such extreme ranges is minimal. This laser is subject to the effects of diffraction, like all others."
+	description "	The turret itself only contains the optics needed to synthesize, focus, and target the beam, allowing the laser light to be produced elsewhere. Because of this, an Optical Lasing Generator is needed to run this turret, providing enough power to support only one UV laser."
+
+effect "uv laser glare"
+	sprite "effect/uv optical laser glare"
+		"frame rate" 3
+		"random start frame"
+		"rewind"
+	"lifetime" 1
+	"absolute angle" 0
+
+effect "uv laser reflection"
+	sprite "effect/uv laser reflection"
+		"random start frame"
+		"scale" 0.125
+	"lifetime" 1
+	"random lifetime" 3
+	"random velocity" -90
+	"velocity scale" -0.0003
+
+effect "uv laser scattering"
+	sprite "effect/uv laser reflection"
+		"frame rate" 3
+		"scale" 0.5
+	"lifetime" 3
+	"velocity scale" 0
+
+outfitter "EA Laser Tester"
+	"Small Lasing Generator"
+	"Large Lasing Generator"
+	"Red Optical Laser"
+	"UV Optical Laser"
+
+planet "Navigeo Yards"
+	add outfitter "EA Laser Tester"
