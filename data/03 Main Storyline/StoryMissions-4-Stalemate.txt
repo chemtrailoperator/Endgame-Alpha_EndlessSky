@@ -530,7 +530,7 @@ mission "Endgame Alpha 4.3.1"
 # 4.3.2 Remnant Messaging \fold
 mission "Endgame Alpha 4.3.2"
 	priority
-	name "Carry a message to <destination> in the <system> system."
+	name "Remnant Messaging"
 	description "Carry an urgent message to Siteria in the Nona system where a secret bunker is being built."
 	destination "Siteria"
 	source "Viminal"
