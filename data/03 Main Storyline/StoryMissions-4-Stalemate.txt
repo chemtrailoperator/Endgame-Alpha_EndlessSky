@@ -490,14 +490,75 @@ mission "Endgame Alpha 4.3.2"
 					has "outfit (flagship installed):Jump Drive"
 			`	He walks to the wall, places his finger on a seemingly random point on the wall, and waits patiently. After a full ten seconds, he removes his thumb, and gestures to the other side of the room. Down where the wall meets the floor a small hidden cupboard has slid open, utterly silently. He reaches in and pulls out a simple wooden case. He sets it on his desk, opens it, and spins it around. Inside rests a small oblong of what appears to be simple glass.	"This is your package, it may seem innocuous but treat it with respect, it is an object of immense power. It was discovered deep in the Queri system, where we believe the Quarg once were present. Its composition is mostly indistinguishable to us, but from what we can ascertain it contains advanced materials known to be used by the Builders, although it seems more like a piece that the Quarg would make. It would have been disregarded or put in a museum, except that an identical, but far smaller crystal vaporized the lab it was being tested in. This little piece of glass contains power exceeding that of many nuclear weapons, and we haven't figured out how to release it, given the lab's findings were vaporized along with the building, the scientists, and the surrounding 7 square miles. Such an item must be protected, and you will carry it to the base on Siteria."	The prefect closes the case once more, puts it in an innocuous briefcase, and hands it to you. "I will show you the way out. In the briefcase is also a data chip that will allow you to find the bunker in Nona. Do not rush your trip, take no unnecessary risks, and do not tell anyone of this. Currently many of our leaders are in Nona, so the diplomatic errand your government sent you on will be resolved there."	He leads you back out through the barren corridors until you are in the busy spaceport again, and you make your way back to your ship. It seems that you have no choice but to travel to Nona.`
 				launch
+	
+# Add a few remnant ships in and out of the system, one or two by jump drive. some loitering, some jumping.
+	on enter Nona
+		conversation
+			`	You enter the Nona system, which is usually empty except for the occasional Ka'het ship. Now there are Remnant ships here and there, some busy, some apparently just sitting and watching.`
+	on complete
+		conversation
+			`	While there are a few signs of Remnant activity in the system, the planet itself seems undisturbed. No doubt whoever is based here wishes to give that impression.`
+			choice
+				`	(Plug in the data chip the prefect gave you.)`
+					goto chip
+				`	(Try to find the bunker on your own.)`
+			`	Apart from a tiny, almost negligible heat blip on your sensors, barely visible from low orbit, this planet appears empty.`
+			label choic
+			choice
+				`	(Go to the blip.)`
+					goto blip
+				`	(Wander over the planet.)`
+					to display
+						not "EA 4.3.2 wander"
+					set "EA 4.3.2 wander"
+			`	You see nothing but exactly what you'd expect from an uninhabited planet in the Graveyard. Mostly empty, but with a few Builder ruins.`
+				goto choic
+			label blip
+			`	The location of the blip is still plugged in and you configure to enter the atmosphere. As soon as the fireball from reentry disappears off your shield you active your sensors. The blip is more apparent now that you are closer. It appears to be located in a deep canyon filled with cloud of some sort.`
+			label waiter
+			choice
+				`	(Enter the canyon.)`
+					goto canyon
+				`	(Loiter and keep scanning.)`
+					to display
+						not "EA 4.3.2 loiter"
+					set "EA 4.3.2 loiter"
+				`	(Leave.)`
+					to display
+						has "EA 4.3.2 loiter"
+					goto leave
+			`	You place your ship in a stable hover about a dozen miles from the canyon. Your sensors detect nothing but the slight thermal signature and the cloud. An advanced sensor scan, which takes over an hour, turns up the helpful piece of information that the cloud is composed entirely of normal atmospheric compounds.`
+				goto waiter
+			label canyon
+			`	You descend slowly into the thick cloud. The disturbances made on the surface by your repulsors quickly blend back into the grey sheet. Soon you can see nothing but a light grey haze out your windows. The terrain scanning radar onboard your ship detects land approaching a few thousand feet below you, while the walls of the canyon get closer, but not concerningly so. The proximity sensor changes from a green and a yellow light, to two yellow lights as you gradually descend. You break out of the cloud, nearer to terrain than you would normally consider prudent, as one of the indicators blinks to red, leaving you with just enough altitude to move around. The walls of the canyon are rocky, but covered in viney foliage, with an old crumbling structure or a cave here and there. While you are out of the cloud, the air at the bottom is still very humid, leading to a haze that doesn't allow you to see more than a kilometer down the canyon. The thermal signature is much brighter now, in front of you down the canyon, but far enough to be invisible due to the haze.`
+			choice
+				`	(Leave.)`
+					goto leave
+				`	(Fly towards the signature.)`
+			`	The haze gets thicker as you move towards the signature, soon you can only see a few hundred feet in front of your ship. The foliage becomes thicker and more sturdy, forming trees tall enough to turn both indicators red for brief moments. You finally get close enough to the heat signature to see the source, a spring running out of the side of the canyon, clearly kept somewhat warm by what little tectonic activity is left on this old planet. The spring has a few Builder structures around it, but they seem to have suffered more from nature than the others around the planet. There is nothing more for you to see here.`
+			choice
+				`	(Leave.)`			
+			label leave
+			`	You fire up your launch repulsors and blast away from the sight, and back into low orbit. You remember a maxim you once heard in your younger years, "If at first you don't succeed, try doing it the way you were told to in the first place."`
+			choice
+				`	(Plug in the data chip the prefect gave you.)`
+			label chip
+			`	Your ship computer system panel flickers quickly, and a few lines of code run through the command interface. Your transmitter light flickers on, indicating that your radio is in operation. After a few seconds, it cuts off.`
+			`	After a few more seconds, you receive a blip on your direction finding scanner. It only lasts a short period, but it is enough to tell you that you are in the right hemisphere at least.`
+			choice
+				`	(Stay in orbit.)`
+				`	(Reenter.)`
+					goto reenter
+			`	You drift around the planet, picking up another blip every few minutes. You finally drift around the planet far enough to be out of range of the transmitter despite its power. You wait around as you complete your orbit and start picking up signals again.`
+			choice
+				`	(Reenter towards the signal.)`
+			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you deccelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
+			
 	on enter
 		system
 			government "Republic" "Free Worlds" "Syndicate"
 		dialog `There is an urgent alert waiting on the hyperspace relay system when you connect to it: "Dschubba system defenses have collapsed, no traffic will be permitted to enter the system."`
 		event "EA Dschubba Takeover"
-	on complete
-		conversation
-			`	test.`
 
 # \close			
 
