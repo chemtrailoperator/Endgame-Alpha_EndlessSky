@@ -840,7 +840,31 @@ mission "Endgame Alpha 4.4.4.5"
 # \close
 
 # 4.4.5 Carry research teams to Avgi research facility \fold
-
+mission "Endgame Alpha 4.4.5"
+	landing
+	clearance
+	name "Research teams to Navigeo Yards"
+	source Chiron
+	destination "Navigeo Yards"
+	description "Carry the combined research team to <destination> in <system> for Avgi weapons training."
+	cargo "research equipment" 70
+	passengers 50
+	to offer
+		has "Endgame Alpha 4.4.4.5: done"
+		require "Jump Drive"
+	on offer
+		conversation
+			`	In a process that is now becoming repetitive, the Republic team meets you with their gear at the landing pad and enters your ship. The group also includes three extra people who claim to be administrative assistants, but who look more like intelligence agents there to keep tabs on the Deep, Free Worlds, and Syndicate. Abnormally, the Republic team lead asks that you leave for space immediately, as the situation in the South is becoming even more desperate.`
+				launch
+	on enter
+		system
+			attributes "twilight"
+		conversation
+			`	The various people in the research teams have equally varied reactions to your entry into space that is entirely foreign to them. Some seem excited to see everything, while others are quieted by the beauty of the Twilight systems, others are greatly concerned by the persistent threat of Aberrant. The least surprised is the Syndicate team lead, who observes the scenes clinically, without displaying much emotion.`
+	on complete
+		conversation
+			`	At the Navigeo yards spaceport, you are met by an Avgi who is equipped with a translation device. "Invitation. Humans, please follow me to your quarters and operations area. Your equipment will be unloaded to that location."`
+			`	You stay at your ship and oversee the process of unloading the plethora of research equipment, living supplies, and basic parts that has been stuffed in your ship for the past weeks. After it is all unloaded, youw ait at your ship until you receive a message to meet the team leads in the spaceport.`
 # 4.4.6 Return to Vindemiatrix \fold
 
 # \close
