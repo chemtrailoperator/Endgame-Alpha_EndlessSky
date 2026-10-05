@@ -767,14 +767,21 @@ mission "Endgame Alpha 4.4.4.4"
 			`	The Deep team is very reticent about the gear they are loading and the origins of their team, but they load up quickly and are stowed before you even finish the post-flight checklist. The Deep Security agent that comes with the team stops his work long enough to tell you that the next destination is Sundive, the Syndicate's primary research facility.`
 				accept
 
-	npc
+	npc evade 
 		government "Syndicate"
 		personality
 			entering fleeing
 		system Sheratan
 		to spawn
 			has "flagship system: Sheratan"
+		conversation
+			`Sundive hails you again, `
+			`	"<ship>, you are cleared to land."`
 		ship "Freighter (Black Program)" "SS Aurora"
+	on enter "Sheratan"
+		conversation
+			`As you enter the system, Sundive spaceport controllers hail you.`
+			`	"<ship>, enter holding pattern pending arrival of package."`
 
 # 4.4.4.5 Travel to Alpha Centauri to pick up Republic team \fold
 mission "Endgame Alpha 4.4.4.5"
@@ -794,7 +801,42 @@ mission "Endgame Alpha 4.4.4.5"
 		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
 	on offer
 		conversation
-			`As`
+			`Spaceport controllers do not direct you to land at the normal pads, but give you a vector to the Syndicate secured area. You are marshalled to a pad immediately next to one bearing a normal looking Freighter. When you touch down, the marshaller does not instruct you to shut down your engines, but instead signals to open your cargo door. Once open, the Freighter begins unloading 1-ton pallets of gear, which are moved into your cargo hold, after 30 pallets are moved, the Freighter's crew also enters your cargo hold.`
+			`	The instant everything is on board, you are instructed to take off, and are given a vector to the normal spaceport.`
+			`	At the landing pads, you are just finishing shutting down your engines when someone enters your cockpit. You recognize him as one of the men from the Syndicate freighter. "I beg pardon for the unorthodox methods, skipper, but the Syndicate wasn't at all comfortable with a Republic officer, or anyone without authorization for that matter, so close to its research program. It wasn't my decision, you see."`
+			choice
+				`	"No problem, have you been briefed on our mission?"`
+					goto missionbriefing
+				`	"Why is the Syndicate involved with this anyway?"`
+					goto involvment
+				`	"Get off my bridge. I'm just the chauffeur.`
+			`	The man opens his mouth to say something, but decides otherwise and leaves. You finish your flight duties. Your orders state that the next team pickup is on Chiron.`
+				accept
+			label involvement
+			`	"You know, I asked that same question when my team got the assignment." He says as he sits down in one of the back seats of the bridge. "The answer I got was that we already have experience cloning, or attempting to clone I should say, alien technology. That, and they said my team has the most combat experience and travel time between them of any research unit. Incidentally, we brought a jump drive with us, so you might not need to come get us from wherever we're going.`
+			choice
+				`	"You don't know?"`
+				`	"Understandable, carry on."`
+					goto carryon
+			`	"We've only been given the barest of details, that usually how it works. All I know is that we are being inserted with several other teams into a remote area to clone alien tech. They said there would be hostiles involved probably."`
+			label tellchoice
+			choice
+				`	(Tell him about your mission.)`
+					goto tellavgi
+				`	(Let him figure it out on his own.)`
+			`	"That sounds about right," You say, "Now if you'll excuse me, I've got to finish the landing paperwork."`
+				goto carryon
+			label carryon
+			`	 The Syndicate team lead gives you a knowing, if a little disappointed smile, and leaves. You finish your paperwork, as well as planning a course to Chiron, your next pickup location.`
+				accept
+			label tellavgi
+			`	"You aren't just cloning alien tech. They'll be teaching it to you." You say. The team lead's eyes widen considerably, "So I take it we're not going to the Korath." He says it as a statement, not a question.`
+			`	"Far from it," You continue, "We're headed south, there will be some fighting to get to the species, but they should be able to teach you a thing or two about lasers. That being said, I won't spoil the aliens themselves for you, so leave while I get this paperwork taken care of." The Syndicate representative leaves, and you plot a course to Chiron, your next pickup location.`
+				accept
+			label missionbriefing
+			`	"Not beyond the barest details, that usually how the Syndicate likes to work it. All I know is that we are headed to a potentially hostile area to clone alien tech, and we will need a jump drive, which I brought by the way." He gestures out the door in the direction of your cargo hold.`
+				goto tellchoice
+
 # \close
 
 # 4.4.5 Carry research teams to Avgi research facility \fold
