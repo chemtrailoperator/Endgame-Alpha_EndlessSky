@@ -15,6 +15,15 @@
 
 
 # Storyline Fleets \open
+
+fleet "Remnant Watcher"
+	government "Remnant"
+	names "remnant"
+	personality
+		secretive appeasing
+	variant
+		"Tern"
+
 fleet "Large Republic Refugee"
 	government "Republic"
 	names "republic capital"

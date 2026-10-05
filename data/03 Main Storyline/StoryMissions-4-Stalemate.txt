@@ -171,7 +171,7 @@ mission "Endgame Alpha 4.1"
 			choice
 				`	(Wait.)`
 			`	You are startled awake by a hand vigorously slapping your back. You jump up, dimly registering Admiral Alzaga in front of you and Raven behind you, and snap to attention and offer the usual customs and courtesies. After your wits return, you see that Alzaga does not seem in the least perturbed by you being asleep.`
-			`	Both of them sit down at your table and Raven begins, "You look well rested Commander. I'm glad, we have a lot to discuss."`
+			`	Both of them sit down at your table and Raven begins, "You look well rested Captain. I'm glad, we have a lot to discuss."`
 				goto briefing
 			label briefing
 			`	"The next job for you to do is a little bit different from what we've had you doing. The data you've submitted of the Alpha base is unlike any kind of organization we've come across, as you probably already figured, so we would like you to travel around and make some inquiries about it, specifically about the structure at the center of this...thing." Admiral Alzaga says.`
@@ -191,11 +191,11 @@ mission "Endgame Alpha 4.1"
 			`	"Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations.`
 				accept
 			label intel
-			`	Raven hoods her eyelids. "Really Commander, I am capable of finding a great many more things than I am necessarily allowed to, and besides, you signed into the government information service earlier through your ship's mainframe, so I can do whatever I want. It was in the terms you apparently didn't read."`
+			`	Raven hoods her eyelids. "Really Captain, I am capable of finding a great many more things than I am necessarily allowed to, and besides, you signed into the government information service earlier through your ship's mainframe, so I can do whatever I want. It was in the terms you apparently didn't read."`
 			`	You shrug. "Understood, I'll get ready to leave as soon as possible." You say, and stand to leave. Both Raven and the Admiral stand up as well, you salute, and return to your ship to begin preparations, looking suspiciously at your ship's computer screen.`
 				accept
 			label wrong
-			`	Alzaga replies. "Honestly Commander, I'm not too worried about it. We'll keep sending you updates and instructions as needed to make sure the right message gets conveyed, although you might want to take a heavy ship with plenty of fuel to get out of somewhere if you need to. Besides, just one measly commander isn't much compared to what we've lost already." He winks, and stands to leave. You salute him back, and return to your ship to begin preparations.`
+			`	Alzaga replies. "Honestly Captain, I'm not too worried about it. We'll keep sending you updates and instructions as needed to make sure the right message gets conveyed, although you might want to take a heavy ship with plenty of fuel to get out of somewhere if you need to. Besides, just one measly Captain isn't much compared to what we've lost already." He winks, and stands to leave. You salute him back, and return to your ship to begin preparations.`
 				accept
 			label cantleave
 			`	Admiral Alzaga smiles back at you. "I keep on forgetting that you are new to this whole Navy thing. You don't really get a choice. It's an order, and I even put it in writing for you. On real paper. He slides the document across to you.`
@@ -224,7 +224,7 @@ mission "Endgame Alpha 4.2"
 			`	You decide to wear your uniform, something you haven't done outside of human space before.`
 				to display
 					has "outfit (installed): Navy Uniform"
-			`	After passing through a bank of scanners, you reach a desk with a business-like Hai sitting at it. The Hai glances at a screen quickly and addresses you. "<last>, Navy Commander, Flash priority official military business." She looks at your raised eyebrows, "Yes, your associates made prior arrangements, that's why you were allowed to land at all. Please follow me."`
+			`	After passing through a bank of scanners, you reach a desk with a business-like Hai sitting at it. The Hai glances at a screen quickly and addresses you. "<last>, Navy Captain, Flash priority official military business." She looks at your raised eyebrows, "Yes, your associates made prior arrangements, that's why you were allowed to land at all. Please follow me."`
 			`	You follow the Hai around a corner, down a hallway, and out a door and reach a ground vehicle parked behind the embassy. Its driver does not even turn his head to look at you, although you can't see his eyes beneath a pair of Head-up display goggles he is wearing. The aide requests you step in the vehicle.`
 			choice
 				`	(Get in.)`
@@ -240,7 +240,7 @@ mission "Endgame Alpha 4.2"
 			label car
 			`	The inside of the vehicle is quite comfortable, but it does not offer the smoothness of ride that an aircraft or even a hovercraft could produce. You are about to ask why you aren't going by airborne shuttle when the vehicle road ahead of you stoops steeply downward into a hardened bunker facility. You enter a dimly lit tunnel that continues down for several minutes, until you stop at a large bay carved into the side. It has the appearance of a shipping dock.`
 			`	Your driver presses a button on his instrument panel, and the passenger door opens. You step out, and immediately your transport closes up and leaves. As soon as it disappears from sight, the main door of the dock opens, and you see two more agents standing on the either side of the tunnel it reveals. An aide almost identical to the one you saw previously beckons you to follow her down the corridor.`
-			`	After a short distance, you take a side hallway, that rapidly transforms from looking like a warehouse to wood-panelled opulence. The aide stops you at a door (guarded by two more mysterious Hai), knocks, and walks away without comment. Just like with your driver, the door does not open until your escort is not visible. "Commander <last>, please enter." A voice says.`
+			`	After a short distance, you take a side hallway, that rapidly transforms from looking like a warehouse to wood-panelled opulence. The aide stops you at a door (guarded by two more mysterious Hai), knocks, and walks away without comment. Just like with your driver, the door does not open until your escort is not visible. "Captain <last>, please enter." A voice says.`
 			choice
 				`	(Enter and salute.)`
 					goto salute
@@ -254,7 +254,7 @@ mission "Endgame Alpha 4.2"
 			`	You take a few steps into the room, snap ramrod straight, and salute. The Hai in the middle of the five there salutes you back. "Good evening, <last>. Thank you for your courtesy. Please take a seat."`
 			label sitdown
 			`	You walk forward and take the one chair on your side of the table. Four of the Hai appear to be normal, except for the fact that they are all in highly decorated, high ranking uniforms, another is taller, with a more mottled coloration. His uniform is also significantly simpler, with only one insignia on it, and obviously designed to be as utilitarian as possible.`
-			`	As soon as you are seated, the Hai in the center addresses you. "Commander, it has been made known to us that you are here regarding the Alpha war in what is called Free Worlds space. More than this we have not been told. Be so good as to enlighten us."`
+			`	As soon as you are seated, the Hai in the center addresses you. "Captain, it has been made known to us that you are here regarding the Alpha war in what is called Free Worlds space. More than this we have not been told. Be so good as to enlighten us."`
 			label firstquestion
 			choice
 				`	"I'm here to beg for assistance on behalf the human race."`
@@ -325,7 +325,7 @@ mission "Endgame Alpha 4.2"
 			`	After finalizing the details, the main Hai general walks you to the door of the conference room. "Lastly, please do not speak of this meeting to anyone except your superiors." He says, "If the knowledge that the Hai were fighting a war outside their borders, alongside the Unfettered no less..." He shudders, and hands you off to the guards, you take you through the same process to get out of the underground facility, and back to the spaceport embassy.`
 				accept
 			label begmilitary
-			`	Addressing the center Hai, you say, "The Republic greatly appreciates a humanitarian fleet. Would you be willing to also contribute a military one?" One of the Hai on the side replies, "Unfortunately, Commander <last>, the extent we can commit to now limits us to only a relief fleet, however, you are more than welcome to ask it of our associate." At this he gestures to the mottled Hai.`
+			`	Addressing the center Hai, you say, "The Republic greatly appreciates a humanitarian fleet. Would you be willing to also contribute a military one?" One of the Hai on the side replies, "Unfortunately, Captain <last>, the extent we can commit to now limits us to only a relief fleet, however, you are more than welcome to ask it of our associate." At this he gestures to the mottled Hai.`
 			choice
 				`	"Your 'Associates'? Isn't he a Hai too?"`
 			`	The mottled Hai begins to say something, but scowls when he is cut off by the center general, "You must excuse my associate's reticence. Perhaps you were not aware, he is a...northerner. He has been sent under peaceful agreement to assist with any proceedings here. Although his people worked with the Alphas, they were eventually betrayed, as we were many years ago, and they wish just as much to be rid of the pests."`
@@ -360,9 +360,124 @@ mission "Endgame Alpha 4.2"
 		to spawn
 			has "EA begged for assistance"
 
-# 4.3 Remnant Story \fold		
+# 4.3 Remnant Story \fold	
 
-# 4.3.1 Travel to the Remnant \open
+# M4.3 Remnant Defense Fleets \open	
+mission "Endgame Alpha M4.3"
+	landing
+	invisible
+	to offer
+		has "Endgame Alpha 4.2: done"
+	to complete
+		never
+	npc
+		government "Remnant"
+		personality heroic staying uninterested
+		system Cardea
+		fleet "Large Remnant" 3
+		fleet "Small Remnant" 3
+		fleet "Remnant Transport" 1
+	npc
+		government "Remnant"
+		personality heroic staying uninterested
+		system Insitor
+		fleet "Large Remnant" 3
+		fleet "Small Remnant" 3
+		fleet "Remnant Transport" 1
+	npc
+		government "Remnant"
+		personality heroic staying uninterested
+		system Cinxia
+		fleet "Large Remnant" 3
+		fleet "Small Remnant" 3
+		fleet "Remnant Transport" 1
+	npc
+		government "Remnant"
+		personality heroic staying uninterested
+		system Pantica
+		fleet "Large Remnant" 3
+		fleet "Small Remnant" 3
+		fleet "Remnant Transport" 1
+	npc
+		government "Remnant"
+		personality heroic staying uninterested
+		system Arculus
+		fleet "Large Remnant" 5
+		fleet "Small Remnant" 8
+		fleet "Remnant Transport" 7
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Polerius
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Paeli
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Gerenus
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Nona
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Pantica
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Caelian
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system Arculus
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system
+			attributes "ember waste"
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system 
+			attributes "ember waste"
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system 
+			attributes "ember waste"
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system 
+			attributes "ember waste"
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system 
+			attributes "ember waste"
+		fleet "Remnant Watcher"
+	npc
+		government "Remnant"
+		personality mute uninterested secretive staying
+		system 
+			attributes "ember waste"
+		fleet "Remnant Watcher"
+
+# 4.3.1 Travel to the Remnant \fold
 mission "Endgame Alpha 4.3.1"
 	landing
 	name "Contact the Remnant"
@@ -373,6 +488,7 @@ mission "Endgame Alpha 4.3.1"
 		has "Endgame Alpha 4.2: done"
 	on offer
 		event "EA Atria Takeover"
+		event "EA Remnant Defenses Activated" 1
 		conversation
 			`	You escort the Hai fleet to the surface of New Argentina, away from the main spaceport in a remote area, as directed during re-entry. As soon as the Hai fleet touches down, you see that the ships are approached by a multitude of trucks containing portable maintenance systems and supplies. The spaceport controllers then tell you to return and land normally at the Navy base.`
 			`	The pad you are directed to is along the edge of the landing area, with ready access to the building complex beyond the blast walls. As soon as your engines shut down, an air-breathing shuttle lands immediately next to you, disgorging the officer who gave you your orders last time. He approaches your ship from the side and stands next to your entry door, waiting for you to open it.`
@@ -382,9 +498,9 @@ mission "Endgame Alpha 4.3.1"
 			`	This time, you dismiss the officer before opening the data pad. He returns to his transportation and leaves.`
 			`	Your orders are formatted in official style, reading:`
 			``
-			`	To The Attention of: <last>, <first>, Commander, Republic Navy`
+			`	To The Attention of: <last>, <first>, Captain, Republic Navy`
 			`	Alpha Joint Task Force, New Argentina, Vindemiatrix`
-			`	PRIORITY HIGH-SECRET`
+			`	PRIORITY, HIGH-SECRET`
 			`		You are hereby required and directed to contact the Remnant with all possible expedition. Any reasonable expenditure and cost is acceptable and authorized.`
 			`	By Order Of Admiral Alzaga, New Argentina, Vindemiatrix.`
 			``
@@ -421,6 +537,7 @@ mission "Endgame Alpha 4.3.2"
 	to offer
 		has "Endgame Alpha 4.3.1: done"
 	on offer
+		event "EA Populate Nona"
 		conversation
 			`The spaceport, clogged with activity, takes some time to navigate. You haven't become quite accustomed to reading the strange Remnant script, but what you can make out gets you to a secure area where you are stopped at a security checkpoint. `
 			`	The soldier at the gate looks strangely at you, and given your current abnormal, but clearly military uniform, that's not very surprising.`
@@ -431,6 +548,7 @@ mission "Endgame Alpha 4.3.2"
 					not "outfit (installed): Navy Uniform"
 			choice
 				`	"May I speak to the manager?"`
+					goto manager
 				`	"Take me to your leader."`
 					goto manager
 				`	(Show him your Remnant Capital License)`
@@ -473,25 +591,35 @@ mission "Endgame Alpha 4.3.2"
 			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home. `
 				goto meeting
 			label intel
-			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is used only for our own good.`
+			action
 				set "EA 4.3.2 intel"
+			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is used only for our own good.`
 				goto questions
 			label bunkers
-			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redudancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
+			action
 				set "EA 4.3.2 bunkers"
+			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redudancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
 				goto questions
 			label meeting
 			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria.`
 			` All of our other long range transports are prohibitively busy."`
 				to display
-					not "outfit (flagship installed):Jump Drive"
+					not "outfit (flagship installed): Jump Drive"
 			` All of our other jump-capable transports are prohibitively busy."`
 				to display
-					has "outfit (flagship installed):Jump Drive"
-			`	He walks to the wall, places his finger on a seemingly random point on the wall, and waits patiently. After a full ten seconds, he removes his thumb, and gestures to the other side of the room. Down where the wall meets the floor a small hidden cupboard has slid open, utterly silently. He reaches in and pulls out a simple wooden case. He sets it on his desk, opens it, and spins it around. Inside rests a small oblong of what appears to be simple glass.	"This is your package, it may seem innocuous but treat it with respect, it is an object of immense power. It was discovered deep in the Queri system, where we believe the Quarg once were present. Its composition is mostly indistinguishable to us, but from what we can ascertain it contains advanced materials known to be used by the Builders, although it seems more like a piece that the Quarg would make. It would have been disregarded or put in a museum, except that an identical, but far smaller crystal vaporized the lab it was being tested in. This little piece of glass contains power exceeding that of many nuclear weapons, and we haven't figured out how to release it, given the lab's findings were vaporized along with the building, the scientists, and the surrounding 7 square miles. Such an item must be protected, and you will carry it to the base on Siteria."	The prefect closes the case once more, puts it in an innocuous briefcase, and hands it to you. "I will show you the way out. In the briefcase is also a data chip that will allow you to find the bunker in Nona. Do not rush your trip, take no unnecessary risks, and do not tell anyone of this. Currently many of our leaders are in Nona, so the diplomatic errand your government sent you on will be resolved there."	He leads you back out through the barren corridors until you are in the busy spaceport again, and you make your way back to your ship. It seems that you have no choice but to travel to Nona.`
+					has "outfit (flagship installed): Jump Drive"
+			`	He walks to the wall, places his finger on a seemingly random point on the wall, and waits patiently. After a full ten seconds, he removes his thumb, and gestures to the other side of the room. Down where the wall meets the floor a small hidden cupboard has slid open, utterly silently. He reaches in and pulls out a simple wooden case. He sets it on his desk, opens it, and spins it around. Inside rests a small oblong of what appears to be simple glass.	"This is your package, it may seem innocuous but treat it with respect, it is an object of immense power. It was discovered deep in the Queri system, where we believe the Quarg once were present. Its composition is mostly indistinguishable to us, but from what we can ascertain it contains advanced materials known to be used by the Builders, although it seems more like a piece that the Quarg would make. It would have been disregarded or put in a museum, except that an identical, but far smaller crystal vaporized the lab it was being tested in. This little piece of glass contains power exceeding that of many nuclear weapons, and we haven't figured out how to release it, given the lab's findings were vaporized along with the building, the scientists, and the surrounding 7 square miles. Such an item must be protected, and you will carry it to the base on Siteria."`
+			`	The prefect closes the case once more, puts it in an innocuous briefcase, and hands it to you. "I will show you the way out. In the briefcase is also a data chip that will allow you to find the bunker in Nona. Do not rush your trip, take no unnecessary risks, and do not tell anyone of this. Currently many of our leaders are in Nona, so the diplomatic errand your government sent you on will be resolved there."`
+			`	He leads you back out through the barren corridors until you are in the busy spaceport again, and you make your way back to your ship. It seems that you have no choice but to travel to Nona.`
 				launch
 	
 # Add a few remnant ships in and out of the system, one or two by jump drive. some loitering, some jumping.
+	npc
+		government "Remnant"
+		personality
+			staying surveillance heroic vindictive
+		system Nona
+		fleet "Large Remnant" 2
 	on enter Nona
 		conversation
 			`	You enter the Nona system, which is usually empty except for the occasional Ka'het ship. Now there are Remnant ships here and there, some busy, some apparently just sitting and watching.`
@@ -750,7 +878,7 @@ mission "Endgame Alpha 4.4.4.1"
 		"cargo space free" > 70
 		"passenger space free" > 50
 	on visit
-		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		dialog phrase "EA not enough space"
 
 # 4.4.4.2 Travel to Zubenelgenubi for team \fold
 mission "Endgame Alpha 4.4.4.2"
@@ -772,7 +900,7 @@ mission "Endgame Alpha 4.4.4.2"
 		"cargo space free" > 60
 		"passenger space free" > 40
 	on visit
-		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		dialog phrase "EA not enough space"
 	on complete
 		dialog "A message is waiting for you, saying the leader of the Southbound research team will be found waiting in the spaceport."
 	
@@ -799,13 +927,13 @@ mission "Endgame Alpha 4.4.4.3"
 			`	"Actually I'm serving as the Free Worlds commander for both Kraz and Southbound. I expect the other locations listed in the orders I got will send at least one aide for their governments."`
 			label stowage
 			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy sole decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
-			`	He claps you on your back and his eyes land on your Admiral insignia. He stutters something unintelligble, and leaves for your ship.`
+			`	He claps you on your back and his eyes land on your Captain insignia. He stutters something unintelligble, and leaves for your ship.`
 				accept
 	to complete
 		"cargo space free" > 50
 		"passenger space free" > 30
 	on visit
-		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		dialog phrase "EA not enough space"
 		
 # 4.4.4.4 Travel to Syndicate planet for research team \fold
 mission "Endgame Alpha 4.4.4.4"
@@ -822,7 +950,7 @@ mission "Endgame Alpha 4.4.4.4"
 		"cargo space free" > 40
 		"passenger space free" > 20
 	on visit
-		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		dialog phrase "EA not enough space"
 	on offer
 		conversation
 			`	The Deep team is very reticent about the gear they are loading and the origins of their team, but they load up quickly and are stowed before you even finish the post-flight checklist. The Deep Security agent that comes with the team stops his work long enough to tell you that the next destination is Sundive, the Syndicate's primary research facility.`
@@ -859,7 +987,7 @@ mission "Endgame Alpha 4.4.4.5"
 		"cargo space free" > 10
 		"passenger space free" > 13
 	on visit
-		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		dialog phrase "EA not enough space"
 	on offer
 		conversation
 			`Spaceport controllers do not direct you to land at the normal pads, but give you a vector to the Syndicate secured area. You are marshalled to a pad immediately next to one bearing a normal looking Freighter. When you touch down, the marshaller does not instruct you to shut down your engines, but instead signals to open your cargo door. Once open, the Freighter begins unloading 1-ton pallets of gear, which are moved into your cargo hold, after 30 pallets are moved, the Freighter's crew also enters your cargo hold.`
@@ -940,7 +1068,7 @@ mission "Endgame Alpha 4.4.6"
 		conversation
 			`In advent of the research team's arrival, the Avgi have built a small section of human shaped furniture for eating and recreating. Not only are the five research team leads there, but the three government representatives as well. An Avgi also waits, and opens the conversation.`
 			`	"Hope. Thank you, <last> for providing a means for our Consonance to assist yours, though in future we will seek for liaison on more peaceful and less stressed grounds. Assurance. Have no concern about your engineers, every resource that can safely be allocated will be given to them." The Avgi chirps a word that doesn't translate, and leaves.`
-			`	"Well, Admiral <last>, I must say that you've given the Republic, and humanity for that matter, a great opportunity. Thank you very much, personally, and professionally." The Republic representative says.`
+			`	"Well, Captain <last>, I must say that you've given the Republic, and humanity for that matter, a great opportunity. Thank you very much, personally, and professionally." The Republic representative says.`
 			`	The Syndicate representative, who is also his own team lead, stands and places a stack of credit chips on the table. "The Syndicate wishes to thank you with more than just words skipper, please take these, it should be about a million credits." He leaves, passing through a door marked 'Main Lab' in human text.`
 			`	Lieutenant Byers offers thanks similarly, but states that any payment will be at the discretion of his government, and likely the Republic's as well. The others leave, and you plan the last leg of flight dictated by your orders-return to Vindemiatrix.`
 				accept

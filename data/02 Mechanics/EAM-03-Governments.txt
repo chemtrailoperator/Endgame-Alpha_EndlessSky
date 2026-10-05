@@ -12,6 +12,42 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+government "Remnant Sentry"
+	"display name" "Remnant"
+	swizzle 0
+	color "governments: Remnant"
+	"crew defense" 2.2
+	
+	"player reputation" 1
+	"bribe" 0
+	"attitude toward"
+		"Indigenous Lifeform" 0.05
+		"Korath" -.05
+		"Alpha" -10
+		"Remnant (Postverta)" 1
+		"Remnant (Research)" 1
+		"Remnant" 1
+	"penalty for"
+		assist -5
+		disable 10
+		board 1
+		capture 100
+		destroy 100
+		scan 0.1
+	"foreign penalties for"
+		"Remnant (Postverta)"
+		"Remnant (Research)"
+		"Remnant"
+	"custom penalties for"
+		"Indigenous Lifeform"
+			scan 0
+	"provoked on scan"
+	"friendly hail" "remnant uncontacted"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "remnant uncontacted hostile"
+	"hostile disabled hail" "hostile disabled"
+	"travel restrictions"
+		system "Nenia"
 
 government "Alpha (Hidden)"
 	"display name" "Independent"

@@ -1,3 +1,4 @@
+
 # Copyright (c) 2026 by ChemtrailOperator
 # Copyright (c) 2026 by Living_Adblocker
 #
@@ -1905,6 +1906,7 @@ ship Lance "Lance (Remnant)"
 		
 
 # Storyline Variants \fold
+
 ship "Freighter" "Freighter (Black Program)"
 	add attributes
 		"fuel capacity" -600

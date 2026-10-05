@@ -92,9 +92,16 @@ event "EA secure vindemiatrix"
 		remove fleet "Large Southern Merchants"
 		remove fleet "Small Southern Pirates"
 		remove fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates" 4000
+		add fleet "Small Southern Pirates" 4000
+		"no raids"
 
 event "EA Remnant Defenses Activated"
+
+event "EA Populate Nona"
+	system Nona
+		add fleet "Large Remnant" 1000
+		add fleet "Small Remnant" 1000
+		add fleet "Remnant Transport" 1000
 
 # Awards \fold
 
