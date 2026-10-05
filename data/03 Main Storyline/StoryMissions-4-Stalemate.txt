@@ -864,9 +864,26 @@ mission "Endgame Alpha 4.4.5"
 	on complete
 		conversation
 			`	At the Navigeo yards spaceport, you are met by an Avgi who is equipped with a translation device. "Invitation. Humans, please follow me to your quarters and operations area. Your equipment will be unloaded to that location."`
-			`	You stay at your ship and oversee the process of unloading the plethora of research equipment, living supplies, and basic parts that has been stuffed in your ship for the past weeks. After it is all unloaded, youw ait at your ship until you receive a message to meet the team leads in the spaceport.`
+			`	You stay at your ship and oversee the process of unloading the plethora of research equipment, living supplies, and basic parts that has been stuffed in your ship for the past weeks. After it is all unloaded, you wait at your ship until you receive a message to meet the team leads in the spaceport.`
 # 4.4.6 Return to Vindemiatrix \fold
-
+mission "Endgame Alpha 4.4.6"
+	priority
+	name "Report to Republic Command"
+	source "Navigeo Yards"
+	destination "New Argentina"
+	description "Report to Republic task force command on New Argentina in the Vindemiatrix system."
+	to offer
+		has "Endgame Alpha 4.4.5: done"
+	on offer
+		payment 1000000
+		conversation
+			`In advent of the research team's arrival, the Avgi have built a small section of human shaped furniture for eating and recreating. Not only are the five research team leads there, but the three government representatives as well. An Avgi also waits, and opens the conversation.`
+			`	"Hope. Thank you, <last> for providing a means for our Consonance to assist yours, though in future we will seek for liaison on more peaceful and less stressed grounds. Assurance. Have no concern about your engineers, every resource that can safely be allocated will be given to them." The Avgi chirps a word that doesn't translate, and leaves.`
+			`	"Well, Admiral <last>, I must say that you've given the Republic, and humanity for that matter, a great opportunity. Thank you very much, personally, and professionally." The Republic representative says.`
+			`	The Syndicate representative, who is also his own team lead, stands and places a stack of credit chips on the table. "The Syndicate wishes to thank you with more than just words skipper, please take these, it should be about a million credits." He leaves, passing through a door marked 'Main Lab' in human text.`
+			`	Lieutenant Byers offers thanks similarly, but states that any payment will be at the discretion of his government, and likely the Republic's as well. The others leave, and you plan the last leg of flight dictated by your orders-return to Vindemiatrix.`
+				accept
+	
 # \close
 
 # 4.5 Stalemate Wrap-Up \fold
