@@ -1904,6 +1904,21 @@ ship Lance "Lance (Remnant)"
 		"nGVF-AA Fuel Cell"
 		
 
+# Storyline Variants \fold
+ship "Freighter" "Freighter (Black Program)"
+	add attributes
+		"fuel capacity" -600
+	outfits
+		"X1100 Ion Reverse Thruster"
+		"X2200 Ion Steering"
+		"X2700 Ion Thruster"
+		"LP072a Battery Pack"
+		"nGVF-DD Fuel Cell"
+		"Jump Drive"
+		"Systems Core (Small)"
+		"Ramscoop"
+		"Heavy Anti-Missile Turret"
+
 # \close
 
 #Items for testing, remove before publishing

@@ -512,10 +512,6 @@ mission "Endgame Alpha 4.4.1"
 	description "Travel to Peripheria in the Concerto system to speak with the Assembly of Consonant Polities"
 	to offer
 		has "Endgame Alpha 4.3.9: done"
-	to accept
-		"reputation: Avgi" > 0
-	on blocked
-		dialog `You cannot currently contact the Avgi as they are at war with you.`
 	on offer
 		conversation
 			`As usual, you report back to the Navy command center located in the spaceport. You are met there by Raven, who brings you to a small office located in the back of the complex.`
@@ -525,8 +521,6 @@ mission "Endgame Alpha 4.4.1"
 					goto speed
 				`	"I don't appreciate you looking through my electronics."`
 					goto electronics
-				`	"I need extra time to get a jump drive."`
-					goto jumpdrive
 				`	"Nope, I'll leave as soon as possible."`
 					goto ready
 			label speed
@@ -702,7 +696,7 @@ mission "Endgame Alpha 4.4.4.2"
 	landing
 	name "Collect Research Teams"
 	passengers 10
-	cargo 10
+	cargo "research equipment" 10
 	source "Rust"
 	destination "Zug"
 	description "Travel to Zug in the Zubenelgenubi system to pick up a Southbound Shipyards engineering team."
@@ -719,8 +713,9 @@ mission "Endgame Alpha 4.4.4.2"
 	on visit
 		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
 	on complete
-		dialog "A message is waiting for you, saying the leader of the Southbound research team will be ofund waiting in the spaceport."
-
+		dialog "A message is waiting for you, saying the leader of the Southbound research team will be found waiting in the spaceport."
+	
+		
 # 4.4.4.3 Travel to Deep research planet to pick up research team \fold
 mission "Endgame Alpha 4.4.4.3"
 	priority
@@ -729,7 +724,7 @@ mission "Endgame Alpha 4.4.4.3"
 	destination Valhalla
 	description "Travel to Valhalla in the Epsilon Leonis system to pick up a group of Lionheart engineers."
 	passengers 20
-	cargo 20
+	cargo "research equipment" 20
 	to offer
 		has "Endgame Alpha 4.4.4.2: done"
 	on offer
@@ -755,10 +750,10 @@ mission "Endgame Alpha 4.4.4.3"
 mission "Endgame Alpha 4.4.4.4"
 	landing
 	name "Collect Research Teams"
-	description "Travel to Hephaestus in the Markab system to pick up a research team."
+	description "Travel to Sundive in the Sheratan system to pick up a research team."
 	source Valhalla
 	destination Markab
-	cargo 30
+	cargo "research equipment" 30
 	passengers 30
 	to offer
 		has "Endgame Alpha 4.4.4.3: done"
@@ -769,13 +764,37 @@ mission "Endgame Alpha 4.4.4.4"
 		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
 	on offer
 		conversation
-			`	The Deep team is very reticent about the gear they are loading and the origins of their team, but they load up quickly and are stowed before you even finish the post-flight checklist. The Deep Security agent that comes with the team stops his work long enough to tell you that the next destination is the Syndicate's manufacturing headquarters.`
+			`	The Deep team is very reticent about the gear they are loading and the origins of their team, but they load up quickly and are stowed before you even finish the post-flight checklist. The Deep Security agent that comes with the team stops his work long enough to tell you that the next destination is Sundive, the Syndicate's primary research facility.`
 				accept
 
-# Told that the Syndicate requested to participate because they have experience attempting to clone alien tech, can also provide jump drives for the teams to return from the Avgi if needed
+	npc
+		government "Syndicate"
+		personality
+			entering fleeing
+		system Sheratan
+		to spawn
+			has "flagship system: Sheratan"
+		ship "Freighter (Black Program)" "SS Aurora"
 
 # 4.4.4.5 Travel to Alpha Centauri to pick up Republic team \fold
-
+mission "Endgame Alpha 4.4.4.5"
+	landing
+	name "Collect Research Teams"
+	description "Travel to Chiron in the Alpha Centauri system to pick up the Republic engineering team."
+	source Sundive
+	destination Chiron
+	cargo "research equipment" 60
+	passengers 37
+	to offer
+		has "Endgame Alpha 4.4.4.4: done"
+	to complete
+		"cargo space free" > 10
+		"passenger space free" > 13
+	on visit
+		dialog "You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+	on offer
+		conversation
+			`As`
 # \close
 
 # 4.4.5 Carry research teams to Avgi research facility \fold
