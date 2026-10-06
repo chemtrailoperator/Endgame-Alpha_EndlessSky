@@ -464,21 +464,21 @@ mission "Endgame Alpha 4.3.2"
 				`	"How do you know of the new war?"`
 					to display
 						not "EA 4.3.2 intel"
+					set "EA 4.3.2 intel"
 					goto intel
 				`	"What are the other facilities?"`
 					to display
 						not "EA 4.3.2 bunkers"
+					set "EA 4.3.2 bunkers"
 					goto bunkers
 				`	"What is in this compound?"`
 			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home. `
 				goto meeting
 			label intel
 			`	We have many associates, some like yourself, some native Remnant, all distributed throughout Human space. You government may call it spying, but we do not consider it so, since the collected data is used only for our own good.`
-				set "EA 4.3.2 intel"
 				goto questions
 			label bunkers
 			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redudancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
-				set "EA 4.3.2 bunkers"
 				goto questions
 			label meeting
 			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria.`
@@ -552,8 +552,140 @@ mission "Endgame Alpha 4.3.2"
 			`	You drift around the planet, picking up another blip every few minutes. You finally drift around the planet far enough to be out of range of the transmitter despite its power. You wait around as you complete your orbit and start picking up signals again.`
 			choice
 				`	(Reenter towards the signal.)`
+			label reenter
 			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you deccelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
-			
+
+mission "Endgame Alpha 4.3.3"
+	landing
+	name "Carry news back to Viminal, then head home."
+	description "Travel Viminal in the Arculus system to drop off secure information, then travel back to New Argentina to report for your next movement orders."
+	destination "New Argentina"
+	source "Siteria"
+	to offer
+		has "Endgame Alpha 4.3.2: done"
+	on offer
+		conversation
+			`	You set your ship down in a clearing near the hill and start your walk towards the building carrying the innocuous briefcase containing the unknown object. The climate of Siteria is similar enough to Earth's that you just need your breathing pack instead of the full spacesuit, which is well, because it feels like a longer walk than it looks. At the little hut, you are given a DNA test by a stoic guard and led through the airlock. The only thing inside other than defenses and communications equipment is an elevator. You get in by yourself and the doors close. There are no buttons or controls on the inside, but it starts moving downwards without your input.`
+			choice
+				`	(Wait.)`
+			`	The elevator proceeds downwards at a constant rate after its first acceleration. This could be a long trip.`
+			choice
+				`	(Wait.)`
+			`	There is a little smear of grease high on the wall near the ceiling.`
+			choice
+				`	(Wait.)`
+			`	A particle of dust floats past your eyes, drifting to the floor sadly.`
+			choice
+				`	(Wait.)`
+			`	You notice that your uniform has a smudge of dirt on the shoulder. How long has that been there?`
+				to display 
+					has "outfit (flagship installed): Navy Uniform"
+			`	You notice the nice jacket you wore for this meeting has a little tear in a shoulder seam. How long has it been like that?`
+				to display
+					not "outfit (flagship installed): Navy Uniform"
+			choice
+				`	(Wait.)`
+			`	This is a really long elevator.`
+			choice
+				`	(Wait.)`
+				` 	(Wait Faster.)`
+			`	The elevator continues its nearly silent journey downwards.`
+			choice
+				`	(Kick the floor to make it go faster.)`
+				`	(Wait.)`
+					goto wait
+			`	You bang, stomp, and kick the floor. It might be moving a little faster now, or it might be your imagination. `
+			label wait
+			`The elevator moves on.`
+			choice
+				`	(Wait.)`
+				`	(Wait Faster).`
+					goto faster
+			`	There is a little bit of rust at the corner of the door.`
+			choice
+				`	(Wait.)`
+					goto faster
+				`	(Scratch off the rust.)`
+			`	The rust is harder than it looks. By the time you get it off the process has damaged more than one of your fingernails.`
+			choice
+				`	(Wait.)`
+			`	Nothing happens. Absolutely nothing.`
+			choice
+				`	(Breathe in.)`
+			`	The air is boring, not too cold to be felt, not too warm to be felt either.`
+			choice
+				`	(Breathe out.)`
+			label faster
+			`	The elevator grinds slightly. You might be getting to the end.`
+			choice
+				`	(Wait.)`
+			`	There is a faint tremble in the air, instinctually detected more than consciously felt.`
+			choice
+				`	(Wait.)`
+			`	The elevator begins to deccelerate.`
+			choice
+				`	(Wait.)`
+			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against the bumpers. There are no buttons.`
+			choice
+				`	(Wait expectantly.)`
+			`	After a short pause, the door slides open, revealing a large passageway carved out of the bare rock of the mountain. Over a few yards, the tunnel tapers down to about man size. The intervening extra space is crammed with explosives, and a little kiosk. The kiosk is unoccupied.`
+			choice
+				`	(Wait some more.)`
+					goto fetched
+				`	(Walk down the passageway.)`
+			`	After slimming down, the passageway continues straight for a distance, before taking a few confusing zigzags. You finally turn a corner to see a large bulkhead with a door built in. The door is open already. On the other side it opens up to a cavern, some parts natural, other parts crudely carved away to make space. The area is filled with crates and piles of gear, and some whole ships. (How did they get in here?) Despite the large amount of resources, the area is mysteriously free of people. As you are looking around in a confused manner a tall Remnant steps out from behind a pile of crates and begins to walk towards you. He begins to sign when he gets close enough. "Welcome Captain, I am Prefect Conto, leader of this facility. I see you have brought the object with you. That is most well. I can take it out of your hands now."`
+			choice
+				`	(Give him the briefcase.)`
+					goto case
+				`	(Refuse.)`
+			`	"I'm not giving you the briefcase, you could be anyone." You say.`
+			`	The Remnant slows his signs down for you, as if you misunderstood. "I am qualified to take that item off you, although you may not know how much. As said previously I am the prefect of this facility, and you currently stand in it. Even if I was not who I say I am, there is little risk. We are isolated 7,300 feet underground, in a cave with only two entrances, both guarded more heavily than some planets. The briefcase contains a little piece of technology more powerful than we know, I have been trusted with its safekeeping, and I must follow through with my duties.`
+			choice
+				`	(Give him the briefcase.)`
+			label case
+			`	"Thank you Captain, please follow me."`
+			`	He leads you between the stacks of crates into a smaller offshoot of the main cavern. In the secluded area is a small gathering of chairs, all but one filled, with more Remnant standing around them. The prefect gestures you to the empty chair, and walks off to deal with his priceless artifact. Some of those sitting in the chairs or around seem frustrated, even angered, while others seem very tired.`
+			label circle
+			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significanly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
+			choice
+				`	"There's nothing you can do at all?"`
+				`	"Why won't you help us."`
+			`	A different prefect speaks up, "The decision is a difficult one. But we must think of our own citizens before those of the Republic, or any others. Some would have us join the war at our maximum capacity immediately," he says, looking at the loudest of the grumbling members of the party, "while others say that our only course of action is to evacuate as many as we can deep into the Graveyard or even the Tangled Shroud. Our current position is prepared undecidedness, we are setting up contingencies in case our defenses fall, but we are also prepared to fling whatever we can into your space if the Alphas advance too far."`
+			`	Prefect Conto enters the circle again, handing you a package with a seal on the cover. "This is a summary of our efforts here and in Remnant space, please take it back to your government so that they might be better informed. Again, we are sorry we could not be of more assistance."`
+			choice
+				`	"Thank you for your time."`
+					goto thanks
+				`	"I'm not leaving until you give me help."`
+			`	The prefect sighs, "Captain <last>, you are leaving this facility easily for you or easily for us. It is not really an option."`
+			choice
+				`	"Wait, that didn't make any sense."`
+				`	(Leave peacably with the package.)`
+					goto thanks
+			`	"I care not whether it made any sense to you or not, I am no master of words. All that you must understand is that you must leave immediately or suffer the consequences."`
+			choice
+				`	(Leave immediately.)`
+					goto thanks
+				`	(Suffer the consequences.)`
+			`	Prefect Conto quickly beats you up single-handedly despite your best efforts and drags you back roughly through the stone passages. He doesn't let you stand up on the excruciating elevator trip, but leaves you bent in an uncomfortable position in the corner on the floor. He straps your ventilator system on roughly (without even checking the seal) before letting you tumble wildly to the base of the hill. He actually seems to enjoy the process. By the time you are coherent again the little hut has activated its cloak again. You crawl back to your ship painfully, your arms and clothes scratched by the alien grasses and your lungs and throat burnt by the alien atmosphere that made its way through your gear. Its best that you leave for New Argentina immediately.`
+				launch
+			label thanks
+			`	You are led back to the dismal elevator, although the trip seems shorter this time. As you make it to the bottom of the hill, the building at the top activates its cloaking system again, disappearing from view. Its time to head back to New Argentina to report.`
+				accept
+			label fetched
+			`	As you are waiting a tall Remnant steps out from behind a pile of crates and begins to walk towards you. He begins to sign when he gets close enough. "Welcome Captain, I am Prefect Conto, leader of this facility. I see you have brought the object with you. That is most well. I can take it out of your hands now."`
+			choice
+				`	(Give him the briefcase.)`
+					goto case1
+				`	(Refuse.)`
+			`	"I'm not giving you the briefcase, you could be anyone." You say.`
+			`	The Remnant slows his signs down for you, as if you misunderstood. "I am qualified to take that item off you, although you may not know how much. As said previously I am the prefect of this facility, and you currently stand in it. Even if I was not who I say I am, there is little risk. We are isolated 7,300 feet underground, in a cave with only two entrances, both guarded more heavily than some planets. The briefcase contains a little piece of technology more powerful than we know, I have been trusted with its safekeeping, and I must follow through with my duties.`
+			choice
+				`	(Give him the briefcase.)`
+			label case1
+			`	"Thank you Captain, please follow me."`
+			`	He leads you down the stone corridor which, after slimming down, continues straight for a distance, before taking a few confusing zigzags. You finally turn a corner to see a large bulkhead with a door built in. The door is open already. On the other side it opens up to a cavern, some parts natural, other parts crudely carved away to make space. The area is filled with crates and piles of gear, and some whole ships. (How did they get in here?) Despite the large amount of resources, the area is mysteriously free of people.`
+			`	He leads you between the stacks of crates into a smaller offshoot of the main cavern. In the secluded area is a small gathering of chairs, all but one filled, with more Remnant standing around them. The prefect gestures you to the empty chair, and walks off to deal with his priceless artifact. Some of those sitting in the chairs or around seem frustrated, even angered, while others seem very tired.`
+				goto circle
 	on enter
 		system
 			government "Republic" "Free Worlds" "Syndicate"
