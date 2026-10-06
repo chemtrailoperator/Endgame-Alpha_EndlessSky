@@ -12,6 +12,10 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+phrase "EA not enough space"
+	word
+		"You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."
+		
 phrase "EA package delivered"
 	word
 		"As instructed, "

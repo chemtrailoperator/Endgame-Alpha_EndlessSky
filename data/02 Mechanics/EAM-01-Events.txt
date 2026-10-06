@@ -92,9 +92,128 @@ event "EA secure vindemiatrix"
 		remove fleet "Large Southern Merchants"
 		remove fleet "Small Southern Pirates"
 		remove fleet "Large Southern Pirates"
-		fleet "Small Southern Pirates" 4000
+		add fleet "Small Southern Pirates" 4000
+		"no raids"
 
 event "EA Remnant Defenses Activated"
+
+event "EA Populate Nona"
+	system Nona
+		add fleet "Large Remnant" 1000
+		add fleet "Small Remnant" 1000
+		add fleet "Remnant Transport" 1000
+
+event "EA Republic Martial Law"
+	system Vindemiatrix
+		add attributes "martial law"
+		"no raids"
+		government "17th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+		
+	system Alioth
+		add attributes "martial law"
+		"no raids"
+		government "17th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+		
+	system Seginus
+		add attributes "martial law"
+		"no raids"
+		government "17th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+		
+	system "Kaus Borealis"
+		add attributes "martial law"
+		"no raids"
+		government "17th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
+	system Sabik
+		add attributes "martial law"
+		"no raids"
+		government "33rd Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
+	system Zubeneschamali
+		add attributes "martial law"
+		"no raids"
+		government "33rd Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
+	system Rastaban
+		add attributes "martial law"
+		"no raids"
+		government "9th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
+	system "Delta Sagittari
+		add attributes "martial law"
+		"no raids"i"
+		government "9th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
+	system Girtab
+		add attributes "martial law"
+		"no raids"
+		government "9th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
+	system Albaldah
+		add attributes "martial law"
+		"no raids"
+		government "9th Battle Group"
+		remove fleet "Small Southern Merchants"
+		add fleet "Large Militia" 1000
+		add fleet "Small Militia" 1000
+		add fleet "Large Republic" 1000
+		add fleet "Small Republic" 1000
+		add fleet "Republic Logistics" 1000
+	
 
 # Awards \fold
 

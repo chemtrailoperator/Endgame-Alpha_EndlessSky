@@ -12,6 +12,42 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+government "Remnant Sentry"
+	"display name" "Remnant"
+	swizzle 0
+	color "governments: Remnant"
+	"crew defense" 2.2
+	
+	"player reputation" 1
+	"bribe" 0
+	"attitude toward"
+		"Indigenous Lifeform" 0.05
+		"Korath" -.05
+		"Alpha" -10
+		"Remnant (Postverta)" 1
+		"Remnant (Research)" 1
+		"Remnant" 1
+	"penalty for"
+		assist -5
+		disable 10
+		board 1
+		capture 100
+		destroy 100
+		scan 0.1
+	"foreign penalties for"
+		"Remnant (Postverta)"
+		"Remnant (Research)"
+		"Remnant"
+	"custom penalties for"
+		"Indigenous Lifeform"
+			scan 0
+	"provoked on scan"
+	"friendly hail" "remnant uncontacted"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "remnant uncontacted hostile"
+	"hostile disabled hail" "hostile disabled"
+	"travel restrictions"
+		system "Nenia"
 
 government "Alpha (Hidden)"
 	"display name" "Independent"
@@ -69,14 +105,16 @@ government "EA Alpha Faction III"
 		"Syndicate" -2
 		"EA Alpha Faction I" -1
 		"EA Alpha Faction II" -1
-		
+	
+color "endgame alpha: republic martial law"	0.8 0.961 0.522
+
 government "17th Combat Group"
 	swizzle 0
-	color "governments: Republic"
-	"crew attack" 1.2
-	"crew defense" 2.2
+	color "endgame alpha: republic martial law"
+	"crew attack" 1.5
+	"crew defense" 2.5
 	
-	"player reputation" 2
+	"player reputation" 2000
 	"attitude toward"
 		"Alpha" -1
 		"EA Alpha Faction I" -2
@@ -90,6 +128,96 @@ government "17th Combat Group"
 		"Navy Intelligence" 1
 		"Navy (Oathkeeper)" 1
 		"Neutral" .1
+		"12th Combat Group" 1000
+		"9th Combat Group" 1000
+		"33rd Combat Group" 1000
+	"friendly hail" "friendly navy"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "hostile navy"
+	"hostile disabled hail" "hostile disabled"
+	"ship bribe rejection hail" "ship bribe rejection navy"
+	
+government "33rd Combat Group"
+	swizzle 0
+	color "endgame alpha: republic martial law"
+	"crew attack" 1.5
+	"crew defense" 2.5
+	
+	"player reputation" 2000
+	"attitude toward"
+		"Alpha" -1
+		"EA Alpha Faction I" -2
+		"EA Alpha Faction II" -2
+		"EA Alpha Faction III" -2
+		"Bounty" -.3
+		"Bounty (Disguised)" -.3
+		"Merchant" .25
+		"Militia" .1
+		"Pirate" -.3
+		"Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Neutral" .1
+		"12th Combat Group" 1000
+		"9th Combat Group" 1000
+		"17th Combat Group" 1000
+	"friendly hail" "friendly navy"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "hostile navy"
+	"hostile disabled hail" "hostile disabled"
+	"ship bribe rejection hail" "ship bribe rejection navy"
+	
+government "9th Combat Group"
+	swizzle 0
+	color "endgame alpha: republic martial law"
+	"crew attack" 1.5
+	"crew defense" 2.5
+	
+	"player reputation" 2000
+	"attitude toward"
+		"Alpha" -1
+		"EA Alpha Faction I" -2
+		"EA Alpha Faction II" -2
+		"EA Alpha Faction III" -2
+		"Bounty" -.3
+		"Bounty (Disguised)" -.3
+		"Merchant" .25
+		"Militia" .1
+		"Pirate" -.3
+		"Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Neutral" .1
+		"12th Combat Group" 1000
+		"33rd Combat Group" 1000
+		"17th Combat Group" 1000
+	"friendly hail" "friendly navy"
+	"friendly disabled hail" "friendly disabled"
+	"hostile hail" "hostile navy"
+	"hostile disabled hail" "hostile disabled"
+	"ship bribe rejection hail" "ship bribe rejection navy"
+	
+government "12th Combat Group"
+	swizzle 0
+	color "endgame alpha: republic martial law"
+	"crew attack" 1.5
+	"crew defense" 2.5
+	
+	"player reputation" 2000
+	"attitude toward"
+		"Alpha" -1
+		"EA Alpha Faction I" -2
+		"EA Alpha Faction II" -2
+		"EA Alpha Faction III" -2
+		"Bounty" -.3
+		"Bounty (Disguised)" -.3
+		"Merchant" .25
+		"Militia" .1
+		"Pirate" -.3
+		"Navy Intelligence" 1
+		"Navy (Oathkeeper)" 1
+		"Neutral" .1
+		"9th Combat Group" 1000
+		"33rd Combat Group" 1000
+		"17th Combat Group" 1000
 	"friendly hail" "friendly navy"
 	"friendly disabled hail" "friendly disabled"
 	"hostile hail" "hostile navy"
