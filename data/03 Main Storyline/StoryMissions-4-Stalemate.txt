@@ -638,11 +638,12 @@ mission "Endgame Alpha 4.3.2"
 				`	(Wander over the planet.)`
 					to display
 						not "EA 4.3.2 wander"
-					set "EA 4.3.2 wander"
+			action			
+				set "EA 4.3.2 wander"
 			`	You see nothing but exactly what you'd expect from an uninhabited planet in the Graveyard. Mostly empty, but with a few Builder ruins.`
 				goto choic
 			label blip
-			`	The location of the blip is still plugged in and you configure to enter the atmosphere. As soon as the fireball from reentry disappears off your shield you active your sensors. The blip is more apparent now that you are closer. It appears to be located in a deep canyon filled with cloud of some sort.`
+			`	The location of the blip is still plugged in and you configure to enter the atmosphere. As soon as the fireball from reentry disappears off your shield you active your sensors. The blip is more apparent now that you are closer. It appears to be located in a deep canyon filled with clouds of some sort.`
 			label waiter
 			choice
 				`	(Enter the canyon.)`
@@ -650,15 +651,16 @@ mission "Endgame Alpha 4.3.2"
 				`	(Loiter and keep scanning.)`
 					to display
 						not "EA 4.3.2 loiter"
-					set "EA 4.3.2 loiter"
 				`	(Leave.)`
 					to display
 						has "EA 4.3.2 loiter"
 					goto leave
+			action
+				set "EA 4.3.2 loiter"
 			`	You place your ship in a stable hover about a dozen miles from the canyon. Your sensors detect nothing but the slight thermal signature and the cloud. An advanced sensor scan, which takes over an hour, turns up the helpful piece of information that the cloud is composed entirely of normal atmospheric compounds.`
 				goto waiter
 			label canyon
-			`	You descend slowly into the thick cloud. The disturbances made on the surface by your repulsors quickly blend back into the grey sheet. Soon you can see nothing but a light grey haze out your windows. The terrain scanning radar onboard your ship detects land approaching a few thousand feet below you, while the walls of the canyon get closer, but not concerningly so. The proximity sensor changes from a green and a yellow light, to two yellow lights as you gradually descend. You break out of the cloud, nearer to terrain than you would normally consider prudent, as one of the indicators blinks to red, leaving you with just enough altitude to move around. The walls of the canyon are rocky, but covered in viney foliage, with an old crumbling structure or a cave here and there. While you are out of the cloud, the air at the bottom is still very humid, leading to a haze that doesn't allow you to see more than a kilometer down the canyon. The thermal signature is much brighter now, in front of you down the canyon, but far enough to be invisible due to the haze.`
+			`	You descend slowly into the thick cloud. The disturbances made on the surface by your repulsors quickly blend back into the grey sheet. Soon you can see nothing but a light grey haze out your windows. The terrain scanning radar onboard your ship detects land approaching a few thousand feet below you, while the walls of the canyon get closer, but not concerningly so. The proximity sensor changes from a green and a yellow light, to two yellow lights as you gradually descend. You break out of the cloud, nearer to terrain than you would normally consider prudent, as one of the indicators blinks to red, leaving you with just enough altitude to maneuver. The walls of the canyon are rocky, but covered in viney foliage, with an old crumbling structure or a cave here and there. While you are out of the cloud, the air at the bottom is still very humid, leading to a haze that doesn't allow you to see more than a kilometer down the canyon. The thermal signature is much brighter now, in front of you down the canyon, but far enough to be invisible due to the haze.`
 			choice
 				`	(Leave.)`
 					goto leave
@@ -683,6 +685,7 @@ mission "Endgame Alpha 4.3.2"
 			label reenter
 			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you deccelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
 
+# 4.3.3 Talk to the Remnant leaders \fold
 mission "Endgame Alpha 4.3.3"
 	landing
 	name "Carry news back to Viminal, then head home."
@@ -693,7 +696,7 @@ mission "Endgame Alpha 4.3.3"
 		has "Endgame Alpha 4.3.2: done"
 	on offer
 		conversation
-			`	You set your ship down in a clearing near the hill and start your walk towards the building carrying the innocuous briefcase containing the unknown object. The climate of Siteria is similar enough to Earth's that you just need your breathing pack instead of the full spacesuit, which is well, because it feels like a longer walk than it looks. At the little hut, you are given a DNA test by a stoic guard and led through the airlock. The only thing inside other than defenses and communications equipment is an elevator. You get in by yourself and the doors close. There are no buttons or controls on the inside, but it starts moving downwards without your input.`
+			`	You set your ship down in a clearing near the hill and start your walk towards the building, carrying the innocuous briefcase. The climate of Siteria is similar enough to Earth's that you just need your breathing pack instead of the full spacesuit, which is well, because it feels like a longer walk than it looks. At the little hut, you are given a DNA test by a stoic guard and led through the airlock. The only thing inside other than defenses and communications equipment is an elevator. You get in by yourself and the doors close. There are no buttons or controls on the inside, but it starts moving downwards without your input.`
 			choice
 				`	(Wait.)`
 			`	The elevator proceeds downwards at a constant rate after its first acceleration. This could be a long trip.`
@@ -753,12 +756,12 @@ mission "Endgame Alpha 4.3.3"
 			`	The elevator begins to deccelerate.`
 			choice
 				`	(Wait.)`
-			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against the bumpers. There are no buttons.`
-			choice
-				`	(Wait expectantly.)`
-			`	After a short pause, the door slides open, revealing a large passageway carved out of the bare rock of the mountain. Over a few yards, the tunnel tapers down to about man size. The intervening extra space is crammed with explosives, and a little kiosk. The kiosk is unoccupied.`
+			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against bumpers. There are no buttons.`
 			choice
 				`	(Wait some more.)`
+			`	After a short pause, the door slides open, revealing a large passageway carved out of the bare rock of the mountain. Over a few yards, the tunnel tapers down to about man size. The intervening extra space is crammed with explosives, and a little kiosk. The kiosk is unoccupied.`
+			choice
+				`	(Continue to wait.)`
 					goto fetched
 				`	(Walk down the passageway.)`
 			`	After slimming down, the passageway continues straight for a distance, before taking a few confusing zigzags. You finally turn a corner to see a large bulkhead with a door built in. The door is open already. On the other side it opens up to a cavern, some parts natural, other parts crudely carved away to make space. The area is filled with crates and piles of gear, and some whole ships. (How did they get in here?) Despite the large amount of resources, the area is mysteriously free of people. As you are looking around in a confused manner a tall Remnant steps out from behind a pile of crates and begins to walk towards you. He begins to sign when he gets close enough. "Welcome Captain, I am Prefect Conto, leader of this facility. I see you have brought the object with you. That is most well. I can take it out of your hands now."`
@@ -777,7 +780,7 @@ mission "Endgame Alpha 4.3.3"
 			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significanly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
 			choice
 				`	"There's nothing you can do at all?"`
-				`	"Why won't you help us."`
+				`	"Why won't you help us?"`
 			`	A different prefect speaks up, "The decision is a difficult one. But we must think of our own citizens before those of the Republic, or any others. Some would have us join the war at our maximum capacity immediately," he says, looking at the loudest of the grumbling members of the party, "while others say that our only course of action is to evacuate as many as we can deep into the Graveyard or even the Tangled Shroud. Our current position is prepared undecidedness, we are setting up contingencies in case our defenses fall, but we are also prepared to fling whatever we can into your space if the Alphas advance too far."`
 			`	Prefect Conto enters the circle again, handing you a package with a seal on the cover. "This is a summary of our efforts here and in Remnant space, please take it back to your government so that they might be better informed. Again, we are sorry we could not be of more assistance."`
 			choice
@@ -1208,11 +1211,13 @@ mission "Endgame Alpha 4.4.6"
 	
 # \close
 
-# 4.5 Stalemate Wrap-Up \fold
+# 4.5 Martial Law Story \fold
 
-# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. \open
+# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. You are told that all of the systems close to you have been put under martial aw by both the Free Worlds and the Republic in a combined battle group system, with elements of both Republic and Free Worlds leadership. \open
 
-# 4.5.2 Loss of Kornephoros after Alpha attack \fold
+# 4.5.2 Report to Seginus for duty posting to Frontline, at this point, reveal that Navy Intelligence has discovered that the Alphas in this war are less powerful and appear to think less than the previous kind, but are far better organized. When possible, they collected samples, and when compared to the previous kind (which yes, they kept) they are not nearly as high functioning, but seem to be better at following orders with no empathy and no tactical thinking \fold
+
+# 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus.
 
 # \close
 	
