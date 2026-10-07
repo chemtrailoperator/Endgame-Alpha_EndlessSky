@@ -697,6 +697,7 @@ mission "Endgame Alpha 4.3.3"
 	on offer
 		conversation
 			`	You set your ship down in a clearing near the hill and start your walk towards the building, carrying the innocuous briefcase. The climate of Siteria is similar enough to Earth's that you just need your breathing pack instead of the full spacesuit, which is well, because it feels like a longer walk than it looks. At the little hut, you are given a DNA test by a stoic guard and led through the airlock. The only thing inside other than defenses and communications equipment is an elevator. You get in by yourself and the doors close. There are no buttons or controls on the inside, but it starts moving downwards without your input.`
+			label elevator
 			choice
 				`	(Wait.)`
 			`	The elevator proceeds downwards at a constant rate after its first acceleration. This could be a long trip.`
@@ -803,20 +804,11 @@ mission "Endgame Alpha 4.3.3"
 			`	You are led back to the dismal elevator, although the trip seems shorter this time. As you make it to the bottom of the hill, the building at the top activates its cloaking system again, disappearing from view. Its time to head back to New Argentina to report.`
 				accept
 			label fetched
-			`	As you are waiting a tall Remnant steps out from behind a pile of crates and begins to walk towards you. He begins to sign when he gets close enough. "Welcome Captain, I am Prefect Conto, leader of this facility. I see you have brought the object with you. That is most well. I can take it out of your hands now."`
+			`	The doors slide closed gently after a few moments, and the elevator accelerates upward again. This is going to be a very long trip.`
 			choice
-				`	(Give him the briefcase.)`
-					goto case1
-				`	(Refuse.)`
-			`	"I'm not giving you the briefcase, you could be anyone." You say.`
-			`	The Remnant slows his signs down for you, as if you misunderstood. "I am qualified to take that item off you, although you may not know how much. As said previously I am the prefect of this facility, and you currently stand in it. Even if I was not who I say I am, there is little risk. We are isolated 7,300 feet underground, in a cave with only two entrances, both guarded more heavily than some planets. The briefcase contains a little piece of technology more powerful than we know, I have been trusted with its safekeeping, and I must follow through with my duties.`
-			choice
-				`	(Give him the briefcase.)`
-			label case1
-			`	"Thank you Captain, please follow me."`
-			`	He leads you down the stone corridor which, after slimming down, continues straight for a distance, before taking a few confusing zigzags. You finally turn a corner to see a large bulkhead with a door built in. The door is open already. On the other side it opens up to a cavern, some parts natural, other parts crudely carved away to make space. The area is filled with crates and piles of gear, and some whole ships. (How did they get in here?) Despite the large amount of resources, the area is mysteriously free of people.`
-			`	He leads you between the stacks of crates into a smaller offshoot of the main cavern. In the secluded area is a small gathering of chairs, all but one filled, with more Remnant standing around them. The prefect gestures you to the empty chair, and walks off to deal with his priceless artifact. Some of those sitting in the chairs or around seem frustrated, even angered, while others seem very tired.`
-				goto circle
+				`	(Wait a long time.)`
+			`	The guard at the top gives you a curious look, but presses the button to send you back down again.`
+				goto elevator
 	on enter
 		system
 			government "Republic" "Free Worlds" "Syndicate"
