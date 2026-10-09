@@ -1,4 +1,4 @@
-
+s
 # Copyright (c) 2026 by ChemtrailOperator
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
@@ -60,7 +60,7 @@ government "Alpha (Hidden)"
 	
 government "EA Alpha Faction I"
 	"display name" "Alpha"
-	swizzle 2
+	swizzle 1
 	"crew attack" 1.5
 	"crew defense" 2.5
 	"player reputation" -1000
@@ -76,7 +76,7 @@ government "EA Alpha Faction I"
 		
 government "EA Alpha Faction II"
 	"display name" "Alpha"
-	swizzle 2
+	swizzle 1
 	"crew attack" 1.5
 	"crew defense" 2.5
 	"player reputation" -1000
@@ -92,7 +92,7 @@ government "EA Alpha Faction II"
 
 government "EA Alpha Faction III"
 	"display name" "Alpha"
-	swizzle 2
+	swizzle 1
 	"crew attack" 1.5
 	"crew defense" 2.5
 	"player reputation" -1000
@@ -109,7 +109,7 @@ government "EA Alpha Faction III"
 color "endgame alpha: republic martial law"	0.8 0.961 0.522
 
 government "17th Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5
@@ -138,7 +138,7 @@ government "17th Combat Group"
 	"ship bribe rejection hail" "ship bribe rejection navy"
 	
 government "33rd Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5
@@ -167,7 +167,7 @@ government "33rd Combat Group"
 	"ship bribe rejection hail" "ship bribe rejection navy"
 	
 government "9th Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5
@@ -196,7 +196,7 @@ government "9th Combat Group"
 	"ship bribe rejection hail" "ship bribe rejection navy"
 	
 government "12th Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5

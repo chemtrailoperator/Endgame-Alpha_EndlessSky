@@ -12,6 +12,26 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+phrase "EA manned disabled"
+	word
+		"The manned ship <ship> in your unit has been disabled!"
+	
+phrase "EA manned destroyed"
+	word
+		"The manned ship <ship> in your unit has been destroyed! "
+	word
+		"You have permanently lost this asset."
+		
+phrase "EA unmanned disabled"
+	word
+		"The asset <ship> in your unit has been disabled!"
+		
+phrase "EA unmanned destroyed"
+	word 
+		"The asset <ship> in your unit has been destroyed! "
+	word
+		"You have permanently lost this asset."
+		
 phrase "EA not enough space"
 	word
 		"You do not have the required capacity yet! Free up space or acquire a larger ship or fleet."

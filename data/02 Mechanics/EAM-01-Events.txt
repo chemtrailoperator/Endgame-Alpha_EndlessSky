@@ -103,6 +103,10 @@ event "EA Populate Nona"
 		add fleet "Small Remnant" 1000
 		add fleet "Remnant Transport" 1000
 
+event "EA recolor combat group"
+	government "Escort"
+		swizzle 15
+
 event "EA Republic Martial Law"
 	system Vindemiatrix
 		add attributes "martial law"

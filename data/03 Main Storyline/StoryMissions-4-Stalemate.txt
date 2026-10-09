@@ -19,7 +19,7 @@ mission "Endgame Alpha 4.0"
 	landing
 	source Sagarra
 	name "Return to Vindemiatrix"
-	description "Return to <destination> in <system> with the information you have collected regarding the Alphas."
+	description "Return to <destination> with the information you have collected regarding the Alphas."
 	destination "New Argentina"
 	to offer
 		has "Endgame Alpha 3.14: done"
@@ -215,7 +215,7 @@ mission "Endgame Alpha 4.2"
 	source "Hai-home"
 	destination "New Argentina"
 	name "Support Escort"
-	description "Escort the Hai battle fleet to <destination> in the <system> system."
+	description "Escort the Hai battle fleet to <destination>."
 	to offer
 		has "Endgame Alpha 4.1: done"
 	on offer
@@ -481,7 +481,7 @@ mission "Endgame Alpha M4.3"
 mission "Endgame Alpha 4.3.1"
 	landing
 	name "Contact the Remnant"
-	description "Travel to <destination> in the <system> system to request assistance from the Remnant"
+	description "Travel to <destination> to request assistance from the Remnant"
 	destination Viminal
 	source "New Argentina"
 	to offer
@@ -894,7 +894,7 @@ mission "Endgame Alpha 4.4.3"
 	name "Return for Orders"
 	source "Navigeo Yards"
 	destination "New Argentina"
-	description "Travel to <destination> in <system> to receive orders on research teams."
+	description "Travel to <destination> to receive orders on research teams."
 	to offer
 		has "Endgame Alpha 4.4.2: done"
 	on offer
@@ -1162,7 +1162,7 @@ mission "Endgame Alpha 4.4.5"
 	name "Research teams to Navigeo Yards"
 	source Chiron
 	destination "Navigeo Yards"
-	description "Carry the combined research team to <destination> in <system> for Avgi weapons training."
+	description "Carry the combined research team to <destination> for Avgi weapons training."
 	cargo "research equipment" 70
 	passengers 50
 	to offer
@@ -1211,7 +1211,7 @@ mission "Endgame Alpha 4.4.6"
 mission "Endgame Alpha 4.5.1"
 	priority
 	name "Report to Seginus Duty Assignment"
-	description "Travel to <destination> in the <system> system to report to a 17th Combat Group duty station on the northern defensive line."
+	description "Travel to <destination> to report to a 17th Combat Group duty station on the northern defensive line."
 	source "New Argentina"
 	destination "Clark"
 	to offer
@@ -1263,11 +1263,180 @@ mission "Endgame Alpha 4.5.1"
 				goto orders
 				
 	on complete
+		event "EA recolor combat group"
 		conversation
+			`The marks of the Navy station on the planet are clearly evident on Clark's surface. Wide swaths of land near the spaceport have been cleared and now are teeming with personnel. Once you land, navy spceport authority gives you an extra communication system that links you into the cobat group's information system. No more clunky status board. That information system lists you as requested at the spaceport.`
+
+# M4.5 Mechanics mission that makes your combat group follow you around for this segment. It will be failed when you go back to working on your own, and a similar mission will take its place \fold
+mission "Endgame Alpha M4.5.2"
+	invisible
+	non-blocking
+	priority
+	source Clark
+	to complete
+		never
+	to offer
+		has "Endgame Alpha 4.5.1: done"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Red One destroyed"
+		ship "Combat Drone" "Red One"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Red Two destroyed"
+		ship "Combat Drone" "Red Two"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Blue One destroyed"
+		ship "Combat Drone" "Blue One"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Blue Two destroyed"
+		ship "Combat Drone" "Blue Two"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 R.N.S. Suribachi destroyed"
+		ship "Cruiser" "R.N.S. Suribachi"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 R.N.S. Rhein destroyed"
+		ship "Frigate" "R.N.S. Rhein"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 R.N.S. Trinity destroyed"
+		ship "Gunboat" "R.N.S. Trinity"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Bois d'Arc destroyed"
+		ship "Falcon" "F.S. Bois d'Arc"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Sequoia destroyed"
+		ship "Dreadnought" "F.S. Sequoia"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 Hellstench destroyed"
+		ship "Leviathan" "Hellstench"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Ponderosa destroyed"
+		ship "Osprey" "F.S. Ponderosa"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Honey Locust destroyed"
+		ship "Bastion" "F.S. Honey Locust"
+
+	
+	
 # 4.5.2 Report to Seginus for duty posting to Frontline, at this point, reveal that Navy Intelligence has discovered that the Alphas in this war are less powerful and appear to think less than the previous kind, but are far better organized. When possible, they collected samples, and when compared to the previous kind (which yes, they kept) they are not nearly as high functioning, but seem to be better at following orders with no empathy and no tactical thinking \fold
-
-# 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus.
-
+mission "Endgame Alpha 4.5.2"
+	priority
+	non-blocking
+	name "Investigate Activity Spike"
+	description "Jump to the Wei system to repel a group of Alphas jumping into the system."
+	deadline 2
+	source Clark
+	destination Hope
+	to offer
+		has "Endgame Alpha 4.5.1: done"
+	on offer
+		conversation
+			`Due to its smaller size, the Clark spaceport is much easier to navigate, and you find the commander's office easily. The sign by the open door reads`
+			`		Steven Caine, Admiral, 17th Combat Group, Alpha Joint Task Force`
+			`	The commander calls you from inside, "Captain <last>, please step in." Admiral Caine is unlike most of the other admirals you have paid attention to since you joined the navy, mainly in that he looks much more competent and keen.`
+			`	"To get to business as fast as possible," He begins, "For now I'm assigning you as a commodore over a medium sized mixed fleet of Free Worlds, Republic, and Independent assets. You're one of the only people to ever hold a militia rank as well as a navy one, and definitely the highest, so it would be best to put you in charge of one of the few mixed units we have. Any questions on that part?"`
+			choice
+				`	"No."`
+					goto noquestions
+				`	"Who are the independents?"`
+			`	Caine smiles, "There either contract escort mercenaries or pirates, though a few of them are from larger companies that decided to volunteer aid. When the Combat Groups were created, we were told not to look to closely into the backgrounds of volunteers if they didn't seem to be a security risk, so we've been turning a blind eye on the precedents of most of them. There has been one or two incidents here that make me suspect though...`
+			label noquestions
+			`	He speeds up speaking and continues in a more rigid tone. "Anyway, enough small talk. I've got an assignment for you. A bit of a shakedown really. Take your new fleet to Hope and retrieve the sensor data from there. Quite a bit of it comes through the relays, but we want to know specifics of Alpha behavior. There's been a spike in activity though, so be careful. Now if you'll excuse me, I have my own ship to preflight."`
+			`	The conversation ends as rapidly as it began, you are left to go to your new quarters and prepare your unit for takeoff. In your absence, ground crews have repainted your ship to match the rest of the combat group.`
+				accept
+	on enter "Wei"
+		fail
+# 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus. \fold
+mission "Endgame Alpha 4.5.3"
+	entering
+	name "Defeat Alpha Fleet"
+	description "Defeat the Alpha fleet in Wei and return to mission base at Clark."
+	source "Wei"
+	destination Clark
+	to offer
+		or
+			has "Endgame Alpha 4.5.2: active"
+			has "Endgame Alpha 4.5.2: failed"
+	on offer
+		conversation
+			`As the effects of the hyperspace jump fade away, you see an Alpha ship firing onto Hope. Updates from the sensor relays stop suddenly, replaced by a "no signal" message. At the same time, several Alpha ships jump into the system and attack.`
+	npc destroy
+		government "Alpha"
+		fleet "Alpha Variety" 3
+		on destroy
+			conversation
+				`Your unit destroys the last of the Alpha warships, and you wait in orbit attempting to make contact with the relay system. No response. It would be best to return to Clark since you don't even know where it is on the planet without the help of the beacon.`
+	
 # \close
 	
 # \close
