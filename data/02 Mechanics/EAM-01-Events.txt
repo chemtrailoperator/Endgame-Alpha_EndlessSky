@@ -107,113 +107,179 @@ event "EA Republic Martial Law"
 	system Vindemiatrix
 		add attributes "martial law"
 		"no raids"
-		government "17th Battle Group"
+		government "17th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-		
+	planet "New Argentina"
+		add attributes "martial law"
+		government "17th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 	system Alioth
 		add attributes "martial law"
 		"no raids"
-		government "17th Battle Group"
+		government "17th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-		
+	planet "New Tibet"
+		add attributes "martial law"
+		government "17th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"	
 	system Seginus
 		add attributes "martial law"
 		"no raids"
-		government "17th Battle Group"
+		government "17th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-		
+	planet "Clark"
+		add attributes "martial law"
+		government "17th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"	
 	system "Kaus Borealis"
 		add attributes "martial law"
 		"no raids"
-		government "17th Battle Group"
+		government "17th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet "New Iceland"
+		add attributes "martial law"
+		government "17th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 	system Sabik
 		add attributes "martial law"
 		"no raids"
-		government "33rd Battle Group"
+		government "33rd Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet "Longjump"
+		add attributes "martial law"
+		government "33rd Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 	system Zubeneschamali
 		add attributes "martial law"
 		"no raids"
-		government "33rd Battle Group"
+		government "33rd Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet "Zug"
+		add attributes "martial law"
+		"no raids"
+		government "33rd Combat Group"
 	system Rastaban
 		add attributes "martial law"
 		"no raids"
-		government "9th Battle Group"
+		government "9th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet Dancer
+		add attributes "martial law"
+		government "9th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 	system "Delta Sagittari
 		add attributes "martial law"
 		"no raids"i"
-		government "9th Battle Group"
+		government "9th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet "New Portland"
+		add attributes "martial law"
+		government "9th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 	system Girtab
 		add attributes "martial law"
 		"no raids"
-		government "9th Battle Group"
+		government "9th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet Harmony
+		add attributes "martial law"
+		government "9th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 	system Albaldah
 		add attributes "martial law"
 		"no raids"
-		government "9th Battle Group"
+		government "9th Combat Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
 		add fleet "Large Republic" 1000
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
-	
+	planet "New India"
+		add attributes "martial law"
+		government "9th Combat Group"
+		add shipyard "Navy Basics"
+		add shipyard "Basic Ships"
+		add shipyard "Tarazed Basics"
+		add shipyard "Southbound Basics"
+		add outfitter "Common Outfits"
 
 # Awards \fold
 

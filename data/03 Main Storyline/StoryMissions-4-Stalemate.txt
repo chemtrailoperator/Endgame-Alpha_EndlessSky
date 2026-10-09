@@ -1208,13 +1208,70 @@ mission "Endgame Alpha 4.4.6"
 			`	The Syndicate representative, who is also his own team lead, stands and places a stack of credit chips on the table. "The Syndicate wishes to thank you with more than just words skipper, please take these, it should be about a million credits." He leaves, passing through a door marked 'Main Lab' in human text.`
 			`	Lieutenant Byers offers thanks similarly, but states that any payment will be at the discretion of his government, and likely the Republic's as well. The others leave, and you plan the last leg of flight dictated by your orders-return to Vindemiatrix.`
 				accept
-	
+	on complete
+		conversation
+			`The New Argentina spaceport has been significantly altered since you were last here, both in physical layout and atmosphere. Most of the landed ships are gone, and many of the civilians are as well. The status board, which has grown considerably in size, now with several large holo-projectors linked together, lists your name as requested to report to high command immediately. Although the restricted area has expanded to include almost the entire city, high command is still located at the center, in the spaceport.`
 # \close
 
 # 4.5 Martial Law Story \fold
 
-# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. You are told that all of the systems close to you have been put under martial aw by both the Free Worlds and the Republic in a combined battle group system, with elements of both Republic and Free Worlds leadership. \open
-
+# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. \open
+mission "Endgame Alpha 4.5.1"
+	priority
+	name "Report to Seginus Duty Assignment"
+	description "Travel to <destination> in the <system> system to report to a 17th Combat Group duty station on the northern defensive line."
+	source "New Argentina"
+	destination "Clark"
+	to offer
+		has "Endgame Alpha 4.4.6: done"
+	on offer
+		conversation
+			`Instead of the carefully organized tents of staff, each denoting their own unit, there are only doors marked "Joint Task Force Command" with a variety of suffix letters for different operations areas. Thankfully, Admiral Alzaga's office hasn't moved, and he is in.`
+			choice
+				`	(Knock.)`
+					goto knock
+				`	(Enter.)`
+			`	You open the door and walk directly inside. Admiral Alzaga leaps to his feet (spilling data pads and papers everywhere) and stands at attention as you enter. You snap your heels together and salute. He returns your salute and says "Sit down <last>, I've got some changes for you."`
+				goto talkone
+			label knock
+			`	After several seconds, you hear Admiral Alzaga, somewhat muffled through the door, "Enter."`
+			`	You turn the handle and walk in. The admiral is standing at attention waiting. You salute and he salutes back. "Please have a seat <last>, there's been some changes around here.`
+			label talkone
+			`	"First, this planet is under martial law now, along with most of the other planets and systems near the front line. It doesn't mean as much as it sounds, because we aren't taking control of really anything beyond the spaceport, except here of course, but it gives us a lot more freedom of operation. Most of the units we had here have been moved to the front line systems and they'll be using those as their headquarters for each one.`
+			`	"The northern defensive line is being held by the 17th Combat Group right now, with the 33rd and 9th in Free Worlds space."`
+			choice
+				`	"What is a combat group?"`
+			`	Admiral Alzaga answers quickly enough you can tell he was expecting the question. "Combat Groups are the current solution to managing a multi-front war across multiple governments. Right now, all the combat groups answer to me, regardless of whether they are Free Worlds or Republic, and I'm not technically acting as an agent of the navy anymore, just as part of the task force. Essentially, each combat group is made up of a mix of Free Worlds and Republic officers that are part of a unified chain of command. It will probably lead to a lot of friction in the ranks, but it's the best solution we have.`
+			label understand
+			`	"Here's where you come in. Although you've been working as a miscellaneous agent in a specialized capacity, reporting directly to task force command, I'm assigning you to a duty station in the 17th Combat Group."`
+			choice
+				`	"I want out."`
+					goto wantout
+				`	"Sounds great."`
+			label orders
+			`	The admiral selects a data pad from the mass of them on his desk and hands it to you. "Those are your official orders, plus a memo on Combat Groups if needed. Your assignment is on Clark, for reference."`
+				to display
+					not "EA 4.5.1 kidding"
+				accept
+			`	The admiral hoods his eyes at you humorlessly, and selects a data pad from the mass of them on his desk and hands it to you. "Those are your official orders, plus a memo on Combat Groups if needed. Your assignment is on Clark, for reference."`
+				to display
+					has "EA 4.5.1 kidding"
+				accept
+			label wantout
+			`	Alzaga rubs his chin for several seconds before speaking. "As much as I would love to keep you around to help, you actually are allowed to go. Combat group command is all volunteer, since it isn't under any specific government, so you can refuse to join it."`
+			choice
+				`	"Haha, just kidding!"`
+					goto kidding
+				`	"Understood, I don't want to join."`
+			`	"Very well then <last> I'll have to ask you to leave then, since this is an area restricted to specific personnel." The admiral stands and escorts you out of his office. A guard appears and escorts you back to your ship, and you are instructed to leave immediately.`
+				flee
+			label kidding
+			action
+				set "EA 4.5.1 kidding"
+				goto orders
+				
+	on complete
+		conversation
 # 4.5.2 Report to Seginus for duty posting to Frontline, at this point, reveal that Navy Intelligence has discovered that the Alphas in this war are less powerful and appear to think less than the previous kind, but are far better organized. When possible, they collected samples, and when compared to the previous kind (which yes, they kept) they are not nearly as high functioning, but seem to be better at following orders with no empathy and no tactical thinking \fold
 
 # 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus.
