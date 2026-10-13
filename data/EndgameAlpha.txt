@@ -20,7 +20,7 @@ mission "Development Patch Endgame Alpha"
 		event "Development Path Geminus Shipyard Endgame Alpha"
 		decline
 		
-event "Devlopment Patch Geminus Shipyard Endgame Alpha"
+event "Development Patch Geminus Shipyard Endgame Alpha"
 	planet Geminus
 		shipyard "Navy Endgame Basics"
 		shipyard "Navy Endgame Advanced"

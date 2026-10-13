@@ -289,7 +289,7 @@ mission "Endgame Alpha 2.5"
 				`	A mottled green arm reaches around your neck and lifts you off your feet with superhuman strength. Before you can react, something appears in front of you holding an ancient projectile rifle, and fires a burst on full automatic into your abdomen. Your last thought is the realization that the half-Alpha must have also shot whoever was holding you too.`
 					die
 				label EAahblow
-				`	You set the charges, step around a corner, and detonate them. the door blows inward and hits somehting organic.`
+				`	You set the charges, step around a corner, and detonate them. The door blows inward and hits something organic.`
 				choice
 					`	(Walk in.)`
 						goto EAahdeath
@@ -297,14 +297,14 @@ mission "Endgame Alpha 2.5"
 				`	As you throw in two grenades, there is an almost human sounding yell, a scuffle, and then two explosions. A blast of blood and green tissue flies out of the door, only missing you because of your vantage point.`
 				`	The inside of the crew quarters is a complete disaster. Not only the four bodies of what appear to be Alpha-Human hybrids, but also several decaying corpses. Gross. Time to get back to your ship.`
 				label EAahabort
-				`	As you leave, your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There is probaby more, but this is the kind of battle you are used to.`
+				`	As you leave, your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There are probably more, but this is the kind of battle you are used to.`
 	on enter "Fumalsamakah"
 		dialog "The missing ship is present in this system. But appears to be completely unresponsive."
 	on visit
 		dialog "You have reached <destination>, but you have either not captured the ship or must take off and wait for it to enter the system."
 	on complete
 		conversation
-			`You expect to join the long approach to the military base with many heavy warships in front of you and behind in various kinds of holding patterns. Instead of joining them you are given immediate landing clearance on the only open pad. Once you land you are directed to report to NavInt headquaters in the spaceport.`
+			`You expect to join the long approach to the military base with many heavy warships in front of you and behind in various kinds of holding patterns. Instead of joining them you are given immediate landing clearance on the only open pad. Once you land you are directed to report to NavInt headquarters in the spaceport.`
 
 mission "Endgame Alpha 2.6"
 	priority
@@ -403,7 +403,7 @@ mission "Endgame Alpha 2.7"
 	
 mission "Endgame Alpha 2.8"
 	name "Report to Earth"
-	description "Report to Earth in the Sol system with several Navy admirals (and Raven) to receive a commision into the Navy"
+	description "Report to Earth in the Sol system with several Navy admirals (and Raven) to receive a commission into the Navy."
 	destination "Earth"
 	source "New Iceland"
 	to offer

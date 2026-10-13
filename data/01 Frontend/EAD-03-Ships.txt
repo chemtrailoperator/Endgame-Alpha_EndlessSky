@@ -791,7 +791,7 @@ ship "Heavy Auxiliary"
 	explode "huge explosion" 10
 	"final explode" "final explosion large"
 	description "Although some military leaders consider it prohibitively expensive, a fleet of Heavy Auxiliaries can not only carry enough personnel and materials to fill a small planet, but it can protect them effectively on the way there."
-	description "The modular design of the Auxiliary allowed the spine to be extended to accomodate more container units. This makes the hull proportionally more expensive, plus the cost of the high quality containers and fighter bays."
+	description "The modular design of the Auxiliary allowed the spine to be extended to accommodate more container units. This makes the hull proportionally more expensive, plus the cost of the high quality containers and fighter bays."
 
 
 ship "Hawkeye"
