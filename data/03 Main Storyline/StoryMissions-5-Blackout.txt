@@ -76,7 +76,35 @@ mission "Endgame Alpha 5.1.2"
 				decline
 
 # 5.1.3 Travel from syndicate to Geminus to pick up stealth gunboat \fold
-
+mission "Endgame Alpha 5.1.3"
+	landing
+	source Keyhole
+	destination Geminus
+	name `Weapon System Construction`
+	description `Travel to <destination> for a Stealth Gunboat.`
+	to offer
+		has "Endgame Alpha 5.1.2: done"
+	on offer
+		conversation
+			`What you expected to be some sort of fortress is a completely normal-looking space station, albeit with advanced security systems and sensors. Overall though, it seems that the Syndicate is more focused on avoiding detetion than repelling attack. You are escorted through a variety of unmarked passages, reaching a hangar room with a large device festooned with tubes and wires sitting in the middle. Judging by the size of the support rig it is sitting on, it must weigh at least 20 tons.`
+			`	"Captain! Do you like what you see?" An engineer in a lab coat says from the side of the thing.`
+			label firstchoice
+			choice
+				`	"I don't even know what I see."`
+					goto dontknow
+					to display
+						not "EA 5.1.3 what"
+				`	"Yeah sure."`
+					goto yeahsure
+					to display
+						not "EA 5.1.3 what"
+				`	"There is no way you could launch that thing from a ship."`
+					goto launchship
+			label dontknow
+			`	The engineer caresses a pipe lovingly. "What you're looking at is possibly the most powerful weapon ever built by mankind. It started out as a Jump Drive that we discovered had some defects. Instead of simply blinking out of existence like it usually does, the stuff inside it started resonating when we tried to open it up, thankfully we closed the first one before it got uncontrollable. The machine around the drive should contain the force being released just long enough to turn it into a devastatingly powerful blast of energy. We already tried one in deep space, and you could see the flash the size of a star back on Sundive. Of course, that's all assuming this thing work the same way..."`
+			action
+				set "EA 5.1.3 what"
+				goto firstchoice
 # 5.1.4 Deliver to Syndicate \fold
 
 # Weapon is essentially a super-bomb built from a jump drive
