@@ -28,14 +28,14 @@ mission "Endgame Alpha 4.0"
 			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
 			`	The landscape is eerily similar to their last hideout, even down to the large reptiles roaming the earth.`
 			`	Unlike that planet, this one is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city was obviously planned meticulously, with major thoroughfares running radially out from a large tower in the distance.`
-			`	A surface-to-air missle battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
+			`	A surface-to-air missile battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
 			choice
 				`	(Investigate Further)`
 					goto factories
 				`	(Leave. You've collected enough information.)`
 					goto leave
 			label factories
-			`	You fly low over the buildings, looking for something more out of the ordinary than everything else. Eventually, you reach a section of shipyards that has enourmous hangars, and massive supply lines running into them.`
+			`	You fly low over the buildings, looking for something more out of the ordinary than everything else. Eventually, you reach a section of shipyards that has enormous hangars, and massive supply lines running into them.`
 			choice
 				`	(Continue collecting information.)`
 				`	(Abort and leave.)`
@@ -75,7 +75,7 @@ mission "Endgame Alpha 4.0"
 			choice
 				`	"Dismissed."`
 					goto end
-				`	"Why were you still at atttention?`
+				`	"Why were you still at attention?`
 			`	The aide responds in a practiced bark that is barely lowered in volume for the fact you are indoors. "Standard customs and courtesies, sir! All personnel directed to report to a person or area will remain at attention until verbally directed otherwise, sir!"`
 			choice
 				`	"Very Well, Dismissed"`
@@ -129,7 +129,7 @@ mission "Endgame Alpha 4.1"
 			`	Left alone, you sit down at your original table again.`
 				goto briefing
 			label eat
-			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that repetition of that action will likely result in grave personal injury. The internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
+			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized piece. You bite into it, and immediately find that repetition of that action will likely result in grave personal injury. The internal qualities of the meat are exactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
 			choice
 				`	(Chuck it at the cooks.)`
 					goto throw
@@ -153,7 +153,7 @@ mission "Endgame Alpha 4.1"
 				`	"Really? I didn't know you exhibited normal human sentimentality behaviors."`
 				`	"Interesting, but business first."`
 					goto briefing
-			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
+			`	Raven stares at you dead-eyed. Very funny, "You'd be surprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
 				goto briefing
 			label skipfood
 			`	You have been waiting for an hour in the spaceport when you realize that you are in fact very, very hungry.`
@@ -235,7 +235,7 @@ mission "Endgame Alpha 4.2"
 				`	"Alright, I'll go."`
 					goto car
 				`	"Then I'm not interested."`
-			`	The aide nods mechanically. "Very well then. You must understnad that your clearance on this planet is at an end."`
+			`	The aide nods mechanically. "Very well then. You must understand that your clearance on this planet is at an end."`
 				flee
 			label car
 			`	The inside of the vehicle is quite comfortable, but it does not offer the smoothness of ride that an aircraft or even a hovercraft could produce. You are about to ask why you aren't going by airborne shuttle when the vehicle road ahead of you stoops steeply downward into a hardened bunker facility. You enter a dimly lit tunnel that continues down for several minutes, until you stop at a large bay carved into the side. It has the appearance of a shipping dock.`
@@ -598,7 +598,7 @@ mission "Endgame Alpha 4.3.2"
 			label bunkers
 			action
 				set "EA 4.3.2 bunkers"
-			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redudancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
+			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redundancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
 				goto questions
 			label meeting
 			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria.`
@@ -683,7 +683,7 @@ mission "Endgame Alpha 4.3.2"
 			choice
 				`	(Reenter towards the signal.)`
 			label reenter
-			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you deccelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
+			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you decelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
 
 # 4.3.3 Talk to the Remnant leaders \fold
 mission "Endgame Alpha 4.3.3"
@@ -754,7 +754,7 @@ mission "Endgame Alpha 4.3.3"
 			`	There is a faint tremble in the air, instinctually detected more than consciously felt.`
 			choice
 				`	(Wait.)`
-			`	The elevator begins to deccelerate.`
+			`	The elevator begins to decelerate.`
 			choice
 				`	(Wait.)`
 			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against bumpers. There are no buttons.`
@@ -778,7 +778,7 @@ mission "Endgame Alpha 4.3.3"
 			`	"Thank you Captain, please follow me."`
 			`	He leads you between the stacks of crates into a smaller offshoot of the main cavern. In the secluded area is a small gathering of chairs, all but one filled, with more Remnant standing around them. The prefect gestures you to the empty chair, and walks off to deal with his priceless artifact. Some of those sitting in the chairs or around seem frustrated, even angered, while others seem very tired.`
 			label circle
-			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significanly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
+			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significantly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
 			choice
 				`	"There's nothing you can do at all?"`
 				`	"Why won't you help us?"`
@@ -918,7 +918,7 @@ mission "Endgame Alpha 4.4.3"
 					goto alphatech
 				`	"What happened to them?"`
 			`	Another Avgi begins chirpring before the previous one can begin. "Apprehension. The Alphas as you call them were destroyed by our own people." It waits for your response, evidently thinking the Alphas may have been friends of the existing government, but receiving no outburst of rage, it continues. "Relief. The Alphas were found on a planet by a exploration fleet a very short time before the incursion. We did not interact much, since the colony there was still small and had evidently sustained great damage on its way to that system. They fled with the first refugees through the Shroud and settled on the only planet while the Avgi built stations to house our refugees." It stops, and another Avgi continues,`
-			`	"Rage. The Twilight Guard left the refugees and returned to protect our home while still more fled from it, but when they returned to Symphony, the Alphas had slaughtered the refugees and attepted to gain control of the system. We crushed their settlement, and razed the planet so that no one could ever revive the species."`
+			`	"Rage. The Twilight Guard left the refugees and returned to protect our home while still more fled from it, but when they returned to Symphony, the Alphas had slaughtered the refugees and attempted to gain control of the system. We crushed their settlement, and razed the planet so that no one could ever revive the species."`
 			choice
 				`	"Why wasn't I told this earlier?"`
 					goto diplomacy
@@ -1054,7 +1054,7 @@ mission "Endgame Alpha 4.4.4.3"
 			`	"Actually I'm serving as the Free Worlds commander for both Kraz and Southbound. I expect the other locations listed in the orders I got will send at least one aide for their governments."`
 			label stowage
 			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy sole decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
-			`	He claps you on your back and his eyes land on your Captain insignia. He stutters something unintelligble, and leaves for your ship.`
+			`	He claps you on your back and his eyes land on your Captain insignia. He stutters something unintelligible, and leaves for your ship.`
 				accept
 	to complete
 		"cargo space free" > 50
@@ -1124,7 +1124,7 @@ mission "Endgame Alpha 4.4.4.5"
 				`	"No problem, have you been briefed on our mission?"`
 					goto missionbriefing
 				`	"Why is the Syndicate involved with this anyway?"`
-					goto involvment
+					goto involvement
 				`	"Get off my bridge. I'm just the chauffeur.`
 			`	The man opens his mouth to say something, but decides otherwise and leaves. You finish your flight duties. Your orders state that the next team pickup is on Chiron.`
 				accept

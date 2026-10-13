@@ -30,7 +30,7 @@
 
 # 6.2A.1 On Deep, told that forces have regrouped and have been reinforced, intend to push forward to press as much advantage as possible, comment that Alpha forces are disorganized and fighting with each other, but just about every ship in the system will take off if an ivnasion fleet appears Choose between Aldhibain or Sargas as the next target
 
-# If you go for Aldhibain instead of Sargas, and then ingore it, you get a breakout and even more mess later on.
+# If you go for Aldhibain instead of Sargas, and then ignore it, you get a breakout and even more mess later on.
 # A storyline is Aldhibain, B storyline for Sargas
 
 # 6.2A.2 Take off and jump towards Aldhibain, support fleets jump from Sabik as well. (Add note about how they are coordinating through the blackout by using couriers) Big battle in Aldhibain, land on the planet.
@@ -116,7 +116,7 @@
 
 # 6.5.2.1 Land at Pherkad and regroup after more reinforcements come into the system from stabilied ex-occupied systems. Attempt again. This time, the Navy is okay with losees and as long as you kill all the NPCs it doesn't matter how many ships survive. If ships don't survive, you must wait for reinforcements to arrive before leaving for Rastaban or Kornephoros
 
-# 6.5.3 You meet with Tribal authroities in the spaceport, and are informed that Men did not have many Alphas on it beccause almost all of them stayed on Smuggler's Den and used it as a forward operating base. After Men lost contact with the systems around it, the Alphas on Thule apparently refused to cooperate with the ones on Smuggler's Den and occasionally fired on them. However, Smuggler's Den will need a full scale ground operation on the station to clear it out as it will likely include a great deal of close quarters fighting. The Authorities do tell you that they are certain no humans remain alive on Smuggler's Den because scouts reported absolutely no signs of non-Alpha life. You are given the choice to destroy Smuggler's Den altogether with nuclear weapons, or land and force a CQB battle. If you choose to bomb it, the 17th battle group returns to Kornephoros for nuclear weapons while the 33rd and 12th secure the system. If you choose CQB, return to Rastaban to escort a frog battalion into the system to clear it out. Use marking tag to select system
+# 6.5.3 You meet with Tribal authorities in the spaceport, and are informed that Men did not have many Alphas on it because almost all of them stayed on Smuggler's Den and used it as a forward operating base. After Men lost contact with the systems around it, the Alphas on Thule apparently refused to cooperate with the ones on Smuggler's Den and occasionally fired on them. However, Smuggler's Den will need a full scale ground operation on the station to clear it out as it will likely include a great deal of close quarters fighting. The Authorities do tell you that they are certain no humans remain alive on Smuggler's Den because scouts reported absolutely no signs of non-Alpha life. You are given the choice to destroy Smuggler's Den altogether with nuclear weapons, or land and force a CQB battle. If you choose to bomb it, the 17th battle group returns to Kornephoros for nuclear weapons while the 33rd and 12th secure the system. If you choose CQB, return to Rastaban to escort a frog battalion into the system to clear it out. Use marking tag to select system
 
 # 6.5.4A.1 Leave Kornephoros and return to Men with nuclear weapons on board your ship.
 
@@ -140,7 +140,7 @@
 
 # 6.6.6 On Citadelle, the planet is completely destroyed with no known human survivors, and the Republic takes up an FOB there. Urgently leave to assist Alpherg, where some Alphas on the ground have started a ground war and are over-powering the weakened 12th battle group. Once you go there you get to fly around and merc Alphas.
 
-# 6.6.7 Leave Alpherg and return to Pherkad to demobilize 17th battle group and transition to police and skirmish mode maintaing governments on recaptured systems, because it is being replaced by fresh uniits to conduct all the bloody mopping up.
+# 6.6.7 Leave Alpherg and return to Pherkad to demobilize 17th battle group and transition to police and skirmish mode maintaining governments on recaptured systems, because it is being replaced by fresh units to conduct all the bloody mopping up.
 
 
 # \close
