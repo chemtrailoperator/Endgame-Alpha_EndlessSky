@@ -1,3 +1,7 @@
+Credits:
+	Thanks
+		loymdayddaud/thegiraffe3
+
 Production Notes
 Delete before publishing
 
