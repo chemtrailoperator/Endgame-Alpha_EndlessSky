@@ -93,7 +93,7 @@ mission "Endgame Alpha 5.1.2"
 
 # 5.2.1 Detonation, all hyperspace relays in Alpha-occupied systems go down \open
 
-# Mechanics change: All systems now have significantly reduced Alpha acitivity. As systems are retaken, their activity level goes down, but does not go to zero until all the systems are taken over and secured. Most of the fighting fleets will be spawned npcs for each mission.
+# Mechanics change: All systems now have significantly reduced Alpha activity. As systems are retaken, their activity level goes down, but does not go to zero until all the systems are taken over and secured. Most of the fighting fleets will be spawned npcs for each mission.
 # Unvisit and shroud all occupied systems
 
 # 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
