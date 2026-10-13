@@ -12,6 +12,48 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+phrase "EA black progam"
+	word
+		"S.S. "
+	phrase
+		"EA electromagnetic"
+		"EA electrical pioneers"
+	
+phrase "EA electromagnetic"
+	word
+		"Biefeld-Brown"
+		"Corona"
+		"Ferranti"
+		"Ferro"
+		"Hall"
+		"Joule"
+		"Lightning"
+		"Photovolta"
+		"Plasma"
+		"Pyroelectra"
+		"Skin"
+		"Tellura"
+		"Seebeck"
+		"Peltier"
+		"Thomson"
+		"Whistler"
+		"SID"
+		
+
+phrase "EA electrical people"
+	word
+		"Tesla"
+		"Van de Graaff"
+		"Faraday"
+		"Lenz"
+		"Siemen"
+		"Ampere"
+		"Henry"
+		"Volta"
+		"Maxwell"
+		"Orsted"
+		
+
 phrase "EA manned disabled"
 	word
 		"The manned ship <ship> in your unit has been disabled!"

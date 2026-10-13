@@ -1207,7 +1207,7 @@ mission "Endgame Alpha 4.4.6"
 
 # 4.5 Martial Law Story \fold
 
-# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. \open
+# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. Report to Seginus. \open
 mission "Endgame Alpha 4.5.1"
 	priority
 	name "Report to Seginus Duty Assignment"
@@ -1267,7 +1267,7 @@ mission "Endgame Alpha 4.5.1"
 		conversation
 			`The marks of the Navy station on the planet are clearly evident on Clark's surface. Wide swaths of land near the spaceport have been cleared and now are teeming with personnel. Once you land, navy spceport authority gives you an extra communication system that links you into the cobat group's information system. No more clunky status board. That information system lists you as requested at the spaceport.`
 
-# M4.5 Mechanics mission that makes your combat group follow you around for this segment. It will be failed when you go back to working on your own, and a similar mission will take its place \fold
+# M4.5.2 Mechanics mission that makes your combat group follow you around for this segment. It will be failed when you go back to working on your own, and a similar mission will take its place \fold
 mission "Endgame Alpha M4.5.2"
 	invisible
 	non-blocking
@@ -1388,7 +1388,7 @@ mission "Endgame Alpha M4.5.2"
 
 	
 	
-# 4.5.2 Report to Seginus for duty posting to Frontline, at this point, reveal that Navy Intelligence has discovered that the Alphas in this war are less powerful and appear to think less than the previous kind, but are far better organized. When possible, they collected samples, and when compared to the previous kind (which yes, they kept) they are not nearly as high functioning, but seem to be better at following orders with no empathy and no tactical thinking \fold
+# 4.5.2 Report to Seginus, leave to check out Alpha activity. \fold
 mission "Endgame Alpha 4.5.2"
 	priority
 	non-blocking
@@ -1420,7 +1420,7 @@ mission "Endgame Alpha 4.5.2"
 mission "Endgame Alpha 4.5.3"
 	entering
 	name "Defeat Alpha Fleet"
-	description "Defeat the Alpha fleet in Wei and return to mission base at Clark."
+	description `Defeat the Alpha fleet in Wei and return to mission base at Clark.`
 	source "Wei"
 	destination Clark
 	to offer
@@ -1436,7 +1436,31 @@ mission "Endgame Alpha 4.5.3"
 		on destroy
 			conversation
 				`Your unit destroys the last of the Alpha warships, and you wait in orbit attempting to make contact with the relay system. No response. It would be best to return to Clark since you don't even know where it is on the planet without the help of the beacon.`
-	
+	on complete
+		payment 500000
+		`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
+
+# 4.5.4 Fly the dirt tunnel and check sensors \fold
+mission "Endgame Alpha 4.5.4"
+	landing
+	name "Sensor Patrol"
+	description "Travel to Hope in the Wei system, and to the marked systems in the Dirt Tunnel to check or repair sensor systems."
+	stopover "Hope"
+	waypoint Alnasl
+	waypoint Eber
+	waypoint "Alpha Arae"
+	cargo "Sensor Relays" 2
+	source "Seginus"
+	to offer
+		has "Endgame Alpha 4.5.3: done"
+	on stopover
+		conversation
+			`The sensor relay on the surface is as expected. The Alphas appear to have targeted the transmitter of the array, so most of it comes back on line once it is replaced.`
+	on waypoint
+		conversation
+			`When you report that all the orbiting sensors are in place and operational, you receive a voice message in return. It is Admiral Caine, with an annoying cheerfulness in his voice. "Change of plans, Commodore! You should get used to those. Return as soon as possible, you've got a special assignment outside the group."`
+	on complete
+		fail "Endgame Alpha M4.5.2"
 # \close
 	
 # \close

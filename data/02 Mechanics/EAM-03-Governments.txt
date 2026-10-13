@@ -1,4 +1,4 @@
-s
+
 # Copyright (c) 2026 by ChemtrailOperator
 #
 # Endless Sky is free software: you can redistribute it and/or modify it under the
@@ -11,6 +11,40 @@ s
 #
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
+
+government "Syndicate Black Program"
+	"display name" "Syndicate"
+	swizzle 4
+	color "governments: Syndicate"
+	"crew defense" 3
+	"player reputation" 3
+	"bribe" 0
+	"penalty for"
+		assist -1
+		disable 10
+		destroy 10
+		board 1
+		capture 120
+		scan 1
+	"foreign penalties for"
+		"Syndicate"
+	"provoked on scan"
+	"travel restrictions"
+		system "Polaris"
+		system "Alpha Hydri"
+		system "Ruchbah"
+		system "Hamal"
+		system "Zaurak"
+		attributes "korath"
+		
+	
+government "Omega"
+	swizzle 1
+	"crew attack" 1.6
+	"crew defense" 2.8
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
 
 government "Remnant Sentry"
 	"display name" "Remnant"

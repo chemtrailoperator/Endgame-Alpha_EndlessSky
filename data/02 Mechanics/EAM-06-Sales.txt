@@ -1,0 +1,133 @@
+
+# Copyright (c) 2026 by ChemtrailOperator
+#
+# Endless Sky is free software: you can redistribute it and/or modify it under the
+# terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later version.
+#
+# Endless Sky is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <https://www.gnu.org/licenses/>.
+
+outfitter "Navy Clothing"
+	"Navy Uniform"
+	"Commander Insignia"
+	
+shipyard "Navy Endgame Modified"
+	"Harbinger Supercarrier"
+	"Supercruiser"
+	"Modified Gunboat"
+	"Heavy Auxiliary"
+	"Hawkeye"
+	"Escape Ship"
+	"Hailstorm"
+	"Rumskib Destroyer"
+	"Stealth Gunboat"
+	
+shipyard "Navy Endgame Basics"
+	"Rainmaker"
+	"Gunboat"
+	"Lance"
+	"Combat Drone"
+	"Surveillance Drone"
+	"Dropship"
+	"Modified Gunboat"
+	"Hailstorm"
+	
+shipyard "Navy Endgame Advanced"
+	"Frigate"
+	"Cruiser"
+	"Carrier"
+	"Auxiliary"
+	"Rumskib Destroyer"
+	"Escape Ship"
+	"Hawkeye"
+	"Stealth Gunboat"
+	"Heavy Auxiliary"
+	
+shipyard "Navy Endgame Elite"
+	"Harbinger Supercarrier"
+	"Supercruiser"
+	
+	
+shipyard "Minuteman Basis"
+	"Civil Gunboat"
+	"Civil Rainmaker"
+	"Lance"
+	"Dropship"
+	"Combat Drone"
+	"Surveillance Drone"
+	
+shipyard "Minuteman Advanced"
+	"Barque"
+	"Civil Auxiliary"
+	"Civil Carrier"
+	"Civil Cruiser"
+	
+outfitter "Heliarch"
+	"Ion Rain Gun"
+	"Ion Hail Turret"
+	"Bombardment Cannon"
+	"Bombardment Turret"
+	"Heliarch Attractor"
+	"Heliarch Repulsor"
+	"Finisher Pod"
+	"Finisher Maegrolain"
+	"Finisher Torpedo"
+	"Finisher Storage Tube"
+	"Cooling Module"
+	"Fuel Module"
+	"Scanning Module"
+	"Large Shield Module"
+	"Small Shield Module"
+	"Overcharged Shield Module"
+	"Small Repair Module"
+	"Large Repair Module"
+	"Overclocked Repair Module"
+	"Large Reactor Module"
+	"Small Reactor Module"
+	"Large Battery Module"
+	"Small Battery Module"
+	"Large Thrust Module"
+	"Small Thrust Module"
+	"Large Steering Module"
+	"Small Steering Module"
+	"Enforcer Confrontation Gear"
+	"Enforcer Riot Staff"
+
+shipyard "Heliarch"
+	"Heliarch Neutralizer"
+	"Heliarch Breacher"
+	"Heliarch Interdictor"
+	"Heliarch Hunter"
+	"Heliarch Judicator"
+	"Heliarch Punisher"
+	"Heliarch Pursuer"
+	"Heliarch Rover"
+	"Heliarch Stalker"
+
+outfitter "Korath Minelayer"
+	"Cluster Mine Layer"
+	"Cluster Mine"
+
+planet "Laki Nemparu"
+	outfitter "Korath Minelayer"
+
+planet "Ring of Power"
+	outfitter "Heliarch"
+	shipyard "Heliarch"
+
+
+
+outfitter "Navy ECM"
+	"ECM Suite Gen 2"
+	"Inductive Jamming Array"
+
+event "EA Restore Geminus"
+	planet Geminus
+		add outfitter "Navy ECM"
+		add shipyard "Navy Basics"
+		add shipyard "Navy Advanced"

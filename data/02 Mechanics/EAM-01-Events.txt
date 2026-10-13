@@ -66,7 +66,11 @@ event "EA repaint navy"
 	government "Escort"
 		swizzle 0
 		
-# Mission and Storyline Mechanics \fold		
+# Mission and Storyline Mechanics \fold	
+event "EA reveal Keyhole"
+	system Aurora
+		remove hidden
+	
 event "EA reveal Fumalzenarah"
 	system Fumalzenarah
 		remove hidden

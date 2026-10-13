@@ -51,7 +51,7 @@ Alpha Occupied Systems:
 	
 Added Systems:
 	Fumalzenarah
-	<Unnamed Syndicate System>
+	Aurora
 
 Trashed Systems and Planets:
 	Deep (Remove 50% of lights)
