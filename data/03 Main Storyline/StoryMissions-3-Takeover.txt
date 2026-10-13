@@ -559,7 +559,7 @@ mission "Endgame Alpha 3.13"
 mission "Endgame Alpha 3.14"
 	outfitter
 	clearance
-	name "Investigate Alpha Activty"
+	name "Investigate Alpha Activity"
 	description "Travel to the Fumalzenarah system and investigate what is making the Alpha war machine tick."
 	source "New Argentina"
 	destination "Sagarra"
