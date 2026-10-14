@@ -70,6 +70,13 @@ mission "Endgame Alpha 5.1.2"
 			label researchfacility
 			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath never really go there. We've quietly put a station there for our black research. We've loaded the coordinates into your ship, and you can get more information once you get there."`
 			`	The men stand up and leave your ship, and you are left to chart a course to the research facility.`
+			branch hasjumpdrive
+				has "outfit (flagship installed): Jump Drive"
+			action
+				outfit "Jump Drive" 1
+			`	While you are working, a mechanic crew arrives and leaves a Jump Drive in your ship.`
+			label hasjumpdrive
+			``
 				accept
 			label wmdleave
 			`	Without saying anything more, the men stand up and leave your ship, and you are left to your own devices.`
@@ -105,6 +112,23 @@ mission "Endgame Alpha 5.1.3"
 			action
 				set "EA 5.1.3 what"
 				goto firstchoice
+			label yeahsure
+			`	The engineer caresses a pipe lovingly. "Don't be too close when it goes boom, just know that it will."`
+			action
+				set "EA 5.1.3 what"
+				goto firstchoice
+			label launchship
+			`	He smirks. "Luckily, it won't have to, and that's where you come in. The Navy agreed to supply a special ship to deliver the weapon to Sagarra. It's got stealth technology, but that's all I know, they were as uncomfortable sharing details as we were bringing you here.`
+			`	"This thing is so big that any ship firing it won't survive, so they decided to use a ship and ignore the process of launching it entirely."`
+			choice
+				`	"Great, where do I get one?"`
+					goto getone
+				`	"Why is Sagarra such a big deal?"`
+			`	The engineer shrugs, "I don't know for sure why, but that's where they said it should go. I build weapons, not targets."`
+			label getone
+			`	"The republic said to send you to Geminus for pickup as soon as you had been briefed, so I think you should be going now." A group of uniformed agents surrounds you and escorts you back to your ship.`
+				accept
+			
 # 5.1.4 Deliver to Syndicate \fold
 
 # Weapon is essentially a super-bomb built from a jump drive
