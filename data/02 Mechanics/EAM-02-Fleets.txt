@@ -2376,7 +2376,30 @@ fleet "EA Republic Logistics"
 		"Cruiser" 2
 		"Combat Drone" 8
 
-# \close
+# Misc \fold
+
+fleet "Syndicate Black Program"
+	government "Syndicate Black Program"
+	personality
+		quiet timid secretive
+	names "EA black program"
+	cargo 0
+	variant 20
+		"Freighter (Black Program)"
+	variant 2
+		"Freighter (Black Program)" 2
+	variant 1
+		"Freighter (Black Program)" 3
+	variant 2
+		"Palavret"
+	variant 1
+		"Palavret" 2
+	variant 1
+		"Palavret"
+		"Barb" 2
+	variant 1
+		"Freighter (Black Program)"
+		"Palavret"
 
 fleet "Navy Surveillance"
 	government "Republic"
@@ -2391,3 +2414,5 @@ fleet "Navy Surveillance"
 		"Surveillance Drone" 4
 	variant 10
 		"Gunboat" 2
+
+# \close

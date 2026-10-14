@@ -1,3 +1,7 @@
+Credits:
+	Thanks
+		loymdayddaud/thegiraffe3
+
 Production Notes
 Delete before publishing
 
@@ -51,7 +55,7 @@ Alpha Occupied Systems:
 	
 Added Systems:
 	Fumalzenarah
-	<Unnamed Syndicate System>
+	Aurora
 
 Trashed Systems and Planets:
 	Deep (Remove 50% of lights)
@@ -101,6 +105,7 @@ Remove Before Publishing Testing Components
 	
 Battle Groups
 Battle groups are Free Worlds commanded
+
 	17th Battle Group: Republic majority pushing from Kornephoros
 	33rd Battle Group: Free Worlds majority pushing from Sabik
 	9th Battle Group: Republic and Free Worlds mixed pushing from Rastaban

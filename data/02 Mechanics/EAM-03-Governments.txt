@@ -12,6 +12,40 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+government "Syndicate Black Program"
+	"display name" "Syndicate"
+	swizzle 4
+	color "governments: Syndicate"
+	"crew defense" 3
+	"player reputation" 3
+	"bribe" 0
+	"penalty for"
+		assist -1
+		disable 10
+		destroy 10
+		board 1
+		capture 120
+		scan 1
+	"foreign penalties for"
+		"Syndicate"
+	"provoked on scan"
+	"travel restrictions"
+		system "Polaris"
+		system "Alpha Hydri"
+		system "Ruchbah"
+		system "Hamal"
+		system "Zaurak"
+		attributes "korath"
+		
+	
+government "Omega"
+	swizzle 1
+	"crew attack" 1.6
+	"crew defense" 2.8
+	"player reputation" -1000
+	"bribe" 0
+	"fine" 0
+
 government "Remnant Sentry"
 	"display name" "Remnant"
 	swizzle 0
@@ -60,7 +94,7 @@ government "Alpha (Hidden)"
 	
 government "EA Alpha Faction I"
 	"display name" "Alpha"
-	swizzle 2
+	swizzle 1
 	"crew attack" 1.5
 	"crew defense" 2.5
 	"player reputation" -1000
@@ -76,7 +110,7 @@ government "EA Alpha Faction I"
 		
 government "EA Alpha Faction II"
 	"display name" "Alpha"
-	swizzle 2
+	swizzle 1
 	"crew attack" 1.5
 	"crew defense" 2.5
 	"player reputation" -1000
@@ -92,7 +126,7 @@ government "EA Alpha Faction II"
 
 government "EA Alpha Faction III"
 	"display name" "Alpha"
-	swizzle 2
+	swizzle 1
 	"crew attack" 1.5
 	"crew defense" 2.5
 	"player reputation" -1000
@@ -109,7 +143,7 @@ government "EA Alpha Faction III"
 color "endgame alpha: republic martial law"	0.8 0.961 0.522
 
 government "17th Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5
@@ -138,7 +172,7 @@ government "17th Combat Group"
 	"ship bribe rejection hail" "ship bribe rejection navy"
 	
 government "33rd Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5
@@ -167,7 +201,7 @@ government "33rd Combat Group"
 	"ship bribe rejection hail" "ship bribe rejection navy"
 	
 government "9th Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5
@@ -196,7 +230,7 @@ government "9th Combat Group"
 	"ship bribe rejection hail" "ship bribe rejection navy"
 	
 government "12th Combat Group"
-	swizzle 0
+	swizzle 15
 	color "endgame alpha: republic martial law"
 	"crew attack" 1.5
 	"crew defense" 2.5

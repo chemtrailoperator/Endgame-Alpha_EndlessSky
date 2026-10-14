@@ -19,7 +19,7 @@ mission "Endgame Alpha 4.0"
 	landing
 	source Sagarra
 	name "Return to Vindemiatrix"
-	description "Return to <destination> in <system> with the information you have collected regarding the Alphas."
+	description "Return to <destination> with the information you have collected regarding the Alphas."
 	destination "New Argentina"
 	to offer
 		has "Endgame Alpha 3.14: done"
@@ -28,14 +28,14 @@ mission "Endgame Alpha 4.0"
 			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
 			`	The landscape is eerily similar to their last hideout, even down to the large reptiles roaming the earth.`
 			`	Unlike that planet, this one is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city was obviously planned meticulously, with major thoroughfares running radially out from a large tower in the distance.`
-			`	A surface-to-air missle battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
+			`	A surface-to-air missile battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
 			choice
 				`	(Investigate Further)`
 					goto factories
 				`	(Leave. You've collected enough information.)`
 					goto leave
 			label factories
-			`	You fly low over the buildings, looking for something more out of the ordinary than everything else. Eventually, you reach a section of shipyards that has enourmous hangars, and massive supply lines running into them.`
+			`	You fly low over the buildings, looking for something more out of the ordinary than everything else. Eventually, you reach a section of shipyards that has enormous hangars, and massive supply lines running into them.`
 			choice
 				`	(Continue collecting information.)`
 				`	(Abort and leave.)`
@@ -75,7 +75,7 @@ mission "Endgame Alpha 4.0"
 			choice
 				`	"Dismissed."`
 					goto end
-				`	"Why were you still at atttention?`
+				`	"Why were you still at attention?`
 			`	The aide responds in a practiced bark that is barely lowered in volume for the fact you are indoors. "Standard customs and courtesies, sir! All personnel directed to report to a person or area will remain at attention until verbally directed otherwise, sir!"`
 			choice
 				`	"Very Well, Dismissed"`
@@ -129,7 +129,7 @@ mission "Endgame Alpha 4.1"
 			`	Left alone, you sit down at your original table again.`
 				goto briefing
 			label eat
-			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized peice. You bite into it, and immediately find that repetition of that action will likely result in grave personal injury. The internal qualities of the meat are eactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
+			`	The light plastic knife included with your meal is completely inadequate to carve the carboniferous mass. Even with your service knife, it takes several blows to break off a bite-sized piece. You bite into it, and immediately find that repetition of that action will likely result in grave personal injury. The internal qualities of the meat are exactly the same as the external, coupled with a burning heat and pain unlike any spice you've encountered before. You spit it back out, and move on to the vegetables in a faint hope something would be different. It isn't.`
 			choice
 				`	(Chuck it at the cooks.)`
 					goto throw
@@ -153,7 +153,7 @@ mission "Endgame Alpha 4.1"
 				`	"Really? I didn't know you exhibited normal human sentimentality behaviors."`
 				`	"Interesting, but business first."`
 					goto briefing
-			`	Raven stares at you dead-eyed. Very funny, "You'd be suprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
+			`	Raven stares at you dead-eyed. Very funny, "You'd be surprised how much is necessary to not be a complete outcast. Now if you're done joking, we can get to talking about the reason for this not-social call."`
 				goto briefing
 			label skipfood
 			`	You have been waiting for an hour in the spaceport when you realize that you are in fact very, very hungry.`
@@ -215,7 +215,7 @@ mission "Endgame Alpha 4.2"
 	source "Hai-home"
 	destination "New Argentina"
 	name "Support Escort"
-	description "Escort the Hai battle fleet to <destination> in the <system> system."
+	description "Escort the Hai battle fleet to <destination>."
 	to offer
 		has "Endgame Alpha 4.1: done"
 	on offer
@@ -235,7 +235,7 @@ mission "Endgame Alpha 4.2"
 				`	"Alright, I'll go."`
 					goto car
 				`	"Then I'm not interested."`
-			`	The aide nods mechanically. "Very well then. You must understnad that your clearance on this planet is at an end."`
+			`	The aide nods mechanically. "Very well then. You must understand that your clearance on this planet is at an end."`
 				flee
 			label car
 			`	The inside of the vehicle is quite comfortable, but it does not offer the smoothness of ride that an aircraft or even a hovercraft could produce. You are about to ask why you aren't going by airborne shuttle when the vehicle road ahead of you stoops steeply downward into a hardened bunker facility. You enter a dimly lit tunnel that continues down for several minutes, until you stop at a large bay carved into the side. It has the appearance of a shipping dock.`
@@ -481,7 +481,7 @@ mission "Endgame Alpha M4.3"
 mission "Endgame Alpha 4.3.1"
 	landing
 	name "Contact the Remnant"
-	description "Travel to <destination> in the <system> system to request assistance from the Remnant"
+	description "Travel to <destination> to request assistance from the Remnant"
 	destination Viminal
 	source "New Argentina"
 	to offer
@@ -598,7 +598,7 @@ mission "Endgame Alpha 4.3.2"
 			label bunkers
 			action
 				set "EA 4.3.2 bunkers"
-			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redudancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
+			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redundancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
 				goto questions
 			label meeting
 			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria.`
@@ -683,7 +683,7 @@ mission "Endgame Alpha 4.3.2"
 			choice
 				`	(Reenter towards the signal.)`
 			label reenter
-			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you deccelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
+			`	The plasma around your ship blocks out the signals as you hit the atmosphere, but you pick them up again once you decelerate enough. The signal is emanating from a hilly region of the continent. Your RDF system engages and gives you a bearing to fly. You descend through the atmosphere, nearing the surface and slowing down. You drop into a hover a few miles from a slightly taller hill as your instrumentation tells you that the transmitter is there. The top of the hill is empty, bare of even trees or tall brush. As you look at it, the hilltop warps slightly, and then a little building uncloaks at the top. It seems you have reached your destination.`
 
 # 4.3.3 Talk to the Remnant leaders \fold
 mission "Endgame Alpha 4.3.3"
@@ -754,7 +754,7 @@ mission "Endgame Alpha 4.3.3"
 			`	There is a faint tremble in the air, instinctually detected more than consciously felt.`
 			choice
 				`	(Wait.)`
-			`	The elevator begins to deccelerate.`
+			`	The elevator begins to decelerate.`
 			choice
 				`	(Wait.)`
 			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against bumpers. There are no buttons.`
@@ -778,7 +778,7 @@ mission "Endgame Alpha 4.3.3"
 			`	"Thank you Captain, please follow me."`
 			`	He leads you between the stacks of crates into a smaller offshoot of the main cavern. In the secluded area is a small gathering of chairs, all but one filled, with more Remnant standing around them. The prefect gestures you to the empty chair, and walks off to deal with his priceless artifact. Some of those sitting in the chairs or around seem frustrated, even angered, while others seem very tired.`
 			label circle
-			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significanly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
+			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significantly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
 			choice
 				`	"There's nothing you can do at all?"`
 				`	"Why won't you help us?"`
@@ -894,7 +894,7 @@ mission "Endgame Alpha 4.4.3"
 	name "Return for Orders"
 	source "Navigeo Yards"
 	destination "New Argentina"
-	description "Travel to <destination> in <system> to receive orders on research teams."
+	description "Travel to <destination> to receive orders on research teams."
 	to offer
 		has "Endgame Alpha 4.4.2: done"
 	on offer
@@ -918,7 +918,7 @@ mission "Endgame Alpha 4.4.3"
 					goto alphatech
 				`	"What happened to them?"`
 			`	Another Avgi begins chirpring before the previous one can begin. "Apprehension. The Alphas as you call them were destroyed by our own people." It waits for your response, evidently thinking the Alphas may have been friends of the existing government, but receiving no outburst of rage, it continues. "Relief. The Alphas were found on a planet by a exploration fleet a very short time before the incursion. We did not interact much, since the colony there was still small and had evidently sustained great damage on its way to that system. They fled with the first refugees through the Shroud and settled on the only planet while the Avgi built stations to house our refugees." It stops, and another Avgi continues,`
-			`	"Rage. The Twilight Guard left the refugees and returned to protect our home while still more fled from it, but when they returned to Symphony, the Alphas had slaughtered the refugees and attepted to gain control of the system. We crushed their settlement, and razed the planet so that no one could ever revive the species."`
+			`	"Rage. The Twilight Guard left the refugees and returned to protect our home while still more fled from it, but when they returned to Symphony, the Alphas had slaughtered the refugees and attempted to gain control of the system. We crushed their settlement, and razed the planet so that no one could ever revive the species."`
 			choice
 				`	"Why wasn't I told this earlier?"`
 					goto diplomacy
@@ -1054,7 +1054,7 @@ mission "Endgame Alpha 4.4.4.3"
 			`	"Actually I'm serving as the Free Worlds commander for both Kraz and Southbound. I expect the other locations listed in the orders I got will send at least one aide for their governments."`
 			label stowage
 			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy sole decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
-			`	He claps you on your back and his eyes land on your Captain insignia. He stutters something unintelligble, and leaves for your ship.`
+			`	He claps you on your back and his eyes land on your Captain insignia. He stutters something unintelligible, and leaves for your ship.`
 				accept
 	to complete
 		"cargo space free" > 50
@@ -1124,7 +1124,7 @@ mission "Endgame Alpha 4.4.4.5"
 				`	"No problem, have you been briefed on our mission?"`
 					goto missionbriefing
 				`	"Why is the Syndicate involved with this anyway?"`
-					goto involvment
+					goto involvement
 				`	"Get off my bridge. I'm just the chauffeur.`
 			`	The man opens his mouth to say something, but decides otherwise and leaves. You finish your flight duties. Your orders state that the next team pickup is on Chiron.`
 				accept
@@ -1162,7 +1162,7 @@ mission "Endgame Alpha 4.4.5"
 	name "Research teams to Navigeo Yards"
 	source Chiron
 	destination "Navigeo Yards"
-	description "Carry the combined research team to <destination> in <system> for Avgi weapons training."
+	description "Carry the combined research team to <destination> for Avgi weapons training."
 	cargo "research equipment" 70
 	passengers 50
 	to offer
@@ -1200,17 +1200,267 @@ mission "Endgame Alpha 4.4.6"
 			`	The Syndicate representative, who is also his own team lead, stands and places a stack of credit chips on the table. "The Syndicate wishes to thank you with more than just words skipper, please take these, it should be about a million credits." He leaves, passing through a door marked 'Main Lab' in human text.`
 			`	Lieutenant Byers offers thanks similarly, but states that any payment will be at the discretion of his government, and likely the Republic's as well. The others leave, and you plan the last leg of flight dictated by your orders-return to Vindemiatrix.`
 				accept
-	
+	on complete
+		conversation
+			`The New Argentina spaceport has been significantly altered since you were last here, both in physical layout and atmosphere. Most of the landed ships are gone, and many of the civilians are as well. The status board, which has grown considerably in size, now with several large holo-projectors linked together, lists your name as requested to report to high command immediately. Although the restricted area has expanded to include almost the entire city, high command is still located at the center, in the spaceport.`
 # \close
 
 # 4.5 Martial Law Story \fold
 
-# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. You are told that all of the systems close to you have been put under martial aw by both the Free Worlds and the Republic in a combined battle group system, with elements of both Republic and Free Worlds leadership. \open
+# 4.5.1 After returuning from Avgi, moved to frontline to help, assign to 17th Combat Group here. Report to Seginus. \open
+mission "Endgame Alpha 4.5.1"
+	priority
+	name "Report to Seginus Duty Assignment"
+	description "Travel to <destination> to report to a 17th Combat Group duty station on the northern defensive line."
+	source "New Argentina"
+	destination "Clark"
+	to offer
+		has "Endgame Alpha 4.4.6: done"
+	on offer
+		conversation
+			`Instead of the carefully organized tents of staff, each denoting their own unit, there are only doors marked "Joint Task Force Command" with a variety of suffix letters for different operations areas. Thankfully, Admiral Alzaga's office hasn't moved, and he is in.`
+			choice
+				`	(Knock.)`
+					goto knock
+				`	(Enter.)`
+			`	You open the door and walk directly inside. Admiral Alzaga leaps to his feet (spilling data pads and papers everywhere) and stands at attention as you enter. You snap your heels together and salute. He returns your salute and says "Sit down <last>, I've got some changes for you."`
+				goto talkone
+			label knock
+			`	After several seconds, you hear Admiral Alzaga, somewhat muffled through the door, "Enter."`
+			`	You turn the handle and walk in. The admiral is standing at attention waiting. You salute and he salutes back. "Please have a seat <last>, there's been some changes around here.`
+			label talkone
+			`	"First, this planet is under martial law now, along with most of the other planets and systems near the front line. It doesn't mean as much as it sounds, because we aren't taking control of really anything beyond the spaceport, except here of course, but it gives us a lot more freedom of operation. Most of the units we had here have been moved to the front line systems and they'll be using those as their headquarters for each one.`
+			`	"The northern defensive line is being held by the 17th Combat Group right now, with the 33rd and 9th in Free Worlds space."`
+			choice
+				`	"What is a combat group?"`
+			`	Admiral Alzaga answers quickly enough you can tell he was expecting the question. "Combat Groups are the current solution to managing a multi-front war across multiple governments. Right now, all the combat groups answer to me, regardless of whether they are Free Worlds or Republic, and I'm not technically acting as an agent of the navy anymore, just as part of the task force. Essentially, each combat group is made up of a mix of Free Worlds and Republic officers that are part of a unified chain of command. It will probably lead to a lot of friction in the ranks, but it's the best solution we have.`
+			label understand
+			`	"Here's where you come in. Although you've been working as a miscellaneous agent in a specialized capacity, reporting directly to task force command, I'm assigning you to a duty station in the 17th Combat Group."`
+			choice
+				`	"I want out."`
+					goto wantout
+				`	"Sounds great."`
+			label orders
+			`	The admiral selects a data pad from the mass of them on his desk and hands it to you. "Those are your official orders, plus a memo on Combat Groups if needed. Your assignment is on Clark, for reference."`
+				to display
+					not "EA 4.5.1 kidding"
+				accept
+			`	The admiral hoods his eyes at you humorlessly, and selects a data pad from the mass of them on his desk and hands it to you. "Those are your official orders, plus a memo on Combat Groups if needed. Your assignment is on Clark, for reference."`
+				to display
+					has "EA 4.5.1 kidding"
+				accept
+			label wantout
+			`	Alzaga rubs his chin for several seconds before speaking. "As much as I would love to keep you around to help, you actually are allowed to go. Combat group command is all volunteer, since it isn't under any specific government, so you can refuse to join it."`
+			choice
+				`	"Haha, just kidding!"`
+					goto kidding
+				`	"Understood, I don't want to join."`
+			`	"Very well then <last> I'll have to ask you to leave then, since this is an area restricted to specific personnel." The admiral stands and escorts you out of his office. A guard appears and escorts you back to your ship, and you are instructed to leave immediately.`
+				flee
+			label kidding
+			action
+				set "EA 4.5.1 kidding"
+				goto orders
+				
+	on complete
+		event "EA recolor combat group"
+		conversation
+			`The marks of the Navy station on the planet are clearly evident on Clark's surface. Wide swaths of land near the spaceport have been cleared and now are teeming with personnel. Once you land, navy spceport authority gives you an extra communication system that links you into the cobat group's information system. No more clunky status board. That information system lists you as requested at the spaceport.`
 
-# 4.5.2 Report to Seginus for duty posting to Frontline, at this point, reveal that Navy Intelligence has discovered that the Alphas in this war are less powerful and appear to think less than the previous kind, but are far better organized. When possible, they collected samples, and when compared to the previous kind (which yes, they kept) they are not nearly as high functioning, but seem to be better at following orders with no empathy and no tactical thinking \fold
+# M4.5.2 Mechanics mission that makes your combat group follow you around for this segment. It will be failed when you go back to working on your own, and a similar mission will take its place \fold
+mission "Endgame Alpha M4.5.2"
+	invisible
+	non-blocking
+	priority
+	source Clark
+	to complete
+		never
+	to offer
+		has "Endgame Alpha 4.5.1: done"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Red One destroyed"
+		ship "Combat Drone" "Red One"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Red Two destroyed"
+		ship "Combat Drone" "Red Two"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Blue One destroyed"
+		ship "Combat Drone" "Blue One"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA unmanned disabled"
+		on destroy
+			dialog phrase "EA unmanned destroyed"
+			set "EA M4.5.2 Blue Two destroyed"
+		ship "Combat Drone" "Blue Two"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 R.N.S. Suribachi destroyed"
+		ship "Cruiser" "R.N.S. Suribachi"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 R.N.S. Rhein destroyed"
+		ship "Frigate" "R.N.S. Rhein"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 R.N.S. Trinity destroyed"
+		ship "Gunboat" "R.N.S. Trinity"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Bois d'Arc destroyed"
+		ship "Falcon" "F.S. Bois d'Arc"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Sequoia destroyed"
+		ship "Dreadnought" "F.S. Sequoia"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 Hellstench destroyed"
+		ship "Leviathan" "Hellstench"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Ponderosa destroyed"
+		ship "Osprey" "F.S. Ponderosa"
+	npc
+		government "17th Combat Group"
+		personality heroic escort unrestricted unconstrained
+		on disable
+			dialog phrase "EA manned disabled"
+		on destroy
+			dialog phrase "EA manned destroyed"
+			set "EA M4.5.2 F.S. Honey Locust destroyed"
+		ship "Bastion" "F.S. Honey Locust"
 
-# 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus.
+	
+	
+# 4.5.2 Report to Seginus, leave to check out Alpha activity. \fold
+mission "Endgame Alpha 4.5.2"
+	priority
+	non-blocking
+	name "Investigate Activity Spike"
+	description "Jump to the Wei system to repel a group of Alphas jumping into the system."
+	deadline 2
+	source Clark
+	destination Hope
+	to offer
+		has "Endgame Alpha 4.5.1: done"
+	on offer
+		conversation
+			`Due to its smaller size, the Clark spaceport is much easier to navigate, and you find the commander's office easily. The sign by the open door reads`
+			`		Steven Caine, Admiral, 17th Combat Group, Alpha Joint Task Force`
+			`	The commander calls you from inside, "Captain <last>, please step in." Admiral Caine is unlike most of the other admirals you have paid attention to since you joined the navy, mainly in that he looks much more competent and keen.`
+			`	"To get to business as fast as possible," He begins, "For now I'm assigning you as a commodore over a medium sized mixed fleet of Free Worlds, Republic, and Independent assets. You're one of the only people to ever hold a militia rank as well as a navy one, and definitely the highest, so it would be best to put you in charge of one of the few mixed units we have. Any questions on that part?"`
+			choice
+				`	"No."`
+					goto noquestions
+				`	"Who are the independents?"`
+			`	Caine smiles, "There either contract escort mercenaries or pirates, though a few of them are from larger companies that decided to volunteer aid. When the Combat Groups were created, we were told not to look to closely into the backgrounds of volunteers if they didn't seem to be a security risk, so we've been turning a blind eye on the precedents of most of them. There has been one or two incidents here that make me suspect though...`
+			label noquestions
+			`	He speeds up speaking and continues in a more rigid tone. "Anyway, enough small talk. I've got an assignment for you. A bit of a shakedown really. Take your new fleet to Hope and retrieve the sensor data from there. Quite a bit of it comes through the relays, but we want to know specifics of Alpha behavior. There's been a spike in activity though, so be careful. Now if you'll excuse me, I have my own ship to preflight."`
+			`	The conversation ends as rapidly as it began, you are left to go to your new quarters and prepare your unit for takeoff. In your absence, ground crews have repainted your ship to match the rest of the combat group.`
+				accept
+	on enter "Wei"
+		fail
+# 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus. \fold
+mission "Endgame Alpha 4.5.3"
+	entering
+	name "Defeat Alpha Fleet"
+	description `Defeat the Alpha fleet in Wei and return to mission base at Clark.`
+	source "Wei"
+	destination Clark
+	to offer
+		or
+			has "Endgame Alpha 4.5.2: active"
+			has "Endgame Alpha 4.5.2: failed"
+	on offer
+		conversation
+			`As the effects of the hyperspace jump fade away, you see an Alpha ship firing onto Hope. Updates from the sensor relays stop suddenly, replaced by a "no signal" message. At the same time, several Alpha ships jump into the system and attack.`
+	npc destroy
+		government "Alpha"
+		fleet "Alpha Variety" 3
+		on destroy
+			conversation
+				`Your unit destroys the last of the Alpha warships, and you wait in orbit attempting to make contact with the relay system. No response. It would be best to return to Clark since you don't even know where it is on the planet without the help of the beacon.`
+	on complete
+		payment 500000
+		`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
 
+# 4.5.4 Fly the dirt tunnel and check sensors \fold
+mission "Endgame Alpha 4.5.4"
+	landing
+	name "Sensor Patrol"
+	description "Travel to Hope in the Wei system, and to the marked systems in the Dirt Tunnel to check or repair sensor systems."
+	stopover "Hope"
+	waypoint Alnasl
+	waypoint Eber
+	waypoint "Alpha Arae"
+	cargo "Sensor Relays" 2
+	source "Seginus"
+	to offer
+		has "Endgame Alpha 4.5.3: done"
+	on stopover
+		conversation
+			`The sensor relay on the surface is as expected. The Alphas appear to have targeted the transmitter of the array, so most of it comes back on line once it is replaced.`
+	on waypoint
+		conversation
+			`When you report that all the orbiting sensors are in place and operational, you receive a voice message in return. It is Admiral Caine, with an annoying cheerfulness in his voice. "Change of plans, Commodore! You should get used to those. Return as soon as possible, you've got a special assignment outside the group."`
+	on complete
+		fail "Endgame Alpha M4.5.2"
 # \close
 	
 # \close
