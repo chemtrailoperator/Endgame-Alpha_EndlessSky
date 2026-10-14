@@ -82,6 +82,8 @@ event "EA accepted the endgame"
 
 event "EA mysterious green goo"
 
+event "EA campaign restart timer"
+
 event "EA emergence timer"
 
 event "EA timer I"
@@ -96,6 +98,10 @@ event "EA secure vindemiatrix"
 		"no raids"
 
 event "EA Remnant Defenses Activated"
+
+event "EA Raven contact timer"
+
+event "EA bomb timer"
 
 event "EA Populate Nona"
 	system Nona
@@ -181,9 +187,9 @@ event "EA Republic Martial Law"
 		add fleet "Small Republic" 1000
 		add fleet "Republic Logistics" 1000
 	
-	system "Delta Sagittari
+	system "Delta Sagittari"
 		add attributes "martial law"
-		"no raids"i"
+		"no raids"
 		government "9th Battle Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000

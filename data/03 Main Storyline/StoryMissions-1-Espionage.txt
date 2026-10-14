@@ -23,20 +23,23 @@ mission "EA operator rendesvous"
 		has "EA CalltoGeminus: done"
 	on offer
 		conversation
-			`Somehow Raven knew exactly when and where you would be and is waiting immediately outside your ship when you open the door. She takes you to a waiting van and you drive off to the Navy headquarters.`
+			`Somehow Raven knew exactly when and where you would be. She is waiting immediately outside your ship when you open the hatch. She takes you to a waiting van and you drive off to the Navy headquarters.`
 			`	"The reason I called you here Captain <last> is because it wasn't normal terrorists that perpetrated the attack on Earth." she says when you enter a rather large conference room.`
 			choice
 				`	"Tell me more."`
-					goto earlitellmore
+					goto tellmemore
 				`	"What attack?"`
-			`	"Oh I thought you knew, I thought everyone knew, its been all over the news for months. The short of it is that a large celebration was abruptly cut short by an impressively large amount of explosives set off by what were simple unaffiliated terrorists on the surface, but ended up being a part of an intricate web of terrorists that linked together a few small incidents. The group hasn't ever done something of this magnitude though."`
-			label earlitellmore
+			`	"Oh I thought you knew, I thought everyone knew, its been all over the news for months. The short of it is that a large Remembrance Day celebration on Earth was abruptly cut short by an impressively large amount of explosives set off by what were simple unaffiliated terrorists on the surface. `
+			label moremetell
+			`	With more research we determined the perpetrators were acting as part of an intricate web of terrorists that linked together a few small incidents. The group hasn't ever done something of this magnitude though."`
 			`	"You can't just acquire a bunch of explosives and blow them up in the center of a square without leaving at least a tiny trace of your existence. We were able to link the strike back to one gang leader. Problem is, he's virtually invisible and if the Navy were to go after him he would become entirely so. That's where you come in, can you meet up with one of our intelligence operators on Mutiny?"`
 			choice
 				`	"No can do, sorry. That's way out of my league."`
 					decline
 				`	"I can manage that."`		
 					accept
+			label tellmemore
+			`	"The people who attacked the Remembrance Day celebration were just unaffiliated extremists on the surface. `
 			
 mission "EA operator contact"
 	name "Escort to Greenrock"
@@ -66,7 +69,7 @@ mission "EA operator contact"
 				`	(Land at the coordinates.)`
 				`	(Give up on the operative until tomorrow.)`
 					depart
-			`	When you arrive at the coordinates you see a small scrapper with an odd sun shade sticking out of the side. In the shade sits a surprisingly young man to be an agent. When you approach the man he stands up and nonchalantly sticks out his hand.`
+			`	When you arrive at the coordinates you see a small scrapper with an odd sun shade sticking out of the side. In the shade sits a man surprisingly young for your mental picture of an agent. When you approach the man he stands up and nonchalantly sticks out his hand.`
 			`	When you shake it he says, "Hello Captain <last>, I've been doing a little research into our perpetrators and I believe that its even worse than we thought. Since you left we've been able to track down the ringleader of the terrorists on Greenrock, could you escort me there?`
 			choice
 				`	"Yep."`
@@ -80,7 +83,7 @@ mission "EA operator contact"
 	on complete
 		payment 200000
 		conversation
-			`	When you land at Greenrock, the Spear of Anhur does not follow you through the pattern. Instead, the operative tells you through a communication link that he will be taking a different route into the city and to meet up at the best space port cafe in a few hours to talk over his findings. He also pays you 200,000 credits.`
+			`	When you land at Greenrock, the Spear of Anhur does not follow you through the pattern. Instead, the operative tells you through a communication link that he will be taking a different route into the city and to meet up in a few hours to talk over findings at the best space port cafe you can find. He also transfers 200,000 credits.`
 	on visit
 		dialog `You have reached Greenrock, but the Spear of Anhur has not yet arrived. Please depart and wait for the operative to make it to the system.`
 	
@@ -169,8 +172,8 @@ mission "EA Contact Oathkeepers"
 		event "EA danforth chip processed" 14
 		conversation
 			`Raven meets you at the spaceport terminal and brings you to a restricted area.`
-			`	"First of all," she begins, "Our problem is far larger than we estimated. We've heard various reports of Alpha involvement, but we didn't think that they played a very large part or that they had access to resources like heavy warships."`	
-			`	"There is so much red tape in the galaxy, particularly the Republic, that we won't be able to mobilize normal forces quickly enough to prevent the Alphas spreading, especially if there is a full scale assault."`
+			`	"First of all," she begins, "Our problem is far larger than we estimated. I hacked your ship and viewed the sensor logs by the way. We've heard various reports of Alpha involvement, but we didn't think that they played a very large part or that they had access to resources like heavy warships. If the Alphas are really making a comeback, this could mean another set of Alpha wars."`	
+			`	"There is so much red tape in the galaxy, particularly the Republic, that we won't be able to mobilize normal forces quickly enough to prevent the Alphas spreading, especially if there is a full scale assault. Right now we can only hope this was a local problem."`
 			choice
 				`	"I got a data chip from your operative before he died"`
 			`	For once, Raven looks shocked. "That operative was Gabriel Danforth. Are you sure he's dead?"`
