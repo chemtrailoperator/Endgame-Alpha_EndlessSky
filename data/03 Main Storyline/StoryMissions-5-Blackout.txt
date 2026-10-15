@@ -128,17 +128,101 @@ mission "Endgame Alpha 5.1.3"
 			label getone
 			`	"The republic said to send you to Geminus for pickup as soon as you had been briefed, so I think you should be going now." A group of uniformed agents surrounds you and escorts you back to your ship.`
 				accept
-			
+	on complete
+		dialog `As you land, you receive a mesage requesting you to report to the Navy special affairs office in the spaceport.`
 # 5.1.4 Deliver to Syndicate \fold
-
-# Weapon is essentially a super-bomb built from a jump drive
-
-# 5.1.6 Wait for 7 days before being recalled \fold
-
-# 5.1.7 Optional mission to spy on the Syndicate for the Republic during seven day wait \fold
-
-# 5.1.8 Take complete weapon system directly to Sagarra to detonate it (leave on surface an retreat to unoccupied space \fold
-
+mission "Endgame Alpha 5.1.4"
+	priority
+	clearance
+	source Geminus
+	destination Keyhole
+	name `Weapon System Construction`
+	description `Bring the specially equipped Stealth Gunboat to Keyhole in the Aurora system.`
+	to offer
+		has "Endgame Alpha 5.1.3: done"
+	on offer
+		event `EA unlock Keyhole spaceport`
+		conversation
+			scene `thumbnail/stealth gunboat`
+			`The aide you spoke with at the navy office brings you to a small conference room, and leaves. Shortly after, another engineer-type individual enters and sits down across from you. He pushes a picture to you of a ship. it appears to be a heavily modified gunboat, with most of the external features removed.`
+			choice
+				`	"That's what I'm bringing to the Syndicate?"`
+					goto syndicate
+				`	"What's wrong with it?`
+			`	"There's nothing actually wrong with it, just not a lot going on." The engineer picks up the photo again. "It's our new Stealth Gunboat, about as low-observable as it gets, and it's your job to serve it on a platter to the Syndicate. It's all ready to take off with you, Jump Drive and all."`
+			choice
+				`	"Great. I'll get going then."`
+					accept
+				`	"Why is that such a problem?"`
+			`	"Tell me Captain, if you spent years working on a weapon system just to have it given to your primary competitor, how would you feel?" He starts to say more, closes it, and restarts, "But I've said enough. I wasn't supposed to talk to you much anyway." The engineer gets up and leaves without further comment.`
+				accept
+			label syndicate
+			`	"Pretty much, unless you've got any other ideas. Look, I'm not supposed to tell you anymore than the type of ship to look for, so I'll be going now." The engineer gets up and leaves the conference room.`
+				accept
+	npc accompany save
+		government "Republic"
+		personality timid secretive escort
+		ship "Stealth Gunboat (Jump)" "Pascal Delta"
+	on complete
+		conversation
+			`The process of dropping the Pascal Delta off at its construction dock is almost instantaneous, and you are requested to go to the spaceport for further briefings.`
+# 5.1.5 Take weapon system to Sagarra \fold
+mission `Endgame Alpha 5.1.5`
+	priority
+	clearance
+	source Keyhole
+	destination Sagarra
+	name "Payload Delivery"
+	description `Escort the weapon system to <destination>, and retreat from there.`
+	to offer
+		has "Endgame Alpha 5.1.4: done"
+	on offer
+		conversation
+			`You approach the information desk, and present your pilot's license when it is requested by a nondescript clerk. "Good evening Captain, you have an appointment in room thirty-seven." She gestures to a door prominently marked R37 to the right of where you came in.`
+			choice
+				`	(Go to R37.)`
+					goto R37
+				`	(Deny any involvement.)`
+			`	The clerk taps on her vast array of data screens for several seconds, then turns back and smiles professionally at you. "Captain, I have cancelled your appointment. Additionally, your temporary clearance to access this facility expires shortly, I must ask you to vacate the station." You are about to argue, but you see a ring of holes in the roof that look suspiciously like sniper perches. You think better of your original plan and leave without a fuss.`
+				flee
+			label R37
+			`	As you walk over to the door, it pops open for you. Inside, it appears to be a normal size briefing room, but every wall that usually contains a screen is covered in temporary fabric. Seated at the table is yet another boring looking agent. "Captain, this is the last briefing you get before deploying the weapon system, I have instructions from the Republic, Free Worlds, and operating instructions from our designers."`
+			choice
+				`	"Fire away."`
+			`	"First, the Republic wanted you to know that Sagarra is the highest priority target for the Weapon. Analysis of Alpha behavior suggests that the breed mutated, or was bred, to have less critical thinking and even less decision making capability. They've noticed that when communication systems are damaged on a ship, its behavior becomes erratic and almost completely undirected, indicating that the things on board are receiving quite a few instructions.`
+			`	The Free Worlds said something similar, with addendum that they will wait to detonate the device as long as possible until all ships are landed on planets so that if the Alphas go crazy, they might survive. Both governments also wish me to stress that you do this as a volunteer and not under orders. Do you understand and accept these instructions?"`
+			choice
+				`	"Yes."`
+				`	"No, I refuse."`
+					goto refuse
+			`	The agent pulls a recording device from his breast pocket and presses a button on the side. The light on top switches from green to red, and he replaces it. "For legal reasons I'm supposed to collect that. Now for the instructions on the weapon itself. The ship is currently being modified to accept the payload, and it is being built directly into the structure. Avoid landing as much as possible and get to Sagarra as quickly as possible, obviously, but also, protect the Weapon on the way there. What the engineers might not have told you is that we've only ever salvaged two Jump Drives with the defect that makes them useful like this.`
+			`	"That's all I've been given to brief you on, and your clearance expires soon, so you'd better be leaving. Personally though, good luck." He stands up, collects a briefcase from below the table, and leaves, clapping you on the back on the way out.`
+				accept
+	on enter
+		conversation
+			`As you enter orbit in formation with the Pascal Delta, you see that the underside has been covered in signatures and messages, from the engineers, you presume. Once you leave the atmosphere, the computer system disconnects from departure control and the automatic piloting system engages, linking to your ship.`
+	npc accompany save
+		government "Syndicate"
+		personality timid secretive escort
+		ship "Stealth Gunboat (AWS)" "Weapon System"
+		on destroy
+			dialog `You have let the Weapon System be destroyed before reaching its target! If life were a game, you might be able to go back and start over.`
+# 5.1.6 Retreat to unoccupied space. \fold
+mission `Endgame Alpha 5.1.6`
+	landing
+	clearance
+	source Sagarra
+	complete at
+		government "Free Worlds" "Republic"
+	name `Retreat`
+	description `Clear occupied space and land on a planet for weapon detonation.`
+	to offer
+		has "Endgame Alpha 5.1.5: done"
+	on offer
+		conversation
+			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an imbedded message in your computer triggers, notifying you that the weapon system has an established comms link with Citadelle, and it is ready to detonate when you return safely.`
+				launch
+	
 # \close
 
 # 5.2 Blackout \fold
