@@ -564,7 +564,7 @@ mission "Endgame Alpha 3.14"
 	source "New Argentina"
 	destination "Sagarra"
 	to offer
-		has "Endgame Alpha 3.12: done"
+		has "Endgame Alpha 3.13: declined"
 	on offer
 		conversation
 			`You make your way through the packed outfitter to the office complex behind it.`
