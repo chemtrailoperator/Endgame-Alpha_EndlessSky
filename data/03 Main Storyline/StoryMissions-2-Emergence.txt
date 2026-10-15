@@ -36,11 +36,10 @@ mission "Endgame Alpha 2.0"
 			label EA2
 			`	"The Alpha activity that we are currently investigating flared up in Shaula, as you know." Says Raven, "those ships were neutralized by the Free Worlds Militia, but I don't have the tracking information on them. Do you?" Danforth thinks for a moment and then replies, "No. But ever since the Free Worlds Information treaty, we can get the access codes for the data recorders in inhabited systems, but the only place I know of to get them is Bourne." Raven turns to you. "I seem to remember you are a member of the council there. Think you could get that data for me?"`
 			choice
-				`	"I'd rather not get involved, thank you."`
-					decline
 				`	"I can leave immediately."`
 					accept
-
+				`	"I'd rather not get involved, thank you."`
+					decline
 mission "Endgame Alpha 2.1"
 	landing
 	name "Collect Surveillance Data"
@@ -115,7 +114,7 @@ mission "Endgame Alpha 2.2"
 		has "Endgame Alpha 2.1: done"
 	on offer
 		conversation
-			`At the Navy office, there is some difficulty getting authorization for the message, something about external users not being supported. After an unreasonably long wait, you are told that the message has been sent to your ships data system. It's almost like they could have just sent you the message.`
+			`At the Navy office, there is some difficulty getting authorization for the message, something about external users not being supported. After an unreasonably long wait, you are told that the message has been sent to your ships data system. It's almost like they could have just handed you the message.`
 			choice
 				`	(Return to your ship.)`
 			`	Like they said, there is a message cached.`
@@ -144,11 +143,11 @@ mission "Endgame Alpha 2.3"
 	on offer
 		conversation
 			`The officer's club is a tall, imposing building near the landing pads. Walking in the front door, you see that everything is maintained with the exactitude typical in the Navy. The receptionist greets you as soon as you walk up, "Good Evening, Mr. <last>, One of the few civilians on the guest list tonight. Your party is in room seven. Please follow me."`
-			`	Upon entering room seven, the first thing you notice is the large bay window that overlooks the landing pads dedicated to the Oathkeepers. About halfway down the line of ships, one stands out. "I'm sure you're wondering about the newest addition to my fleet, <last>."`
+			`	Upon entering room seven, the first thing you notice is the large bay window that overlooks the landing pads dedicated to the Oathkeepers. About halfway down the line of ships, one stands out. Danforth turns from the window to you. "I'm sure you're wondering about the newest addition to my fleet, <last>. Behold, the Supercruiser."`
 			choice
 				`	"It looks bigger than normal."`
 				`	"It looks like a Cruiser with too many drone bays."`
-			`	"That really is a good way to describe it. There are two more drone bays, heavier armor, and heavier weaponry. It suffers a little in performance, but the engineers said it wouldn't be too much of a problem, I at least hope that's true... Anyway, it is already being deployed in fleets, so you might see them around."`
+			`	"That is a decent description. There are two more drone bays, heavier armor, and heavier weaponry. It suffers a little in performance, but the engineers said it wouldn't be too much of a problem, I at least hope that's true... Anyway, it is already being deployed in fleets, so you might see them around."`
 			`	When Danforth pauses, Raven cuts in, "The sooner we get going the better, so as soon as you gentlemen are done with the pleasantries, we should get going." "Very true!" Says Danforth, and both of them leave for the landing pads.`
 				accept
 	npc accompany save
@@ -163,7 +162,7 @@ mission "Endgame Alpha 2.3"
 	on complete
 		payment 150000
 		conversation
-			`Unlike some ships you've escorted, the two navy ships have been a pleasure to fly with, always quick in maneuvers, easy to communicate with, and well maintained. During you landing sequence, you receive a message from Danforth telling you to meet him at the spaceport bar to if you're willing to do more jobs for him. He also leaves a payment of 150,000 credits.`
+			`Unlike some ships you've escorted, the two navy ships have been a pleasure to fly with, always quick in maneuvers, easy to communicate with, and well maintained. During youR landing sequence, you receive a message from Danforth telling you to meet him at the spaceport bar to if you're willing to do more jobs for him. He also leaves a payment of 150,000 credits, which is quite a lot considering you didn't do much.`
 
 mission "Endgame Alpha 2.4"
 	name ""
@@ -295,7 +294,7 @@ mission "Endgame Alpha 2.5"
 						goto EAahdeath
 					`	(Throw in a few grenades.)`
 				`	As you throw in two grenades, there is an almost human sounding yell, a scuffle, and then two explosions. A blast of blood and green tissue flies out of the door, only missing you because of your vantage point.`
-				`	The inside of the crew quarters is a complete disaster. Not only the four bodies of what appear to be Alpha-Human hybrids, but also several decaying corpses. Gross. Time to get back to your ship.`
+				`	The inside of the crew quarters is a complete disaster. Not only the four (fresh) bodies of what appear to be Alpha-Human hybrids, but also several decaying corpses. Gross. Time to get back to your ship.`
 				label EAahabort
 				`	As you leave, your bridge radios you that they are seeing thermal activity and motion in the stern of the ship. You break into a run, sliding into your airlock and slamming the door shut just as two apparently pure Alphas spin around a corner. There are probably more, but this is the kind of battle you are used to.`
 	on enter "Fumalsamakah"
@@ -393,9 +392,11 @@ mission "Endgame Alpha 2.7"
 	description "Report to <destination> in <system> for Navy duty."
 	source Twinstar
 	to offer
-		has "Endgame Alpha 2.6: offered"
-	to accept
 		has "Endgame Alpha 2.6: declined"
+	on offer
+		conversation
+			`	You head out to the launchpad to head to New Iceland. There is an uncomfortable air in the spaceport. Rumors are already spreading, and there is a feeling like panic hiding under the outward calm of the frontier worlds.`
+				accept
 	on complete
 		conversation
 			`You land at New Iceland amid the very organized bustle of the reactivated Navy base, and are instructed to meet command at a set of pre-fabricated shelters near the spaceport.`
@@ -414,29 +415,29 @@ mission "Endgame Alpha 2.8"
 		payment 2000000
 		conversation
 			`	You report to the office of the Navy commander, one Admiral Alzaga.`
-			`	The first thing he does after greeting you is hand you credit chips for 2.00M credits. "That is the official thanks from the Republic." he says. "From the Navy, Admiral Danforth and I have agreed to give you an acting commission into the Navy as a Commander. The salary is decent and you'll keep your free worlds pay, but you'll have to travel to Earth with us to get it permanently confirmed."`
+			`	The first thing he does after greeting you is hand you credit chips for 2.00M credits. "That is the official thanks from the Republic." he says. "Now for the thanks from the Navy. Admiral Danforth and I have agreed to give you an acting commission into the Navy as a Commander. The salary is decent and you'll keep your Free Worlds pay, but you'll have to travel to Earth with us to get it permanently confirmed."`
 			choice
+				`	"I accept, sir."`
 				`	"No thanks, I prefer being a Free Worlds Officer only."`
 					decline
 				`	(Say "Take your stupid Navy and shove it.", and run out the door.)`
 					flee
-				`	"I accept, sir."`
-			
 			`	"Very well," says Alzaga, "then I would recommend we get moving as soon as possible, Commander."`
 				accept
 	on accept
 		event "EA repaint navy"
 	npc accompany
-		
 		ship "Supercruiser" "Destroying Angel"
-			government "Navy (Oathkeepers)"
-			personality heroic
+		government "Navy (Oathkeepers)"
+		personality heroic
+	npc accompany
 		ship "Gunboat" "Eye of Horus"
-			government "Navy Intelligence"
-			personality timid
+		government "Navy Intelligence"
+		personality timid
+	npc accompany
 		ship "Carrier" "R.N.S. Endureable"
-			government "Republic"
-			personality heroic
+		government "Republic"
+		personality heroic
 	on complete
 		dialog `When you land you receive a message from Admiral Alzaga telling you to meet them in the officer’s club in the spaceport in a few hours once they have talked to a parliament committee.`
 

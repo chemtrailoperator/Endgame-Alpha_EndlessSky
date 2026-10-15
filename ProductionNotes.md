@@ -105,11 +105,12 @@ Remove Before Publishing Testing Components
 	
 Battle Groups
 Battle groups are Free Worlds commanded
-	17th Combat Group: Republic majority pushing from Kornephoros
-	33rd Combat Group: Free Worlds majority pushing from Sabik
-	9th Combat Group: Republic and Free Worlds mixed pushing from Rastaban
-	12th Combat Group: Syndicate, Independent, and Republic elements used to stabilize, brought up from various locations
-	
+
+	17th Battle Group: Republic majority pushing from Kornephoros
+	33rd Battle Group: Free Worlds majority pushing from Sabik
+	9th Battle Group: Republic and Free Worlds mixed pushing from Rastaban
+	12th Battle Group: Syndicate, Independent, and Republic elements used to stabilize, brought up from various locations
+	31st Support Group: Predominantly Syndicate ships with some Navy used for logistics between the North and combat areas.
 	
 	
 

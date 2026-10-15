@@ -32,7 +32,6 @@ mission "EA FW Raven Contact"
 		has "Wanderers: Alpha Surveillance D: done"
 		has "First Contact: Remnant: offered"
 		has "Avgi: Twilight Escape 1: offered"
-		random < 10
 	on offer
 		conversation
 			`You see someone in a large There Might Be Riots hoodie that looks remarkably like Raven from Navy Intelligence.`
@@ -56,7 +55,7 @@ mission "EA Deep Raven Contact"
 		attributes "deep"
 	to offer
 		has "EA FW Raven Contact: declined"
-		random < 20
+		random < 50
 	on offer
 		conversation
 			`You see someone in a very similar TMBR hoodie that you are sure is Raven, Deep Security must have needed some help on something.`
@@ -107,7 +106,7 @@ mission "EA Synd Raven Contact"
 				`	(Follow Her.)`
 				`	(Ignore Her.)`
 					goto easrcignore
-			`	You follow her through the spaceport, visiting every gift shop along the way, and find yourself winding through the city. You notice with slight trepidation that the neighborhood is getting steadily worse before your quarry takes a sharp turn down an alley. As you walk around the corner you expect to find Raven gone without a trace but instead you find her standing immediately in front of you. “Why are you here?” She asks menacingly`
+			`	You follow her through the spaceport, visiting every gift shop along the way, and find yourself winding through the city. You notice with slight trepidation that the neighborhood is getting steadily worse. Your quarry takes a sharp turn down an alley. You walk around the corner you expecting to find Raven gone without a trace, but instead you find her standing immediately in front of you. "Why are you here?" She asks menacingly`
 			choice
 				`	"I was just taking a walk through town"`
 				`	"I'm looking for a drug dealer, I'm doing some undercover work for the Syndicate."`
@@ -121,7 +120,7 @@ mission "EA Synd Raven Contact"
 			choice
 				`	"I was bored."`
 				`	"I kept seeing you around and I wanted to know what you were up to."`
-			`	“Fair enough. It might be providence that you showed up when you did. I will be needing your services. Report to Navy Intelligence on Geminus within two weeks if you want to help.”`
+			`	"Fair enough. It might be providence that you showed up when you did. I will be needing your services. Report to Navy Intelligence on Geminus within two weeks if you want to help."`
 				accept
 			label easrcignore
 			`	You decide that whatever she’s doing is none of your business and return to your ship after concluding your business.`
@@ -136,7 +135,6 @@ mission "EA Synd Raven Contact"
 
 mission "EA Raven Last Contact"
 	landing
-	priority
 	source "Geminus"
 	to offer
 		has "EA Synd Raven Contact: done"
@@ -150,12 +148,12 @@ mission "EA Raven Last Contact"
 				`	(Accept the message.)`
 					goto earlcaccept
 				`	(Ignore it.)`
-			`	A voice comes up from your communication system: "Thanks for committing, I'll be in touch, but next time, answer the phone." Your bank account notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'.`
+			`	A voice comes up from your communication system: "As it turns out we don't need you right now but thanks for committing, I'll be in touch, but next time, answer the phone." Your bank account notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'.`
 			`	You wonder how they could have bypassed your firewall like that.`
 				goto earlcend
 			label earlcaccept
 			`	You accept the message.`
-			`	"Thanks for committing. I'll be in touch." in what you think is Raven's voice. Your bank notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'`
+			`	"As it turns out we don't need you right now but thanks for committing. I'll be in touch." in what you think is Raven's voice. Your bank notifies you of 20,000 credits payed directly from the port authorities for 'services rendered'`
 			label earlcend
 				fail
 
@@ -179,11 +177,13 @@ mission "EA Celebration Bombing"
 				`	(Keep watching.)`
 				`	(Ignore the broadcast.)`
 					goto eacbignore
-			`	It seems there has been a terrorist attack at a large Remembrance Day celebration on Earth. After the slideshow is finished, the reporter starts talking again. “In the wake of these awful terrorist attacks there has been no clue as to who the perpetrators were, what they wanted, or what points they were trying to make. We hope that in the next weeks and months these horrible individuals will be brought to justice for their crimes." The special broadcast ends and the normal Space Weather report begins. You move on to other things.`
+			`	It seems there has been a terrorist attack at a large Remembrance Day celebration on Earth. After the slideshow is finished, the reporter starts talking again.`
+			`	 "In the wake of these awful terrorist attacks there has been no clue as to who the perpetrators were, what they wanted, or what points they were trying to make. We hope that in the next weeks and months these horrible individuals will be brought to justice for their crimes."`
+			`	The special broadcast ends and the normal Space Weather report begins. You move on to other things.`
 				
 			label eacbignore
 			action
-				log `An Earth Remembrance Day celebration is bombed by terrorists.`
+				log `An Earth Remembrance Day celebration is bombed by terrorists. No clues are immediately available as to who the perpetrators were.`
 			``
 				decline
 

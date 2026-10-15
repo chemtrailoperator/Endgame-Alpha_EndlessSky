@@ -89,6 +89,8 @@ event "EA accepted the endgame"
 
 event "EA mysterious green goo"
 
+event "EA campaign restart timer"
+
 event "EA emergence timer"
 
 event "EA timer I"
@@ -105,6 +107,10 @@ event "EA secure vindemiatrix"
 		"no raids"
 
 event "EA Remnant Defenses Activated"
+
+event "EA Raven contact timer"
+
+event "EA bomb timer"
 
 event "EA Populate Nona"
 	system Nona
@@ -239,10 +245,10 @@ event "EA Republic Martial Law"
 		add shipyard "Tarazed Basics"
 		add shipyard "Southbound Basics"
 		add outfitter "Common Outfits"
-	system "Delta Sagittari
+	system "Delta Sagittari"
 		add attributes "martial law"
-		"no raids"i"
-		government "9th Combat Group"
+		"no raids"
+		government "9th Battle Group"
 		remove fleet "Small Southern Merchants"
 		add fleet "Large Militia" 1000
 		add fleet "Small Militia" 1000
