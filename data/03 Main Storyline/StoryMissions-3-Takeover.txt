@@ -66,8 +66,8 @@ mission "Endgame Alpha 3.2"
 		has "event: EA Men Frontline"
 	on offer
 		conversation
-			`As you update your commlink to the <origin> cache, a maximum priority message pops up, from Republic Navy central command. It reads:`
-			`	Effective immediately. All units on non-essential deployments must report to Thule in the Men system for combat operations. All squadrons currently refitting must deploy immediately with any combat ready ships.`
+			`As you update your commlink to the <origin> cache, a maximum priority message from Republic Navy central command blinks on your screen. It reads:`
+			`	Effective immediately. All units on non-essential deployments must report to Thule in the Men system for combat operations. All squadrons currently refitting must deploy immediately with any and all combat ready ships. All reserve officers operating privately owned ships are required to join a nearby squadron, report to Men, or report back to active duty with their assigned unit.`
 				accept
 	on enter "Men"
 		dialog `The system is one massive battleground. Probably best to get on Men immediately to report to command.`
@@ -116,7 +116,7 @@ mission "Endgame Alpha 3.3"
 		has "Endgame Alpha 3.2: done"
 	on offer
 		conversation
-			`Anything civilian in the Thule spaceport has been removed or modified for military use. You notice that besides the organized Republic units, there is are many militia fleets and pirate bands operating under the direction of the Navy. Apparently an Alpha attack is enough to make normal humans put aside their differences.`
+			`Anything civilian in the Thule spaceport has been removed or modified for military use. You notice that besides the organized Republic units, there are many militia fleets and pirate bands operating under the direction of the Navy. Apparently an Alpha attack is enough to make normal humans put aside their differences.`
 			`	Suddenly, a siren starts to blare and ships begin taking off, energizing their shields as soon as they are clear of the ground. The siren is followed by a voice stating that a massive armada has been detected en route to the system and formation orders will be sent out by spaceport departure control.`
 				launch
 	npc
@@ -189,7 +189,7 @@ mission "Endgame Alpha 3.4"
 	on offer
 		conversation
 			`The "Joint Headquarters" appears to be staffed mostly by the Republic, probably because the Free Worlds didn't have the capability to deploy on such a scale. You are ushered past a line of waiting staff officers into the main office, where Raven, several Republic admirals, Free Worlds officers, and officials are seated.`
-			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here, so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives that seem to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"`
+			`	One of the admirals begins speaking: "I've got several disturbing pieces of information for you, first, the defense in Men collapsed under another wave of attacks shortly after you left, and we are being pressured rather hard here, so for now Beta Lupi is off limits as well. Second, the Alpha force, far more powerful than anything we suspected, was accompanied by unique battleships equipped with jump drives. They seemed to be cobbled together from various large ships, some of which even I've never seen. They are far more powerful than any individual ship we have and will probably end up being a serious problem. Third, and probably most unsettling, is that new intelligence reports from Bailey informed us that the attack did not originate from there; it came from off-planet, though they don't know whether the invasion force jumped from a neighboring system or took off from Alvorada. Do you have any questions about that?"`
 			choice
 				`	"What does this have to do with me?"`
 			`	"That's what I'm getting to, commander. You have a wide range of experience in things beyond the reaches of human space. Raven has recommended that you be selected to attempt penetrating captured territory to investigate Citadelle. Since it is beyond the purview of Navy regulations, I will not force you, but you are the most likely candidate."`
@@ -218,7 +218,7 @@ mission "Endgame Alpha 3.5"
 	on offer
 		conversation
 			`Although the system is full of traffic, the planet is messily guarded, and slipping underneath the completely uncoordinated patrols is easy. Activity goes down as you get closer to the surface, indicating that the Alphas aren't very interested in this planet. After a few orbits it becomes clear that the Alphas never had a significant force here.`
-			`	Eventually, you are detected by an Alpha ship, but it flies straight towards you without signallng to any other ships.`
+			`	Eventually, you are detected by an Alpha ship, but it flies straight towards you without signallng to any other ships. Its definitely time to get back to Solace.`
 				launch
 	npc
 		government "Alpha"
@@ -258,7 +258,7 @@ mission "Endgame Alpha 3.6"
 			label access
 			`	"If they really did come from there, it could become a worse problem than it already is. Oh, that reminds me." She pulls out a data pad.`
 			label hyperlink
-			`	"The ships that attacked Men were unique, but they were not entirely new. After examining the logs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their attacks from there."`
+			`	"The ships that attacked Men were unique, but they were not entirely new. After examining the logs more thoroughly we found that they are merely pieced together from many smaller ships, with materials from many of the species they have had prior contact with. They also use a mix of alien technology on board, which gives them an edge over us. They carry an astonishing compliment of fighters and drones on baord, and probably some bigger ships as well, which would make it easy for the Alphas to equip a few of these with jump drives and take over a disorganized pirate planet, and base their further attacks from there."`
 				goto patrol
 			label interesting
 			`	Raven looks at you oddly, "Yes... very."`
@@ -279,15 +279,20 @@ mission "Endgame Alpha 3.7"
 	on offer
 		payment 30000
 		dialog `Upon checking back into the headquarters, you are paid 30,000 credits and given a package to deliver to the New Iceland Navy FOB.`
-		event "EA Kappa Centauri Takeover"
-		event "EA Pherkad Takeover" 1
-		event "EA Yed Prior Frontline" 1
-		event "EA Alniyat Frontline" 2
+		
 	on enter "Aldhibain"
 		dialog `As you enter Aldhibain, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. Communications and non-military traffic has ceased."`
+	on enter "Unukalhai"
+		dialog `As you enter Unukalhai, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. Communications and non-military traffic has ceased."`
+	on enter "Kornephoros"
+		dialog `As you enter Kornephoros, an alert goes out to all ships in the system. "All ships be advised, defenses have fallen in and around Solace. Communications and non-military traffic has ceased."`
 	on complete
+		event "EA Kappa Centauri Takeover"
+		event "EA Pherkad Takeover" 3
+		event "EA Yed Prior Frontline" 2
+		event "EA Alniyat Frontline" 4
 		conversation
-			`After you deliver the package to Navy Intelligence, you are instructed to report to the command information center in the spaceport. Multiple news broadcasts are also stating that the Alpha presence has captured Kappa Centauri and Pherkad, and the surrounding systems are now being pushed hard.`
+			`After you deliver the package to Navy Intelligence, you are instructed to report to the command information center in the spaceport. Multiple news broadcasts are also stating that Alpha forces have captured Kappa Centauri and Pherkad, and the surrounding systems are now being pushed hard.`
 
 # 3.8 \fold
 mission "Endgame Alpha 3.8"
@@ -309,10 +314,10 @@ mission "Endgame Alpha 3.8"
 					goto easypsit
 			label easypsalute
 			`	You snap to attention and salute, but as you bring your arm up you hit a rope running past your right ear that you did not see in the dimness. The entire selter collapses in on you.`
-			`Upon extracating yourself and the Admiral (blaspheming the lack of stakes in polished concrete) from the wreckage, he tells you that Winter in the Yed Prior system is under siege by the Alphas, and orders you to get through the blockade and rescue as many people as possible, as well as several dignitiaries, scientists, intelligence operators, and data analysts who would be priceless to the Alphas.`
+			`Upon extracating yourself and the Admiral (blaspheming the lack of stakes in polished concrete) from the wreckage, he tells you that Winter in the Yed Prior system is under siege by the Alphas, and orders you to get through the blockade and rescue as many people as possible, as well as several dignitiaries, scientists, intelligence operators, and data analysts who would be very useful to the Alphas.`
 				accept
 			label easypsit
-			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. If you have  a jump drive to bypass the blockade, that would be excellent."`
+			`	"Since you don't seem to be aware of the customs and courtesies of the navy, I'll waive the usual stuff. Winter has been blockaded by the Alphas, and there are several people on Winter that would be priceless to them, including Ijs Springborn, whom I believe you have already met. Please rescue as many people as you can beyond the list that is currently being uploaded to your ship's computer. If you have a jump drive to bypass the blockade, that would be excellent."`
 				accept
 	on stopover
 		event "EA Yed Prior Takeover"
@@ -326,7 +331,7 @@ mission "Endgame Alpha 3.8"
 		event "EA Lesath Frontline" 2
 		conversation
 			`	You land at the now mostly wrecked spaceport on Winter, and collect the people who were somehow told of your arrival even without using the hyperspace relays connected to Pherkad.`
-			`	Everybody scrambles on board your ship as the few remaining Navy ships begin to give ground. The alphas penetrate the crumbling defensive line and begin firing at will onto the surface of the planet, blowing up anything that moves and forcing you to take off or be destroyed.`
+			`	Everybody scrambles on board your ship as the few remaining Navy ships begin to give ground. The Alphas penetrate the crumbling defensive line and begin firing at will onto the surface of the planet, blowing up anything that moves and forcing you to take off or be destroyed.`
 				launch
 	npc
 		system "Yed Prior"
@@ -361,9 +366,9 @@ mission "Endgame Alpha 3.8.1"
 		event "EA navy commission captain"
 	on complete
 		payment 3000000
-		event "EA parlribbon award"
-		event "EA alphacontact award"
-		event "EA pugservice award"
+		# event "EA parlribbon award"
+		# event "EA alphacontact award"
+		# event "EA pugservice award"
 
 # 3.9 \fold
 mission "Endgame Alpha 3.9"
@@ -376,6 +381,7 @@ mission "Endgame Alpha 3.9"
 	to offer
 		has "Endgame Alpha 3.8.1: done"	
 	on offer
+		event "EA connect Fumalzenarah"
 		conversation
 			`You receive a message on your communication system.`
 			choice
@@ -393,9 +399,8 @@ mission "Endgame Alpha 3.10"
 		has "Endgame Alpha 3.9: done"
 	on offer
 		event "EA republic mobilized"
-		event "EA connect Fumalzenarah"
 		conversation
-			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citaddelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Albireo, Kaus Australis, Zubenelgenubi, and the Dirt Tunnel.`
+			`Admiral Alzaga meets you at your ship looking extremely worried. "It's worse than we expected, much worse, the Alphas have finished establishing their hyperlink to Citadelle and are pushing harder than ever. Losses have been extremely high and the Alphas have many more ships than we thought possible. Working in conjunction with the Militia, we hope to set up defensive positions in the few choke points we have available, here, Albireo, Kaus Australis, Zubenelgenubi, and the Dirt Tunnel.`
 			choice
 				`	"That sounds stupid, sir."`
 				`	"Why are we pulling back that far?"`
