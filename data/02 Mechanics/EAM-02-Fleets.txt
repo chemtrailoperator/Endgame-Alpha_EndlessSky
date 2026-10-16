@@ -35,8 +35,6 @@ fleet "Large Republic Refugee"
 fleet "Hai Humanitarian Detachment"
 	government "Hai"
 	names "Hai"
-	personality
-		timid
 	variant
 		"Geocoris" 3
 		"Cicada" 2
@@ -50,8 +48,6 @@ fleet "Hai Humanitarian Detachment"
 fleet "Hai Unfettered Detachment"
 	government "Hai"
 	names "Hai"
-	personality
-		heroic vindictive
 	variant
 		"Shield Beetle (Unfettered)"
 		"Solifuge"
@@ -61,8 +57,6 @@ fleet "Hai Unfettered Detachment"
 fleet "Hai Battle Detachment"
 	government "Hai"
 	names "hai"
-	personality
-		heroic
 	variant
 		"Geocoris"
 		"Shield Beetle" 3
