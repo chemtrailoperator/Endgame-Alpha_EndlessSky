@@ -1003,8 +1003,8 @@ mission "Endgame Alpha 4.4.4.1"
 			`	"Outstanding, Admiral, for the size of teams I am requesting, you will need at least fifty bunks and seventy tons of cargo. How you get into the Rim is up to you, but teams will be waiting at the Kraz Cybernetics, Southbound, Lionheart, and Syndicated headquarters, and Alpha Centauri."`
 				accept
 	to complete
-		"cargo space free" > 70
-		"passenger space free" > 50
+		"cargo space" > 70
+		"passenger space" > 50
 	on visit
 		dialog phrase "EA not enough space"
 
@@ -1025,8 +1025,8 @@ mission "Endgame Alpha 4.4.4.2"
 			`	The leader of the team speaks to you as they board. "Good Morning Admiral, or whatever you call Navy people, the next team to pick up is from Southbound Shipyards on Zug. Everyone here is at least nominally familiar with jump drives and knows aliens exist, so I don't expect too much trouble." He leaves to get things settled on board, and you begin the normal bureaucratic paperwork required after landing.`
 				accept
 	to complete
-		"cargo space free" > 60
-		"passenger space free" > 40
+		"cargo space" > 60
+		"passenger space" > 40
 	on visit
 		dialog phrase "EA not enough space"
 	on complete
@@ -1058,8 +1058,8 @@ mission "Endgame Alpha 4.4.4.3"
 			`	He claps you on your back and his eyes land on your Captain insignia, almost hidden by an overcoat. He stutters something unintelligible, and leaves for your ship.`
 				accept
 	to complete
-		"cargo space free" > 50
-		"passenger space free" > 30
+		"cargo space" > 50
+		"passenger space" > 30
 	on visit
 		dialog phrase "EA not enough space"
 		
@@ -1075,8 +1075,8 @@ mission "Endgame Alpha 4.4.4.4"
 	to offer
 		has "Endgame Alpha 4.4.4.3: done"
 	to complete
-		"cargo space free" > 40
-		"passenger space free" > 20
+		"cargo space" > 40
+		"passenger space" > 20
 	on visit
 		dialog phrase "EA not enough space"
 	on offer
@@ -1113,8 +1113,8 @@ mission "Endgame Alpha 4.4.4.5"
 	to offer
 		has "Endgame Alpha 4.4.4.4: done"
 	to complete
-		"cargo space free" > 10
-		"passenger space free" > 13
+		"cargo space" > 10
+		"passenger space" > 13
 	on visit
 		dialog phrase "EA not enough space"
 	on offer
@@ -1169,7 +1169,9 @@ mission "Endgame Alpha 4.4.5"
 	passengers 50
 	to offer
 		has "Endgame Alpha 4.4.4.5: done"
-		require "Jump Drive"
+	to accept
+		has "outfit (flagship installed): Jump Drive"
+	blocked `To reach the Avgi on the next leg, you need a Jump Drive!`
 	on offer
 		conversation
 			`	In a process that is now becoming repetitive, the Republic team meets you with their gear at the landing pad and enters your ship. The group also includes three extra people who claim to be administrative assistants, but who look more like intelligence agents there to keep tabs on the Deep, Free Worlds, and Syndicate. Abnormally, the Republic team lead asks that you leave for space immediately, as the situation in the South is becoming even more desperate.`
