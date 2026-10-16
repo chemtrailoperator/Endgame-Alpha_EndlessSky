@@ -1084,16 +1084,17 @@ mission "Endgame Alpha 4.4.4.4"
 			`	The Deep team is very reticent about the gear they are loading and the origins of their team, but they load up quickly and are stowed before you even finish the post-flight checklist. The Deep Security agent that comes with the team stops his work long enough to tell you that the next destination is Sundive, the Syndicate's primary research facility.`
 				accept
 
-	npc evade 
+	npc
 		government "Syndicate"
 		personality
 			entering fleeing
 		system Sheratan
 		to spawn
 			has "flagship system: Sheratan"
-		conversation
-			`Sundive hails you again, `
-			`	"<ship>, you are cleared to land."`
+		on encounter
+			conversation
+				`Sundive hails you again, `
+				`	"<ship>, you are cleared to land."`
 		ship "Freighter (Black Program)" "SS Aurora"
 	on enter "Sheratan"
 		conversation
