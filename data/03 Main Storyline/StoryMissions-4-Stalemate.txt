@@ -1113,8 +1113,8 @@ mission "Endgame Alpha 4.4.4.5"
 	to offer
 		has "Endgame Alpha 4.4.4.4: done"
 	to complete
-		"cargo space free" > 10
-		"passenger space free" > 13
+		"cargo space" > 10
+		"passenger space" > 13
 	on visit
 		dialog phrase "EA not enough space"
 	on offer
@@ -1127,7 +1127,7 @@ mission "Endgame Alpha 4.4.4.5"
 					goto missionbriefing
 				`	"Why is the Syndicate involved with this anyway?"`
 					goto involvement
-				`	"Get off my bridge. I'm just the chauffeur.`
+				`	"Get off my bridge. I'm just the chauffeur."`
 			`	The man opens his mouth to say something, but decides otherwise and leaves. You finish your flight duties. Your orders state that the next team pickup is on Chiron.`
 				accept
 			label involvement
@@ -1169,7 +1169,7 @@ mission "Endgame Alpha 4.4.5"
 	passengers 50
 	to offer
 		has "Endgame Alpha 4.4.4.5: done"
-		require "Jump Drive"
+		has "outfit (flagship installed): Jump Drive"
 	on offer
 		conversation
 			`	In a process that is now becoming repetitive, the Republic team meets you with their gear at the landing pad and enters your ship. The group also includes three extra people who claim to be administrative assistants, but who look more like intelligence agents there to keep tabs on the Deep, Free Worlds, and Syndicate. Abnormally, the Republic team lead asks that you leave for space immediately, as the situation in the South is becoming even more desperate.`
@@ -1262,12 +1262,12 @@ mission "Endgame Alpha 4.5.1"
 			label kidding
 			action
 				set "EA 4.5.1 kidding"
-				goto orders
+			goto orders
 				
 	on complete
 		event "EA recolor combat group"
 		conversation
-			`The marks of the Navy station on the planet are clearly evident on Clark's surface. Wide swaths of land near the spaceport have been cleared and now are teeming with personnel. Once you land, navy spceport authority gives you an extra communication system that links you into the cobat group's information system. No more clunky status board. That information system lists you as requested at the spaceport.`
+			`The marks of the Navy station on the planet are clearly evident on Clark's surface. Wide swaths of land near the spaceport have been cleared and now are teeming with personnel. Once you land, navy spceport authority gives you an extra communication system that links you into the combat group's information system. No more clunky status board. That information system lists you as requested at the spaceport.`
 
 # M4.5.2 Mechanics mission that makes your combat group follow you around for this segment. It will be failed when you go back to working on your own, and a similar mission will take its place \fold
 mission "Endgame Alpha M4.5.2"
@@ -1411,7 +1411,7 @@ mission "Endgame Alpha 4.5.2"
 				`	"No."`
 					goto noquestions
 				`	"Who are the independents?"`
-			`	Caine smiles, "There either contract escort mercenaries or pirates, though a few of them are from larger companies that decided to volunteer aid. When the Combat Groups were created, we were told not to look to closely into the backgrounds of volunteers if they didn't seem to be a security risk, so we've been turning a blind eye on the precedents of most of them. There has been one or two incidents here that make me suspect though...`
+			`	Caine smiles, "There either contract escort mercenaries or pirates, though a few of them are from larger companies that decided to volunteer aid. When the Combat Groups were created, we were told not to look to closely into the backgrounds of volunteers if they didn't seem to be a security risk, so we've been turning a blind eye on the antecedents of most of them. There has been one or two incidents here that make me suspect though...`
 			label noquestions
 			`	He speeds up speaking and continues in a more rigid tone. "Anyway, enough small talk. I've got an assignment for you. A bit of a shakedown really. Take your new fleet to Hope and retrieve the sensor data from there. Quite a bit of it comes through the relays, but we want to know specifics of Alpha behavior. There's been a spike in activity though, so be careful. Now if you'll excuse me, I have my own ship to preflight."`
 			`	The conversation ends as rapidly as it began, you are left to go to your new quarters and prepare your unit for takeoff. In your absence, ground crews have repainted your ship to match the rest of the combat group.`
@@ -1423,11 +1423,10 @@ mission "Endgame Alpha 4.5.3"
 	entering
 	name "Defeat Alpha Fleet"
 	description `Defeat the Alpha fleet in Wei and return to mission base at Clark.`
-	source "Wei"
+	source "Hope"
 	destination Clark
 	to offer
 		or
-			has "Endgame Alpha 4.5.2: active"
 			has "Endgame Alpha 4.5.2: failed"
 	on offer
 		conversation
@@ -1440,7 +1439,7 @@ mission "Endgame Alpha 4.5.3"
 				`Your unit destroys the last of the Alpha warships, and you wait in orbit attempting to make contact with the relay system. No response. It would be best to return to Clark since you don't even know where it is on the planet without the help of the beacon.`
 	on complete
 		payment 500000
-		`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
+		`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to fix the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
 
 # 4.5.4 Fly the dirt tunnel and check sensors \fold
 mission "Endgame Alpha 4.5.4"
