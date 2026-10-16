@@ -16,7 +16,7 @@
 
 # Promotion Events \open
 event "EA navy commission commander"
-	government "Escort"
+	government Escort
 		swizzle 0
 	planet Earth
 		outfitter "Navy Clothing"
@@ -303,53 +303,50 @@ event "EA Republic Martial Law"
 # Awards \fold
 
 #There is a TON of issues with this section.
-# event "EA parlribbon award"
+event "EA parlribbon award"
 
-# mission "EA parlribbon award"
-	# invisible
-	# source
-		# attributes planet
-	# to offer
-		# has "event: EA parlribbon award"
-		# or
+mission "EA parlribbon award"
+	invisible
+	source Earth
+	to offer
+		has "event: EA parlribbon award"
+		or
 			# has "outfit (flagship installed): Commander Insignia"
 			# has "outfit (flagship installed): Captain Insignia"
 			# has "outfit (flagship installed): Rear Admiral Insignia"
-	# on offer
+	on offer
 		# outfit "Parliamentary Commendation Ribbon"
-		# fail
+		fail
 
-# event "EA pugservice award"
+event "EA pugservice award"
 
-# mission "EA pugservice award"
-	# invisible
-	# source
-		# attributes planet
-	# to offer
-		# has "event: EA pugservice award"
-		# or
-			# has "outfit (flagship installed): Commander Insignia"
-			# has "outfit (flagship installed): Captain Insignia"
-			# has "outfit (flagship installed): Rear Admiral Insignia"
-	# on offer
+mission "EA pugservice award"
+	invisible
+	source Earth
+	to offer
+		has "event: EA pugservice award"
+		or
+			has "outfit (flagship installed): Commander Insignia"
+			has "outfit (flagship installed): Captain Insignia"
+			has "outfit (flagship installed): Rear Admiral Insignia"
+	on offer
 		# outfit "Pug Service Ribbon"
-		# fail
+		fail
 
-# event "EA alphacontact award"
+event "EA alphacontact award"
 
-# mission "EA alphacontact award"
-	# invisible
-	# source
-		# attributes planet
-	# to offer
-		# has "event: EA alphacontact award"
-		# or
-			# has "outfit (flagship installed): Commander Insignia"
-			# has "outfit (flagship installed): Captain Insignia"
-			# has "outfit (flagship installed): Rear Admiral Insignia"
-	# on offer
+mission "EA alphacontact award"
+	invisible
+	source Earth
+	to offer
+		has "event: EA alphacontact award"
+		or
+			has "outfit (flagship installed): Commander Insignia"
+			has "outfit (flagship installed): Captain Insignia"
+			has "outfit (flagship installed): Rear Admiral Insignia"
+	on offer
 		# outfit "Alpha Contact Award"
-		# fail
+		fail
 # \close
 # Republic Mobilized \open
 event "EA endgame alpha begins"

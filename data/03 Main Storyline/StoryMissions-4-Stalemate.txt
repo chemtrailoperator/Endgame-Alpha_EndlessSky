@@ -25,7 +25,7 @@ mission "Endgame Alpha 4.0"
 		has "Endgame Alpha 3.14: done"
 	on offer
 		conversation
-			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the homebase of the Alphas.`
+			`After slipping through the fleets of patrolling Alpha warships, you have finally made it to the home base of the Alphas.`
 			`	The landscape is eerily similar to their last hideout, even down to the large reptiles roaming the earth.`
 			`	Unlike that planet, this one is covered in a sprawl of factories, docks, and other industrializations to produce ships. The city was obviously planned meticulously, with major thoroughfares running radially out from a large tower in the distance.`
 			`	A surface-to-air missile battery on the ground suddenly rotates up and fires at you. You shove the engines into maximum thrust and spin out of the way of the missile, thinking how you could have been spotted. You suddenly realize, shamefacedly, that you forgot to deactivate your atmospheric transponder. With that switched off, the surface system apparently seems to stop caring about you and stands down.`
@@ -204,7 +204,7 @@ mission "Endgame Alpha 4.1"
 	on complete
 		payment 50000
 		conversation
-			`As soon as you have stopped, a hologram message appears on your dashboard. It is Raven. "Now that you have arrived at your destination, I can now add to the orders you have already received.`
+			`As soon as you have stopped, a hologram message appears on your dashboard. It is Raven. "Now that you have arrived at your destination, I can add to the orders you have already received.`
 			`	"Not only shall you inquire about the structures located on Sagarra, but you must also ask if each government is willing to provide any resources to aid in the fight. Military fleets are preferred, but we will also accept humanitarian resources or assistance with housing refugees. The more the better, but please do not overstep or push in any way. The Alphas are still very much a human problem, and races who have been effected by them will be hostile, since it was us that created them anyway.`
 			`	"Additionally, make sure that the government you are in discussion with understands that we have the capability to maintain security around assisting fleets, and that they need not fear being discovered.`
 			`	"I wish you well with the Hai. They are probably our most potent allies since they are already known by many humans. Contacting higher-ups is fairly formal on Hai-home, you can file for a meeting at the spaceport embassy." The message closes out. Along with the message, there is payment of 50,000 credits.`
@@ -278,13 +278,13 @@ mission "Endgame Alpha 4.2"
 					goto withholdsagarra
 			label tellsagarra
 			`	"The Alphas somehow made a home base just beyond the limit of human space, and launched their war from there. On that planet there is a massive tower that looks like it is in control of everything. Do you have any knowledge of something similar?" You slide over a tablet containing the map built by your ship's terrain following radar.`
-			`	After examining the tablet in turn, the four normal looking Hais shake their heads, and say that they had never seen any behavior like that from the Alphas. The fifth says,`
+			`	After examining the tablet in turn, the four normal looking Hai shake their heads, and say that they had never seen any behavior like that from the Alphas. The fifth says,`
 				goto explanation
 			label withholdsagarra
 			`	"The Republic wishes to know about the behaviors of the Alphas when they interacted with you. Did they ever build strange structures or have strange organization?"`
 			`	The Hai each say that they have no such knowledge of any structures or odd behavior, except for the fifth, who says,`
 			label explanation
-			`	"We have no evidence of such a structure, however, some of the Hai envoys reported that the Alpha sometimes spoke of their command like it was a centralized point, not the chain or web usually seen in large groups. They also seemed to fear and revere the command center, wherever and whatever it was, because I do not think they would obey such leadership from one of their own. After they left our space, analysts predicted that a very powerful, external force was controlling them. That is all we learned while we worked them."`
+			`	"We have no evidence of such a structure, however, some of the Hai envoys reported that the Alpha sometimes spoke of their command like it was a centralized point, not the chain or web usually seen in large groups. They also seemed to fear and revere the command center, wherever and whatever it was, because I do not think they would obey such leadership from one of their own. After they left our space, analysts predicted that a very powerful, external force was controlling them. That is all we learned while we worked with them."`
 			choice
 				`	"The Hai had dealings with the Alphas?"`
 				`	"'Envoys'?! Who are you?"`
@@ -335,30 +335,30 @@ mission "Endgame Alpha 4.2"
 			``
 			`	After finalizing the details, the main Hai general walks you to the door of the conference room. "Lastly, please do not speak of this meeting to anyone except your superiors." He says, "If the knowledge that the Hai were fighting a war outside their borders, alongside the Unfettered no less..." He shudders, and hands you off to the guards, you take you through the same process to get out of the underground facility, and back to the spaceport embassy.`
 				accept
+			label nomilitary
+			`	you leave byeeeee.`
+				decline
 	on accept
 		event "EA secure vindemiatrix"
 		event "EA Atria Takeover"
 	on enter "Vindemiatrix"
 		conversation
-			`	As you land at the New Argentina spaceport, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out. The New Argentina controllers hail you as soon as you enter the system, asking that you land immediately.`
+			`	As you begin your approach to New Argentina, you notice that any civilian ships that were assisting the war effort in the system have been completely cleared out. The New Argentina controllers hail you as soon as you enter the system, asking that you land immediately.`
 	on visit
 		dialog `The Hai detachment has not yet arrived. The controllers ask you to remain in orbit until they get there.`
-	npc accompany save
-		government "Hai"
-		personality
-			heroic escort
-		outfitter "Hai Advanced"
-		fleet "Hai Battle Detachment"
-		to spawn
-			not "EA begged for assistance"
-	npc accompany save
-		government "Hai"
-		outfitter
-		cargo 4
-		fleet "Hai Humanitarian Detachment"
-		fleet "Hai Unfettered Detachment"
-		to spawn
-			has "EA begged for assistance"
+	# npc accompany save
+		# government "Hai"
+		# personality heroic escort
+		# fleet "Hai Battle Detachment"
+		# to spawn
+			# not "EA begged for assistance"
+	# npc accompany save
+		# government "Hai"
+		# personality timid escort
+		# fleet "Hai Humanitarian Detachment"
+		# fleet "Hai Unfettered Detachment"
+		# to spawn
+			# has "EA begged for assistance"
 
 # 4.3 Remnant Story \fold	
 
@@ -367,37 +367,38 @@ mission "Endgame Alpha M4.3"
 	landing
 	invisible
 	to offer
-		has "Endgame Alpha 4.2: done"
+# Triggers "early" so that they spawn by the time 4.3 comes up in case you don't land.
+		has "Endgame Alpha 4.1: done"
 	to complete
 		never
 	npc
 		government "Remnant"
 		personality heroic staying uninterested
 		system Cardea
-		fleet "Large Remnant" 3
-		fleet "Small Remnant" 3
-		fleet "Remnant Transport" 1
+		fleet "Large Remnant" 7
+		fleet "Small Remnant" 5
+		fleet "Remnant Transport" 3
 	npc
 		government "Remnant"
 		personality heroic staying uninterested
 		system Insitor
-		fleet "Large Remnant" 3
+		fleet "Large Remnant" 5
 		fleet "Small Remnant" 3
 		fleet "Remnant Transport" 1
 	npc
 		government "Remnant"
 		personality heroic staying uninterested
 		system Cinxia
-		fleet "Large Remnant" 3
-		fleet "Small Remnant" 3
-		fleet "Remnant Transport" 1
+		fleet "Large Remnant" 2
+		fleet "Small Remnant" 4
+		fleet "Remnant Transport" 2
 	npc
 		government "Remnant"
 		personality heroic staying uninterested
 		system Pantica
-		fleet "Large Remnant" 3
-		fleet "Small Remnant" 3
-		fleet "Remnant Transport" 1
+		fleet "Large Remnant" 1
+		fleet "Small Remnant" 2
+		fleet "Remnant Transport" 3
 	npc
 		government "Remnant"
 		personality heroic staying uninterested
@@ -433,7 +434,7 @@ mission "Endgame Alpha M4.3"
 	npc
 		government "Remnant"
 		personality mute uninterested secretive staying
-		system Caelian
+		system Cinxia
 		fleet "Remnant Watcher"
 	npc
 		government "Remnant"
@@ -495,7 +496,7 @@ mission "Endgame Alpha 4.3.1"
 			choice
 				`	(Open the door.)`
 			`	The officer steps onto your ship, salutes, and enters your cockpit (this time pointedly stepping over the bulkhead,) and hands you another data pad. He remains at attention.`
-			`	This time, you dismiss the officer before opening the data pad. He returns to his transportation and leaves.`
+			`	You dismiss the officer, without an uncomfortable wait, before opening the data pad. He returns to his transportation and leaves.`
 			`	Your orders are formatted in official style, reading:`
 			``
 			`	To The Attention of: <last>, <first>, Captain, Republic Navy`
@@ -576,7 +577,7 @@ mission "Endgame Alpha 4.3.2"
 			`	His eyes go wide as he sees your license, and presses a button on his desk. He signs quickly, "Please be patient for a moment. My leadership is on the way."`
 				goto summoned
 			label leader
-			` He leads you deeper into the facility, past the normal spaceport decorations, until you take a turn downwards, when the walls become bare stone. The tunnel ends abruptly after a corner, leaving you facing a metal bulkhead with a small door built into the center. As the prefect enters in the required codes, you glance around the end of the corridor. Above your head, like an ominous disco ball, is a miniature point defense turret, presumably ready to fry any unwanted visitors. At every corner is a reinforced camera and sensor package. The prefect notices your interest and laughs to himself before signing to you. "You have noticed that we take the defense of our hardened facilities seriously. It would be most unfortunate if even a common citizen came into this compound, and this is considered our fourth most important facility if we are discovered by the Alphas. Befoe you ask, yes, we know of your current situation. That is why you are here, all perspectives must be considered, since it is a matter of survival. By the way, you have been granted our highest level of security clearance. We have determined the risk is low compared with others.`
+			` He leads you deeper into the facility, past the normal spaceport decorations, until you take a turn downwards, when the walls become bare stone. The tunnel ends abruptly after a corner, leaving you facing a metal bulkhead with a small door built into the center. As the prefect enters in the required codes, you glance around the end of the corridor. Above your head, like an ominous disco ball, is a miniature point defense turret, presumably ready to fry any unwanted visitors. At every corner is a reinforced camera and sensor package. The prefect notices your interest and laughs to himself before signing to you. "You have noticed that we take the defense of our hardened facilities seriously. It would be most unfortunate if even a common citizen came into this compound, and this is considered our fourth most important facility if we are discovered by the Alphas. Before you ask, yes, we know of your current situation. That is why you are here, all perspectives must be considered, since it is a matter of survival. By the way, you have been granted our highest level of security clearance. We have determined the risk is low compared with others.`
 			label questions
 			choice
 				`	"How do you know of the new war?"`
@@ -588,7 +589,7 @@ mission "Endgame Alpha 4.3.2"
 						not "EA 4.3.2 bunkers"
 					goto bunkers
 				`	"What is in this compound?"`
-			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility."	He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home. `
+			`	"Here we keep a great deal of weapons and technology just like the other facilities, but we also use this bunker, bunkers really, for our high command. It is deep underground, safe from ordinary orbital weapons, but also close to the people we serve. I have brought you here, partly for advice, and partly to deliver a very important message to another secret facility." He leads you through bleak hallways and reinforced doors to a comfortable little office. "The threat posed by the Alphas is very great, probably greater now than when we fled to our current home. `
 				goto meeting
 			label intel
 			action
@@ -601,11 +602,11 @@ mission "Endgame Alpha 4.3.2"
 			`	We maintain this facility here on Viminal, as well as one on Viminal's moon, Kumkapi. We place great value on the redundancy of systems, so there is a third facility, more secure and more hidden, on Aksaray, a moon of the gas giant in this system. While these are the major bunkers in this system, there are also hideouts on all the other solid planets here, although they are of less importance. We maintain large bunkers on Caelian and Aventine, with similar redudancies in those systems.`
 				goto questions
 			label meeting
-			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria.`
-			` All of our other long range transports are prohibitively busy."`
+			`Contigencies must be taken in case our defenses cannot withstand the Alphas, thus we have placed an extremely hidden bunker on Siteria, a planet far enough by hyper link that we hope it will not be suspected, but close enough by jump drive that we can work with it frequently. There we are caching not only our most powerful weapons and technology, but also the sum of our knowledge, so that if we fail, our culture at least may be preserved. All this however, I could've told you somewhere not as secluded as this. I brought you here to give you a package of great importance to carry to Siteria`
+			` as all of our other long range transports are prohibitively busy."`
 				to display
 					not "outfit (flagship installed): Jump Drive"
-			` All of our other jump-capable transports are prohibitively busy."`
+			` as all of our other jump-capable transports are prohibitively busy."`
 				to display
 					has "outfit (flagship installed): Jump Drive"
 			`	He walks to the wall, places his finger on a seemingly random point on the wall, and waits patiently. After a full ten seconds, he removes his thumb, and gestures to the other side of the room. Down where the wall meets the floor a small hidden cupboard has slid open, utterly silently. He reaches in and pulls out a simple wooden case. He sets it on his desk, opens it, and spins it around. Inside rests a small oblong of what appears to be simple glass.	"This is your package, it may seem innocuous but treat it with respect, it is an object of immense power. It was discovered deep in the Queri system, where we believe the Quarg once were present. Its composition is mostly indistinguishable to us, but from what we can ascertain it contains advanced materials known to be used by the Builders, although it seems more like a piece that the Quarg would make. It would have been disregarded or put in a museum, except that an identical, but far smaller crystal vaporized the lab it was being tested in. This little piece of glass contains power exceeding that of many nuclear weapons, and we haven't figured out how to release it, given the lab's findings were vaporized along with the building, the scientists, and the surrounding 7 square miles. Such an item must be protected, and you will carry it to the base on Siteria."`
@@ -665,7 +666,7 @@ mission "Endgame Alpha 4.3.2"
 				`	(Leave.)`
 					goto leave
 				`	(Fly towards the signature.)`
-			`	The haze gets thicker as you move towards the signature, soon you can only see a few hundred feet in front of your ship. The foliage becomes thicker and more sturdy, forming trees tall enough to turn both indicators red for brief moments. You finally get close enough to the heat signature to see the source, a spring running out of the side of the canyon, clearly kept somewhat warm by what little tectonic activity is left on this old planet. The spring has a few Builder structures around it, but they seem to have suffered more from nature than the others around the planet. There is nothing more for you to see here.`
+			`	The haze gets thicker as you move towards the signature, soon you can only see a few hundred feet in front of your ship. The foliage becomes thicker and more sturdy, forming trees tall enough to turn both indicators red for brief moments. You finally get close enough to the heat signature to see the source; a spring running out of the side of the canyon, clearly kept somewhat warm by what little tectonic activity is left on this old planet. The spring has a few Builder structures around it, but they seem to have suffered more from nature than the others around the planet. There is nothing more for you to see here.`
 			choice
 				`	(Leave.)`			
 			label leave
@@ -757,7 +758,7 @@ mission "Endgame Alpha 4.3.3"
 			`	The elevator begins to decelerate.`
 			choice
 				`	(Wait.)`
-			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against bumpers. There are no buttons.`
+			`	The elevator finally comes to a stop after its grueling journey, ending with a soft thud against bumpers. There are still no buttons.`
 			choice
 				`	(Wait some more.)`
 			`	After a short pause, the door slides open, revealing a large passageway carved out of the bare rock of the mountain. Over a few yards, the tunnel tapers down to about man size. The intervening extra space is crammed with explosives, and a little kiosk. The kiosk is unoccupied.`
@@ -771,14 +772,14 @@ mission "Endgame Alpha 4.3.3"
 					goto case
 				`	(Refuse.)`
 			`	"I'm not giving you the briefcase, you could be anyone." You say.`
-			`	The Remnant slows his signs down for you, as if you misunderstood. "I am qualified to take that item off you, although you may not know how much. As said previously I am the prefect of this facility, and you currently stand in it. Even if I was not who I say I am, there is little risk. We are isolated 7,300 feet underground, in a cave with only two entrances, both guarded more heavily than some planets. The briefcase contains a little piece of technology more powerful than we know, I have been trusted with its safekeeping, and I must follow through with my duties.`
+			`	The Remnant slows his signs down for you, as if you misunderstood. "I am qualified to take that item off you, although you may not know how well. As said previously I am the prefect of this facility, and you currently stand in it. Even if I was not who I say I am, there is little risk. We are isolated 7,300 feet underground, in a cave with only two entrances, both guarded more heavily than some planets. The briefcase contains a little piece of technology more powerful than we know, I have been trusted with its safekeeping, and I must follow through with my duties.`
 			choice
 				`	(Give him the briefcase.)`
 			label case
 			`	"Thank you Captain, please follow me."`
 			`	He leads you between the stacks of crates into a smaller offshoot of the main cavern. In the secluded area is a small gathering of chairs, all but one filled, with more Remnant standing around them. The prefect gestures you to the empty chair, and walks off to deal with his priceless artifact. Some of those sitting in the chairs or around seem frustrated, even angered, while others seem very tired.`
 			label circle
-			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent on our part. The likelihood of discovery if we field our forces against the Alphas is significantly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
+			`	A Remnant across from you in the circle begins to sign. "We thank you immensely for taking this effort to be present at this facility. I must, however, say that your trip may have been in vain on your part. The individual who sent you here may have misrepresented the situation. After deliberating the idea, we have come to the conclusion that assisting in your war as it stands currently would not be prudent. The likelihood of discovery if we field our forces against the Alphas is significantly increased, and we cannot take that risk. There are very large combat groups waiting ready to enter your space if the situation worsens much more, but now there is nothing that we can do. Be assured that we are following your status diligently, and we stand ready to aid if absolutely necessary. Please carry that information back to your government. Again, I apologize for your wasted time.`
 			choice
 				`	"There's nothing you can do at all?"`
 				`	"Why won't you help us?"`
@@ -827,7 +828,7 @@ mission "Endgame Alpha 4.4.1"
 	destination "Peripheria"
 	description "Travel to Peripheria in the Concerto system to speak with the Assembly of Consonant Polities"
 	to offer
-		has "Endgame Alpha 4.3.9: done"
+		has "Endgame Alpha 4.3.3: done"
 	on offer
 		conversation
 			`As usual, you report back to the Navy command center located in the spaceport. You are met there by Raven, who brings you to a small office located in the back of the complex.`
@@ -835,7 +836,7 @@ mission "Endgame Alpha 4.4.1"
 			choice
 				`	"I'm leaving already?"`
 					goto speed
-				`	"I don't appreciate you looking through my electronics."`
+				`	"You know, I really don't appreciate you looking through my electronics all the time."`
 					goto electronics
 				`	"Nope, I'll leave as soon as possible."`
 					goto ready
@@ -846,7 +847,7 @@ mission "Endgame Alpha 4.4.1"
 			`	Raven turns back around as she leaves with a wicked smirk. "Then I'm glad I didn't ask permission."`
 				goto ready
 			label ready
-			`	You return to your ship and begin preparations for leaving human space, this time to the Avgi seat.`
+			`	You return to your ship and begin preparations for leaving human space, this time to the Avgi government's seat.`
 				accept
 	on accept
 		event "EA Aldhibain Takeover" 2
@@ -907,7 +908,7 @@ mission "Endgame Alpha 4.4.3"
 			`	The Avgi appear to appreciate this response. "Excitement, the Consonance was in preparation to send a diplomatic probe towards where you originated from. Such a process would have taken tens or hundreds of years, and now we find we can meet now."`
 			choice
 				`	"Can you offer more than diplomacy?"`
-			`	"Regret. At this time we fight our own war against the Aberaant, one we may not win. Even if we could give many ships, they would take far too long to reach where they were needed. We can give only information and technology, if that will help you."`
+			`	"Regret. At this time we fight our own war against the Aberrant, one we may not yet win. Even if we could give many ships, they would take far too long to reach where they were needed. We can give only information and technology, if that will help you."`
 			choice
 				`	"May I have blueprints for your weapons?"`
 					goto blueprints
@@ -1021,7 +1022,7 @@ mission "Endgame Alpha 4.4.4.2"
 	on offer
 		conversation
 			`	The research team is already assembled and waiting for you when you land, and boards the <ship> quickly. You notice it is entirely engineers from Kraz Cybernetics.`
-			`	The leader of the team speaks to you as they board. "Good Morning Admiral, the next team to pick up is from Southbound Shipyards on Zug. Everyone here is at least nominally familiar with jump drives and knows aliens exist, so I don't expect too much trouble." He leaves to get things settled on board, and you begin the normal bureaucratic paperwork required after landing.`
+			`	The leader of the team speaks to you as they board. "Good Morning Admiral, or whatever you call Navy people, the next team to pick up is from Southbound Shipyards on Zug. Everyone here is at least nominally familiar with jump drives and knows aliens exist, so I don't expect too much trouble." He leaves to get things settled on board, and you begin the normal bureaucratic paperwork required after landing.`
 				accept
 	to complete
 		"cargo space free" > 60
@@ -1054,7 +1055,7 @@ mission "Endgame Alpha 4.4.4.3"
 			`	"Actually I'm serving as the Free Worlds commander for both Kraz and Southbound. I expect the other locations listed in the orders I got will send at least one aide for their governments."`
 			label stowage
 			`	He continues, "Of course, I'm not a researcher or engineer or whatever, just here to serve as proxy sole decision-maker for the entirety of the Free Worlds. In fact, I've probably got the easiest job on the damned boat."`
-			`	He claps you on your back and his eyes land on your Captain insignia. He stutters something unintelligible, and leaves for your ship.`
+			`	He claps you on your back and his eyes land on your Captain insignia, almost hidden by an overcoat. He stutters something unintelligible, and leaves for your ship.`
 				accept
 	to complete
 		"cargo space free" > 50
@@ -1117,7 +1118,7 @@ mission "Endgame Alpha 4.4.4.5"
 		dialog phrase "EA not enough space"
 	on offer
 		conversation
-			`Spaceport controllers do not direct you to land at the normal pads, but give you a vector to the Syndicate secured area. You are marshalled to a pad immediately next to one bearing a normal looking Freighter. When you touch down, the marshaller does not instruct you to shut down your engines, but instead signals to open your cargo door. Once open, the Freighter begins unloading 1-ton pallets of gear, which are moved into your cargo hold, after 30 pallets are moved, the Freighter's crew also enters your cargo hold.`
+			`The spaceport controllers do not direct you to land at the normal pads, but give you a vector to the Syndicate secured area. You are marshalled to a pad immediately next to one bearing a normal looking Freighter. When you touch down, the marshaller does not instruct you to shut down your engines, but instead signals to open your cargo door. Once open, the Freighter begins unloading 1-ton pallets of gear, which are moved into your cargo hold, after 30 pallets are moved, the Freighter's crew also enters your cargo hold.`
 			`	The instant everything is on board, you are instructed to take off, and are given a vector to the normal spaceport.`
 			`	At the landing pads, you are just finishing shutting down your engines when someone enters your cockpit. You recognize him as one of the men from the Syndicate freighter. "I beg pardon for the unorthodox methods, skipper, but the Syndicate wasn't at all comfortable with a Republic officer, or anyone without authorization for that matter, so close to its research program. It wasn't my decision, you see."`
 			choice
