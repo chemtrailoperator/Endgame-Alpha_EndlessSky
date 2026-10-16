@@ -1284,8 +1284,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA unmanned disabled"
 		on destroy
 			dialog phrase "EA unmanned destroyed"
 			set "EA M4.5.2 Red One destroyed"
@@ -1293,8 +1291,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA unmanned disabled"
 		on destroy
 			dialog phrase "EA unmanned destroyed"
 			set "EA M4.5.2 Red Two destroyed"
@@ -1302,8 +1298,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA unmanned disabled"
 		on destroy
 			dialog phrase "EA unmanned destroyed"
 			set "EA M4.5.2 Blue One destroyed"
@@ -1311,8 +1305,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA unmanned disabled"
 		on destroy
 			dialog phrase "EA unmanned destroyed"
 			set "EA M4.5.2 Blue Two destroyed"
@@ -1320,8 +1312,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 R.N.S. Suribachi destroyed"
@@ -1329,8 +1319,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 R.N.S. Rhein destroyed"
@@ -1338,8 +1326,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 R.N.S. Trinity destroyed"
@@ -1347,8 +1333,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 F.S. Bois d'Arc destroyed"
@@ -1356,8 +1340,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 F.S. Sequoia destroyed"
@@ -1365,8 +1347,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 Hellstench destroyed"
@@ -1374,8 +1354,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 F.S. Ponderosa destroyed"
@@ -1383,8 +1361,6 @@ mission "Endgame Alpha M4.5.2"
 	npc
 		government "17th Combat Group"
 		personality heroic escort unrestricted unconstrained
-		on disable
-			dialog phrase "EA manned disabled"
 		on destroy
 			dialog phrase "EA manned destroyed"
 			set "EA M4.5.2 F.S. Honey Locust destroyed"
@@ -1397,10 +1373,10 @@ mission "Endgame Alpha 4.5.2"
 	priority
 	non-blocking
 	name "Investigate Activity Spike"
-	description "Jump to the Wei system to repel a group of Alphas jumping into the system."
+	description "Jump to the Wei system to repel a group of Alphas jumping into the system. When finished, return to Seginus."
 	deadline 2
 	source Clark
-	destination Hope
+	destination Clark
 	to offer
 		has "Endgame Alpha 4.5.1: done"
 	on offer
@@ -1418,8 +1394,32 @@ mission "Endgame Alpha 4.5.2"
 			`	He speeds up speaking and continues in a more rigid tone. "Anyway, enough small talk. I've got an assignment for you. A bit of a shakedown really. Take your new fleet to Hope and retrieve the sensor data from there. Quite a bit of it comes through the relays, but we want to know specifics of Alpha behavior. There's been a spike in activity though, so be careful. Now if you'll excuse me, I have my own ship to preflight."`
 			`	The conversation ends as rapidly as it began, you are left to go to your new quarters and prepare your unit for takeoff. In your absence, ground crews have repainted your ship to match the rest of the combat group.`
 				accept
+	on accept
+		mark Wei
+		unmark Clark
 	on enter "Wei"
-		fail
+		set "EA 4.5.2 went to Wei"
+		conversation
+			`As the effects of the hyperspace jump fade away, you see an Alpha ship firing onto Hope. Updates from the sensor relays stop suddenly, replaced by a "no signal" message. At the same time, several Alpha ships jump into the system and attack.`
+	npc
+		government "Alpha"
+		fleet "Alpha Variety" 3
+		on destroy
+			unmark Wei
+			mark Clark
+			conversation
+				`Your unit destroys the last of the Alpha warships, and you wait in orbit attempting to make contact with the relay system. No response. It would be best to return to Clark since you don't even know where it is on the planet without the help of the beacon.`	
+	on land "Hope"
+		unmark Wei
+		mark Clark
+		conversation
+			`You attempt to ping the hyperspace relay station, but receive know response. Since it is nigh impossible to locate without the homing beacon, you had better return to Seginus.`
+	to complete
+		has "EA 4.5.2 went to Wei"
+	on complete
+		payment 500000
+		conversation
+			`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
 # 4.5.3 Hyperspace Relay detects a spike in Alpha activity in Wei, as you jump in to counter it, a few opponent ships jump in. Fight and return to Seginus. \fold
 mission "Endgame Alpha 4.5.3"
 	entering
@@ -1432,17 +1432,9 @@ mission "Endgame Alpha 4.5.3"
 			has "Endgame Alpha 4.5.2: active"
 			has "Endgame Alpha 4.5.2: failed"
 	on offer
-		conversation
-			`As the effects of the hyperspace jump fade away, you see an Alpha ship firing onto Hope. Updates from the sensor relays stop suddenly, replaced by a "no signal" message. At the same time, several Alpha ships jump into the system and attack.`
-	npc destroy
-		government "Alpha"
-		fleet "Alpha Variety" 3
-		on destroy
-			conversation
-				`Your unit destroys the last of the Alpha warships, and you wait in orbit attempting to make contact with the relay system. No response. It would be best to return to Clark since you don't even know where it is on the planet without the help of the beacon.`
-	on complete
-		payment 500000
-		`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
+		
+	
+	
 
 # 4.5.4 Fly the dirt tunnel and check sensors \fold
 mission "Endgame Alpha 4.5.4"
