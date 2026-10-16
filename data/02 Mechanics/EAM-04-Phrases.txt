@@ -56,21 +56,21 @@ phrase "EA electrical people"
 
 phrase "EA manned disabled"
 	word
-		"The manned ship <ship> in your unit has been disabled!"
+		`The manned ship <ship> in your unit has been disabled!`
 	
 phrase "EA manned destroyed"
 	word
-		"The manned ship <ship> in your unit has been destroyed! "
+		`The manned ship <ship> in your unit has been destroyed!`
 	word
 		"You have permanently lost this asset."
 		
 phrase "EA unmanned disabled"
 	word
-		"The asset <ship> in your unit has been disabled!"
+		`The asset <ship> in your unit has been disabled!`
 		
 phrase "EA unmanned destroyed"
 	word 
-		"The asset <ship> in your unit has been destroyed! "
+		`The asset <ship> in your unit has been destroyed!`
 	word
 		"You have permanently lost this asset."
 		
