@@ -12,6 +12,15 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
+outfitter "Human Lasers"
+	"Small Lasing Generator"
+	"Optical Lasing Generator"
+	"Large Lasing Generator"
+	"IR Optical Laser"
+	"UV Optical Laser"
+	"Green Optical Laser"
+	"Blue Optical Laser"
+
 outfitter "Navy Clothing"
 	"Navy Uniform"
 	"Commander Insignia"

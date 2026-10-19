@@ -311,7 +311,7 @@ mission `Endgame Alpha 5.2.2`
 		dialog `As you enter the final system planned for reconnaissance, you see that the Alphas are spending just as much time fighting each other as keeping watch. Interesting.`
 # \close
 
-# 5.3 Avgi tech \fold
+# 5.3 Avgi Tech \fold
 
 # 5.3.1 Travel to Geminus to pick up modified Avgi tech \open
 mission `Endgame Alpha 5.3.1`
@@ -384,12 +384,20 @@ mission `Endgame Alpha 5.3.2`
 			set "EA 5.3.2 Raven Killed"
 			dialog `Your ship receives a mayday call just as the Eye of Horus explodes. No more Raven.`
 	on offer
-		event
+		event "EA Lasers Geminus" 5
 		conversation
 			`The Navy administrative building, just inside the entrance to the massive yard, is big enough to be the seat of a lesser planetary government. Thankfully, the military bureaucracy is much less than that of most planets, and you meet with the commander of the supply fleet quickly, finish route planning with him even quicker, and are ready to leave for New Argentina in an hour.`
 				accept
-# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Kraz. Also bring plans to manufacture gunboats and introduce Hailstorm here. \fold
-
+# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Zug. Also bring plans to manufacture gunboats and introduce Hailstorm here. \fold
+mission `Endgame Alpha 5.3.3`
+	landing
+	source "New Argentina"
+	destination Zug
+	to offer
+		has "Endgame Alpha 5.3.2: done"
+	on offer
+		conversation
+			`When you land at New Argentina, you finally get to see the Auxiliaries unloading their cargo.`
 # \close
 
 

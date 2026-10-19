@@ -1374,7 +1374,6 @@ mission "Endgame Alpha 4.5.2"
 	non-blocking
 	name "Investigate Activity Spike"
 	description "Jump to the Wei system to repel a group of Alphas jumping into the system. When finished, return to Seginus."
-	deadline 4
 	source Clark
 	destination Clark
 	stopover Hope
@@ -1409,7 +1408,6 @@ mission "Endgame Alpha 4.5.2"
 		payment 500000
 		conversation
 			`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus. That includes you." He leaves abruptly before you can meaningfully comment.`
-
 # 4.5.4 Fly the dirt tunnel and check sensors \fold
 mission "Endgame Alpha 4.5.4"
 	landing
@@ -1423,6 +1421,11 @@ mission "Endgame Alpha 4.5.4"
 	source "Seginus"
 	to offer
 		has "Endgame Alpha 4.5.2: done"
+	on offer
+		payment 500000
+		conversation
+			`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
+				accept
 	on stopover
 		conversation
 			`The sensor relay on the surface is as expected, basically nonexistent. The Alphas appear to have targeted only the transmitter unit of the array, so most of it comes back online once it is replaced.`
