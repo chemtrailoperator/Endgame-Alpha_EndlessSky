@@ -291,13 +291,23 @@ mission `Endgame Alpha 5.2.2`
 				`	"That is how I intend to use my Scram Drive."`
 					to display
 						has "outfit: Scram Drive"
-					goto task
+					goto help
 				`	"My ship is fast enough to go with a normal hyperdrive."`
 					to display
 						not "outfit: Scram Drive"
 						not "outfit: Jump Drive"
-					goto task
-
+					goto help
+			`	At this, she raises an eyebrow and speaks in a hushed voice. "Those actually exist? Wait, of course they do, if you have one." She stand up again and hands you a datapad with ORDERS on the display.`
+			label help
+			`	"That makes giving these orders much easier." She says, "Because we don't have the hyperspace relays anymore, we have no clue what is going on in the Alpha systems, and we need intelligence. The Republic and a major fraction of the Free Worlds advocated to hold off on invading, so we get to sit here until they come to a decision. There are some rumors of the Syndicate attaching assets to the combat groups as well though. Until we decide to invade, we keep collecting info and strengthening ourselves. Hence, if you've got a fast ship you're as good a person as any to send on a recon mission into Alpha space. Of course, it's not technically an order."`
+			choice
+				`	(Accept)`
+				`	(Decline and leave.)`
+					decline
+			`	"Outstanding! Just jump into the systems we laod into your computer, and your ship will log everything needed." She turns and leaves the room, and you leave as well to begin preparations.`
+				accept
+	on waypoint
+		dialog `As you enter the final system planned for reconaissance, you see that the Alphas are spending just as much time fighting each other as keeping watch. Interesting.`
 # \close
 
 # 5.3 Avgi tech \fold
