@@ -125,22 +125,74 @@ event "EA recolor combat group"
 # Shipyard Mechanics \fold
 event "EA Restore Geminus"
 	planet Geminus
-		add shipyard "Navy Basics"
-		add shipyard "Navy Advanced"
-		add outfitter 
+		description `	Recently, the Navy yard was bombed by nuclear-armed terrorists. Although it temporarily halted all heavy weapons production for the Navy, they took the opportunity to build back larger and stronger than before.`
+		spaceport `Like everything else on Geminus, the spaceport is not terribly pretty, but is functional and efficient. Each of the wide hallways is marked out like a road, with space in the center for electric carts carrying cargo, while pedestrians are relegated to the edges.`
+		spaceport `	The newly rebuilt spaceport includes a massively expanded Navy yard and outfitter area, as well as more security and more administrative areas. As part of the Navy's rearming efforts, new ship and outfit designs are created and manufactured here directly to the Navy's needs.`
+		shipyard "Basic Ships"
+		shipyard "Navy Basics"
+		shipyard "Navy Advanced"
+		shipyard "Betelgeuse Basics"
+		shipyard "Lionheart Basics"
+		outfitter "Common Outfits"
+		outfitter "Ammo North"
+		outfitter "Lovelace Advanced"
+		outfitter "Syndicate Basics"
+		bribe 0.1
+		security 0.9
+		tribute 4800
+			threshold 7500
+			fleet "Large Republic" 18
+
 event "EA Lasers Geminus"
-
+	planet Geminus
+		add outfitter "Human Lasers"
+		
 event "EA Lasers Combat Groups"
-
-event "EA Weapons Combat Groups"
-
-event "EA Ships Combat Groups"
+	planet "New Argentina"
+		add outfitter "Human Lasers"
+	planet "Zug"
+		add outfitter "Human Lasers"
+	planet "Rust"
+		add outfitter "Human Lasers"
+	planet "New Iceland"
+		add outfitter "Human Lasers"
+	planet "Wayfarer"
+		add outfitter "Human Lasers"
+	planet "Chiron"
+		add outfitter "Human Lasers"
+	planet "Luna"
+		add outfitter "Human Lasers"
+	planet "Valhalla"
+		add outfitter "Human Lasers"
 
 event "EA Modified Geminus"
-
+	planet Geminus
+		add shipyard "Navy Endgame Basics"
+		add shipyard "Navy Endgame Advanced"
+		
 event "EA Modified Combat Groups"
+	planet "New Argentina"
+		add shipyard "Navy Endgame Basics"
+	planet "Longjump"
+		add shipyard "Navy Endgame Basics"
+	planet Zug
+		add shipyard "Navy Endgame Basics"
+	planet Clark
+		add shipyard "Navy Endgame Basics"
+	planet "New Iceland"
+		add shipyard "Navy Endgame Basics"
+	planet "New Tibet"
+		add shipyard "Navy Endgame Basics"
+	planet Dancer
+		add shipyard "Navy Endgame Basics"
+	planet "New Portland"
+		add shipyard "Navy Endgame Basics"
+	planet "Harmony"
+		add shipyard "Navy Endgame Basics"
 
 event "EA Elite Geminus"
+	planet Geminus
+		add shipyard "Navy Endgame Elite"
 
 # Republic Martial Law \fold
 event "EA Republic Martial Law"
