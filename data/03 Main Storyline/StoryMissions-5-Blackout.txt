@@ -29,7 +29,9 @@ mission "Endgame Alpha 5.1.1"
 			`Although you were in command of the unit for a very short period of time, they seem genuinely sorry to see you go. Another captain arrives shortly after you land, and you transfer command to him.`
 			`	After leaving your unit, you pull your new orders from the information system. They instruct you to proceed with the utmost dispatch to Sundive in the Sheratan system to make contact with a Syndicate research team for special business.`
 				accept
-
+	on complete
+		event "EA Reveal Keyhole"
+		
 # 5.1.2 Travel from headquarters with access codes to secret system \fold
 mission "Endgame Alpha 5.1.2"
 	landing
@@ -40,7 +42,6 @@ mission "Endgame Alpha 5.1.2"
 	to offer
 		has "Endgame Alpha 5.1.1: done"
 	on offer
-		event "EA Reveal Keyhole"
 		conversation
 			`Much like your last visit, you are vectored into the Syndicate's secure area. However, when you land, a group of people exits a ground vehicle and requests to board your ship. The group appears similar to the set of engineers from earlier, but all are wearing sunglasses, visors, or hats.`
 			`	Aboard your ship, they seat themselves in your dining area and gesture for you to sit down as well. "Captain <last>, you are no doubt wondering what business the Syndicate has in your war." A tall, slender, austere looking man says.`
@@ -68,20 +69,22 @@ mission "Endgame Alpha 5.1.2"
 			label justone
 			`	The austere man grows even more austere. "That information is very, very restricted. You will get more details when you reach your destination."`
 			label researchfacility
-			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath never really go there. We've quietly put a station there for our black research. We've loaded the coordinates into your ship, and you can get more information once you get there."`
-			`	The men stand up and leave your ship, and you are left to chart a course to the research facility.`
+			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath never really go there. We've quietly put a station there for our black research. The coordinates are loaded into your ship, and you can get more information once you get there."`
 			branch hasjumpdrive
 				has "outfit (flagship installed): Jump Drive"
 			action
 				outfit "Jump Drive" 1
-			`	While you are working, a mechanic crew arrives and leaves a Jump Drive in your ship.`
+			`	The men stand up and leave your ship, and you are left to chart a course to the research facility. While you are working, a mechanic crew arrives and leaves a Jump Drive in your ship.`
+				accept
 			label hasjumpdrive
-			``
+			`	The men stand up and leave your ship, and you are left to chart a course to the research facility.`
 				accept
 			label wmdleave
 			`	Without saying anything more, the men stand up and leave your ship, and you are left to your own devices.`
 				decline
-
+	on decline
+		event `EA Reshroud Keyhole`
+		
 # 5.1.3 Travel from syndicate to Geminus to pick up stealth gunboat \fold
 mission "Endgame Alpha 5.1.3"
 	landing
@@ -266,6 +269,7 @@ mission `Endgame Alpha 5.2.1`
 	on complete
 		conversation
 			`The Longjump spaceport has been extensively modified to support military operations at a grand scale. As the frontline system, it has been fortified and expanded to pose as much as a threat to the Alphas as possible. Like the organization of other planets, the 33rd Combat Group command is in the spaceport.`
+
 # 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
 mission `Endgame Alpha 5.2.2`
 	priority
