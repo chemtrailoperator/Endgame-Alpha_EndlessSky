@@ -108,18 +108,18 @@ mission "Endgame Alpha 5.1.3"
 				`	"There is no way you could launch that thing from a ship."`
 					goto launchship
 			label dontknow
-			`	The engineer caresses a pipe lovingly. "What you're looking at is possibly the most powerful weapon ever built by mankind. It started out as a Jump Drive that we discovered had some defects. Instead of simply blinking out of existence like it usually does, the stuff inside it started resonating when we tried to open it up, thankfully we closed the first one before it got uncontrollable. The machine around the drive should contain the force being released just long enough to turn it into a devastatingly powerful blast of energy. We already tried one in deep space, and you could see the flash the size of a star back on Sundive. Of course, that's all assuming this thing work the same way..."`
+			`	The engineer caresses a pipe lovingly. "What you're looking at is possibly the most powerful weapon ever built by mankind. It started out as a Jump Drive that we discovered had some defects. Instead of simply blinking out of existence like it usually does, the stuff inside it started resonating when we tried to open it up, thankfully we closed the first one before it got uncontrollable. The machine around the drive should contain the force being released just long enough to turn it into a devastatingly powerful blast of energy. We already tried one in deep space, and you could see the flash the size of a star back on Sundive. Of course, that's all assuming this thing works the same way..."`
 			action
 				set "EA 5.1.3 what"
-				goto firstchoice
+			goto firstchoice
 			label yeahsure
-			`	The engineer caresses a pipe lovingly. "Don't be too close when it goes boom, just know that it will."`
+			`	The engineer caresses a pipe lovingly. "Don't be too close when it goes boom, just know that it will, and it will be quite the boom."`
 			action
 				set "EA 5.1.3 what"
-				goto firstchoice
+			goto firstchoice
 			label launchship
 			`	He smirks. "Luckily, it won't have to, and that's where you come in. The Navy agreed to supply a special ship to deliver the weapon to Sagarra. It's got stealth technology, but that's all I know, they were as uncomfortable sharing details as we were bringing you here.`
-			`	"This thing is so big that any ship firing it won't survive, so they decided to use a ship and ignore the process of launching it entirely."`
+			`	"This thing is so big that any ship firing it won't survive, so they decided to install it more like an outfit on some poor ship and ignore the process of launching it entirely."`
 			choice
 				`	"Great, where do I get one?"`
 					goto getone
@@ -253,6 +253,7 @@ mission `Endgame Alpha 5.2.1`
 					goto leave
 				`	(Keep Watching.)`
 			`	The room devolves into barely ordered chaos as engineers, supervisors, and controllers all try to re-establish contact or fix the issue at the same time. Eventually, a Free Worlds officer appears from the maelstrom and motions for you to follow him.`
+			choice
 				`	(Follow him.)`
 					goto briefingroom
 			label leave
@@ -282,7 +283,7 @@ mission `Endgame Alpha 5.2.2`
 			`You report to the 33rd command building, and after a short wait, you get a meeting with the commander. "Captain <last>," She says, shuffling data pads around on her desk. "You're a part of 17th Command, but got trapped over here. What can I do for you?"`
 			choice
 				`	"I just want to help how I can."`
-					label help
+					goto help
 				`	"I'm not trapped here."`
 				`	(Leave and go home.)`
 					decline
