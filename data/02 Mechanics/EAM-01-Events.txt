@@ -1665,7 +1665,7 @@ event "EA Nunki Takeover"
 			fleet "Marauder fleet X Alpha" 5
 
 
-# Blackout Mission \fold
+# Blackout \fold
 event "EA Blackout"
 	unvisit Citadelle
 	unvisit Alpherg
@@ -2056,32 +2056,6 @@ event "EA Blackout"
 		add fleet "Small Single Alpha" 1500
 		add fleet "Medium Single Alpha" 2000
 		add fleet "Large Single Alpha" 2500
-	system Kornephoros
-		remove fleet "Int Single Alpha"
-		remove fleet "Small Single Alpha"
-		remove fleet "Medium Single Alpha"
-		remove fleet "Large Single Alpha"
-		remove fleet "Large CCOR Alpha"
-		remove fleet "Large Independent Alpha"
-		remove fleet "Large Syndicate Alpha"
-		remove fleet "Large Southern Pirates Alpha"
-		remove fleet "Small Republic Alpha"
-		remove fleet "Large Republic Alpha"
-		remove fleet "Pirate Raid Alpha"
-		remove fleet "Marauder Fleet I Alpha"
-		remove fleet "Marauder Fleet II Alpha"
-		remove fleet "Marauder Fleet III Alpha"
-		remove fleet "Marauder Fleet IV Alpha"
-		remove fleet "Marauder Fleet V Alpha"
-		remove fleet "Marauder Fleet VI Alpha"
-		remove fleet "Marauder Fleet VII Alpha"
-		remove fleet "Marauder Fleet VIII Alpha"
-		remove fleet "Marauder Fleet IX Alpha"
-		remove fleet "Marauder Fleet X Alpha"
-		add fleet "Int Single Alpha" 1000
-		add fleet "Small Single Alpha" 1500
-		add fleet "Medium Single Alpha" 2000
-		add fleet "Large Single Alpha" 2500
 	system Rastaban
 		remove fleet "Int Single Alpha"
 		remove fleet "Small Single Alpha"
@@ -2160,7 +2134,11 @@ event "EA Blackout"
 		add fleet "Small Single Alpha" 1500
 		add fleet "Medium Single Alpha" 2000
 		add fleet "Large Single Alpha" 2500
-	system 
+	system "Wei"
+		fleet "Large Republic" 1000
+		fleet "Large Militia" 1000
+		fleet "Small Republic" 800
+		fleet "Small Militia" 800
 	system 
 	system 
 	system 

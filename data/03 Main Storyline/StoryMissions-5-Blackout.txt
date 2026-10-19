@@ -130,6 +130,7 @@ mission "Endgame Alpha 5.1.3"
 				accept
 	on complete
 		dialog `As you land, you receive a mesage requesting you to report to the Navy special affairs office in the spaceport.`
+
 # 5.1.4 Deliver to Syndicate \fold
 mission "Endgame Alpha 5.1.4"
 	priority
@@ -212,33 +213,90 @@ mission `Endgame Alpha 5.1.6`
 	landing
 	clearance
 	source Sagarra
-	complete at
-		government "Free Worlds" "Republic"
 	name `Retreat`
 	description `Clear occupied space and land on a planet for weapon detonation.`
 	to offer
 		has "Endgame Alpha 5.1.5: done"
 	on offer
 		conversation
-			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an imbedded message in your computer triggers, notifying you that the weapon system has an established comms link with Citadelle, and it is ready to detonate when you return safely.`
-				launch
-	
+			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an imbedded message in your computer triggers, notifying you that the weapon system has an established comm link the Citadelle relay, and it is ready to detonate when you return safely.`
+				decline
+
 # \close
 
 # 5.2 Blackout \fold
 
 # 5.2.1 Detonation, all hyperspace relays in Alpha-occupied systems go down \open
-
-# Mechanics change: All systems now have significantly reduced Alpha activity. As systems are retaken, their activity level goes down, but does not go to zero until all the systems are taken over and secured. Most of the fighting fleets will be spawned npcs for each mission.
-# Unvisit and shroud all occupied systems
-
+mission `Endgame Alpha 5.2.1`
+	landing
+	source
+		government "Free Worlds" "Republic"
+	destination Longjump
+	name `Report to 33rd Combat Group`
+	description `Report to 33rd Combat Group command on <destination>`
+	to offer
+		has "Endgame Alpha 5.1.6: declined"
+	on offer
+		event "EA Blackout"
+		conversation
+			`As soon as you regain transponder contact below the ionosphere, you receive an immediate vector and clearance to land at the pad closest to spaceport control. The remarks section includes orders to report the main building as soon as possible.`
+			`	Inside, you are met by staff and escorted underground to the Central Information Center. Here, all interstellar traffic and data is received, processed and routed through the hyperspace relays by a multitude of people working in lines of workstations planetary in the back, moving to system, to interstellar, to control of the hyperspace relays in the front. On the far wall from the entrance, displays show all the traffic in the system, with lines tracking their movement and their vectors into the spaceport. Every packet that travels the relays also blinks momentarily on annunciator panels in the front row.`
+			`	The commanding officer steps forward and invites you to sit down in the back. "Captain, we thought it would be nice to have you here, since you're the one who delivered the weapon." He leaves and is swept away by the crazed bussle as the control center grounds or reroutes all ships, until the system is empty.`
+			choice
+				`	(Wait.)`
+			`	After about an hour, a warning blares of the speakers that the detonation command had been sent to the bomb, and it would be exploding momentarily. A hush falls over the room, but it is rapidly broken by a chorus of beeps from the front row. Almost every single annunciator begins blinking, and on the display above, the galaxy map marking hyperspace relay nodes has "Connection Lost"  over every system that was occupied by the Alphas.`
+			choice
+				`	(Leave.)`
+					goto leave
+				`	(Keep Watching.)`
+			`	The room devolves into barely ordered chaos as engineers, supervisors, and controllers all try to re-establish contact or fix the issue at the same time. Eventually, a Free Worlds officer appears from the maelstrom and motions for you to follow him.`
+				`	(Follow him.)`
+					goto briefingroom
+			label leave
+			`	As the room devolves into chaos, you slip out the door. Much of the control center is in the same state of frenzied activity, and after wandering around for some time, getting pushed against walls and having your toes stepped on, a Free Worlds officer appears and asks you to follow him.`
+			label briefingroom
+			`	You are led to a room in the above ground section of the control center, which has numerous other independent captains and Free Worlds personnel waiting. Once you are inside, the officer who apparently collected all of you starts talking.`
+			`	"First off, the occupied systems are still there. We sent in a scout just after they disappeared, and everything seems to be in the same state, except for the relays, which are unresponsive. The operating hypothesis is that whatever was ordering the Alphas around was using the hyperspace relays to communicate, and we fried them along with Sagarra. The relay operating system automatically purges unresponsive nodes, both for error correction and safety of adventurous pilots, so you won't be able to log them on your ship computers until we get portable systems in place."`
+			`	He glances down at a data pad he is holding an continues. "All combat group personnel have been recalled to the planets their units are stationed at, unless you were stationed beyond Kornephoros, in which case you must proceed to the Longjump spaceport immediately." He finishes, and everyone begins talking and making plans to go to their destinations.`
+				accept
+	on complete
+		conversation
+			`The Longjump spaceport has been extensively modified to support military operations at a grand scale. As the frontline system, it has been fortified and expanded to pose as much as a threat to the Alphas as possible. Like the organization of other planets, the 33rd Combat Group command is in the spaceport.`
 # 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
-
-# Unknown status of all systems, 100% comms dark
-# Also wait for Syndicate to amass battle fleet to assist
-# No activity in frontline systems from Alphas
-
-# (Create Alpha governments that attack each other)
+mission `Endgame Alpha 5.2.2`
+	priority
+	name `Blackout Patrol`
+	description `Travel to the marked systems and observe Alpha activity. When complete, return to Longjump.`
+	source Longjump
+	destination Longjump
+	waypoint Dschubba
+	waypoint Alniyat
+	waypoint Aldhibain
+	to offer
+		has "Endgame Alpha 5.5.1: done"
+	on offer
+		conversation
+			`You report to the 33rd command building, and after a short wait, you get a meeting with the commander. "Captain <last>," She says, shuffling data pads around on her desk. "You're a part of 17th Command, but got trapped over here. What can I do for you?"`
+			choice
+				`	"I just want to help how I can."`
+					label help
+				`	"I'm not trapped here."`
+				`	(Leave and go home.)`
+					decline
+			`	The commander raises an eyebrow. "You aren't the first person I've had tell me that, but they all had ideas about getting through Kornephoros with a Scram Drive. If you've got one I'd be glad to put you to work with it."`
+			choice
+				`	"Actually, I have a Jump Drive."`
+					to display
+						has "outfit: Jump Drive"
+				`	"That is how I intend to use my Scram Drive."`
+					to display
+						has "outfit: Scram Drive"
+					goto task
+				`	"My ship is fast enough to go with a normal hyperdrive."`
+					to display
+						not "outfit: Scram Drive"
+						not "outfit: Jump Drive"
+					goto task
 
 # \close
 
