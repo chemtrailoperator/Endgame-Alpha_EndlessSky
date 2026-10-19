@@ -93,7 +93,7 @@ mission "Endgame Alpha 5.1.3"
 		has "Endgame Alpha 5.1.2: done"
 	on offer
 		conversation
-			`What you expected to be some sort of fortress is a completely normal-looking space station, albeit with advanced security systems and sensors. Overall though, it seems that the Syndicate is more focused on avoiding detetion than repelling attack. You are escorted through a variety of unmarked passages, reaching a hangar room with a large device festooned with tubes and wires sitting in the middle. Judging by the size of the support rig it is sitting on, it must weigh at least 20 tons.`
+			`What you expected to be some sort of fortress is a completely normal-looking space station, albeit with advanced security systems and sensors. Overall though, it seems that the Syndicate is more focused on avoiding detection than repelling attack. You are escorted through a variety of unmarked passages, reaching a hangar room with a large device festooned with tubes and wires sitting in the middle. Judging by the size of the support rig it is sitting on, it must weigh at least 20 tons.`
 			`	"Captain! Do you like what you see?" An engineer in a lab coat says from the side of the thing.`
 			label firstchoice
 			choice
@@ -129,7 +129,7 @@ mission "Endgame Alpha 5.1.3"
 			`	"The republic said to send you to Geminus for pickup as soon as you had been briefed, so I think you should be going now." A group of uniformed agents surrounds you and escorts you back to your ship.`
 				accept
 	on complete
-		dialog `As you land, you receive a mesage requesting you to report to the Navy special affairs office in the spaceport.`
+		dialog `As you land, you receive a message requesting you to report to the Navy special affairs office in the spaceport.`
 
 # 5.1.4 Deliver to Syndicate \fold
 mission "Endgame Alpha 5.1.4"
@@ -219,7 +219,7 @@ mission `Endgame Alpha 5.1.6`
 		has "Endgame Alpha 5.1.5: done"
 	on offer
 		conversation
-			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an imbedded message in your computer triggers, notifying you that the weapon system has an established comm link the Citadelle relay, and it is ready to detonate when you return safely.`
+			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an embedded message in your computer triggers, notifying you that the weapon system has an established comm link the Citadelle relay, and it is ready to detonate when you return safely.`
 				decline
 
 # \close
