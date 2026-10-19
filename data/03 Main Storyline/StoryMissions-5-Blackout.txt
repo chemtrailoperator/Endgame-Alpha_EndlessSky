@@ -304,16 +304,54 @@ mission `Endgame Alpha 5.2.2`
 				`	(Accept)`
 				`	(Decline and leave.)`
 					decline
-			`	"Outstanding! Just jump into the systems we laod into your computer, and your ship will log everything needed." She turns and leaves the room, and you leave as well to begin preparations.`
+			`	"Outstanding! Just jump into the systems we load into your computer, and your ship will log everything needed." She turns and leaves the room, and you leave as well to begin preparations.`
 				accept
 	on waypoint
-		dialog `As you enter the final system planned for reconaissance, you see that the Alphas are spending just as much time fighting each other as keeping watch. Interesting.`
+		dialog `As you enter the final system planned for reconnaissance, you see that the Alphas are spending just as much time fighting each other as keeping watch. Interesting.`
 # \close
 
 # 5.3 Avgi tech \fold
 
 # 5.3.1 Travel to Geminus to pick up modified Avgi tech \open
-
+mission `Endgame Alpha 5.3.1`
+	landing
+	name `Avgi Technology`
+	description `Travel to Geminus in the Castor system with Raven to deploy Avgi technology.`
+	source Longjump
+	destination Geminus
+	to offer
+		has "Endgame Alpha 5.2.2: done"
+	on offer
+		conversation
+			scene "thumbnail/modified gunboat"
+			`You receive a vector to land at a pad next to a Navy gunboat. It is listed as the Eye of Horus on the information system, but it is a different ship since you last saw it, with heavier weapons and more engines.`
+			`	You open your passenger door to disembark your ship only to find Raven standing in front of it. "I've got some good news <last>." She says as she walks into your ship. "All that work you put into the Avgi paid off. A little while ago, a unidentified object jumped into Albireo and sent a secure message to Navy intelligence containing detailed instructions on making lasers and generators. The folks on Geminus have already made a few shiploads and they need escorting back here. Since you've been involved the whole time, the Republic wanted you to do it."`
+			choice
+				`	"Does that mean I'm leaving the combat group?"`
+				`	"What's with your ship?"`
+					goto modified
+				`	"Sounds great!"`
+					goto going
+			`	Raven shows no explicit emotion, but you could swear there is a trace of disdain in her voice. "If you really want to stay on the most dangerous sector of the most dangerous area in human space, be my guest, but I need somebody to escort those ships. You'll get reassigned to the 17th as soon as you're done anyway."`
+			choice
+				`	(Don't take the mission.)`
+					decline
+				`	(Accept)`
+			label going
+			`	"Awesome. I'll be coming with you by the way." Raven says. She leaves and returns to her not-Gunboat, which is apparently already ready to leave.`
+				accept
+			label modified
+			`	"Oh that? The Republic decided it was time to rework their ships with newer technology. You'll probably see them around. Just a bigger version. I needed an upgrade anyway since a pesky ship hit my previous one with a nuke when I was just passing through. That's mainly why they need more firepower. Do you accept?"`
+			choice
+				`	(Decline)`
+					decline
+				`	(Accept)`
+					goto going
+	npc accompany
+		government "Republic"
+		personality heroic secretive
+		ship "Modified Gunboat" "Eye of Horus"
+		
 # Informed that engineers stayed behind to continue working and because they like it there but sent a jump equipped one-way probe into human hyperspace relays that securely uploaded to Republic systems with outfit information
 # Introduce lasers at Geminus and lasing mediums
 
