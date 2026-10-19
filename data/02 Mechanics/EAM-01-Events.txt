@@ -1769,341 +1769,261 @@ event "EA Blackout"
 		shrouded
 	system "Citadelle"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Alpherg"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Fumalsamakah"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Belenos"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Thuban"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Men"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Beta Lupi"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Yed Prior"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Kappa Centauri"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Pherkad"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Alniyat"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Graffias"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Antares"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Han"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Atria"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Dschubba"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Lesath"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Aldhibain"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Sargas"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
 	system "Kornephoros"
 		shrouded
-		fleet "Int Single Alpha FI" 600
-		fleet "Int Single Alpha FII" 600
-		fleet "Int Single Alpha FIII" 600
-		fleet "Small Single Alpha FI" 840
-		fleet "Small Single Alpha FII" 840
-		fleet "Small Single Alpha FIII" 840
-		fleet "Medium Single Alpha FIII" 1500
-		fleet "Medium Single Alpha FII" 1500
-		fleet "Medium Single Alpha FI" 1500
-		fleet "Large Single Alpha FIII" 2400
-		fleet "Large Single Alpha FII" 2400
-		fleet "Large Single Alpha FI" 2400
+		fleet "Int Single Alpha FI" 160
+		fleet "Small Single Alpha FI" 230
+		fleet "Medium Single Alpha FI" 420
+		fleet "Large Single Alpha FI" 500
+		fleet "Int Single Alpha FII" 2000
+		fleet "Small Single Alpha FII" 2800
+		fleet "Medium Single Alpha FII" 5000
+		fleet "Large Single Alpha FII" 6000
 		fleet "Small Southern Pirates" 4000
 		fleet "Large Southern Pirates" 10000
 		
