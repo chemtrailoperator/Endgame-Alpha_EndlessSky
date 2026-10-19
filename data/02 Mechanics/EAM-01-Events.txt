@@ -67,6 +67,10 @@ event "EA repaint navy"
 		swizzle 0
 		
 # Mission and Storyline Mechanics \fold	
+event `EA Reshroud Keyhole`
+	system Aurora
+		hidden
+
 event `EA unlock Keyhole spaceport`
 	planet Keyhole
 		add spaceport `The Keyhole spaceport, at least the front facing portion, is very small. Only one food vendor and an information desk exist in a large rotunda with numbered doors on all the edges. The people going into and out of the doors in a steady stream avoid eye contact and move quietly and briskly.`

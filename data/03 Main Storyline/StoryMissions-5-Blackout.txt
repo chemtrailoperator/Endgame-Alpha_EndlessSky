@@ -29,7 +29,9 @@ mission "Endgame Alpha 5.1.1"
 			`Although you were in command of the unit for a very short period of time, they seem genuinely sorry to see you go. Another captain arrives shortly after you land, and you transfer command to him.`
 			`	After leaving your unit, you pull your new orders from the information system. They instruct you to proceed with the utmost dispatch to Sundive in the Sheratan system to make contact with a Syndicate research team for special business.`
 				accept
-
+	on complete
+		event "EA Reveal Keyhole"
+		
 # 5.1.2 Travel from headquarters with access codes to secret system \fold
 mission "Endgame Alpha 5.1.2"
 	landing
@@ -40,7 +42,6 @@ mission "Endgame Alpha 5.1.2"
 	to offer
 		has "Endgame Alpha 5.1.1: done"
 	on offer
-		event "EA Reveal Keyhole"
 		conversation
 			`Much like your last visit, you are vectored into the Syndicate's secure area. However, when you land, a group of people exits a ground vehicle and requests to board your ship. The group appears similar to the set of engineers from earlier, but all are wearing sunglasses, visors, or hats.`
 			`	Aboard your ship, they seat themselves in your dining area and gesture for you to sit down as well. "Captain <last>, you are no doubt wondering what business the Syndicate has in your war." A tall, slender, austere looking man says.`
@@ -68,20 +69,22 @@ mission "Endgame Alpha 5.1.2"
 			label justone
 			`	The austere man grows even more austere. "That information is very, very restricted. You will get more details when you reach your destination."`
 			label researchfacility
-			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath never really go there. We've quietly put a station there for our black research. We've loaded the coordinates into your ship, and you can get more information once you get there."`
-			`	The men stand up and leave your ship, and you are left to chart a course to the research facility.`
+			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath never really go there. We've quietly put a station there for our black research. The coordinates are loaded into your ship, and you can get more information once you get there."`
 			branch hasjumpdrive
 				has "outfit (flagship installed): Jump Drive"
 			action
 				outfit "Jump Drive" 1
-			`	While you are working, a mechanic crew arrives and leaves a Jump Drive in your ship.`
+			`	The men stand up and leave your ship, and you are left to chart a course to the research facility. While you are working, a mechanic crew arrives and leaves a Jump Drive in your ship.`
+				accept
 			label hasjumpdrive
-			``
+			`	The men stand up and leave your ship, and you are left to chart a course to the research facility.`
 				accept
 			label wmdleave
 			`	Without saying anything more, the men stand up and leave your ship, and you are left to your own devices.`
 				decline
-
+	on decline
+		event `EA Reshroud Keyhole`
+		
 # 5.1.3 Travel from syndicate to Geminus to pick up stealth gunboat \fold
 mission "Endgame Alpha 5.1.3"
 	landing
@@ -199,6 +202,9 @@ mission `Endgame Alpha 5.1.5`
 			`	The agent pulls a recording device from his breast pocket and presses a button on the side. The light on top switches from green to red, and he replaces it. "For legal reasons I'm supposed to collect that. Now for the instructions on the weapon itself. The ship is currently being modified to accept the payload, and it is being built directly into the structure. Avoid landing as much as possible and get to Sagarra as quickly as possible, obviously, but also, protect the Weapon on the way there. What the engineers might not have told you is that we've only ever salvaged two Jump Drives with the defect that makes them useful like this.`
 			`	"That's all I've been given to brief you on, and your clearance expires soon, so you'd better be leaving. Personally though, good luck." He stands up, collects a briefcase from below the table, and leaves, clapping you on the back on the way out.`
 				accept
+			label refuse
+			`	The agent shrugs. "Fine by me, although your clearance expires momentarily, so you had best be going." As you leave the room, a group of security guards arrive and escort you back to your ship, where you are instructed to take off immediately.`
+				flee
 	on enter
 		conversation
 			`As you enter orbit in formation with the Pascal Delta, you see that the underside has been covered in signatures and messages, from the engineers, you presume. Once you leave the atmosphere, the computer system disconnects from departure control and the automatic piloting system engages, linking to your ship.`
@@ -263,6 +269,7 @@ mission `Endgame Alpha 5.2.1`
 	on complete
 		conversation
 			`The Longjump spaceport has been extensively modified to support military operations at a grand scale. As the frontline system, it has been fortified and expanded to pose as much as a threat to the Alphas as possible. Like the organization of other planets, the 33rd Combat Group command is in the spaceport.`
+
 # 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
 mission `Endgame Alpha 5.2.2`
 	priority
@@ -385,19 +392,43 @@ mission `Endgame Alpha 5.3.2`
 			dialog `Your ship receives a mayday call just as the Eye of Horus explodes. No more Raven.`
 	on offer
 		event "EA Lasers Geminus" 5
+		event "EA Lasers Combat Groups" 14
 		conversation
 			`The Navy administrative building, just inside the entrance to the massive yard, is big enough to be the seat of a lesser planetary government. Thankfully, the military bureaucracy is much less than that of most planets, and you meet with the commander of the supply fleet quickly, finish route planning with him even quicker, and are ready to leave for New Argentina in an hour.`
 				accept
-# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Zug. Also bring plans to manufacture gunboats and introduce Hailstorm here. \fold
+	on complete
+		conversation
+			`When you land at New Argentina, you finally get to see the Auxiliaries unloading their cargo.`
+			scene "outfit/blue optical laser"
+			`	There are the normal blue and green lasers you are familiar with, but also ones with different lens tintings.`
+			scene "outfit/ir optical laser"
+			`	After all the laser system have been unloaded, the crews move to unloading generators of various shapes and sizes.`
+			scene "outfit/large lasing generator"
+			`	When you check the information system, it shows you are requested at the spaceport.`
+# 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems. \fold
 mission `Endgame Alpha 5.3.3`
-	landing
+	priority
 	source "New Argentina"
 	destination Zug
+	name `Tech Delivery`
+	description `Travel to <destination> with information on special weapons production.`
 	to offer
 		has "Endgame Alpha 5.3.2: done"
 	on offer
 		conversation
-			`When you land at New Argentina, you finally get to see the Auxiliaries unloading their cargo.`
+			`when you go to the spaceport, you are snagged at the information desk by Raven. "Sorry <last>, but your commander is busy, they told me to brief you instead." You head to the spaceport food court and sit down at a table.`
+			`	"Good news first, the engineers came through with more than expected. They sent detailed isntructions for making the lasers with the tooling equipment we have, but also advanced on the technology the Avgi had, because they had access to different medium materials."`
+			choice
+				`	(Ask her to go on.)`
+				`	(Ask about bad news.)`
+					label badnews
+			`	"They've also made a few different sizes of lasing generators so they can be more efficient on large and small ships. Incidentally, there are some they will be deployed to the combat groups pretty soon, so you won't have to go all the way to Geminus to get more. Same thing with the smaller navy ships that they could make without specialized equipment."`
+			action
+				set `EA 5.3.3 know about sales`
+			label badnews
+			`	"Ah. About bad news. I wouldn't necessarily call it that, since you have a high likelihood of survival, but plans to manufacture lasers and navy ships need to get to the Rim planets too. How you get there is up to you, so good luck. Don't bother coming back either, the 17th agreed to let the 33rd have you for a little while for some leadership reason." Raven stands up and leaves, forever in a hurry without ever displaying it.`
+			`	There are no written orders, but you are informed an hour later that the data for the lasers has been loaded onto the <flagship>.`
+				accept
 # \close
 
 
