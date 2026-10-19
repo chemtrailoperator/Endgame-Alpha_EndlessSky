@@ -347,16 +347,46 @@ mission `Endgame Alpha 5.3.1`
 					decline
 				`	(Accept)`
 					goto going
-	npc accompany
+	npc accompany save
 		government "Republic"
-		personality heroic secretive
+		personality heroic secretive escort
 		ship "Modified Gunboat" "Eye of Horus"
-		
+		on destroy
+			set "EA 5.3.1 Raven Killed"
+			dialog `Your ship receives a mayday call just as the Eye of Horus explodes. No more Raven.`
+	on complete
+		conversation
+			`The newly rebuilt Geminus Naval Complex is even larger than it was before, boasting almost twice the manufacturing output and more complex outfitters and shipyard facilities. When you land, you are diercted to go to the Navy shipyard office for tasking.`
+	
 # Informed that engineers stayed behind to continue working and because they like it there but sent a jump equipped one-way probe into human hyperspace relays that securely uploaded to Republic systems with outfit information
 # Introduce lasers at Geminus and lasing mediums
 
 # 5.3.2 Escort supply fleet to New Argentina to deliver weapon systems to outfitter \fold
-
+mission `Endgame Alpha 5.3.2`
+	shipyard
+	source Geminus
+	destination "New Argentina"
+	deadline 12
+	name `Tech Escort`
+	description `Escort the Geminus supply fleet to New Argentina by <date>.`
+	to offer
+		has "Endgame Alpha 5.3.1: done"
+	npc accompany save
+		government "Republic"
+		personality timid secretive escort
+		fleet "Large Republic Refugee"
+	npc accompany save
+		government "Republic"
+		personality heroic secretive escort
+		ship "Modified Gunboat" "Eye of Horus"
+		on destroy
+			set "EA 5.3.2 Raven Killed"
+			dialog `Your ship receives a mayday call just as the Eye of Horus explodes. No more Raven.`
+	on offer
+		event
+		conversation
+			`The Navy administrative building, just inside the entrance to the massive yard, is big enough to be the seat of a lesser planetary government. Thankfully, the military bureaucracy is much less than that of most planets, and you meet with the commander of the supply fleet quickly, finish route planning with him even quicker, and are ready to leave for New Argentina in an hour.`
+				accept
 # 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems Destination Kraz. Also bring plans to manufacture gunboats and introduce Hailstorm here. \fold
 
 # \close

@@ -493,7 +493,7 @@ ship "Sestor Supercarrier"
 	description "The engineering and workmanship of this vessel accurately reflects the Alphas' teamwork and communication skills. Built on the same principles as the Scrapper, it is dangerous to fly and very unreliable. To its credit, it can carry an astonishing complement of fighters and drones..."
 
 #Republic Supercarrier \open
-ship "Harbinger Supercarrier"
+ship "Supercarrier"
 	sprite "ship/supercarrier"
 	thumbnail "thumbnail/supercarrier"
 	attributes

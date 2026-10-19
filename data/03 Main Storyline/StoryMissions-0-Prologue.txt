@@ -33,6 +33,7 @@ mission "EA FW Raven Contact"
 		has "First Contact: Remnant: offered"
 		has "Avgi: Twilight Escape 1: offered"
 	on offer
+		event "EA Restore Geminus"
 		conversation
 			`You see someone in a large There Might Be Riots hoodie that looks remarkably like Raven from Navy Intelligence.`
 			choice

@@ -13,18 +13,3 @@
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
 
-mission "Development Patch Endgame Alpha"
-	landing
-	invisible
-	on offer
-		event "Development Path Geminus Shipyard Endgame Alpha"
-		decline
-		
-event "Development Patch Geminus Shipyard Endgame Alpha"
-	planet Geminus
-		shipyard "Navy Endgame Basics"
-		shipyard "Navy Endgame Advanced"
-		shipyard "Navy Endgame Elite"
-		shipyard "Minuteman Basics"
-		shipyard "Minuteman Advanced"
-

@@ -17,7 +17,7 @@ outfitter "Navy Clothing"
 	"Commander Insignia"
 	
 shipyard "Navy Endgame Modified"
-	"Harbinger Supercarrier"
+	"Supercarrier"
 	"Supercruiser"
 	"Modified Gunboat"
 	"Heavy Auxiliary"
@@ -49,7 +49,7 @@ shipyard "Navy Endgame Advanced"
 	"Heavy Auxiliary"
 	
 shipyard "Navy Endgame Elite"
-	"Harbinger Supercarrier"
+	"Supercarrier"
 	"Supercruiser"
 	
 	
@@ -125,9 +125,3 @@ planet "Ring of Power"
 outfitter "Navy ECM"
 	"ECM Suite Gen 2"
 	"Inductive Jamming Array"
-
-event "EA Restore Geminus"
-	planet Geminus
-		add outfitter "Navy ECM"
-		add shipyard "Navy Basics"
-		add shipyard "Navy Advanced"

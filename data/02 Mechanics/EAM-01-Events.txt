@@ -122,6 +122,27 @@ event "EA recolor combat group"
 	government "Escort"
 		swizzle 15
 
+# Shipyard Mechanics \fold
+event "EA Restore Geminus"
+	planet Geminus
+		add shipyard "Navy Basics"
+		add shipyard "Navy Advanced"
+		add outfitter 
+event "EA Lasers Geminus"
+
+event "EA Lasers Combat Groups"
+
+event "EA Weapons Combat Groups"
+
+event "EA Ships Combat Groups"
+
+event "EA Modified Geminus"
+
+event "EA Modified Combat Groups"
+
+event "EA Elite Geminus"
+
+# Republic Martial Law \fold
 event "EA Republic Martial Law"
 	system Vindemiatrix
 		add attributes "martial law"
