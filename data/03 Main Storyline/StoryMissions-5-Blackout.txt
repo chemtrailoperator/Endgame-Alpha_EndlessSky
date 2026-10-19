@@ -36,7 +36,7 @@ mission "Endgame Alpha 5.1.1"
 mission "Endgame Alpha 5.1.2"
 	landing
 	name "Black Program"
-	description `Travel to the marked system, the Syndicate's black research facility.`
+	description `Travel to the marked system, the Syndicate's Black Besearch facility.`
 	source Sheratan
 	destination Keyhole
 	to offer
