@@ -1374,7 +1374,7 @@ mission "Endgame Alpha 4.5.2"
 	non-blocking
 	name "Investigate Activity Spike"
 	description "Jump to the Wei system to repel a group of Alphas jumping into the system. When finished, return to Seginus."
-	deadline 2
+	deadline 4
 	source Clark
 	destination Clark
 	stopover Hope
@@ -1392,7 +1392,7 @@ mission "Endgame Alpha 4.5.2"
 				`	"Who are the independents?"`
 			`	Caine smiles, "There either contract escort mercenaries or pirates, though a few of them are from larger companies that decided to volunteer aid. When the Combat Groups were created, we were told not to look to closely into the backgrounds of volunteers if they didn't seem to be a security risk, so we've been turning a blind eye on the antecedents of most of them. There has been one or two incidents here that make me suspect though...`
 			label noquestions
-			`	He speeds up speaking and continues in a more rigid tone. "Anyway, enough small talk. I've got an assignment for you. A bit of a shakedown really. Take your new fleet to Hope and retrieve the sensor data from there. Quite a bit of it comes through the relays, but we want to know specifics of Alpha behavior. There's been a spike in activity though, so be careful. Now if you'll excuse me, I have my own ship to preflight."`
+			`	He speeds up speaking and continues in a more rigid tone. "Anyway, enough small talk. I've got an assignment for you. A bit of a shakedown really. Take your new fleet to Hope and retrieve the sensor data from there. We can get quite a bit of it through the hyperspace relays, but the specific behavior data we want from the passing Alpha ships can only be accessed on site. It should be a fairly easy pickup. There's been a spike in activity though, so be careful. Now if you'll excuse me, I have my own ship to preflight."`
 			`	The conversation ends as rapidly as it began, you are left to go to your new quarters and prepare your unit for takeoff. In your absence, ground crews have repainted your ship to match the rest of the combat group.`
 				accept
 	on enter "Wei"
@@ -1404,11 +1404,11 @@ mission "Endgame Alpha 4.5.2"
 		fleet "Alpha Variety" 3	
 	on stopover
 		conversation
-			`You attempt to ping the hyperspace relay station, but receive know response. Since it is nigh impossible to locate without the homing beacon or coordinates you don't have, you had better return to Seginus.`
+			`You ping the hyperspace relay station, but receive no response. Since it is nigh impossible to locate without its homing beacon turned on, or the coordinates you don't have, you had better return to Seginus.`
 	on complete
 		payment 500000
 		conversation
-			`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus." He leaves abruptly before you can meaningfully comment.`
+			`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus. That includes you." He leaves abruptly before you can meaningfully comment.`
 
 # 4.5.4 Fly the dirt tunnel and check sensors \fold
 mission "Endgame Alpha 4.5.4"
@@ -1425,7 +1425,7 @@ mission "Endgame Alpha 4.5.4"
 		has "Endgame Alpha 4.5.2: done"
 	on stopover
 		conversation
-			`The sensor relay on the surface is as expected. The Alphas appear to have targeted the transmitter of the array, so most of it comes back on line once it is replaced.`
+			`The sensor relay on the surface is as expected, basically nonexistent. The Alphas appear to have targeted only the transmitter unit of the array, so most of it comes back online once it is replaced.`
 	on waypoint
 		conversation
 			`When you report that all the orbiting sensors are in place and operational, you receive a voice message in return. It is Admiral Caine, with an annoying cheerfulness in his voice. "Change of plans, Commodore! You should get used to those. Return as soon as possible, you've got a special assignment outside the group."`
