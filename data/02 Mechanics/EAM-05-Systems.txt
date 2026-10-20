@@ -80,7 +80,7 @@ system "Aurora"
 planet "Keyhole"
 	attributes "black program"
 	landscape land/station36
-	description `As the Syndicate's foremost covert research facility, everything is restricted. Although the station contains enough systems to comfortably support the researchers and engineers who consist most of its crew, and it contains the most advanced technology available to humanity, and quite a bit that isn't, nothing is accessible without the required security clearance.`
+	description `As the Syndicate's foremost covert research facility, everything is restricted. Although the station contains enough systems to comfortably support the researchers and engineers who compose most of its crew, it can't be considered comfortable. It contains the most advanced technology available to humanity, and quite a bit that isn't. Nothing here is accessible without the required security clearances.`
 	security 1000
 	bribe 0
 	
