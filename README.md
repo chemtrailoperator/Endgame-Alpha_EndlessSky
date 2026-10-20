@@ -1,5 +1,8 @@
 ### The entire main storyline is plotted and has entered the coding phase! New missions will be uploaded directly here as they are completed.
 
+![Downloads](https://img.shields.io/github/downloads/chemtrailoperator/Endgame-Alpha_EndlessSky/total)
+
+
 Note: This plugin is still very much a work in progress, so I wouldn't necessarily recommend it yet if you are looking for just gameplay. If you are familiar with game saves (and how to revert changes), go ahead. If you don't want things messed up, star the repo and come back in a month or two.
 
 Feel free to contribute or point out errors and bugs in the issues section of this repo. A bunch of major additions and changes are coming, the entire story is plotted out, and version one will be released soon.
