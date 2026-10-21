@@ -34,6 +34,8 @@ outfit "IR Optical Laser"
 	"display name" "Red Optical Laser"
 	category "Turrets"
 	series "Turrets"
+	licenses
+		Navy
 	index 07011
 	cost 44000
 	thumbnail "outfit/ir optical laser"
@@ -104,7 +106,7 @@ outfit "UV Optical Laser"
 	series "Turrets"
 	index 07012
 	licenses
-		"Twilight Guard"
+		"Navy"
 	cost 120000
 	thumbnail "outfit/uv optical laser"
 	"mass" 20
