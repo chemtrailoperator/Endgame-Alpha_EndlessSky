@@ -1986,9 +1986,7 @@ ship `Stealth Gunboat` `Stealth Gunboat (Jump)`
 
 ship "Enforcement Drone"
 	sprite "ship/enforcement drone"
-		"frame time" 4
-		"delay" 14
-		"random start frame"
+		"frame rate" 200
 	thumbnail "thumbnail/combat drone"
 	"administrative cost" 0
 	attributes
@@ -2019,8 +2017,9 @@ ship "Enforcement Drone"
 		"X1700 Ion Thruster"
 		"X1200 Ion Steering"
 		
-	engine -8.5 28.5 0.9
-	engine 8.5 28.5 0.9
+	engine -8.5 26 0.9
+	engine 0 26 0.9
+	engine 8.5 26 0.9
 	gun 0 -29 "Heavy Laser"
 	explode "tiny explosion" 15
 	description "Like their progenitor, enforcement drones are pilotless attack ships newly deployed by the Republic Navy. They carry out an important role in system security, capable of both scanning ships and of attacking them. This little drone packs quite a punch for its size, mounting a Heavy Laser within a stronger hull."
