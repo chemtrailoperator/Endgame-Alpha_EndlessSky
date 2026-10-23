@@ -34,6 +34,8 @@ outfit "IR Optical Laser"
 	"display name" "Red Optical Laser"
 	category "Turrets"
 	series "Turrets"
+	licenses
+		Navy
 	index 07011
 	cost 44000
 	thumbnail "outfit/ir optical laser"
@@ -65,7 +67,7 @@ outfit "IR Optical Laser"
 		"prospecting" 3
 		"damage dropoff" 0 1200
 		"dropoff modifier" 0
-	description "This lightweight turret can be fed a beam of light from a lasing generator, which is then combined and focused to produce an intense beam ideal for heating the surface it contacts. While a normal offensive laser is tuned to do the most damage to shields and hulls, this beam is primarily infrared, below the visible spectrum, and is optimized for destroying asteroids and heating ships. Like other lasers, this weapon is subject to the effects of diffraction, causing its damage to become less intense with distance while also rendering it invisible. However, the coaxial optical component red laser allows the beam to be targeted from an exceptional range, despite the tenuous damage at the edge of the laser's reach. This laser is highly efficient in the heat domain, since the low-frequency light is effectively absorbed by the heavy materials of most ships."
+	description "This lightweight turret can be fed a beam of light from a lasing generator, which is then combined and focused to produce an intense beam ideal for heating the surface it contacts. While a normal offensive laser is tuned to do the most damage to shields and hulls, this beam is primarily infrared, below the visible spectrum, optimized for destroying asteroids and heating ships. Like other lasers, this weapon is subject to the effects of diffraction, causing its damage to become less intense with distance while also rendering it invisible. To make it useful, this beam is equipped with a coaxial optical system outputting a red laser, allowing the beam to be targeted from an exceptional range. Despite the tenuous damage at the edge of the laser's reach, this laser is formidable. It is highly efficient in the heat domain, since the low-frequency light is effectively absorbed by the heavy materials of most ships."
 	description "	The turret itself only contains the optics needed to synthesize, focus, and target the beam, allowing the laser light to be produced elsewhere. Because of this, an Optical Lasing Generator is needed to run this turret, although one generator is strong enough to support multiple lasers."
 
 effect "laser red glare"
@@ -104,7 +106,7 @@ outfit "UV Optical Laser"
 	series "Turrets"
 	index 07012
 	licenses
-		"Twilight Guard"
+		"Navy"
 	cost 120000
 	thumbnail "outfit/uv optical laser"
 	"mass" 20
@@ -133,7 +135,7 @@ outfit "UV Optical Laser"
 		"heat damage" 5
 		"damage dropoff" 0 2000
 		"dropoff modifier" 0
-	description "With increasing frequency, loss per unit of distance increases. While the UV laser takes the same amount of lasing power, it adds another set of lasing diodes within the core of the focusing and directing system that takes more power and releases heat, but significantly increases power output."
+	description "With increasing frequency, loss per unit of distance increases. While the UV laser takes the same amount of lasing power, it adds another set of lasing diodes within the core of the focusing and directing system that takes more power and releases heat, but significantly increases energy output."
 	description "	The turret itself primarily contains the optics needed to synthesize, focus, and target the beam, allowing the laser light to be produced elsewhere. Because of this, an Optical Lasing Generator is needed to run this turret, providing enough power to support one UV laser."
 
 effect "uv laser glare"

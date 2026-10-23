@@ -1984,6 +1984,47 @@ ship `Stealth Gunboat` `Stealth Gunboat (Jump)`
 		"X2200 Ion Steering"
 		"X3700 Ion Thruster"
 
+ship "Enforcement Drone"
+	sprite "ship/enforcement drone"
+		"frame rate" 200
+	thumbnail "thumbnail/combat drone"
+	"administrative cost" 0
+	attributes
+		category "Drone"
+		licenses
+			Navy
+		"cost" 	120000
+		"hull" 850
+		"automaton" 1
+		"mass" 24
+		"drag" .59
+		"heat dissipation" .9
+		"outfit space" 70
+		"weapon capacity" 15
+		"engine capacity" 28
+		weapon
+			"blast radius" 5
+			"shield damage" 50
+			"hull damage" 25
+			"hit force" 75
+	outfits
+		"Heavy Laser"
+		
+		"nGVF-AA Fuel Cell"
+		"Supercapacitor"
+		"Surveillance Pod"
+		
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
+		
+	engine -8.5 26 0.9
+	engine 0 26 0.9
+	engine 8.5 26 0.9
+	gun 0 -29 "Heavy Laser"
+	explode "tiny explosion" 15
+	description "Like their progenitor, enforcement drones are pilotless attack ships newly deployed by the Republic Navy. They carry out an important role in system security, capable of both scanning ships and of attacking them. This little drone packs quite a punch for its size, mounting a Heavy Laser within a stronger hull."
+	description "	Drones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
+
 # \close
 
 #Items for testing, remove before publishing
@@ -2005,6 +2046,7 @@ shipyard "EAshiptester"
 	"Modified Gunboat"
 	"Stealth Gunboat"
 	"Supercarrier"
+	"Enforcement Drone"
 shipyard "FW tester"
 	"Falcon"
 	"Dreadnought"

@@ -69,7 +69,7 @@ mission "Endgame Alpha 5.1.2"
 			label justone
 			`	The austere man grows even more austere. "That information is very, very restricted. You will get more details when you reach your destination."`
 			label researchfacility
-			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath never really go there. We've quietly put a station there for our black research. The coordinates are loaded into your ship, and you can get more information once you get there."`
+			`	A man wearing very large sunglasses speaks up. "I will preface by saying that the information you are about to hear is one of the closest guarded secrets of the Syndicate. Towards the core, a nova star with nothing really around it exists. Nobody ever bothered to colonize it because of the high risk of Korath raids, but as it turned out the Korath rarely jump into the system. We've quietly put a station there for our black research. The coordinates are loaded into your ship, and you can get more information once you get there."`
 			branch hasjumpdrive
 				has "outfit (flagship installed): Jump Drive"
 			action
@@ -158,10 +158,10 @@ mission "Endgame Alpha 5.1.4"
 				`	"Great. I'll get going then."`
 					accept
 				`	"Why is that such a problem?"`
-			`	"Tell me Captain, if you spent years working on a weapon system just to have it given to your primary competitor, how would you feel?" He starts to say more, closes it, and restarts, "But I've said enough. I wasn't supposed to talk to you much anyway." The engineer gets up and leaves without further comment.`
+			`	"Tell me Captain, if you spent years working on a weapon system just to have it given to your primary competitor, how would you feel?" He starts to say more, stops, and restarts, "But I've said enough. I wasn't supposed to talk to you much anyway. Just look for the ship when you take off." The engineer gets up and leaves without further comment.`
 				accept
 			label syndicate
-			`	"Pretty much, unless you've got any other ideas. Look, I'm not supposed to tell you anymore than the type of ship to look for, so I'll be going now." The engineer gets up and leaves the conference room.`
+			`	"Pretty much, unless you've got any other ideas. Look, I'm not supposed to tell you anymore than the type of ship to look for when you take off, so I'll be going now." The engineer gets up and leaves the conference room.`
 				accept
 	npc accompany save
 		government "Republic"
@@ -199,7 +199,7 @@ mission `Endgame Alpha 5.1.5`
 				`	"Yes."`
 				`	"No, I refuse."`
 					goto refuse
-			`	The agent pulls a recording device from his breast pocket and presses a button on the side. The light on top switches from green to red, and he replaces it. "For legal reasons I'm supposed to collect that. Now for the instructions on the weapon itself. The ship is currently being modified to accept the payload, and it is being built directly into the structure. Avoid landing as much as possible and get to Sagarra as quickly as possible, obviously, but also, protect the Weapon on the way there. What the engineers might not have told you is that we've only ever salvaged two Jump Drives with the defect that makes them useful like this.`
+			`	The agent pulls a recording device from his breast pocket and presses a button on the side. The light on top switches from green to red, and he replaces it. "For legal reasons I'm supposed to collect that. Now for the instructions on the weapon itself. The ship is currently being modified to accept the payload, and it is being built directly into the structure. Avoid landing as much as possible and get to Sagarra as quickly as you can, obviously, but also, protect the Weapon on the way there. What the engineers might not have told you is that we've only ever salvaged two Jump Drives with the defect that makes them useful like this.`
 			`	"That's all I've been given to brief you on, and your clearance expires soon, so you'd better be leaving. Personally though, good luck." He stands up, collects a briefcase from below the table, and leaves, clapping you on the back on the way out.`
 				accept
 			label refuse
@@ -210,7 +210,7 @@ mission `Endgame Alpha 5.1.5`
 			`As you enter orbit in formation with the Pascal Delta, you see that the underside has been covered in signatures and messages, from the engineers, you presume. Once you leave the atmosphere, the computer system disconnects from departure control and the automatic piloting system engages, linking to your ship.`
 	npc accompany save
 		government "Syndicate"
-		personality timid secretive escort
+		personality secretive escort
 		ship "Stealth Gunboat (AWS)" "Weapon System"
 		on destroy
 			dialog `You have let the Weapon System be destroyed before reaching its target! If life were a game, you might be able to go back and start over.`
@@ -225,7 +225,7 @@ mission `Endgame Alpha 5.1.6`
 		has "Endgame Alpha 5.1.5: done"
 	on offer
 		conversation
-			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an embedded message in your computer triggers, notifying you that the weapon system has an established comm link the Citadelle relay, and it is ready to detonate when you return safely.`
+			`You land on Sagarra, this time on the far side from the main Alpha city. While the area appears to be uninhabited, you waste no time in landing the Weapon System and sending the commands to engage the concealment system. You blast off into space again, apparently still undetected. As you leave, an embedded message in your computer triggers, notifying you that the weapon system has an established comm link to the Citadelle relay, and it is ready to detonate when you return safely.`
 				decline
 
 # \close
@@ -245,7 +245,7 @@ mission `Endgame Alpha 5.2.1`
 	on offer
 		event "EA Blackout"
 		conversation
-			`As soon as you regain transponder contact below the ionosphere, you receive an immediate vector and clearance to land at the pad closest to spaceport control. The remarks section includes orders to report the main building as soon as possible.`
+			`As soon as you regain transponder contact below the ionosphere, you receive an immediate vector and clearance to land at the pad closest to spaceport control. The remarks section includes orders to report to the main building as soon as possible.`
 			`	Inside, you are met by staff and escorted underground to the Central Information Center. Here, all interstellar traffic and data is received, processed and routed through the hyperspace relays by a multitude of people working in lines of workstations planetary in the back, moving to system, to interstellar, to control of the hyperspace relays in the front. On the far wall from the entrance, displays show all the traffic in the system, with lines tracking their movement and their vectors into the spaceport. Every packet that travels the relays also blinks momentarily on annunciator panels in the front row.`
 			`	The commanding officer steps forward and invites you to sit down in the back. "Captain, we thought it would be nice to have you here, since you're the one who delivered the weapon." He leaves and is swept away by the crazed bussle as the control center grounds or reroutes all ships, until the system is empty.`
 			choice
@@ -264,11 +264,11 @@ mission `Endgame Alpha 5.2.1`
 			label briefingroom
 			`	You are led to a room in the above ground section of the control center, which has numerous other independent captains and Free Worlds personnel waiting. Once you are inside, the officer who apparently collected all of you starts talking.`
 			`	"First off, the occupied systems are still there. We sent in a scout just after they disappeared, and everything seems to be in the same state, except for the relays, which are unresponsive. The operating hypothesis is that whatever was ordering the Alphas around was using the hyperspace relays to communicate, and we fried them along with Sagarra. The relay operating system automatically purges unresponsive nodes, both for error correction and safety of adventurous pilots, so you won't be able to log them on your ship computers until we get portable systems in place."`
-			`	He glances down at a data pad he is holding an continues. "All combat group personnel have been recalled to the planets their units are stationed at, unless you were stationed beyond Kornephoros, in which case you must proceed to the Longjump spaceport immediately." He finishes, and everyone begins talking and making plans to go to their destinations.`
+			`	He glances down at a data pad he is holding an continues. "All combat group personnel have been recalled to the planets their units are stationed at, unless you were stationed beyond Kornephoros, in which case you must proceed to the Longjump spaceport immediately." He finishes, and everyone begins talking and making plans to go to their destinations. Your duty assignment is with the 17th Combat Group, but they are now inaccessible. Travel to Sabik instead.`
 				accept
 	on complete
 		conversation
-			`The Longjump spaceport has been extensively modified to support military operations at a grand scale. As the frontline system, it has been fortified and expanded to pose as much as a threat to the Alphas as possible. Like the organization of other planets, the 33rd Combat Group command is in the spaceport.`
+			`The Longjump spaceport has been extensively modified to support military operations at a grand scale. As the frontline system, it has been fortified and expanded to pose as much of a threat to the Alphas as possible. Like the organization of other planets, the 33rd Combat Group command is in the spaceport.`
 
 # 5.2.2 Republic and FW decide to wait on invading blackout areas \fold
 mission `Endgame Alpha 5.2.2`
@@ -281,7 +281,7 @@ mission `Endgame Alpha 5.2.2`
 	waypoint Alniyat
 	waypoint Aldhibain
 	to offer
-		has "Endgame Alpha 5.5.1: done"
+		has "Endgame Alpha 5.2.1: done"
 	on offer
 		conversation
 			`You report to the 33rd command building, and after a short wait, you get a meeting with the commander. "Captain <last>," She says, shuffling data pads around on her desk. "You're a part of 17th Command, but got trapped over here. What can I do for you?"`
@@ -342,9 +342,9 @@ mission `Endgame Alpha 5.3.1`
 					goto going
 			`	Raven shows no explicit emotion, but you could swear there is a trace of disdain in her voice. "If you really want to stay on the most dangerous sector of the most dangerous area in human space, be my guest, but I need somebody to escort those ships. You'll get reassigned to the 17th as soon as you're done anyway."`
 			choice
+				`	(Accept)`
 				`	(Don't take the mission.)`
 					decline
-				`	(Accept)`
 			label going
 			`	"Awesome. I'll be coming with you by the way." Raven says. She leaves and returns to her not-Gunboat, which is apparently already ready to leave.`
 				accept
@@ -401,8 +401,8 @@ mission `Endgame Alpha 5.3.2`
 			scene "outfit/blue optical laser"
 			`	There are the normal blue and green lasers you are familiar with, but also ones with different lens tintings.`
 			scene "outfit/ir optical laser"
-			`	After all the laser system have been unloaded, the crews move to unloading generators of various shapes and sizes.`
-			scene "outfit/large lasing generator"
+			`	After all the laser system have been unloaded, the crews move to unloading lasing mediums of various shapes and sizes.`
+			scene "scene/lasing generators"
 			`	When you check the information system, it shows you are requested at the spaceport.`
 # 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems. \fold
 mission `Endgame Alpha 5.3.3`
