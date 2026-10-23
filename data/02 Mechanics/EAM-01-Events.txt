@@ -74,7 +74,8 @@ event `EA Reshroud Keyhole`
 event `EA unlock Keyhole spaceport`
 	planet Keyhole
 		add spaceport `The Keyhole spaceport, at least the front facing portion, is very small. Only one food vendor and an information desk exist in a large rotunda with numbered doors on all the edges. The people going into and out of the doors in a steady stream avoid eye contact and move quietly and briskly.`
-event "EA reveal Keyhole"
+		
+event "EA Reveal Keyhole"
 	system Aurora
 		remove hidden
 	
@@ -90,6 +91,8 @@ event "EA connect Fumalzenarah"
 event "EA danforth chip processed"
 
 event "EA accepted the endgame"
+
+event "EA 6.1.1 Complete Timer"
 
 event "EA mysterious green goo"
 
@@ -667,377 +670,377 @@ event "EA republic mobilized"
 # System Frontlines \fold
 event "EA Alpherg Frontline"
 	system Alpherg
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Fumalsamakah Frontline"
 	system Fumalsamakah
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Belenos Frontline"
 	system Belenos
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Thuban Frontline"
 	system Thuban
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Men Frontline"
 	system Men
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Beta Lupi Frontline"
 	system "Beta Lupi"
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Yed Prior Frontline"
 	system "Yed Prior"
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Pherkad Frontline"
 	system Pherkad
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Kappa Centauri Frontline"
 	system "Kappa Centauri"
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Alniyat Frontline"
 	system Alniyat
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Antares Frontline"
 	system Antares
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Graffias Frontline"
 	system Graffias
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Han Frontline"
 	system Han
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Atria Frontline"
 	system Atria
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Dschubba Frontline"
 	system Dschubba
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Aldhibain Frontline"
 	system Aldhibain
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Lesath Frontline"
 	system Lesath
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Sargas Frontline"
 	system Sargas
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Shaula Frontline"
 	system Shaula
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Girtab Frontline"
 	system Girtab
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Rastaban Frontline"
 	system Rastaban
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Kornephoros Frontline"
 	system Kornephoros
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Sabik Frontline"
 	system Sabik
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Delta Sagittarii Frontline"
 	system "Delta Sagittarii"
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Albaldah Frontline"
 	system Albaldah
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Nunki Frontline"
 	system Nunki
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Zubeneschamali Frontline"
 	system Zubeneschamali
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Zubenelgenubi Frontline"
 	system Zubenelgenubi
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Wei Frontline"
 	system Wei
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Alpha Arae Frontline"
 	system "Alpha Arae"
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Tais Frontline"
 	system Tais
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Dabih Frontline"
 	system Dabih
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Eltanin Frontline"
 	system Eltanin
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 event "EA Albireo Frontline"
 	system Albireo
-		fleet "Int Single Alpha" 180
-		fleet "Small Single Alpha" 180
+		fleet "Int Single Alpha" 240
+		fleet "Small Single Alpha" 220
 		fleet "Medium Single Alpha" 300
-		fleet "Large Single Alpha" 500
-		fleet "Small Republic" 1000
-		fleet "Large Republic" 1800
-		fleet "Large Militia" 1600
-		fleet "Small Militia" 1000
+		fleet "Large Single Alpha" 950
+		fleet "Small Republic" 800
+		fleet "Large Republic" 1400
+		fleet "Large Militia" 1300
+		fleet "Small Militia" 850
 
 # System Takeovers \fold
 event "EA Citadelle Takeover"

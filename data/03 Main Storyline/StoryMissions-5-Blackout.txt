@@ -29,15 +29,15 @@ mission "Endgame Alpha 5.1.1"
 			`Although you were in command of the unit for a very short period of time, they seem genuinely sorry to see you go. Another captain arrives shortly after you land, and you transfer command to him.`
 			`	After leaving your unit, you pull your new orders from the information system. They instruct you to proceed with the utmost dispatch to Sundive in the Sheratan system to make contact with a Syndicate research team for special business.`
 				accept
-	on complete
+	on enter "Sheratan"
 		event "EA Reveal Keyhole"
 		
 # 5.1.2 Travel from headquarters with access codes to secret system \fold
 mission "Endgame Alpha 5.1.2"
 	landing
 	name "Black Program"
-	description `Travel to the marked system, the Syndicate's Black Besearch facility.`
-	source Sheratan
+	description `Travel to the marked system, the Syndicate's Black Research facility.`
+	source Sundive
 	destination Keyhole
 	to offer
 		has "Endgame Alpha 5.1.1: done"
@@ -392,7 +392,6 @@ mission `Endgame Alpha 5.3.2`
 			dialog `Your ship receives a mayday call just as the Eye of Horus explodes. No more Raven.`
 	on offer
 		event "EA Lasers Geminus" 5
-		event "EA Lasers Combat Groups" 14
 		conversation
 			`The Navy administrative building, just inside the entrance to the massive yard, is big enough to be the seat of a lesser planetary government. Thankfully, the military bureaucracy is much less than that of most planets, and you meet with the commander of the supply fleet quickly, finish route planning with him even quicker, and are ready to leave for New Argentina in an hour.`
 				accept
@@ -409,7 +408,8 @@ mission `Endgame Alpha 5.3.2`
 mission `Endgame Alpha 5.3.3`
 	priority
 	source "New Argentina"
-	destination Zug
+	stopover Zug
+	destination Longjump
 	name `Tech Delivery`
 	description `Travel to <destination> with information on special weapons production.`
 	to offer
@@ -429,7 +429,11 @@ mission `Endgame Alpha 5.3.3`
 			`	"Ah. About bad news. I wouldn't necessarily call it that, since you have a high likelihood of survival, but plans to manufacture lasers and navy ships need to get to the Rim planets too. How you get there is up to you, so good luck. Don't bother coming back either, the 17th agreed to let the 33rd have you for a little while for some leadership reason." Raven stands up and leaves, forever in a hurry without ever displaying it.`
 			`	There are no written orders, but you are informed an hour later that the data for the lasers has been loaded onto the <flagship>.`
 				accept
+	on stopover
+		event "EA Lasers Combat Groups" 4
+		event "EA Modified Combat Groups" 5
+		event "EA Modified Geminus" 3
+		conversation
+			`You deliver the data chips to the Free Worlds military base. After looking through them, they tell you that Southbound shipyards will have production capability for the lasers soon, but also will have light navy warship technology as well.`
 # \close
-
-
 # \close

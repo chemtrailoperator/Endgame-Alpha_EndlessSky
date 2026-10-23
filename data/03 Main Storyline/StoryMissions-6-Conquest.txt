@@ -14,11 +14,20 @@
 # this program. If not, see <https://www.gnu.org/licenses/>.
 # This program was coded using ChemtrailOperator's EndlessSkyDark N++ UDL. Available on Github.
 
-# Storyline point to put in somewhere: systems appear shrouded and cannot be listed as visited because an error correction system built into hyperspace relays removes unresponsive nodes from a ship's database even if they keep reappearing, this also enhances safety to limit the access to unstable systems
-
 # 6.1 Relieve Pressure on Rim \open
 
 # 6.1.1 Told on Rim systems to assist in organizing a huge push to relieve pressure on Rim systems that are blocked off. Stop at a bunch of planets along the way accumulating a massive Free Worlds and volunteer fleet. Land at Sabik, nothing visible beyond Sabik towards Aldhibain or Kornephoros. Decided to attack Kornephoros first to meet up with Republic forces. Containment forces holding the line at Lesath
+mission `Endgame Alpha 6.1.1`
+	landing
+	source Longjump
+	destination Longjump
+	deadline 14
+	to offer
+		has "Endgame Alpha 5.3.3: done"
+	on offer
+		event "EA 6.1.1 Complete Timer" 12
+		conversation
+			`The buildup of forces never stopped on Sabik`
 
 # 6.1.2 Take off and push into Kornephoros system, planning to focus all fleeing Alpha ships toward Clink to minimize casualties. Major factionas of Alpha ships are fighting each other but also attack you. (Have Republic ships jump into the system with you somehow) Land on Clink to mop things up since it appears the Alphas were fortifying there.
 

@@ -1087,7 +1087,7 @@ mission "Endgame Alpha 4.4.4.4"
 	npc
 		government "Syndicate"
 		personality
-			entering fleeing
+			entering
 		system Sheratan
 		to spawn
 			has "flagship system: Sheratan"
@@ -1404,10 +1404,6 @@ mission "Endgame Alpha 4.5.2"
 	on stopover
 		conversation
 			`You ping the hyperspace relay station, but receive no response. Since it is nigh impossible to locate without its homing beacon turned on, or the coordinates you don't have, you had better return to Seginus.`
-	on complete
-		payment 500000
-		conversation
-			`Admiral Caine is waiting for your unit when you land. He boards your ship quickly and enters to talk to you. "Commodore, I'm afraid you won't get much break-in time here. As soon as possible, get back into flying order and replace the sensors on Hope. There isn't time to replace the old system, so we're deploying a new one. While you're at it, fly the unit over through the dirt tunnel and check the orbiting sensors in those systems. Some good news though, all the captains in the Combat Group got a big hazard bonus. That includes you." He leaves abruptly before you can meaningfully comment.`
 # 4.5.4 Fly the dirt tunnel and check sensors \fold
 mission "Endgame Alpha 4.5.4"
 	landing
