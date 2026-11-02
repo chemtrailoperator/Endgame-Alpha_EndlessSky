@@ -16,7 +16,7 @@
 
 # 6.1 Relieve Pressure on Rim \open
 
-# 6.1.1 Travel to the Zug system to join 33rd detachment there \open
+# 6.1.1 Travel to the Zug system to join 33rd detachment \open
 mission `Endgame Alpha 6.1.1`
 	landing
 	name `Join Zug Detachment`
