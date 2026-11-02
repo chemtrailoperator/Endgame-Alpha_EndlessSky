@@ -301,9 +301,6 @@ mission `Endgame Alpha 5.2.2`
 						has "outfit: Scram Drive"
 					goto help
 				`	"My ship is fast enough to go with a normal hyperdrive."`
-					to display
-						not "outfit: Scram Drive"
-						not "outfit: Jump Drive"
 					goto help
 			`	At this, she raises an eyebrow and speaks in a hushed voice. "Those actually exist? Wait, of course they do, if you have one." She stand up again and hands you a datapad with ORDERS on the display.`
 			label help
@@ -404,6 +401,7 @@ mission `Endgame Alpha 5.3.2`
 			`	After all the laser system have been unloaded, the crews move to unloading lasing mediums of various shapes and sizes.`
 			scene "scene/lasing generators"
 			`	When you check the information system, it shows you are requested at the spaceport.`
+			
 # 5.3.3 Use Jump drive to penetrate to trapped systems with weapon systems. \fold
 mission `Endgame Alpha 5.3.3`
 	priority
@@ -434,6 +432,6 @@ mission `Endgame Alpha 5.3.3`
 		event "EA Modified Combat Groups" 5
 		event "EA Modified Geminus" 3
 		conversation
-			`You deliver the data chips to the Free Worlds military base. After looking through them, they tell you that Southbound shipyards will have production capability for the lasers soon, but also will have light navy warship technology as well.`
+			`You deliver the data chips to the Free Worlds military base. After looking through them, they tell you that Southbound shipyards will have production capability for the lasers soon, as well as a variety of Navy technology included in the data.`
 # \close
 # \close
