@@ -92,7 +92,7 @@ event "EA danforth chip processed"
 
 event "EA accepted the endgame"
 
-event "EA 6.1.1 Complete Timer"
+event "EA 6.1.1 Timer"
 
 event "EA mysterious green goo"
 
@@ -2163,8 +2163,19 @@ event "EA Charon Station Trashed"
 
 event "EA Lichen Trashed"
 
-
-# System Conquest Frontlines \fold
+# System Conquest Battlefront \fold
+event "EA Battlezone Kornephoros"
+	system Kornephorosremove 
+		remove fleet "Int Single Alpa FI"
+		remove fleet "Small Single Alpha FI"
+		remove fleet "Medium Single Alpha FI"
+		remove fleet "Large Single Alpha FI"
+		remove fleet "Int Single Alpha FII"
+		remove fleet "Small Single Alpha FII"
+		remove fleet "Medium Single Alpha FII"
+		remove fleet "Large Single Alpha FII"
+		remove fleet "Small Southern Pirates"
+		remove fleet "Large Southern Pirates"
 
 # System Conquest Retake \fold
 

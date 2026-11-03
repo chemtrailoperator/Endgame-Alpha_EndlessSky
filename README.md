@@ -14,7 +14,7 @@ This plugin allows you to serve in the Navy and earn the Navy licenses that are 
 Make sure you create a game save at the start of the story, the storyline is currently incomplete and many worlds will become inaccessible/hostile permanently. Due to testing needs, there is a Navy shipyard on Rutilicus that has a bunch of ships. If you don't have a Navy license, this shouldn't affect gameplay, but it isn't lore accurate.
 
 Coming Soon:
-Completion of central storyline (nov. 2026)
+Completion of central storyline (unk. Likely early 2027.)
 Civilian versions of Navy ships (beta in nov. 2026)
 New ship and outfit additions based on upgrading vanilla tech. (tba)
 Start of spinoff storylines and small fun stuff after the main thing is completed. (feb. 2027)

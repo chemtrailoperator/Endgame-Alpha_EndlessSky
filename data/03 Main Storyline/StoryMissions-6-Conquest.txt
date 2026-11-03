@@ -16,25 +16,136 @@
 
 # 6.1 Relieve Pressure on Rim \open
 
-# 6.1.1 Told on Rim systems to assist in organizing a huge push to relieve pressure on Rim systems that are blocked off. Stop at a bunch of planets along the way accumulating a massive Free Worlds and volunteer fleet. Land at Sabik, nothing visible beyond Sabik towards Aldhibain or Kornephoros. Decided to attack Kornephoros first to meet up with Republic forces. Containment forces holding the line at Lesath
+# 6.1.1 Travel to the Zug system to join 33rd detachment \open
 mission `Endgame Alpha 6.1.1`
 	landing
+	name `Join Zug Detachment`
+	description `Travel to Zug in the Zubeneschamali system and join the 33rd Combat Group there.`
 	source Longjump
-	destination Longjump
-	deadline 14
+	destination Zug
 	to offer
 		has "Endgame Alpha 5.3.3: done"
 	on offer
-		event "EA 6.1.1 Complete Timer" 12
 		conversation
-			`The buildup of forces never stopped on Sabik`
+			`The buildup of forces never stopped on Sabik, with a massive Republic and Free Worlds fleet now waiting on the surface. You check in to 33rd command, and are met by a lower ranking staff officer.`
+			`	"Good day, Captain <last>," He begins, "We have been informed that several other Combat Groups are ready to deploy and waiting for us to complete preparations. We are esentially ready, but waiting for a contingent from Zubeneschamali. Please attach to that fleet and fly with them."`
+				accept
+	on complete
+		event "EA 6.1.1 Timer"
+		conversation
+			`Because of its large population and industrial capacity, the fleet you find preparing to take off has a sizable portion of new-build ships as well as existing Republic, Free Worlds, and volunteer assets.`
+			`	You are told that the fleet will be ready for departure tomorrow.`
 
-# 6.1.2 Take off and push into Kornephoros system, planning to focus all fleeing Alpha ships toward Clink to minimize casualties. Major factionas of Alpha ships are fighting each other but also attack you. (Have Republic ships jump into the system with you somehow) Land on Clink to mop things up since it appears the Alphas were fortifying there.
+# 6.1.2 Attack Kornephoros \fold
+mission `Endgame Alpha 6.1.2`
+	landing
+	name `Attack Kornephoros`
+	description `Attack the Kornephoros system and secure it, in conjunction with the 17th Combat Group.`
+	source Zug
+	destination Clink
+	to offer
+		has "Endgame Alpha 6.1.1: done"
+		has "event: EA 6.1.1 Timer"
+	on offer
+		event "EA Battlezone Kornephoros"
+		conversation
+			`You are instructed upon landing to report to the flagship of the Republic unit. It is a Supercruiser that has been modified internally for command and control, with its drone sections filled with staff and intelligence collection equipment, including one devoted entirely to a large briefing room that currently contains all the ship commanders of the Zug detachment.`
+			`	Shortly after you arrive, a Rear Admiral walks in and activates the hologram projector at the front. With a map of the local area now displayed, he begins his briefing.`
+			`	"After takeoff, all ships should jump with all possible expedition to Sabik. We will then jump to Kornephoros with the Longjump unit. At the same time, the 17th Combat Group will attack from Wei. During combat, try to push Alpha ships toward Clink, rather than Deep, to minimize casualties. Please refer to your operations orders for mroe details." He stops and shuts down the projector.`
+			`	As you leave with the rest of the pilots, he motions you over.`
+			`	"Captain <last>, since you just got here I have a little more information for you. For now, you will be leading a small fleet of independent leaders in the attack group."`
+			label questions
+			choice
+				`	"Why is Kornephoros the target?"`
+					to display
+						not "EA 6.1.2 korn"
+					goto korn
+				`	"None, sir. I'll be ready to go shortly."`
+					accept
+				`	"Actually, I want to be done with all of this."`
+			`	The Rear Admiral sighs. "Very well, Captain, that is your right. However I will ask you to leave my ship.`
+				decline
+			label korn
+			action
+				set "EA 6.1.2 korn"
+			`	"It's an attempt to remedy an extremely cramped position the Navy is in right now. For the last few centuries, nobody has been successful in disabling a large enough number of hyperspace relays to meaningfully impact communication, but currently the South has no communication networks with the rest of the galaxy, and a decent fraction of our couriers haven't made it through, meaning we are hemorrhaging intelligence to the enemy. Securing Kornephoros at least allows us to move information manually without losing every fourth ship and allows the Republic at least to fight in a way it is more used to. Anything else?"`
+				goto questions
+			
+	npc
+		government "33rd Combat Group"
+		personality heroic launching
+		ship "Supercruiser" "R.N.S. Hammerhead"
+		on destroy
+			set "EA 6.1.2 HH HL"
+	npc
+		government "33rd Combat Group"
+		personality heroic launching
+		fleet "Large Militia" 4
+		fleet "Small Militia" 6
+		on destroy
+			set "EA 6.1.2 FW HL"
+	npc
+		government "33rd Combat Group"
+		personality heroic escort launching
+		fleet "Large Southern Pirates" 2
+		on destroy
+			set "EA 6.1.2 I HL"
+	npc
+		government "33rd Combat Group"
+		personality heroic launching
+		fleet "Large Republic" 2
+		fleet "Small Republic" 3
+		on destroy
+			set "EA 6.1.2 R HL"
+	npc
+		government "33rd Combat Group"
+		personality heroic waiting
+		fleet "Large Militia" 5
+		fleet "Small Militia" 4
+		system Sabik
+		on destroy
+			set "EA 6.1.2 FW HL"
+	npc
+		government "33rd Combat Group"
+		personality heroic waiting
+		fleet "Large Southern Pirates" 2
+		system Sabik
+		on destroy
+			set "EA 6.1.2 I HL"
+	npc
+		government "33rd Combat Group"
+		personality heroic waiting
+		fleet "Large Republic" 2
+		fleet "Small Republic" 3
+		system Sabik
+		on destroy
+			set "EA 6.1.2 R HL"	
+	npc
+		government "17th Combat Group"
+		personality heroic entering
+		fleet "Large Republic" 5
+		fleet "Small Republic" 3
+		fleet "Large Militia" 2
+		fleet "Small Militia" 4
+		fleet "Large Southern Pirates" 2
+		system Kornephoros
+		on destroy
+			set "EA 6.1.2 17 HL"
+	npc disable
+		government "Alpha"
+		personality vindictive ramming marked staying
+		fleet "Large CCOR Alpha"
+		fleet "Large Independent Alpha"
+		fleet "Large FW Alpha"
+		fleet "Pirate Raid Alpha" 8
+		system Kornephoros
+		on disable
+			dialog `All the Alpha ships in the system have been disabled. It is now safe to land on Clink.`
+# 6.1.3 Spend time in upper atmosphere to help clean things up, shooting stuff. Republic comes in and uses nuclear weapons to destroy a major group, detonates in several other locations to ensure no survivors. They got report that the survivors on Deep reported that the mining corporation was massacred anyway. (EA Conquest Kornephoros) \fold
 
-# 6.1.3 Spend time in upper atmosphere to help clean things up, shooting stuff. Republic comes in and uses nuclear weapons to destroy a major group, detonates in several other locations to ensure no survivors. They got report that the survivors on Deep reported that the mining corporation was massacred anyway. (EA Conquest Kornephoros)
+# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB, told that Republic will not use Nuclear weapons except on assured Alpha-only targets, not on inhabited areas. (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.) You are assigned to a 17th Battle Group consisting of a mix of Republic, Free Worlds, and a few independent ships. \fold
 
-# 6.1.4 After liberating Kornephoros, land on Deep (add flavor of very messy, generally f*cked up planet) to start setting up a FOB, told that Republic will not use Nuclear weapons except on assured Alpha-only targets, not on inhabited areas. (mention replacing New Argentina for tactical command, need short hyperjump distance for couriers since relays no longer work anyway.) You are assigned to a 17th Battle Group consisting of a mix of Republic, Free Worlds, and a few independent ships.
-
+# \close
 # 6.2 Choose whether to go for Sargas or Aldhibain first, conquest Aldhibain, Sargas, Dschubba, and Atria \fold
 
 # 6.2A.1 On Deep, told that forces have regrouped and have been reinforced, intend to push forward to press as much advantage as possible, comment that Alpha forces are disorganized and fighting with each other, but just about every ship in the system will take off if an ivnasion fleet appears Choose between Aldhibain or Sargas as the next target
