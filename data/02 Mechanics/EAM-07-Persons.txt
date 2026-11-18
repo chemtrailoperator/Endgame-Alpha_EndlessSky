@@ -1,0 +1,333 @@
+person "ChemtrailOperator"
+	government "Author"
+	personality
+		heroic opportunistic hunting vindictive
+	phrase
+		word
+			"The Quarg "
+		word
+			"are indiffirent to "
+			"hate "
+			"love "
+			"would like to destroy "
+			"are trying to rip off "
+			"are turned on by "
+		word
+			"this thing."
+	phrase
+		word
+			"Take it from me, "
+		word
+			"some formations are better than others."
+			"the Orbitals formation is scientifically accurate... ish."
+			"you would look better in a Heliarch ship."
+			"you do NOT want ads in this game."
+			"true wealth comes through the blaster."
+			"you should try the More-Formations plugin."
+			"you should try the Wormholes plugin."
+			"you should try the Endgame Alpha plugin."
+			"you should try the Asteroid Expansion plugin."
+	phrase
+		word
+			"Swimming in a nuclear waste pool is safer (radiation-wise) than standing next to it. (not counting bullets of security guards.)"
+			"More people are killed annually by donkeys than plane crashes."
+			"Ancient Australia exported sand and camels to the middle east."
+			"Printer ink is more expensive than human blood."
+			"A woodchuck could chuck 700lbs of wood."
+			"You consume 1 to 2 cups of snot daily."
+			"Coyotes outpace roadrunners by 23 mph."
+			"70% of the time, fast food ice is dirtier than (pre-poop) toilet water."
+			"The Ancient US mail service delivered mail by cruise missile."
+			"You know what, FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFudge"
+			"If people say they’re busy, it means they have time, but not for you. By the way I'm busy."
+			"Nitrogen Triiodide"
+			"A son of a member of the rolling stones was the father-in-law of his ex-mother-in-law as well as the stepgrandfather of his former wife. "
+			"You can fit 900lbs of shredded cheese in a Subaru WRX."
+			"Termites eat wood faster when listening to metal. You do too."
+			"Broken glass tastes like blood."
+			"Turning it off and on again will fix 95% of software issues. This also works with people too."
+			"There is no species named ‘seagull.’"
+			"Splinter free toilet paper was invented in 1935."
+			"You can make a sword from the blood of your enemies, you just need 300 enemies."
+			"Win10 will always be better."
+			"The ducks in parks are free, you can just take them. I have over 30 now."
+			"itanimulli.com"
+			"New Yorkers bite more people per year than sharks... by two orders of magnitude."
+	phrase
+		word
+			"What's black and in the back of a cop car?   The Seat!       what is wrong with you people..."
+			"How do you keep an idiot in suspense?"
+			"Why did the reactor scientist get so worried? His coworker was having a meltdown."
+			"A lot of things don't taste how they smell. Especially those chemical cakes in urinals. Never making that mistake again."
+			"HELP HOW DO I LAND"
+			"There's a button in here that says nukes. I keep pressing it but nothing happens."
+			"This human form limits me."
+	phrase
+		word
+			"Ever wondered why there's not ads in this game?"
+			"Day 1,915... No sign of anyone... only advertisements... must block them all... I must defend the galaxy..."
+			"The ads fear me. None go unblocked."
+			"Dozens of ads lay slain at my feet, yet more arise. When will they learn? When will this end?" 
+			"Will there ever be enough death? No... There can never be enough death for ads."
+	ship "Chemtrail Boat" "Chemtrail Boat"
+		
+
+
+ship "Chemtrail Boat"
+	sprite "ship/chemtrailboat/chemtrail boat"
+	thumbnail "thumbnail/gunboat"
+	attributes
+		category "Light Warship"
+		"cost" 30400000
+		"shields" 7400
+		"hull" 2200
+		"required crew" 1
+		"bunks" 3
+		"mass" 240
+		"drag" 2.0
+		"heat dissipation" .85
+		"fuel capacity" 800
+		"cargo space" 50
+		"outfit space" 320
+		"weapon capacity" 180
+		"engine capacity" 140
+		weapon
+			"blast radius" 200
+			"shield damage" 2600
+			"hull damage" 7900
+			"hit force" 10
+	outfits
+		"Heavy Laser" 4
+		"Heavy Laser Turret"
+		
+		"Aluminum Oxide"
+		"Synthetic Polymers"
+		"Bio-Engineered Pathogens"
+		"Thorium Dust"
+		"Strontium Sulfate"
+		"Nano Machines"
+		"Barium Salts"
+		"Cesium Dust"
+		
+		"Suspicious Substances"
+		"Dubious Dust"
+		"Alarming Aerosols"
+		"Fishy Fluids"
+		"Gloomy Gasses"		
+		"Peculiar Particles"
+		"Sinister Scraps"
+		"Bizarre Bottles"
+		"Perplexing Powder"
+		"Shady Sludge"
+		"Troubling Trash"
+		"Cryptic Canisters"
+		
+		
+		"XT-I Experimental RITEG"
+		"D14-RN Shield Generator"
+		"Tactical Scanner"
+		
+		"X3700 Ion Thruster"
+		"X2200 Ion Steering"
+		"Chemtrail Dispenser"
+		"Jump Drive"
+		
+	gun -36.5 -18 "Heavy Laser"
+	gun 36.5 -18 "Heavy Laser"
+	engine -12 67.5 0.8
+	engine 13 67.5 0.8
+	gun -28.5 -27 "Heavy Laser"
+	gun 28.5 -27 "Heavy Laser"
+	turret 0 -1 "Heavy Laser Turret"
+	leak "leak" 50 50
+	leak "flame" 80 80
+	explode "tiny explosion" 10
+	explode "small explosion" 20
+	explode "medium explosion" 15
+	"final explode" "final explosion small"
+	description "You stole this ship bruh."
+
+outfit "Aluminum Oxide"
+	plural "Aluminum Oxide"
+	category "Chemtrail Components"
+	"chemtrail tank" -1
+	thumbnail "outfit/unknown"
+	description "This substance is amphoteric, meaning it can react with both acids and bases. Don't let this touch anything."
+
+outfit "Synthetic Polymers"
+	plural "Chains of Synthetic Polymers"
+	category "Chemtrail Components"
+	"chemtrail tank" -1
+	thumbnail "outfit/unknown"
+	description "What role polymers play in space is not fully researched, but when dispersed in an atmosphere, they can be used to nefariously, and almost invisibly, meddle with the temperature of a planet."
+
+outfit "Barium Salts"
+	plural "Barium Salts"
+	category "Chemtrail Components"
+	"chemtrail tank" -1
+	thumbnail "outfit/unknown"
+	description "Ever wanted to flood a city? Turn a rainforest into a desert? This is the stuff to use."
+
+outfit "Bio-Engineered Pathogens"
+	plural "Vials of Bio-Engineered Pathogens"
+	category "Chemtrail Components"
+	"chemtrail tank" -1
+	thumbnail "outfit/unknown"
+	description "You'd better not crack the vial. That would make your ship rather unpleasant."
+
+outfit "Thorium Dust"
+	category "Chemtrail Components"
+	thumbnail "outfit/unknown"
+	"chemtrail tank" -1
+	description "Irradiating large areas has never been easier! Just don't get it anywhere."
+
+outfit "Strontium Sulfate"
+	plural "Strontium Sulfate"
+	category "Chemtrail Components"
+	thumbnail "outfit/unknown"
+	"chemtrail tank" -1
+	description "If you take some Strontium Sulfate and mix it with [redacted] and then pour in some [redacted] you can reliably [-------redacted-------]. Also, if you want to make sure a population never [redacted] you can mix it with [redacted] and then disperse it."
+
+outfit "Nano Machines"
+	plural "Nano Machines"
+	category "Chemtrail Components"
+	thumbnail "outfit/unknown"
+	"chemtrail tank" -1
+	description "These little machines work wonders inside the blood vessels of those unfortunate enough to ingest them. As long as you avoid an atmosphere in which there is commerical air travel, you'll be fine!"
+
+outfit "Cesium Dust"
+	category "Chemtrail Components"
+	"chemtrail tank" -1
+	thumbnail "outfit/unknown"
+	description "This powder doesn't last very long as Cesium. This feature means that you can handily defoliate and depopulate in a very controlled way."
+
+outfit "Suspicious Substances"
+	plural "Suspicious Substances"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Dubious Dust"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Fishy Fluids"
+	plural "Buckets of Fishy Fluids"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Gloomy Gasses"
+	plural "Gloomy Gasses"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Peculiar Particles"
+	plural "Peculiar Particles"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Alarming Aerosols"
+	plural "Alarming Aerosols"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Sinister Scraps"
+	plural "Piles of Sinister Scraps"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Bizarre Bottles"
+	plural "Bizarre Bottles"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Perplexing Powder"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Shady Sludge"
+	plural "Puddles of Shady Sludge"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Troubling Trash"
+	plural "Piles of Troubling Trash"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "Cryptic Canisters"
+	plural "Cases of Cryptic Canisters"
+	category "Pernicious Payloads"
+	thumbnail "outfit/unknown"
+	description "weird stuff"
+
+outfit "XT-I Experimental RITEG"
+	category "Power"
+	series "Generators"
+	index 01061
+	cost 1000000
+	thumbnail "outfit/small radiothermal"
+	"mass" 40
+	"outfit space" -40
+	"energy generation" 5.3
+	"heat generation" 19
+	description "Radiothermal generators harvest heat from radioactive isotopes and convert it into electricity. They are more powerful than fuel cells, but also produce a relatively high amount of heat."
+
+outfit "Chemtrail Dispenser"
+	category "Unique"
+	index 01001
+	"cost" 1000
+	thumbnail "outfit/afterburner"
+	"mass" 4
+	"outfit space" -4
+	"chemtrail tank" 15
+	"engine capacity" -4
+	"afterburner thrust" 0.6
+	"afterburner fuel" 0.01
+	"afterburner heat" 3
+	"afterburner effect" "afterburner"
+	description "By "
+
+planet "New Holland"
+	add shipyard "chemtrail test"
+	add outfitter "chemtrail stuff"
+
+shipyard "chemtrail test"
+	"Chemtrail Boat"
+
+outfitter "chemtrail stuff"
+	"Aluminum Oxide"
+	"Synthetic Polymers"
+	"Bio-Engineered Pathogens"
+	"Thorium Dust"
+	"Strontium Sulfate"
+	"Nano Machines"
+	"Barium Salts"
+	"Cesium Dust"
+	"Suspicious Substances"
+	"Dubious Dust"
+	"Fishy Fluids"
+	"Gloomy Gasses"		
+	"Peculiar Particles"
+	"Sinister Scraps"
+	"Bizarre Bottles"
+	"Perplexing Powder"
+	"Shady Sludge"
+	"Troubling Trash"
+	"Cryptic Canisters"
+	"XT-I Experimental RITEG"
+	"Chemtrail Dispenser"
+
+category "outfit"
+	"Chemtrail Components"
+	"Pernicious Payloads"

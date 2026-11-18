@@ -1985,9 +1985,10 @@ ship `Stealth Gunboat` `Stealth Gunboat (Jump)`
 		"X3700 Ion Thruster"
 
 ship "Enforcement Drone"
-	sprite "ship/enforcement drone"
-		"frame rate" 200
-	thumbnail "thumbnail/combat drone"
+	sprite "ship/enforcementdrone/enforcement drone"
+		"frame rate" 10
+	thumbnail "thumbnail/enforcementdrone/enforcement drone"
+		"frame rate" 10
 	"administrative cost" 0
 	attributes
 		category "Drone"
