@@ -70,6 +70,7 @@ person "ChemtrailOperator"
 			"Dozens of ads lay slain at my feet, yet more arise. When will they learn? When will this end?" 
 			"Will there ever be enough death? No... There can never be enough death for ads."
 	ship "Chemtrail Boat" "Chemtrail Boat"
+	ship "Chemtrail Drone" "Autonomous Adblocker"
 		
 
 
@@ -127,9 +128,10 @@ ship "Chemtrail Boat"
 		"D14-RN Shield Generator"
 		"Tactical Scanner"
 		
-		"X3700 Ion Thruster"
+		# "X3700 Ion Thruster"
 		"X2200 Ion Steering"
-		"Chemtrail Dispenser"
+		"X2701 Dispensing Thruster"
+		# "Chemtrail Dispenser"
 		"Jump Drive"
 		
 	gun -36.5 -18 "Heavy Laser"
@@ -139,6 +141,8 @@ ship "Chemtrail Boat"
 	gun -28.5 -27 "Heavy Laser"
 	gun 28.5 -27 "Heavy Laser"
 	turret 0 -1 "Heavy Laser Turret"
+	bay "Drone" 0 0
+		"launch effect" "human internal"
 	leak "leak" 50 50
 	leak "flame" 80 80
 	explode "tiny explosion" 10
@@ -283,20 +287,111 @@ outfit "XT-I Experimental RITEG"
 	"heat generation" 19
 	description "Radiothermal generators harvest heat from radioactive isotopes and convert it into electricity. They are more powerful than fuel cells, but also produce a relatively high amount of heat."
 
-outfit "Chemtrail Dispenser"
-	category "Unique"
-	index 01001
-	"cost" 1000
+outfit "X2701 Dispensing Thruster"
+	category "Engines"
+	index 01002
+	"cost" 65000
 	thumbnail "outfit/afterburner"
-	"mass" 4
-	"outfit space" -4
+	"mass" 31
+	"outfit space" -31
+	"engine capacity" -31
 	"chemtrail tank" 15
-	"engine capacity" -4
-	"afterburner thrust" 0.6
-	"afterburner fuel" 0.01
-	"afterburner heat" 3
-	"afterburner effect" "afterburner"
-	description "By "
+	"afterburner energy" 1.9
+	"afterburner heat" 3.7
+	"afterburner thrust" 43.275
+	"afterburner effect" "chemtrails large"
+	"afterburner effect" "chemtrails medium"
+	"afterburner effect" "chemtrails small"
+	"afterburner effect" "ion flare for chem"
+	# "flare sprite" "effect/ion flare/medium"
+		# "frame rate" 1.0
+	"flare sound" "ion medium"
+	description "This outfit is a stock ion engine with simple modifications. Concentric rings of tiny nozzles mounted inside the main engine nozzles allow fluids to be dispersed conveniently. Chemicals or substances to be distributed are suspended in combustible fluids to make them sprayable. These fluids burn up when the engines are fired, giving a little boost of thrust similar to an afterburner. The same phenomena also increases heat production slightly."
+
+effect "ion flare for chem"
+	sprite "effect/ion flare/small"
+		"frame rate" 1.0
+		"scale" 0.8
+	"lifetime" 0
+	"velocity scale" 0
+
+effect "chemtrails large"
+	sprite "effect/chemtrails/large"
+		"no repeat"
+		"frame rate" 4
+		"scale" .4
+	sound "afterburner"
+	"sound category" "afterburner"
+	"lifetime" 90
+	"random angle" 10
+	"random velocity" 0.4
+	"velocity scale" 0.1
+
+effect "chemtrails medium"
+	sprite "effect/chemtrails/medium"
+		"no repeat"
+		"frame rate" 4
+		"scale" .25
+	sound "afterburner"
+	"sound category" "afterburner"
+	"lifetime" 90
+	"random angle" 60
+	"random velocity" 0.4
+	"velocity scale" 0.2
+
+effect "chemtrails small"
+	sprite "effect/chemtrails/small"
+		"no repeat"
+		"frame rate" 4
+		"scale" .1
+	sound "afterburner"
+	"sound category" "afterburner"
+	"lifetime" 90
+	"random angle" 5000
+	"random velocity" 0.7
+	"velocity scale" 0.3
+
+ship "Chemtrail Drone"
+	sprite "ship/enforcementdrone/chemtrail drone"
+		"frame rate" 10
+	thumbnail "thumbnail/enforcementdrone/enforcement drone"
+		"frame rate" 10
+	"administrative cost" 0
+	attributes
+		category "Drone"
+		licenses
+			Navy
+		"cost" 	2390000
+		"hull" 950
+		"automaton" 1
+		"mass" 26
+		"drag" .51
+		"heat dissipation" .9
+		"outfit space" 70
+		"weapon capacity" 15
+		"engine capacity" 28
+		weapon
+			"blast radius" 5
+			"shield damage" 50
+			"hull damage" 25
+			"hit force" 75
+	outfits
+		"Heavy Laser"
+		
+		"nGVF-AA Fuel Cell"
+		"Supercapacitor"
+		"Surveillance Pod"
+		
+		"X1700 Ion Thruster"
+		"X1200 Ion Steering"
+		
+	engine -8.5 26 0.9
+	engine 0 26 0.9
+	engine 8.5 26 0.9
+	gun 0 -29 "Heavy Laser"
+	explode "tiny explosion" 15
+	description "Like their progenitor, enforcement drones are pilotless attack ships newly deployed by the Republic Navy. They carry out an important role in system security, capable of both scanning ships and of attacking them. This little drone packs quite a punch for its size, mounting a Heavy Laser within a stronger hull."
+	description "	Drones do not come equipped with a hyperdrive. You cannot carry a drone unless you have a ship in your fleet with a drone bay."
 
 planet "New Holland"
 	add shipyard "chemtrail test"
@@ -304,6 +399,7 @@ planet "New Holland"
 
 shipyard "chemtrail test"
 	"Chemtrail Boat"
+	"Chemtrail Drone"
 
 outfitter "chemtrail stuff"
 	"Aluminum Oxide"
@@ -326,7 +422,7 @@ outfitter "chemtrail stuff"
 	"Troubling Trash"
 	"Cryptic Canisters"
 	"XT-I Experimental RITEG"
-	"Chemtrail Dispenser"
+	"X2701 Dispensing Thruster"
 
 category "outfit"
 	"Chemtrail Components"
